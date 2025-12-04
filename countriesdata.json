@@ -436,6 +436,22 @@
         {"jour":"Dimanche","petitdej":{"plat":"Chocolat chaud + churros","alt":"Pain complet + fruits + oeufs"},"dej":{"plat":"Paella de fruits de mer","alt":"Paella au poisson/fruits de mer + légumes"},"collation":{"plat":"Orange + amandes","alt":"Yaourt + fruits + fromage blanc"},"diner":{"plat":"Salade de thon + œuf","alt":"Quinoa + épinard + saumon"}}
       ]
     },
+    "Belgique": {
+  "coords": [50.5039, 4.4699],
+  "feculents": "Pommes de terre, pain gris, pâtes, riz, quinoa, stoemp, patate douce",
+  "proteines": "Poulet, œufs, poisson (saumon, cabillaud, moules), bœuf, jambon d’Ardenne, légumineuses",
+  "legumes": "Poireau, chicon, carotte, champignons, brocoli, chou, courgette, céleri",
+  "fruits": "Pomme, poire, fraise, framboise, prune, raisin",
+  "plats": [
+    {"jour":"Lundi","petitdej":{"plat":"Pain gris + fromage + fruits","alt":"Pain complet + purée d’amande + pomme + œufs"},"dej":{"plat":"Stoemp carotte + saucisse","alt":"Stoemp + poulet grillé"},"collation":{"plat":"Pomme","alt":"Yaourt nature + noix + fruits"},"diner":{"plat":"Omelette aux champignons","alt":"Omelette légumes + pomme de terre"}},
+    {"jour":"Mardi","petitdej":{"plat":"Yaourt + fruits","alt":"Frommage blanc granola + flocons d’avoine + fruits rouges"},"dej":{"plat":"Carbonade flamande","alt":"Carbonade + riz + salade"},"collation":{"plat":"Fruits","alt":"Fromage blanc + amandes"},"diner":{"plat":"Saumon + légumes","alt":"Saumon au four + brocoli + pommes de terre"}},
+    {"jour":"Mercredi","petitdej":{"plat":"Crêpes belges + fruits","alt":"Crêpes complètes + banane + œufs"},"dej":{"plat":"Moules-frites","alt":"Moules + frites maison au four"},"collation":{"plat":"Fraises","alt":"Yaourt + miel"},"diner":{"plat":"Soupe poireaux-pommes de terre","alt":"Soupe + pâtes + œuf + légumes)"}},
+    {"jour":"Jeudi","petitdej":{"plat":"Pain + confiture","alt":"Pain complet + avocat + œuf"},"dej":{"plat":"Waterzooi de poulet","alt":"Waterzooi léger (moins de crème, plus de légumes)"},"collation":{"plat":"Poire","alt":"Compote sans sucre + noix"},"diner":{"plat":"Cabillaud + purée","alt":"Cabillaud + stoemp"}},
+    {"jour":"Vendredi","petitdej":{"plat":"Pain + fromage","alt":"Pain complet + purée d’amande + fraises"},"dej":{"plat":"Boulet liégeois + frites","alt":"Boulet liégois + patate douce + salade"},"collation":{"plat":"Yaourt","alt":"Fruits secs + fromage blanc"},"diner":{"plat":"Poisson + légumes grillés","alt":"Saumon + riz + courgettes"}},
+    {"jour":"Samedi","petitdej":{"plat":"Gaufre liégeoise","alt":"Mini-gaufre maison + fruits + yaourt"},"dej":{"plat":"Pâtes jambon-fromage","alt":"Pâtes complètes + jambon d’Ardenne + champignons + salade"},"collation":{"plat":"Pomme","alt":"Yaourt + noix"},"diner":{"plat":"Potage tomates + pâtes","alt":"Soupe + riz + poulet"}},
+    {"jour":"Dimanche","petitdej":{"plat":"Chocolat chaud + petit pain","alt":"Pain complet + fruits + œufs"},"dej":{"plat":"Rôti + pommes de terre + carottes","alt":"Rôti + légumes vapeur + pomme de terre"},"collation":{"plat":"Poire + amandes","alt":"Yaourt + fruits"},"diner":{"plat":"Salade au chèvre","alt":"Quinoa + chicon + saumon"}}
+  ]
+},
     "Portugal": {
       "coords": [39.3999, -8.2245],
       "feculents": "Pain de maïs, riz, patate douce, pommes de terre, haricots, pois chiches, lentilles",
