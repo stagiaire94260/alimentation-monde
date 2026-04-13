@@ -1,0 +1,451 @@
+[
+  {
+    "key": "galette_pdt",
+    "title": "Galettes de pomme de terre aux œufs",
+    "triggers": ["oeufs", "pomme_de_terre"],
+    "protein": "oeufs",
+    "carb": "pomme_de_terre",
+    "time_min": 20,
+    "extra": ["Oignon 50 g", "Huile d'olive 10 g"],
+    "steps": [
+      "Râper les pommes de terre et bien essorer avec un torchon.",
+      "Mélanger avec les œufs battus et l'oignon émincé.",
+      "Former des galettes et dorer à la poêle 5 min chaque côté."
+    ]
+  },
+  {
+    "key": "lasagnes_maison",
+    "title": "Lasagnes maison bœuf",
+    "triggers": ["steak_hache", "pates"],
+    "protein": "steak_hache",
+    "carb": "pates",
+    "time_min": 45,
+    "extra": ["Tomate 200 g", "Oignon 50 g", "Gruyère 60 g", "Courgette 100 g"],
+    "steps": [
+      "Faire revenir l'oignon et le bœuf haché 10 min.",
+      "Ajouter les tomates et mijoter 15 min.",
+      "Alterner couches de pâtes, bolognaise et béchamel légère.",
+      "Couvrir de gruyère et gratiner 25 min à 180°C."
+    ]
+  },
+  {
+    "key": "hachis_parmentier",
+    "title": "Hachis parmentier",
+    "triggers": ["steak_hache", "pomme_de_terre"],
+    "protein": "steak_hache",
+    "carb": "pomme_de_terre",
+    "time_min": 40,
+    "extra": ["Oignon 50 g", "Tomate 100 g", "Gruyère 40 g"],
+    "steps": [
+      "Faire revenir le bœuf haché avec l'oignon et les tomates.",
+      "Préparer une purée de pommes de terre.",
+      "Déposer la viande dans un plat, couvrir de purée et de gruyère.",
+      "Gratiner 20 min à 180°C."
+    ]
+  },
+  {
+    "key": "gratin_thon_pates",
+    "title": "Gratin de pâtes au thon",
+    "triggers": ["thon", "pates"],
+    "protein": "thon",
+    "carb": "pates",
+    "time_min": 30,
+    "extra": ["Courgette 100 g", "Gruyère 50 g", "Oignon 40 g"],
+    "steps": [
+      "Cuire les pâtes al dente.",
+      "Mélanger le thon égoutté avec les courgettes sautées et l'oignon.",
+      "Mélanger avec les pâtes dans un plat.",
+      "Couvrir de gruyère et gratiner 15 min à 200°C."
+    ]
+  },
+  {
+    "key": "buddha_bowl_poulet",
+    "title": "Buddha bowl poulet avocat",
+    "triggers": ["poulet", "quinoa"],
+    "protein": "poulet",
+    "carb": "quinoa",
+    "time_min": 20,
+    "extra": ["Avocat 70 g", "Carotte 80 g", "Épinard 80 g", "Tomate 80 g"],
+    "steps": [
+      "Cuire le quinoa et le laisser refroidir.",
+      "Griller le poulet et le trancher.",
+      "Assembler dans un bol : quinoa, poulet, avocat, carotte râpée, épinards et tomate.",
+      "Arroser d'un filet d'huile d'olive et de citron."
+    ]
+  },
+  {
+    "key": "salade_cesar_poulet",
+    "title": "Salade César poulet grillé",
+    "triggers": ["poulet", "quinoa"],
+    "protein": "poulet",
+    "carb": "quinoa",
+    "time_min": 15,
+    "extra": ["Salade 80 g", "Tomate 80 g", "Gruyère 30 g"],
+    "steps": [
+      "Griller le poulet et trancher en lamelles.",
+      "Cuire le quinoa.",
+      "Assembler salade, tomates, poulet et quinoa.",
+      "Parsemer de gruyère râpé et servir."
+    ]
+  },
+  {
+    "key": "saumon_epinards_pdouce",
+    "title": "Saumon poêlé épinards patate douce",
+    "triggers": ["saumon", "patate_douce"],
+    "protein": "saumon",
+    "carb": "patate_douce",
+    "time_min": 25,
+    "extra": ["Épinard 150 g", "Oignon 40 g"],
+    "steps": [
+      "Cuire la patate douce en dés au four 20 min à 180°C.",
+      "Poêler le saumon 4 min chaque côté.",
+      "Faire revenir les épinards et l'oignon à l'ail.",
+      "Assembler et servir."
+    ]
+  },
+  {
+    "key": "omelette_champignons",
+    "title": "Omelette champignons pomme de terre",
+    "triggers": ["oeufs", "pomme_de_terre"],
+    "protein": "oeufs",
+    "carb": "pomme_de_terre",
+    "time_min": 20,
+    "extra": ["Champignon 100 g", "Oignon 40 g", "Huile d'olive 5 g"],
+    "steps": [
+      "Cuire les pommes de terre en dés à la poêle.",
+      "Ajouter les champignons et l'oignon, faire revenir.",
+      "Battre les œufs et verser sur les légumes.",
+      "Cuire à feu doux 5 min et replier."
+    ]
+  },
+  {
+    "key": "ramen_boeuf",
+    "title": "Ramen bœuf maison",
+    "triggers": ["boeuf", "nouilles_riz"],
+    "protein": "boeuf",
+    "carb": "nouilles_riz",
+    "time_min": 30,
+    "extra": ["Champignon 80 g", "Épinard 100 g", "Sauce soja 15 g", "Œufs x1", "Oignon 40 g"],
+    "steps": [
+      "Préparer un bouillon avec eau, sauce soja, oignon et épices.",
+      "Cuire les nouilles selon paquet.",
+      "Saisir le bœuf tranché fin à la poêle.",
+      "Assembler dans un bol : bouillon, nouilles, bœuf, épinards, champignons et œuf mollet."
+    ]
+  },
+  {
+    "key": "nouilles_sautes_crevettes",
+    "title": "Nouilles sautées légumes crevettes",
+    "triggers": ["crevettes", "nouilles_riz"],
+    "protein": "crevettes",
+    "carb": "nouilles_riz",
+    "time_min": 15,
+    "extra": ["Poivron 100 g", "Carotte 80 g", "Sauce soja 15 g", "Oignon 40 g"],
+    "steps": [
+      "Cuire les nouilles selon paquet.",
+      "Sauter les crevettes 3 min à feu vif.",
+      "Ajouter le poivron, la carotte et l'oignon, sauter 3 min.",
+      "Ajouter les nouilles et la sauce soja, mélanger et servir."
+    ]
+  },
+  {
+    "key": "bol_saumon_riz",
+    "title": "Bol saumon avocat riz",
+    "triggers": ["saumon", "riz"],
+    "protein": "saumon",
+    "carb": "riz",
+    "time_min": 20,
+    "extra": ["Avocat 70 g", "Concombre 60 g", "Sauce soja 10 g"],
+    "steps": [
+      "Cuire le riz.",
+      "Poêler le saumon ou le servir fumé.",
+      "Assembler dans un bol : riz, saumon, avocat et concombre.",
+      "Arroser de sauce soja."
+    ]
+  },
+  {
+    "key": "tofu_riz_saute",
+    "title": "Riz sauté tofu légumes",
+    "triggers": ["tofu", "riz"],
+    "protein": "tofu",
+    "carb": "riz",
+    "time_min": 20,
+    "extra": ["Poivron 100 g", "Carotte 80 g", "Sauce soja 15 g", "Oignon 40 g"],
+    "steps": [
+      "Cuire le riz et laisser refroidir.",
+      "Dorer le tofu en dés à la poêle.",
+      "Faire sauter les légumes avec la sauce soja.",
+      "Ajouter le riz froid et mélanger à feu vif."
+    ]
+  },
+  {
+    "key": "poulet_teriyaki_riz",
+    "title": "Poulet teriyaki riz jasmin",
+    "triggers": ["poulet", "riz_jasmin"],
+    "protein": "poulet",
+    "carb": "riz_jasmin",
+    "time_min": 20,
+    "extra": ["Sauce soja 20 g", "Oignon 40 g", "Brocoli 150 g"],
+    "steps": [
+      "Cuire le riz jasmin.",
+      "Mariner le poulet dans la sauce soja 10 min.",
+      "Poêler le poulet avec l'oignon jusqu'à caramélisation.",
+      "Servir avec le riz et le brocoli vapeur."
+    ]
+  },
+  {
+    "key": "pad_thai_crevettes",
+    "title": "Pad thaï crevettes",
+    "triggers": ["crevettes", "nouilles_riz"],
+    "protein": "crevettes",
+    "carb": "nouilles_riz",
+    "time_min": 20,
+    "extra": ["Œufs x1", "Poivron 80 g", "Sauce soja 15 g", "Oignon 40 g"],
+    "steps": [
+      "Faire tremper les nouilles de riz.",
+      "Sauter les crevettes et l'oignon à feu vif.",
+      "Pousser sur le côté, brouiller les œufs dans la même poêle.",
+      "Ajouter les nouilles, le poivron et la sauce soja, mélanger et servir."
+    ]
+  },
+  {
+    "key": "dahl_lentilles",
+    "title": "Dahl de lentilles corail riz",
+    "triggers": ["tofu", "riz"],
+    "protein": "tofu",
+    "carb": "riz",
+    "time_min": 25,
+    "extra": ["Tomate 150 g", "Oignon 60 g", "Lait de coco 80 g", "Lentilles 150 g"],
+    "steps": [
+      "Faire revenir l'oignon avec le cumin et le curcuma.",
+      "Ajouter les lentilles rincées, les tomates et le lait de coco.",
+      "Mijoter 20 min à feu doux en remuant.",
+      "Servir avec le riz."
+    ]
+  },
+  {
+    "key": "maafe_boeuf",
+    "title": "Maafé bœuf riz",
+    "triggers": ["boeuf", "riz"],
+    "protein": "boeuf",
+    "carb": "riz",
+    "time_min": 40,
+    "extra": ["Tomate 150 g", "Oignon 60 g", "Carotte 80 g", "Beurre de cacahuète 40 g"],
+    "steps": [
+      "Faire revenir le bœuf en morceaux avec l'oignon.",
+      "Ajouter les tomates, le beurre de cacahuète et les carottes.",
+      "Mijoter 30 min à feu doux.",
+      "Servir avec le riz."
+    ]
+  },
+  {
+    "key": "yassa_poulet_riz",
+    "title": "Yassa poulet riz",
+    "triggers": ["poulet", "riz"],
+    "protein": "poulet",
+    "carb": "riz",
+    "time_min": 35,
+    "extra": ["Oignon 150 g", "Moutarde 15 g", "Citron 1", "Carotte 80 g"],
+    "steps": [
+      "Mariner le poulet avec les oignons, le citron et la moutarde.",
+      "Faire revenir les oignons jusqu'à caramélisation.",
+      "Ajouter le poulet et les carottes, mijoter 25 min.",
+      "Servir avec le riz."
+    ]
+  },
+  {
+    "key": "thieb_poisson",
+    "title": "Thieb poisson légumes riz",
+    "triggers": ["poisson_blanc", "riz"],
+    "protein": "poisson_blanc",
+    "carb": "riz",
+    "time_min": 40,
+    "extra": ["Tomate 150 g", "Oignon 60 g", "Carotte 80 g", "Aubergine 100 g"],
+    "steps": [
+      "Assaisonner le poisson et le faire dorer.",
+      "Préparer un bouillon avec tomates, oignons et légumes.",
+      "Cuire le riz dans le bouillon.",
+      "Servir le poisson sur le riz avec les légumes."
+    ]
+  },
+  {
+    "key": "colombo_poulet_riz",
+    "title": "Colombo de poulet riz",
+    "triggers": ["poulet", "riz"],
+    "protein": "poulet",
+    "carb": "riz",
+    "time_min": 35,
+    "extra": ["Courgette 100 g", "Aubergine 100 g", "Oignon 50 g", "Tomate 100 g"],
+    "steps": [
+      "Faire revenir le poulet avec l'oignon et le colombo.",
+      "Ajouter les légumes et les tomates.",
+      "Mijoter 25 min à feu doux.",
+      "Servir avec le riz."
+    ]
+  },
+  {
+    "key": "tajine_poulet_citron",
+    "title": "Tajine poulet citron confit olives",
+    "triggers": ["poulet", "semoule"],
+    "protein": "poulet",
+    "carb": "semoule",
+    "time_min": 40,
+    "extra": ["Oignon 80 g", "Carotte 100 g", "Tomate 100 g", "Citron 1"],
+    "steps": [
+      "Faire dorer le poulet avec l'oignon et le cumin.",
+      "Ajouter les carottes, tomates et le citron tranché.",
+      "Mijoter 30 min à couvert.",
+      "Servir avec la semoule."
+    ]
+  },
+  {
+    "key": "kefta_semoule",
+    "title": "Kefta bœuf semoule",
+    "triggers": ["boeuf", "semoule"],
+    "protein": "boeuf",
+    "carb": "semoule",
+    "time_min": 25,
+    "extra": ["Oignon 60 g", "Tomate 150 g", "Courgette 100 g"],
+    "steps": [
+      "Mélanger le bœuf haché avec l'oignon et les épices.",
+      "Former des boulettes et les dorer à la poêle.",
+      "Préparer une sauce tomate avec les légumes.",
+      "Cuire la semoule et servir avec la sauce et les keftas."
+    ]
+  },
+  {
+    "key": "chorba_agneau",
+    "title": "Chorba agneau légumes",
+    "triggers": ["agneau", "semoule"],
+    "protein": "agneau",
+    "carb": "semoule",
+    "time_min": 40,
+    "extra": ["Tomate 150 g", "Oignon 60 g", "Courgette 100 g", "Carotte 80 g"],
+    "steps": [
+      "Faire revenir l'agneau en morceaux avec l'oignon.",
+      "Ajouter les légumes et les tomates, couvrir d'eau.",
+      "Mijoter 30 min à feu doux.",
+      "Servir avec la semoule."
+    ]
+  },
+  {
+    "key": "muffins_proteines",
+    "title": "Muffins protéinés avoine banane",
+    "triggers": ["oeufs", "avoine"],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 25,
+    "meal_type": "snack",
+    "extra": ["Banane 1", "Whey 30 g", "Chocolat noir 20 g"],
+    "steps": [
+      "Préchauffer le four à 175°C.",
+      "Écraser la banane et mélanger avec les œufs battus et la whey.",
+      "Incorporer l'avoine et le chocolat concassé.",
+      "Verser dans des moules à muffins et cuire 18 min."
+    ]
+  },
+  {
+    "key": "bounty_balls",
+    "title": "Bounty balls coco protéinés",
+    "triggers": ["oeufs", "avoine"],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 15,
+    "meal_type": "snack",
+    "extra": ["Whey 30 g", "Chocolat noir 40 g", "Avoine 40 g"],
+    "steps": [
+      "Mélanger la whey, l'avoine et un peu d'eau jusqu'à obtenir une pâte.",
+      "Former des boules et réfrigérer 20 min.",
+      "Faire fondre le chocolat noir et tremper les boules.",
+      "Laisser figer au frais 15 min avant de servir."
+    ]
+  },
+  {
+    "key": "cookie_healthy",
+    "title": "Cookies healthy avoine cacahuète",
+    "triggers": ["oeufs", "avoine"],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 20,
+    "meal_type": "snack",
+    "extra": ["Banane 1", "Beurre de cacahuète 30 g", "Chocolat noir 25 g"],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Écraser la banane avec le beurre de cacahuète et l'œuf.",
+      "Incorporer l'avoine et le chocolat concassé.",
+      "Former des cookies sur une plaque et cuire 12 min."
+    ]
+  },
+  {
+    "key": "energy_balls",
+    "title": "Energy balls amandes avoine",
+    "triggers": ["oeufs", "avoine"],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 15,
+    "meal_type": "snack",
+    "extra": ["Amandes 30 g", "Beurre de cacahuète 30 g", "Chocolat noir 20 g", "Banane 1"],
+    "steps": [
+      "Écraser la banane et mélanger avec le beurre de cacahuète.",
+      "Incorporer l'avoine et les amandes concassées.",
+      "Former des boules et rouler dans le chocolat râpé.",
+      "Réfrigérer 30 min avant de servir."
+    ]
+  },
+  {
+    "key": "dahl_lentilles",
+
+    "title": "Dahl de lentilles corail",
+
+    "triggers": ["lentilles", "riz"],
+
+    "protein": "lentilles",
+
+    "carb": "riz",
+
+    "time_min": 25,
+
+    "extra": ["Tomate 150 g", "Oignon 50 g", "Lait de coco 80 g"],
+
+    "steps": [
+
+      "Faire revenir l'oignon avec le cumin et le curcuma.",
+
+      "Ajouter les lentilles, tomates et lait de coco.",
+
+      "Mijoter 20 min et servir avec le riz."
+    ]
+  },
+  {
+    "key": "pancakes_proteines",
+    "title": "Pancakes protéinés banane avoine",
+    "triggers": ["oeufs", "avoine"],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 15,
+    "meal_type": "snack",
+    "extra": ["Banane 1", "Whey 25 g", "Fromage blanc 100 g"],
+    "steps": [
+      "Mixer la banane, les œufs, le fromage blanc et la whey.",
+      "Ajouter l'avoine et mélanger jusqu'à consistance lisse.",
+      "Cuire de petits pancakes dans une poêle antiadhésive 2 min chaque côté.",
+      "Servir avec un fruit ou du miel."
+    ]
+  },
+  {
+    "key": "bol_smoothie_proteine",
+    "title": "Bol smoothie fruité protéiné",
+    "triggers": ["oeufs", "avoine"],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 5,
+    "meal_type": "snack",
+    "extra": ["Skyr 200 g", "Fruits rouges 120 g", "Banane 1", "Amandes 15 g"],
+    "steps": [
+      "Mixer le skyr avec la banane et les fruits rouges.",
+      "Verser dans un bol.",
+      "Garnir d'avoine et d'amandes.",
+      "Servir immédiatement."
+    ]
+  }
+]
