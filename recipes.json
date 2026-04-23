@@ -2,11 +2,18 @@
   {
     "key": "galette_pdt",
     "title": "Galettes de pomme de terre aux œufs",
-    "triggers": ["oeufs", "pomme_de_terre"],
+    "triggers": [
+      "oeufs",
+      "pomme_de_terre"
+    ],
     "protein": "oeufs",
     "carb": "pomme_de_terre",
     "time_min": 20,
-    "extra": ["Oignon 50 g", "Huile d'olive 10 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 50 g",
+      "Huile d'olive 10 g"
+    ],
     "steps": [
       "Râper les pommes de terre et bien essorer avec un torchon.",
       "Mélanger avec les œufs battus et l'oignon émincé.",
@@ -16,11 +23,20 @@
   {
     "key": "lasagnes_maison",
     "title": "Lasagnes maison bœuf",
-    "triggers": ["steak_hache", "pates"],
-    "protein": "steak_hache",
+    "triggers": [
+      "viande",
+      "pates"
+    ],
+    "protein": "viande",
     "carb": "pates",
     "time_min": 45,
-    "extra": ["Tomate 200 g", "Oignon 50 g", "Gruyère 60 g", "Courgette 100 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Tomate 200 g",
+      "Oignon 50 g",
+      "Gruyère 60 g",
+      "Courgette 100 g"
+    ],
     "steps": [
       "Faire revenir l'oignon et le bœuf haché 10 min.",
       "Ajouter les tomates et mijoter 15 min.",
@@ -31,11 +47,19 @@
   {
     "key": "hachis_parmentier",
     "title": "Hachis parmentier",
-    "triggers": ["steak_hache", "pomme_de_terre"],
-    "protein": "steak_hache",
+    "triggers": [
+      "viande",
+      "pomme_de_terre"
+    ],
+    "protein": "viande",
     "carb": "pomme_de_terre",
     "time_min": 40,
-    "extra": ["Oignon 50 g", "Tomate 100 g", "Gruyère 40 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 50 g",
+      "Tomate 100 g",
+      "Gruyère 40 g"
+    ],
     "steps": [
       "Faire revenir le bœuf haché avec l'oignon et les tomates.",
       "Préparer une purée de pommes de terre.",
@@ -46,11 +70,19 @@
   {
     "key": "gratin_thon_pates",
     "title": "Gratin de pâtes au thon",
-    "triggers": ["thon", "pates"],
+    "triggers": [
+      "thon",
+      "pates"
+    ],
     "protein": "thon",
     "carb": "pates",
     "time_min": 30,
-    "extra": ["Courgette 100 g", "Gruyère 50 g", "Oignon 40 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Courgette 100 g",
+      "Gruyère 50 g",
+      "Oignon 40 g"
+    ],
     "steps": [
       "Cuire les pâtes al dente.",
       "Mélanger le thon égoutté avec les courgettes sautées et l'oignon.",
@@ -61,11 +93,20 @@
   {
     "key": "buddha_bowl_poulet",
     "title": "Buddha bowl poulet avocat",
-    "triggers": ["poulet", "quinoa"],
+    "triggers": [
+      "poulet",
+      "quinoa"
+    ],
     "protein": "poulet",
     "carb": "quinoa",
     "time_min": 20,
-    "extra": ["Avocat 70 g", "Carotte 80 g", "Épinard 80 g", "Tomate 80 g"],
+    "meal_type": "lunch",
+    "extra": [
+      "Avocat 70 g",
+      "Carotte 80 g",
+      "Épinard 80 g",
+      "Tomate 80 g"
+    ],
     "steps": [
       "Cuire le quinoa et le laisser refroidir.",
       "Griller le poulet et le trancher.",
@@ -76,11 +117,19 @@
   {
     "key": "salade_cesar_poulet",
     "title": "Salade César poulet grillé",
-    "triggers": ["poulet", "quinoa"],
+    "triggers": [
+      "poulet",
+      "quinoa"
+    ],
     "protein": "poulet",
     "carb": "quinoa",
     "time_min": 15,
-    "extra": ["Salade 80 g", "Tomate 80 g", "Gruyère 30 g"],
+    "meal_type": "lunch",
+    "extra": [
+      "Salade 80 g",
+      "Tomate 80 g",
+      "Gruyère 30 g"
+    ],
     "steps": [
       "Griller le poulet et trancher en lamelles.",
       "Cuire le quinoa.",
@@ -91,26 +140,41 @@
   {
     "key": "saumon_epinards_pdouce",
     "title": "Saumon poêlé épinards patate douce",
-    "triggers": ["saumon", "patate_douce"],
+    "triggers": [
+      "saumon",
+      "patate_douce"
+    ],
     "protein": "saumon",
     "carb": "patate_douce",
     "time_min": 25,
-    "extra": ["Épinard 150 g", "Oignon 40 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Épinard 150 g",
+      "Oignon 40 g"
+    ],
     "steps": [
       "Cuire la patate douce en dés au four 20 min à 180°C.",
       "Poêler le saumon 4 min chaque côté.",
-      "Faire revenir les épinards et l'oignon à l'ail.",
+      "Faire revenir les épinards et l'oignon.",
       "Assembler et servir."
     ]
   },
   {
     "key": "omelette_champignons",
     "title": "Omelette champignons pomme de terre",
-    "triggers": ["oeufs", "pomme_de_terre"],
+    "triggers": [
+      "oeufs",
+      "pomme_de_terre"
+    ],
     "protein": "oeufs",
     "carb": "pomme_de_terre",
     "time_min": 20,
-    "extra": ["Champignon 100 g", "Oignon 40 g", "Huile d'olive 5 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Champignon 100 g",
+      "Oignon 40 g",
+      "Huile d'olive 5 g"
+    ],
     "steps": [
       "Cuire les pommes de terre en dés à la poêle.",
       "Ajouter les champignons et l'oignon, faire revenir.",
@@ -121,11 +185,21 @@
   {
     "key": "ramen_boeuf",
     "title": "Ramen bœuf maison",
-    "triggers": ["boeuf", "nouilles_riz"],
-    "protein": "boeuf",
+    "triggers": [
+      "viande",
+      "nouilles_riz"
+    ],
+    "protein": "viande",
     "carb": "nouilles_riz",
     "time_min": 30,
-    "extra": ["Champignon 80 g", "Épinard 100 g", "Sauce soja 15 g", "Œufs x1", "Oignon 40 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Champignon 80 g",
+      "Épinard 100 g",
+      "Sauce soja 15 g",
+      "Œufs x1",
+      "Oignon 40 g"
+    ],
     "steps": [
       "Préparer un bouillon avec eau, sauce soja, oignon et épices.",
       "Cuire les nouilles selon paquet.",
@@ -136,11 +210,20 @@
   {
     "key": "nouilles_sautes_crevettes",
     "title": "Nouilles sautées légumes crevettes",
-    "triggers": ["crevettes", "nouilles_riz"],
+    "triggers": [
+      "crevettes",
+      "nouilles_riz"
+    ],
     "protein": "crevettes",
     "carb": "nouilles_riz",
     "time_min": 15,
-    "extra": ["Poivron 100 g", "Carotte 80 g", "Sauce soja 15 g", "Oignon 40 g"],
+    "meal_type": "lunch",
+    "extra": [
+      "Poivron 100 g",
+      "Carotte 80 g",
+      "Sauce soja 15 g",
+      "Oignon 40 g"
+    ],
     "steps": [
       "Cuire les nouilles selon paquet.",
       "Sauter les crevettes 3 min à feu vif.",
@@ -151,11 +234,19 @@
   {
     "key": "bol_saumon_riz",
     "title": "Bol saumon avocat riz",
-    "triggers": ["saumon", "riz"],
+    "triggers": [
+      "saumon",
+      "riz"
+    ],
     "protein": "saumon",
     "carb": "riz",
     "time_min": 20,
-    "extra": ["Avocat 70 g", "Concombre 60 g", "Sauce soja 10 g"],
+    "meal_type": "lunch",
+    "extra": [
+      "Avocat 70 g",
+      "Concombre 60 g",
+      "Sauce soja 10 g"
+    ],
     "steps": [
       "Cuire le riz.",
       "Poêler le saumon ou le servir fumé.",
@@ -166,11 +257,20 @@
   {
     "key": "tofu_riz_saute",
     "title": "Riz sauté tofu légumes",
-    "triggers": ["tofu", "riz"],
+    "triggers": [
+      "tofu",
+      "riz"
+    ],
     "protein": "tofu",
     "carb": "riz",
     "time_min": 20,
-    "extra": ["Poivron 100 g", "Carotte 80 g", "Sauce soja 15 g", "Oignon 40 g"],
+    "meal_type": "lunch",
+    "extra": [
+      "Poivron 100 g",
+      "Carotte 80 g",
+      "Sauce soja 15 g",
+      "Oignon 40 g"
+    ],
     "steps": [
       "Cuire le riz et laisser refroidir.",
       "Dorer le tofu en dés à la poêle.",
@@ -181,11 +281,19 @@
   {
     "key": "poulet_teriyaki_riz",
     "title": "Poulet teriyaki riz jasmin",
-    "triggers": ["poulet", "riz_jasmin"],
+    "triggers": [
+      "poulet",
+      "riz"
+    ],
     "protein": "poulet",
-    "carb": "riz_jasmin",
+    "carb": "riz",
     "time_min": 20,
-    "extra": ["Sauce soja 20 g", "Oignon 40 g", "Brocoli 150 g"],
+    "meal_type": "lunch",
+    "extra": [
+      "Sauce soja 20 g",
+      "Oignon 40 g",
+      "Brocoli 150 g"
+    ],
     "steps": [
       "Cuire le riz jasmin.",
       "Mariner le poulet dans la sauce soja 10 min.",
@@ -196,11 +304,20 @@
   {
     "key": "pad_thai_crevettes",
     "title": "Pad thaï crevettes",
-    "triggers": ["crevettes", "nouilles_riz"],
+    "triggers": [
+      "crevettes",
+      "nouilles_riz"
+    ],
     "protein": "crevettes",
     "carb": "nouilles_riz",
     "time_min": 20,
-    "extra": ["Œufs x1", "Poivron 80 g", "Sauce soja 15 g", "Oignon 40 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Œufs x1",
+      "Poivron 80 g",
+      "Sauce soja 15 g",
+      "Oignon 40 g"
+    ],
     "steps": [
       "Faire tremper les nouilles de riz.",
       "Sauter les crevettes et l'oignon à feu vif.",
@@ -211,26 +328,42 @@
   {
     "key": "dahl_lentilles",
     "title": "Dahl de lentilles corail riz",
-    "triggers": ["tofu", "riz"],
-    "protein": "tofu",
+    "triggers": [
+      "lentilles",
+      "riz"
+    ],
+    "protein": "lentilles",
     "carb": "riz",
     "time_min": 25,
-    "extra": ["Tomate 150 g", "Oignon 60 g", "Lait de coco 80 g", "Lentilles 150 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Tomate 150 g",
+      "Oignon 50 g",
+      "Lait de coco 80 g"
+    ],
     "steps": [
       "Faire revenir l'oignon avec le cumin et le curcuma.",
-      "Ajouter les lentilles rincées, les tomates et le lait de coco.",
-      "Mijoter 20 min à feu doux en remuant.",
-      "Servir avec le riz."
+      "Ajouter les lentilles, tomates et lait de coco.",
+      "Mijoter 20 min et servir avec le riz."
     ]
   },
   {
     "key": "maafe_boeuf",
     "title": "Maafé bœuf riz",
-    "triggers": ["boeuf", "riz"],
-    "protein": "boeuf",
+    "triggers": [
+      "viande",
+      "riz"
+    ],
+    "protein": "viande",
     "carb": "riz",
     "time_min": 40,
-    "extra": ["Tomate 150 g", "Oignon 60 g", "Carotte 80 g", "Beurre de cacahuète 40 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Tomate 150 g",
+      "Oignon 60 g",
+      "Carotte 80 g",
+      "Beurre de cacahuète 40 g"
+    ],
     "steps": [
       "Faire revenir le bœuf en morceaux avec l'oignon.",
       "Ajouter les tomates, le beurre de cacahuète et les carottes.",
@@ -241,11 +374,20 @@
   {
     "key": "yassa_poulet_riz",
     "title": "Yassa poulet riz",
-    "triggers": ["poulet", "riz"],
+    "triggers": [
+      "poulet",
+      "riz"
+    ],
     "protein": "poulet",
     "carb": "riz",
     "time_min": 35,
-    "extra": ["Oignon 150 g", "Moutarde 15 g", "Citron 1", "Carotte 80 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 150 g",
+      "Moutarde 15 g",
+      "Citron 1",
+      "Carotte 80 g"
+    ],
     "steps": [
       "Mariner le poulet avec les oignons, le citron et la moutarde.",
       "Faire revenir les oignons jusqu'à caramélisation.",
@@ -256,11 +398,20 @@
   {
     "key": "thieb_poisson",
     "title": "Thieb poisson légumes riz",
-    "triggers": ["poisson_blanc", "riz"],
+    "triggers": [
+      "poisson_blanc",
+      "riz"
+    ],
     "protein": "poisson_blanc",
     "carb": "riz",
     "time_min": 40,
-    "extra": ["Tomate 150 g", "Oignon 60 g", "Carotte 80 g", "Aubergine 100 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Tomate 150 g",
+      "Oignon 60 g",
+      "Carotte 80 g",
+      "Aubergine 100 g"
+    ],
     "steps": [
       "Assaisonner le poisson et le faire dorer.",
       "Préparer un bouillon avec tomates, oignons et légumes.",
@@ -271,11 +422,20 @@
   {
     "key": "colombo_poulet_riz",
     "title": "Colombo de poulet riz",
-    "triggers": ["poulet", "riz"],
+    "triggers": [
+      "poulet",
+      "riz"
+    ],
     "protein": "poulet",
     "carb": "riz",
     "time_min": 35,
-    "extra": ["Courgette 100 g", "Aubergine 100 g", "Oignon 50 g", "Tomate 100 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Courgette 100 g",
+      "Aubergine 100 g",
+      "Oignon 50 g",
+      "Tomate 100 g"
+    ],
     "steps": [
       "Faire revenir le poulet avec l'oignon et le colombo.",
       "Ajouter les légumes et les tomates.",
@@ -286,11 +446,20 @@
   {
     "key": "tajine_poulet_citron",
     "title": "Tajine poulet citron confit olives",
-    "triggers": ["poulet", "semoule"],
+    "triggers": [
+      "poulet",
+      "semoule"
+    ],
     "protein": "poulet",
     "carb": "semoule",
     "time_min": 40,
-    "extra": ["Oignon 80 g", "Carotte 100 g", "Tomate 100 g", "Citron 1"],
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 80 g",
+      "Carotte 100 g",
+      "Tomate 100 g",
+      "Citron 1"
+    ],
     "steps": [
       "Faire dorer le poulet avec l'oignon et le cumin.",
       "Ajouter les carottes, tomates et le citron tranché.",
@@ -301,11 +470,19 @@
   {
     "key": "kefta_semoule",
     "title": "Kefta bœuf semoule",
-    "triggers": ["boeuf", "semoule"],
-    "protein": "boeuf",
+    "triggers": [
+      "viande",
+      "semoule"
+    ],
+    "protein": "viande",
     "carb": "semoule",
     "time_min": 25,
-    "extra": ["Oignon 60 g", "Tomate 150 g", "Courgette 100 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 60 g",
+      "Tomate 150 g",
+      "Courgette 100 g"
+    ],
     "steps": [
       "Mélanger le bœuf haché avec l'oignon et les épices.",
       "Former des boulettes et les dorer à la poêle.",
@@ -316,11 +493,20 @@
   {
     "key": "chorba_agneau",
     "title": "Chorba agneau légumes",
-    "triggers": ["agneau", "semoule"],
+    "triggers": [
+      "agneau",
+      "semoule"
+    ],
     "protein": "agneau",
     "carb": "semoule",
     "time_min": 40,
-    "extra": ["Tomate 150 g", "Oignon 60 g", "Courgette 100 g", "Carotte 80 g"],
+    "meal_type": "dinner",
+    "extra": [
+      "Tomate 150 g",
+      "Oignon 60 g",
+      "Courgette 100 g",
+      "Carotte 80 g"
+    ],
     "steps": [
       "Faire revenir l'agneau en morceaux avec l'oignon.",
       "Ajouter les légumes et les tomates, couvrir d'eau.",
@@ -331,12 +517,19 @@
   {
     "key": "muffins_proteines",
     "title": "Muffins protéinés avoine banane",
-    "triggers": ["oeufs", "avoine"],
+    "triggers": [
+      "oeufs",
+      "avoine"
+    ],
     "protein": "oeufs",
     "carb": "avoine",
     "time_min": 25,
     "meal_type": "snack",
-    "extra": ["Banane 1", "Whey 30 g", "Chocolat noir 20 g"],
+    "extra": [
+      "Banane 1",
+      "Whey 30 g",
+      "Chocolat noir 20 g"
+    ],
     "steps": [
       "Préchauffer le four à 175°C.",
       "Écraser la banane et mélanger avec les œufs battus et la whey.",
@@ -347,12 +540,18 @@
   {
     "key": "bounty_balls",
     "title": "Bounty balls coco protéinés",
-    "triggers": ["oeufs", "avoine"],
+    "triggers": [
+      "oeufs",
+      "avoine"
+    ],
     "protein": "oeufs",
     "carb": "avoine",
     "time_min": 15,
     "meal_type": "snack",
-    "extra": ["Whey 30 g", "Chocolat noir 40 g", "Avoine 40 g"],
+    "extra": [
+      "Whey 30 g",
+      "Chocolat noir 40 g"
+    ],
     "steps": [
       "Mélanger la whey, l'avoine et un peu d'eau jusqu'à obtenir une pâte.",
       "Former des boules et réfrigérer 20 min.",
@@ -363,12 +562,19 @@
   {
     "key": "cookie_healthy",
     "title": "Cookies healthy avoine cacahuète",
-    "triggers": ["oeufs", "avoine"],
+    "triggers": [
+      "oeufs",
+      "avoine"
+    ],
     "protein": "oeufs",
     "carb": "avoine",
     "time_min": 20,
     "meal_type": "snack",
-    "extra": ["Banane 1", "Beurre de cacahuète 30 g", "Chocolat noir 25 g"],
+    "extra": [
+      "Banane 1",
+      "Beurre de cacahuète 30 g",
+      "Chocolat noir 25 g"
+    ],
     "steps": [
       "Préchauffer le four à 180°C.",
       "Écraser la banane avec le beurre de cacahuète et l'œuf.",
@@ -379,12 +585,20 @@
   {
     "key": "energy_balls",
     "title": "Energy balls amandes avoine",
-    "triggers": ["oeufs", "avoine"],
+    "triggers": [
+      "oeufs",
+      "avoine"
+    ],
     "protein": "oeufs",
     "carb": "avoine",
     "time_min": 15,
     "meal_type": "snack",
-    "extra": ["Amandes 30 g", "Beurre de cacahuète 30 g", "Chocolat noir 20 g", "Banane 1"],
+    "extra": [
+      "Amandes 30 g",
+      "Beurre de cacahuète 30 g",
+      "Chocolat noir 20 g",
+      "Banane 1"
+    ],
     "steps": [
       "Écraser la banane et mélanger avec le beurre de cacahuète.",
       "Incorporer l'avoine et les amandes concassées.",
@@ -393,38 +607,21 @@
     ]
   },
   {
-    "key": "dahl_lentilles",
-
-    "title": "Dahl de lentilles corail",
-
-    "triggers": ["lentilles", "riz"],
-
-    "protein": "lentilles",
-
-    "carb": "riz",
-
-    "time_min": 25,
-
-    "extra": ["Tomate 150 g", "Oignon 50 g", "Lait de coco 80 g"],
-
-    "steps": [
-
-      "Faire revenir l'oignon avec le cumin et le curcuma.",
-
-      "Ajouter les lentilles, tomates et lait de coco.",
-
-      "Mijoter 20 min et servir avec le riz."
-    ]
-  },
-  {
     "key": "pancakes_proteines",
     "title": "Pancakes protéinés banane avoine",
-    "triggers": ["oeufs", "avoine"],
+    "triggers": [
+      "oeufs",
+      "avoine"
+    ],
     "protein": "oeufs",
     "carb": "avoine",
     "time_min": 15,
     "meal_type": "snack",
-    "extra": ["Banane 1", "Whey 25 g", "Fromage blanc 100 g"],
+    "extra": [
+      "Banane 1",
+      "Whey 25 g",
+      "Fromage blanc 100 g"
+    ],
     "steps": [
       "Mixer la banane, les œufs, le fromage blanc et la whey.",
       "Ajouter l'avoine et mélanger jusqu'à consistance lisse.",
@@ -435,17 +632,571 @@
   {
     "key": "bol_smoothie_proteine",
     "title": "Bol smoothie fruité protéiné",
-    "triggers": ["oeufs", "avoine"],
+    "triggers": [
+      "oeufs",
+      "avoine"
+    ],
     "protein": "oeufs",
     "carb": "avoine",
     "time_min": 5,
     "meal_type": "snack",
-    "extra": ["Skyr 200 g", "Fruits rouges 120 g", "Banane 1", "Amandes 15 g"],
+    "extra": [
+      "Skyr 200 g",
+      "Fruits rouges 120 g",
+      "Banane 1",
+      "Amandes 15 g"
+    ],
     "steps": [
       "Mixer le skyr avec la banane et les fruits rouges.",
       "Verser dans un bol.",
       "Garnir d'avoine et d'amandes.",
       "Servir immédiatement."
+    ]
+  },
+  {
+    "key": "pates_creme_feta_poulet",
+    "title": "Pâtes crème feta poulet",
+    "triggers": [
+      "poulet"
+    ],
+    "protein": "poulet",
+    "carb": "pates",
+    "time_min": 20,
+    "meal_type": "lunch",
+    "extra": [
+      "Feta 60 g",
+      "Tomate 150 g",
+      "Oignon 50 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Cuire les pâtes al dente.",
+      "Faire revenir l'oignon et le poulet émincé.",
+      "Écraser la feta avec les tomates dans la poêle, laisser fondre à feu doux.",
+      "Mélanger avec les pâtes et servir."
+    ]
+  },
+  {
+    "key": "quiche_saumon_poireaux_chevre",
+    "title": "Quiche saumon poireaux chèvre",
+    "triggers": [
+      "saumon"
+    ],
+    "protein": "saumon",
+    "carb": "pate_quiche",
+    "time_min": 40,
+    "meal_type": "dinner",
+    "extra": [
+      "Poireau 150 g",
+      "Fromage de chèvre 60 g",
+      "Œufs x2",
+      "Soja cuisine 100 g"
+    ],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Faire suer le poireau émincé.",
+      "Mélanger les œufs, la crème soja, le saumon émietté, le poireau et le chèvre.",
+      "Verser sur la pâte et enfourner 30 min."
+    ]
+  },
+  {
+    "key": "one_pot_pasta_dinde",
+    "title": "One pot pasta dinde oignons caramélisés",
+    "triggers": [
+      "dinde"
+    ],
+    "protein": "dinde",
+    "carb": "pates",
+    "time_min": 25,
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 100 g",
+      "Tomate séchée 30 g",
+      "Sauce tomate 150 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Faire caraméliser les oignons émincés à feu doux 10 min.",
+      "Ajouter la dinde et les tomates séchées, faire revenir.",
+      "Verser les pâtes crues avec 400 ml d'eau et la sauce tomate.",
+      "Cuire à couvert 12 min en remuant."
+    ]
+  },
+  {
+    "key": "one_pot_pasta_boeuf",
+    "title": "One pot pasta bœuf oignons tomates séchées",
+    "triggers": [
+      "viande"
+    ],
+    "protein": "viande",
+    "carb": "pates",
+    "time_min": 25,
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 100 g",
+      "Tomate séchée 30 g",
+      "Sauce tomate 150 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Faire caraméliser les oignons 10 min.",
+      "Ajouter la viande hachée et les tomates séchées.",
+      "Verser les pâtes crues avec 400 ml d'eau et la sauce tomate.",
+      "Cuire à couvert 12 min en remuant."
+    ]
+  },
+  {
+    "key": "escalope_milanaise",
+    "title": "Escalope milanaise riz légumes",
+    "triggers": [
+      "poulet"
+    ],
+    "protein": "poulet",
+    "carb": "riz",
+    "time_min": 20,
+    "meal_type": "lunch",
+    "extra": [
+      "Œufs x1",
+      "Chapelure 30 g",
+      "Tomate 100 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Aplatir le filet de poulet.",
+      "Passer dans l'œuf battu puis la chapelure.",
+      "Dorer 4 min de chaque côté à la poêle.",
+      "Servir avec le riz et les tomates."
+    ]
+  },
+  {
+    "key": "galette_pdT_steak_haricots",
+    "title": "Galettes pomme de terre steak haricots verts",
+    "triggers": [
+      "viande"
+    ],
+    "protein": "viande",
+    "carb": "pomme_de_terre",
+    "time_min": 25,
+    "meal_type": "dinner",
+    "extra": [
+      "Œufs x1",
+      "Haricot vert 120 g",
+      "Oignon 50 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Râper les pommes de terre, mélanger avec l'œuf et l'oignon.",
+      "Former des galettes et dorer 4 min par face.",
+      "Cuire le steak séparément.",
+      "Servir avec les haricots verts vapeur."
+    ]
+  },
+  {
+    "key": "galette_pdT_epinard",
+    "title": "Galettes pomme de terre steak épinards",
+    "triggers": [
+      "viande"
+    ],
+    "protein": "viande",
+    "carb": "pomme_de_terre",
+    "time_min": 25,
+    "meal_type": "dinner",
+    "extra": [
+      "Œufs x1",
+      "Épinard 120 g",
+      "Oignon 50 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Râper les pommes de terre, mélanger avec l'œuf et l'oignon.",
+      "Former des galettes et dorer 4 min par face.",
+      "Cuire le steak et les épinards séparément.",
+      "Servir ensemble."
+    ]
+  },
+  {
+    "key": "boulettes_viande_riz",
+    "title": "Boulettes de viande riz légumes",
+    "triggers": [
+      "viande"
+    ],
+    "protein": "viande",
+    "carb": "riz",
+    "time_min": 30,
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 60 g",
+      "Sauce tomate 150 g",
+      "Carotte 100 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Mélanger la viande hachée avec l'oignon et les épices, former des boulettes.",
+      "Dorer les boulettes 5 min.",
+      "Ajouter la sauce tomate et les carottes, mijoter 15 min.",
+      "Servir avec le riz."
+    ]
+  },
+  {
+    "key": "falafel_patate_douce_feta",
+    "title": "Falafel patate douce feta épinards",
+    "triggers": [
+      "falafel"
+    ],
+    "protein": "falafel",
+    "carb": "patate_douce",
+    "time_min": 30,
+    "meal_type": "lunch",
+    "extra": [
+      "Feta 50 g",
+      "Épinard 100 g",
+      "Oignon 50 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Rôtir la patate douce en cubes 20 min à 200°C.",
+      "Réchauffer les falafels au four.",
+      "Faire sauter les épinards avec l'oignon.",
+      "Dresser : patate douce, falafels, épinards, feta émiettée."
+    ]
+  },
+  {
+    "key": "patate_douce_chili",
+    "title": "Patate douce garnie chili con carne",
+    "triggers": [
+      "viande"
+    ],
+    "protein": "viande",
+    "carb": "patate_douce",
+    "time_min": 40,
+    "meal_type": "dinner",
+    "extra": [
+      "Haricot rouge 120 g",
+      "Sauce tomate 150 g",
+      "Oignon 60 g",
+      "Huile d'olive 5 g"
+    ],
+    "steps": [
+      "Cuire les patates douces entières au four 35 min à 200°C.",
+      "Faire revenir l'oignon et la viande, ajouter sauce tomate, haricots et épices.",
+      "Mijoter 15 min.",
+      "Ouvrir les patates et garnir de chili."
+    ]
+  },
+  {
+    "key": "wrap_avocat_poulet",
+    "title": "Wrap avocat poulet crudités",
+    "triggers": [
+      "poulet"
+    ],
+    "protein": "poulet",
+    "carb": "wrap",
+    "time_min": 10,
+    "meal_type": "lunch",
+    "extra": [
+      "Avocat 80 g",
+      "Salade 50 g",
+      "Concombre 80 g",
+      "Tomate 80 g"
+    ],
+    "steps": [
+      "Émincer le poulet grillé.",
+      "Écraser l'avocat avec du citron.",
+      "Garnir le wrap : avocat, poulet, salade, concombre, tomate.",
+      "Rouler et couper en deux."
+    ]
+  },
+  {
+    "key": "gnocchis_poulet_cremeux",
+    "title": "Gnocchis crémeux poulet",
+    "triggers": [
+      "poulet"
+    ],
+    "protein": "poulet",
+    "carb": "pomme_de_terre",
+    "time_min": 20,
+    "meal_type": "dinner",
+    "extra": [
+      "Feta 60 g",
+      "Soja cuisine 100 g",
+      "Épinard 80 g",
+      "Huile d'olive 10 g"
+    ],
+    "steps": [
+      "Cuire les gnocchis à l'eau bouillante 3 min.",
+      "Faire revenir le poulet émincé, ajouter la crème soja et les épinards.",
+      "Mélanger avec les gnocchis.",
+      "Émietter la feta (ou stracciatella) dessus au moment de servir."
+    ]
+  },
+  {
+    "key": "bagel_egg_muffin",
+    "title": "Bagel egg muffin poulet chèvre",
+    "triggers": [
+      "oeufs"
+    ],
+    "protein": "oeufs",
+    "carb": "pain",
+    "time_min": 10,
+    "meal_type": "lunch",
+    "extra": [
+      "Poulet 60 g",
+      "Salade 30 g",
+      "Tomate 80 g",
+      "Fromage de chèvre 40 g"
+    ],
+    "steps": [
+      "Cuire un œuf au plat.",
+      "Toaster le pain.",
+      "Assembler : pain, poulet, œuf, salade, tomate, chèvre.",
+      "Servir immédiatement."
+    ]
+  },
+  {
+    "key": "one_pot_lasagne_viande",
+    "title": "One pot façon lasagne viande hachée",
+    "triggers": [
+      "viande"
+    ],
+    "protein": "viande",
+    "carb": "pates",
+    "time_min": 30,
+    "meal_type": "dinner",
+    "extra": [
+      "Oignon 80 g",
+      "Champignon 100 g",
+      "Carotte 100 g",
+      "Sauce tomate 200 g",
+      "Soja cuisine 100 g"
+    ],
+    "steps": [
+      "Faire revenir l'oignon, la carotte et les champignons.",
+      "Ajouter la viande hachée et la sauce tomate.",
+      "Verser les pâtes crues et 350 ml d'eau, cuire à couvert 12 min.",
+      "Ajouter la crème soja, mélanger et servir."
+    ]
+  },
+  {
+    "key": "bouille_legumes_poulet",
+    "title": "Bouille de légumes poulet",
+    "triggers": [
+      "poulet"
+    ],
+    "protein": "poulet",
+    "carb": "riz",
+    "time_min": 25,
+    "meal_type": "dinner",
+    "extra": [
+      "Carotte 100 g",
+      "Courgette 100 g",
+      "Oignon 60 g",
+      "Huile d'olive 5 g"
+    ],
+    "steps": [
+      "Couper tous les légumes en petits dés.",
+      "Faire revenir l'oignon, ajouter le poulet, les légumes et le riz.",
+      "Couvrir d'eau à hauteur, assaisonner et cuire 20 min à feu doux.",
+      "Servir en bouille crémeuse."
+    ]
+  },
+  {
+    "key": "cup_cookie_fruit",
+    "title": "Cup cookie beurre de cacahuète chocolat",
+    "triggers": [
+      "oeufs"
+    ],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 5,
+    "meal_type": "snack",
+    "extra": [
+      "Beurre de cacahuète 30 g",
+      "Chocolat noir 15 g",
+      "Amandes 10 g"
+    ],
+    "steps": [
+      "Mélanger dans un mug : avoine, beurre de cacahuète, œuf, 1 c. à s. de sirop d'agave.",
+      "Ajouter les pépites de chocolat.",
+      "Cuire 90 secondes au micro-ondes.",
+      "Laisser tiédir et déguster avec un fruit."
+    ]
+  },
+  {
+    "key": "cookie_pois_chiches",
+    "title": "Cookie healthy pois chiches chocolat",
+    "triggers": [
+      "pois_chiches"
+    ],
+    "protein": "pois_chiches",
+    "carb": "avoine",
+    "time_min": 20,
+    "meal_type": "snack",
+    "extra": [
+      "Beurre de cacahuète 40 g",
+      "Chocolat noir 30 g",
+      "Amandes 20 g"
+    ],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Mixer 250g de pois chiches égouttés, beurre de cacahuète, 1 c. à c. de levure, 1 c. à s. de miel.",
+      "Incorporer les pépites de chocolat.",
+      "Former des cookies et cuire 12-15 min."
+    ]
+  },
+  {
+    "key": "muffins_proteines_whey",
+    "title": "Muffins protéinés whey compote chocolat",
+    "triggers": [
+      "oeufs"
+    ],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 25,
+    "meal_type": "snack",
+    "extra": [
+      "Whey 40 g",
+      "Compote 120 g",
+      "Chocolat noir 25 g"
+    ],
+    "steps": [
+      "Préchauffer le four à 170°C.",
+      "Mélanger les œufs, la compote, la whey et 2 c. à s. d'huile de coco fondue.",
+      "Incorporer l'avoine, 1 c. à c. de levure et les pépites de chocolat.",
+      "Cuire 18 min dans des moules à muffins."
+    ]
+  },
+  {
+    "key": "cup_cookie_amande",
+    "title": "Cup cookie beurre d'amande avoine chocolat",
+    "triggers": [
+      "amandes"
+    ],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 5,
+    "meal_type": "snack",
+    "extra": [
+      "Amandes 25 g",
+      "Chocolat noir 20 g"
+    ],
+    "steps": [
+      "Mélanger dans un mug : avoine, 35g de beurre d'amande, 1 c. à s. de sirop d'agave, 1 œuf.",
+      "Ajouter les pépites de chocolat et les amandes concassées.",
+      "Cuire 90 secondes au micro-ondes.",
+      "Laisser tiédir avant de déguster."
+    ]
+  },
+  {
+    "key": "barre_healthy_avoine_coco",
+    "title": "Barre healthy avoine noix de coco chocolat",
+    "triggers": [
+      "amandes"
+    ],
+    "protein": "oeufs",
+    "carb": "avoine",
+    "time_min": 20,
+    "meal_type": "snack",
+    "extra": [
+      "Compote 100 g",
+      "Noix 20 g",
+      "Amandes 20 g",
+      "Chocolat noir 30 g"
+    ],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Mélanger avoine, compote, huile de coco fondue, sirop ou miel, noix de coco râpée.",
+      "Incorporer les noix, amandes et pépites de chocolat.",
+      "Étaler dans un plat huilé, cuire 15 min, couper en barres et laisser refroidir."
+    ]
+  },
+  {
+    "key": "gateau_fromage_blanc_proteine",
+    "title": "Gâteau fromage blanc protéiné",
+    "triggers": [
+      "fromage_blanc"
+    ],
+    "protein": "fromage_blanc",
+    "carb": "avoine",
+    "time_min": 35,
+    "meal_type": "snack",
+    "extra": [
+      "Whey 30 g",
+      "Œufs x2",
+      "Citron 1"
+    ],
+    "steps": [
+      "Préchauffer le four à 160°C.",
+      "Mixer 500g de fromage blanc, 2 œufs, la whey, le zeste de citron et 1 c. à s. de miel.",
+      "Verser dans un moule et cuire 30-35 min.",
+      "Laisser refroidir avant de démouler."
+    ]
+  },
+  {
+    "key": "gaufres_healthy_proteinees",
+    "title": "Gaufres healthy protéinées",
+    "triggers": [
+      "fromage_blanc"
+    ],
+    "protein": "fromage_blanc",
+    "carb": "avoine",
+    "time_min": 15,
+    "meal_type": "snack",
+    "extra": [
+      "Whey 25 g",
+      "Œufs x2",
+      "Amandes 15 g"
+    ],
+    "steps": [
+      "Mixer ensemble : fromage blanc, œufs, whey, avoine et une pincée de levure.",
+      "Laisser reposer 5 min.",
+      "Cuire dans le gaufrier 4-5 min.",
+      "Servir avec des fruits frais ou de la compote."
+    ]
+  },
+  {
+    "key": "gateau_banane_healthy",
+    "title": "Gâteau banane healthy avoine",
+    "triggers": [
+      "fromage_blanc"
+    ],
+    "protein": "fromage_blanc",
+    "carb": "avoine",
+    "time_min": 35,
+    "meal_type": "snack",
+    "extra": [
+      "Œufs x2",
+      "Noix 25 g",
+      "Amandes 15 g",
+      "Chocolat noir 20 g"
+    ],
+    "steps": [
+      "Préchauffer le four à 175°C.",
+      "Écraser 3 bananes mûres, mélanger avec les œufs et le fromage blanc.",
+      "Incorporer l'avoine, 1 c. à c. de levure, les noix et amandes.",
+      "Cuire 30 min à 175°C."
+    ]
+  },
+  {
+    "key": "brownie_proteine_chocolat",
+    "title": "Brownie protéiné chocolat cacahuète",
+    "triggers": [
+      "fromage_blanc"
+    ],
+    "protein": "fromage_blanc",
+    "carb": "avoine",
+    "time_min": 25,
+    "meal_type": "snack",
+    "extra": [
+      "Chocolat noir 60 g",
+      "Whey 30 g",
+      "Œufs x2",
+      "Beurre de cacahuète 40 g"
+    ],
+    "steps": [
+      "Préchauffer le four à 170°C.",
+      "Faire fondre le chocolat, mélanger avec le beurre de cacahuète.",
+      "Ajouter les œufs, le fromage blanc, la whey et l'avoine.",
+      "Verser dans un moule et cuire 18-20 min (cœur fondant)."
     ]
   }
 ]
