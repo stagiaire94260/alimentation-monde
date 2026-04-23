@@ -3078,5 +3078,152 @@
     "carbs": 15,
     "protein": 6,
     "fat": 5
+  },
+  {
+    "name": "Skyr",
+    "cal": 60,
+    "protein": 10,
+    "carbs": 3.5,
+    "fat": 0.2
+  },
+  {
+    "name": "Yaourt soja",
+    "cal": 65,
+    "protein": 3.8,
+    "carbs": 6.5,
+    "fat": 1.9
+  },
+  {
+    "name": "Seitan",
+    "cal": 130,
+    "protein": 25,
+    "carbs": 5,
+    "fat": 2
+  },
+  {
+    "name": "Dorade",
+    "cal": 128,
+    "protein": 23,
+    "carbs": 0,
+    "fat": 4
+  },
+  {
+    "name": "Poisson blanc",
+    "cal": 120,
+    "protein": 24,
+    "carbs": 0,
+    "fat": 2
+  },
+  {
+    "name": "Gruyère",
+    "cal": 413,
+    "protein": 29,
+    "carbs": 0,
+    "fat": 32
+  },
+  {
+    "name": "Parmesan",
+    "cal": 392,
+    "protein": 36,
+    "carbs": 0,
+    "fat": 26
+  },
+  {
+    "name": "Jambon",
+    "cal": 145,
+    "protein": 20,
+    "carbs": 1,
+    "fat": 7
+  },
+  {
+    "name": "Crème soja",
+    "cal": 185,
+    "protein": 1.5,
+    "carbs": 3,
+    "fat": 19
+  },
+  {
+    "name": "Riz jasmin",
+    "cal": 360,
+    "protein": 6.5,
+    "carbs": 80,
+    "fat": 0.5
+  },
+  {
+    "name": "Semoule",
+    "cal": 360,
+    "protein": 12,
+    "carbs": 73,
+    "fat": 1
+  },
+  {
+    "name": "Nouilles riz",
+    "cal": 364,
+    "protein": 6,
+    "carbs": 80,
+    "fat": 0.6
+  },
+  {
+    "name": "Boulgour",
+    "cal": 342,
+    "protein": 12,
+    "carbs": 68,
+    "fat": 1.3
+  },
+  {
+    "name": "Pâte quiche",
+    "cal": 280,
+    "protein": 7,
+    "carbs": 45,
+    "fat": 7
+  },
+  {
+    "name": "Chapelure",
+    "cal": 395,
+    "protein": 11,
+    "carbs": 73,
+    "fat": 4
+  },
+  {
+    "name": "Harissa",
+    "cal": 55,
+    "protein": 2,
+    "carbs": 7,
+    "fat": 2
+  },
+  {
+    "name": "Chocolat noir",
+    "cal": 546,
+    "protein": 5,
+    "carbs": 60,
+    "fat": 31
+  },
+  {
+    "name": "Moutarde",
+    "cal": 67,
+    "protein": 4,
+    "carbs": 5,
+    "fat": 3.5
+  },
+  {
+    "name": "Cumin",
+    "cal": 375,
+    "protein": 18,
+    "carbs": 44,
+    "fat": 22
+  },
+  {
+    "name": "Haricot blanc",
+    "cal": 127,
+    "protein": 9,
+    "carbs": 22,
+    "fat": 0.5
+  },
+  {
+    "name": "Aubergine",
+    "cal": 25,
+    "protein": 1,
+    "carbs": 6,
+    "fat": 0.2
   }
 ]
