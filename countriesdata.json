@@ -1,748 +1,560 @@
 {
+
   "Amérique": {
+
     "Martinique": {
-      "coords": [14.6415, -61.0242],
-      "feculents": "Riz + pois (haricots rouges, pois d’angole, lentilles), banane plantain, igname, dachine",
-      "proteines": "Poulet, porc, poisson, cabri, morue, fruits de mer",
-      "legumes": "Cristophine, igname, chouchou, haricots verts, giraumon",
-      "fruits": "Banane, avocat, mangue, avocat, ti-nain, goyave",
-      "plats": [
-       {"jour":"Lundi","petitdej":{"plat":"Flocons d’avoine aux bananes et mangue","alt":"Omelette + banane + papaye + avocat"},"dej":{"plat":"Colombo de poulet + riz blanc + giraumon sauté","alt":"Colombo de poulet au four + riz blanc + giraumon vapeur"},"collation":{"plat":"Smoothie banane-papaye","alt":"Smoothie : banane + papaye + yaourt nature + noix + whey"},"diner":{"plat":"Poisson grillé + riz blanc + haricot rouge + ti-nain","alt":"Poisson vapeur + riz blanc + haricot rouge + christophine vapeur"}},
-       {"jour":"Mardi","petitdej":{"plat":"Pain coco","alt":"Pain coco + œuf brouillé + mangue + avocat"},"dej":{"plat":"Poulet boucané + riz blanc + haricot rouge + chouchou sauté","alt":"Poulet boucané + riz blanc + lentilles + chouchou vapeur"},"collation":{"plat":"Fruits tropicaux frais","alt":"Mangue + amandes + fromage blanc"},"diner":{"plat":"Ti-nain morue + dachine + giraumon","alt":"Morue + dachine + giraumon vapeur + patate douce"}},
-       {"jour":"Mercredi","petitdej":{"plat":"Bannann péyi + avocat","alt":"Smoothie bowl : banane + papaye + flocons d’avoine + yaourt + avocat"},"dej":{"plat":"Cabri massalé + riz blanc + légumes sautés","alt":"Cabri au four + riz blanc + pois d'angoles + légumes vapeur"},"collation":{"plat":"Beignet de banane","alt":"Whey + fromage blanc + fruits"},"diner":{"plat":"Soupe de giraumon + dachine","alt":"Soupe de giraumon + patate douce + poisson ou poulet"}},
-       {"jour":"Jeudi","petitdej":{"plat":"Crêpe + fruits","alt":"Pancakes avoine + banane + avocat"},"dej":{"plat":"Chiquetaille de morue + riz blanc + chouchou","alt":"Morue vapeur + riz blanc + légumes vapeur"},"collation":{"plat":"Noix de cajou + fruits","alt":"Smoothie protéiné : yaourt protéines + banane + noix locales"},"diner":{"plat":"Lambi en sauce + riz blanc + giraumon","alt":"Lambi grillé + riz blanc + haricot + légumes vapeur"}},
-       {"jour":"Vendredi","petitdej":{"plat":"Pain perdu local","alt":"Porridge avoine + banane + avocat + oeufs"},"dej":{"plat":"Colombo de porc + riz blanc + légumes sautés","alt":"Colombo de porc + riz blanc + légumes vapeur"},"collation":{"plat":"Fruits confits","alt":"Mangue ou papaye + noix + fromage blanc + whey"},"diner":{"plat":"Blaff de poisson + dachine","alt":"Poisson vapeur + patate douce + chouchou vapeur"}},
-       {"jour":"Samedi","petitdej":{"plat":"Pain coco + œuf brouillé + banane ou papaye + avocat","alt":"Porridge avoine + yaourt nature + banane + avocat + noix + oeufs"},"dej":{"plat":"Grillade mixte + légumes","alt":"Grillade poulet + poisson + riz blanc + légumes vapeur"},"collation":{"plat":"Bananes séchées","alt":"Smoothie : banane + papaye + yaourt + flocons d’avoine"},"diner":{"plat":"Ragoût de poisson + riz blanc","alt":"Poisson vapeur + riz blanc + légumes vapeur"}},
-       {"jour":"Dimanche","petitdej":{"plat":"Tartine confiture locale","alt":"Porridge avoine + fruits tropicaux + avocat"},"dej":{"plat":"Colombo végétarien + riz blanc + giraumon","alt":"Colombo légumes + riz blanc + protéines végétales locales (tofu ou haricots)"},"collation":{"plat":"Fruits frais","alt":"Noix locales + fruit frais"},"diner":{"plat":"Soupe traditionnelle + dachine","alt":"Soupe légumes + poulet ou poisson + patate douce"}}
-      ]
+  "coords": [14.6415, -61.0242],
+  "recettes": [
+    {
+      "id": "colombo-poulet-mq",
+      "nom": "Colombo de Poulet",
+      "repas": "dej",
+      "temps": 55,
+      "difficulte": "facile",
+      "emoji": "🍛",
+      "description": "Le plat signature de la cuisine martiniquaise : du poulet mijoté dans des épices colombo, avec des légumes fondants et une sauce parfumée.",
+      "ingredients": [
+        { "nom": "Poulet en morceaux", "qty": "1 kg" },
+        { "nom": "Poudre à colombo", "qty": "3 c. à soupe" },
+        { "nom": "Pommes de terre", "qty": "3" },
+        { "nom": "Courgettes", "qty": "2" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "3 gousses" },
+        { "nom": "Citron vert", "qty": "1" },
+        { "nom": "Thym", "qty": "2 branches" },
+        { "nom": "Huile", "qty": "2 c. à soupe" },
+        { "nom": "Sel, poivre, piment", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Mariner le poulet avec le citron vert, l’ail, le sel, le poivre et une partie du colombo pendant 30 min.",
+        "Faire revenir l’oignon dans l’huile, puis ajouter le poulet et le faire dorer sur toutes les faces.",
+        "Ajouter les pommes de terre, les courgettes, le thym et le reste du colombo.",
+        "Couvrir avec un peu d’eau, mélanger et laisser mijoter à feu doux pendant 30 à 35 min.",
+        "Rectifier l’assaisonnement et servir avec du riz blanc ou des légumes pays."
+      ],
+      "valeurs": {
+        "calories": 420,
+        "proteines": 38,
+        "glucides": 28,
+        "lipides": 14
+      },
+      "tags": ["traditionnel", "épicé", "familial"]
     },
+    {
+      "id": "blaff-poisson-mq",
+      "nom": "Blaff de Poisson",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🐟",
+      "description": "Un poisson poché dans un court-bouillon citronné, parfumé aux herbes, à l’ail et au piment végétarien. Léger, simple et très martiniquais.",
+      "ingredients": [
+        { "nom": "Vivaneau ou dorade", "qty": "800 g" },
+        { "nom": "Citron vert", "qty": "2" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Ail", "qty": "4 gousses" },
+        { "nom": "Thym frais", "qty": "4 branches" },
+        { "nom": "Laurier", "qty": "2 feuilles" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Cives ou ciboulette", "qty": "1 petite botte" },
+        { "nom": "Sel", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Mariner le poisson avec du citron vert, de l’ail, du sel et un peu de cives pendant 20 min.",
+        "Dans une casserole, porter de l’eau à ébullition avec l’oignon, le thym, le laurier et le piment végétarien.",
+        "Ajouter le poisson dans le court-bouillon.",
+        "Laisser cuire 10 à 15 min selon l’épaisseur du poisson.",
+        "Servir chaud avec du riz blanc, du ti-nain ou des légumes vapeur."
+      ],
+      "valeurs": {
+        "calories": 280,
+        "proteines": 42,
+        "glucides": 8,
+        "lipides": 9
+      },
+      "tags": ["léger", "traditionnel", "rapide"]
+    },
+    {
+      "id": "accras-morue-mq",
+      "nom": "Accras de Morue",
+      "repas": "collation",
+      "temps": 40,
+      "difficulte": "moyen",
+      "emoji": "🫓",
+      "description": "Des petits beignets croustillants à la morue, parfumés aux herbes, à l’ail et au piment. La collation antillaise qui met tout le monde d’accord.",
+      "ingredients": [
+        { "nom": "Morue dessalée", "qty": "300 g" },
+        { "nom": "Farine", "qty": "200 g" },
+        { "nom": "Œufs", "qty": "2" },
+        { "nom": "Lait ou eau", "qty": "150 ml" },
+        { "nom": "Cives ou ciboulette", "qty": "1 botte" },
+        { "nom": "Ail", "qty": "2 gousses" },
+        { "nom": "Piment", "qty": "selon goût" },
+        { "nom": "Levure chimique", "qty": "1 c. à café" },
+        { "nom": "Huile de friture", "qty": "selon besoin" }
+      ],
+      "etapes": [
+        "Faire cuire la morue dessalée quelques minutes dans l’eau, puis l’égoutter et l’effilocher.",
+        "Mélanger la farine, la levure, les œufs et le lait jusqu’à obtenir une pâte épaisse.",
+        "Ajouter la morue, l’ail haché, les cives et le piment.",
+        "Laisser reposer la pâte 10 à 15 min.",
+        "Faire frire de petites cuillerées de pâte dans l’huile chaude jusqu’à ce qu’elles soient dorées.",
+        "Égoutter sur du papier absorbant et servir chaud."
+      ],
+      "valeurs": {
+        "calories": 320,
+        "proteines": 22,
+        "glucides": 35,
+        "lipides": 10
+      },
+      "tags": ["apéritif", "frit", "traditionnel"]
+    },
+    {
+      "id": "ti-nain-morue-mq",
+      "nom": "Ti-Nain Morue",
+      "repas": "diner",
+      "temps": 35,
+      "difficulte": "facile",
+      "emoji": "🍌",
+      "description": "Un classique martiniquais simple et nourrissant : bananes vertes, morue, aromates et citron vert. Un plat du quotidien, efficace et plein de goût.",
+      "ingredients": [
+        { "nom": "Bananes vertes", "qty": "4" },
+        { "nom": "Morue dessalée", "qty": "400 g" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "3 gousses" },
+        { "nom": "Citron vert", "qty": "1" },
+        { "nom": "Huile", "qty": "2 c. à soupe" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Ciboulette", "qty": "1/2 botte" }
+      ],
+      "etapes": [
+        "Faire dessaler la morue si besoin, puis la cuire rapidement à l’eau et l’effilocher.",
+        "Cuire les bananes vertes dans une casserole d’eau salée pendant environ 20 min.",
+        "Faire revenir l’oignon, l’ail et le piment végétarien dans l’huile.",
+        "Ajouter la morue effilochée et mélanger quelques minutes.",
+        "Servir la morue sur les bananes vertes avec du citron vert et de la ciboulette."
+      ],
+      "valeurs": {
+        "calories": 360,
+        "proteines": 30,
+        "glucides": 45,
+        "lipides": 7
+      },
+      "tags": ["simple", "traditionnel", "sans gluten"]
+    },
+    {
+      "id": "poulet-boucane-mq",
+      "nom": "Poulet Boucané",
+      "repas": "dej",
+      "temps": 50,
+      "difficulte": "facile",
+      "emoji": "🍗",
+      "description": "Du poulet mariné puis grillé ou fumé, avec une peau dorée et une chair parfumée. Une recette solaire, parfaite avec du riz, des pois ou des légumes pays.",
+      "ingredients": [
+        { "nom": "Cuisses de poulet", "qty": "4" },
+        { "nom": "Citron vert", "qty": "2" },
+        { "nom": "Ail", "qty": "4 gousses" },
+        { "nom": "Cives", "qty": "1 botte" },
+        { "nom": "Thym", "qty": "3 branches" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Huile", "qty": "2 c. à soupe" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Préparer une marinade avec le citron vert, l’ail, les cives, le thym, le piment végétarien, le sel, le poivre et l’huile.",
+        "Badigeonner le poulet avec la marinade et laisser reposer au moins 1 h.",
+        "Cuire le poulet au barbecue, au four ou à la poêle-grill jusqu’à ce qu’il soit bien doré.",
+        "Arroser régulièrement avec la marinade pendant la cuisson.",
+        "Servir avec du riz, des haricots rouges ou une salade de crudités."
+      ],
+      "valeurs": {
+        "calories": 390,
+        "proteines": 42,
+        "glucides": 4,
+        "lipides": 22
+      },
+      "tags": ["grillé", "parfumé", "familial"]
+    },
+    {
+      "id": "chiquetaille-morue-mq",
+      "nom": "Chiquetaille de Morue",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🥗",
+      "description": "Une préparation froide ou tiède à base de morue effilochée, citron vert, cives et piment. Frais, salé, parfumé, parfait avec du pain, du riz ou des légumes pays.",
+      "ingredients": [
+        { "nom": "Morue dessalée", "qty": "400 g" },
+        { "nom": "Citron vert", "qty": "2" },
+        { "nom": "Oignon rouge", "qty": "1" },
+        { "nom": "Cives", "qty": "1 botte" },
+        { "nom": "Ail", "qty": "2 gousses" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Huile", "qty": "2 c. à soupe" },
+        { "nom": "Poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire cuire la morue dessalée quelques minutes, puis l’égoutter.",
+        "Effilocher finement la morue à la fourchette.",
+        "Ajouter l’oignon rouge émincé, les cives, l’ail, le piment végétarien et le poivre.",
+        "Arroser de jus de citron vert et d’un filet d’huile.",
+        "Mélanger et laisser reposer quelques minutes avant de servir."
+      ],
+      "valeurs": {
+        "calories": 260,
+        "proteines": 36,
+        "glucides": 5,
+        "lipides": 11
+      },
+      "tags": ["frais", "rapide", "protéiné"]
+    },
+    {
+      "id": "soupe-giraumon-mq",
+      "nom": "Soupe de Giraumon",
+      "repas": "diner",
+      "temps": 45,
+      "difficulte": "facile",
+      "emoji": "🎃",
+      "description": "Une soupe douce et réconfortante à base de giraumon, de légumes pays et d’aromates. Simple, chaude, nourrissante, parfaite le soir.",
+      "ingredients": [
+        { "nom": "Giraumon", "qty": "800 g" },
+        { "nom": "Carotte", "qty": "2" },
+        { "nom": "Pomme de terre", "qty": "2" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "2 gousses" },
+        { "nom": "Thym", "qty": "2 branches" },
+        { "nom": "Bouillon", "qty": "800 ml" },
+        { "nom": "Crème ou lait de coco", "qty": "optionnel" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Éplucher et couper le giraumon, les carottes et les pommes de terre.",
+        "Faire revenir l’oignon et l’ail dans une casserole.",
+        "Ajouter les légumes, le thym et le bouillon.",
+        "Laisser cuire environ 25 min jusqu’à ce que les légumes soient tendres.",
+        "Mixer la soupe jusqu’à obtenir une texture veloutée.",
+        "Ajuster l’assaisonnement et ajouter un peu de crème ou de lait de coco si souhaité."
+      ],
+      "valeurs": {
+        "calories": 190,
+        "proteines": 5,
+        "glucides": 34,
+        "lipides": 5
+      },
+      "tags": ["léger", "réconfortant", "végétarien"]
+    },
+    {
+      "id": "lambi-sauce-mq",
+      "nom": "Lambi en Sauce",
+      "repas": "dej",
+      "temps": 70,
+      "difficulte": "moyen",
+      "emoji": "🐚",
+      "description": "Un plat généreux à base de lambi mijoté dans une sauce tomate parfumée aux aromates antillais. Un vrai plat de fête, intense et savoureux.",
+      "ingredients": [
+        { "nom": "Lambi nettoyé", "qty": "800 g" },
+        { "nom": "Tomates", "qty": "3" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "4 gousses" },
+        { "nom": "Citron vert", "qty": "1" },
+        { "nom": "Cives", "qty": "1 botte" },
+        { "nom": "Thym", "qty": "3 branches" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Huile", "qty": "2 c. à soupe" }
+      ],
+      "etapes": [
+        "Attendrir le lambi puis le couper en morceaux.",
+        "Le mariner avec citron vert, ail, cives, thym et poivre.",
+        "Faire revenir l’oignon et les tomates dans l’huile.",
+        "Ajouter le lambi et le piment végétarien.",
+        "Couvrir avec un peu d’eau et laisser mijoter jusqu’à ce que le lambi soit tendre.",
+        "Servir avec du riz blanc ou des légumes pays."
+      ],
+      "valeurs": {
+        "calories": 340,
+        "proteines": 44,
+        "glucides": 12,
+        "lipides": 12
+      },
+      "tags": ["fête", "protéiné", "mijoté"]
+    }
     "Guadeloupe": {
-      "coords": [16.2650, -61.5510],
-      "feculents": "Riz + pois (haricots rouges, pois d’angole, lentilles), banane plantain, igname, poyo, madère",
-      "proteines": "Poulet, cabri, morue, ouassous (crevettes d’eau douce), fruits de mer",
-      "legumes": "Christophine, giraumon, chouchou, haricots verts, salade, aubergine, piment végétarien",
-      "fruits": "Banane, avocat, mangue, papaye, goyave, corossol, fruit de la passion",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Flocons d’avoine aux bananes et mangue","alt":"Omelette + banane + papaye + avocat"},"dej":{"plat":"Colombo de poulet + riz blanc + giraumon sauté","alt":"Colombo de poulet au four + riz blanc + haricot + giraumon vapeur"},"collation":{"plat":"Smoothie banane-papaye","alt":"Smoothie : banane + papaye + yaourt nature + noix + whey"},"diner":{"plat":"Poisson grillé + riz blanc + haricot rouge + poyo","alt":"Poisson vapeur + riz blanc + haricot rouge + christophine vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain coco","alt":"Pain coco + œuf brouillé + mangue + avocat"},"dej":{"plat":"Poulet boucané + riz blanc + haricot rouge + chouchou sauté","alt":"Poulet boucané au four + riz blanc + lentilles + chouchou vapeur"},"collation":{"plat":"Fruits tropicaux frais","alt":"Mangue + amandes + fromage blanc"},"diner":{"plat":"Poyo morue + madère + giraumon","alt":"Morue + madère + giraumon vapeur + patate douce"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Bannann péyi + avocat","alt":"Smoothie bowl : banane + papaye + flocons d’avoine + yaourt + avocat"},"dej":{"plat":"Cabri massalé + riz blanc + légumes sautés","alt":"Cabri au four + riz blanc + pois d'angole + légumes vapeur"},"collation":{"plat":"Beignet de banane","alt":"Whey + fromage blanc + fruits"},"diner":{"plat":"Soupe de giraumon + madère","alt":"Soupe de giraumon + patate douce + poisson ou poulet"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Crêpe + fruits","alt":"Pancakes avoine + banane + avocat"},"dej":{"plat":"Chiquetaille de morue + riz blanc + chouchou","alt":"Morue vapeur + riz blanc + légumes vapeur"},"collation":{"plat":"Noix de cajou + fruits","alt":"Smoothie protéiné : yaourt protéines + banane + noix locales"},"diner":{"plat":"Lambi en sauce + riz blanc + giraumon","alt":"Lambi grillé + riz blanc + haricot + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pain perdu local","alt":"Porridge avoine + banane + avocat + oeufs"},"dej":{"plat":"Colombo de porc + riz blanc + légumes sautés","alt":"Colombo de porc + riz blanc + légumes vapeur"},"collation":{"plat":"Fruits confits","alt":"Mangue ou papaye + noix + fromage blanc + whey"},"diner":{"plat":"Blaff de poisson + madère","alt":"Poisson vapeur + patate douce + chouchou vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Pain coco + œuf brouillé + banane ou papaye + avocat","alt":"Porridge avoine + yaourt nature + banane + avocat + noix + oeufs"},"dej":{"plat":"Grillade mixte + légumes","alt":"Grillade poulet + poisson + riz blanc + légumes vapeur"},"collation":{"plat":"Bananes séchées","alt":"Smoothie : banane + papaye + yaourt + flocons d’avoine"},"diner":{"plat":"Ragoût de poisson + riz blanc","alt":"Poisson vapeur + riz blanc + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Tartine confiture locale","alt":"Porridge avoine + fruits tropicaux + avocat"},"dej":{"plat":"Colombo végétarien + riz blanc + giraumon","alt":"Colombo légumes + riz blanc + protéines végétales locales (tofu ou haricots)"},"collation":{"plat":"Fruits frais","alt":"Noix locales + fruit frais"},"diner":{"plat":"Soupe traditionnelle + madère","alt":"Soupe légumes + poulet ou poisson + patate douce"}}
-      ]
+  "coords": [16.2650, -61.5510],
+  "recettes": [
+    {
+      "id": "colombo-poulet-gp",
+      "nom": "Colombo de Poulet",
+      "repas": "dej",
+      "temps": 55,
+      "difficulte": "facile",
+      "emoji": "🍛",
+      "description": "Un grand classique guadeloupéen : du poulet mijoté avec des épices colombo, des légumes pays et une sauce bien parfumée.",
+      "ingredients": [
+        { "nom": "Poulet en morceaux", "qty": "1 kg" },
+        { "nom": "Poudre à colombo", "qty": "3 c. à soupe" },
+        { "nom": "Pommes de terre", "qty": "3" },
+        { "nom": "Courgette", "qty": "1" },
+        { "nom": "Aubergine", "qty": "1" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "3 gousses" },
+        { "nom": "Citron vert", "qty": "1" },
+        { "nom": "Thym", "qty": "2 branches" },
+        { "nom": "Huile", "qty": "2 c. à soupe" },
+        { "nom": "Sel, poivre, piment", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Mariner le poulet avec le citron vert, l’ail, le sel, le poivre et une partie des épices colombo pendant 30 min.",
+        "Faire revenir l’oignon dans l’huile, puis ajouter le poulet et le faire dorer.",
+        "Ajouter les pommes de terre, la courgette, l’aubergine, le thym et le reste du colombo.",
+        "Verser un peu d’eau, couvrir et laisser mijoter 30 à 35 min.",
+        "Servir avec du riz blanc, des pois ou des légumes vapeur."
+      ],
+      "valeurs": {
+        "calories": 430,
+        "proteines": 38,
+        "glucides": 30,
+        "lipides": 15
+      },
+      "tags": ["traditionnel", "épicé", "familial"]
     },
-    "Guyane": {
-      "coords": [4.8604, -52.3350],
-      "feculents": "Riz, couac, banane plantain, igname, patate douce, manioc, riz citrouille",
-      "proteines": "Poulet boucané, bœuf, poisson (acoupa, machoiran jaune), crevettes, œufs",
-      "legumes": "Christophine, chou chinois, carottes, tomates, oignons, gombo (kalou), poivrons, haricots rouges",
-      "fruits": "Goyave, papaye, ananas, mangue, avocat, banane, corossol",
-      "plats": [
-       {"jour":"Lundi","petitdej":{"plat":"Pain au beurre + jus de goyave","alt":"Pain complet + fromage frais + jus naturel"},"dej":{"plat":"Poulet boucané + riz + christophine","alt":"Poulet boucané allégé + riz nature + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Smoothie ananas + yaourt"},"diner":{"plat":"Blaff d’acoupa + banane plantain","alt":"Poisson vapeur + plantain grillé + légumes verts"}},
-       {"jour":"Mardi","petitdej":{"plat":"Couac + lait + banane","alt":"Couac + lait végétal + fruits tropicaux"},"dej":{"plat":"Pimentade de machoiran jaune + riz citrouille","alt":"Pimentade légère + riz nature + salade de chou chinois"},"collation":{"plat":"Papaye","alt":"Yaourt nature + papaye"},"diner":{"plat":"Kalou (gombo) + riz","alt":"Kalou allégé + riz + poisson grillé"}},
-       {"jour":"Mercredi","petitdej":{"plat":"Pain au beurre + café local","alt":"Pain complet + yaourt + fruits"},"dej":{"plat":"Poisson salé sauce chien + igname","alt":"Poisson grillé + igname vapeur + légumes sautés"},"collation":{"plat":"Mangue","alt":"Smoothie mangue + yaourt"},"diner":{"plat":"Bœuf chou chinois","alt":"Bœuf sauté léger + chou vapeur + riz portionné"}},
-       {"jour":"Jeudi","petitdej":{"plat":"Bouillie de manioc + fruits","alt":"Porridge + fruits frais"},"dej":{"plat":"Bami au poulet)","alt":"Bami version légère (moins d’huile + plus de légumes)"},"collation":{"plat":"Fruits tropicaux","alt":"Noix + fruits"},"diner":{"plat":"Pimentade de poisson + riz","alt":"Poisson vapeur + riz + légumes grillés"}},
-       {"jour":"Vendredi","petitdej":{"plat":"Pain + confiture locale (goyave, corossol)","alt":"Pain complet + confiture sans sucre + fruits"},"dej":{"plat":"Crevettes sauce coco + riz","alt":"Crevettes grillées + riz vapeur + légumes verts"},"collation":{"plat":"Ananas","alt":"Smoothie ananas + yaourt"},"diner":{"plat":"Poulet boucané + patate douce","alt":"Poulet boucané + patate douce vapeur + salade"}},
-       {"jour":"Samedi","petitdej":{"plat":"Couac + lait + fruits tropicaux","alt":"Couac + yaourt nature + fruits frais"},"dej":{"plat":"Blaff de poisson + plantain","alt":"Poisson vapeur + plantain grillé + légumes verts"},"collation":{"plat":"Goyave","alt":"Smoothie goyave + yaourt"},"diner":{"plat":"Riz créole + légumes","alt":"Riz nature + légumes vapeur + poisson grillé"}},
-       {"jour":"Dimanche","petitdej":{"plat":"Pain au beurre + jus local","alt":"Pain complet + fromage frais + jus naturel"},"dej":{"plat":"Kalou (plat complet à base de gombo)","alt":"Kalou allégé + riz nature + poisson grillé"},"collation":{"plat":"Papaye","alt":"Yaourt + fruits tropicaux"},"diner":{"plat":"Pimentade de poisson + haricots rouges","alt":"Pimentade légère + riz portionné + légumes verts"}}
-      ]
+    {
+      "id": "matete-crabe-gp",
+      "nom": "Matété de Crabe",
+      "repas": "dej",
+      "temps": 70,
+      "difficulte": "moyen",
+      "emoji": "🦀",
+      "description": "Un plat emblématique de Guadeloupe, souvent préparé à Pâques : du crabe mijoté avec du riz, des épices et des aromates.",
+      "ingredients": [
+        { "nom": "Crabes nettoyés", "qty": "4" },
+        { "nom": "Riz", "qty": "400 g" },
+        { "nom": "Tomates", "qty": "3" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "4 gousses" },
+        { "nom": "Cives", "qty": "1 botte" },
+        { "nom": "Thym", "qty": "3 branches" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Poudre à colombo", "qty": "1 c. à café" },
+        { "nom": "Huile", "qty": "2 c. à soupe" }
+      ],
+      "etapes": [
+        "Nettoyer les crabes et les couper en morceaux.",
+        "Faire revenir l’oignon, l’ail, les cives et les tomates dans l’huile.",
+        "Ajouter les crabes, le thym, le piment végétarien et le colombo.",
+        "Verser de l’eau et laisser mijoter environ 20 min.",
+        "Ajouter le riz lavé et laisser cuire jusqu’à absorption du liquide.",
+        "Mélanger délicatement et servir chaud."
+      ],
+      "valeurs": {
+        "calories": 480,
+        "proteines": 32,
+        "glucides": 65,
+        "lipides": 8
+      },
+      "tags": ["fête", "traditionnel", "riz"]
     },
-    "Brésil": {
-      "coords": [-14.2350, -51.9253],
-      "feculents": "Riz, haricots noirs (feijão), manioc (aipim/macaxeira), maïs, couac (farine de manioc), pommes de terre, igname",
-      "proteines": "Porc, bœuf, poulet, poisson, crevettes, cabri, tofu",
-      "legumes": "Chou frisé, tomates, oignons, ail, poivrons, courges, manioc",
-      "fruits": "Açaï, mangue, papaye, goyave, ananas, orange, maracuja (fruit de la passion)",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Pão de queijo","alt":"Omelette + banane + papaye + avocat"},"dej":{"plat":"Feijoada (haricots noirs + porc) + riz","alt":"Feijoada + riz blanc + légumes vapeur"},"collation":{"plat":"Fruits tropicaux frais","alt":"Mangue + papaye + noix + fromage blanc"},"diner":{"plat":"Moqueca de poisson + riz","alt":"Poisson vapeur + riz + légumes vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Cuscuz de milho","alt":"Porridge avoine + fruits"},"dej":{"plat":"Poulet rôti + manioc + haricots noirs","alt":"Poulet grillé + manioc vapeur + haricots noirs"},"collation":{"plat":"Smoothie à l’açaï","alt":"Yaourt + açaï + banane + noix"},"diner":{"plat":"Bobó de crevettes + riz","alt":"Crevettes vapeur + riz + courge vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Pão de queijo","alt":"Omelette + banane + papaye + avocat"},"dej":{"plat":"Picadinho de bœuf + riz + légumes","alt":"Bœuf sauté + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Mangue + noix de cajou"},"diner":{"plat":"Moqueca de poisson + manioc","alt":"Poisson vapeur + manioc + légumes vapeur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Cuscuz de milho","alt":"Porridge avoine + fruits"},"dej":{"plat":"Frango com quiabo (poulet okra) + riz + haricots noirs","alt":"Poulet vapeur + riz + haricots + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Papaye + amandes"},"diner":{"plat":"Bobó de crevettes + riz","alt":"Crevettes vapeur + riz + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pão de queijo","alt":"Omelette + banane + papaye + avocat"},"dej":{"plat":"Feijoada + riz","alt":"Feijoada légère + riz + légumes vapeur"},"collation":{"plat":"Smoothie à l’açaï","alt":"Yaourt + açaï + banane + noix"},"diner":{"plat":"Moqueca de poisson + manioc","alt":"Poisson vapeur + manioc + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Cuscuz de milho","alt":"Porridge avoine + fruits"},"dej":{"plat":"Grillade mixte + riz + haricots noirs","alt":"Poulet + poisson + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Mangue + papaye + noix"},"diner":{"plat":"Bobó de crevettes + riz","alt":"Crevettes vapeur + riz + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pão de queijo","alt":"Omelette + banane + papaye + avocat"},"dej":{"plat":"Feijoada végétarienne + riz + légumes","alt":"Feijoada légumes + riz + tofu"},"collation":{"plat":"Fruits frais","alt":"Papaye + noix"},"diner":{"plat":"Moqueca de poisson + manioc","alt":"Poisson vapeur + manioc + légumes vapeur"}}
-      ]
+    {
+      "id": "ouassous-sautes-gp",
+      "nom": "Ouassous Sautés",
+      "repas": "diner",
+      "temps": 20,
+      "difficulte": "facile",
+      "emoji": "🦐",
+      "description": "Des ouassous sautés à l’ail, au citron vert et aux herbes. Une recette rapide, légère et pleine de goût.",
+      "ingredients": [
+        { "nom": "Ouassous ou grosses crevettes", "qty": "600 g" },
+        { "nom": "Ail", "qty": "4 gousses" },
+        { "nom": "Citron vert", "qty": "1" },
+        { "nom": "Beurre ou huile", "qty": "2 c. à soupe" },
+        { "nom": "Cives", "qty": "1 petite botte" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Rincer les ouassous et bien les égoutter.",
+        "Faire chauffer le beurre ou l’huile dans une poêle.",
+        "Ajouter les ouassous et les faire sauter 2 à 3 min de chaque côté.",
+        "Ajouter l’ail, les cives et le piment végétarien.",
+        "Déglacer avec le jus de citron vert.",
+        "Servir immédiatement avec du riz ou des légumes."
+      ],
+      "valeurs": {
+        "calories": 250,
+        "proteines": 36,
+        "glucides": 3,
+        "lipides": 11
+      },
+      "tags": ["rapide", "léger", "local"]
     },
-    "Mexique": {
-      "coords": [23.6345, -102.5528],
-      "feculents": "Maïs (tortillas, tamales), riz, haricots noirs ou rouges, patate douce",
-      "proteines": "Poulet, porc, bœuf, poisson, crevettes, œufs, tofu",
-      "legumes": "Tomates, oignons, poivrons, courgettes, épinards, chou, chayote",
-      "fruits": "Mangue, papaye, avocat, goyave, ananas, orange, citron vert",
-      "plats": [
-       {"jour":"Lundi","petitdej":{"plat":"Huevos rancheros + tortillas","alt":"Omelette + avocat + tomate"},"dej":{"plat":"Tacos de poulet + riz + haricots noirs","alt":"Tacos légers + riz + haricots noirs + légumes vapeur"},"collation":{"plat":"Mangue fraîche","alt":"Yaourt nature + mangue + whey + noix"},"diner":{"plat":"Ceviche de poisson + riz","alt":"Ceviche de poisson + riz + légumes vapeur"}},
-       {"jour":"Mardi","petitdej":{"plat":"Chilaquiles verts + œuf","alt":"Omelette + avocat + tortilla"},"dej":{"plat":"Enchiladas de bœuf + riz + haricots rouges","alt":"Bœuf grillé + riz + légumes vapeur"},"collation":{"plat":"Smoothie à la papaye","alt":"Papaye + banane + yaourt"},"diner":{"plat":"Soupe de légumes mexicaine + tortillas","alt":"Soupe de légumes mexicaine + poulet ou poisson vapeur + légumes"}},
-       {"jour":"Mercredi","petitdej":{"plat":"Tamales de maïs + fruit","alt":"Porridge avoine + mangue + avocat"},"dej":{"plat":"Poulet mole + riz + haricots noirs","alt":"Poulet grillé + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix locales + fruit"},"diner":{"plat":"Poisson à la Veracruzana + riz","alt":"Poisson vapeur + riz + légumes vapeur"}},
-       {"jour":"Jeudi","petitdej":{"plat":"Omelette aux légumes + tortillas","alt":"Omelette + avocat + poivrons"},"dej":{"plat":"Tacos de crevettes + riz + haricots noirs","alt":"Tacos de crevettes + riz + haricots noirs + légumes"},"collation":{"plat":"Smoothie mangue-citron vert","alt":"Yaourt nature + mangue + noix + whey"},"diner":{"plat":"Grillade de porc + riz + courgettes sautées","alt":"Porc grillé + riz + légumes vapeur"}},
-       {"jour":"Vendredi","petitdej":{"plat":"Quesadillas aux œufs et fromage","alt":"Omelette + avocat + tomate"},"dej":{"plat":"Burrito poulet + riz + haricots rouges","alt":"Poulet grillé + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Papaye + noix"},"diner":{"plat":"Soupe de poisson à la Mexicaine + riz","alt":"Soupe de poisson à la Mexicaine + riz + légumes vapeur"}},
-       {"jour":"Samedi","petitdej":{"plat":"Chilaquiles rouges + œuf","alt":"Omelette + avocat + tortillas"},"dej":{"plat":"Grillade mixte + riz + haricots noirs","alt":"Poulet + bœuf + poisson + riz + légumes vapeur"},"collation":{"plat":"Smoothie avocat-mangue","alt":"Yaourt + avocat + mangue + noix"},"diner":{"plat":"Enchiladas aux légumes + riz","alt":"Enchiladas aux légume + riz + légumes vapeur"}},
-       {"jour":"Dimanche","petitdej":{"plat":"Tortillas + avocat + œuf brouillé","alt":"Porridge avoine + fruits tropicaux + avocat"},"dej":{"plat":"Tamales + riz + haricots noirs","alt":"Tamales + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Fromage blanc + Noix locales + fruit"},"diner":{"plat":"Soupe traditionnelle mexicaine + riz","alt":"Soupe traditionnelle mexicaine légumes + poulet ou poisson + riz"}}
-      ]
+    {
+      "id": "blaff-poisson-gp",
+      "nom": "Blaff de Poisson",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🐟",
+      "description": "Un poisson cuit dans un bouillon citronné aux herbes et au piment végétarien. Une recette simple, fraîche et légère.",
+      "ingredients": [
+        { "nom": "Poisson blanc", "qty": "800 g" },
+        { "nom": "Citron vert", "qty": "2" },
+        { "nom": "Ail", "qty": "4 gousses" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Cives", "qty": "1 botte" },
+        { "nom": "Thym", "qty": "3 branches" },
+        { "nom": "Laurier", "qty": "2 feuilles" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Sel", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Mariner le poisson avec du citron vert, de l’ail, du sel et des cives pendant 20 min.",
+        "Préparer un court-bouillon avec l’oignon, le thym, le laurier et le piment végétarien.",
+        "Porter à ébullition puis ajouter le poisson.",
+        "Laisser cuire 10 à 15 min selon l’épaisseur.",
+        "Servir chaud avec du riz, de l’igname ou du poyo."
+      ],
+      "valeurs": {
+        "calories": 285,
+        "proteines": 42,
+        "glucides": 7,
+        "lipides": 9
+      },
+      "tags": ["léger", "rapide", "traditionnel"]
     },
-    "Chili": {
-      "coords": [-35.6751, -71.5430],
-      "feculents": "Riz, pommes de terre, maïs, quinoa, lentilles",
-      "proteines": "Bœuf, poulet, porc, poisson, fruits de mer, œufs, tofu",
-      "legumes": "Tomates, poivrons, oignons, courgettes, chou, carottes, épinards",
-      "fruits": "Avocat, mangue, pomme, poire, raisin, citron, orange",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Tostadas à l’avocat + œuf","alt":"Omelette + fruits frais"},"dej":{"plat":"Cazuela de poulet + riz + légumes","alt":"Poulet au four + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Yaourt nature + noix"},"diner":{"plat":"Poisson grillé + pommes de terre + légumes","alt":"Poisson vapeur + pommes de terre + légumes vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pan de maíz + fromage","alt":"Porridge avoine + fruits"},"dej":{"plat":"Empanadas de bœuf + salade","alt":"Bœuf maigre + légumes vapeur"},"collation":{"plat":"Smoothie à l’avocat et mangue","alt":"Yaourt + avocat + mangue + noix"},"diner":{"plat":"Grillade mixte + riz + légumes","alt":"Poulet + bœuf + poisson + riz + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Tortilla chilena + fruits","alt":"Omelette + avocat + fruits"},"dej":{"plat":"Pastel de choclo (maïs + bœuf) + salade","alt":"Bœuf maigre + maïs + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix + fruit"},"diner":{"plat":"Poisson à la plancha + pommes de terre","alt":"Poisson vapeur + pommes de terre + légumes vapeur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Tostadas à l’avocat + œuf","alt":"Porridge avoine + fruits"},"dej":{"plat":"Boeuf sauté + riz + légumes","alt":"Bœuf maigre + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Yaourt + noix"},"diner":{"plat":"Ceviche chilien + pommes de terre","alt":"Poisson vapeur + pommes de terre + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pan de maíz + œuf brouillé","alt":"Omelette + fruits frais"},"dej":{"plat":"Poulet au four + quinoa + légumes","alt":"Poulet grillé + quinoa + légumes vapeur"},"collation":{"plat":"Smoothie mangue-avocat","alt":"Yaourt + mangue + avocat + noix"},"diner":{"plat":"Poisson grillé + riz + légumes","alt":"Poisson vapeur + riz + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Tortilla chilena + fruits","alt":"Porridge avoine + fruits"},"dej":{"plat":"Grillade mixte + riz + légumes","alt":"Poulet + bœuf + poisson + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix + fruit"},"diner":{"plat":"Soupe de légumes + poulet","alt":"Poulet vapeur + légumes + pommes de terre"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Tostadas à l’avocat + œuf brouillé","alt":"Porridge avoine + fruits tropicaux + avocat"},"dej":{"plat":"Empanadas végétariennes + riz + légumes","alt":"Tofu + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix + fruit"},"diner":{"plat":"Cazuela de poisson + pommes de terre","alt":"Poisson vapeur + pommes de terre + légumes vapeur"}}
-      ]
+    {
+      "id": "poulet-boucane-gp",
+      "nom": "Poulet Boucané",
+      "repas": "dej",
+      "temps": 55,
+      "difficulte": "facile",
+      "emoji": "🍗",
+      "description": "Du poulet mariné puis grillé ou fumé, avec une saveur intense et une chair bien parfumée. Simple, généreux, efficace.",
+      "ingredients": [
+        { "nom": "Cuisses de poulet", "qty": "4" },
+        { "nom": "Citron vert", "qty": "2" },
+        { "nom": "Ail", "qty": "4 gousses" },
+        { "nom": "Cives", "qty": "1 botte" },
+        { "nom": "Thym", "qty": "3 branches" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Huile", "qty": "2 c. à soupe" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Préparer une marinade avec le citron vert, l’ail, les cives, le thym, le piment végétarien, l’huile, le sel et le poivre.",
+        "Badigeonner le poulet et laisser mariner au moins 1 h.",
+        "Cuire au barbecue, au four ou à la poêle-grill jusqu’à ce que le poulet soit bien doré.",
+        "Retourner régulièrement pendant la cuisson.",
+        "Servir avec du riz, des pois rouges ou une salade fraîche."
+      ],
+      "valeurs": {
+        "calories": 395,
+        "proteines": 42,
+        "glucides": 4,
+        "lipides": 23
+      },
+      "tags": ["grillé", "parfumé", "familial"]
     },
-    "Colombie": {
-      "coords": [4.5709, -74.2973],
-      "feculents": "Riz, haricots rouges, patate douce, maïs (arepas, tamales), plantain",
-      "proteines": "Poulet, bœuf, porc, poisson, fruits de mer, œufs, tofu",
-      "legumes": "Tomates, oignons, poivrons, courgettes, chou, carottes, épinards",
-      "fruits": "Banane, avocat, mangue, papaye, goyave, ananas, orange",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Arepas + œuf brouillé","alt":"Omelette + banane + avocat"},"dej":{"plat":"Bandeja paisa légère : riz + haricots rouges + poulet + plantain","alt":"Poulet grillé + riz + haricots rouges + légumes vapeur"},"collation":{"plat":"Mangue fraîche","alt":"Yaourt nature + mangue + noix"},"diner":{"plat":"Poisson grillé + patate douce + légumes","alt":"Poisson + patate douce + légumes vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Tamales colombiens + fruit","alt":"Porridge avoine + banane + avocat + oeufs"},"dej":{"plat":"Poulet à la criolla + riz + haricots rouges","alt":"Poulet à la criolla + riz + haricots rouges + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Fromage blanc + whey + Noix locales + fruit"},"diner":{"plat":"Sancocho de poisson + riz","alt":"Sancocho de poisson + riz + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Arepas + avocat + œuf","alt":"Smoothie bowl : banane + mangue + flocons d’avoine + yaourt + avocat"},"dej":{"plat":"Grillade mixte + riz + haricots rouges","alt":"Grillade mixte + riz + légumes vapeur"},"collation":{"plat":"Fruits tropicaux frais","alt":"Yaourt nature + noix + whey"},"diner":{"plat":"Poisson à la plancha + plantain","alt":"Poisson vapeur + riz + plantain + légumes vapeur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Omelette aux légumes + arepas","alt":"Porridge avoine + banane + avocat"},"dej":{"plat":"Boeuf sauté + riz + haricots rouges","alt":"Bœuf + riz + légumes vapeur"},"collation":{"plat":"Smoothie papaye-avocat","alt":"Yaourt + papaye + noix"},"diner":{"plat":"Poisson grillé + riz + patate douce","alt":"Poisson grillé + patate douce + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Arepas + fromage + fruit","alt":"Omelette + avocat + mangue"},"dej":{"plat":"Poulet boucané + riz + haricots rouges","alt":"Poulet boucané + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix locales + fruit"},"diner":{"plat":"Soupe de légumes colombienne + poisson","alt":"Poisson grillé + légumes + patate douce"}},
-        {"jour":"Samedi","petitdej":{"plat":"Tamales + œuf","alt":"Porridge avoine + banane + avocat"},"dej":{"plat":"Grillade mixte + riz + haricots rouges","alt":"Grillade mixte + riz + haricots + légumes vapeur"},"collation":{"plat":"Smoothie mangue-avocat","alt":"Yaourt + mangue + avocat + noix"},"diner":{"plat":"Poisson à la criolla + patate douce","alt":"Poisson + patate douce + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Arepas + œuf brouillé + fruit","alt":"Porridge avoine + fruits tropicaux + avocat"},"dej":{"plat":"Tamales + riz + haricots rouges","alt":"Tamales légers + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix locales + fruit"},"diner":{"plat":"Sancocho traditionnel + plantain","alt":"Soupe légumes + poulet ou poisson + plantain"}}
-      ]
+    {
+      "id": "poyo-morue-gp",
+      "nom": "Poyo Morue",
+      "repas": "diner",
+      "temps": 35,
+      "difficulte": "facile",
+      "emoji": "🍌",
+      "description": "Un plat simple et nourrissant à base de bananes vertes et de morue. Le genre de recette du quotidien qui cale bien sans faire compliqué.",
+      "ingredients": [
+        { "nom": "Bananes poyo vertes", "qty": "4" },
+        { "nom": "Morue dessalée", "qty": "400 g" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "3 gousses" },
+        { "nom": "Citron vert", "qty": "1" },
+        { "nom": "Cives", "qty": "1/2 botte" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Huile", "qty": "2 c. à soupe" }
+      ],
+      "etapes": [
+        "Cuire les bananes poyo dans une casserole d’eau salée pendant environ 20 min.",
+        "Faire cuire rapidement la morue dessalée, puis l’effilocher.",
+        "Faire revenir l’oignon, l’ail et le piment végétarien dans l’huile.",
+        "Ajouter la morue effilochée et mélanger quelques minutes.",
+        "Servir avec les bananes poyo, du citron vert et des cives."
+      ],
+      "valeurs": {
+        "calories": 365,
+        "proteines": 30,
+        "glucides": 46,
+        "lipides": 8
+      },
+      "tags": ["simple", "traditionnel", "sans gluten"]
     },
-    "Canada": {
-      "coords": [56.1304, -106.3468],
-      "feculents": "Pommes de terre, riz, quinoa, pâtes, pain complet",
-      "proteines": "Poulet, bœuf, porc, poisson, fruits de mer, œufs, tofu, légumineuses",
-      "legumes": "Brocoli, carottes, courgettes, épinards, poivrons, chou-fleur, tomates",
-      "fruits": "Pommes, poires, baies, oranges, bananes, avocat",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Porridge avoine + baies + noix","alt":"Omelette + pomme + avocat"},"dej":{"plat":"Poulet grillé + quinoa + légumes vapeur","alt":"Poulet au four + quinoa + brocoli et carottes"},"collation":{"plat":"Yaourt nature + fruits","alt":"Smoothie : baies + banane + yaourt + noix + whey"},"diner":{"plat":"Saumon grillé + pommes de terre + légumes","alt":"Saumon grillé + pommes de terre + légumes vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain complet + œufs brouillés + avocat","alt":"Porridge + œufs brouillés + baies + noix"},"dej":{"plat":"Boeuf sauté + riz + légumes","alt":"Bœuf maigre + riz + poivrons et courgettes"},"collation":{"plat":"Fruits frais","alt":"Noix + fruit"},"diner":{"plat":"Poisson blanc au four + quinoa + légumes vapeur","alt":"Poisson vapeur + quinoa + brocoli et carottes"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Smoothie bowl : banane + baies + flocons d’avoine + yaourt","alt":"Omelette + pomme + avocat"},"dej":{"plat":"Poulet rôti + pommes de terre + légumes","alt":"Poulet + pommes de terre + légumes vapeur"},"collation":{"plat":"Noix + fruits frais","alt":"Yaourt + fruits + whey"},"diner":{"plat":"Soupe de légumes + tofu","alt":"Tofu vapeur + légumes variés + riz"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Pancakes avoine + fruits rouges + sirop d’érable","alt":"Omelette + fruits + avocat"},"dej":{"plat":"Poisson grillé + quinoa + légumes","alt":"Poisson grillé + quinoa + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Smoothie : banane + baies + yaourt + noix + whey"},"diner":{"plat":"Grillade mixte (poulet + bœuf + porc) + riz + légumes vapeur","alt":"Bœuf + riz + légumes"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Omelette aux légumes + pain complet","alt":"Porridge + oeufs + fruits + noix"},"dej":{"plat":"Poulet sauté + riz + légumes","alt":"Poulet grillé + riz + brocoli et carottes"},"collation":{"plat":"Yaourt nature + fruits","alt":"Smoothie protéiné : baies + yaourt + noix"},"diner":{"plat":"Saumon au four + quinoa + légumes","alt":"Saumon au four + quinoa + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Smoothie bowl : banane + avoine + baies + yaourt","alt":"Omelette + pomme + avocat"},"dej":{"plat":"Grillade mixte + riz + légumes","alt":"Grillade mixte + riz + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Fromage blanc + Noix + fruit"},"diner":{"plat":"Soupe de légumes + poulet","alt":"Poulet grillé + légumes variés + pommes de terre"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pain complet + œufs brouillés + avocat","alt":"Porridge + oeufs + fruits + noix"},"dej":{"plat":"Pâtes complètes + sauce tomate + légumes + poulet","alt":"Pâtes complètes + sauce tomate + légumes vapeur + poulet"},"collation":{"plat":"Fruits frais","alt":"Smoothie : banane + baies + yaourt + noix"},"diner":{"plat":"Poisson grillé + pommes de terre + légumes","alt":"Poisson vapeur + pommes de terre + légumes vapeur"}}
-      ]
+    {
+      "id": "dombrés-crevettes-gp",
+      "nom": "Dombrés aux Crevettes",
+      "repas": "dej",
+      "temps": 60,
+      "difficulte": "moyen",
+      "emoji": "🍲",
+      "description": "Des petites boulettes de pâte mijotées dans une sauce tomate aux crevettes. Un plat bien créole, généreux et ultra réconfortant.",
+      "ingredients": [
+        { "nom": "Crevettes", "qty": "500 g" },
+        { "nom": "Farine", "qty": "300 g" },
+        { "nom": "Eau", "qty": "150 ml" },
+        { "nom": "Tomates", "qty": "3" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "3 gousses" },
+        { "nom": "Cives", "qty": "1 botte" },
+        { "nom": "Thym", "qty": "2 branches" },
+        { "nom": "Piment végétarien", "qty": "1" },
+        { "nom": "Huile", "qty": "2 c. à soupe" }
+      ],
+      "etapes": [
+        "Mélanger la farine avec l’eau et une pincée de sel pour former une pâte souple.",
+        "Former de petites boulettes de pâte avec les mains.",
+        "Faire revenir l’oignon, l’ail, les tomates, les cives et le thym dans l’huile.",
+        "Ajouter les crevettes et le piment végétarien.",
+        "Verser un peu d’eau puis ajouter les dombrés.",
+        "Laisser mijoter jusqu’à ce que les dombrés soient cuits et la sauce bien liée."
+      ],
+      "valeurs": {
+        "calories": 520,
+        "proteines": 34,
+        "glucides": 68,
+        "lipides": 12
+      },
+      "tags": ["créole", "réconfortant", "familial"]
+    },
+    {
+      "id": "gratin-christophine-gp",
+      "nom": "Gratin de Christophine",
+      "repas": "diner",
+      "temps": 45,
+      "difficulte": "facile",
+      "emoji": "🥘",
+      "description": "Un gratin doux et fondant à base de christophine, parfait en accompagnement ou en dîner léger avec une source de protéines.",
+      "ingredients": [
+        { "nom": "Christophines", "qty": "3" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "2 gousses" },
+        { "nom": "Lait", "qty": "200 ml" },
+        { "nom": "Fromage râpé", "qty": "60 g" },
+        { "nom": "Farine", "qty": "1 c. à soupe" },
+        { "nom": "Beurre", "qty": "20 g" },
+        { "nom": "Sel, poivre, muscade", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Cuire les christophines dans l’eau jusqu’à ce qu’elles soient tendres.",
+        "Retirer la chair et l’écraser grossièrement.",
+        "Faire revenir l’oignon et l’ail dans un peu de beurre.",
+        "Ajouter la christophine, le lait, la farine et les épices.",
+        "Verser dans un plat, ajouter le fromage râpé.",
+        "Faire gratiner au four jusqu’à obtenir une surface dorée."
+      ],
+      "valeurs": {
+        "calories": 230,
+        "proteines": 9,
+        "glucides": 24,
+        "lipides": 11
+      },
+      "tags": ["végétarien", "fondant", "léger"]
     }
-  },
-  "Afrique": {
-    "Sénégal": {
-  "coords": [14.4974, -14.4524],
-  "feculents": "Riz, fonio, manioc, patate douce, igname, tiéré",
-  "proteines": "Poulet, bœuf, agneau, poisson (tilapia, capitaine), crevettes, œufs, niébé",
-  "legumes": "Gombos, feuilles de manioc, calalou, chou, courgettes, carottes, aubergines, tomates, oignons, piments doux",
-  "fruits": "Mangue, papaye, banane, ananas, orange, avocat",
-  "plats": [
-    {"jour":"Lundi","petitdej":{"plat":"Bouillie de mil + mangue","alt":"Pain de mil toasté + œufs pochés + avocat (moins sucré, plus de fibres et protéines)"},"dej":{"plat":"Thiep bou yapp (poisson + riz + légumes)","alt":"Poisson grillé + riz portion contrôlée + légumes vapeur à l’huile de coco (moins gras, plus légumes)"},"collation":{"plat":"Fruits tropicaux frais","alt":"Smoothie banane + papaye + yaourt + noix (plus consistant et nutritif)"},"diner":{"plat":"Yassa poulet + riz + légumes","alt":"Yassa poulet + riz portion contrôlée + légumes sautés à l’huile de coco (version yassa léger, moins d’huile)"}},
-    {"jour":"Mardi","petitdej":{"plat":"Pain de mil + œuf brouillé + avocat","alt":"Pain de mil toasté + œufs pochés + avocat + pousse d'épinard (moins gras, plus de vitamines)"},"dej":{"plat":"Mafé de bœuf + riz","alt":"Mafé de bœuf + riz portion contrôlée + légumes vapeur (moins gras, plus fibres)"},"collation":{"plat":"Fruits frais","alt":"Noix locales + fruit (plus protéines et bons gras)"},"diner":{"plat":"Poisson braisé + fonio + légumes","alt":"Poisson grillé au four + fonio + légumes vapeur (moins gras et plus fibres)"}},
-    {"jour":"Mercredi","petitdej":{"plat":"Bouillie de mil + banane","alt":"Porridge avoine + banane + avocat (plus de protéines et fibres)"},"dej":{"plat":"Thiéré (mil) + poisson","alt":"Mil vapeur + poisson au four + légumes vapeur (moins gras et cuisson douce)"},"collation":{"plat":"Chocolat 70%","alt":"Fromage blanc + carré de chocolat noir + fruit (moins sucre, plus antioxydants)"},"diner":{"plat":"Soupe de légumes + cabri","alt":"Soupe légumes + cabri au four + patate douce vapeur (moins gras et cuisson plus saine)"}},
-    {"jour":"Jeudi","petitdej":{"plat":"Pain de mil + mangue","alt":"Pain de mil toasté + œufs pochés + avocat (moins gras, plus fibres et protéines)"},"dej":{"plat":"Domoda (sauce arachide) + riz","alt":"Domoda au four + riz portion contrôlée + légumes vapeur (moins huile de palme, plus légumes)"},"collation":{"plat":"Fruits frais","alt":"Smoothie banane + yaourt + noix (plus nutritif)"},"diner":{"plat":"Tilapia grillé + fonio + légumes","alt":"Tilapia au four + fonio + légumes vapeur (cuisson saine, moins gras)"}},
-    {"jour":"Vendredi","petitdej":{"plat":"Bouillie de mil + papaye","alt":"Porridge avoine + fruits + avocat (plus nutritif)"},"dej":{"plat":"Ceebu jen (riz au poisson)","alt":"Poisson grillé + riz portion contrôlée + légumes vapeur (moins gras, plus fibres)"},"collation":{"plat":"Fruits frais","alt":"Noix + fruit (bons gras et fibres)"},"diner":{"plat":"Poulet yassa + riz + légumes","alt":"Poulet rôti + riz portion contrôlée + légumes sautés (yassa léger, moins d’huile)"}},
-    {"jour":"Samedi","petitdej":{"plat":"Pain de mil + banane","alt":"Pain de mil toasté + œufs pochés + avocat (plus protéiné, moins gras)"},"dej":{"plat":"Thiebou guinar (riz au poulet)","alt":"Poulet au four + riz portion contrôlée + légumes vapeur (moins gras, plus légumes)"},"collation":{"plat":"Chocolat 70%","alt":"Fromage blanc + carré de chocolat noir + fruit (moins sucre, plus fibres)"},"diner":{"plat":"Soupe de légumes + poisson","alt":"Poisson au four + patate douce + légumes vapeur (moins gras, cuisson saine)"}},
-    {"jour":"Dimanche","petitdej":{"plat":"Bouillie de mil + mangue","alt":"Porridge avoine + banane + avocat (plus nutritif et protéiné)"},"dej":{"plat":"Mafé de cabri + riz","alt":"Cabri mijoté au four + riz portion contrôlée + légumes vapeur (moins gras)"},"collation":{"plat":"Fruits frais","alt":"Smoothie banane + yaourt + noix (plus protéines et fibres)"},"diner":{"plat":"Thiep bou yapp + légumes","alt":"Thiep bou yapp + riz portion contrôlée + légumes vapeur (moins gras et plus fibres)"}}
   ]
-},
-    "Gabon": {
-    "coords": [0.8037, 11.6094],
-    "feculents": "Riz, manioc, banane plantain, igname, foufou (manioc ou plantain), patate douce",
-    "proteines": "Poulet, poisson (capitaine, tilapia), cabri, bœuf maigre, crevettes, fruits de mer, œufs",
-    "legumes": "Feuilles de manioc, gombos, aubergine, tomates, chou, carottes, oignons",
-    "fruits": "Mangue, papaye, banane, goyave, ananas, avocat",
-    "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de manioc + banane","alt":"Pain de manioc toasté + œufs pochés + avocat"},"dej":{"plat":"Ndolé (feuilles amères + pâte d’arachide + viande) + plantain frit","alt":"Ndolé léger (épinards + un peu d’arachide) + crevettes grillées + igname vapeur"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + ananas + gingembre + whey"},"diner":{"plat":"Poisson braisé + manioc","alt":"Poisson grillé + patate douce rôtie + salade de gombo"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain de maïs + papaye","alt":"Bouillie de maïs + graines de courge"},"dej":{"plat":"Sauce gombo + bœuf + plantain","alt":"Sauce gombo + poisson fumé + fonio"},"collation":{"plat":"Safou rôti","alt":"Safou + fromage blanc + cacahuètes grillées"},"diner":{"plat":"Cabri en sauce + taro","alt":"Cabri grillé + purée de patate douce + légumes sautés"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Bouillie de patate douce + ananas","alt":"Patate douce rôtie + yaourt nature + fruits tropicaux"},"dej":{"plat":"Poulet nyembwe (huile de palme + poulet) + manioc","alt":"Poulet nyembwe revisité (huile de coco) + manioc vapeur + chou sauté"},"collation":{"plat":"Papaye fraîche","alt":"Salade de fruits tropicaux (mangue, ananas, papaye)"},"diner":{"plat":"Poisson fumé + feuilles de manioc","alt":"Poisson au four + feuilles de manioc mijotées sans huile de palme + riz complet"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Pain de manioc + banane","alt":"Crêpe de banane plantain + noix de cajou"},"dej":{"plat":"Sauce arachide + bœuf + riz","alt":"Sauce arachide légère + poisson grillé + riz complet"},"collation":{"plat":"Mangue + cacahuètes","alt":"Smoothie avocat + cacao brut"},"diner":{"plat":"Crevettes sautées + taro","alt":"Crevettes grillées + fonio + légumes verts"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Bouillie de maïs + mangue","alt":"Pain de manioc + avocat + graines de courge"},"dej":{"plat":"Ndolé + cabri + plantain frit","alt":"Ndolé + poisson + patate douce vapeur"},"collation":{"plat":"Safou grillé","alt":"Noix + fruit tropical"},"diner":{"plat":"Poisson braisé + igname","alt":"Poisson au four + salade de chou + riz complet"}},
-        {"jour":"Samedi","petitdej":{"plat":"Patate douce rôtie + papaye","alt":"Bouillie de manioc + lait de coco + ananas"},"dej":{"plat":"Poulet en sauce + manioc","alt":"Poulet grillé + fonio + salade d’aubergine"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + papaye + noix de cajou"},"diner":{"plat":"Poisson fumé + feuilles de manioc","alt":"Poisson grillé + purée de taro + légumes sautés"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pain de maïs + ananas","alt":"Pain de manioc toasté + avocat + œuf brouillé"},"dej":{"plat":"Sauce gombo + viande + plantain frit","alt":"Sauce gombo + crevettes + igname vapeur"},"collation":{"plat":"Papaye + cacahuètes","alt":"Smoothie ananas + lait de coco"},"diner":{"plat":"Cabri en sauce + taro","alt":"Cabri grillé + patate douce + salade de chou et gombo"}}
-    ]
-  },
-    "Maroc": {
-  "coords": [31.7917, -7.0926],
-  "feculents": "Semoule, riz, pain complet, couscous, patate douce, lentilles",
-  "proteines": "Poulet, agneau, bœuf maigre, poisson, œufs, pois chiches",
-  "legumes": "Carottes, courgettes, poivrons, tomates, oignons, épinards, chou, haricots verts",
-  "fruits": "Orange, pomme, datte, figue, raisin, abricot, citron, grenade",
-  "plats": [
-    {"jour":"Lundi","petitdej":{"plat":"Baghrir + miel + orange","alt":"Baghrir + yaourt nature + oeufs + fruit"},"dej":{"plat":"Tajine poulet aux légumes","alt":"Tajine poulet aux légumes léger (moins d’huile, plus de légumes)"},"collation":{"plat":"Dattes","alt":"Fruits frais + noix + fromage blanc + whey"},"diner":{"plat":"Couscous légumes","alt":"Couscous complet + légumes vapeur"}},
-    {"jour":"Mardi","petitdej":{"plat":"Pain complet + fromage + fruit","alt":"Pain complet + œuf poché + avocat"},"dej":{"plat":"Tajine de poisson aux légumes","alt":"Poisson vapeur aux herbes + légumes vapeur + patate douce"},"collation":{"plat":"Orange","alt":"Smoothie banane + orange + graines"},"diner":{"plat":"Soupe harira","alt":"Harira + légumes + pois chiches"}},
-    {"jour":"Mercredi","petitdej":{"plat":"Semoule au lait + figues","alt":"Porridge semoule + fruits"},"dej":{"plat":"Tajine poulet citron et olives","alt":"Tajine poulet citron/olives + légumes vapeur"},"collation":{"plat":"Abricots secs","alt":"Fruits frais + amandes + fromage blanc + whey"},"diner":{"plat":"Couscous au poisson","alt":"Filet de poisson grillé + semoule complète + légumes rôtis"}},
-    {"jour":"Jeudi","petitdej":{"plat":"Msemmen + miel","alt":"Msemmen complet + yaourt nature + fruits"},"dej":{"plat":"Tajine kefta aux légumes","alt":"Tajine kefta + légumes vapeur"},"collation":{"plat":"Banane","alt":"Smoothie banane + chocolat noir"},"diner":{"plat":"Soupe de légumes marocains","alt":"Soupe de légumes + poisson au four"}},
-    {"jour":"Vendredi","petitdej":{"plat":"Pain complet + dattes","alt":"Pain complet + œufs brouillés + fruit + tomate"},"dej":{"plat":"Tajine poisson aux légumes","alt":"Poisson en papillote au four + légumes + riz"},"collation":{"plat":"Figues","alt":"Noix + fruit"},"diner":{"plat":"Couscous au poulet","alt":"Poulet grillé + couscous complet + légumes vapeur"}},
-    {"jour":"Samedi","petitdej":{"plat":"Baghrir + dattes","alt":"Baghrir + yaourt nature + fruits + oeufs"},"dej":{"plat":"Tajine poulet pruneaux","alt":"Tajine poulet aux pruneaux + légumes++"},"collation":{"plat":"Orange","alt":"Smoothie banane + mangue"},"diner":{"plat":"Soupe marocaine aux légumes","alt":"Soupe marocaine aux légumes + poisson au four"}},
-    {"jour":"Dimanche","petitdej":{"plat":"Semoule au lait + miel","alt":"Porridge semoule complète + fruits + noix"},"dej":{"plat":"Tajine poisson aux légumes","alt":"Curry léger de poisson + légumes vapeur"},"collation":{"plat":"Dattes","alt":"Fruits frais + noix"},"diner":{"plat":"Couscous légumes","alt":"Couscous + légumes vapeur"}}
-  ]
-},
-    "Cap Vert": {
-      "coords": [16.5388, -23.0418],
-      "feculents": "Milho (maïs), riz, patate douce, fonio, manioc",
-      "proteines": "Poisson (thon, capitaine), poulet, bœuf maigre, cabri, œufs, haricots",
-      "legumes": "Chou, carottes, poivrons, tomates, courgettes, oignons, gombos, épinards",
-      "fruits": "Banane, papaye, mangue, orange, goyave, citron, avocat",
-      "plats": [
-       {"jour":"Lundi","petitdej":{"plat":"Patate douce rôtie + mangue","alt":"Patate douce vapeur + œufs pochés + avocat"},"dej":{"plat":"Cachupa riche (maïs + haricots + poisson)","alt":"Cachupa légère (maïs + haricots + poisson grillé + légumes vapeur)"},"collation":{"plat":"Papaye fraîche","alt":"Smoothie papaye + banane + yaourt + whey"},"diner":{"plat":"Poisson braisé + manioc + légumes","alt":"Poisson braisé + manioc vapeur + légumes sautés à l’huile de coco"}} ,
-       {"jour":"Mardi","petitdej":{"plat":"Bouillie de maïs + banane","alt":"Pain de maïs toasté + œufs + avocat"},"dej":{"plat":"Poulet en sauce + riz + légumes","alt":"Poulet grillé + riz complet + légumes vapeur"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + yaourt + noix"},"diner":{"plat":"Crevettes sautées + patate douce + légumes","alt":"Crevettes grillées + patate douce vapeur + légumes verts"}} ,
-       {"jour":"Mercredi","petitdej":{"plat":"Pain de maïs + papaye","alt":"Pain de maïs grillé + œufs pochés + avocat"},"dej":{"plat":"Cabri mijoté + manioc + légumes","alt":"Cabri au four + manioc vapeur + légumes sautés"},"collation":{"plat":"Banane","alt":"Fromage blanc + banane + noix"},"diner":{"plat":"Poisson fumé + fonio + légumes","alt":"Poisson grillé + fonio + légumes vapeur"}} ,
-       {"jour":"Jeudi","petitdej":{"plat":"Bouillie de fonio + mangue","alt":"Porridge fonio + œufs + avocat"},"dej":{"plat":"Cachupa de légumes + poisson","alt":"Cachupa légère (maïs + légumes + poisson grillé)"},"collation":{"plat":"Papaye","alt":"Smoothie papaye + noix"},"diner":{"plat":"Poulet rôti + patate douce + légumes","alt":"Poulet grillé + patate douce vapeur + légumes vapeur"}} ,
-       {"jour":"Vendredi","petitdej":{"plat":"Patate douce rôtie + banane","alt":"Patate douce vapeur + œufs + avocat"},"dej":{"plat":"Thon grillé + riz + légumes","alt":"Thon grillé + riz complet + légumes vapeur"},"collation":{"plat":"Mangue","alt":"Smoothie mangue + yaourt"},"diner":{"plat":"Cabri en sauce + manioc","alt":"Cabri au four + manioc vapeur + légumes sautés"}} ,
-       {"jour":"Samedi","petitdej":{"plat":"Pain de maïs + mangue","alt":"Pain de maïs toasté + œufs pochés + avocat"},"dej":{"plat":"Poulet yassa + fonio + légumes","alt":"Poulet grillé + fonio + légumes vapeur (version yassa léger)"},"collation":{"plat":"Banane","alt":"Banane + noix"},"diner":{"plat":"Poisson braisé + patate douce + légumes","alt":"Poisson grillé + patate douce vapeur + légumes verts"}} ,
-       {"jour":"Dimanche","petitdej":{"plat":"Bouillie de maïs + papaye","alt":"Porridge maïs + œufs + avocat"},"dej":{"plat":"Cachupa complète (maïs + haricots + poulet)","alt":"Cachupa légère + poulet grillé + légumes vapeur"},"collation":{"plat":"Papaye + mangue","alt":"Smoothie mangue + papaye + yaourt"},"diner":{"plat":"Thon grillé + manioc + légumes","alt":"Thon grillé + manioc vapeur + légumes sautés"}}
-      ]
-    },
-    "Côte d'Ivoire": {
-      "coords": [7.539989, -5.547080],
-      "feculents": "Riz, manioc, plantain, patate douce, igname, foutou, attiéké",
-      "proteines": "Poisson local, poulet, cabri, bœuf maigre, œufs, crevettes",
-      "legumes": "Feuilles de manioc, gombos, aubergine, carottes, tomates, chou, oignons",
-      "fruits": "Mangue, papaye, banane, goyave, avocat, ananas",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de manioc + mangue","alt":"Bouillie de mil + banane + yaourt"},"dej":{"plat":"Attiéké + poisson braisé + gombo","alt":"Poisson grillé + attiéké portion contrôlée + gombos vapeur et légumes verts"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + papaye + yaourt + noix"},"diner":{"plat":"Poulet kedjenou + igname","alt":"Poulet kedjenou + igname vapeur + légumes verts"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain de manioc + papaye","alt":"Pain de manioc toasté + œufs pochés + avocat"},"dej":{"plat":"Sauce arachide + riz + poisson","alt":"Poisson grillé + riz portion contrôlée + légumes vapeur"},"collation":{"plat":"Banane","alt":"Fromage blanc + banane + noix locales"},"diner":{"plat":"Ndolé + plantain frit","alt":"Ndolé + riz + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Thiakry léger (mil + lait + fruits)","alt":"Porridge de mil + fruits tropicaux + noix"},"dej":{"plat":"Poulet sauce graine + attiéké","alt":"Poulet grillé sauce graine + attiéké portion contrôlée + légumes vapeur"},"collation":{"plat":"Papaye fraîche","alt":"Smoothie papaye + mangue + yaourt + whey"},"diner":{"plat":"Poisson fumé + feuilles de manioc","alt":"Poisson grillé + feuilles de manioc vapeur + riz complet"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Pain de mil + mangue","alt":"Pain de mil toasté + œufs pochés + avocat"},"dej":{"plat":"Sauce gombo + cabri + riz","alt":"Cabri au four + riz portion contrôlée + gombos vapeur + légumes verts"},"collation":{"plat":"Mangue","alt":"Smoothie mangue + yaourt + noix"},"diner":{"plat":"Crevettes sautées + manioc","alt":"Crevettes sautées + manioc + légumes verts"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Smoothie bowl tropical","alt":"Smoothie bowl banane + mangue + noix + oeufs"},"dej":{"plat":"Riz + poulet","alt":"Poulet grillé + riz portion contrôlée + légumes vapeur"},"collation":{"plat":"Banane","alt":"Fromage blanc + banane + noix"},"diner":{"plat":"Poisson braisé + plantain","alt":"Poisson braisé léger + plantain vapeur + légumes verts"}},
-        {"jour":"Samedi","petitdej":{"plat":"Pain de mil + papaye","alt":"Pain de mil toasté + œufs pochés + avocat"},"dej":{"plat":"Thiebou guinar (riz au poulet)","alt":"Poulet au four + riz portion contrôlée + légumes vapeur"},"collation":{"plat":"Papaye fraîche","alt":"Smoothie papaye + mangue + yaourt"},"diner":{"plat":"Soupe de légumes + poisson","alt":"Poisson au four + patate douce + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pain manioc + confiture maison","alt":"Porridge avoine + banane + avocat"},"dej":{"plat":"Mafé de cabri + riz","alt":"Cabri mijoté au four + riz portion contrôlée + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Smoothie banane + yaourt + noix"},"diner":{"plat":"Thiebou yapp + légumes","alt":"Poisson grillé + riz portion contrôlée + légumes vapeur"}}
-      ]
-    },
-    "Togo": {
-      "coords": [8.6195, 0.8248],
-      "feculents": "Riz, maïs, manioc, patate douce, plantain, fonio, bouillie de mil",
-      "proteines": "Poisson, poulet, cabri, œufs, haricots, crevettes",
-      "legumes": "Gombos, feuilles de manioc, aubergine, tomates, chou, carottes, oignons",
-      "fruits": "Mangue, papaye, banane, ananas, goyave, avocat, citron",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de maïs + mangue","alt":"Bouillie de mil + oeufs + yaourt"},"dej":{"plat":"Akpan + poisson grillé","alt":"Akpan + poisson grillé + légumes vapeur"},"collation":{"plat":"Boulettes de manioc","alt":"Fromage blanc + fruits tropicaux frais"},"diner":{"plat":"Poulet + sauce graine + riz","alt":"Poulet + sauce graine légère + riz + légumes"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain de manioc + confiture","alt":"Pain complet + oeufs + fruits frais + yaourt"},"dej":{"plat":"Foufou + sauce tomate + poulet","alt":"Foufou + poulet grillé + légumes vapeur"},"collation":{"plat":"Fruits tropicaux","alt":"Noix + fruit"},"diner":{"plat":"Riz au poisson + légumes","alt":"Poisson grillé + riz + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Galettes de maïs + banane","alt":"Galettes de maïs + yaourt + fruits"},"dej":{"plat":"Aloko + poisson frit","alt":"Plantain grillé + poisson vapeur + légumes"},"collation":{"plat":"Fruits frais","alt":"Yaourt + fruits tropicaux"},"diner":{"plat":"Sauce arachide + riz","alt":"Sauce arachide légère + riz + légumes vapeur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Oeufs brouillés + patate douce","alt":"Omelette aux légumes + patate douce vapeur"},"dej":{"plat":"Attiéké + poisson braisé","alt":"Attiéké + poisson + légumes vapeur"},"collation":{"plat":"Fruits secs","alt":"Fromage blanc + noix + fruits frais"},"diner":{"plat":"Kedjenou de poulet","alt":"Kedjenou léger de poulet (moins d’huile + plus légumes)"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Thiakry (mil + lait + fruits)","alt":"Porridge de mil + fruits tropicaux + oeufs + noix"},"dej":{"plat":"Riz + poulet","alt":"Riz + poulet grillé + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Yaourt + fruits"},"diner":{"plat":"Sauce feuilles + poisson","alt":"Sauce feuilles + poisson au four + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Beignets maison + smoothie tropical","alt":"Smoothie bowl + fruits frais + graines"},"dej":{"plat":"Foufou + poulet","alt":"Foufou + poulet + légumes vapeur"},"collation":{"plat":"Boulettes de manioc","alt":"Fromage blanc + fruits tropicaux frais"},"diner":{"plat":"Kedjenou de cabri","alt":"Kedjenou de cabri + riz (moins gras + légumes vapeur)"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pain de maïs + confiture","alt":"Bouillie de mil + oeufs + yaourt"},"dej":{"plat":"riz + sauce + viande)","alt":"Riz + sauce légère + légumes vapeur + poulet"},"collation":{"plat":"Fruits tropicaux","alt":"Fromage blanc + noix + fruits frais"},"diner":{"plat":"Poisson braisé + attiéké","alt":"Poisson vapeur + attiéké + légumes vapeur"}}
-      ]
-    },
-    "Bénin": {
-      "coords": [9.3077, 2.3158],
-      "feculents": "Riz, maïs, manioc, patate douce, plantain, fonio, bouillie de mil",
-      "proteines": "Poisson, poulet, cabri, œufs, haricots, crevettes",
-      "legumes": "Gombos, feuilles de manioc, aubergine, tomates, chou, carottes, oignons",
-      "fruits": "Mangue, papaye, banane, ananas, goyave, citron, avocat",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de mil + mangue","alt":"Bouillie de maïs + oeufs + yaourt local"},"dej":{"plat":"Amiwo + poisson grillé","alt":"Amiwo + poisson vapeur + légumes"},"collation":{"plat":"Fruits frais","alt":"Fromage blanc + fruits + noix locales"},"diner":{"plat":"Sauce gombo + riz","alt":"Sauce gombo légère + riz + légumes vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Galette de maïs + papaye","alt":"Bouillie de fonio + banane + graines locales"},"dej":{"plat":"Foufou + sauce tomate + poulet","alt":"Foufou léger + poulet grillé + légumes vapeur"},"collation":{"plat":"Fruits tropicaux","alt":"Smoothie banane + mangue + whey + fromage blanc"},"diner":{"plat":"Riz + crevettes","alt":"Riz + crevettes grillées + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Omelette aux légumes + patate douce","alt":"Oeufs brouillés + patate douce vapeur + légumes"},"dej":{"plat":"Aloko + poisson frit","alt":"Alloco + riz + poisson vapeur + légumes"},"collation":{"plat":"Fruits frais","alt":"Yaourt local + fruits"},"diner":{"plat":"Sauce arachide + riz","alt":"Sauce arachide légère + riz + légumes vapeur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Pain de manioc + confiture","alt":"Galette de maïs + fruits frais + oeufs"},"dej":{"plat":"Attiéké + poisson braisé","alt":"Attiéké + poisson vapeur + légumes"},"collation":{"plat":"Fruits secs","alt":"Noix locales + fruits"},"diner":{"plat":"Kedjenou de poulet","alt":"Kedjenou léger + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Thiakry (mil + lait + fruits)","alt":"Porridge de mil + oeufs + fruits tropicaux + noix"},"dej":{"plat":"Riz + poulet","alt":"Riz + poulet grillé + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Yaourt local + fruits"},"diner":{"plat":"Sauce feuilles + poisson","alt":"Sauce feuilles + poisson vapeur + légumes"}},
-        {"jour":"Samedi","petitdej":{"plat":"Beignets maison + smoothie tropical","alt":"Bouillie de maïs + fruits frais + graines locales"},"dej":{"plat":"Foufou + sauce graine","alt":"Foufou léger + légumes vapeur + protéines maigres"},"collation":{"plat":"Boulettes de manioc","alt":"Fruits tropicaux"},"diner":{"plat":"Kedjenou de cabri","alt":"Kedjenou cabri + riz + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Galette de mil + ananas","alt":"Bouillie de fonio + banane + yaourt local"},"dej":{"plat":"Riz + sauce + viande)","alt":"Riz + sauce légère + légumes vapeur + poulet"},"collation":{"plat":"Fruits tropicaux","alt":"Noix locales + fruits"},"diner":{"plat":"Poisson braisé + attiéké","alt":"Poisson vapeur + attiéké + légumes vapeur"}}
-      ]
-    },
-    "Mali": {
-      "coords": [17.5707, -3.9962],
-      "feculents": "Mil, fonio, riz, manioc, patate douce, igname",
-      "proteines": "Poulet, poisson (tilapia, capitaine), bœuf maigre, cabri, œufs, haricots",
-      "legumes": "Gombos, feuilles de manioc, chou, tomates, oignons, aubergine, carottes",
-      "fruits": "Mangue, papaye, banane, goyave, ananas, citron, avocat",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de mil + mangue","alt":"Porridge de fonio + banane + lait"},"dej":{"plat":"Tô + sauce gombo + poisson","alt":"Tô de mil + sauce gombo légère + poisson vapeur"},"collation":{"plat":"Fruits tropicaux frais","alt":"Smoothie banane + mangue + yaourt + whey"},"diner":{"plat":"Poulet yassa + riz","alt":"Poulet yassa + riz vapeur + légumes sautés à l’huile d’arachide"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain de mil + papaye","alt":"Bouillie de fonio + oeufs + fruits locaux + graines"},"dej":{"plat":"Sauce arachide + riz + cabri","alt":"Cabri mijoté au four + riz portion contrôlée + légumes vapeur"},"collation":{"plat":"Mangue","alt":"Noix locales + fruit"},"diner":{"plat":"Poisson braisé + manioc","alt":"Poisson grillé + manioc vapeur + légumes"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Patate douce rôtie + banane","alt":"Bouillie de mil + lait + fruits locaux"},"dej":{"plat":"Riz sauce feuilles de manioc + bœuf","alt":"Riz vapeur + bœuf maigre + légumes sautés"},"collation":{"plat":"Papaye fraîche","alt":"Yaourt + fruits"},"diner":{"plat":"Tô + sauce arachide + poulet","alt":"Tô de mil + poulet grillé + sauce arachide légère"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Galette de mil + mangue","alt":"Porridge de fonio + ananas + lait"},"dej":{"plat":"Poisson en sauce + igname","alt":"Poisson grillé + igname vapeur + légumes"},"collation":{"plat":"Fruits frais","alt":"Smoothie papaye + ananas + lait"},"diner":{"plat":"Tô + sauce gombo + cabri","alt":"Tô de fonio + cabri rôti + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Beignets de mil + banane","alt":"Bouillie de mil + fruits locaux + graines"},"dej":{"plat":"Poulet braisé + riz","alt":"Poulet grillé + riz vapeur + légumes"},"collation":{"plat":"Fruits tropicaux","alt":"Fromage blanc + noix locales + fruit"},"diner":{"plat":"Riz sauce feuilles de manioc + poisson","alt":"Riz vapeur + poisson grillé + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Bouillie de fonio + mangue","alt":"Galette de patate douce + yaourt + fruits locaux"},"dej":{"plat":"Sauce arachide + bœuf + manioc","alt":"Bœuf + manioc vapeur + légumes vapeur"},"collation":{"plat":"Papaye","alt":"Yaourt + fruits"},"diner":{"plat":"Tô + poisson braisé + légumes","alt":"Tô de mil + poisson grillé + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Patate douce rôtie + mangue","alt":"Bouillie de mil + banane + lait"},"dej":{"plat":"Poulet yassa + fonio","alt":"Poulet yassa + fonio + légumes sautés"},"collation":{"plat":"Fruits frais","alt":"Smoothie banane + mangue + lait"},"diner":{"plat":"Riz sauce gombo + cabri","alt":"Riz sauce gombo + cabri rôti + légumes vapeur"}}
-      ]
-    },
-    "Algérie": {
-      "coords": [28.0339, 1.6596],
-      "feculents": "Couscous, semoule, pain, orge, riz",
-      "proteines": "Poulet, agneau, poisson, œufs, haricots",
-      "legumes": "Carottes, courgettes, navets, tomates, poivrons, oignons, pois chiches",
-      "fruits": "Orange, dattes, figues, pomme, banane, raisin",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Baghrir + miel","alt":"Baghrir complet + oeufs + yaourt nature + fruits"},"dej":{"plat":"Couscous poulet + légumes","alt":"Couscous + poulet grillé + légumes rôtis"},"collation":{"plat":"Fruits frais","alt":"Smoothie orange + dattes + whey + frommage blanc"},"diner":{"plat":"Tajine poulet aux légumes","alt":"Tajine poulet + légumes vapeur, moins de gras"}},
-        {"jour":"Mardi","petitdej":{"plat":"Msemmen + confiture","alt":"Msemmen + fromage frais + oeufs + fruits"},"dej":{"plat":"Chakhchoukha (galettes + sauce)","alt":"Chakhchoukha + légumes rôtis"},"collation":{"plat":"Datte","alt":"Fromage blanc + noix locales + fruit"},"diner":{"plat":"Couscous poisson + légumes","alt":"Couscous + poisson grillé + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Harcha + miel","alt":"Harcha + yaourt + oeufs + fruits rouges"},"dej":{"plat":"Tajine kefta + légumes","alt":"Tajine kefta + légumes vapeur, moins de gras"},"collation":{"plat":"Fruits frais","alt":"Smoothie banane + lait d’amande + whey"},"diner":{"plat":"Chorba + pain","alt":"Chorba maison + pain complet"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Kalb el louz","alt":"Oeufs + yaourt nature"},"dej":{"plat":"Couscous agneau + légumes","alt":"Couscous + agneau grillé + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Smoothie banane + yaourt + noix"},"diner":{"plat":"Tajine poisson + légumes","alt":"Tajine poisson + légumes vapeur, moins d’huile"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Mhadjeb + miel","alt":"Mhadjeb + fromage frais + fruits"},"dej":{"plat":"Loubia (haricots) + pain","alt":"Loubia maison + pain complet + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Smoothie datte + banane"},"diner":{"plat":"Couscous poulet + légumes","alt":"Couscous complet + poulet grillé + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Baghrir + confiture","alt":"Baghrir + yaourt + fruits"},"dej":{"plat":"Tajine poulet + légumes","alt":"Tajine poulet + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix locales + fruit"},"diner":{"plat":"Chorba + pain","alt":"Chorba maison + pain complet"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Msemmen + miel","alt":"Msemmen + yaourt + fruits"},"dej":{"plat":"Couscous agneau + légumes","alt":"Couscous complet + agneau grillé + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Smoothie orange + dattes"},"diner":{"plat":"Tajine poisson + légumes","alt":"Tajine poisson + légumes vapeur, moins de gras"}}
-      ]
-    },
-    "Tunisie": {
-      "coords": [33.8869, 9.5375],
-      "feculents": "Couscous, pain, orge, semoule, riz",
-      "proteines": "Poulet, agneau, poisson, œufs, haricots",
-      "legumes": "Carottes, courgettes, poivrons, tomates, oignons, pois chiches, épinards",
-      "fruits": "Orange, dattes, figues, pomme, banane, raisin",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de semoule + figues","alt":"Porridge d’avoine + banane + noix"},"dej":{"plat":"Couscous au poulet + légumes","alt":"Couscous complet + poulet grillé + légumes vapeur"},"collation":{"plat":"Orange fraîche","alt":"Yaourt nature + dattes"},"diner":{"plat":"Tajine de légumes","alt":"Tajine de légumes avec moins d’huile et épices"}} ,
-        {"jour":"Mardi","petitdej":{"plat":"Pain complet + œufs brouillés + orange","alt":"Pain complet + omelette + tranches de pomme"},"dej":{"plat":"Poisson à la charmoula + pommes de terre","alt":"Poisson grillé + pommes de terre vapeur + salade"},"collation":{"plat":"Dattes","alt":"Noix locales + fruit"},"diner":{"plat":"Tajine de poulet aux légumes","alt":"Poulet grillé + légumes rôtis"}} ,
-        {"jour":"Mercredi","petitdej":{"plat":"Yaourt nature + miel + figues","alt":"Yaourt nature + banane + graines de courge"},"dej":{"plat":"Brik au thon + salade","alt":"Thon + riz + poivrons + salade variée"},"collation":{"plat":"Grenade","alt":"Smoothie grenade + yaourt"},"diner":{"plat":"Couscous aux légumes","alt":"Couscous + légumes vapeur + viande"}} ,
-        {"jour":"Jeudi","petitdej":{"plat":"Porridge millet + dattes","alt":"Porridge millet + oeufs + banane + noix"},"dej":{"plat":"Poisson au four + légumes","alt":"Poisson grillé + légumes vapeur + semoule"},"collation":{"plat":"Orange","alt":"Yaourt nature + figues"},"diner":{"plat":"Tajine de bœuf aux légumes","alt":"Tajine de bœuf aux légumes dose l'huile et la quantité"}} ,
-        {"jour":"Vendredi","petitdej":{"plat":"Pain complet + œufs pochés + figues","alt":"Omelette + pain complet + fruits"},"dej":{"plat":"Couscous au poisson","alt":"Couscous + poisson grillé + légumes vapeur"},"collation":{"plat":"Dattes","alt":"Noix + fruit frais"},"diner":{"plat":"Tajine de légumes","alt":"Tajine de légumes vapeur et épices"}} ,
-        {"jour":"Samedi","petitdej":{"plat":"Bouillie de semoule + banane","alt":"Porridge avoine + oeufs + fruits secs"},"dej":{"plat":"Poulet rôti + pommes de terre","alt":"Poulet grillé + pommes de terre + légumes"},"collation":{"plat":"Orange","alt":"Yaourt nature + fruits"},"diner":{"plat":"Couscous aux légumes","alt":"Couscous + viande + légumes vapeur"}} ,
-        {"jour":"Dimanche","petitdej":{"plat":"Yaourt + figues + miel","alt":"Smoothie banane + yaourt + dattes"},"dej":{"plat":"Tajine de poisson + légumes","alt":"Tajine de poisson aux légumes vapeur"},"collation":{"plat":"Grenade","alt":"Noix + fruit"},"diner":{"plat":"Poulet grillé + légumes","alt":"Poulet grillé + légumes rôtis + pomme de terre"}}
-      ]
-    },
-    "Égypte": {
-      "coords": [26.8206, 30.8025],
-      "feculents": "Pain baladi, riz, falafel, lentilles, patate douce, semoule, orge",
-      "proteines": "Poulet, poisson (tilapia, dorade), bœuf maigre, œufs, légumineuses",
-      "legumes": "Tomates, concombres, poivrons, aubergines, courgettes, épinards, oignons",
-      "fruits": "Orange, dattes, figues, banane, grenade, pomme, melon",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Pain baladi + œufs brouillés + tomate","alt":"Pain complet + œufs pochés + concombre"},"dej":{"plat":"Koshari (riz, lentilles, pâtes)","alt":"Koshari version healthy (moins d’huile, plus de lentilles et légumes)"},"collation":{"plat":"Dattes","alt":"Yaourt nature + dattes"},"diner":{"plat":"Poulet au four + riz","alt":"Poulet grillé + riz + légumes rôtis"}} ,
-        {"jour":"Mardi","petitdej":{"plat":"Baladi bread + fromage frais","alt":"Pain complet + oeufs + fromage léger + tomate"},"dej":{"plat":"Poisson grillé + légumes","alt":"Poisson grillé + légumes vapeur + riz + lentilles"},"collation":{"plat":"Orange","alt":"Smoothie orange + banane"},"diner":{"plat":"Tajine égyptien (poulet et légumes)","alt":"Patate douce + poulet grillé + légumes rôtis, épices légères"}} ,
-        {"jour":"Mercredi","petitdej":{"plat":"Porridge d’orge + dattes","alt":"Porridge semoule + banane + noix"},"dej":{"plat":"Riz aux légumes + poulet","alt":"Poulet grillé + riz + légumes vapeur"},"collation":{"plat":"Figues fraîches","alt":"Yaourt nature + figues"},"diner":{"plat":"Soupe de lentilles","alt":"Soupe de lentilles + légumes rôtis + boeuf"}} ,
-        {"jour":"Jeudi","petitdej":{"plat":"Pain baladi + œufs brouillés","alt":"Œufs pochés + pain complet + tomate"},"dej":{"plat":"Poisson au four + pommes de terre","alt":"Poisson grillé + patate douce + légumes"},"collation":{"plat":"Grenade","alt":"Fromage blanc + noix + fruit frais"},"diner":{"plat":"Poulet au cumin + légumes","alt":"Poulet cumin + riz + légumes rôtis"}} ,
-        {"jour":"Vendredi","petitdej":{"plat":"Smoothie banane + dattes + lait","alt":"Smoothie banane + oeufs + yaourt"},"dej":{"plat":"Koshari","alt":"Koshari version healthy avec plus de légumes"},"collation":{"plat":"Banane","alt":"Smoothie banane + lait"},"diner":{"plat":"Poisson à la charmoula + riz","alt":"Poisson à la charmoula + riz vapeur + légumes"}} ,
-        {"jour":"Samedi","petitdej":{"plat":"Pain baladi + fromage + tomate","alt":"Pain complet + œuf + légumes"},"dej":{"plat":"Tajine de légumes + poulet","alt":"Poulet grillé + légumes rôtis"},"collation":{"plat":"Dattes","alt":"Yaourt nature + dattes"},"diner":{"plat":"Soupe de lentilles + pain","alt":"Soupe de lentilles + légumes vapeur + patate douce"}} ,
-        {"jour":"Dimanche","petitdej":{"plat":"Baladi bread + omelette","alt":"Omelette + pain complet + pousse d'épinard"},"dej":{"plat":"Poisson grillé + riz","alt":"Poisson grillé + riz + légumes rôtis"},"collation":{"plat":"Orange","alt":"Smoothie orange + noix"},"diner":{"plat":"Poulet au four + légumes","alt":"Poulet grillé + lentilles + légumes vapeur"}}
-      ]
-    },
-    "Nigeria": {
-      "coords": [9.0820, 8.6753],
-      "feculents": "Yam (igname), manioc, riz, maïs, plantain, fonio",
-      "proteines": "Poisson, poulet, bœuf maigre, cabri, œufs, haricots",
-      "legumes": "Feuilles d’épinards, okra (gombos), tomates, poivrons, oignons, aubergine",
-      "fruits": "Mangue, papaye, banane, goyave, orange, avocat, ananas",
-      "plats": [
-       {"jour":"Lundi","petitdej":{"plat":"Bouillie de fonio + mangue","alt":"Porridge avoine + banane + yaourt"},"dej":{"plat":"Riz Jollof + poulet","alt":"Riz Jollof + poulet grillé + légumes vapeur"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + yaourt"},"diner":{"plat":"Soupe Egusi + fufu","alt":"Egusi léger + fufu portion contrôlée + légumes vapeur"}},
-       {"jour":"Mardi","petitdej":{"plat":"Oeufs + fruits","alt":"Oeufs + yaourt + fruits frais"},"dej":{"plat":"Moi moi (haricots) + riz","alt":"Moi moi + riz vapeur + légumes"},"collation":{"plat":"Papaye","alt":"Yaourt + papaye"},"diner":{"plat":"Soupe de gombos + igname","alt":"Soupe de gombos légère + igname vapeur + légumes"}},
-       {"jour":"Mercredi","petitdej":{"plat":"Pain complet + avocat + œufs pochés","alt":"Pain complet grillé + œufs brouillés + fruits"},"dej":{"plat":"Ignames pilées + soupe de légumes","alt":"Ignames vapeur + soupe de légumes + poisson grillé"},"collation":{"plat":"Ananas frais","alt":"Smoothie ananas + lait"},"diner":{"plat":"Soupe Egusi + fufu","alt":"Egusi léger + fufu + légumes vapeur"}},
-       {"jour":"Jeudi","petitdej":{"plat":"Bouillie de maïs + banane","alt":"Porridge millet + fruits frais + yaourt"},"dej":{"plat":"Riz Jollof + poisson","alt":"Riz Jollof léger + poisson grillé + légumes vapeur"},"collation":{"plat":"Banane","alt":"Noix + banane"},"diner":{"plat":"Soupe de légumes + igname","alt":"Soupe de légumes + igname vapeur + protéines maigres"}},
-       {"jour":"Vendredi","petitdej":{"plat":"Omelette aux légumes + pain de maïs","alt":"Omelette légère + pain complet + avocat"},"dej":{"plat":"Ignames pilées + soupe Egusi","alt":"Ignames vapeur + Egusi léger + légumes vapeur"},"collation":{"plat":"Papaye","alt":"Smoothie papaye + yaourt"},"diner":{"plat":"Soupe de gombos + fufu","alt":"Soupe de gombos légère + fufu portion contrôlée + légumes vapeur"}},
-       {"jour":"Samedi","petitdej":{"plat":"Plantain frit + yaourt","alt":"Plantain rôti + yaourt + fruits"},"dej":{"plat":"Riz + haricots + poulet","alt":"Riz vapeur + haricots + poulet grillé + légumes"},"collation":{"plat":"Mangue","alt":"Smoothie mangue + lait"},"diner":{"plat":"Soupe de légumes + igname","alt":"Soupe de légumes + igname vapeur + poisson grillé"}},
-       {"jour":"Dimanche","petitdej":{"plat":"Bouillie de fonio + papaye","alt":"Porridge avoine + banane + fruits frais"},"dej":{"plat":"Riz Jollof + cabri","alt":"Riz Jollof léger + cabri grillé + légumes vapeur"},"collation":{"plat":"Banane","alt":"Noix + banane"},"diner":{"plat":"Soupe Egusi + fufu","alt":"Egusi léger + fufu portion contrôlée + légumes vapeur"}}
-      ]
-    },
-    "Cameroun": {
-      "coords": [7.3697, 12.3547],
-      "feculents": "Ignames, manioc, plantain, riz, maïs, patate douce, couscous de manioc",
-      "proteines": "Poisson, poulet, bœuf maigre, cabri, œufs, crevettes, haricots",
-      "legumes": "Ndolé feuilles, gombo, légumes-feuilles",
-      "fruits": "Mangue, papaye, banane",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de maïs + mangue","alt":"Porridge de fonio + banane + oeufs + yaourt"},"dej":{"plat":"Ndolé (feuilles de ndolé + poulet) + manioc","alt":"Ndolé + poulet grillé + manioc vapeur + légumes verts"},"collation":{"plat":"Papaye fraîche","alt":"Smoothie papaye + yaourt + noix"},"diner":{"plat":"Poulet DG + riz + légumes","alt":"Poulet DG + riz portion contrôlée + légumes vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Bouillie de fonio + papaye","alt":"Porridge avoine + fruits tropicaux + yaourt"},"dej":{"plat":"Eru (feuilles de manioc) + fufu + poisson","alt":"Eru léger + fufu portion contrôlée + poisson vapeur + légumes vapeur"},"collation":{"plat":"Mangue","alt":"Noix + mangue + fromage blanc"},"diner":{"plat":"Poisson braisé + manioc + gombos","alt":"Poisson braisé + manioc vapeur + gombos vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Pain de manioc + avocat + œufs","alt":"Pain complet grillé + œufs brouillés + fruits frais"},"dej":{"plat":"Mbongo Tchobi (poisson noir) + ignames","alt":"Mbongo Tchobi + ignames vapeur + légumes verts"},"collation":{"plat":"Banane","alt":"Smoothie banane + yaourt"},"diner":{"plat":"Sauce graine + riz + légumes","alt":"Sauce graine + riz portion contrôlée + légumes vapeur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Bouillie de patate douce + ananas","alt":"Porridge avoine + oeufs + ruits frais + yaourt"},"dej":{"plat":"Ndomba (poulet aux légumes) + manioc","alt":"Ndomba + manioc vapeur + légumes verts"},"collation":{"plat":"Goyave","alt":"Smoothie goyave + noix"},"diner":{"plat":"Poisson aux légumes + riz","alt":"Poisson grillé + riz portion contrôlée + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Bouillie de maïs + banane","alt":"Porridge fonio + oeufs + fruits + yaourt"},"dej":{"plat":"Poulet yassa + riz + légumes","alt":"Poulet yassa + riz portion contrôlée + légumes vapeur"},"collation":{"plat":"Ananas","alt":"Smoothie ananas + yaourt"},"diner":{"plat":"Mbongo Tchobi + fufu + légumes","alt":"Mbongo Tchobi + fufu portion contrôlée + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Pain de manioc + œufs brouillés","alt":"Pain complet + œufs pochés + avocat"},"dej":{"plat":"Sauce gombo + ignames + poisson","alt":"Sauce gombo + ignames vapeur + poisson grillé"},"collation":{"plat":"Papaye","alt":"Smoothie papaye + yaourt"},"diner":{"plat":"Poulet DG + manioc + légumes","alt":"Poulet DG + manioc vapeur + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Bouillie de fonio + banane","alt":"Porridge avoine + banane + fruits frais"},"dej":{"plat":"Ndolé + riz + légumes","alt":"Ndolé + riz portion contrôlée + légumes vapeur"},"collation":{"plat":"Mangue","alt":"Smoothie mangue + yaourt"},"diner":{"plat":"Poisson braisé + manioc + gombos","alt":"Poisson grillé + manioc vapeur + gombos vapeur"}}
-      ]
-    },
-    "République du Congo": {
-      "coords": [-0.2280, 15.8277],
-      "feculents": "Foufou, manioc, chikwangue, riz, igname, patate douce, banane plantain",
-      "proteines": "Poisson (tilapia, capitaine), poulet, cabri, bœuf, œufs, chenilles, haricots",
-      "legumes": "Feuilles de manioc, gombos, épinards, tomates, oignons, aubergines, courges",
-      "fruits": "Mangue, papaye, ananas, banane, avocat, orange, goyave",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de manioc + fruits tropicaux","alt":"Bouillie de maïs + fruits frais (moins sucrée, plus légère) + oeufs"},"dej":{"plat":"Saka-saka (feuilles de manioc + poisson) + foufou","alt":"Saka-saka allégé (moins d’huile) + manioc vapeur + riz"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + yaourt"},"diner":{"plat":"Poisson grillé + légumes sautés + chikwangue","alt":"Poisson vapeur + légumes vapeur + chikwangue portionnée"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain de manioc + lait chaud","alt":"Pain complet + yaourt nature + fruits + oeufs brouillés"},"dej":{"plat":"Poulet sauce graine + riz","alt":"Poulet sauce graine legère + riz + épinard"},"collation":{"plat":"Papaye","alt":"Noix + fromage blanc + fruits"},"diner":{"plat":"Poisson salé + légumes + foufou","alt":"Poisson frais grillé + foufou + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Oeufs + jus de fruits","alt":"Oeufs + smoothie banane-avocat"},"dej":{"plat":"Maboke de poisson (poisson en feuille) + manioc","alt":"Maboke allégé (moins huile) + manioc vapeur + tomate salade"},"collation":{"plat":"Fruits tropicaux","alt":"Yaourt + fruits frais"},"diner":{"plat":"Saka-saka + riz","alt":"Feuilles de manioc vapeur + poisson grillé + riz portionné"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Bouillie de maïs + banane","alt":"Porridge d’avoine + banane + noix + oeufs (plus fibres, moins sucre)"},"dej":{"plat":"Cabri sauce tomate + riz","alt":"Cabri sauce tomate + riz + légumes sautés"},"collation":{"plat":"Ananas","alt":"Smoothie ananas + yaourt"},"diner":{"plat":"Poisson grillé + chikwangue + légumes","alt":"Poisson grillé + légumes vapeur + manioc portionné"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pain + confiture locale","alt":"Pain complet + oeufs + confiture sans sucre + fruits"},"dej":{"plat":"Poulet moambe + riz","alt":"Poulet moambe léger (moins huile de palme) + riz + légumes"},"collation":{"plat":"Papaye","alt":"Fruits secs + fruits frais"},"diner":{"plat":"Soupe de légumes + poisson","alt":"Soupe légère + poisson grillé + patate douce"}},
-        {"jour":"Samedi","petitdej":{"plat":"Bouillie d’arachide + fruits","alt":"Porridge + fruits frais + yaourt"},"dej":{"plat":"Poisson braisé + foufou + légumes","alt":"Poisson grillé + manioc vapeur + légumes vapeur"},"collation":{"plat":"Mangue","alt":"Yaourt nature + fruits tropicaux"},"diner":{"plat":"Poulet sauté + riz","alt":"Poulet grillé + riz nature + salade verte"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pain au beurre + café local","alt":"Pain complet + fromage frais + fruits"},"dej":{"plat":"Feuilles de manioc + poisson + riz","alt":"Feuilles de manioc vapeur + poisson grillé + riz portionné"},"collation":{"plat":"Ananas","alt":"Smoothie ananas + yaourt"},"diner":{"plat":"Cabri sauce gombo + chikwangue","alt":"Cabri grillé + légumes gombo vapeur + manioc portionné"}}
-      ]
-    },
-    "République Démocratique du Congo": {
-      "coords": [-4.0383, 21.7587],
-      "feculents": "Foufou, chikwangue, manioc, riz, igname, patate douce, plantain",
-      "proteines": "Poisson (capitaine, tilapia, makayabu), poulet, cabri, bœuf, chenilles, œufs, haricots",
-      "legumes": "Feuilles de manioc (pondu), fumbwa, gombos, courges, aubergines, épinards, tomates, oignons",
-      "fruits": "Mangue, papaye, ananas, banane, goyave, avocat, citron",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de maïs + banane","alt":"Bouillie de mil + fruits frais (moins sucrée, plus nutritive) + oeufs"},"dej":{"plat":"Pondu (feuilles de manioc) + poisson salé + foufou","alt":"Pondu léger (moins d’huile) + poisson grillé + manioc vapeur"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + yaourt nature + whey"},"diner":{"plat":"Poulet moambe + riz","alt":"Poulet grillé + riz nature + sauce moambe légère"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain de manioc + thé local","alt":"Pain complet + fromage frais + fruits + oeufs"},"dej":{"plat":"Liboké de poisson (poisson en feuille) + manioc","alt":"Liboké allégé + manioc vapeur + salade verte"},"collation":{"plat":"Fruits tropicaux","alt":"Yaourt + fruits frais + whey"},"diner":{"plat":"Fumbwa + foufou","alt":"Fumbwa + foufou avec huile de qualité"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Beignets + café local","alt":"Oeufs + smoothie banane-avocat"},"dej":{"plat":"Makayabu + foufou","alt":"Makayabu + foufou + légumes vapeur"},"collation":{"plat":"Papaye","alt":"Fruits secs + yaourt + whey"},"diner":{"plat":"Soupe locale + patate douce","alt":"Soupe locale + patate douce + œuf dur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Bouillie de riz + fruits","alt":"Porridge + fruits frais + noix"},"dej":{"plat":"Cabri sauce tomate + riz","alt":"Cabri sauce tomate + riz nature + légumes sautés"},"collation":{"plat":"Ananas frais","alt":"Smoothie ananas + yaourt + whey"},"diner":{"plat":"Poisson braisé + chikwangue + légumes","alt":"Poisson braisé + chikwangue + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pain + confiture locale","alt":"Pain complet + confiture maison sans sucre + fruits + oeufs"},"dej":{"plat":"Poulet sauce graine + riz","alt":"Poulet sauce graine + riz portionné + légumes"},"collation":{"plat":"Papaye","alt":"Yaourt nature + fruits + whey"},"diner":{"plat":"Pondu + poisson","alt":"Pondu + poisson grillé + patate douce"}},
-        {"jour":"Samedi","petitdej":{"plat":"Bouillie d’arachide + fruits","alt":"Porridge + fruits + yaourt nature + oeufs"},"dej":{"plat":"Bœuf sauté + riz","alt":"Bœuf sauté + riz nature + légumes vapeur"},"collation":{"plat":"Fruits locaux","alt":"Noix + fruit frais + fromage blanc"},"diner":{"plat":"Poisson braisé + légumes + manioc","alt":"Poisson braisé + manioc + légumes vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pain au beurre + café","alt":"Pain complet + œufs pochés + avocat"},"dej":{"plat":"Foufou + moambe + poisson","alt":"Foufou + poisson grillé + sauce moambe"},"collation":{"plat":"Ananas","alt":"Smoothie ananas + yaourt"},"diner":{"plat":"Soupe de légumes + cabri","alt":"Soupe + cabri grillé + patate douce"}}
-  ]
-},
-    "La Réunion": {
-    "coords": [-21.1151, 55.5364],
-    "feculents": "Riz, lentilles de Cilaos, patate douce, manioc, maïs, pain maison, grains (pois du Cap, haricots rouges)",
-    "proteines": "Poulet grillé, poisson (thon, espadon, dorade), crevettes, œufs, bœuf, cabri massalé",
-    "legumes": "Chouchou (christophine), brèdes, bringelles (aubergines), tomates, carottes, chou, courgettes",
-    "fruits": "Mangue, letchi, banane, ananas Victoria, goyave, papaye, fruit de la passion",
-    "plats": [
-         {"jour":"Lundi","petitdej":{"plat":"Pain maison complet + confiture mangue","alt":"Yaourt nature + oeufs + granola coco maison"},"dej":{"plat":"Cari poisson + riz + grains","alt":"Cari poisson + riz portionné + grains et salade de brèdes"},"collation":{"plat":"Ananas Victoria","alt":"Yaourt nature + whey + ananas"},"diner":{"plat":"Rougail saucisse + riz","alt":"Rougail allégé (saucisse volaille) + riz portionné + salade chouchou citronnée"}},
-         {"jour":"Mardi","petitdej":{"plat":"Bowl yaourt + ananas + granola coco","alt":"Porridge fonio + oeufs + graines locales"},"dej":{"plat":"Carry poulet massalé + riz + brèdes","alt":"Poulet massalé cuit au four + riz portionné + brèdes sautées à l’ail"},"collation":{"plat":"Letchi","alt":"Smoothie letchi + yaourt + whey"},"diner":{"plat":"Civet zourite + riz","alt":"Zourite sauté + riz portionné + salade de chouchou"}},
-         {"jour":"Mercredi","petitdej":{"plat":"Oeufs + miel + noix","alt":"Oeufs + yaourt nature + fruits frais"},"dej":{"plat":"Boucané (porc) + carry chouchou + riz","alt":"Boucané de poulet + riz portionné + chouchou vapeur"},"collation":{"plat":"Mangue","alt":"Smoothie mangue + lait de coco léger"},"diner":{"plat":"Cari crevettes coco + riz","alt":"Cari crevettes coco + riz portionné + brèdes citronnées"}},
-         {"jour":"Jeudi","petitdej":{"plat":"Smoothie letchi-banane + graines de chia","alt":"Porridge avoine + fruits tropicaux + oeufs"},"dej":{"plat":"Grains + brèdes + poisson frit","alt":"Grains + poisson grillé + salade de chouchou"},"collation":{"plat":"Goyave","alt":"Yaourt + goyave tranchée"},"diner":{"plat":"Rougail tomate + bœuf","alt":"Rougail + bœuf maigre grillé + patate douce rôtie"}},
-         {"jour":"Vendredi","petitdej":{"plat":"Tapioca au lait de coco + mangue","alt":"Porridge millet + mangue + yaourt + oeufs"},"dej":{"plat":"Cari zourite + riz + brèdes","alt":"Zourite + riz portionné + brèdes sautées"},"collation":{"plat":"Banane","alt":"Noix locales + banane"},"diner":{"plat":"Salade chouchou citronnée avec crevettes","alt":"Crevettes grillées + chouchou vapeur + riz portionné"}},
-         {"jour":"Samedi","petitdej":{"plat":"Toast avocat-citron vert + œuf mollet","alt":"Pain complet + fromage frais + fruits de saison + avocat/oeufs"},"dej":{"plat":"Gratin bringelles + riz + bœuf","alt":"Bringelles rôties + riz portionné + bœuf grillé"},"collation":{"plat":"Fruit de la passion","alt":"Yaourt + fruit de la passion"},"diner":{"plat":"Boucané de poulet + patate douce","alt":"Boucané poulet + patate douce + salade verte"}},
-         {"jour":"Dimanche","petitdej":{"plat":"Galette manioc-banane","alt":"Porridge fonio + banane + noix + oeufs"},"dej":{"plat":"Riz citrouille + carry poulet","alt":"Carry de poulet + riz citrouille portionné + brèdes"},"collation":{"plat":"Letchi","alt":"Smoothie letchi + yaourt"},"diner":{"plat":"Grains avec brèdes et poisson","alt":"Grains + poisson grillé + salade chouchou"}}
-     ]
-   },
-    "Tchad": {
-      "coords": [15.4542, 18.7322],
-      "feculents": "Mil, sorgho, maïs, riz, manioc, patate douce, fonio",
-      "proteines": "Poisson (capitaine, tilapia, silure), poulet, bœuf, chèvre, œufs, haricots, arachides",
-      "legumes": "Feuilles de manioc, gombos, aubergines, oignons, tomates, choux, carottes",
-      "fruits": "Mangue, papaye, pastèque, dattes, banane, goyave, citron, orange",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Bouillie de mil au lait caillé","alt":"Mil soufflé + lait végétal + dattes hachées"},"dej":{"plat":"Daraba (sauce gombo + viande + riz)","alt":"Daraba sauce gombo avec poisson vapeur + riz portionné + légumes"},"collation":{"plat":"Mangue fraîche","alt":"Smoothie mangue + lait végétal + whey"},"diner":{"plat":"Boule de mil + sauce arachide","alt":"Boule de mil + sauce légumes + poisson grillé"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain local + omelette aux oignons","alt":"Pain de mil + œuf + avocat + fromage blanc"},"dej":{"plat":"Poisson braisé + riz + légumes","alt":"Poisson braisé + riz portionné + légumes sautés"},"collation":{"plat":"Papaye","alt":"Yaourt nature + papaye + whey"},"diner":{"plat":"Sauce gombo + boule de sorgho","alt":"Sauce gombo + poisson vapeur + sorgho"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Beignets de mil + thé local","alt":"Porridge fonio + banane + noix"},"dej":{"plat":"Viande de bœuf mijotée + riz","alt":"Bœuf grillé + riz portionné + salade de chou"},"collation":{"plat":"Pastèque","alt":"Smoothie pastèque + lait végétal"},"diner":{"plat":"Feuilles de manioc + boule de mil","alt":"Feuilles de manioc + poisson grillé + boule de mil"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Galettes de mil + confiture mangue","alt":"Yaourt nature + mangue + granola local"},"dej":{"plat":"Poulet aux arachides + riz","alt":"Poulet grillé + sauce arachide + riz portionné + aubergines"},"collation":{"plat":"Dattes","alt":"Dattes + noix + fromage blanc + whey"},"diner":{"plat":"Soupe locale au poisson","alt":"Soupe de poisson + légumes vapeur + patate douce"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pain local + lait caillé","alt":"Porridge mil + lait végétal + oeufs + fruits"},"dej":{"plat":"Capitaine braisé + riz + légumes","alt":"Capitaine + fonio + salade"},"collation":{"plat":"Orange","alt":"Smoothie agrumes + whey"},"diner":{"plat":"Sauce tomate + boule de sorgho","alt":"Sauce tomate légère + poisson + sorgho"}},
-        {"jour":"Samedi","petitdej":{"plat":"Galette de patate douce + miel","alt":"Galette de patete douce + oeufs + yaourt + fruits"},"dej":{"plat":"Ragoût de bœuf + mil","alt":"Bœuf mijoté + mil portionné + légumes vapeur"},"collation":{"plat":"Banane","alt":"Yaourt nature + banane + whey"},"diner":{"plat":"Sauce légumes + poisson grillé","alt":"Poisson vapeur + légumes mijotés + fonio"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Bouillie d’arachide + dattes","alt":"Oeufs + mangue + lait végétal"},"dej":{"plat":"Daraba complet (gombo, arachide, viande, riz)","alt":"Daraba allégé + poisson + riz portionné"},"collation":{"plat":"Papaye","alt":"Smoothie papaye + lait végétal"},"diner":{"plat":"Feuilles de manioc + riz","alt":"Feuilles de manioc + bœuf + portion de riz"}}
-      ]
-    }
-  },
-  "Europe": {
-    "France": {
-  "coords": [46.6034, 1.8883],
-  "feculents": "Pain complet, quinoa, riz basmati, pommes de terre, patate douce, pâtes complètes, lentilles, flocons d’avoine",
-  "proteines": "Poulet, poisson (saumon, colin, cabillaud), œufs, bœuf maigre, tofu, légumineuses, fromages frais",
-  "legumes": "Courgette, poireau, carotte, brocoli, épinard, poivron, haricots verts, aubergine, salade, tomate",
-  "fruits": "Pomme, banane, fraise, framboise, orange, kiwi, raisin, poire, pêche, myrtille",
-  "plats": [
-      {"jour":"Lundi","petitdej":{"plat":"Tartine pain complet + fromage frais + kiwi","alt":"Porridge flocons d’avoine + fruits rouges + oeufs"},"dej":{"plat":"Poulet rôti + haricots verts + riz","alt":"Poulet grillé + riz basmati + légumes vapeur"},"collation":{"plat":"Yaourt nature + fruits","alt":"Poignée d’amandes + fromage blanc + whey"},"diner":{"plat":"Soupe maison + pâtes + saumon","alt":"Soupe + saumon + patate douce"}},
-      {"jour":"Mardi","petitdej":{"plat":"Yaourt grec + granola maison + pomme","alt":"Smoothie bowl banane-fraise"},"dej":{"plat":"Poisson au four + quinoa + brocolis","alt":"Saumon vapeur + légumes grillés + quinoa"},"collation":{"plat":"Fruits de saison","alt":"Compote sans sucre + whey"},"diner":{"plat":"Omelette aux légumes + salade","alt":"Omelette + lentiles/riz + salade verte"}},
-      {"jour":"Mercredi","petitdej":{"plat":"Crêpes maison + banane + miel","alt":"Crêpes à la farine complète + fruits + avocat"},"dej":{"plat":"Bœuf mijoté + purée maison","alt":"Bœuf + purée de patate douce + brocoli"},"collation":{"plat":"Fromage blanc + fruits","alt":"Fromage blanc + amandes + fruit"},"diner":{"plat":"Ratatouille + œufs brouillés","alt":"Ratatouille + tofu grillé + riz"}},
-      {"jour":"Jeudi","petitdej":{"plat":"Pain complet + confiture + jus d’orange","alt":"Pain complet + purée d’amande + orange"},"dej":{"plat":"Pâtes complètes + légumes + thon","alt":"Pâtes complètes + légumes + poulet"},"collation":{"plat":"Fruits rouges + yaourt","alt":"Smoothie protéiné"},"diner":{"plat":"Soupe + pain complet + fromage","alt":"Soupe de potiron + patate douce + œuf dur"}},
-      {"jour":"Vendredi","petitdej":{"plat":"Porridge + banane + miel","alt":"Flocons d’avoine + lait végétal + fruits"},"dej":{"plat":"Cabillaud + riz + courgettes","alt":"Cabillaud + riz + légumes grillés"},"collation":{"plat":"Pomme + noix","alt":"Compote + graines de chia"},"diner":{"plat":"Salade composée + pain","alt":"Salade complète (thon, œuf, légumes, quinoa)"}},
-      {"jour":"Samedi","petitdej":{"plat":"Pain + beurre + confiture","alt":"Pain complet + purée de noisette + fruit + oeufs"},"dej":{"plat":"Poulet basquaise + riz","alt":"Poulet basquaise + riz + légumes"},"collation":{"plat":"Yaourt + fruits","alt":"Yaourt + fruits"},"diner":{"plat":"Gratin de légumes + poisson","alt":"Gratin de courgettes + poisson vapeur + pomme de terre"}},
-      {"jour":"Dimanche","petitdej":{"plat":"Croissant + jus d’orange","alt":"Pain complet + fruits + oeufs + avocat"},"dej":{"plat":"Rôti de bœuf + pommes de terre + légumes","alt":"Rôti de bœuf + légumes vapeur + patate douce"},"collation":{"plat":"Fruit frais","alt":"Yaourt grec + graines"},"diner":{"plat":"Soupe maison + dinde","alt":"Soupe + poulet + quinoa"}}
-  ]
-},
-    "Espagne": {
-      "coords": [40.4637, -3.7492],
-      "feculents": "Riz, pain complet, pommes de terre, patate douce, lentilles, pois chiches, quinoa, pâtes complètes",
-      "proteines": "Poisson (thon, sardine, morue), poulet, œufs, jambon ibérique, fruits de mer, légumineuses",
-      "legumes": "Poivron, tomate, courgette, aubergine, oignon, ail, épinard, artichaut, concombre",
-      "fruits": "Orange, pomme, raisin, figue, pastèque, melon, fraise, pêche",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Tostada tomate + huile d’olive","alt":"Tostada pain complet + avocat + œuf poché"},"dej":{"plat":"Paella mixte","alt":"Paella au poulet et légumes (moins grasse)"},"collation":{"plat":"Fruits frais","alt":"Yaourt nature + amandes"},"diner":{"plat":"Tortilla espagnole","alt":"Tortilla légère (moins d’huile, plus de légumes)"}},
-        {"jour":"Mardi","petitdej":{"plat":"Yaourt grec + fruits + miel","alt":"Yaourt nature + graines de chia + fruits rouges + oeufs"},"dej":{"plat":"Gazpacho + pain","alt":"Gaspacho + poulet + patate douce"},"collation":{"plat":"Fruits de saison","alt":"Fromage blanc + noix + fruit"},"diner":{"plat":"Poisson grillé + légumes","alt":"Poisson au four + ratatouille à l’huile d’olive + riz"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Pain + fromage + fruits","alt":"Pain complet + purée d’amande + orange + oeufs"},"dej":{"plat":"Riz aux fruits de mer","alt":"Riz + crevettes + légumes grillés"},"collation":{"plat":"Fruits","alt":"Yaourt grec + miel + whey"},"diner":{"plat":"Salade andalouse","alt":"Salade complète (thon, œuf, légumes + pomme de terre)"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Tostada + confiture","alt":"Pain complet + huile d’olive + tomate"},"dej":{"plat":"Cocido madrileño","alt":"Cocido allégé (+ de poulet, moins de charcuterie, plus de légumes)"},"collation":{"plat":"Fruits","alt":"Compote sans sucre + fruits + whey"},"diner":{"plat":"Poisson + légumes sautés","alt":"Poisson + légumes grillés + riz"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Crêpe espagnole + fruits","alt":"Crêpe complète + fruits rouges + avocat"},"dej":{"plat":"Empanadas + riz","alt":"Empanadas maison cuites au four + légumes + riz"},"collation":{"plat":"Yaourt","alt":"Fruits secs + fromage blanc"},"diner":{"plat":"Tapas variées","alt":"Tapas saines (houmous, crudités, olives, sardines) + patate douce"}},
-        {"jour":"Samedi","petitdej":{"plat":"Pain + huile d’olive + tomate","alt":"Pain complet + avocat + œuf"},"dej":{"plat":"Poulet à la catalane + riz","alt":"Poulet à la catalane + riz basmati + légumes"},"collation":{"plat":"Fruits frais","alt":"Yaourt grec + noix + whey"},"diner":{"plat":"Soupe de légumes + lentilles","alt":"Soupe + salade de légumes grillés + riz + poulet"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Chocolat chaud + churros","alt":"Pain complet + fruits + oeufs"},"dej":{"plat":"Paella de fruits de mer","alt":"Paella au poisson/fruits de mer + légumes"},"collation":{"plat":"Orange + amandes","alt":"Yaourt + fruits + fromage blanc"},"diner":{"plat":"Salade de thon + œuf","alt":"Quinoa + épinard + saumon"}}
-      ]
-    },
-    "Belgique": {
-  "coords": [50.5039, 4.4699],
-  "feculents": "Pommes de terre, pain gris, pâtes, riz, quinoa, stoemp, patate douce",
-  "proteines": "Poulet, œufs, poisson (saumon, cabillaud, moules), bœuf, jambon d’Ardenne, légumineuses",
-  "legumes": "Poireau, chicon, carotte, champignons, brocoli, chou, courgette, céleri",
-  "fruits": "Pomme, poire, fraise, framboise, prune, raisin",
-  "plats": [
-    {"jour":"Lundi","petitdej":{"plat":"Pain gris + fromage + fruits","alt":"Pain complet + purée d’amande + pomme + œufs"},"dej":{"plat":"Stoemp carotte + saucisse","alt":"Stoemp + poulet grillé"},"collation":{"plat":"Pomme","alt":"Yaourt nature + noix + fruits"},"diner":{"plat":"Omelette aux champignons","alt":"Omelette légumes + pomme de terre"}},
-    {"jour":"Mardi","petitdej":{"plat":"Yaourt + fruits","alt":"Frommage blanc granola + flocons d’avoine + fruits rouges"},"dej":{"plat":"Carbonade flamande","alt":"Carbonade + riz + salade"},"collation":{"plat":"Fruits","alt":"Fromage blanc + amandes"},"diner":{"plat":"Saumon + légumes","alt":"Saumon au four + brocoli + pommes de terre"}},
-    {"jour":"Mercredi","petitdej":{"plat":"Crêpes belges + fruits","alt":"Crêpes complètes + banane + œufs"},"dej":{"plat":"Moules-frites","alt":"Moules + frites maison au four"},"collation":{"plat":"Fraises","alt":"Yaourt + miel"},"diner":{"plat":"Soupe poireaux-pommes de terre","alt":"Soupe + pâtes + œuf + légumes)"}},
-    {"jour":"Jeudi","petitdej":{"plat":"Pain + confiture","alt":"Pain complet + avocat + œuf"},"dej":{"plat":"Waterzooi de poulet","alt":"Waterzooi léger (moins de crème, plus de légumes)"},"collation":{"plat":"Poire","alt":"Compote sans sucre + noix"},"diner":{"plat":"Cabillaud + purée","alt":"Cabillaud + stoemp"}},
-    {"jour":"Vendredi","petitdej":{"plat":"Pain + fromage","alt":"Pain complet + purée d’amande + fraises"},"dej":{"plat":"Boulet liégeois + frites","alt":"Boulet liégois + patate douce + salade"},"collation":{"plat":"Yaourt","alt":"Fruits secs + fromage blanc"},"diner":{"plat":"Poisson + légumes grillés","alt":"Saumon + riz + courgettes"}},
-    {"jour":"Samedi","petitdej":{"plat":"Gaufre liégeoise","alt":"Mini-gaufre maison + fruits + yaourt"},"dej":{"plat":"Pâtes jambon-fromage","alt":"Pâtes complètes + jambon d’Ardenne + champignons + salade"},"collation":{"plat":"Pomme","alt":"Yaourt + noix"},"diner":{"plat":"Potage tomates + pâtes","alt":"Soupe + riz + poulet"}},
-    {"jour":"Dimanche","petitdej":{"plat":"Chocolat chaud + petit pain","alt":"Pain complet + fruits + œufs"},"dej":{"plat":"Rôti + pommes de terre + carottes","alt":"Rôti + légumes vapeur + pomme de terre"},"collation":{"plat":"Poire + amandes","alt":"Yaourt + fruits"},"diner":{"plat":"Salade au chèvre","alt":"Quinoa + chicon + saumon"}}
-  ]
-},
-    "Portugal": {
-      "coords": [39.3999, -8.2245],
-      "feculents": "Pain de maïs, riz, patate douce, pommes de terre, haricots, pois chiches, lentilles",
-      "proteines": "Poisson (morue, sardine, thon), poulet, porc, œufs, fruits de mer, légumineuses",
-      "legumes": "Chou, carotte, oignon, ail, épinard, tomate, poivron, courgette, haricot vert",
-      "fruits": "Orange, figue, pomme, poire, banane, raisin, pastèque, cerise",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Pain de maïs + fromage + café","alt":"Pain complet + avocat + œuf poché"},"dej":{"plat":"Bacalhau à brás","alt":"Bacalhau à brás (moins d’huile) + pomme de terre + salade verte"},"collation":{"plat":"Fruits frais","alt":"Amandes + fruits + fromage blanc"},"diner":{"plat":"Soupe caldo verde","alt":"Soupe caldo verde + riz + lentilles + poulet"}},
-        {"jour":"Mardi","petitdej":{"plat":"Yaourt + fruits","alt":"Porridge avoine + fruits rouges + oeufs"},"dej":{"plat":"Poisson grillé + pommes de terre","alt":"Poisson grillé + pomme de terre + légumes"},"collation":{"plat":"Fruits secs","alt":"Yaourt + graines + whey"},"diner":{"plat":"Poulet piri-piri","alt":"Poulet piri-piri + légumes vapeur + patate douce"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Pain + confiture","alt":"Pain complet + avocat + oeufs"},"dej":{"plat":"Feijoada portugaise","alt":"Feijoada allégée (moins de viande grasse, plus de légumes)"},"collation":{"plat":"Orange + noix","alt":"Compote sans sucre + whey"},"diner":{"plat":"Salade de thon + haricot","alt":"Salade complète (thon, légumes, pois chiches)"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Pain + fromage blanc","alt":"Yaourt + fruits + graines + oeufs"},"dej":{"plat":"Bacalhau com natas","alt":"Morue au four + purée légère + légumes"},"collation":{"plat":"Fruit frais","alt":"Amandes"},"diner":{"plat":"Soupe de légumes + pain","alt":"Soupe maison + œuf dur + pomme de terre"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Crêpe + miel","alt":"Crêpe + fruits + oeufs + avocat"},"dej":{"plat":"Arroz de marisco","alt":"Riz aux fruits de mer + légumes"},"collation":{"plat":"Yaourt","alt":"Smoothie banane + yaourt + whey"},"diner":{"plat":"Poisson grillé + légumes","alt":"Poisson grillé + légumes vapeur + riz"}},
-        {"jour":"Samedi","petitdej":{"plat":"Pain + huile d’olive","alt":"Pain complet + avocat"},"dej":{"plat":"Porc à l’alentejana","alt":"Porc à l'alentejana + légumes + patate douce"},"collation":{"plat":"Fruits de saison","alt":"Yaourt nature + graines"},"diner":{"plat":"Soupe + salade + sardine","alt":"Soupe + sardine + pomme de terre"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pao de deus + café","alt":"Pao de deus + oeufs + boisson chaude"},"dej":{"plat":"Morue à la portugaise","alt":"Morue à la portugaise + patate douce + légumes"},"collation":{"plat":"Fruit","alt":"Yaourt + fruits rouges"},"diner":{"plat":"Riz + haricot + poulet","alt":"Riz + haricot + poulet + épinard"}}
-      ]
-    },
-    "Italie": {
-      "coords": [41.8719, 12.5674],
-      "feculents": "Pâtes complètes, riz arborio, polenta, pain complet, pommes de terre, lentilles, quinoa",
-      "proteines": "Poulet, poisson (thon, sardine, dorade), œufs, bœuf maigre, mozzarella, ricotta, légumineuses",
-      "legumes": "Tomates, courgettes, aubergines, poivrons, épinards, brocolis, roquette, artichauts, oignons",
-      "fruits": "Orange, raisin, pomme, figue, citron, fraise, pêche, melon, poire, myrtille",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Cappuccino + tartine de pain complet + confiture","alt":"Yaourt grec + fruits frais + granola"},"dej":{"plat":"Poulet grillé + pâtes complètes + ratatouille italienne","alt":"Poulet grillé + pâtes de lentilles + ratatouille rôtie au four"},"collation":{"plat":"Fruit de saison","alt":"Amandes + pomme + fromage blanc"},"diner":{"plat":"Soupe minestrone + pain complet","alt":"Salade caprese allégée (mozzarella, tomate, basilic) + pâtes + courgettes"}},
-        {"jour":"Mardi","petitdej":{"plat":"Ricotta + miel + fruit","alt":"Smoothie banane-fraise + avoine + oeufs"},"dej":{"plat":"Risotto de légumes + poisson blanc","alt":"Risotto aux légumes complet avec riz arborio complet, filet de poisson blanc cuit vapeur, légumes rôtis au four"},"collation":{"plat":"Noix + fruits secs","alt":"Yaourt nature + fruits"},"diner":{"plat":"Légumes grillés + œuf poché","alt":"Légumes grillés + œuf poché + polenta"}}, 
-        {"jour":"Mercredi","petitdej":{"plat":"Pain complet + purée de noisette + café","alt":"Crêpes légères + fruits + oeufs"},"dej":{"plat":"Lasagnes aux légumes + salade verte","alt":"Lasagnes de courgettes + poulet + pomme de terre sauté"},"collation":{"plat":"Fruit frais","alt":"Compote + whey + carré de chocolat noir"},"diner":{"plat":"Salade de quinoa + tomates séchées + mozzarella","alt":"Pizza maison + sauce tomate + mozarella + légumes + jambon"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Yaourt grec + flocons d’avoine + miel","alt":"Smoothie vert pomme-épinard + graine de chia + oeufs"},"dej":{"plat":"Gnocchi à la sauce tomate + légumes","alt":"Gnocchi de pommes de terre + sauce tomate maison + légumes vapeur + poulet"},"collation":{"plat":"Amandes + fruit","alt":"Yaourt nature + fruits secs + fruits"},"diner":{"plat":"Filet de poisson + légumes sautés","alt":"Filet de poisson blanc au four + légumes grillés + polenta"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pain complet + confiture + café","alt":"Overnight oats + fruits rouges + oeufs"},"dej":{"plat":"Pâtes + légumes + poulet","alt":"Pâtes complètes + poulet + aubergine"},"collation":{"plat":"Fruit frais","alt":"Poignée de noix + fromage blanc + miel + whey"},"diner":{"plat":"Polenta + bœuf mijoté + sauce tomate","alt":"Polenta + légumes grillés + boeuf + sauce tomate maison"}},
-        {"jour":"Samedi","petitdej":{"plat":"Cappuccino + biscotte complète + confiture","alt":"Yaourt + fruits + oeufs + avocat"},"dej":{"plat":"Ravioli à la ricotta + sauce crème","alt":"Ravioli complets + ricotta + sauce fromage blanc + légumes + jambon"},"collation":{"plat":"Fruits secs","alt":"Compote maison + fruits"},"diner":{"plat":"Salade caprese + pain","alt":"Salade caprese + pain complet + riz + poisson"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Cornetto + jus d’orange","alt":"Oeuf pochés + fruits frais + boisson chaude"},"dej":{"plat":"Risotto aux légumes + parmesan","alt":"Risotto complet aux légumes + parmesan + crevettes"},"collation":{"plat":"Fruit de saison","alt":"Yaourt grec + fruits secs"},"diner":{"plat":"Poulet cacciatore + polenta","alt":"Poulet cacciatore + polenta + légumes rôtis"}}
-      ]
-    },
-    "Royaume-Uni": {
-      "coords": [55.3781, -3.4360],
-      "feculents": "Pain complet, porridge (flocons d’avoine), pommes de terre, pâtes complètes, riz complet, légumineuses",
-      "proteines": "Poulet, œufs, poisson blanc, saumon, bœuf maigre, tofu, haricots",
-      "legumes": "Épinards, brocolis, carottes, poivrons, champignons, chou-fleur, petits pois, tomates",
-      "fruits": "Pomme, poire, banane, fraise, myrtille, orange, raisin",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Full English Breakfast (œufs, bacon, haricots, tomate grillée)","alt":"Full English allégé : œufs pochés, boeuf séché, haricots maison, tomates rôties"},"dej":{"plat":"Fish and chips","alt":"Poisson blanc au four + frites de patate douce"},"collation":{"plat":"Scone + confiture","alt":"Yaourt nature + fruits rouges + whey"},"diner":{"plat":"Shepherd’s pie","alt":"Shepherd’s pie allégé : bœuf + purée de patate douce + légumes"}},
-        {"jour":"Mardi","petitdej":{"plat":"Porridge + miel + fruits","alt":"Porridge + fruits frais + graines de chia"},"dej":{"plat":"Bangers and mash","alt":"Saucisses de poulet + purée de chou-fleur et pommes de terre"},"collation":{"plat":"Fruit frais","alt":"Amandes + pomme + skyr"},"diner":{"plat":"Chicken pot pie","alt":"Chicken pot pie léger : poulet, légumes, pâte allégée"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Toast + beurre + confiture","alt":"Toast complet + purée d’amande + fruits + oeufs"},"dej":{"plat":"Beef stew + pommes de terre","alt":"Beef stew + légumes vapeur"},"collation":{"plat":"Fruit frais","alt":"Yaourt grec + fruits"},"diner":{"plat":"Fish pie","alt":"Fish pie : poisson blanc, purée de pommes de terre, légumes"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Eggs Benedict","alt":"Eggs Benedict : œufs pochés, muffin complet, sauce yaourt"},"dej":{"plat":"Ploughman’s lunch (fromage, jambon, pain)","alt":"Ploughman’s allégé : jambon, fromage allégé, crudités"},"collation":{"plat":"Fruit frais","alt":"Noix + fruit + skyr"},"diner":{"plat":"Steak and kidney pudding","alt":"Steak maigre + légumes vapeur + pâte allégée"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pancakes + sirop","alt":"Pancakes à la farine complète + sirop d'érable"},"dej":{"plat":"Cornish pasty","alt":"Pomme de terre + légumes + poulet ou bœuf maigre"},"collation":{"plat":"Fruit frais","alt":"Yaourt nature + fruits"},"diner":{"plat":"Roast dinner (poulet, pommes de terre, légumes)","alt":"Poulet rôti + pommes de terre vapeur + légumes rôtis"}},
-        {"jour":"Samedi","petitdej":{"plat":"Full English Breakfast","alt":"Version allégée comme lundi"},"dej":{"plat":"Fish and chips","alt":"Poisson blanc au four + légumes rôtis"},"collation":{"plat":"Scone + confiture","alt":"Yaourt grec + fruits"},"diner":{"plat":"Steak pie + légumes","alt":"Steak pie léger : bœuf maigre + pâte allégée + légumes rôtis"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Toast + œufs brouillés","alt":"Toast complet + œufs brouillés + avocat"},"dej":{"plat":"Sunday roast (bœuf, pommes de terre, légumes)","alt":"Rôti maigre + pommes de terre vapeur + légumes rôtis"},"collation":{"plat":"Fruit frais","alt":"Noix + fruit + skyr"},"diner":{"plat":"Toad in the hole (saucisses au four dans pâte)","alt":"Toad in the hole léger : saucisses de poulet maigres + pâte complète + légumes vapeur"}}
-      ]
-    },
-    "Écosse": {
-      "coords": [56.4907, -4.2026],
-      "feculents": "Pommes de terre, avoine, pain complet, patate douce, riz, pâtes complètes",
-      "proteines": "Saumon, truite, haddock, poulet, bœuf maigre, agneau, œufs",
-      "legumes": "Brocoli, chou, carottes, navets, poireaux, courgettes, épinards, poivrons",
-      "fruits": "Pomme, poire, myrtille, fraise, framboise, kiwi",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Porridge d’avoine + myrtilles","alt":"Porridge avoine complète + fruits rouges frais + graines de chia"},"dej":{"plat":"Haggis + purée de pommes de terre + navets","alt":"Haggis allégé (moins de gras) + purée de patate douce + navets vapeur"},"collation":{"plat":"Fruit frais","alt":"Noix + pomme"},"diner":{"plat":"Saumon grillé + pommes de terre + brocoli","alt":"Saumon au four + brocoli vapeur + pommes de terre rôties au four"}}, 
-        {"jour":"Mardi","petitdej":{"plat":"Pain de seigle + confiture","alt":"Pain complet + ricotta + fruits frais"},"dej":{"plat":"Fish and chips","alt":"Poisson blanc au four + frites de patate douce + salade verte"},"collation":{"plat":"Yaourt nature","alt":"Yaourt grec + baies"},"diner":{"plat":"Stew écossais (ragoût de bœuf)","alt":"Ragoût de bœuf maigre + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Crumpets + miel","alt":"Crumpets complets + purée d’amande + fruits"},"dej":{"plat":"Cullen Skink (soupe de poisson fumé)","alt":"Soupe de poisson maigre + légumes"},"collation":{"plat":"Fruit frais","alt":"Poignée d’amandes"},"diner":{"plat":"Poulet rôti + légumes","alt":"Poulet rôti + légumes vapeur variés"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Porridge + pomme râpée","alt":"Porridge avoine complète + pomme + cannelle"},"dej":{"plat":"Salade de saumon fumé + pommes de terre","alt":"Saumon fumé + salade mixte + pommes de terre vapeur"},"collation":{"plat":"Fruit frais","alt":"Noix + kiwi"},"diner":{"plat":"Ragoût d’agneau + légumes racines","alt":"Ragoût d’agneau maigre + légumes racines vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Toast complet + œufs brouillés","alt":"Toast complet + œufs pochés + avocat"},"dej":{"plat":"Haddock grillé + purée de pommes de terre","alt":"Haddock grillé + purée de patate douce + légumes vapeur"},"collation":{"plat":"Fruit frais","alt":"Yaourt nature + graines"},"diner":{"plat":"Steak + légumes grillés","alt":"Steak maigre + légumes rôtis au four"}},
-        {"jour":"Samedi","petitdej":{"plat":"Scones + confiture","alt":"Scones complets + fromage frais + fruits"},"dej":{"plat":"Pie au poulet + légumes","alt":"Pie au poulet léger + légumes vapeur"},"collation":{"plat":"Fruit frais","alt":"Poignée de noix"},"diner":{"plat":"Saumon + quinoa + légumes","alt":"Saumon grillé + légumes variés + patate douce vapeur"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Oeufs pochés + bacon écossais + toast","alt":"Œufs pochés + bacon de dinde + toast complet"},"dej":{"plat":"Ragoût de bœuf écossais","alt":"Ragoût de bœuf maigre + légumes vapeur"},"collation":{"plat":"Fruit frais","alt":"Yaourt grec + fruits rouges"},"diner":{"plat":"Saumon au four + légumes + pommes de terre","alt":"Saumon grillé + légumes vapeur + patate douce rôtie"}}
-      ]
-    },
-    "Norvège": {
-      "coords": [60.4720, 8.4689],
-      "feculents": "Pommes de terre, avoine, pain complet, riz, pâtes complètes, patate douce",
-      "proteines": "Saumon, truite, morue, cabillaud, crevettes, poulet, bœuf maigre, œufs",
-      "legumes": "Brocoli, chou-fleur, carottes, poireaux, épinards, courgettes, poivrons",
-      "fruits": "Pomme, poire, myrtille, fraise, framboise, kiwi",
-      "plats": [
-       {"jour":"Lundi","petitdej":{"plat":"Porridge d’avoine + myrtilles","alt":"Porridge avoine complète + fruits rouges frais + graines de lin"},"dej":{"plat":"Saumon grillé + pommes de terre + brocoli","alt":"Saumon grillé + brocoli vapeur + patate douce rôtie"},"collation":{"plat":"Fruit frais","alt":"Poignée d’amandes"},"diner":{"plat":"Soupe de poisson + pain complet","alt":"Soupe de légumes + filet de poisson vapeur + riz complet"}},
-       {"jour":"Mardi","petitdej":{"plat":"Toast complet + fromage frais + tomate","alt":"Toast complet + avocat + œuf poché"},"dej":{"plat":"Morue au four + purée de pommes de terre","alt":"Morue vapeur + purée de patate douce + légumes vapeur"},"collation":{"plat":"Yaourt nature","alt":"Yaourt grec + fruits rouges"},"diner":{"plat":"Poulet rôti + légumes racines","alt":"Poulet rôti + pomme de terre + légumes racines vapeur"}},
-       {"jour":"Mercredi","petitdej":{"plat":"Smoothie banane + fraise + avoine","alt":"Smoothie vert + graines de chia + yaourt"},"dej":{"plat":"Truite grillée + riz","alt":"Truite au four + quinoa + légumes rôtis"},"collation":{"plat":"Fruit frais","alt":"Noix + pomme"},"diner":{"plat":"Stew de bœuf + légumes","alt":"Stew de bœuf maigre + légumes vapeur"}},
-       {"jour":"Jeudi","petitdej":{"plat":"Œufs brouillés + pain complet","alt":"Œufs pochés + toast complet + avocat"},"dej":{"plat":"Cabillaud poêlé + pommes de terre + carottes","alt":"Cabillaud vapeur + légumes variés + patate douce rôtie"},"collation":{"plat":"Fruits frais","alt":"Poignée d’amandes"},"diner":{"plat":"Soupe de légumes + saumon fumé","alt":"Soupe maison + saumon grillé + légumes vapeur"}},
-       {"jour":"Vendredi","petitdej":{"plat":"Porridge + pomme râpée","alt":"Porridge avoine complète + pomme + cannelle + graines"},"dej":{"plat":"Crevettes sautées + riz","alt":"Crevettes grillées + riz complet + légumes vapeur"},"collation":{"plat":"Yaourt + fruits","alt":"Yaourt grec + baies"},"diner":{"plat":"Poulet rôti + brocoli + pommes de terre","alt":"Poulet grillé + légumes vapeur + patate douce"}},
-       {"jour":"Samedi","petitdej":{"plat":"Pain complet + confiture + café","alt":"Toast complet + fromage frais + fruits"},"dej":{"plat":"Saumon au four + pâtes","alt":"Saumon grillé + pâtes complètes + légumes rôtis"},"collation":{"plat":"Fruits frais","alt":"Poignée de noix"},"diner":{"plat":"Steak + légumes racines","alt":"Steak maigre + pomme de terre + légumes vapeur variés"}},
-       {"jour":"Dimanche","petitdej":{"plat":"Smoothie bowl + fruits","alt":"Porridge avoine complète + fruits frais + graines"},"dej":{"plat":"Morue au four + pommes de terre + légumes","alt":"Morue vapeur + patate douce + légumes rôtis"},"collation":{"plat":"Fruit frais","alt":"Yaourt grec + baies"},"diner":{"plat":"Truite grillée + quinoa + légumes","alt":"Truite au four + légumes vapeur + patate douce rôtie"}}
-      ]
-    },
-    "Grèce": {
-      "coords": [39.0742, 21.8243],
-      "feculents": "Pain complet, riz, pâtes complètes, orzo, pommes de terre, boulgour",
-      "proteines": "Poulet, agneau, poisson (dorade, saumon), œufs, légumineuses, feta",
-      "legumes": "Tomates, concombre, courgettes, poivrons, aubergines, épinards, oignons, olives",
-      "fruits": "Orange, figue, raisin, melon, pastèque, pomme, citron",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Yaourt grec + miel + noix","alt":"Yaourt grec + fruits frais + oeufs + graines"},"dej":{"plat":"Moussaka","alt":"Moussaka légère avec béchamel à base de fromage blanc et aubergines rôties"},"collation":{"plat":"Fruit frais","alt":"Poignée d’amandes + skyr"},"diner":{"plat":"Salade grecque + pain","alt":"Salade grecque légère (feta allégée, légumes frais) + boulgour + poulet"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain complet + fromage feta + tomate","alt":"Toast complet + avocat + œuf poché"},"dej":{"plat":"Souvlaki de poulet + riz","alt":"Souvlaki de poulet + riz + légumes rôtis"},"collation":{"plat":"Olives + fruits secs","alt":"Yaourt grec + baies"},"diner":{"plat":"Spanakopita (tarte aux épinards)","alt":"Tarte aux épinards légère avec pâte filo complète et fromage allégé + brochette agneau"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Smoothie melon + orange","alt":"Smoothie bowl avec fruits frais et graines + oeufs"},"dej":{"plat":"Poisson grillé + pommes de terre","alt":"Poisson grillé + légumes vapeur + patate douce rôtie"},"collation":{"plat":"Fruit frais","alt":"Poignée de noix + skyr + whey"},"diner":{"plat":"Gemista (légumes farcis)","alt":"Légumes farcis au quinoa et légumes, moins de gras + saumon"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Omelette aux herbes + pain","alt":"Omelette aux épinards + toast complet + avocat"},"dej":{"plat":"Pastitsio (pâtes gratinées à la viande)","alt":"Pastitsio avec pâtes complètes et béchamel à base de fromage blanc"},"collation":{"plat":"Fruit frais","alt":"Yaourt nature + graines"},"diner":{"plat":"Salade de lentilles + feta","alt":"Salade de lentilles + légumes frais + feta allégée + poulet"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pain complet + confiture + thé","alt":"Toast complet + fromage frais + fruits + oeufs"},"dej":{"plat":"Poulet à la grecque + orzo","alt":"Poulet grillé + orzo complet + légumes rôtis"},"collation":{"plat":"Fruit frais","alt":"Poignée de noix"},"diner":{"plat":"Soupe avgolemono (citron + poulet)","alt":"Soupe légère avgolemono + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Yaourt grec + fruits secs","alt":"Porridge avoine complète + fruits frais"},"dej":{"plat":"Poisson à la méditerranéenne + pommes de terre","alt":"Poisson grillé + légumes vapeur + patate douce"},"collation":{"plat":"Olives + fruit","alt":"Yaourt nature + baies"},"diner":{"plat":"Salade de tomates et concombre + pain","alt":"Salade complète avec poulet grillé + légumes frais + pain complet"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pain complet + miel + fromage frais","alt":"Toast complet + avocat + œuf poché"},"dej":{"plat":"Agneau rôti + légumes","alt":"Agneau grillé + légumes rôtis au four + orzo"},"collation":{"plat":"Fruit frais","alt":"Poignée de noix + fruits"},"diner":{"plat":"Briam (ragoût de légumes)","alt":"Briam léger avec légumes rôtis + poulet + boulgour"}}
-      ]
-    },
-    "Palestine": {
-      "coords": [31.9522, 35.2332],
-      "feculents": "Pain pita complet, riz basmati, boulgour, freekeh, couscous, pommes de terre, lentilles",
-      "proteines": "Poulet, agneau, bœuf maigre, poisson, pois chiches, œufs, labneh, fromage halloumi",
-      "legumes": "Aubergine, poivron, tomate, concombre, courgette, oignon, ail, épinard, persil, menthe",
-      "fruits": "Figue, datte, grenade, raisin, citron, orange, pastèque, pomme, abricot",
-      "plats": [
-         {"jour":"Lundi","petitdej":{"plat":"Labneh + pain pita + olives + tomate","alt":"Yaourt grec + pain complet + concombre"},"dej":{"plat":"Maqlouba (riz, légumes, poulet)","alt":"Maqlouba allégée avec riz + poulet + légumes grillés"},"collation":{"plat":"Fruits frais","alt":"Amandes + dattes + fromage blanc"},"diner":{"plat":"Salade fattoush","alt":"Fattoush avec pain pita complet grillé et peu d’huile d’olive"}},
-         {"jour":"Mardi","petitdej":{"plat":"Houmous + pain pita + concombre","alt":"Tartine de houmous + oeufs"},"dej":{"plat":"Kebab de bœuf + boulgour + légumes","alt":"Brochettes de bœuf maigre + quinoa + salade orientale"},"collation":{"plat":"Fruit frais","alt":"Noix + figues + whey"},"diner":{"plat":"Soupe de lentilles rouges","alt":"Soupe légère aux lentilles et légumes + poulet"}},
-         {"jour":"Mercredi","petitdej":{"plat":"Œufs brouillés à la tomate (shakshuka)","alt":"Shakshuka légère avec huile d’olive réduite et pain complet"},"dej":{"plat":"Poulet au citron + riz","alt":"Poulet grillé + riz basmati + légumes vapeur"},"collation":{"plat":"Fruits secs","alt":"Yaourt nature + fruits"},"diner":{"plat":"Salade de pois chiches + légumes frais","alt":"Taboulé au quinoa et persil frais + poulet"}},
-         {"jour":"Jeudi","petitdej":{"plat":"Pain pita complet + fromage halloumi","alt":"Toast complet + halloumi grillé + tomate + oeuf"},"dej":{"plat":"Mansaf (agneau, riz, yaourt)","alt":"Mansaf allégé avec agneau maigre et sauce au yaourt nature + tomate/concombre"},"collation":{"plat":"Fruits frais","alt":"Fromage blanc + amandes"},"diner":{"plat":"Feuilles de vigne farcies","alt":"Feuilles de vigne au riz complet et légumes"}},
-         {"jour":"Vendredi","petitdej":{"plat":"Pain complet + confiture de figues + thé","alt":"Pain complet + miel + fruit"},"dej":{"plat":"Falafels + salade + pain pita","alt":"Falafels cuits au four + salade fraîche + pain complet"},"collation":{"plat":"Fruit frais","alt":"Noix + dattes"},"diner":{"plat":"Soupe de légumes + pain pita","alt":"Soupe orientale + œuf dur + salade verte"}},
-         {"jour":"Samedi","petitdej":{"plat":"Yaourt + fruits + noix","alt":"Smoothie banane-datte + avoine"},"dej":{"plat":"Poisson grillé + riz + légumes","alt":"Poisson blanc + boulgour + salade orientale"},"collation":{"plat":"Fruit frais","alt":"Yaourt nature"},"diner":{"plat":"Moussaka palestinienne (aubergines, tomates, pois chiches)","alt":"Moussaka légère au four avec huile d’olive réduite + boeuf"}},
-         {"jour":"Dimanche","petitdej":{"plat":"Pain pita + zaatar + huile d’olive","alt":"Toast complet + zaatar + labneh"},"dej":{"plat":"Maklouba végétarienne + salade","alt":"Maklouba healthy au riz complet, aubergines, pois chiches et légumes"},"collation":{"plat":"Fruits frais","alt":"Noix + raisins secs"},"diner":{"plat":"Soupe au freekeh (blé vert concassé)","alt":"Soupe de légumes et freekeh + boeuf "}}
-      ]
-    }
-  },
-  "Asie": {
-    "Turquie": {
-      "coords": [38.9637, 35.2433],
-      "feculents": "Pain complet turc (ekmek), riz, boulgour, lentilles, pommes de terre, pâtes complètes",
-      "proteines": "Agneau maigre, poulet, poisson, œufs, légumineuses, fromage feta, yoğurt",
-      "legumes": "Tomate, concombre, poivron, aubergine, courgette, épinard, oignon, ail, persil, menthe",
-      "fruits": "Grenade, figue, raisin, pomme, orange, abricot, cerise, pastèque, citron",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Menemen (œufs brouillés à la tomate et poivron) + pain turc","alt":"Menemen léger avec moins d’huile + pain complet"},"dej":{"plat":"Kebab d’agneau + riz + salade","alt":"Kebab grillé + riz complet + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"yoğurtnature + noix"},"diner":{"plat":"Mercimek corbasi","alt":"Mercimek corbasi avec moins d'huile + légumes variés + oeufs"}},
-        {"jour":"Mardi","petitdej":{"plat":"Pain turc + fromage feta + olives","alt":"Pain complet + süzme+ concombre"},"dej":{"plat":"brochette agneau + boulgour","alt":"brochette agneau + légumes + pomme de terre"},"collation":{"plat":"Fruits secs","alt":"Amandes + fromage blanc + figues"},"diner":{"plat":"Poisson grillé + légumes","alt":"Cuisse/ailes de poulet au four salça + courgettes et aubergines rôties + riz pilaf moins d'huile"}},
-        {"jour":"Mercredi","petitdej":{"plat":"yoğurt+ miel + noix","alt":"yoğurt + fruits frais + graines + oeufs"},"dej":{"plat":"Köfte + boulgour + salade","alt":"Köfte grillées + boulgour complet + salade de tomates et concombre"},"collation":{"plat":"Fruit frais","alt":"Poignée de noix + fromage blanc"},"diner":{"plat":"Imam bayildi (aubergines farcies)","alt":"Aubergines farcies légères au four + boeuf + salade verte"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Pancakes turcs (gözleme) au fromage","alt":"Gözleme + thé turque + oeuf"},"dej":{"plat":"Poulet à la sauce tomate + riz","alt":"Poulet grillé + riz complet + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"yoğurt nature + amandes"},"diner":{"plat":"Soupe de légumes + pain","alt":"Etli kuru fasulye + riz + salade"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Pain turc + confiture + thé","alt":"Pain complet + tomate/concombre + fruit + oeufs"},"dej":{"plat":"Moussaka turque","alt":"Moussaka allégée au four avec légumes et yoğurt + boulgour"},"collation":{"plat":"Fruit frais","alt":"Noix + raisins secs + fromage blanc"},"diner":{"plat":"Salade de pois chiches + légumes","alt":"Taboulé au boulgour complet et herbes fraîches + agneau maigre"}},
-        {"jour":"Samedi","petitdej":{"plat":"Œufs durs + tomates + concombre","alt":"Œufs pochés + tomates + avocat"},"dej":{"plat":"Poisson grillé + pommes de terre","alt":"Tavuklu pilav + salade"},"collation":{"plat":"Fruits frais","alt":"yoğurt + noix + fromage blanc"},"diner":{"plat":"Lentilles mijotées + légumes","alt":"Soupe de lentilles + légumes variés + poisson"}},
-        {"jour":"Dimanche","petitdej":{"plat":"yoğurt + fruits + noix","alt":"Smoothie banane + yoğurt + flocons d’avoine + oeuf"},"dej":{"plat":"Poulet au four + boulgour + légumes","alt":"Poulet grillé + boulgour + légumes rôtis"},"collation":{"plat":"Fruit frais","alt":"Amandes + dattes + fromage blanc"},"diner":{"plat":"Riz pilaf + légumes + poisson","alt":"Riz pilaf + poisson vapeur + légumes vapeur"}}
-      ]
-    },
-    "Inde": {
-      "coords": [20.5937, 78.9629],
-      "feculents": "Riz basmati, millet, chapati (blé complet), sattu, patate douce",
-      "proteines": "Poulet, poisson, œufs, lentilles, pois chiches, paneer, tofu",
-      "legumes": "Épinards, chou-fleur, carottes, courgettes, poivrons, aubergine, tomates, haricots verts",
-      "fruits": "Mangue, papaye, banane, goyave, citron, orange, pomme",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Upma (semoule + légumes)","alt":"Upma + oeufs"},"dej":{"plat":"Poulet tikka + riz basmati","alt":"Poulet tikka + riz basmati complet + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Yaourt nature + mangue + whey"},"diner":{"plat":"Dahl (lentilles) + chapati","alt":"Dahl + riz + salade d’épinards + poulet"}},
-        {"jour":"Mardi","petitdej":{"plat":"Paratha au fromage + thé","alt":"Paratha complet + miel + oeufs"},"dej":{"plat":"Poisson au curry + riz","alt":"Poisson curry + riz basmati + légumes rôtis"},"collation":{"plat":"Fruits secs","alt":"Noix + fruits"},"diner":{"plat":"Chana masala + riz","alt":"Chana masala+ riz + légumes vapeur + poulet"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Idli + chutney coco","alt":"Idli + chutney de yaourt + oeufs"},"dej":{"plat":"Poulet korma + chapati","alt":"Poulet korma + chapati complet + légumes sautés"},"collation":{"plat":"Banane","alt":"Smoothie banane + lait végétal"},"diner":{"plat":"Baingan bharta (aubergine) + riz","alt":"Baingan bharta + riz basmati + salade de légumes + poulet"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Poha (riz aplati)","alt":"Poha + oeuf"},"dej":{"plat":"Saag paneer + chapati","alt":"Épinards + paneer léger + riz + poisson"},"collation":{"plat":"Mangue","alt":"Yaourt grec + mangue"},"diner":{"plat":"Poulet curry + riz basmati","alt":"Poulet curry + riz basmati + légumes vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Dhokla (gâteau de pois chiches)","alt":"Dhokla + boisson chaude + oeuf"},"dej":{"plat":"Poisson tandoori + riz","alt":"Poisson tandoori + riz basmati + légumes rôtis"},"collation":{"plat":"Fruits frais","alt":"Noix + pomme"},"diner":{"plat":"Dal makhani + chapati","alt":"Dal makhani léger + chapati complet + salade de légumes + poulet"}},
-        {"jour":"Samedi","petitdej":{"plat":"Chapati + œufs brouillés","alt":"Chapati + œufs + tomate"},"dej":{"plat":"Poulet biryani","alt":"Biryani léger (riz basmati + poulet + légumes)"},"collation":{"plat":"Fruits secs","alt":"Yaourt nature + noix"},"diner":{"plat":"Baingan bharta + chapati","alt":"Baingan bharta + milet + salade de légumes"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Idli + sambar","alt":"Idli + sambar + oeufs"},"dej":{"plat":"Poisson curry + riz","alt":"Poisson curry + riz basmati complet + légumes vapeur"},"collation":{"plat":"Mangue ou papaye","alt":"Smoothie mangue + lait végétal"},"diner":{"plat":"Chana masala + chapati","alt":"Pois chiches épicés + riz + salade de légumes + poulet"}}
-      ]
-    },
-    "Corée du Sud": {
-      "coords": [35.9078, 127.7669],
-      "feculents": "Riz blanc, riz complet, nouilles de patate douce, nouilles de riz, orge, patate douce",
-      "proteines": "Poulet, bœuf maigre, poisson (saumon, maquereau), tofu, œufs, fruits de mer",
-      "legumes": "Chou chinois, carottes, épinards, courgettes, champignons, soja, poivrons, oignons, brocolis",
-      "fruits": "Pomme, poire coréenne, mandarine, fraise, kiwi, raisin, melon",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Riz + œuf + kimchi","alt":"Congee + œuf poché + kimchi"},"dej":{"plat":"Bibimbap (riz, légumes, viande, œuf)","alt":"Bibimbap (riz complet + patate douce + brocolis + avocat) + poulet"},"collation":{"plat":"Fruit frais","alt":"Yaourt nature + fruits"},"diner":{"plat":"Soupe miso coréenne + riz","alt":"Soupe miso coréenne + riz complet + tofu grillé"}},
-        {"jour":"Mardi","petitdej":{"plat":"Gyeranbap + légumes","alt":"Gyeranbap + œuf + kimchi"},"dej":{"plat":"Bulgogi (bœuf mariné) + riz","alt":"Bulgogi + riz complet + légumes sautés"},"collation":{"plat":"Poignée de noix","alt":"Fruits secs + thé vert"},"diner":{"plat":"Tofu grillé + kimchi + riz","alt":"Tofu sauté aux légumes + riz complet"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Soupe de tofu + riz","alt":"Soupe de miso + légumes + riz complet"},"dej":{"plat":"Poisson grillé + riz + légumes","alt":"Poisson grillé + riz complet + salade de chou"},"collation":{"plat":"Fruit de saison","alt":"Yaourt grec + fraises"},"diner":{"plat":"Bibimbap végétarien","alt":"Bibimbap + oeufs + légumes ++  "}},
-        {"jour":"Jeudi","petitdej":{"plat":"Omelette coréenne + riz","alt":"Omelette aux légumes + riz complet"},"dej":{"plat":"Dakgalbi + légumes","alt":"Dakgalbi + légumes"},"collation":{"plat":"Fruits frais","alt":"Amandes + pomme"},"diner":{"plat":"Soupe kimchi jjigae + tofu","alt":"Soupe kimchi jjigae + viande + riz basmati complet"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Gukpap","alt":"Gukpap + œuf + riz"},"dej":{"plat":"Japchae (nouilles de patate douce sautées)","alt":"Japchae + tofu + légumes vapeur"},"collation":{"plat":"Fruit + thé vert","alt":"Yaourt nature + noix"},"diner":{"plat":"Poisson grillé + soupe claire + riz","alt":"Poisson vapeur + riz complet + soupe"}},
-        {"jour":"Samedi","petitdej":{"plat":"Toasts coréens aux légumes","alt":"Toasts coréens + omelette + légumes"},"dej":{"plat":"Bibimbap au poulet","alt":"Bibimbap au poulet+ riz complet"},"collation":{"plat":"Fruits secs","alt":"Smoothie fruit + lait végétal"},"diner":{"plat":"Soupe d’algues + riz","alt":"Soupe d’algues + tofu + légumes sautés"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Dakjuk + fruits","alt":"Dakjuk + oeufs + fruits frais"},"dej":{"plat":"Samgyeopsal + salade + riz","alt":"Samgyeopsal + kimchi + riz complet"},"collation":{"plat":"Fruit frais","alt":"Yaourt grec + fruits rouges"},"diner":{"plat":"Hot pot coréen léger + tofu","alt":"Soupe maison + riz complet + légumes vapeur + tofu"}}
-      ]
-    },
-    "Laos": {
-      "coords": [19.8563, 102.4955],
-      "feculents": "Riz gluant, riz complet, nouilles de riz, patate douce, maïs, manioc",
-      "proteines": "Poulet, poisson d’eau douce, bœuf maigre, porc grillé, œufs, tofu, crevettes",
-      "legumes": "Chou, aubergine, concombre, courgette, carotte, haricot long, épinard, tomates, oignons, poivrons",
-      "fruits": "Papaye, mangue, banane, ananas, pastèque, goyave, citron vert, fruit du dragon",
-      "plats": [
-         {"jour":"Lundi","petitdej":{"plat":"Riz gluant + œuf + fruits tropicaux","alt":"Riz gluant + œuf poché + papaye fraîche"},"dej":{"plat":"Laap (salade de viande hachée, herbes, citron vert) + riz gluant","alt":"Laap de poulet + riz complet + légumes"},"collation":{"plat":"Fruits frais","alt":"Noix + banane"},"diner":{"plat":"Soupe de légumes laotienne + tofu","alt":"Soupe laotienne + poulet + nouilles de riz"}},
-         {"jour":"Mardi","petitdej":{"plat":"Bouillie de riz + herbes fraîches","alt":"Bouillie de riz + oeufs + légumes"},"dej":{"plat":"salade de papaye verte + riz","alt":"salade de papaye verte + crevettes + riz gluant"},"collation":{"plat":"Mangue + noix de coco","alt":"Smoothie mangue-lait végétal"},"diner":{"plat":"Soupe de nouilles (khao poon)","alt":"Soupe de nouilles au poulet + chou vert"}},
-         {"jour":"Mercredi","petitdej":{"plat":"Riz gluant + fruits","alt":"Riz gluant + poulet"},"dej":{"plat":"Poulet sauté au basilic + riz","alt":"Poulet sauté au basilici + riz + légumes sautés"},"collation":{"plat":"Fruits tropicaux","alt":"Yaourt nature + fruits"},"diner":{"plat":"Légumes sautés + tofu + riz","alt":"Soupe de légumes + œuf dur + riz complet"}},
-         {"jour":"Jeudi","petitdej":{"plat":"Soupe claire + riz","alt":"Soupe de riz complet + légumes"},"dej":{"plat":"Porc grillé + légumes + riz","alt":"Porc maigre sauté + riz complet + salade croquante"},"collation":{"plat":"Fruit frais","alt":"Amandes + thé vert"},"diner":{"plat":"Poisson au four + légumes vapeur","alt":"Poisson vapeur + riz complet + sauce légère citronnée"}},
-         {"jour":"Vendredi","petitdej":{"plat":"Riz gluant + omelette","alt":"Riz gluant + œuf brouillé + légumes"},"dej":{"plat":"Laap de poisson + légumes","alt":"Laap de poulet + nouilles de riz + salade verte"},"collation":{"plat":"Fruits frais","alt":"Noix de cajou + fruits"},"diner":{"plat":"Soupe au lait de coco légère + légumes","alt":"Soupe de poulet au lait de coco light + riz complet + légumes"}},
-         {"jour":"Samedi","petitdej":{"plat":"Bouillie de riz + citron vert","alt":"Bouillie de riz + oeufs"},"dej":{"plat":"Poulet grillé + salade de légumes + riz","alt":"Poulet vapeur + riz complet + sauce citronnelle"},"collation":{"plat":"Smoothie tropical","alt":"Fruits frais"},"diner":{"plat":"Soupe laotienne de poisson + herbes fraîches","alt":"Soupe claire au tofu + riz complet"}},
-         {"jour":"Dimanche","petitdej":{"plat":"Riz gluant + fruits + thé vert","alt":"Riz complet + fruits frais + infusion citronnelle"},"dej":{"plat":"Nem khao + poulet","alt":"Nem khao + poulet + légumes"},"collation":{"plat":"Fruit frais","alt":"Noix + papaye"},"diner":{"plat":"Soupe de riz","alt":"Soupe de riz + légumes vapeur + lamelles de porc"}}
-      ]
-    },
-    "Sri Lanka": {
-      "coords": [7.8731, 80.7718],
-      "feculents": "Riz basmati, riz rouge, nouilles de riz, roti complet, millet",
-      "proteines": "Poulet, poisson, crevettes, œufs, lentilles corail, tofu, tempeh",
-      "legumes": "Épinards, aubergine, carotte, chou-fleur, haricots verts, courgette, poivron, oignon, tomate, potiron",
-      "fruits": "Banane, mangue, papaye, ananas, fruit de la passion, pastèque, goyave, citron vert, noix de coco",
-      "plats": [
-         {"jour":"Lundi","petitdej":{"plat":"Hoppers + fruits","alt":"Hoppers + fruits + oeufs"},"dej":{"plat":"Curry de poulet + riz basmati + légumes","alt":"Curry de poulet au lait de coco light + riz rouge + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix de coco + banane"},"diner":{"plat":"SSoupe de légumes épicée + riz basmati","alt":"Soupe de légumes épicée + riz basmati + poulet"}},
-         {"jour":"Mardi","petitdej":{"plat":"Riz au lait de coco (kiribath) + fruits","alt":"Bouillide riz + lait végétal + fruits"},"dej":{"plat":"Poisson au curry + riz rouge + légumes","alt":"Poisson au curry + riz + sauce légère citronnée + légumes"},"collation":{"plat":"Fruits frais","alt":"Amandes + ananas"},"diner":{"plat":"Légumes sautés + tofu + riz","alt":"Soupe légère de lentilles + pain complet"}},
-         {"jour":"Mercredi","petitdej":{"plat":"Roti complet + banane + thé","alt":"Yaourt nature + fruits tropicaux"},"dej":{"plat":"Dhal (lentilles) + riz + légumes","alt":"Dhal léger au lait de coco light + quinoa + légumes"},"collation":{"plat":"Papaye + noix","alt":"Smoothie banane-lait végétal"},"diner":{"plat":"Curry de légumes + riz","alt":"Soupe épicée de légumes + riz rouge + poulet"}},
-         {"jour":"Jeudi","petitdej":{"plat":"Bouillie d’avoine + mangue + lait de coco","alt":"Porridge d’avoine + fruits + lait végétal"},"dej":{"plat":"Curry de crevettes + riz basmati + légumes","alt":"Crevettes grillées + riz complet + salade croquante"},"collation":{"plat":"Fruits frais","alt":"Noix de cajou + ananas"},"diner":{"plat":"Dhal (lentilles) + riz + légumes","alt":"Dhal léger au lait de coco light + poulet + millet + légumes"}},
-         {"jour":"Vendredi","petitdej":{"plat":"Roti + fruits + thé","alt":"Roti + oeufs + fruit + yaourt nature"},"dej":{"plat":"Curry de poisson + riz rouge + légumes vapeur","alt":"Curry de poisson + riz + sauce coco light + légumes"},"collation":{"plat":"Fruit frais","alt":"Noix + banane"},"diner":{"plat":"Soupe de lentilles + légumes","alt":"Soupe dhal légère + riz complet + crevettes"}},
-         {"jour":"Samedi","petitdej":{"plat":"Riz au lait de coco + fruits","alt":"Porridge de riz complet + papaye"},"dej":{"plat":"Poulet grillé + curry de légumes + riz","alt":"Poulet au four + riz complet + légumes rôtis"},"collation":{"plat":"Fruits tropicaux","alt":"Noix de coco fraîche, fromage blanc"},"diner":{"plat":"Soupe végétarienne + roti complet","alt":"Soupe au poulet + nouilles de riz + légumes"}},
-         {"jour":"Dimanche","petitdej":{"plat":"Pancakes à la noix de coco + fruits","alt":"Crêpes au lait de coco + fruits frais + oeufs"},"dej":{"plat":"Curry de légumes + riz basmati","alt":"Curry de légumes light + riz + tempeh"},"collation":{"plat":"Fruits frais","alt":"Smoothie tropical + whey"},"diner":{"plat":"Soupe dhal + légumes vapeur","alt":"Soupe dhal + riz rouge + tofu"}}
-      ]
-    },
-    "Thaïlande": {
-      "coords": [15.8700, 100.9925],
-      "feculents": "Riz jasmin, nouilles de riz, riz gluant complet, patate douce, vermicelles de riz, quinoa",
-      "proteines": "Poulet, crevettes, poisson, œufs, tofu, tempeh, bœuf maigre",
-      "legumes": "Chou, carotte, poivron, courgette, haricot long, brocoli, oignon, ail, basilic thaï, coriandre",
-      "fruits": "Mangue, ananas, papaye, banane, fruit du dragon, citron vert, noix de coco, pastèque, goyave",
-      "plats": [
-         {"jour":"Lundi","petitdej":{"plat":"Riz sauté et œuf","alt":"Riz sauté aux légumes et œuf poché"},"dej":{"plat":"Pad Thaï au poulet","alt":"Pad Thaï au poulet et nouilles de riz + portion de légumes"},"collation":{"plat":"Mangue fraîche","alt":"Mangue + noix de coco râpée + fromage blanc"},"diner":{"plat":"Soupe Tom Yum aux crevettes","alt":"Soupe Tom Yum aux crevettes + légumes"}},
-         {"jour":"Mardi","petitdej":{"plat":"Omelette thaïlandaise + riz jasmin","alt":"Omelette aux légumes + riz complet"},"dej":{"plat":"Curry vert de poulet + riz","alt":"Curry vert poulet au lait de coco light + vermicelle de riz + légumes"},"collation":{"plat":"Fruits tropicaux","alt":"Papaye + amandes"},"diner":{"plat":"Soupe de nouilles + légumes + tofu","alt":"Soupe de nouilles + légumes + boeuf grillé"}},
-         {"jour":"Mercredi","petitdej":{"plat":"Porridge de riz gluant au lait de coco","alt":"Porridge de riz complet au lait végétal + fruits + oeuf"},"dej":{"plat":"Poisson citron et coriandre + riz","alt":"Poisson vapeur + patate douce + salade croquante"},"collation":{"plat":"Fruit du dragon","alt":"Smoothie tropical"},"diner":{"plat":"Sauté de légumes au tofu","alt":"Soupe de légumes citronnelle + riz rouge + crevettes"}},
-         {"jour":"Jeudi","petitdej":{"plat":"Crêpes de riz à la banane","alt":"Crêpes à la farine de riz complet + banane + oeufs"},"dej":{"plat":"Curry rouge aux crevettes + riz jasmin","alt":"Curry rouge aux crevettes + curry léger de légumes + riz complet"},"collation":{"plat":"Noix de coco fraîche","alt":"Mangue + noix de cajou"},"diner":{"plat":"Soupe Tom Kha Kai","alt":"Soupe Tom Kha Kai + riz"}},
-         {"jour":"Vendredi","petitdej":{"plat":"Riz frit au poulet et légumes","alt":"Riz sauté au tofu et légumes vapeur"},"dej":{"plat":"Pad See Ew (nouilles sautées au bœuf et brocoli)","alt":"Pad See Ew léger en sucre"},"collation":{"plat":"Ananas frais","alt":"Papaye + graines de chia"},"diner":{"plat":"Soupe de légumes citronnelle","alt":"Soupe de légumes citronnelle + crevettes + nouilles"}},
-         {"jour":"Samedi","petitdej":{"plat":"Omelette + riz gluant","alt":"Omelette + riz + fruits"},"dej":{"plat":"Curry massaman au poulet","alt":"Curry massaman léger au poulet + patate douce"},"collation":{"plat":"Noix + fruits","alt":"Smoothie mangue-coco"},"diner":{"plat":"Soupe claire aux légumes + tofu","alt":"Soupe de légumes + poulet + riz complet"}},
-         {"jour":"Dimanche","petitdej":{"plat":"Pancakes coco-banane","alt":"Crêpes à la farine de riz + fruits tropicaux"},"dej":{"plat":"Curry de légumes thaï + riz jasmin","alt":"Curry de légumes au lait de coco light + riz jasmin + crevettes"},"collation":{"plat":"Fruits frais","alt":"Ananas + noix"},"diner":{"plat":"Soupe de légumes citronnelle + riz rouge","alt":"Soupe de légumes citronnelle + riz rouge + boeuf maigre"}}
-      ]
-    },
-    "Vietnam": {
-      "coords": [14.0583, 108.2772],
-      "feculents": "Riz jasmin, nouilles de riz, vermicelles de riz, patate douce, riz complet, bánh mì complet",
-      "proteines": "Poulet, porc maigre, bœuf, crevettes, poisson, œufs, tofu, tempeh",
-      "legumes": "Chou, carotte, concombre, germes de soja, oignon, salade, coriandre, menthe, basilic, haricots verts",
-      "fruits": "Mangue, banane, papaye, ananas, fruit du dragon, citron vert, pastèque, goyave, jacquier",
-      "plats": [
-         {"jour":"Lundi","petitdej":{"plat":"Phở au bœuf","alt":"Phở au boeuf et légumes + bouillon léger"},"dej":{"plat":"Riz jasmin + poulet au gingembre","alt":"Riz jasmin + poulet au gingembre"},"collation":{"plat":"Fruits tropicaux","alt":"Mangue + noix de cajou"},"diner":{"plat":"Soupe claire de légumes + tofu","alt":"Soupe de légumes citronnée + riz complet + poulet"}},
-         {"jour":"Mardi","petitdej":{"plat":"Bánh cuốn (crêpes de riz vapeur farcies)","alt":"Bánh cuốn farcies au boeuf et légumes"},"dej":{"plat":"Bún chả (porc grillé + vermicelles de riz + herbes)","alt":"Bún chả + légumes + sauce légère nuoc mam allégée"},"collation":{"plat":"Papaye + noix de coco","alt":"Smoothie tropical sans sucre"},"diner":{"plat":"Soupe de nouilles au poulet","alt":"Soupe de nouilles au poulet + légumes"}},
-         {"jour":"Mercredi","petitdej":{"plat":"Riz sauté aux légumes + œuf","alt":"Riz sauté aux légumes vapeur + œuf poché"},"dej":{"plat":"Poisson vapeur citronnelle + riz jasmin + légumes","alt":"Poisson vapeur + riz + salade croquante"},"collation":{"plat":"Fruit du dragon","alt":"Banane + amandes"},"diner":{"plat":"Soupe de légumes + tofu grillé","alt":"Soupe claire de légumes + riz complet + boeuf"}},
-         {"jour":"Jeudi","petitdej":{"plat":"Bánh mì complet + œuf + concombre","alt":"Bánh mì complet + oeufs + légumes croquants"},"dej":{"plat":"Curry vietnamien de légumes + riz","alt":"Curry vietnamien de légumes au lait de coco light + riz complet"},"collation":{"plat":"Ananas + noix","alt":"Smoothie mangue-coco"},"diner":{"plat":"Soupe de légumes + vermicelles de riz","alt":"Soupe de légumes + riz + crevettes"}},
-         {"jour":"Vendredi","petitdej":{"plat":"Soupe légère au riz et herbes fraîches","alt":"Porridge de riz complet + légumes"},"dej":{"plat":"Poulet citronnelle + riz jasmin","alt":"Poulet citronnelle + riz + légumes vapeur"},"collation":{"plat":"Fruits tropicaux","alt":"Noix de cajou + papaye"},"diner":{"plat":"Bún bò Huế (soupe épicée de bœuf)","alt":"Soupe épicée allégée au tofu + légumes"}},
-         {"jour":"Samedi","petitdej":{"plat":"Bánh mì + fruits tropicaux","alt":"Bánh mì + ananas + oeufs"},"dej":{"plat":"Riz jasmin + crevettes sautées + légumes","alt":"Crevettes grillées + riz + salade croquante"},"collation":{"plat":"Mangue + noix","alt":"Smoothie mangue-passion"},"diner":{"plat":"Soupe de légumes citronnée","alt":"Soupe claire + tofu + riz complet"}},
-         {"jour":"Dimanche","petitdej":{"plat":"Phở au poulet","alt":"Phở au poulet + bouillon léger"},"dej":{"plat":"Rouleaux de printemps (Gỏi cuốn)","alt":"Gỏi cuốn + sauce légère + oeufs"},"collation":{"plat":"Fruits frais","alt":"Ananas + amandes"},"diner":{"plat":"Soupe + riz","alt":"Soupe + riz complet + poulet"}}
-      ]
-    },
-    "Japon": {
-    "coords": [36.2048, 138.2529],
-    "feculents": "Riz japonais, soba, udon, ramen, mochigome (riz gluant), patate douce",
-    "proteines": "Poisson (saumon, thon, maquereau), tofu, poulet, œufs, crevettes, bœuf maigre",
-    "legumes": "Chou chinois, épinard, concombre, carotte, champignons shiitake, daikon, edamame, algues",
-    "fruits": "Yuzu, pomme japonaise, poire asiatique, fraise, kaki, mandarine, melon, cerise",
-    "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Onigiri (boulettes de riz) + soupe miso + légumes marinés","alt":"Onigiri complet au riz brun + soupe miso light + légumes vapeur"},"dej":{"plat":"Sushi varié + salade d’algues","alt":"Sushi au riz complet + poisson grillé + salade d’algues"},"collation":{"plat":"Fruits frais","alt":"Fruits + fromage blanc"},"diner":{"plat":"Tempura de légumes + riz","alt":"Tempura de légumes + riz complet + poulet"}},
-        {"jour":"Mardi","petitdej":{"plat":"Tamagoyaki (omelette japonaise) + riz + thé vert","alt":"Tamagoyaki + riz complet + légumes vapeur + boisson chaude"},"dej":{"plat":"Ramen au poulet + légumes","alt":"Ramen au poulet au bouillon miso + nouilles soba complètes + légumes"},"collation":{"plat":"Fruits frais","alt":"Yaourt nature + fraises"},"diner":{"plat":"Yakitori (brochettes de poulet) + riz","alt":"Yakitori + riz complet + salade de chou"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Mochi + thé vert","alt":"Mochi complet aux haricots rouges + thé vert"},"dej":{"plat":"Donburi (bol de riz) au bœuf et légumes","alt":"Donburi au bœuf maigre + légumes"},"collation":{"plat":"Fruits de saison","alt":"yaourt + pomme"},"diner":{"plat":"Sashimi + riz + légumes","alt":"Sashimi + riz + légumes vapeur"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Riz + nori + œuf dur","alt":"Riz + nori + œuf poché"},"dej":{"plat":"Udon au bouillon + légumes","alt":"Udon de blé complet + légumes vapeur + poulet"},"collation":{"plat":"Fruits frais","alt":"Noix de cajou + kaki"},"diner":{"plat":"Karaage (poulet frit) + riz","alt":"Karaage + riz + salade de concombre"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Congee (riz bouilli) + pickles","alt":"Congee + légumes vapeur"},"dej":{"plat":"Sushi rolls + salade","alt":"Sushi rolls + salade croquante"},"collation":{"plat":"Fruits frais","alt":"Mandarine + yaourt"},"diner":{"plat":"Grillades de poisson + riz + légumes","alt":"Poisson grillé au four + riz complet + légumes vapeur"}},
-        {"jour":"Samedi","petitdej":{"plat":"Pain japonais (shokupan) + thé vert","alt":"Pain complet japonais + œuf + fruits"},"dej":{"plat":"Okonomiyaki (crêpe salée)","alt":"Okonomiyaki aux légumes + tofu"},"collation":{"plat":"Fruits frais","alt":"wagashis + pomme"},"diner":{"plat":"Soba froides + légumes","alt":"Soba complètes + légumes frais + tofu"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Riz + saumon grillé + miso","alt":"Riz + saumon grillé + légumes vapeur"},"dej":{"plat":"Bento traditionnel (riz, poisson, légumes)","alt":"Bento healthy au riz complet + tofu + légumes +"},"collation":{"plat":"Fruits frais","alt":"Fruits de saison + noix"},"diner":{"plat":"Tempura de crevettes + riz","alt":"Tempura + riz + salade de légumes"}}
-    ]
-  },
-    "Bali": {
-      "coords": [-8.3405, 115.0920],
-      "feculents": "Riz blanc, riz complet, nouilles de riz, patate douce, maïs, manioc",
-      "proteines": "Poulet, poisson, crevettes, tofu, tempeh, œufs",
-      "legumes": "Épinards, choux, carottes, haricots verts, courgettes, poivrons, concombre, oignon, aubergine, tomates",
-      "fruits": "Mangue, papaye, banane, ananas, fruit du dragon, noix de coco, citron vert, pastèque",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Nasi goreng (riz sauté) + œuf + légumes","alt":"Nasi goreng complet au riz brun + légumes + œuf poché"},"dej":{"plat":"Sate lilit (brochettes de poisson balinais) + riz blanc + légumes","alt":"Sate lilit grillé + riz complet + salade de légumes"},"collation":{"plat":"Fruits frais","alt":"Noix de coco + mangue"},"diner":{"plat":"Gado-gado (salade de légumes avec sauce arachide)","alt":"Gado-gado allégé + tofu vapeur"}},
-        {"jour":"Mardi","petitdej":{"plat":"Bubur (porridge de riz) + banane","alt":"Porridge de riz complet + papaye"},"dej":{"plat":"Ayam betutu (poulet épicé) + riz","alt":"Poulet vapeur aux épices + riz complet + légumes rôtis"},"collation":{"plat":"Fruits tropicaux","alt":"Smoothie mangue-lait de coco"},"diner":{"plat":"Pepes ikan (poisson cuit en feuille de bananier) + légumes","alt":"Poisson grillé en papillote + légumes vapeur"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Roti + fruits tropicaux","alt":"Roti complet + banane + yaourt nature"},"dej":{"plat":"Nasi campur (assiette mixte riz + viande + légumes)","alt":"Nasi campur healthy au riz complet + poulet grillé + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix de cajou + papaye"},"diner":{"plat":"Sayur lodeh (curry de légumes au lait de coco) + riz","alt":"Sayur lodeh léger au lait de coco + riz complet"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Pisang goreng (bananes frites) + thé","alt":"Banane fraîche + thé vert"},"dej":{"plat":"Ikan bakar (poisson grillé) + riz","alt":"Poisson grillé + riz complet + salade de légumes"},"collation":{"plat":"Fruits frais","alt":"Smoothie fruit de la passion"},"diner":{"plat":"Nasi pecel (riz + légumes + sauce arachide)","alt":"Nasi pecel allégé + tofu vapeur"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Bubur ayam (porridge de riz au poulet)","alt":"Porridge de riz complet + poulet vapeur"},"dej":{"plat":"Sate ayam + riz + légumes","alt":"Sate grillé au four + riz complet + légumes vapeur"},"collation":{"plat":"Fruits tropicaux","alt":"Noix de coco + mangue"},"diner":{"plat":"Lawar (salade balinaise de légumes et noix de coco) + riz","alt":"Lawar léger + tofu + riz complet"}},
-        {"jour":"Samedi","petitdej":{"plat":"Nasi kuning (riz jaune) + œuf","alt":"Nasi kuning complet au curcuma + légumes"},"dej":{"plat":"Bebek betutu (canard épicé) + riz","alt":"Canard rôti aux épices + riz complet + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Smoothie tropical"},"diner":{"plat":"Sop buntut (soupe de queue de bœuf) + riz","alt":"Soupe légère + riz complet + légumes"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Roti canai + fruits tropicaux","alt":"Roti complet + mangue + yaourt"},"dej":{"plat":"Nasi goreng spécial + œuf","alt":"Nasi goreng complet + légumes vapeur + œuf poché"},"collation":{"plat":"Fruits frais","alt":"Noix + papaye"},"diner":{"plat":"Pepes tahu (tofu cuit en feuille de bananier) + riz","alt":"Tofu grillé + riz complet + légumes vapeur"}}
-      ]
-    }
-  },
-  "Océanie": {
-    "Australie": {
-      "coords": [-25.2744, 133.7751],
-      "feculents": "Pain complet, avoine, riz, pâtes complètes, patate douce, quinoa",
-      "proteines": "Poulet, poisson, bœuf maigre, œufs, crevettes, tofu",
-      "legumes": "Épinards, brocoli, carottes, courgettes, poivrons, champignons, tomates, salade",
-      "fruits": "Banane, pomme, myrtille, fraise, mangue, orange, kiwi, raisin",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Toast complet + avocat + œuf poché","alt":"Smoothie bowl aux fruits rouges + granola"},"dej":{"plat":"Poisson grillé + patate douce + légumes vapeur","alt":"Filet de poisson + patate douce + légumes rôtis"},"collation":{"plat":"Fruits frais","alt":"Amandes + pomme + fromage blanc"},"diner":{"plat":"Poulet rôti + légumes verts + riz","alt":"Poulet grillé + riz + salade croquante"}},
-        {"jour":"Mardi","petitdej":{"plat":"Porridge d’avoine + banane + miel","alt":"Yaourt grec + fruits frais + graines + oeufs"},"dej":{"plat":"Salade composée (poulet, légumes, avocat)","alt":"Salade de quinoa + légumes + poulet grillé"},"collation":{"plat":"Fruit de saison","alt":"Noix + yaourt nature"},"diner":{"plat":"Saumon au four + légumes vapeur + riz","alt":"Saumon grillé + patate douce + salade"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Toast complet + beurre de cacahuète + fraises","alt":"Smoothie vert (épinard, banane, lait végétal)"},"dej":{"plat":"Bœuf maigre grillé + légumes + pommes de terre","alt":"Bœuf maigre + patate douce + légumes rôtis"},"collation":{"plat":"Fruits secs","alt":"Yaourt nature + graines"},"diner":{"plat":"Poisson blanc + quinoa + légumes","alt":"Poisson vapeur + quinoa + salade"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Omelette aux légumes + toast complet","alt":"Porridge aux fruits rouges + oeufs"},"dej":{"plat":"Poulet grillé + riz + légumes sautés","alt":"Poulet vapeur + quinoa + légumes vapeur"},"collation":{"plat":"Fruit frais","alt":"Amandes + pomme"},"diner":{"plat":"Saumon + patate douce + brocoli","alt":"Saumon grillé + légumes rôtis + riz"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Smoothie bowl + granola + kiwi","alt":"Yaourt grec + flocons d’avoine + banane"},"dej":{"plat":"Salade de crevettes + légumes + quinoa","alt":"Salade de crevettes + riz complet + légumes"},"collation":{"plat":"Fruits frais","alt":"Noix + smoothie"},"diner":{"plat":"Poulet rôti + légumes + riz","alt":"Poulet grillé + légumes vapeur + patate douce"}},
-        {"jour":"Samedi","petitdej":{"plat":"Toast complet + avocat + œuf brouillé","alt":"Smoothie vert + fruits + oeufs"},"dej":{"plat":"Bœuf grillé + légumes + riz","alt":"Bœuf maigre + quinoa + légumes rôtis"},"collation":{"plat":"Fruits de saison","alt":"Yaourt + graines"},"diner":{"plat":"Poisson blanc + légumes + patate douce","alt":"Poisson vapeur + légumes vapeur + riz complet"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pancakes à la farine complète + fruits rouges","alt":"Smoothie bowl + flocons d’avoine + oeufs"},"dej":{"plat":"Poulet rôti + légumes + riz","alt":"Poulet grillé + quinoa + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix + pomme"},"diner":{"plat":"Saumon + légumes + pommes de terre","alt":"Saumon grillé + riz complet + salade"}}
-      ]
-    },
-    "Nouvelle-Zélande": {
-      "coords": [-40.9006, 174.8860],
-      "feculents": "Pain complet, avoine, riz, pâtes complètes, patate douce, quinoa",
-      "proteines": "Poulet, poisson, agneau, bœuf maigre, œufs, tofu",
-      "legumes": "Brocoli, carottes, courgettes, épinards, poivrons, champignons, salade, tomates",
-      "fruits": "Banane, pomme, kiwi, fraise, myrtille, orange, mangue, raisin",
-      "plats": [
-        {"jour":"Lundi","petitdej":{"plat":"Toast complet + avocat + œuf poché","alt":"Smoothie bowl aux fruits rouges + granola + oeuf"},"dej":{"plat":"Saumon grillé + riz + légumes vapeur","alt":"Saumon vapeur + quinoa + légumes rôtis"},"collation":{"plat":"Fruits frais","alt":"Amandes + kiwi"},"diner":{"plat":"Poulet rôti + légumes + patate douce","alt":"Poulet grillé + légumes vapeur + riz complet"}},
-        {"jour":"Mardi","petitdej":{"plat":"Porridge d’avoine + banane + miel","alt":"Yaourt grec + fruits frais + graines"},"dej":{"plat":"Salade composée (poulet, légumes, avocat)","alt":"Salade de quinoa + légumes + poulet grillé"},"collation":{"plat":"Fruit de saison","alt":"Noix + yaourt nature"},"diner":{"plat":"Bœuf grillé + légumes + riz","alt":"Bœuf maigre + patate douce + légumes rôtis"}},
-        {"jour":"Mercredi","petitdej":{"plat":"Toast complet + beurre de cacahuète + fraises","alt":"Smoothie vert + banane"},"dej":{"plat":"Poisson blanc + légumes + riz","alt":"Poisson vapeur + quinoa + légumes rôtis"},"collation":{"plat":"Fruits secs","alt":"Yaourt nature + graines"},"diner":{"plat":"Poulet grillé + légumes + patate douce","alt":"Poulet vapeur + légumes vapeur + riz complet"}},
-        {"jour":"Jeudi","petitdej":{"plat":"Omelette aux légumes + toast complet","alt":"Porridge aux fruits rouges"},"dej":{"plat":"Poulet rôti + légumes + riz","alt":"Poulet grillé + quinoa + légumes vapeur"},"collation":{"plat":"Fruit frais","alt":"Amandes + kiwi"},"diner":{"plat":"Saumon + légumes + patate douce","alt":"Saumon grillé + légumes rôtis + riz complet"}},
-        {"jour":"Vendredi","petitdej":{"plat":"Smoothie bowl + granola + kiwi","alt":"Yaourt grec + flocons d’avoine + banane"},"dej":{"plat":"Salade de crevettes + légumes + quinoa","alt":"Salade de crevettes + riz complet + légumes"},"collation":{"plat":"Fruits frais","alt":"Noix + smoothie"},"diner":{"plat":"Poulet grillé + légumes + patate douce","alt":"Poulet vapeur + légumes vapeur + riz complet"}},
-        {"jour":"Samedi","petitdej":{"plat":"Toast complet + avocat + œuf brouillé","alt":"Smoothie vert + fruits"},"dej":{"plat":"Bœuf grillé + légumes + riz","alt":"Bœuf maigre + quinoa + légumes rôtis"},"collation":{"plat":"Fruits de saison","alt":"Yaourt + graines"},"diner":{"plat":"Poisson blanc + légumes + patate douce","alt":"Poisson vapeur + légumes vapeur + riz complet"}},
-        {"jour":"Dimanche","petitdej":{"plat":"Pancakes à la farine complète + fruits rouges","alt":"Smoothie bowl + flocons d’avoine"},"dej":{"plat":"Poulet rôti + légumes + riz","alt":"Poulet grillé + quinoa + légumes vapeur"},"collation":{"plat":"Fruits frais","alt":"Noix + pomme"},"diner":{"plat":"Saumon + légumes + patate douce","alt":"Saumon grillé + riz complet + salade"}}
-      ]
-    }
-  }
 }
