@@ -1,7 +1,5 @@
 {
-
   "Amérique": {
-
     "Martinique": {
   "coords": [14.6415, -61.0242],
   "recettes": [
@@ -277,7 +275,8 @@
         "lipides": 12
       },
       "tags": ["fête", "protéiné", "mijoté"]
-    }
+    },
+    
     "Guadeloupe": {
   "coords": [16.2650, -61.5510],
   "recettes": [
