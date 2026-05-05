@@ -1039,6 +1039,815 @@
       "tags": ["veggie", "velouté", "batch cooking"]
     },
     {
+      "id": "bowlcake-choco-fruits-fr",
+      "nom": "Bowlcake Chocolat Noir & Fruits Rouges",
+      "repas": "petitdej",
+      "temps": 8,
+      "difficulte": "facile",
+      "emoji": "🍫",
+      "description": "Un petit-déj moelleux, rapide et protéiné, parfait quand tu veux un truc gourmand sans exploser ta matinée.",
+      "ingredients": [
+        { "nom": "Œuf", "qty": "1" },
+        { "nom": "Flocons d’avoine", "qty": "40 g" },
+        { "nom": "Skyr ou fromage blanc", "qty": "120 g" },
+        { "nom": "Cacao non sucré", "qty": "1 c. à café" },
+        { "nom": "Chocolat noir", "qty": "1 carré" },
+        { "nom": "Fruits rouges", "qty": "1 poignée" },
+        { "nom": "Graines de chia", "qty": "1 c. à café" },
+        { "nom": "Whey chocolat", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Mélanger l’œuf, les flocons d’avoine, le skyr, le cacao et la whey si tu en mets.",
+        "Verser dans un bol légèrement huilé.",
+        "Cuire 2 à 3 min au micro-ondes.",
+        "Démouler dans une assiette.",
+        "Ajouter le carré de chocolat noir pour qu’il fonde légèrement.",
+        "Servir avec les fruits rouges et les graines de chia."
+      ],
+      "valeurs": {
+        "calories": 360,
+        "proteines": 28,
+        "glucides": 38,
+        "lipides": 10
+      },
+      "tags": ["protéiné", "gourmand", "rapide"]
+    },
+    {
+      "id": "pancakes-avoine-skyr-fr",
+      "nom": "Pancakes Avoine & Skyr",
+      "repas": "petitdej",
+      "temps": 15,
+      "difficulte": "facile",
+      "emoji": "🥞",
+      "description": "Des pancakes simples, fluffy et rassasiants, avec une base avoine-skyr qui cale bien sans être lourde.",
+      "ingredients": [
+        { "nom": "Œuf", "qty": "1" },
+        { "nom": "Flocons d’avoine", "qty": "40 g" },
+        { "nom": "Skyr ou fromage blanc", "qty": "120 g" },
+        { "nom": "Banane écrasée", "qty": "1/2" },
+        { "nom": "Levure chimique", "qty": "1/2 c. à café" },
+        { "nom": "Fruits frais", "qty": "1 portion" },
+        { "nom": "Pépites de chocolat", "qty": "optionnel" },
+        { "nom": "Sirop d’agave", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Mixer ou mélanger l’œuf, les flocons d’avoine, le skyr, la banane et la levure.",
+        "Faire chauffer une poêle légèrement huilée.",
+        "Former de petits pancakes.",
+        "Cuire 2 à 3 min par face à feu moyen.",
+        "Servir avec des fruits frais, quelques pépites de chocolat ou un filet de sirop d’agave."
+      ],
+      "valeurs": {
+        "calories": 390,
+        "proteines": 25,
+        "glucides": 48,
+        "lipides": 11
+      },
+      "tags": ["healthy", "moelleux", "petitdej"]
+    },
+    {
+      "id": "banana-bread-skyr-choco-fr",
+      "nom": "Banana Bread Skyr & Chocolat",
+      "repas": "petitdej",
+      "temps": 45,
+      "difficulte": "facile",
+      "emoji": "🍌",
+      "description": "Un banana bread moelleux, plus équilibré, parfait à préparer en avance pour les matins pressés ou les collations qui font plaisir.",
+      "ingredients": [
+        { "nom": "Bananes bien mûres", "qty": "3" },
+        { "nom": "Œufs", "qty": "2" },
+        { "nom": "Compote sans sucre ajouté", "qty": "100 g" },
+        { "nom": "Flocons d’avoine", "qty": "130 g" },
+        { "nom": "Skyr", "qty": "120 g" },
+        { "nom": "Lait", "qty": "20 ml" },
+        { "nom": "Graines de chia", "qty": "1 c. à soupe" },
+        { "nom": "Pépites de chocolat noir", "qty": "1 poignée" },
+        { "nom": "Vanille liquide", "qty": "1 c. à café" }
+      ],
+      "etapes": [
+        "Écraser les bananes dans un saladier.",
+        "Ajouter les œufs, la compote, le skyr, le lait et la vanille.",
+        "Incorporer les flocons d’avoine, les graines de chia et les pépites de chocolat.",
+        "Verser dans un moule à cake.",
+        "Cuire environ 40 min à 180°C.",
+        "Laisser tiédir avant de couper en tranches."
+      ],
+      "valeurs": {
+        "calories": 260,
+        "proteines": 11,
+        "glucides": 42,
+        "lipides": 7
+      },
+      "tags": ["meal prep", "gourmand", "moelleux"]
+    },
+    {
+      "id": "muffin-oeufs-avocat-fr",
+      "nom": "Muffin Complet Œufs Brouillés & Avocat",
+      "repas": "petitdej",
+      "temps": 12,
+      "difficulte": "facile",
+      "emoji": "🥑",
+      "description": "Un petit-déj salé simple et canon : muffin complet, œufs brouillés, avocat et fruits à côté. Le brunch maison sans drama.",
+      "ingredients": [
+        { "nom": "Muffin anglais complet", "qty": "1" },
+        { "nom": "Œufs", "qty": "2" },
+        { "nom": "Carré frais", "qty": "1 portion" },
+        { "nom": "Avocat", "qty": "1/2" },
+        { "nom": "Fruits frais", "qty": "1 portion" },
+        { "nom": "Graines de chia", "qty": "1 c. à café" },
+        { "nom": "Huile d’olive", "qty": "1 filet" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire griller le muffin complet.",
+        "Cuire les œufs brouillés dans une poêle légèrement huilée.",
+        "Tartiner le muffin avec le carré frais.",
+        "Ajouter les œufs brouillés et l’avocat en tranches.",
+        "Assaisonner avec sel et poivre.",
+        "Servir avec des fruits frais et quelques graines de chia."
+      ],
+      "valeurs": {
+        "calories": 430,
+        "proteines": 24,
+        "glucides": 36,
+        "lipides": 22
+      },
+      "tags": ["brunch", "protéiné", "salé"]
+    },
+    {
+      "id": "french-toast-proteine-fr",
+      "nom": "French Toast Protéiné Banane & Chocolat",
+      "repas": "petitdej",
+      "temps": 15,
+      "difficulte": "facile",
+      "emoji": "🍞",
+      "description": "Une version plus équilibrée du pain perdu, avec banane, chocolat noir et fromage blanc. Gourmand mais carré.",
+      "ingredients": [
+        { "nom": "Pain complet ou brioche légère", "qty": "2 tranches" },
+        { "nom": "Œuf", "qty": "1" },
+        { "nom": "Lait", "qty": "80 ml" },
+        { "nom": "Fromage blanc", "qty": "100 g" },
+        { "nom": "Banane", "qty": "1/2" },
+        { "nom": "Chocolat noir", "qty": "1 carré" },
+        { "nom": "Cannelle", "qty": "1 pincée" },
+        { "nom": "Sirop d’agave", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Battre l’œuf avec le lait et la cannelle.",
+        "Tremper les tranches de pain dans le mélange.",
+        "Faire dorer à la poêle 2 à 3 min par face.",
+        "Ajouter le fromage blanc sur le dessus.",
+        "Déposer la banane en rondelles et le chocolat noir râpé ou fondu.",
+        "Ajouter un filet de sirop d’agave si souhaité."
+      ],
+      "valeurs": {
+        "calories": 410,
+        "proteines": 23,
+        "glucides": 52,
+        "lipides": 13
+      },
+      "tags": ["brunch", "gourmand", "protéiné"]
+    },
+    {
+      "id": "wrap-oeufs-pesto-epinards-fr",
+      "nom": "Wrap Complet Œufs, Pesto & Épinards",
+      "repas": "dej",
+      "temps": 15,
+      "difficulte": "facile",
+      "emoji": "🌯",
+      "description": "Un wrap rapide, frais et complet, parfait pour un lunch qui se prépare vite et qui ne ressemble pas à une punition.",
+      "ingredients": [
+        { "nom": "Wrap complet", "qty": "1" },
+        { "nom": "Œufs durs", "qty": "2" },
+        { "nom": "Pousses d’épinards", "qty": "1 poignée" },
+        { "nom": "Pesto", "qty": "1 c. à soupe" },
+        { "nom": "Carré frais", "qty": "1 portion" },
+        { "nom": "Pignons", "qty": "1 c. à soupe" },
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+        { "nom": "Poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Tartiner le wrap avec le carré frais et le pesto.",
+        "Ajouter les pousses d’épinards.",
+        "Couper les œufs durs en morceaux et les répartir dans le wrap.",
+        "Ajouter les tomates cerises et les pignons.",
+        "Poivrer légèrement.",
+        "Rouler le wrap bien serré et couper en deux."
+      ],
+      "valeurs": {
+        "calories": 460,
+        "proteines": 25,
+        "glucides": 38,
+        "lipides": 23
+      },
+      "tags": ["rapide", "lunchbox", "protéiné"]
+    },
+    {
+      "id": "salade-quinoa-tofu-fr",
+      "nom": "Salade Quinoa, Pois Chiches & Tofu Doré",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🥗",
+      "description": "Une salade complète, croquante et colorée avec du quinoa, des pois chiches, du tofu doré et une sauce citronnée.",
+      "ingredients": [
+        { "nom": "Quinoa cuit", "qty": "150 g" },
+        { "nom": "Pois chiches", "qty": "100 g" },
+        { "nom": "Tofu ferme", "qty": "120 g" },
+        { "nom": "Carotte râpée", "qty": "1" },
+        { "nom": "Concombre", "qty": "1/2" },
+        { "nom": "Pomme", "qty": "1/2" },
+        { "nom": "Feta", "qty": "30 g" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Couper le tofu en cubes et le faire dorer à la poêle.",
+        "Dans un bol, ajouter le quinoa cuit, les pois chiches, la carotte râpée, le concombre et la pomme.",
+        "Ajouter le tofu doré et la feta émiettée.",
+        "Préparer une sauce avec citron, huile d’olive, sel et poivre.",
+        "Mélanger le tout et servir frais."
+      ],
+      "valeurs": {
+        "calories": 520,
+        "proteines": 28,
+        "glucides": 58,
+        "lipides": 20
+      },
+      "tags": ["végétarien", "coloré", "complet"]
+    },
+    {
+      "id": "poulet-forestier-cremeux-fr",
+      "nom": "Poulet Forestier Crémeux",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🍄",
+      "description": "Du poulet tendre avec des champignons et une sauce crémeuse légère. Simple, cozy, et parfait avec des pommes de terre ou des haricots verts.",
+      "ingredients": [
+        { "nom": "Blanc de poulet", "qty": "200 g" },
+        { "nom": "Champignons de Paris", "qty": "100 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Crème fraîche légère", "qty": "1 c. à soupe" },
+        { "nom": "Persil", "qty": "1 c. à soupe" },
+        { "nom": "Huile d’olive", "qty": "1 c. à café" },
+        { "nom": "Sel, poivre", "qty": "selon goût" },
+        { "nom": "Pommes de terre vapeur", "qty": "150 g" },
+        { "nom": "Haricots verts", "qty": "150 g" }
+      ],
+      "etapes": [
+        "Couper le poulet en lamelles.",
+        "Émincer les champignons et l’oignon.",
+        "Faire revenir le poulet dans une poêle avec un filet d’huile.",
+        "Ajouter l’oignon, puis les champignons.",
+        "Laisser cuire 7 à 8 min à feu moyen.",
+        "Ajouter la crème, le sel, le poivre et le persil.",
+        "Servir avec des pommes de terre vapeur et des haricots verts."
+      ],
+      "valeurs": {
+        "calories": 430,
+        "proteines": 45,
+        "glucides": 34,
+        "lipides": 12
+      },
+      "tags": ["crémeux", "protéiné", "comfort food"]
+    },
+    {
+      "id": "saumon-soja-nouilles-fr",
+      "nom": "Saumon Soja, Légumes Croquants & Nouilles de Riz",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🍣",
+      "description": "Un bol façon wok avec saumon, sauce soja, légumes croquants et nouilles de riz. Simple, coloré et très dîner TikTok du dimanche soir.",
+      "ingredients": [
+        { "nom": "Pavé de saumon", "qty": "1" },
+        { "nom": "Nouilles de riz", "qty": "80 g" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Carotte", "qty": "1" },
+        { "nom": "Champignons", "qty": "100 g" },
+        { "nom": "Haricots plats", "qty": "100 g" },
+        { "nom": "Sauce soja salée", "qty": "1 c. à soupe" },
+        { "nom": "Miel", "qty": "1 c. à café" },
+        { "nom": "Graines de sésame", "qty": "1 c. à café" }
+      ],
+      "etapes": [
+        "Cuire les nouilles de riz selon les indications du paquet.",
+        "Couper les légumes en lamelles.",
+        "Faire revenir les légumes dans une poêle chaude.",
+        "Cuire le saumon à part avec la sauce soja et le miel.",
+        "Assembler les nouilles, les légumes et le saumon.",
+        "Ajouter les graines de sésame avant de servir."
+      ],
+      "valeurs": {
+        "calories": 560,
+        "proteines": 34,
+        "glucides": 58,
+        "lipides": 22
+      },
+      "tags": ["wok", "coloré", "gourmand"]
+    },
+    {
+      "id": "bowl-poulet-pesto-pates-fr",
+      "nom": "Bowl Poulet Pesto, Pâtes Complètes & Mozzarella",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🍝",
+      "description": "Un bowl simple, crémeux et frais avec poulet, pesto, pâtes complètes, tomates cerises et mozzarella. Le meal prep qui donne envie.",
+      "ingredients": [
+        { "nom": "Pâtes complètes cuites", "qty": "160 g" },
+        { "nom": "Blanc de poulet", "qty": "150 g" },
+        { "nom": "Pesto", "qty": "1 c. à soupe" },
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+        { "nom": "Mozzarella", "qty": "60 g" },
+        { "nom": "Roquette", "qty": "1 poignée" },
+        { "nom": "Huile d’olive", "qty": "1 c. à café" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Cuire les pâtes complètes et les laisser tiédir.",
+        "Couper le poulet en morceaux et le faire dorer à la poêle.",
+        "Mélanger les pâtes avec le pesto.",
+        "Ajouter le poulet, les tomates cerises, la mozzarella et la roquette.",
+        "Finir avec un filet d’huile d’olive, sel et poivre."
+      ],
+      "valeurs": {
+        "calories": 590,
+        "proteines": 45,
+        "glucides": 58,
+        "lipides": 21
+      },
+      "tags": ["meal prep", "crémeux", "protéiné"]
+    },
+    {
+      "id": "bowl-lentilles-oeuf-feta-fr",
+      "nom": "Bowl Lentilles Vertes, Œuf Mollet & Feta",
+      "repas": "dej",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🥣",
+      "description": "Un bowl complet, nourrissant et très simple avec lentilles vertes, œuf mollet, feta et légumes rôtis.",
+      "ingredients": [
+        { "nom": "Lentilles vertes cuites", "qty": "180 g" },
+        { "nom": "Œuf", "qty": "1" },
+        { "nom": "Feta", "qty": "40 g" },
+        { "nom": "Courgette", "qty": "1/2" },
+        { "nom": "Carotte", "qty": "1" },
+        { "nom": "Oignon rouge", "qty": "1/4" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+        { "nom": "Moutarde", "qty": "1 c. à café" },
+        { "nom": "Vinaigre balsamique", "qty": "1 c. à café" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire rôtir les légumes au four avec un filet d’huile d’olive.",
+        "Cuire l’œuf mollet pendant 6 min.",
+        "Dans un bol, déposer les lentilles vertes.",
+        "Ajouter les légumes rôtis, la feta et l’œuf mollet.",
+        "Préparer une sauce avec moutarde, vinaigre, sel et poivre.",
+        "Verser la sauce et servir."
+      ],
+      "valeurs": {
+        "calories": 500,
+        "proteines": 28,
+        "glucides": 48,
+        "lipides": 22
+      },
+      "tags": ["complet", "végétarien", "rassasiant"]
+    },
+    {
+      "id": "energy-balls-cacao-fr",
+      "nom": "Energy Balls Cacao, Dattes & Coco",
+      "repas": "collation",
+      "temps": 15,
+      "difficulte": "facile",
+      "emoji": "🍪",
+      "description": "Des petites bouchées sucrées naturellement, parfaites pour une collation rapide avec un café ou avant une séance.",
+      "ingredients": [
+        { "nom": "Dattes dénoyautées", "qty": "120 g" },
+        { "nom": "Amandes", "qty": "60 g" },
+        { "nom": "Flocons d’avoine", "qty": "40 g" },
+        { "nom": "Cacao non sucré", "qty": "1 c. à soupe" },
+        { "nom": "Noix de coco râpée", "qty": "2 c. à soupe" },
+        { "nom": "Eau", "qty": "1 à 2 c. à soupe" }
+      ],
+      "etapes": [
+        "Mixer les dattes, les amandes, les flocons d’avoine et le cacao.",
+        "Ajouter un peu d’eau si la texture est trop sèche.",
+        "Former de petites boules avec les mains.",
+        "Rouler dans la noix de coco râpée.",
+        "Placer au frais 20 min avant de déguster."
+      ],
+      "valeurs": {
+        "calories": 180,
+        "proteines": 5,
+        "glucides": 24,
+        "lipides": 8
+      },
+      "tags": ["snack", "sans cuisson", "énergie"]
+    },
+    {
+      "id": "biscuits-choco-coco-fr",
+      "nom": "Biscuits Choco Coco Banane",
+      "repas": "collation",
+      "temps": 20,
+      "difficulte": "facile",
+      "emoji": "🥥",
+      "description": "Trois ingrédients, une texture fondante, un petit goût de Bounty maison. Simple, cute, efficace.",
+      "ingredients": [
+        { "nom": "Banane bien mûre", "qty": "1" },
+        { "nom": "Noix de coco râpée", "qty": "70 g" },
+        { "nom": "Chocolat noir fondu", "qty": "40 g" }
+      ],
+      "etapes": [
+        "Écraser la banane dans un bol.",
+        "Ajouter la noix de coco râpée et mélanger.",
+        "Former des petits biscuits sur une feuille de papier cuisson.",
+        "Cuire 15 min à 180°C.",
+        "Faire fondre le chocolat noir.",
+        "Tremper le dessus des biscuits dans le chocolat fondu et laisser figer."
+      ],
+      "valeurs": {
+        "calories": 210,
+        "proteines": 3,
+        "glucides": 22,
+        "lipides": 12
+      },
+      "tags": ["gourmand", "simple", "coco"]
+    },
+    {
+      "id": "bol-skyr-muesli-fr",
+      "nom": "Bol Skyr, Fruits & Muesli Croquant",
+      "repas": "collation",
+      "temps": 5,
+      "difficulte": "facile",
+      "emoji": "🍓",
+      "description": "Une collation fraîche et jolie, avec du skyr, des fruits, du muesli et un petit twist chia.",
+      "ingredients": [
+        { "nom": "Skyr ou fromage blanc", "qty": "150 g" },
+        { "nom": "Muesli sans sucre ajouté", "qty": "40 g" },
+        { "nom": "Fruits frais", "qty": "1 portion" },
+        { "nom": "Graines de chia", "qty": "1 c. à café" },
+        { "nom": "Purée d’amandes", "qty": "1 c. à café" },
+        { "nom": "Miel", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Verser le skyr dans un bol.",
+        "Ajouter le muesli.",
+        "Couper les fruits frais et les déposer sur le dessus.",
+        "Ajouter les graines de chia.",
+        "Finir avec la purée d’amandes et un filet de miel si souhaité."
+      ],
+      "valeurs": {
+        "calories": 330,
+        "proteines": 23,
+        "glucides": 38,
+        "lipides": 10
+      },
+      "tags": ["frais", "rapide", "protéiné"]
+    },
+    {
+      "id": "cookies-avoine-banane-choco-fr",
+      "nom": "Cookies Avoine Banane & Chocolat",
+      "repas": "collation",
+      "temps": 20,
+      "difficulte": "facile",
+      "emoji": "🍪",
+      "description": "Des petits cookies express avec banane, avoine et chocolat. Parfaits quand tu veux une collation maison sans sortir tout le placard.",
+      "ingredients": [
+        { "nom": "Banane bien mûre", "qty": "1" },
+        { "nom": "Flocons d’avoine", "qty": "50 g" },
+        { "nom": "Cacao non sucré", "qty": "1 c. à café" },
+        { "nom": "Pépites de chocolat noir", "qty": "1 poignée" },
+        { "nom": "Fruits rouges", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Écraser la banane dans un bol.",
+        "Ajouter les flocons d’avoine, le cacao et les pépites de chocolat.",
+        "Former des petits tas sur du papier cuisson.",
+        "Cuire 15 min à 180°C.",
+        "Servir tiède avec quelques fruits rouges si souhaité."
+      ],
+      "valeurs": {
+        "calories": 230,
+        "proteines": 5,
+        "glucides": 36,
+        "lipides": 8
+      },
+      "tags": ["rapide", "gourmand", "avoine"]
+    },
+    {
+      "id": "fromage-blanc-tarte-citron-fr",
+      "nom": "Fromage Blanc Façon Tarte Citron",
+      "repas": "collation",
+      "temps": 8,
+      "difficulte": "facile",
+      "emoji": "🍋",
+      "description": "Une collation fraîche façon dessert, avec fromage blanc, citron, biscuit émietté et un petit goût de tarte sans la flemme de faire une tarte.",
+      "ingredients": [
+        { "nom": "Fromage blanc ou skyr", "qty": "150 g" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Miel", "qty": "1 c. à café" },
+        { "nom": "Biscuit type spéculoos ou sablé", "qty": "1" },
+        { "nom": "Graines de chia", "qty": "1 c. à café" },
+        { "nom": "Zeste de citron", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Mélanger le fromage blanc avec le jus de citron et le miel.",
+        "Émietter le biscuit dans un verre ou un bol.",
+        "Ajouter le fromage blanc citronné.",
+        "Parsemer de graines de chia.",
+        "Finir avec un peu de zeste de citron si souhaité."
+      ],
+      "valeurs": {
+        "calories": 230,
+        "proteines": 18,
+        "glucides": 28,
+        "lipides": 6
+      },
+      "tags": ["dessert", "frais", "rapide"]
+    },
+    {
+      "id": "wok-boeuf-poivron-riz-fr",
+      "nom": "Wok de Bœuf au Poivron & Riz",
+      "repas": "diner",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🥩",
+      "description": "Un wok express avec bœuf, poivron, paprika et riz. Ça sent bon, ça va vite, et ça change du steak triste dans l’assiette.",
+      "ingredients": [
+        { "nom": "Rumsteck", "qty": "140 g" },
+        { "nom": "Poivron rouge", "qty": "1" },
+        { "nom": "Oignon", "qty": "1 petit" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Paprika", "qty": "1 c. à café" },
+        { "nom": "Huile d’olive", "qty": "1 c. à café" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Émincer l’oignon, l’ail et le poivron.",
+        "Faire revenir l’oignon et l’ail dans l’huile.",
+        "Ajouter les lamelles de poivron et cuire 8 à 10 min.",
+        "Couper le bœuf en aiguillettes.",
+        "Ajouter le bœuf dans la poêle et cuire rapidement.",
+        "Assaisonner avec paprika, sel et poivre.",
+        "Servir avec le riz chaud."
+      ],
+      "valeurs": {
+        "calories": 460,
+        "proteines": 35,
+        "glucides": 48,
+        "lipides": 14
+      },
+      "tags": ["express", "protéiné", "wok"]
+    },
+    {
+      "id": "chakchouka-express-fr",
+      "nom": "Chakchouka Express & Pain Complet",
+      "repas": "diner",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🍳",
+      "description": "Des œufs cuits dans une sauce tomate épicée, avec du pain complet pour saucer. Simple, chaud, réconfortant, validé.",
+      "ingredients": [
+        { "nom": "Œufs", "qty": "2" },
+        { "nom": "Tomates concassées", "qty": "300 g" },
+        { "nom": "Poivron", "qty": "1" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Paprika", "qty": "1 c. à café" },
+        { "nom": "Cumin", "qty": "1/2 c. à café" },
+        { "nom": "Pain complet", "qty": "1 tranche" },
+        { "nom": "Persil ou coriandre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’oignon, l’ail et le poivron dans une poêle.",
+        "Ajouter les tomates concassées, le paprika et le cumin.",
+        "Laisser mijoter 10 min.",
+        "Creuser deux petits puits dans la sauce.",
+        "Casser les œufs dedans.",
+        "Couvrir et cuire jusqu’à ce que les blancs soient pris.",
+        "Servir avec du pain complet et des herbes fraîches."
+      ],
+      "valeurs": {
+        "calories": 390,
+        "proteines": 22,
+        "glucides": 38,
+        "lipides": 17
+      },
+      "tags": ["express", "épicé", "réconfortant"]
+    },
+    {
+      "id": "soupe-courge-lentilles-coco-fr",
+      "nom": "Soupe Courge, Lentilles Corail & Coco",
+      "repas": "diner",
+      "temps": 35,
+      "difficulte": "facile",
+      "emoji": "🍲",
+      "description": "Une soupe veloutée, douce et bien rassasiante avec courge, lentilles corail et lait de coco. Le dîner cozy qu’on adore en batch cooking.",
+      "ingredients": [
+        { "nom": "Courge", "qty": "500 g" },
+        { "nom": "Lentilles corail", "qty": "120 g" },
+        { "nom": "Lait de coco", "qty": "150 ml" },
+        { "nom": "Oignon", "qty": "1" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Bouillon", "qty": "700 ml" },
+        { "nom": "Curry", "qty": "1 c. à café" },
+        { "nom": "Pain complet", "qty": "1 tranche" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Couper la courge en morceaux.",
+        "Faire revenir l’oignon et l’ail dans une casserole.",
+        "Ajouter la courge, les lentilles corail, le curry et le bouillon.",
+        "Laisser cuire environ 25 min.",
+        "Ajouter le lait de coco.",
+        "Mixer jusqu’à obtenir une texture veloutée.",
+        "Servir avec une tranche de pain complet."
+      ],
+      "valeurs": {
+        "calories": 420,
+        "proteines": 17,
+        "glucides": 56,
+        "lipides": 14
+      },
+      "tags": ["veggie", "velouté", "batch cooking"]
+    },
+    {
+      "id": "legumes-farcis-quinoa-fr",
+      "nom": "Légumes Farcis Quinoa, Feta & Tofu Fumé",
+      "repas": "diner",
+      "temps": 45,
+      "difficulte": "facile",
+      "emoji": "🍅",
+      "description": "Des légumes farcis version moderne, avec quinoa, feta et tofu fumé. Fondant, salé, équilibré, et beaucoup plus sexy que la version cantine.",
+      "ingredients": [
+        { "nom": "Courgettes ou tomates", "qty": "4" },
+        { "nom": "Quinoa cuit", "qty": "180 g" },
+        { "nom": "Feta", "qty": "60 g" },
+        { "nom": "Tofu fumé", "qty": "100 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Herbes de Provence", "qty": "1 c. à café" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Couper les légumes en deux et les creuser légèrement.",
+        "Faire revenir l’oignon, l’ail et le tofu fumé en petits dés.",
+        "Mélanger avec le quinoa cuit, la feta et les herbes de Provence.",
+        "Farcir les légumes avec le mélange.",
+        "Ajouter un filet d’huile d’olive.",
+        "Cuire au four 25 à 30 min à 180°C."
+      ],
+      "valeurs": {
+        "calories": 430,
+        "proteines": 24,
+        "glucides": 42,
+        "lipides": 18
+      },
+      "tags": ["coloré", "veggie", "four"]
+    },
+    {
+      "id": "poulet-moutarde-riz-brocolis-fr",
+      "nom": "Poulet Crème Moutarde, Riz & Brocolis",
+      "repas": "diner",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🍗",
+      "description": "Un classique du soir en version simple : poulet tendre, sauce moutarde crémeuse, riz et brocolis. Basique, mais dans le bon sens.",
+      "ingredients": [
+        { "nom": "Blanc de poulet", "qty": "180 g" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Brocolis", "qty": "200 g" },
+        { "nom": "Crème fraîche légère", "qty": "2 c. à soupe" },
+        { "nom": "Moutarde", "qty": "1 c. à soupe" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Huile d’olive", "qty": "1 c. à café" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Cuire les brocolis à la vapeur.",
+        "Faire revenir l’oignon dans une poêle avec l’huile.",
+        "Ajouter le poulet coupé en morceaux.",
+        "Cuire jusqu’à ce qu’il soit doré.",
+        "Ajouter la crème et la moutarde.",
+        "Mélanger jusqu’à obtenir une sauce homogène.",
+        "Servir avec le riz et les brocolis."
+      ],
+      "valeurs": {
+        "calories": 520,
+        "proteines": 45,
+        "glucides": 52,
+        "lipides": 14
+      },
+      "tags": ["crémeux", "simple", "protéiné"]
+    },
+    {
+      "id": "gratin-patate-douce-chevre-fr",
+      "nom": "Gratin Patate Douce, Chèvre Frais & Bacon",
+      "repas": "diner",
+      "temps": 45,
+      "difficulte": "facile",
+      "emoji": "🍠",
+      "description": "Un gratin fondant, sucré-salé, avec patate douce, chèvre frais et bacon croustillant. Le plat cozy qui sent bon.",
+      "ingredients": [
+        { "nom": "Patate douce", "qty": "400 g" },
+        { "nom": "Chèvre frais", "qty": "80 g" },
+        { "nom": "Bacon", "qty": "3 tranches" },
+        { "nom": "Crème légère", "qty": "100 ml" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Thym", "qty": "1 c. à café" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Éplucher et couper la patate douce en fines rondelles.",
+        "Faire revenir rapidement l’oignon.",
+        "Déposer les rondelles de patate douce dans un plat.",
+        "Ajouter l’oignon, la crème, le chèvre frais et le thym.",
+        "Déposer le bacon en morceaux sur le dessus.",
+        "Cuire 35 à 40 min à 180°C."
+      ],
+      "valeurs": {
+        "calories": 470,
+        "proteines": 20,
+        "glucides": 52,
+        "lipides": 21
+      },
+      "tags": ["fondant", "comfort food", "four"]
+    },
+    {
+      "id": "one-pot-pasta-saumon-fr",
+      "nom": "One Pot Pasta Saumon, Épinards & Citron",
+      "repas": "diner",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🍋",
+      "description": "Des pâtes crémeuses au saumon, épinards et citron dans une seule casserole. Moins de vaisselle, plus de bonheur.",
+      "ingredients": [
+        { "nom": "Pâtes complètes", "qty": "90 g" },
+        { "nom": "Saumon", "qty": "120 g" },
+        { "nom": "Épinards frais", "qty": "2 poignées" },
+        { "nom": "Crème légère", "qty": "2 c. à soupe" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Bouillon", "qty": "300 ml" },
+        { "nom": "Poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Mettre les pâtes, l’ail et le bouillon dans une casserole.",
+        "Cuire à feu moyen en remuant régulièrement.",
+        "Ajouter le saumon en morceaux à mi-cuisson.",
+        "Ajouter les épinards en fin de cuisson.",
+        "Incorporer la crème et le citron.",
+        "Poivrer et servir chaud."
+      ],
+      "valeurs": {
+        "calories": 560,
+        "proteines": 36,
+        "glucides": 62,
+        "lipides": 18
+      },
+      "tags": ["one pot", "crémeux", "rapide"]
+    },
+    {
+      "id": "gnocchis-courgettes-burrata-fr",
+      "nom": "Gnocchis Poêlés, Courgettes & Burrata",
+      "repas": "diner",
+      "temps": 20,
+      "difficulte": "facile",
+      "emoji": "🧀",
+      "description": "Des gnocchis dorés à la poêle, des courgettes, des tomates cerises et une burrata fondante. Oui, c’est aussi bon que ça en a l’air.",
+      "ingredients": [
+        { "nom": "Gnocchis", "qty": "180 g" },
+        { "nom": "Courgette", "qty": "1" },
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+        { "nom": "Burrata", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+        { "nom": "Basilic", "qty": "quelques feuilles" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’ail dans l’huile d’olive.",
+        "Ajouter les courgettes en demi-rondelles.",
+        "Ajouter les gnocchis et les faire dorer à la poêle.",
+        "Ajouter les tomates cerises coupées en deux.",
+        "Assaisonner avec sel et poivre.",
+        "Servir avec la burrata et du basilic frais."
+      ],
+      "valeurs": {
+        "calories": 540,
+        "proteines": 18,
+        "glucides": 68,
+        "lipides": 22
+      },
+      "tags": ["gourmand", "rapide", "fondant"]
+    },
+    {
       "id": "legumes-farcis-quinoa-feta-fr",
       "nom": "Légumes Farcis Quinoa, Feta , Tofu Fumé",
       "repas": "diner",
