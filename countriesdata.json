@@ -566,7 +566,7 @@
   "recettes": [
     {
       "id": "bowlcake-choco-fruits-fr",
-      "nom": "Bowlcake Chocolat Noir & Fruits Rouges",
+      "nom": "Bowlcake Chocolat Noir , Fruits Rouges",
       "repas": "petitdej",
       "temps": 8,
       "difficulte": "facile",
@@ -600,7 +600,7 @@
     },
     {
       "id": "pancakes-avoine-skyr-fr",
-      "nom": "Pancakes Avoine & Skyr",
+      "nom": "Pancakes Avoine , Skyr",
       "repas": "petitdej",
       "temps": 15,
       "difficulte": "facile",
@@ -633,7 +633,7 @@
     },
     {
       "id": "banana-bread-skyr-choco-fr",
-      "nom": "Banana Bread Skyr & Chocolat",
+      "nom": "Banana Bread Skyr , Chocolat",
       "repas": "petitdej",
       "temps": 45,
       "difficulte": "facile",
@@ -668,7 +668,7 @@
     },
     {
       "id": "muffin-oeufs-brouilles-avocat-fr",
-      "nom": "Muffin Complet Œufs Brouillés & Avocat",
+      "nom": "Muffin Complet Œufs Brouillés , Avocat",
       "repas": "petitdej",
       "temps": 12,
       "difficulte": "facile",
@@ -702,7 +702,7 @@
     },
     {
       "id": "wrap-oeufs-pesto-epinards-fr",
-      "nom": "Wrap Complet Œufs, Pesto & Épinards",
+      "nom": "Wrap Complet Œufs, Pesto , Épinards",
       "repas": "dej",
       "temps": 15,
       "difficulte": "facile",
@@ -736,7 +736,7 @@
     },
     {
       "id": "salade-quinoa-pois-chiches-tofu-fr",
-      "nom": "Salade Quinoa, Pois Chiches & Tofu Doré",
+      "nom": "Salade Quinoa, Pois Chiches , Tofu Doré",
       "repas": "dej",
       "temps": 25,
       "difficulte": "facile",
@@ -807,7 +807,7 @@
     },
     {
       "id": "saumon-soja-legumes-nouilles-fr",
-      "nom": "Saumon Soja, Légumes Croquants & Nouilles de Riz",
+      "nom": "Saumon Soja, Légumes Croquants , Nouilles de Riz",
       "repas": "dej",
       "temps": 25,
       "difficulte": "facile",
@@ -842,7 +842,7 @@
     },
     {
       "id": "energy-balls-cacao-dattes-fr",
-      "nom": "Energy Balls Cacao, Dattes & Coco",
+      "nom": "Energy Balls Cacao, Dattes , Coco",
       "repas": "collation",
       "temps": 15,
       "difficulte": "facile",
@@ -902,7 +902,7 @@
     },
     {
       "id": "bol-skyr-fruits-muesli-fr",
-      "nom": "Bol Skyr, Fruits & Muesli Croquant",
+      "nom": "Bol Skyr, Fruits , Muesli Croquant",
       "repas": "collation",
       "temps": 5,
       "difficulte": "facile",
@@ -933,7 +933,7 @@
     },
     {
       "id": "wok-boeuf-poivron-riz-fr",
-      "nom": "Wok de Bœuf au Poivron & Riz",
+      "nom": "Wok de Bœuf au Poivron , Riz",
       "repas": "diner",
       "temps": 25,
       "difficulte": "facile",
@@ -968,7 +968,7 @@
     },
     {
       "id": "chakchouka-express-pain-complet-fr",
-      "nom": "Chakchouka Express & Pain Complet",
+      "nom": "Chakchouka Express , Pain Complet",
       "repas": "diner",
       "temps": 25,
       "difficulte": "facile",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "soupe-courge-lentilles-coco-fr",
-      "nom": "Soupe Courge, Lentilles Corail & Coco",
+      "nom": "Soupe Courge, Lentilles Corail , Coco",
       "repas": "diner",
       "temps": 35,
       "difficulte": "facile",
@@ -1040,7 +1040,7 @@
     },
     {
       "id": "legumes-farcis-quinoa-feta-fr",
-      "nom": "Légumes Farcis Quinoa, Feta & Tofu Fumé",
+      "nom": "Légumes Farcis Quinoa, Feta , Tofu Fumé",
       "repas": "diner",
       "temps": 45,
       "difficulte": "facile",
