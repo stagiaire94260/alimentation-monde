@@ -275,9 +275,11 @@
         "lipides": 12
       },
       "tags": ["fête", "protéiné", "mijoté"]
-    },
+    }
+  ]
+},
     
-    "Guadeloupe": {
+  "Guadeloupe": {
   "coords": [16.2650, -61.5510],
   "recettes": [
     {
@@ -556,4 +558,6 @@
       "tags": ["végétarien", "fondant", "léger"]
     }
   ]
+}
+  }
 }
