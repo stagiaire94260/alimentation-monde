@@ -495,12 +495,12 @@
         },
         {
           "id": "riz-gras-ivoirien-ci",
-          "nom": "Riz Gras Ivoirien",
+          "nom": "Riz au Gras ",
           "repas": "dej",
           "temps": 50,
           "difficulte": "facile",
           "emoji": "🍚",
-          "description": "Du riz cuit directement dans un bouillon concentré de tomate, d'oignon et de viande, avec de l'huile. Chaque famille a sa version. Pas spectaculaire à regarder, absolument central dans l'alimentation quotidienne. Souvent accompagné de poulet rôti ou de poisson braisé.",
+          "description": "Du riz cuit directement dans un bouillon concentré de tomate, d'oignon et de viande, avec de l'huile. Chaque famille a sa version. Souvent accompagné de poulet rôti ou de poisson braisé.",
           "ingredients": [
             { "nom": "Riz long grain", "qty": "400 g" },
             { "nom": "Poulet ou bœuf", "qty": "500 g" },
