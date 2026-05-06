@@ -1388,6 +1388,284 @@
       "tags": ["protéiné", "gourmand", "rapide"]
     },
     {
+  "id": "bowl-poulet-hot-honey-fr",
+  "nom": "Bowl Poulet Hot Honey & Patate Douce",
+  "repas": "dej",
+  "temps": 25,
+  "difficulte": "facile",
+  "emoji": "🍯",
+  "description": "Un bowl sucré-salé ultra gourmand avec poulet doré, patate douce rôtie, avocat et sauce miel-piment. Le genre d’assiette qui coche goût, couleurs et protéines.",
+  "ingredients": [
+    { "nom": "Blanc de poulet", "qty": "160 g" },
+    { "nom": "Patate douce", "qty": "250 g" },
+    { "nom": "Avocat", "qty": "1/2" },
+    { "nom": "Concombre", "qty": "80 g" },
+    { "nom": "Miel", "qty": "1 c. à café" },
+    { "nom": "Citron", "qty": "1/2" },
+    { "nom": "Paprika", "qty": "1 c. à café" },
+    { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+    { "nom": "Sel, poivre, piment doux", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Couper la patate douce en cubes et la mélanger avec huile d’olive, paprika, sel et poivre.",
+    "Cuire au four 20 à 25 min à 200°C jusqu’à ce qu’elle soit dorée.",
+    "Couper le poulet en lamelles et le faire griller à la poêle avec paprika et piment doux.",
+    "Mélanger le miel avec le jus de citron.",
+    "Assembler dans un bol : patate douce, poulet, avocat et concombre.",
+    "Ajouter la sauce miel-citron sur le dessus."
+  ],
+  "valeurs": {
+    "calories": 560,
+    "proteines": 42,
+    "glucides": 52,
+    "lipides": 20
+  },
+  "tags": ["coloré", "protéiné", "tendance"]
+},
+{
+  "id": "crispy-rice-saumon-avocat-fr",
+  "nom": "Crispy Rice Saumon & Avocat",
+  "repas": "dej",
+  "temps": 25,
+  "difficulte": "moyen",
+  "emoji": "🍣",
+  "description": "Des bouchées de riz croustillant avec saumon, avocat et sauce soja. Une recette très reels, bien croustillante, fraîche et canon visuellement.",
+  "ingredients": [
+    { "nom": "Riz cuit", "qty": "180 g" },
+    { "nom": "Saumon frais ou fumé", "qty": "120 g" },
+    { "nom": "Avocat", "qty": "1/2" },
+    { "nom": "Concombre", "qty": "80 g" },
+    { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+    { "nom": "Graines de sésame", "qty": "1 c. à café" },
+    { "nom": "Citron vert", "qty": "1/2" },
+    { "nom": "Huile", "qty": "1 c. à soupe" }
+  ],
+  "etapes": [
+    "Tasser le riz cuit dans un petit plat et le laisser refroidir.",
+    "Découper le riz en petits rectangles.",
+    "Faire dorer les rectangles de riz à la poêle avec un filet d’huile jusqu’à ce qu’ils soient croustillants.",
+    "Couper le saumon et l’assaisonner avec sauce soja, citron vert et sésame.",
+    "Écraser légèrement l’avocat.",
+    "Déposer avocat et saumon sur chaque morceau de riz croustillant."
+  ],
+  "valeurs": {
+    "calories": 520,
+    "proteines": 28,
+    "glucides": 58,
+    "lipides": 19
+  },
+  "tags": ["croustillant", "frais", "tiktok"]
+},
+{
+  "id": "tacos-poulet-avocat-fr",
+  "nom": "Tacos Poulet, Avocat & Sauce Yaourt",
+  "repas": "diner",
+  "temps": 20,
+  "difficulte": "facile",
+  "emoji": "🌮",
+  "description": "Des petits tacos maison avec poulet épicé, avocat, crudités et sauce yaourt citronnée. Simple, frais, et beaucoup trop bon pour un dîner express.",
+  "ingredients": [
+    { "nom": "Petites tortillas", "qty": "2" },
+    { "nom": "Blanc de poulet", "qty": "150 g" },
+    { "nom": "Avocat", "qty": "1/2" },
+    { "nom": "Tomate", "qty": "1" },
+    { "nom": "Salade", "qty": "1 poignée" },
+    { "nom": "Yaourt grec", "qty": "80 g" },
+    { "nom": "Citron", "qty": "1/2" },
+    { "nom": "Paprika", "qty": "1 c. à café" },
+    { "nom": "Cumin", "qty": "1/2 c. à café" },
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Couper le poulet en lamelles et l’assaisonner avec paprika, cumin, sel et poivre.",
+    "Le faire revenir à la poêle jusqu’à ce qu’il soit bien doré.",
+    "Mélanger le yaourt grec avec citron, sel et poivre.",
+    "Couper l’avocat et la tomate en morceaux.",
+    "Garnir les tortillas avec salade, poulet, avocat et tomate.",
+    "Ajouter la sauce yaourt avant de servir."
+  ],
+  "valeurs": {
+    "calories": 510,
+    "proteines": 38,
+    "glucides": 42,
+    "lipides": 21
+  },
+  "tags": ["express", "frais", "gourmand"]
+},
+{
+  "id": "toast-oeuf-avocat-feta-fr",
+  "nom": "Toast Œuf Mollet, Avocat & Feta",
+  "repas": "petitdej",
+  "temps": 12,
+  "difficulte": "facile",
+  "emoji": "🥑",
+  "description": "Un toast salé bien crémeux avec avocat, œuf mollet et feta. Parfait pour un petit-déj ou brunch simple, joli et rassasiant.",
+  "ingredients": [
+    { "nom": "Pain complet", "qty": "1 grande tranche" },
+    { "nom": "Œuf", "qty": "1" },
+    { "nom": "Avocat", "qty": "1/2" },
+    { "nom": "Feta", "qty": "30 g" },
+    { "nom": "Citron", "qty": "1/2" },
+    { "nom": "Graines de sésame", "qty": "1 c. à café" },
+    { "nom": "Piment doux", "qty": "1 pincée" },
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Cuire l’œuf 6 min dans l’eau bouillante pour obtenir un œuf mollet.",
+    "Écraser l’avocat avec citron, sel et poivre.",
+    "Faire griller la tranche de pain complet.",
+    "Étaler l’avocat sur le pain.",
+    "Ajouter l’œuf mollet coupé en deux.",
+    "Émietter la feta et ajouter les graines de sésame et le piment doux."
+  ],
+  "valeurs": {
+    "calories": 390,
+    "proteines": 19,
+    "glucides": 32,
+    "lipides": 22
+  },
+  "tags": ["brunch", "crémeux", "salé"]
+},
+{
+  "id": "pates-rosees-poulet-burrata-fr",
+  "nom": "Pâtes Rosées Poulet & Burrata",
+  "repas": "dej",
+  "temps": 25,
+  "difficulte": "facile",
+  "emoji": "🍝",
+  "description": "Des pâtes crémeuses à la sauce tomate rosée, poulet doré et burrata fondante. Le plat comfort food qui fait clairement son petit effet.",
+  "ingredients": [
+    { "nom": "Pâtes complètes", "qty": "90 g" },
+    { "nom": "Blanc de poulet", "qty": "150 g" },
+    { "nom": "Sauce tomate", "qty": "150 g" },
+    { "nom": "Crème légère", "qty": "2 c. à soupe" },
+    { "nom": "Burrata", "qty": "1/2" },
+    { "nom": "Ail", "qty": "1 gousse" },
+    { "nom": "Tomates cerises", "qty": "1 poignée" },
+    { "nom": "Basilic", "qty": "quelques feuilles" },
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Cuire les pâtes selon les indications du paquet.",
+    "Couper le poulet en morceaux et le faire dorer à la poêle.",
+    "Ajouter l’ail, la sauce tomate et la crème légère.",
+    "Mélanger les pâtes avec la sauce rosée.",
+    "Ajouter les tomates cerises coupées.",
+    "Servir avec la burrata et quelques feuilles de basilic."
+  ],
+  "valeurs": {
+    "calories": 640,
+    "proteines": 46,
+    "glucides": 66,
+    "lipides": 22
+  },
+  "tags": ["crémeux", "comfort food", "gourmand"]
+},
+{
+  "id": "salade-patate-saumon-oeuf-fr",
+  "nom": "Salade Tiède Pomme de Terre, Saumon & Œuf Mollet",
+  "repas": "dej",
+  "temps": 25,
+  "difficulte": "facile",
+  "emoji": "🥔",
+  "description": "Une salade tiède complète avec pommes de terre, saumon, œuf mollet et haricots verts. Simple, rassasiante et bien plus sexy qu’une salade triste.",
+  "ingredients": [
+    { "nom": "Pommes de terre", "qty": "220 g" },
+    { "nom": "Saumon", "qty": "120 g" },
+    { "nom": "Œuf", "qty": "1" },
+    { "nom": "Haricots verts", "qty": "150 g" },
+    { "nom": "Yaourt grec", "qty": "60 g" },
+    { "nom": "Moutarde", "qty": "1 c. à café" },
+    { "nom": "Citron", "qty": "1/2" },
+    { "nom": "Aneth ou ciboulette", "qty": "selon goût" },
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Cuire les pommes de terre à l’eau ou à la vapeur.",
+    "Cuire les haricots verts jusqu’à ce qu’ils restent légèrement croquants.",
+    "Cuire l’œuf 6 min pour obtenir un œuf mollet.",
+    "Poêler le saumon quelques minutes.",
+    "Préparer une sauce avec yaourt grec, moutarde, citron, sel et poivre.",
+    "Assembler le tout dans une assiette et ajouter les herbes."
+  ],
+  "valeurs": {
+    "calories": 540,
+    "proteines": 38,
+    "glucides": 50,
+    "lipides": 20
+  },
+  "tags": ["complet", "frais", "rassasiant"]
+},
+{
+  "id": "patate-douce-facon-nachos-fr",
+  "nom": "Patate Douce Façon Nachos",
+  "repas": "diner",
+  "temps": 35,
+  "difficulte": "facile",
+  "emoji": "🍠",
+  "description": "Des rondelles de patate douce rôties avec bœuf épicé, avocat, tomate et sauce yaourt. Une assiette fun, colorée, et franchement addictive.",
+  "ingredients": [
+    { "nom": "Patate douce", "qty": "300 g" },
+    { "nom": "Bœuf haché 5%", "qty": "120 g" },
+    { "nom": "Avocat", "qty": "1/2" },
+    { "nom": "Tomate", "qty": "1" },
+    { "nom": "Yaourt grec", "qty": "60 g" },
+    { "nom": "Paprika", "qty": "1 c. à café" },
+    { "nom": "Cumin", "qty": "1/2 c. à café" },
+    { "nom": "Citron", "qty": "1/2" },
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Couper la patate douce en rondelles fines.",
+    "Les cuire au four 25 min à 200°C avec un peu d’huile, sel et paprika.",
+    "Faire revenir le bœuf haché avec cumin, paprika, sel et poivre.",
+    "Couper la tomate et l’avocat.",
+    "Préparer une sauce avec yaourt grec, citron, sel et poivre.",
+    "Assembler les rondelles de patate douce avec le bœuf, l’avocat, la tomate et la sauce."
+  ],
+  "valeurs": {
+    "calories": 560,
+    "proteines": 34,
+    "glucides": 58,
+    "lipides": 21
+  },
+  "tags": ["fun", "coloré", "healthy"]
+},
+{
+  "id": "bagel-oeuf-poulet-chevre-fr",
+  "nom": "Bagel Œuf, Poulet & Chèvre Frais",
+  "repas": "dej",
+  "temps": 12,
+  "difficulte": "facile",
+  "emoji": "🥯",
+  "description": "Un bagel salé bien garni avec œuf, poulet, chèvre frais, tomate et salade. Rapide, pratique et parfait pour un lunch qui cale vraiment.",
+  "ingredients": [
+    { "nom": "Bagel complet", "qty": "1" },
+    { "nom": "Œuf", "qty": "1" },
+    { "nom": "Poulet cuit", "qty": "80 g" },
+    { "nom": "Chèvre frais", "qty": "40 g" },
+    { "nom": "Tomate", "qty": "1" },
+    { "nom": "Salade", "qty": "1 poignée" },
+    { "nom": "Moutarde douce", "qty": "1 c. à café" },
+    { "nom": "Poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Toaster le bagel coupé en deux.",
+    "Cuire l’œuf au plat.",
+    "Tartiner le bagel avec le chèvre frais et la moutarde douce.",
+    "Ajouter la salade, la tomate, le poulet et l’œuf.",
+    "Poivrer légèrement.",
+    "Refermer le bagel et servir immédiatement."
+  ],
+  "valeurs": {
+    "calories": 560,
+    "proteines": 38,
+    "glucides": 50,
+    "lipides": 22
+  },
+  "tags": ["lunchbox", "rapide", "protéiné"]
+},
+    {
       "id": "pancakes-avoine-skyr-fr",
       "nom": "Pancakes Avoine , Skyr",
       "repas": "petitdej",
