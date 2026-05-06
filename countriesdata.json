@@ -1,4 +1,793 @@
 {
+  "Afrique": {
+    "Sénégal": {
+      "coords": [14.4974, -14.4524],
+      "recettes": [
+        {
+          "id": "thieboudienne-poisson-sn",
+          "nom": "Thiéboudienne Poisson",
+          "repas": "dej",
+          "temps": 90,
+          "difficulte": "moyen",
+          "emoji": "🐟",
+          "description": "Le plat national sénégalais. Du riz cuit dans un bouillon de poisson concentré à la tomate, avec des légumes pays et du poisson farci aux herbes. Dense, coloré, profond. Chaque famille a sa version, chaque version est la meilleure.",
+          "ingredients": [
+            { "nom": "Thiof ou mérou entier", "qty": "1 kg" },
+            { "nom": "Riz brisé", "qty": "500 g" },
+            { "nom": "Tomates fraîches", "qty": "3" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Manioc", "qty": "200 g" },
+            { "nom": "Carotte", "qty": "2" },
+            { "nom": "Aubergine africaine", "qty": "2" },
+            { "nom": "Chou blanc", "qty": "1/4" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Ail", "qty": "4 gousses" },
+            { "nom": "Persil frais", "qty": "1 botte" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Poivre noir", "qty": "1 c. à café" },
+            { "nom": "Huile végétale", "qty": "100 ml" },
+            { "nom": "Nététou (soumbala)", "qty": "1 c. à café" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Farcir le poisson avec un mélange de persil, ail, poivre et sel écrasés ensemble.",
+            "Faire dorer les oignons dans l'huile dans une grande marmite.",
+            "Ajouter le concentré de tomate et les tomates fraîches, faire revenir 10 min.",
+            "Ajouter le poisson et le couvrir d'eau. Cuire 20 min puis retirer le poisson.",
+            "Ajouter les légumes (manioc, carotte, aubergine, chou), le piment et le nététou dans le bouillon.",
+            "Laisser cuire les légumes environ 20 min.",
+            "Retirer les légumes et une partie du bouillon. Ajouter le riz directement dans la marmite.",
+            "Cuire le riz à feu doux jusqu'à absorption complète du bouillon.",
+            "Servir le riz surmonté du poisson et des légumes."
+          ],
+          "valeurs": {
+            "calories": 620,
+            "proteines": 42,
+            "glucides": 72,
+            "lipides": 18
+          },
+          "tags": ["national", "familial", "traditionnel"]
+        },
+        {
+          "id": "thieboudienne-poulet-sn",
+          "nom": "Thiébou Yapp (Riz au Poulet)",
+          "repas": "dej",
+          "temps": 80,
+          "difficulte": "moyen",
+          "emoji": "🍗",
+          "description": "La version viande du thiéboudienne, avec du poulet ou du bœuf. Même base tomate-oignon, même riz cuit dans le bouillon, légumes fondants. Moins connue que la version poisson mais tout aussi centrale dans les familles.",
+          "ingredients": [
+            { "nom": "Poulet coupé en morceaux", "qty": "1 kg" },
+            { "nom": "Riz brisé", "qty": "500 g" },
+            { "nom": "Concentré de tomate", "qty": "3 c. à soupe" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Carotte", "qty": "2" },
+            { "nom": "Navet", "qty": "2" },
+            { "nom": "Chou blanc", "qty": "1/4" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Laurier", "qty": "2 feuilles" },
+            { "nom": "Huile végétale", "qty": "80 ml" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire dorer les morceaux de poulet dans l'huile sur toutes les faces.",
+            "Retirer le poulet et faire revenir les oignons dans la même huile.",
+            "Ajouter le concentré de tomate et cuire 10 min à feu moyen.",
+            "Remettre le poulet, ajouter l'eau, l'ail, le piment et le laurier.",
+            "Laisser cuire 25 min puis retirer le poulet et les légumes.",
+            "Ajouter le riz dans le bouillon restant et cuire à feu doux jusqu'à absorption.",
+            "Servir le riz avec les morceaux de poulet et les légumes par-dessus."
+          ],
+          "valeurs": {
+            "calories": 580,
+            "proteines": 45,
+            "glucides": 68,
+            "lipides": 16
+          },
+          "tags": ["traditionnel", "familial", "complet"]
+        },
+        {
+          "id": "yassa-poulet-sn",
+          "nom": "Yassa Poulet",
+          "repas": "dej",
+          "temps": 75,
+          "difficulte": "facile",
+          "emoji": "🍋",
+          "description": "Du poulet mariné dans du citron et de la moutarde, grillé puis mijoté dans une sauce oignon caramélisé. Acidulé, profond, parfumé. Un classique casamançais adopté par tout le Sénégal et bien au-delà.",
+          "ingredients": [
+            { "nom": "Poulet coupé en morceaux", "qty": "1 kg" },
+            { "nom": "Oignons", "qty": "6 gros" },
+            { "nom": "Citron", "qty": "3" },
+            { "nom": "Moutarde", "qty": "2 c. à soupe" },
+            { "nom": "Ail", "qty": "4 gousses" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Laurier", "qty": "3 feuilles" },
+            { "nom": "Huile végétale", "qty": "60 ml" },
+            { "nom": "Riz blanc", "qty": "400 g" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Mariner le poulet avec le jus de citron, la moutarde, l'ail, le sel et le poivre pendant au moins 1h.",
+            "Émincer les oignons en fines lamelles.",
+            "Faire griller ou dorer le poulet à la poêle ou au four.",
+            "Dans une grande casserole, faire fondre les oignons dans l'huile à feu doux pendant 20 à 25 min jusqu'à caramélisation.",
+            "Ajouter la marinade restante, le piment et le laurier.",
+            "Remettre le poulet grillé dans la sauce, ajouter un peu d'eau.",
+            "Laisser mijoter 20 min à feu doux.",
+            "Servir avec du riz blanc."
+          ],
+          "valeurs": {
+            "calories": 520,
+            "proteines": 44,
+            "glucides": 52,
+            "lipides": 16
+          },
+          "tags": ["acidulé", "caramélisé", "traditionnel"]
+        },
+        {
+          "id": "mafe-boeuf-sn",
+          "nom": "Mafé Bœuf",
+          "repas": "dej",
+          "temps": 70,
+          "difficulte": "facile",
+          "emoji": "🥜",
+          "description": "Un ragoût de bœuf mijoté dans une sauce arachide épaisse, légèrement tomate, avec des légumes racines. Onctueux, nourrissant, puissant. Le plat du dimanche par excellence au Sénégal.",
+          "ingredients": [
+            { "nom": "Bœuf (paleron ou jarret)", "qty": "700 g" },
+            { "nom": "Pâte d'arachide", "qty": "200 g" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Pomme de terre", "qty": "3" },
+            { "nom": "Carotte", "qty": "2" },
+            { "nom": "Navet", "qty": "2" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Nététou (soumbala)", "qty": "1 c. à café" },
+            { "nom": "Huile végétale", "qty": "60 ml" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire dorer la viande dans l'huile avec les oignons.",
+            "Ajouter le concentré de tomate et faire revenir 5 min.",
+            "Délayer la pâte d'arachide dans un peu d'eau et l'ajouter dans la marmite.",
+            "Couvrir d'eau, ajouter l'ail, le nététou, le piment et le sel.",
+            "Laisser mijoter 30 min à feu moyen.",
+            "Ajouter les légumes et continuer la cuisson 20 min.",
+            "La sauce doit être épaisse et napper la cuillère.",
+            "Servir avec du riz blanc."
+          ],
+          "valeurs": {
+            "calories": 640,
+            "proteines": 46,
+            "glucides": 48,
+            "lipides": 30
+          },
+          "tags": ["arachide", "mijoté", "familial"]
+        },
+        {
+          "id": "pastels-poisson-sn",
+          "nom": "Pastels au Poisson",
+          "repas": "collation",
+          "temps": 45,
+          "difficulte": "moyen",
+          "emoji": "🫓",
+          "description": "Des chaussons frits fourrés à la sardine ou au thiof émietté, avec oignon, poivre et piment. Omniprésents dans les rues de Dakar. On les mange debout avec du café Touba le matin ou en fin d'après-midi.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "300 g" },
+            { "nom": "Eau tiède", "qty": "150 ml" },
+            { "nom": "Levure boulangère", "qty": "1/2 sachet" },
+            { "nom": "Sel", "qty": "1 pincée" },
+            { "nom": "Sardines ou poisson blanc émietté", "qty": "250 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Persil", "qty": "1/2 botte" },
+            { "nom": "Piment", "qty": "selon goût" },
+            { "nom": "Poivre noir", "qty": "1 c. à café" },
+            { "nom": "Huile de friture", "qty": "selon besoin" }
+          ],
+          "etapes": [
+            "Mélanger la farine, la levure, le sel et l'eau pour former une pâte souple. Laisser reposer 20 min.",
+            "Préparer la farce : mélanger le poisson émietté, l'oignon haché, le persil, le piment et le poivre.",
+            "Étaler la pâte finement et découper des cercles.",
+            "Déposer une cuillère de farce au centre de chaque cercle.",
+            "Refermer en chausson et souder les bords en pressant avec les doigts ou une fourchette.",
+            "Faire frire dans l'huile chaude jusqu'à doré et croustillant.",
+            "Égoutter sur du papier absorbant et servir chaud."
+          ],
+          "valeurs": {
+            "calories": 280,
+            "proteines": 16,
+            "glucides": 32,
+            "lipides": 10
+          },
+          "tags": ["rue", "frit", "apéritif"]
+        },
+        {
+          "id": "superkanja-sn",
+          "nom": "Superkanja",
+          "repas": "dej",
+          "temps": 60,
+          "difficulte": "moyen",
+          "emoji": "🌿",
+          "description": "Un ragoût épais à base de gombo, poisson fumé et viande, servi sur du riz. Le gombo donne une texture filante que les Sénégalais adorent. Plat de milieu de semaine, familial, très peu connu à l'étranger.",
+          "ingredients": [
+            { "nom": "Gombo frais ou surgelé", "qty": "500 g" },
+            { "nom": "Poisson fumé", "qty": "200 g" },
+            { "nom": "Viande de bœuf", "qty": "300 g" },
+            { "nom": "Huile de palme ou végétale", "qty": "60 ml" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Nététou (soumbala)", "qty": "1 c. à soupe" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Sel", "qty": "selon goût" },
+            { "nom": "Riz blanc", "qty": "400 g" }
+          ],
+          "etapes": [
+            "Faire dorer la viande dans l'huile avec les oignons.",
+            "Ajouter le poisson fumé émietté, l'ail et le nététou.",
+            "Couper le gombo en rondelles et l'ajouter dans la marmite.",
+            "Couvrir d'eau, ajouter le piment et le sel.",
+            "Laisser mijoter 30 à 35 min. La sauce doit devenir épaisse et filante.",
+            "Ajuster l'assaisonnement.",
+            "Servir sur du riz blanc chaud."
+          ],
+          "valeurs": {
+            "calories": 540,
+            "proteines": 44,
+            "glucides": 52,
+            "lipides": 18
+          },
+          "tags": ["gombo", "traditionnel", "quotidien"]
+        },
+        {
+          "id": "caldou-sn",
+          "nom": "Caldou",
+          "repas": "diner",
+          "temps": 30,
+          "difficulte": "facile",
+          "emoji": "🍵",
+          "description": "Un bouillon clair de poisson — pas une soupe épaisse, un vrai bouillon citronné avec du riz à part. Oignon, piment végétarien, citron, poisson entier. Le repas du soir rapide par excellence, très léger, très parfumé.",
+          "ingredients": [
+            { "nom": "Poisson entier (thiof, dorade)", "qty": "800 g" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Citron", "qty": "2" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Piment végétarien", "qty": "1" },
+            { "nom": "Persil frais", "qty": "1/2 botte" },
+            { "nom": "Poivre noir", "qty": "1 c. à café" },
+            { "nom": "Sel", "qty": "selon goût" },
+            { "nom": "Riz blanc", "qty": "300 g" }
+          ],
+          "etapes": [
+            "Inciser le poisson et le frotter avec du sel, du poivre et du citron.",
+            "Faire bouillir de l'eau dans une grande casserole avec les oignons émincés.",
+            "Ajouter l'ail, le piment et le persil.",
+            "Plonger le poisson dans le bouillon frémissant.",
+            "Cuire 15 à 20 min selon la taille du poisson.",
+            "Ajouter le jus du second citron en fin de cuisson.",
+            "Servir le bouillon dans des bols et le poisson à part, avec du riz blanc."
+          ],
+          "valeurs": {
+            "calories": 320,
+            "proteines": 40,
+            "glucides": 28,
+            "lipides": 6
+          },
+          "tags": ["léger", "bouillon", "soir"]
+        },
+        {
+          "id": "thiou-boulettes-sn",
+          "nom": "Thiou Boulettes de Poisson",
+          "repas": "dej",
+          "temps": 50,
+          "difficulte": "moyen",
+          "emoji": "🐠",
+          "description": "Des boulettes de poisson frites puis mijotées dans une sauce tomate à l'oignon et aux épices. Le genre de chose qu'une mère prépare un mardi quand il n'y a pas beaucoup de temps — simple, savoureux, rassasiant.",
+          "ingredients": [
+            { "nom": "Poisson blanc émietté", "qty": "600 g" },
+            { "nom": "Oignon", "qty": "3" },
+            { "nom": "Ail", "qty": "4 gousses" },
+            { "nom": "Persil", "qty": "1 botte" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Tomates fraîches", "qty": "2" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Poivre noir", "qty": "1 c. à café" },
+            { "nom": "Farine", "qty": "2 c. à soupe" },
+            { "nom": "Huile végétale", "qty": "80 ml" },
+            { "nom": "Riz blanc", "qty": "350 g" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Mélanger le poisson émietté avec la moitié de l'oignon haché, l'ail, le persil, le poivre et le sel.",
+            "Former des boulettes compactes et les rouler dans la farine.",
+            "Faire frire les boulettes jusqu'à doré. Réserver.",
+            "Dans la même huile, faire revenir le reste des oignons.",
+            "Ajouter les tomates et le concentré, cuire 10 min.",
+            "Ajouter les boulettes, le piment et un peu d'eau.",
+            "Laisser mijoter 15 min à feu doux.",
+            "Servir avec du riz blanc."
+          ],
+          "valeurs": {
+            "calories": 490,
+            "proteines": 40,
+            "glucides": 50,
+            "lipides": 14
+          },
+          "tags": ["boulettes", "tomate", "quotidien"]
+        }
+      ]
+    },
+
+    "Côte d'Ivoire": {
+      "coords": [7.5400, -5.5471],
+      "recettes": [
+        {
+          "id": "garba-thon-ci",
+          "nom": "Garba Thon",
+          "repas": "dej",
+          "temps": 20,
+          "difficulte": "facile",
+          "emoji": "🐟",
+          "description": "Le plat de rue le plus mangé à Abidjan. De l'attiéké avec du thon braisé ou frit, oignon cru, piment, parfois de l'avocat. Servi dans un sachet ou une coupelle chez les garba-men. Simple, rapide, efficace. Toute une ville se nourrit de ça.",
+          "ingredients": [
+            { "nom": "Attiéké (couscous de manioc)", "qty": "300 g" },
+            { "nom": "Thon entier ou darnes", "qty": "500 g" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Piment frais", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "60 ml" },
+            { "nom": "Tomate fraîche", "qty": "2" },
+            { "nom": "Sel, poivre", "qty": "selon goût" },
+            { "nom": "Avocat", "qty": "1 (optionnel)" }
+          ],
+          "etapes": [
+            "Assaisonner le thon avec du sel et du poivre.",
+            "Faire frire ou braiser le thon dans l'huile chaude jusqu'à croustillant.",
+            "Réchauffer ou préparer l'attiéké selon les instructions (vapeur ou micro-ondes).",
+            "Préparer la garniture : oignon et tomate émincés, piment écrasé.",
+            "Servir l'attiéké dans une assiette, poser le thon par-dessus.",
+            "Ajouter l'oignon, la tomate, le piment cru et l'avocat si souhaité."
+          ],
+          "valeurs": {
+            "calories": 520,
+            "proteines": 42,
+            "glucides": 48,
+            "lipides": 18
+          },
+          "tags": ["rue", "rapide", "local"]
+        },
+        {
+          "id": "garba-poulet-ci",
+          "nom": "Garba Poulet",
+          "repas": "dej",
+          "temps": 35,
+          "difficulte": "facile",
+          "emoji": "🍗",
+          "description": "La version poulet du garba, tout aussi populaire dans les maquis d'Abidjan. Du poulet grillé ou braisé sur de l'attiéké, avec oignon cru et piment. Nourrissant, parfumé, incontournable.",
+          "ingredients": [
+            { "nom": "Attiéké", "qty": "300 g" },
+            { "nom": "Cuisses ou pilons de poulet", "qty": "4" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Tomate fraîche", "qty": "2" },
+            { "nom": "Piment frais", "qty": "1" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Citron", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "60 ml" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Mariner le poulet avec l'ail écrasé, le citron, le sel et le poivre pendant 20 min.",
+            "Faire braiser ou griller le poulet jusqu'à bien doré et cuit à cœur.",
+            "Réchauffer l'attiéké à la vapeur ou au micro-ondes.",
+            "Préparer la garniture crue : oignon et tomate émincés, piment.",
+            "Servir l'attiéké avec le poulet par-dessus.",
+            "Garnir d'oignon, tomate et piment frais."
+          ],
+          "valeurs": {
+            "calories": 560,
+            "proteines": 48,
+            "glucides": 46,
+            "lipides": 20
+          },
+          "tags": ["maquis", "grillé", "local"]
+        },
+        {
+          "id": "kedjenou-poulet-ci",
+          "nom": "Kédjenou de Poulet",
+          "repas": "dej",
+          "temps": 70,
+          "difficulte": "moyen",
+          "emoji": "🫕",
+          "description": "Du poulet mijoté lentement dans sa propre vapeur avec des tomates, des piments et des aromates, en cocotte hermétique. Aucune eau ajoutée. La chair est incroyablement tendre et la sauce naturelle. Un plat de fête ivoirien.",
+          "ingredients": [
+            { "nom": "Poulet coupé en morceaux", "qty": "1.2 kg" },
+            { "nom": "Tomates fraîches", "qty": "4" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Piment végétarien", "qty": "2" },
+            { "nom": "Ail", "qty": "4 gousses" },
+            { "nom": "Gingembre frais", "qty": "2 cm" },
+            { "nom": "Laurier", "qty": "3 feuilles" },
+            { "nom": "Thym", "qty": "2 branches" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Mettre tous les ingrédients crus dans une cocotte : poulet, tomates, oignon, ail, gingembre, piment, laurier, thym, sel, poivre.",
+            "Ne pas ajouter d'eau. Fermer hermétiquement la cocotte.",
+            "Cuire à feu très doux pendant 50 à 60 min.",
+            "Secouer délicatement la cocotte toutes les 15 min sans l'ouvrir.",
+            "Ouvrir en fin de cuisson. La sauce doit être naturelle et concentrée.",
+            "Servir avec du riz blanc ou de l'attiéké."
+          ],
+          "valeurs": {
+            "calories": 480,
+            "proteines": 50,
+            "glucides": 10,
+            "lipides": 26
+          },
+          "tags": ["fête", "mijoté", "traditionnel"]
+        },
+        {
+          "id": "sauce-graine-foutou-ci",
+          "nom": "Sauce Graine au Foutou Banane",
+          "repas": "dej",
+          "temps": 90,
+          "difficulte": "moyen",
+          "emoji": "🌴",
+          "description": "La sauce graine est faite à partir de noix de palme pressées, avec viande ou poisson fumé et gombo. Le foutou, c'est de la banane plantain pilée jusqu'à obtenir une pâte dense et élastique. On mange avec les mains. Plat du dimanche en famille, très ancré.",
+          "ingredients": [
+            { "nom": "Noix de palme (ou pulpe de palme)", "qty": "500 g" },
+            { "nom": "Poulet ou bœuf", "qty": "600 g" },
+            { "nom": "Poisson fumé", "qty": "150 g" },
+            { "nom": "Gombo", "qty": "200 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Sel", "qty": "selon goût" },
+            { "nom": "Banane plantain verte", "qty": "6" }
+          ],
+          "etapes": [
+            "Cuire les noix de palme dans l'eau 30 min, puis les piler et extraire le jus en filtrant.",
+            "Dans une grande marmite, faire chauffer le jus de palme obtenu.",
+            "Ajouter la viande, le poisson fumé, l'oignon, l'ail, le piment et le sel.",
+            "Laisser mijoter 30 à 40 min. Ajouter le gombo en fin de cuisson.",
+            "Pour le foutou : cuire les bananes plantains dans l'eau 20 min.",
+            "Piler les bananes dans un mortier jusqu'à obtenir une pâte homogène et élastique.",
+            "Former des boules de foutou et servir avec la sauce graine."
+          ],
+          "valeurs": {
+            "calories": 680,
+            "proteines": 42,
+            "glucides": 58,
+            "lipides": 28
+          },
+          "tags": ["familial", "dimanche", "traditionnel"]
+        },
+        {
+          "id": "aloco-oeuf-ci",
+          "nom": "Aloco et Œuf ou Poisson Braisé",
+          "repas": "collation",
+          "temps": 20,
+          "difficulte": "facile",
+          "emoji": "🍌",
+          "description": "Des tranches de banane plantain mûre frites, croustillantes dehors et fondantes dedans. Servies avec un œuf dur ou du poisson braisé et une sauce pimentée. La collation-repas de 18h dans tous les maquis d'Abidjan.",
+          "ingredients": [
+            { "nom": "Banane plantain mûre (jaune-noir)", "qty": "2" },
+            { "nom": "Huile végétale", "qty": "100 ml" },
+            { "nom": "Œufs durs", "qty": "2" },
+            { "nom": "Piment frais écrasé", "qty": "1" },
+            { "nom": "Oignon", "qty": "1 petit" },
+            { "nom": "Sel", "qty": "1 pincée" }
+          ],
+          "etapes": [
+            "Éplucher les bananes plantains et les couper en rondelles ou en diagonale.",
+            "Faire chauffer l'huile dans une poêle.",
+            "Faire frire les tranches de plantain jusqu'à dorées et caramélisées des deux côtés.",
+            "Égoutter sur du papier absorbant et saler légèrement.",
+            "Préparer la sauce pimentée : piment écrasé avec oignon et sel.",
+            "Servir les aloco chauds avec les œufs durs et la sauce pimentée."
+          ],
+          "valeurs": {
+            "calories": 380,
+            "proteines": 14,
+            "glucides": 48,
+            "lipides": 16
+          },
+          "tags": ["rue", "maquis", "collation"]
+        },
+        {
+          "id": "riz-gras-ivoirien-ci",
+          "nom": "Riz Gras Ivoirien",
+          "repas": "dej",
+          "temps": 50,
+          "difficulte": "facile",
+          "emoji": "🍚",
+          "description": "Du riz cuit directement dans un bouillon concentré de tomate, d'oignon et de viande, avec de l'huile. Chaque famille a sa version. Pas spectaculaire à regarder, absolument central dans l'alimentation quotidienne. Souvent accompagné de poulet rôti ou de poisson braisé.",
+          "ingredients": [
+            { "nom": "Riz long grain", "qty": "400 g" },
+            { "nom": "Poulet ou bœuf", "qty": "500 g" },
+            { "nom": "Concentré de tomate", "qty": "3 c. à soupe" },
+            { "nom": "Tomates fraîches", "qty": "2" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Piment végétarien", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "80 ml" },
+            { "nom": "Cube de bouillon", "qty": "1" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire dorer la viande dans l'huile. Réserver.",
+            "Dans la même marmite, faire revenir les oignons.",
+            "Ajouter les tomates et le concentré. Cuire 10 min.",
+            "Remettre la viande, ajouter l'eau, l'ail, le piment et le cube de bouillon.",
+            "Laisser cuire 20 min puis retirer la viande.",
+            "Laver le riz et l'ajouter dans le bouillon de cuisson.",
+            "Cuire à feu doux jusqu'à absorption complète.",
+            "Servir avec la viande posée sur le riz."
+          ],
+          "valeurs": {
+            "calories": 560,
+            "proteines": 38,
+            "glucides": 64,
+            "lipides": 16
+          },
+          "tags": ["quotidien", "familial", "riz"]
+        },
+        {
+          "id": "attiéké-poisson-braisé-ci",
+          "nom": "Attiéké Poisson Braisé",
+          "repas": "dej",
+          "temps": 30,
+          "difficulte": "facile",
+          "emoji": "🐡",
+          "description": "Le repas de base dans les maquis ivoiriens : de l'attiéké avec un poisson entier braisé sur braise ou à la poêle. Accompagné d'oignon et tomate crus, piment. Simple, frais, très populaire.",
+          "ingredients": [
+            { "nom": "Attiéké", "qty": "300 g" },
+            { "nom": "Poisson entier (tilapia, carpe)", "qty": "600 g" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Tomate fraîche", "qty": "2" },
+            { "nom": "Piment frais", "qty": "1" },
+            { "nom": "Citron", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "50 ml" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Inciser le poisson, l'assaisonner avec sel, poivre et citron.",
+            "Faire braiser ou griller le poisson 10 à 12 min de chaque côté.",
+            "Réchauffer l'attiéké à la vapeur.",
+            "Couper oignon et tomate en fines rondelles.",
+            "Écraser le piment avec une pincée de sel.",
+            "Servir l'attiéké avec le poisson braisé, la garniture crue et la sauce pimentée."
+          ],
+          "valeurs": {
+            "calories": 480,
+            "proteines": 44,
+            "glucides": 46,
+            "lipides": 14
+          },
+          "tags": ["maquis", "braisé", "local"]
+        }
+      ]
+    },
+
+    "Mali": {
+      "coords": [17.5707, -3.9962],
+      "recettes": [
+        {
+          "id": "to-sauce-feuilles-ml",
+          "nom": "Tô et Sauce Feuilles",
+          "repas": "dej",
+          "temps": 60,
+          "difficulte": "moyen",
+          "emoji": "🌿",
+          "description": "Le tô, c'est une pâte épaisse de mil ou de sorgho, la consistance d'une polenta dense. On le sert avec une sauce aux feuilles de baobab ou de moringa, cuite avec poisson fumé et soumbala. C'est THE plat de base du Mali rural et urbain, plusieurs fois par semaine.",
+          "ingredients": [
+            { "nom": "Farine de mil ou de sorgho", "qty": "300 g" },
+            { "nom": "Eau", "qty": "1 l" },
+            { "nom": "Feuilles de baobab séchées (ou moringa)", "qty": "100 g" },
+            { "nom": "Poisson fumé", "qty": "200 g" },
+            { "nom": "Soumbala (nététou)", "qty": "1 c. à soupe" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Gombo séché", "qty": "50 g" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "50 ml" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Porter l'eau à ébullition dans une grande casserole.",
+            "Ajouter la farine de mil progressivement en fouettant pour éviter les grumeaux.",
+            "Cuire à feu doux en remuant sans cesse jusqu'à obtenir une pâte épaisse et homogène (15 à 20 min).",
+            "Mouler le tô dans des bols humides pour former des dômes. Réserver.",
+            "Pour la sauce : faire revenir les oignons dans l'huile.",
+            "Ajouter le poisson fumé émietté, le soumbala, l'ail et le piment.",
+            "Ajouter les feuilles et le gombo séché, couvrir d'eau et cuire 25 min.",
+            "Servir le tô démoulé avec la sauce versée à côté."
+          ],
+          "valeurs": {
+            "calories": 480,
+            "proteines": 28,
+            "glucides": 66,
+            "lipides": 12
+          },
+          "tags": ["base", "traditionnel", "quotidien"]
+        },
+        {
+          "id": "riz-tigadeguena-ml",
+          "nom": "Riz au Tigadèguena (Sauce Arachide Malienne)",
+          "repas": "dej",
+          "temps": 65,
+          "difficulte": "facile",
+          "emoji": "🥜",
+          "description": "Du riz avec une sauce arachide épaisse, relevée, avec de la viande ou du poulet. La version malienne, moins tomate que le mafé sénégalais : plus pâte d'arachide pure, avec soumbala, feuilles de laurier et parfois de l'okra. Le plat du midi dans beaucoup de foyers de Bamako.",
+          "ingredients": [
+            { "nom": "Pâte d'arachide pure", "qty": "250 g" },
+            { "nom": "Poulet ou mouton en morceaux", "qty": "700 g" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Tomate fraîche", "qty": "2" },
+            { "nom": "Soumbala", "qty": "1 c. à soupe" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Laurier", "qty": "3 feuilles" },
+            { "nom": "Gombo (optionnel)", "qty": "100 g" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "60 ml" },
+            { "nom": "Riz blanc", "qty": "400 g" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire dorer la viande dans l'huile avec l'oignon.",
+            "Délayer la pâte d'arachide dans 500 ml d'eau tiède jusqu'à consistance lisse.",
+            "Ajouter la pâte d'arachide dans la marmite avec la viande.",
+            "Ajouter les tomates, l'ail, le soumbala, le laurier, le piment et le sel.",
+            "Laisser mijoter à feu moyen 35 à 40 min en remuant régulièrement.",
+            "Ajouter le gombo en fin de cuisson si souhaité.",
+            "La sauce doit être épaisse et huileuse en surface.",
+            "Servir avec du riz blanc."
+          ],
+          "valeurs": {
+            "calories": 660,
+            "proteines": 46,
+            "glucides": 54,
+            "lipides": 30
+          },
+          "tags": ["arachide", "mijoté", "quotidien"]
+        },
+        {
+          "id": "brochettes-soumbala-ml",
+          "nom": "Brochettes au Soumbala",
+          "repas": "diner",
+          "temps": 35,
+          "difficulte": "facile",
+          "emoji": "🍢",
+          "description": "Des brochettes de bœuf ou de mouton marinées dans une préparation à base de soumbala, d'oignon, de gingembre et de piment, grillées sur charbon. Vendues dans la rue le soir partout à Bamako. On les mange avec du pain baguette ou du riz froid.",
+          "ingredients": [
+            { "nom": "Bœuf ou mouton (rumsteck)", "qty": "600 g" },
+            { "nom": "Soumbala", "qty": "1 c. à soupe" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Gingembre frais râpé", "qty": "1 c. à café" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "2 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" },
+            { "nom": "Pain baguette", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Couper la viande en cubes réguliers.",
+            "Préparer la marinade : soumbala dilué dans un peu d'eau, oignon râpé, ail, gingembre, piment, huile, sel et poivre.",
+            "Mélanger la viande avec la marinade et laisser reposer 30 min minimum.",
+            "Enfiler les morceaux sur des piques en bois ou métal.",
+            "Faire griller sur braise ou poêle-grill à feu vif.",
+            "Retourner régulièrement jusqu'à cuisson désirée.",
+            "Servir chaud avec du pain baguette et de l'oignon cru."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 48,
+            "glucides": 8,
+            "lipides": 22
+          },
+          "tags": ["rue", "grillé", "soir"]
+        },
+        {
+          "id": "basi-lait-ml",
+          "nom": "Basi au Lait Caillé",
+          "repas": "petitdej",
+          "temps": 30,
+          "difficulte": "facile",
+          "emoji": "🥛",
+          "description": "Un couscous de mil cuit à la vapeur, servi avec du lait caillé et du sucre. C'est le petit-déjeuner traditionnel malien, ce que les gamins mangent avant l'école, ce que les grands-mères préparent le matin. Simple, léger, très nourrissant.",
+          "ingredients": [
+            { "nom": "Couscous de mil (basi)", "qty": "300 g" },
+            { "nom": "Lait caillé ou lait fermenté", "qty": "300 ml" },
+            { "nom": "Sucre", "qty": "selon goût" },
+            { "nom": "Eau tiède", "qty": "150 ml" },
+            { "nom": "Sel", "qty": "1 pincée" }
+          ],
+          "etapes": [
+            "Humidifier le couscous de mil avec l'eau tiède et une pincée de sel.",
+            "Cuire à la vapeur dans un couscoussier pendant 20 min.",
+            "Retirer du feu, émietter avec les mains ou une fourchette.",
+            "Remettre à la vapeur 5 min si nécessaire pour une texture légère.",
+            "Verser dans des bols.",
+            "Ajouter le lait caillé froid et sucrer selon goût."
+          ],
+          "valeurs": {
+            "calories": 380,
+            "proteines": 12,
+            "glucides": 68,
+            "lipides": 6
+          },
+          "tags": ["petitdej", "traditionnel", "léger"]
+        },
+        {
+          "id": "djaliton-ml",
+          "nom": "Djaliton (Riz au Poisson Fumé et Légumes)",
+          "repas": "dej",
+          "temps": 55,
+          "difficulte": "facile",
+          "emoji": "🐠",
+          "description": "Un plat de riz cuit avec du poisson fumé, des légumes racines et du soumbala. Plus simple et plus quotidien que le thiéboudienne, avec ce goût intense et fumé caractéristique des cuisines du Mali. Très peu connu hors du pays.",
+          "ingredients": [
+            { "nom": "Riz blanc", "qty": "400 g" },
+            { "nom": "Poisson fumé", "qty": "300 g" },
+            { "nom": "Patate douce", "qty": "200 g" },
+            { "nom": "Carotte", "qty": "2" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Soumbala", "qty": "1 c. à soupe" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Piment", "qty": "1" },
+            { "nom": "Huile végétale", "qty": "60 ml" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire revenir les oignons dans l'huile jusqu'à dorés.",
+            "Ajouter le poisson fumé émietté, l'ail et le soumbala.",
+            "Ajouter les légumes coupés en morceaux, le piment et couvrir d'eau.",
+            "Laisser cuire 15 min.",
+            "Retirer les légumes, ajouter le riz lavé dans le bouillon.",
+            "Cuire à feu doux jusqu'à absorption complète.",
+            "Servir le riz avec les légumes et le poisson par-dessus."
+          ],
+          "valeurs": {
+            "calories": 520,
+            "proteines": 34,
+            "glucides": 68,
+            "lipides": 14
+          },
+          "tags": ["fumé", "quotidien", "riz"]
+        },
+        {
+          "id": "dèguè-ml",
+          "nom": "Dèguè",
+          "repas": "collation",
+          "temps": 10,
+          "difficulte": "facile",
+          "emoji": "🍮",
+          "description": "Un dessert ou collation très populaire au Mali et en Afrique de l'Ouest : du lait caillé mélangé à de la semoule de mil ou du couscous fin, du sucre et parfois du lait concentré. Frais, crémeux, sucré. On en mange partout, à toute heure.",
+          "ingredients": [
+            { "nom": "Lait caillé ou yaourt nature", "qty": "400 g" },
+            { "nom": "Semoule de mil fine ou couscous fin précuit", "qty": "100 g" },
+            { "nom": "Sucre", "qty": "3 c. à soupe" },
+            { "nom": "Lait concentré sucré", "qty": "2 c. à soupe (optionnel)" },
+            { "nom": "Eau tiède", "qty": "50 ml" }
+          ],
+          "etapes": [
+            "Cuire brièvement la semoule à la vapeur ou la réhydrater avec l'eau tiède selon le type utilisé.",
+            "Laisser refroidir complètement.",
+            "Mélanger le lait caillé avec la semoule refroidie.",
+            "Ajouter le sucre et le lait concentré si souhaité.",
+            "Bien mélanger jusqu'à texture crémeuse et homogène.",
+            "Servir frais ou à température ambiante."
+          ],
+          "valeurs": {
+            "calories": 290,
+            "proteines": 10,
+            "glucides": 50,
+            "lipides": 6
+          },
+          "tags": ["dessert", "frais", "traditionnel"]
+    }
+  ]
+}
+     },
   "Amérique": {
     "Martinique": {
   "coords": [14.6415, -61.0242],
