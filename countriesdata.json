@@ -1,4 +1,1097 @@
 {
+  "Afrique du Nord & Moyen-Orient": {
+    "Maroc": {
+      "coords": [31.7917, -7.0926],
+      "recettes": [
+        {
+          "id": "harira-ma",
+          "nom": "Harira",
+          "repas": "diner",
+          "temps": 60,
+          "difficulte": "facile",
+          "emoji": "🍲",
+          "description": "La soupe du quotidien marocain. Tomate, lentilles, pois chiches, coriandre, céleri et vermicelles. On en mange le soir après le travail, pendant le Ramadan, ou simplement parce qu'on a froid. La version de chaque mère est la meilleure.",
+          "ingredients": [
+            { "nom": "Tomates fraîches ou concassées", "qty": "500 g" },
+            { "nom": "Pois chiches cuits", "qty": "200 g" },
+            { "nom": "Lentilles brunes", "qty": "100 g" },
+            { "nom": "Viande d'agneau ou bœuf en dés", "qty": "200 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Céleri avec feuilles", "qty": "2 branches" },
+            { "nom": "Coriandre fraîche", "qty": "1 botte" },
+            { "nom": "Persil frais", "qty": "1/2 botte" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Farine ou fécule (pour lier)", "qty": "2 c. à soupe" },
+            { "nom": "Gingembre en poudre", "qty": "1 c. à café" },
+            { "nom": "Curcuma", "qty": "1/2 c. à café" },
+            { "nom": "Cannelle", "qty": "1 pincée" },
+            { "nom": "Vermicelles fins", "qty": "50 g" },
+            { "nom": "Huile d'olive", "qty": "3 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire revenir la viande avec l'oignon émincé dans l'huile d'olive.",
+            "Ajouter le céleri haché, la moitié de la coriandre et du persil, le gingembre, le curcuma et la cannelle.",
+            "Ajouter les tomates et le concentré, cuire 10 min.",
+            "Couvrir d'eau (environ 1,5 litre), ajouter les lentilles et les pois chiches.",
+            "Laisser mijoter 30 min à feu moyen.",
+            "Délayer la farine dans un peu d'eau froide et l'incorporer pour lier la soupe.",
+            "Ajouter les vermicelles et cuire encore 5 min.",
+            "Finir avec le reste de coriandre et persil frais. Servir chaud."
+          ],
+          "valeurs": {
+            "calories": 380,
+            "proteines": 24,
+            "glucides": 44,
+            "lipides": 12
+          },
+          "tags": ["soupe", "quotidien", "réconfortant"]
+        },
+        {
+          "id": "bissara-ma",
+          "nom": "Bissara",
+          "repas": "petitdej",
+          "temps": 40,
+          "difficulte": "facile",
+          "emoji": "🫘",
+          "description": "Une soupe-crème de fèves sèches ou de pois cassés, servie avec de l'huile d'olive, du cumin et du piment. Le petit-déjeuner des gens du Nord (Tanger, Tétouan, Fès). On trempe le pain dedans. Simple, chaud, très peu cher, très populaire en hiver.",
+          "ingredients": [
+            { "nom": "Fèves sèches pelées (ou pois cassés)", "qty": "300 g" },
+            { "nom": "Ail", "qty": "5 gousses" },
+            { "nom": "Huile d'olive", "qty": "4 c. à soupe" },
+            { "nom": "Cumin en poudre", "qty": "1 c. à café" },
+            { "nom": "Paprika ou piment fort", "qty": "1 c. à café" },
+            { "nom": "Sel", "qty": "selon goût" },
+            { "nom": "Pain marocain (khobz)", "qty": "pour servir" }
+          ],
+          "etapes": [
+            "Faire tremper les fèves la veille si nécessaire.",
+            "Cuire les fèves dans une grande casserole d'eau avec l'ail pendant 30 min jusqu'à très tendres.",
+            "Mixer ou écraser jusqu'à obtenir une texture crémeuse.",
+            "Ajouter de l'eau chaude si trop épais.",
+            "Saler selon goût.",
+            "Servir dans des bols, arroser généreusement d'huile d'olive.",
+            "Saupoudrer de cumin et de paprika/piment.",
+            "Accompagner de pain marocain pour tremper."
+          ],
+          "valeurs": {
+            "calories": 340,
+            "proteines": 18,
+            "glucides": 42,
+            "lipides": 12
+          },
+          "tags": ["petitdej", "rue", "hiver"]
+        },
+        {
+          "id": "kefta-mkaouara-ma",
+          "nom": "Kefta en Sauce Tomate (Mkaouara)",
+          "repas": "diner",
+          "temps": 35,
+          "difficulte": "facile",
+          "emoji": "🍳",
+          "description": "Des boulettes d'agneau épicées mijotées dans une sauce tomate-cumin-paprika, avec des œufs cassés dedans en fin de cuisson. Servi directement dans le tajine ou la poêle avec du pain. Le dîner express marocain par excellence.",
+          "ingredients": [
+            { "nom": "Viande hachée agneau ou bœuf", "qty": "400 g" },
+            { "nom": "Oignon râpé", "qty": "1" },
+            { "nom": "Coriandre fraîche hachée", "qty": "2 c. à soupe" },
+            { "nom": "Persil haché", "qty": "2 c. à soupe" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Cumin", "qty": "1 c. à café" },
+            { "nom": "Cannelle", "qty": "1 pincée" },
+            { "nom": "Tomates concassées", "qty": "400 g" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Ail", "qty": "2 gousses" },
+            { "nom": "Œufs", "qty": "3" },
+            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Mélanger la viande hachée avec l'oignon râpé, la coriandre, le persil, le paprika, le cumin, la cannelle, le sel et le poivre.",
+            "Former de petites boulettes de la taille d'une noix.",
+            "Faire revenir l'ail dans l'huile, ajouter les tomates et le concentré.",
+            "Laisser mijoter la sauce 10 min.",
+            "Ajouter les boulettes dans la sauce et cuire 15 min à feu doux.",
+            "Casser les œufs délicatement sur la sauce.",
+            "Couvrir et cuire jusqu'à ce que les blancs soient pris.",
+            "Servir directement dans le plat avec du pain marocain."
+          ],
+          "valeurs": {
+            "calories": 460,
+            "proteines": 38,
+            "glucides": 14,
+            "lipides": 28
+          },
+          "tags": ["express", "épicé", "tajine"]
+        },
+        {
+          "id": "rfissa-ma",
+          "nom": "Rfissa au Poulet",
+          "repas": "dej",
+          "temps": 90,
+          "difficulte": "moyen",
+          "emoji": "🫓",
+          "description": "Un grand plat familial : du poulet mijoté dans un bouillon au fenugrec et aux épices, versé sur des msemen (crêpes feuilletées) déchirées et des lentilles. Plat de fête post-accouchement à l'origine, aujourd'hui mangé lors des grands repas du vendredi.",
+          "ingredients": [
+            { "nom": "Poulet entier", "qty": "1.2 kg" },
+            { "nom": "Msemen ou crêpes marocaines", "qty": "6" },
+            { "nom": "Lentilles brunes", "qty": "200 g" },
+            { "nom": "Oignon", "qty": "3" },
+            { "nom": "Fenugrec en graines", "qty": "1 c. à soupe" },
+            { "nom": "Ras el hanout", "qty": "1 c. à soupe" },
+            { "nom": "Gingembre", "qty": "1 c. à café" },
+            { "nom": "Curcuma", "qty": "1 c. à café" },
+            { "nom": "Safran", "qty": "1 pincée" },
+            { "nom": "Beurre", "qty": "40 g" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Cuire les lentilles séparément jusqu'à tendres. Réserver.",
+            "Faire revenir les oignons émincés dans le beurre jusqu'à dorés.",
+            "Ajouter le poulet, toutes les épices, le fenugrec et couvrir d'eau.",
+            "Laisser mijoter 45 à 50 min jusqu'à ce que le poulet soit très tendre.",
+            "Déchirer les msemen en morceaux et les étaler dans un grand plat.",
+            "Répartir les lentilles cuites par-dessus.",
+            "Poser le poulet sur les lentilles.",
+            "Verser généreusement le bouillon épicé chaud sur le tout et servir immédiatement."
+          ],
+          "valeurs": {
+            "calories": 620,
+            "proteines": 52,
+            "glucides": 58,
+            "lipides": 20
+          },
+          "tags": ["fête", "familial", "vendredi"]
+        },
+        {
+          "id": "zaalouk-ma",
+          "nom": "Zaalouk",
+          "repas": "dej",
+          "temps": 30,
+          "difficulte": "facile",
+          "emoji": "🍆",
+          "description": "Une salade cuite d'aubergines et de tomates, écrasées à la fourchette, parfumées à l'ail, au cumin et à la coriandre. Servi tiède ou à température ambiante avec du pain. L'accompagnement ou l'entrée de base dans toute la cuisine marocaine.",
+          "ingredients": [
+            { "nom": "Aubergines", "qty": "2" },
+            { "nom": "Tomates mûres", "qty": "3" },
+            { "nom": "Ail", "qty": "4 gousses" },
+            { "nom": "Coriandre fraîche", "qty": "1/2 botte" },
+            { "nom": "Persil frais", "qty": "1/2 botte" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Cumin", "qty": "1 c. à café" },
+            { "nom": "Piment fort", "qty": "1/2 c. à café" },
+            { "nom": "Huile d'olive", "qty": "4 c. à soupe" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Cuire les aubergines entières au four ou les faire griller directement sur la flamme.",
+            "Retirer la peau et écraser la chair à la fourchette.",
+            "Dans une poêle, faire revenir l'ail dans l'huile d'olive.",
+            "Ajouter les tomates pelées et concassées.",
+            "Ajouter la chair d'aubergine, le paprika, le cumin et le piment.",
+            "Cuire à feu moyen en écrasant et en mélangeant 15 min.",
+            "Ajouter la coriandre et le persil hachés en fin de cuisson.",
+            "Servir tiède ou froid avec du pain marocain."
+          ],
+          "valeurs": {
+            "calories": 180,
+            "proteines": 4,
+            "glucides": 16,
+            "lipides": 12
+          },
+          "tags": ["végétarien", "entrée", "salade cuite"]
+        },
+        {
+          "id": "tangia-ma",
+          "nom": "Tangia Marrakchia",
+          "repas": "dej",
+          "temps": 180,
+          "difficulte": "facile",
+          "emoji": "🏺",
+          "description": "Le plat des hommes de Marrakech. De l'agneau ou du bœuf confit dans sa propre graisse avec du citron confit, du ras el hanout et du safran, cuit lentement dans une jarre en terre. Fondant, intense, parfumé. On le prépare la veille et il cuit longtemps.",
+          "ingredients": [
+            { "nom": "Jarret ou épaule d'agneau", "qty": "800 g" },
+            { "nom": "Citron confit", "qty": "1" },
+            { "nom": "Ail", "qty": "6 gousses" },
+            { "nom": "Ras el hanout", "qty": "1 c. à soupe" },
+            { "nom": "Safran", "qty": "1 pincée" },
+            { "nom": "Gingembre", "qty": "1 c. à café" },
+            { "nom": "Curcuma", "qty": "1/2 c. à café" },
+            { "nom": "Beurre rance (smen) ou beurre normal", "qty": "40 g" },
+            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Mettre tous les ingrédients dans une cocotte : la viande, l'ail, les épices, le citron confit coupé, le smen et l'huile.",
+            "Ne pas ajouter d'eau. Sceller hermétiquement avec du papier aluminium si pas de cocotte en terre.",
+            "Cuire à four très doux (150°C) pendant 2h30 à 3h.",
+            "La viande doit se défaire à la fourchette et confire dans sa propre graisse.",
+            "Servir directement dans le plat avec du pain marocain et du couscous nature."
+          ],
+          "valeurs": {
+            "calories": 580,
+            "proteines": 52,
+            "glucides": 4,
+            "lipides": 38
+          },
+          "tags": ["confit", "lent", "Marrakech"]
+        },
+        {
+          "id": "seffa-ma",
+          "nom": "Seffa (Couscous Sucré)",
+          "repas": "dej",
+          "temps": 60,
+          "difficulte": "moyen",
+          "emoji": "✨",
+          "description": "Du couscous ou des vermicelles cuits à la vapeur, sucrés, parfumés à la cannelle et à l'eau de fleur d'oranger, garnis de raisins secs, d'amandes grillées et de sucre glace. Servi en plat principal sucré lors des fêtes ou des grands déjeuners familiaux. Déroutant au premier abord, inoubliable.",
+          "ingredients": [
+            { "nom": "Couscous moyen ou vermicelles", "qty": "500 g" },
+            { "nom": "Beurre", "qty": "60 g" },
+            { "nom": "Sucre glace", "qty": "4 c. à soupe" },
+            { "nom": "Cannelle en poudre", "qty": "1 c. à soupe" },
+            { "nom": "Eau de fleur d'oranger", "qty": "2 c. à soupe" },
+            { "nom": "Raisins secs", "qty": "80 g" },
+            { "nom": "Amandes mondées grillées", "qty": "60 g" },
+            { "nom": "Lait chaud", "qty": "200 ml" }
+          ],
+          "etapes": [
+            "Cuire le couscous à la vapeur en le roulant entre les paumes à mi-cuisson pour éviter les grumeaux.",
+            "Incorporer le beurre et l'eau de fleur d'oranger.",
+            "Remettre à la vapeur 10 min.",
+            "Faire gonfler les raisins secs dans un peu d'eau tiède.",
+            "Disposer le couscous en dôme dans le plat de service.",
+            "Saupoudrer généreusement de sucre glace et de cannelle.",
+            "Garnir de raisins et d'amandes grillées.",
+            "Servir avec du lait chaud à part pour humidifier selon goût."
+          ],
+          "valeurs": {
+            "calories": 520,
+            "proteines": 12,
+            "glucides": 82,
+            "lipides": 16
+          },
+          "tags": ["sucré", "fête", "traditionnel"]
+        },
+        {
+          "id": "msemen-ma",
+          "nom": "Msemen au Miel",
+          "repas": "petitdej",
+          "temps": 45,
+          "difficulte": "moyen",
+          "emoji": "🧆",
+          "description": "Des crêpes feuilletées et croustillantes cuites à la poêle sans matière grasse, servies chaudes avec du miel et du beurre. Le petit-déjeuner du week-end dans toutes les familles marocaines. On les mange en les déchirant à la main.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "300 g" },
+            { "nom": "Semoule fine", "qty": "100 g" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Levure boulangère", "qty": "1 c. à café" },
+            { "nom": "Eau tiède", "qty": "200 ml" },
+            { "nom": "Huile végétale", "qty": "pour le feuilletage" },
+            { "nom": "Beurre mou", "qty": "50 g" },
+            { "nom": "Miel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Mélanger la farine, la semoule, le sel et la levure. Ajouter l'eau progressivement et pétrir jusqu'à pâte souple.",
+            "Laisser reposer 20 min sous un torchon.",
+            "Diviser en boules. Aplatir chaque boule finement en rectangle huilé.",
+            "Étaler du beurre mou sur la surface et saupoudrer de semoule.",
+            "Replier en carré en rabattant les bords vers le centre, puis encore en carré.",
+            "Aplatir légèrement à nouveau.",
+            "Cuire dans une poêle sans matière grasse à feu moyen, 3 à 4 min par face.",
+            "Servir chaud avec du miel et du beurre."
+          ],
+          "valeurs": {
+            "calories": 380,
+            "proteines": 10,
+            "glucides": 62,
+            "lipides": 12
+          },
+          "tags": ["petitdej", "weekend", "feuilleté"]
+        }
+      ]
+    },
+
+    "Algérie": {
+      "coords": [28.0339, 1.6596],
+      "recettes": [
+        {
+          "id": "chorba-frik-dz",
+          "nom": "Chorba Frik",
+          "repas": "diner",
+          "temps": 55,
+          "difficulte": "facile",
+          "emoji": "🌾",
+          "description": "La soupe algérienne par excellence. Du blé vert concassé (frik) avec de la viande d'agneau ou de poulet, des tomates, des pois chiches et de la coriandre. Épaisse, parfumée, réconfortante. Omniprésente pendant le Ramadan, mais mangée tout au long de l'année le soir.",
+          "ingredients": [
+            { "nom": "Frik (blé vert concassé)", "qty": "150 g" },
+            { "nom": "Viande d'agneau ou poulet en morceaux", "qty": "400 g" },
+            { "nom": "Pois chiches cuits", "qty": "150 g" },
+            { "nom": "Tomates concassées", "qty": "300 g" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Coriandre fraîche", "qty": "1 botte" },
+            { "nom": "Persil frais", "qty": "1/2 botte" },
+            { "nom": "Ras el hanout", "qty": "1 c. à café" },
+            { "nom": "Cannelle", "qty": "1 pincée" },
+            { "nom": "Huile végétale", "qty": "3 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire dorer la viande dans l'huile avec l'oignon haché.",
+            "Ajouter le ras el hanout, la cannelle et le concentré de tomate.",
+            "Ajouter les tomates, les pois chiches et couvrir de 1,5 litre d'eau.",
+            "Porter à ébullition puis ajouter le frik lavé.",
+            "Laisser mijoter 30 min à feu doux en remuant de temps en temps.",
+            "Ajouter la coriandre et le persil en fin de cuisson.",
+            "Ajuster l'assaisonnement et servir bien chaud."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 32,
+            "glucides": 46,
+            "lipides": 12
+          },
+          "tags": ["soupe", "Ramadan", "réconfortant"]
+        },
+        {
+          "id": "chakhchoukha-dz",
+          "nom": "Chakhchoukha",
+          "repas": "dej",
+          "temps": 75,
+          "difficulte": "moyen",
+          "emoji": "🫓",
+          "description": "Le plat emblématique des Hauts Plateaux algériens. Des galettes de pain (trid ou rougag) brisées en morceaux et imbibées d'un bouillon de viande épicé aux pois chiches et légumes. Très généreux, très nourrissant, plat de fête et de vendredi.",
+          "ingredients": [
+            { "nom": "Galettes de pain fines (type dioul ou feuilles de brick)", "qty": "6" },
+            { "nom": "Mouton ou agneau en morceaux", "qty": "600 g" },
+            { "nom": "Pois chiches cuits", "qty": "200 g" },
+            { "nom": "Tomate", "qty": "2" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Navet", "qty": "2" },
+            { "nom": "Carotte", "qty": "2" },
+            { "nom": "Courgette", "qty": "1" },
+            { "nom": "Ras el hanout", "qty": "1 c. à soupe" },
+            { "nom": "Cannelle", "qty": "1 c. à café" },
+            { "nom": "Beurre ou huile", "qty": "3 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire dorer la viande dans le beurre ou l'huile.",
+            "Ajouter les oignons, les épices et les tomates. Cuire 10 min.",
+            "Couvrir d'eau, ajouter les légumes et les pois chiches.",
+            "Laisser mijoter 45 min jusqu'à ce que la viande soit très tendre.",
+            "Briser les galettes de pain en morceaux dans un grand plat creux.",
+            "Verser progressivement le bouillon chaud sur les morceaux de pain pour les imbiber.",
+            "Disposer la viande, les légumes et les pois chiches par-dessus.",
+            "Servir immédiatement bien chaud."
+          ],
+          "valeurs": {
+            "calories": 580,
+            "proteines": 44,
+            "glucides": 56,
+            "lipides": 20
+          },
+          "tags": ["fête", "familial", "Hauts Plateaux"]
+        },
+        {
+          "id": "rechta-dz",
+          "nom": "Rechta au Poulet",
+          "repas": "dej",
+          "temps": 80,
+          "difficulte": "moyen",
+          "emoji": "🍝",
+          "description": "Des pâtes maison très fines roulées à la main, servies avec un bouillon de poulet au blanc d'épices (cannelle, poivre blanc, ras el hanout) et des pois chiches. Le plat de la cuisine algéroise raffinée, souvent préparé lors des fêtes et mariages.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "400 g" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Eau", "qty": "180 ml" },
+            { "nom": "Poulet entier coupé en morceaux", "qty": "1.2 kg" },
+            { "nom": "Pois chiches cuits", "qty": "200 g" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Cannelle", "qty": "1 c. à café" },
+            { "nom": "Poivre blanc", "qty": "1 c. à café" },
+            { "nom": "Ras el hanout", "qty": "1/2 c. à café" },
+            { "nom": "Beurre", "qty": "50 g" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Pétrir la farine avec l'eau et le sel pour former une pâte ferme. Laisser reposer 30 min.",
+            "Étaler finement et couper en lamelles très fines. Cuire les pâtes à la vapeur 20 min.",
+            "Faire dorer le poulet dans le beurre avec les oignons.",
+            "Ajouter les épices, les pois chiches et couvrir d'eau.",
+            "Laisser mijoter 40 min jusqu'à bouillon parfumé et viande tendre.",
+            "Servir les pâtes dans un plat, verser le bouillon chaud par-dessus.",
+            "Disposer le poulet et les pois chiches sur le dessus."
+          ],
+          "valeurs": {
+            "calories": 540,
+            "proteines": 46,
+            "glucides": 58,
+            "lipides": 14
+          },
+          "tags": ["fête", "pâtes maison", "Alger"]
+        },
+        {
+          "id": "garantita-dz",
+          "nom": "Garantita",
+          "repas": "collation",
+          "temps": 50,
+          "difficulte": "facile",
+          "emoji": "🟡",
+          "description": "Le street food algérien le plus populaire à Oran et dans l'Ouest. Une sorte de flan épais à base de farine de pois chiches, cuit au four, servi dans du pain avec du cumin et de l'harissa. Fondant, chaud, très parfumé. Une institution.",
+          "ingredients": [
+            { "nom": "Farine de pois chiches", "qty": "250 g" },
+            { "nom": "Eau", "qty": "1 l" },
+            { "nom": "Huile végétale", "qty": "4 c. à soupe" },
+            { "nom": "Œuf", "qty": "1" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Cumin en poudre", "qty": "1 c. à café" },
+            { "nom": "Harissa", "qty": "pour servir" },
+            { "nom": "Pain baguette ou khobz", "qty": "pour servir" }
+          ],
+          "etapes": [
+            "Fouetter la farine de pois chiches avec l'eau froide jusqu'à lisse et sans grumeaux.",
+            "Ajouter l'huile, l'œuf et le sel. Bien mélanger.",
+            "Verser dans un plat huilé allant au four.",
+            "Cuire 35 à 40 min à 180°C jusqu'à ce que la surface soit dorée et la texture ferme.",
+            "Laisser tiédir légèrement avant de couper.",
+            "Servir dans du pain avec du cumin et de l'harissa."
+          ],
+          "valeurs": {
+            "calories": 310,
+            "proteines": 14,
+            "glucides": 38,
+            "lipides": 12
+          },
+          "tags": ["rue", "Oran", "street food"]
+        },
+        {
+          "id": "dolma-algerienne-dz",
+          "nom": "Dolma Algérienne",
+          "repas": "dej",
+          "temps": 90,
+          "difficulte": "moyen",
+          "emoji": "🫑",
+          "description": "Des légumes farcis (courgettes, poivrons, tomates) avec de la viande hachée épicée et du riz, mijotés dans une sauce tomate. La version algérienne est plus épicée et plus généreuse que les versions du Proche-Orient. Plat du dimanche très ancré.",
+          "ingredients": [
+            { "nom": "Courgettes rondes", "qty": "4" },
+            { "nom": "Poivrons", "qty": "3" },
+            { "nom": "Tomates", "qty": "3" },
+            { "nom": "Viande hachée agneau ou bœuf", "qty": "300 g" },
+            { "nom": "Riz rond", "qty": "80 g" },
+            { "nom": "Oignon râpé", "qty": "1" },
+            { "nom": "Coriandre hachée", "qty": "2 c. à soupe" },
+            { "nom": "Persil haché", "qty": "2 c. à soupe" },
+            { "nom": "Cannelle", "qty": "1/2 c. à café" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Huile d'olive", "qty": "3 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Évider les courgettes, poivrons et tomates. Réserver les chapeaux.",
+            "Mélanger la viande, le riz cru, l'oignon, la coriandre, le persil, la cannelle, le paprika, sel et poivre.",
+            "Farcir les légumes aux 3/4 (le riz gonfle).",
+            "Replacer les chapeaux sur les légumes.",
+            "Préparer la sauce dans une grande casserole : huile, concentré de tomate, eau, sel.",
+            "Déposer délicatement les légumes farcis dans la sauce.",
+            "Laisser mijoter 50 à 60 min à feu doux.",
+            "Servir chaud avec du pain ou du riz."
+          ],
+          "valeurs": {
+            "calories": 460,
+            "proteines": 30,
+            "glucides": 38,
+            "lipides": 20
+          },
+          "tags": ["dimanche", "farci", "familial"]
+        },
+        {
+          "id": "berkoukes-dz",
+          "nom": "Berkoukes (Soupe aux Petites Pâtes)",
+          "repas": "diner",
+          "temps": 50,
+          "difficulte": "facile",
+          "emoji": "🍵",
+          "description": "Une soupe épaisse avec de petites pâtes roulées à la main (berkoukes), de la viande, des légumes et des pois chiches. Très nourrissante, très parfumée. Le plat du soir froid dans les familles des Hauts Plateaux et d'Algérie centrale.",
+          "ingredients": [
+            { "nom": "Berkoukes (petites pâtes rondes) ou orzo", "qty": "200 g" },
+            { "nom": "Viande d'agneau ou bœuf", "qty": "300 g" },
+            { "nom": "Pois chiches cuits", "qty": "150 g" },
+            { "nom": "Navet", "qty": "2" },
+            { "nom": "Carotte", "qty": "2" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Tomate", "qty": "2" },
+            { "nom": "Ras el hanout", "qty": "1 c. à café" },
+            { "nom": "Coriandre fraîche", "qty": "1/2 botte" },
+            { "nom": "Huile végétale", "qty": "3 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire dorer la viande avec l'oignon dans l'huile.",
+            "Ajouter les tomates, le ras el hanout, sel et poivre.",
+            "Couvrir de 1,5 litre d'eau et ajouter les légumes coupés en morceaux.",
+            "Laisser cuire 25 min.",
+            "Ajouter les pois chiches et les berkoukes.",
+            "Cuire encore 15 min jusqu'à ce que les pâtes soient tendres.",
+            "Finir avec la coriandre fraîche et servir très chaud."
+          ],
+          "valeurs": {
+            "calories": 440,
+            "proteines": 30,
+            "glucides": 50,
+            "lipides": 12
+          },
+          "tags": ["soupe", "hiver", "nourrissant"]
+        }
+      ]
+    },
+
+    "Tunisie": {
+      "coords": [33.8869, 9.5375],
+      "recettes": [
+        {
+          "id": "lablabi-tn",
+          "nom": "Lablabi",
+          "repas": "petitdej",
+          "temps": 20,
+          "difficulte": "facile",
+          "emoji": "🍳",
+          "description": "Le street food du matin à Tunis et dans tout le pays. Un bouillon de pois chiches épicé versé sur du pain rassis émietté, avec de l'harissa, du cumin, un œuf poché, des câpres et de l'huile d'olive. On mange ça debout, dans un bol en métal, avant le travail.",
+          "ingredients": [
+            { "nom": "Pois chiches cuits", "qty": "400 g" },
+            { "nom": "Pain rassis", "qty": "2 tranches" },
+            { "nom": "Œufs", "qty": "2" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Harissa", "qty": "1 c. à soupe" },
+            { "nom": "Cumin en poudre", "qty": "1 c. à café" },
+            { "nom": "Câpres", "qty": "1 c. à soupe" },
+            { "nom": "Citron", "qty": "1" },
+            { "nom": "Huile d'olive", "qty": "3 c. à soupe" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire chauffer les pois chiches dans leur eau de cuisson ou un bouillon.",
+            "Ajouter l'ail écrasé, le cumin et le sel.",
+            "Émietter le pain rassis au fond d'un bol.",
+            "Verser les pois chiches et le bouillon chaud par-dessus.",
+            "Pocher les œufs directement dans le bouillon chaud.",
+            "Ajouter l'harissa, les câpres et un filet de jus de citron.",
+            "Terminer avec un généreux filet d'huile d'olive et servir immédiatement."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 22,
+            "glucides": 52,
+            "lipides": 16
+          },
+          "tags": ["rue", "petitdej", "Tunis"]
+        },
+        {
+          "id": "fricasse-tn",
+          "nom": "Fricassé Tunisien",
+          "repas": "collation",
+          "temps": 40,
+          "difficulte": "moyen",
+          "emoji": "🥙",
+          "description": "Le sandwich tunisien. Un petit pain brioché frit et garni de thon, œuf dur, harissa, câpres, olives, pomme de terre et huile d'olive. Vendu dans la rue partout en Tunisie. Chaque fricassero a ses proportions secrètes.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "300 g" },
+            { "nom": "Levure boulangère", "qty": "1 sachet" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Sucre", "qty": "1 c. à café" },
+            { "nom": "Huile végétale (pâte + friture)", "qty": "selon besoin" },
+            { "nom": "Thon en conserve", "qty": "1 boîte" },
+            { "nom": "Œuf dur", "qty": "2" },
+            { "nom": "Harissa", "qty": "selon goût" },
+            { "nom": "Câpres", "qty": "1 c. à soupe" },
+            { "nom": "Olives noires", "qty": "1 poignée" },
+            { "nom": "Pomme de terre cuite", "qty": "1" }
+          ],
+          "etapes": [
+            "Mélanger la farine, la levure, le sel, le sucre et l'huile. Ajouter l'eau et pétrir jusqu'à pâte souple.",
+            "Laisser lever 30 min sous un torchon.",
+            "Former de petits pains ovales et les faire frire dans l'huile jusqu'à dorés.",
+            "Égoutter et couper en deux sans séparer complètement.",
+            "Tartiner l'intérieur d'harissa.",
+            "Garnir avec le thon émietté, l'œuf en rondelles, la pomme de terre écrasée, les câpres et les olives.",
+            "Arroser d'un filet d'huile d'olive et servir."
+          ],
+          "valeurs": {
+            "calories": 480,
+            "proteines": 26,
+            "glucides": 52,
+            "lipides": 18
+          },
+          "tags": ["rue", "sandwich", "frit"]
+        },
+        {
+          "id": "ojja-merguez-tn",
+          "nom": "Ojja Merguez",
+          "repas": "dej",
+          "temps": 30,
+          "difficulte": "facile",
+          "emoji": "🍳",
+          "description": "Des œufs brouillés épicés cuits dans une sauce tomate-poivron avec des merguez. Le plat du midi rapide et épicé par excellence en Tunisie. Servi directement dans la poêle avec du pain pour saucer. Chaud, relevé, addictif.",
+          "ingredients": [
+            { "nom": "Œufs", "qty": "4" },
+            { "nom": "Merguez", "qty": "4" },
+            { "nom": "Poivron rouge", "qty": "1" },
+            { "nom": "Tomates concassées", "qty": "300 g" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Harissa", "qty": "1 c. à soupe" },
+            { "nom": "Cumin", "qty": "1/2 c. à café" },
+            { "nom": "Paprika", "qty": "1/2 c. à café" },
+            { "nom": "Huile d'olive", "qty": "3 c. à soupe" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Couper les merguez en rondelles et les faire revenir dans l'huile.",
+            "Ajouter l'ail et le poivron émincé. Cuire 5 min.",
+            "Ajouter les tomates, l'harissa, le cumin et le paprika.",
+            "Laisser mijoter la sauce 10 min.",
+            "Battre les œufs et les incorporer à la sauce en remuant.",
+            "Cuire en mélangeant comme des œufs brouillés.",
+            "Arrêter la cuisson quand les œufs sont encore légèrement fondants.",
+            "Servir directement avec du pain."
+          ],
+          "valeurs": {
+            "calories": 480,
+            "proteines": 30,
+            "glucides": 12,
+            "lipides": 36
+          },
+          "tags": ["épicé", "express", "œufs"]
+        },
+        {
+          "id": "couscous-poisson-sfax-tn",
+          "nom": "Couscous Poisson de Sfax",
+          "repas": "dej",
+          "temps": 90,
+          "difficulte": "moyen",
+          "emoji": "🐟",
+          "description": "La version côtière du couscous tunisien. Du poisson (rouget, mérou ou mulet) cuit dans un bouillon épicé à base de tomates et de harissa, servi sur un couscous. Moins connu que le couscous viande mais emblématique de la cuisine de Sfax et des régions côtières.",
+          "ingredients": [
+            { "nom": "Semoule de couscous", "qty": "500 g" },
+            { "nom": "Poisson blanc entier (mérou ou dorade)", "qty": "800 g" },
+            { "nom": "Tomates", "qty": "3" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Harissa", "qty": "1 c. à soupe" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Ail", "qty": "4 gousses" },
+            { "nom": "Pomme de terre", "qty": "3" },
+            { "nom": "Carotte", "qty": "2" },
+            { "nom": "Pois chiches cuits", "qty": "150 g" },
+            { "nom": "Huile d'olive", "qty": "60 ml" },
+            { "nom": "Sel, cumin, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Faire revenir les oignons dans l'huile d'olive.",
+            "Ajouter les tomates, le concentré et l'harissa. Cuire 10 min.",
+            "Ajouter l'ail, les légumes, les pois chiches et couvrir d'eau.",
+            "Laisser cuire 20 min puis ajouter le poisson entier.",
+            "Cuire encore 15 min. Retirer le poisson délicatement.",
+            "Cuire le couscous à la vapeur en le mouvant à mi-cuisson.",
+            "Incorporer un filet d'huile et du sel dans le couscous.",
+            "Servir le couscous surmonté du poisson et des légumes, avec le bouillon à part."
+          ],
+          "valeurs": {
+            "calories": 580,
+            "proteines": 44,
+            "glucides": 72,
+            "lipides": 14
+          },
+          "tags": ["côtier", "Sfax", "traditionnel"]
+        },
+        {
+          "id": "kafteji-tn",
+          "nom": "Kafteji",
+          "repas": "dej",
+          "temps": 30,
+          "difficulte": "facile",
+          "emoji": "🥚",
+          "description": "Des légumes frits (poivron, pomme de terre, courge, tomate, piment) écrasés ensemble à la fourchette puis mélangés avec des œufs frits. Le tout est relevé d'harissa et de cumin. Servi dans du pain ou en plat. Le déjeuner rapide de la cuisine populaire tunisienne.",
+          "ingredients": [
+            { "nom": "Pomme de terre", "qty": "2" },
+            { "nom": "Poivron rouge", "qty": "1" },
+            { "nom": "Courgette ou courge", "qty": "1" },
+            { "nom": "Tomate", "qty": "2" },
+            { "nom": "Piment vert", "qty": "1" },
+            { "nom": "Œufs", "qty": "3" },
+            { "nom": "Harissa", "qty": "1 c. à café" },
+            { "nom": "Cumin", "qty": "1/2 c. à café" },
+            { "nom": "Huile végétale", "qty": "100 ml" },
+            { "nom": "Sel", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Couper tous les légumes en morceaux et les faire frire séparément dans l'huile chaude.",
+            "Égoutter les légumes frits sur du papier absorbant.",
+            "Les écraser grossièrement ensemble à la fourchette.",
+            "Faire frire les œufs dans la même huile.",
+            "Mélanger les légumes écrasés avec les œufs frits coupés en morceaux.",
+            "Ajouter l'harissa, le cumin et le sel.",
+            "Servir dans du pain ou directement dans une assiette."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 16,
+            "glucides": 38,
+            "lipides": 24
+          },
+          "tags": ["frit", "populaire", "rapide"]
+        },
+        {
+          "id": "brik-oeuf-tn",
+          "nom": "Brik à l'Œuf",
+          "repas": "dej",
+          "temps": 20,
+          "difficulte": "facile",
+          "emoji": "🥐",
+          "description": "Une feuille de malsouka (feuille de brick) garnie de thon, câpres, persil et d'un œuf cru entier, frite dans l'huile. L'œuf reste coulant au centre. Croustillant dehors, fondant dedans, relevé. Le casse-croûte tunisien par excellence.",
+          "ingredients": [
+            { "nom": "Feuilles de brick", "qty": "4" },
+            { "nom": "Œufs", "qty": "4" },
+            { "nom": "Thon en conserve", "qty": "1 boîte" },
+            { "nom": "Câpres", "qty": "1 c. à soupe" },
+            { "nom": "Persil haché", "qty": "2 c. à soupe" },
+            { "nom": "Harissa", "qty": "selon goût" },
+            { "nom": "Citron", "qty": "1" },
+            { "nom": "Huile de friture", "qty": "selon besoin" }
+          ],
+          "etapes": [
+            "Disposer une feuille de brick à plat.",
+            "Déposer du thon émietté, quelques câpres, du persil et de l'harissa au centre.",
+            "Casser délicatement un œuf entier cru au milieu.",
+            "Replier la feuille rapidement pour former un triangle ou demi-lune, sans casser le jaune.",
+            "Faire glisser délicatement dans l'huile chaude.",
+            "Frire 1 à 2 min de chaque côté jusqu'à croustillant et doré.",
+            "Égoutter et servir avec du citron. Le jaune doit rester coulant."
+          ],
+          "valeurs": {
+            "calories": 340,
+            "proteines": 20,
+            "glucides": 28,
+            "lipides": 16
+          },
+          "tags": ["frit", "croustillant", "classique"]
+        }
+      ]
+    },
+
+    "Turquie": {
+      "coords": [38.9637, 35.2433],
+      "recettes": [
+        {
+          "id": "menemen-tr",
+          "nom": "Menemen",
+          "repas": "petitdej",
+          "temps": 20,
+          "difficulte": "facile",
+          "emoji": "🍳",
+          "description": "Des œufs brouillés ou mollets cuits dans une sauce tomate-poivron avec du piment. Le petit-déjeuner de tous les jours en Turquie. Servi directement dans la poêle avec du pain. Débat national : avec ou sans oignon ? Chacun a son camp.",
+          "ingredients": [
+            { "nom": "Œufs", "qty": "3" },
+            { "nom": "Tomates mûres", "qty": "3" },
+            { "nom": "Poivron vert ou rouge", "qty": "2" },
+            { "nom": "Piment vert turc (sivri biber)", "qty": "1" },
+            { "nom": "Oignon (optionnel, débat national)", "qty": "1/2" },
+            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
+            { "nom": "Sel, poivre noir", "qty": "selon goût" },
+            { "nom": "Pain turc (ekmek)", "qty": "pour servir" }
+          ],
+          "etapes": [
+            "Hacher grossièrement les poivrons et les piments.",
+            "Faire revenir les poivrons dans l'huile d'olive 5 min.",
+            "Ajouter les tomates concassées grossièrement.",
+            "Cuire la sauce 8 à 10 min jusqu'à réduction.",
+            "Saler et poivrer.",
+            "Casser les œufs directement dans la sauce.",
+            "Mélanger légèrement et cuire selon préférence (coulant ou pris).",
+            "Servir directement dans la poêle avec du pain."
+          ],
+          "valeurs": {
+            "calories": 320,
+            "proteines": 18,
+            "glucides": 14,
+            "lipides": 22
+          },
+          "tags": ["petitdej", "classique", "rapide"]
+        },
+        {
+          "id": "mercimek-corbasi-tr",
+          "nom": "Mercimek Çorbası (Soupe de Lentilles)",
+          "repas": "diner",
+          "temps": 35,
+          "difficulte": "facile",
+          "emoji": "🍵",
+          "description": "La soupe la plus mangée en Turquie. Des lentilles rouges mixées avec oignon, carotte et épices, finies avec du beurre et du paprika. Simple, rapide, profonde. On en mange au déjeuner, au dîner, dans les lokanta (cantines), partout.",
+          "ingredients": [
+            { "nom": "Lentilles rouges", "qty": "250 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Carotte", "qty": "1" },
+            { "nom": "Pomme de terre", "qty": "1" },
+            { "nom": "Ail", "qty": "2 gousses" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Cumin", "qty": "1 c. à café" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Beurre", "qty": "30 g" },
+            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
+            { "nom": "Bouillon de volaille", "qty": "1 l" },
+            { "nom": "Sel, poivre", "qty": "selon goût" },
+            { "nom": "Citron", "qty": "1 (pour servir)" }
+          ],
+          "etapes": [
+            "Faire revenir l'oignon et l'ail dans l'huile d'olive.",
+            "Ajouter la carotte et la pomme de terre en dés, cuire 3 min.",
+            "Ajouter le concentré de tomate et cuire 2 min.",
+            "Ajouter les lentilles rouges et le bouillon.",
+            "Laisser cuire 20 min jusqu'à ce que tout soit très tendre.",
+            "Mixer jusqu'à texture veloutée.",
+            "Dans une petite poêle, faire fondre le beurre avec le paprika et verser sur la soupe.",
+            "Servir avec un quartier de citron."
+          ],
+          "valeurs": {
+            "calories": 340,
+            "proteines": 16,
+            "glucides": 48,
+            "lipides": 10
+          },
+          "tags": ["soupe", "quotidien", "veloutée"]
+        },
+        {
+          "id": "kuru-fasulye-tr",
+          "nom": "Kuru Fasulye (Haricots Blancs en Sauce)",
+          "repas": "dej",
+          "temps": 70,
+          "difficulte": "facile",
+          "emoji": "🫘",
+          "description": "Des haricots blancs mijotés dans une sauce tomate avec oignon et poivron. Le plat national non officiel de Turquie. Servi dans toutes les lokanta (cantines populaires) avec du riz pilaf à part. Simple, nourrissant, très ancré dans le quotidien.",
+          "ingredients": [
+            { "nom": "Haricots blancs secs", "qty": "300 g" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Poivron rouge", "qty": "1" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Tomates concassées", "qty": "200 g" },
+            { "nom": "Huile végétale ou beurre", "qty": "3 c. à soupe" },
+            { "nom": "Paprika doux", "qty": "1 c. à café" },
+            { "nom": "Sel, poivre", "qty": "selon goût" },
+            { "nom": "Riz pilaf", "qty": "300 g (pour servir)" }
+          ],
+          "etapes": [
+            "Tremper les haricots la veille, puis les cuire dans l'eau 40 min jusqu'à tendres. Égoutter.",
+            "Faire revenir les oignons et le poivron dans le beurre.",
+            "Ajouter le concentré et les tomates. Cuire 8 min.",
+            "Ajouter les haricots cuits et le paprika.",
+            "Verser un peu d'eau de cuisson des haricots et laisser mijoter 20 min.",
+            "La sauce doit être épaisse et enrober les haricots.",
+            "Servir avec du riz pilaf à part."
+          ],
+          "valeurs": {
+            "calories": 440,
+            "proteines": 22,
+            "glucides": 64,
+            "lipides": 12
+          },
+          "tags": ["lokanta", "quotidien", "populaire"]
+        },
+        {
+          "id": "manti-tr",
+          "nom": "Mantı (Raviolis Turcs au Yaourt)",
+          "repas": "dej",
+          "temps": 90,
+          "difficulte": "moyen",
+          "emoji": "🥟",
+          "description": "De très petits raviolis farcis à l'agneau haché et à l'oignon, servis avec du yaourt à l'ail et un beurre fondu au paprika versé par-dessus. Plus ils sont petits, plus la cuisinière est habile. Un plat de dimanche et de fête, profondément turc.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "300 g" },
+            { "nom": "Œuf", "qty": "2" },
+            { "nom": "Eau tiède", "qty": "80 ml" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Agneau haché", "qty": "200 g" },
+            { "nom": "Oignon râpé", "qty": "1" },
+            { "nom": "Yaourt nature épais", "qty": "300 g" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Beurre", "qty": "60 g" },
+            { "nom": "Paprika ou piment d'Alep", "qty": "1 c. à soupe" },
+            { "nom": "Menthe séchée", "qty": "1 c. à café" }
+          ],
+          "etapes": [
+            "Pétrir la farine avec les œufs, l'eau et le sel jusqu'à pâte ferme. Laisser reposer 30 min.",
+            "Mélanger la viande avec l'oignon râpé, sel et poivre.",
+            "Étaler la pâte très finement et découper en petits carrés de 3 cm.",
+            "Déposer une petite noisette de farce au centre de chaque carré.",
+            "Refermer en pinçant les coins ensemble pour former de petits raviolis.",
+            "Cuire les mantı dans de l'eau bouillante salée 10 à 12 min.",
+            "Écraser l'ail dans le yaourt, saler.",
+            "Faire fondre le beurre avec le paprika et la menthe.",
+            "Servir les mantı avec le yaourt à l'ail dessous et le beurre fondu par-dessus."
+          ],
+          "valeurs": {
+            "calories": 580,
+            "proteines": 28,
+            "glucides": 62,
+            "lipides": 24
+          },
+          "tags": ["dimanche", "pâtes maison", "yaourt"]
+        },
+        {
+          "id": "lahmacun-tr",
+          "nom": "Lahmacun",
+          "repas": "dej",
+          "temps": 45,
+          "difficulte": "moyen",
+          "emoji": "🫓",
+          "description": "Une fine galette de pâte garnie de viande hachée épicée, oignon, tomate et herbes, cuite très rapidement au four très chaud. On la roule avec des feuilles de salade et du persil, et on mange en marchant. La pizza turque du peuple.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "300 g" },
+            { "nom": "Levure boulangère", "qty": "1 c. à café" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Eau tiède", "qty": "180 ml" },
+            { "nom": "Viande hachée agneau ou bœuf", "qty": "250 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Tomate", "qty": "2" },
+            { "nom": "Poivron", "qty": "1" },
+            { "nom": "Persil plat", "qty": "1/2 botte" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Piment d'Alep ou cumin", "qty": "1 c. à café" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Feuilles de salade et citron", "qty": "pour servir" }
+          ],
+          "etapes": [
+            "Préparer la pâte : farine, levure, sel et eau. Pétrir 10 min. Laisser lever 30 min.",
+            "Mixer finement au hachoir ou couteau : viande, oignon, tomate, poivron, persil, épices et concentré.",
+            "La garniture doit être presque une pâte homogène.",
+            "Diviser la pâte en petites boules et les étaler très finement.",
+            "Étaler une fine couche de garniture viande sur chaque galette.",
+            "Cuire dans un four très chaud (240°C) 8 à 10 min.",
+            "Rouler avec des feuilles de salade, du persil et un filet de citron."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 24,
+            "glucides": 52,
+            "lipides": 14
+          },
+          "tags": ["rue", "galette", "épicé"]
+        },
+        {
+          "id": "ezogelin-corbasi-tr",
+          "nom": "Ezogelin Çorbası",
+          "repas": "diner",
+          "temps": 35,
+          "difficulte": "facile",
+          "emoji": "🌶️",
+          "description": "Une soupe de lentilles rouges et de boulgour, plus épicée que la mercimek classique, avec de la menthe séchée et du piment d'Alep. Originaire de Gaziantep, c'est la soupe du soir dans des millions de foyers turcs. On dit qu'elle tire son nom d'une mariée malheureuse.",
+          "ingredients": [
+            { "nom": "Lentilles rouges", "qty": "150 g" },
+            { "nom": "Boulgour fin", "qty": "60 g" },
+            { "nom": "Riz", "qty": "30 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Concentré de poivron", "qty": "1 c. à café" },
+            { "nom": "Beurre", "qty": "30 g" },
+            { "nom": "Huile végétale", "qty": "2 c. à soupe" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Piment d'Alep (isot)", "qty": "1 c. à café" },
+            { "nom": "Menthe séchée", "qty": "1 c. à café" },
+            { "nom": "Sel", "qty": "selon goût" },
+            { "nom": "Bouillon", "qty": "1,2 l" }
+          ],
+          "etapes": [
+            "Faire revenir l'oignon émincé dans l'huile.",
+            "Ajouter les concentrés de tomate et poivron, cuire 2 min.",
+            "Ajouter les lentilles, le boulgour, le riz et le bouillon.",
+            "Laisser cuire 20 à 25 min jusqu'à lentilles très tendres.",
+            "Mixer partiellement ou entièrement selon texture souhaitée.",
+            "Dans une petite poêle, faire fondre le beurre avec le paprika, le piment et la menthe.",
+            "Verser ce beurre épicé sur la soupe et servir immédiatement."
+          ],
+          "valeurs": {
+            "calories": 360,
+            "proteines": 16,
+            "glucides": 52,
+            "lipides": 10
+          },
+          "tags": ["soupe", "Gaziantep", "épicé"]
+        },
+        {
+          "id": "islim-kebabi-tr",
+          "nom": "İslim Kebabı (Kebab à l'Aubergine)",
+          "repas": "dej",
+          "temps": 60,
+          "difficulte": "moyen",
+          "emoji": "🍆",
+          "description": "Des tranches d'aubergines enroulées autour de boulettes d'agneau, cuites au four avec une sauce tomate. Un plat de lokanta et de maison, profondément anatolien. Moins connu que l'iskender ou le döner mais bien plus représentatif de ce que les Turcs mangent chez eux.",
+          "ingredients": [
+            { "nom": "Aubergines", "qty": "3" },
+            { "nom": "Agneau haché", "qty": "400 g" },
+            { "nom": "Oignon râpé", "qty": "1" },
+            { "nom": "Persil haché", "qty": "2 c. à soupe" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Cumin", "qty": "1/2 c. à café" },
+            { "nom": "Tomates", "qty": "3" },
+            { "nom": "Poivron vert", "qty": "2" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Huile végétale", "qty": "80 ml" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Couper les aubergines en tranches épaisses dans le sens de la longueur.",
+            "Les faire frire rapidement dans l'huile jusqu'à dorées. Égoutter.",
+            "Mélanger l'agneau haché avec l'oignon, le persil, le paprika, le cumin, sel et poivre.",
+            "Former des petites boulettes allongées.",
+            "Enrouler chaque boulette dans une tranche d'aubergine.",
+            "Placer dans un plat allant au four.",
+            "Couvrir de tomates en rondelles, de poivrons et de la sauce tomate au concentré.",
+            "Cuire 35 min à 180°C."
+          ],
+          "valeurs": {
+            "calories": 480,
+            "proteines": 32,
+            "glucides": 16,
+            "lipides": 34
+          },
+          "tags": ["four", "aubergine", "lokanta"]
+        },
+        {
+          "id": "borek-tr",
+          "nom": "Börek au Fromage et Persil",
+          "repas": "petitdej",
+          "temps": 50,
+          "difficulte": "moyen",
+          "emoji": "🥐",
+          "description": "Des couches de pâte filo garnies de fromage blanc (beyaz peynir) et de persil, cuites au four jusqu'à dorées et croustillantes. On en mange au petit-déjeuner, comme collation, ou comme repas léger. Il existe des centaines de variantes. Celle-là est la plus quotidienne.",
+          "ingredients": [
+            { "nom": "Feuilles de filo ou yufka", "qty": "6" },
+            { "nom": "Feta ou fromage blanc salé", "qty": "250 g" },
+            { "nom": "Persil frais haché", "qty": "1 botte" },
+            { "nom": "Œufs", "qty": "2" },
+            { "nom": "Lait", "qty": "100 ml" },
+            { "nom": "Huile végétale ou beurre fondu", "qty": "80 ml" },
+            { "nom": "Graines de nigelle ou sésame", "qty": "1 c. à soupe" }
+          ],
+          "etapes": [
+            "Écraser la feta à la fourchette et mélanger avec le persil haché.",
+            "Battre les œufs avec le lait et la moitié de l'huile.",
+            "Huiler un plat rectangulaire allant au four.",
+            "Déposer 2 feuilles de filo, badigeonner du mélange œuf-lait.",
+            "Étaler la farce fromage-persil.",
+            "Couvrir avec 2 feuilles de filo badigeonnées.",
+            "Répéter une couche et terminer par 2 feuilles de filo.",
+            "Verser le reste du mélange œuf-lait sur le dessus.",
+            "Parsemer de graines de nigelle ou sésame.",
+            "Cuire 30 à 35 min à 180°C jusqu'à bien doré."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 18,
+            "glucides": 38,
+            "lipides": 22
+          },
+          "tags": ["petitdej", "fromage", "filo"]
+    }
+  ]
+}
+     },
   "Afrique": {
     "Sénégal": {
       "coords": [14.4974, -14.4524],
