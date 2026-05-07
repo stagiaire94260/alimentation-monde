@@ -379,7 +379,7 @@
     "name": "Avocat",
     "type": "unit",
     "cal": 160,
-    "carbs": 9,
+    "carbs": 3,5,
     "protein": 2,
     "fat": 15
   },
@@ -448,12 +448,12 @@
     "fat": 5
   },
   {
-    "name": "Poulet",
+    "name": "Poulet cuit",
     "type": "g",
-    "cal": 165,
+    "cal": 137,
     "carbs": 0,
-    "protein": 31,
-    "fat": 4
+    "protein": 22,
+    "fat": 0,3
   },
   {
     "name": "Dinde",
@@ -642,10 +642,10 @@
   {
     "name": "St Moret",
     "type": "g",
-    "cal": 300,
-    "carbs": 2,
-    "protein": 7,
-    "fat": 30
+    "cal": 132.5,
+    "carbs": 5,
+    "protein": 10,
+    "fat": 9
   },
   {
     "name": "Attieke",
@@ -730,9 +730,9 @@
   {
     "name": "Riz basmati",
     "type": "g",
-    "cal": 130,
-    "carbs": 28,
-    "protein": 2.7,
+    "cal": 124,
+    "carbs": 26,
+    "protein": 2.5,
     "fat": 0.3
   },
   {
@@ -3193,10 +3193,11 @@
   },
   {
     "name": "Chocolat noir",
-    "cal": 546,
-    "protein": 5,
-    "carbs": 60,
-    "fat": 31
+  "type": "g",
+  "cal": 546,
+  "protein": 5,
+  "carbs": 60,
+  "fat": 31
   },
   {
     "name": "Moutarde",
