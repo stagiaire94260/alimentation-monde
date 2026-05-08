@@ -379,7 +379,7 @@
     "name": "Avocat",
     "type": "unit",
     "cal": 160,
-    "carbs": 3,5,
+    "carbs": 3.5,   
     "protein": 2,
     "fat": 15
   },
@@ -453,7 +453,7 @@
     "cal": 137,
     "carbs": 0,
     "protein": 22,
-    "fat": 0,3
+    "fat": 0.3    
   },
   {
     "name": "Dinde",
