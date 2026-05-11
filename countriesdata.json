@@ -1,4 +1,726 @@
 {
+  "Asie": {
+  "Vietnam": {
+    "coords": [14.0583, 108.2772],
+    "recettes": [
+      {
+        "id": "bo-bun-poulet-citronnelle-vn",
+        "nom": "Bo Bun Poulet Citronnelle",
+        "repas": "dej",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🥢",
+        "description": "Un bol vietnamien frais, parfumé et complet avec vermicelles de riz, poulet citronnelle, crudités, herbes fraîches et sauce légère.",
+        "ingredients": [
+          { "nom": "Blanc de poulet", "qty": "160 g" },
+          { "nom": "Vermicelles de riz", "qty": "80 g" },
+          { "nom": "Carotte râpée", "qty": "1" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Salade", "qty": "1 poignée" },
+          { "nom": "Citronnelle", "qty": "1 tige" },
+          { "nom": "Menthe ou coriandre", "qty": "quelques feuilles" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Citron vert", "qty": "1/2" },
+          { "nom": "Cacahuètes concassées", "qty": "1 c. à soupe" }
+        ],
+        "etapes": [
+          "Cuire les vermicelles de riz selon les indications du paquet.",
+          "Émincer le poulet et le faire mariner avec citronnelle, sauce soja et citron vert.",
+          "Faire griller le poulet à la poêle jusqu’à ce qu’il soit doré.",
+          "Préparer les crudités : carotte râpée, concombre, salade et herbes fraîches.",
+          "Assembler les vermicelles, les crudités et le poulet dans un bol.",
+          "Ajouter les cacahuètes concassées et un filet de citron vert."
+        ],
+        "valeurs": {
+          "calories": 520,
+          "proteines": 40,
+          "glucides": 58,
+          "lipides": 14
+        },
+        "tags": ["frais", "protéiné", "coloré"]
+      },
+      {
+        "id": "spring-rolls-crevettes-avocat-vn",
+        "nom": "Spring Rolls Crevettes & Avocat",
+        "repas": "dej",
+        "temps": 20,
+        "difficulte": "facile",
+        "emoji": "🦐",
+        "description": "Des rouleaux de printemps frais, croquants et super visuels avec crevettes, avocat, crudités et sauce cacahuète légère.",
+        "ingredients": [
+          { "nom": "Galettes de riz", "qty": "3" },
+          { "nom": "Crevettes cuites", "qty": "120 g" },
+          { "nom": "Vermicelles de riz cuits", "qty": "60 g" },
+          { "nom": "Avocat", "qty": "1/2" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Carotte", "qty": "1" },
+          { "nom": "Menthe", "qty": "quelques feuilles" },
+          { "nom": "Beurre de cacahuète", "qty": "1 c. à soupe" },
+          { "nom": "Sauce soja", "qty": "1 c. à café" },
+          { "nom": "Citron vert", "qty": "1/2" }
+        ],
+        "etapes": [
+          "Réhydrater les galettes de riz dans de l’eau tiède.",
+          "Couper l’avocat, le concombre et la carotte en fines lamelles.",
+          "Déposer vermicelles, crevettes, avocat, crudités et menthe au centre de chaque galette.",
+          "Rouler fermement en rabattant les côtés.",
+          "Mélanger beurre de cacahuète, sauce soja, citron vert et un peu d’eau pour faire la sauce.",
+          "Servir les rouleaux avec la sauce cacahuète."
+        ],
+        "valeurs": {
+          "calories": 430,
+          "proteines": 28,
+          "glucides": 48,
+          "lipides": 15
+        },
+        "tags": ["frais", "sans cuisson", "healthy"]
+      },
+      {
+        "id": "pho-express-boeuf-vn",
+        "nom": "Phở Express Bœuf & Herbes Fraîches",
+        "repas": "diner",
+        "temps": 30,
+        "difficulte": "facile",
+        "emoji": "🍜",
+        "description": "Une version express du phở vietnamien avec bouillon parfumé, bœuf finement tranché, nouilles de riz et herbes fraîches.",
+        "ingredients": [
+          { "nom": "Bœuf finement tranché", "qty": "140 g" },
+          { "nom": "Nouilles de riz", "qty": "80 g" },
+          { "nom": "Bouillon de bœuf", "qty": "500 ml" },
+          { "nom": "Gingembre", "qty": "1 morceau" },
+          { "nom": "Oignon", "qty": "1/2" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Citron vert", "qty": "1/2" },
+          { "nom": "Coriandre", "qty": "quelques feuilles" },
+          { "nom": "Menthe", "qty": "quelques feuilles" },
+          { "nom": "Pousses de soja", "qty": "1 poignée" }
+        ],
+        "etapes": [
+          "Faire chauffer le bouillon avec le gingembre, l’oignon et la sauce soja.",
+          "Cuire les nouilles de riz selon les indications du paquet.",
+          "Déposer les nouilles dans un bol.",
+          "Ajouter le bœuf finement tranché.",
+          "Verser le bouillon bien chaud par-dessus pour cuire légèrement le bœuf.",
+          "Ajouter coriandre, menthe, pousses de soja et citron vert."
+        ],
+        "valeurs": {
+          "calories": 480,
+          "proteines": 34,
+          "glucides": 56,
+          "lipides": 12
+        },
+        "tags": ["réconfortant", "léger", "parfumé"]
+      },
+      {
+        "id": "poulet-caramel-healthy-vn",
+        "nom": "Poulet Caramel Healthy",
+        "repas": "diner",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🍯",
+        "description": "Un poulet façon caramel vietnamien, mais plus léger, avec une sauce sucrée-salée brillante, du riz jasmin et du concombre frais.",
+        "ingredients": [
+          { "nom": "Blanc de poulet", "qty": "180 g" },
+          { "nom": "Riz jasmin cuit", "qty": "150 g" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Miel", "qty": "1 c. à café" },
+          { "nom": "Ail", "qty": "1 gousse" },
+          { "nom": "Gingembre", "qty": "1 petit morceau" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Oignon nouveau", "qty": "1" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Couper le poulet en morceaux.",
+          "Faire revenir l’ail et le gingembre dans une poêle.",
+          "Ajouter le poulet et le faire dorer.",
+          "Ajouter la sauce soja et le miel, puis laisser caraméliser quelques minutes.",
+          "Servir avec le riz jasmin et le concombre frais.",
+          "Ajouter l’oignon nouveau et les graines de sésame."
+        ],
+        "valeurs": {
+          "calories": 520,
+          "proteines": 42,
+          "glucides": 58,
+          "lipides": 12
+        },
+        "tags": ["sucré-salé", "express", "protéiné"]
+      },
+      {
+        "id": "salade-vietnamienne-poulet-vn",
+        "nom": "Salade Vietnamienne Poulet, Chou & Menthe",
+        "repas": "dej",
+        "temps": 20,
+        "difficulte": "facile",
+        "emoji": "🥗",
+        "description": "Une salade croquante, fraîche et parfumée avec poulet, chou, carotte, menthe, coriandre et sauce citron vert.",
+        "ingredients": [
+          { "nom": "Poulet cuit", "qty": "150 g" },
+          { "nom": "Chou blanc émincé", "qty": "120 g" },
+          { "nom": "Carotte râpée", "qty": "1" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Menthe", "qty": "quelques feuilles" },
+          { "nom": "Coriandre", "qty": "quelques feuilles" },
+          { "nom": "Citron vert", "qty": "1" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Cacahuètes", "qty": "1 c. à soupe" }
+        ],
+        "etapes": [
+          "Émincer le poulet cuit.",
+          "Préparer le chou, la carotte et le concombre.",
+          "Mélanger les légumes avec les herbes fraîches.",
+          "Ajouter le poulet.",
+          "Préparer une sauce avec citron vert et sauce soja.",
+          "Verser la sauce et ajouter les cacahuètes concassées."
+        ],
+        "valeurs": {
+          "calories": 390,
+          "proteines": 38,
+          "glucides": 22,
+          "lipides": 16
+        },
+        "tags": ["frais", "croquant", "léger"]
+      }
+    ]
+  },
+  "Thaïlande": {
+    "coords": [15.8700, 100.9925],
+    "recettes": [
+      {
+        "id": "pad-thai-crevettes-light-th",
+        "nom": "Pad Thaï Crevettes Version Légère",
+        "repas": "dej",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🍤",
+        "description": "Un pad thaï plus léger mais toujours ultra gourmand, avec crevettes, nouilles de riz, œuf, citron vert et cacahuètes.",
+        "ingredients": [
+          { "nom": "Crevettes", "qty": "150 g" },
+          { "nom": "Nouilles de riz", "qty": "80 g" },
+          { "nom": "Œuf", "qty": "1" },
+          { "nom": "Carotte", "qty": "1" },
+          { "nom": "Poivron", "qty": "1/2" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Citron vert", "qty": "1/2" },
+          { "nom": "Cacahuètes concassées", "qty": "1 c. à soupe" },
+          { "nom": "Oignon nouveau", "qty": "1" }
+        ],
+        "etapes": [
+          "Cuire ou réhydrater les nouilles de riz selon les indications.",
+          "Faire sauter les crevettes dans une poêle chaude.",
+          "Ajouter la carotte et le poivron en lamelles.",
+          "Pousser les ingrédients sur le côté et brouiller l’œuf dans la même poêle.",
+          "Ajouter les nouilles et la sauce soja.",
+          "Servir avec citron vert, cacahuètes et oignon nouveau."
+        ],
+        "valeurs": {
+          "calories": 520,
+          "proteines": 34,
+          "glucides": 62,
+          "lipides": 15
+        },
+        "tags": ["thaï", "gourmand", "express"]
+      },
+      {
+        "id": "thai-basil-chicken-bowl-th",
+        "nom": "Thai Basil Chicken Bowl",
+        "repas": "dej",
+        "temps": 20,
+        "difficulte": "facile",
+        "emoji": "🌿",
+        "description": "Un bowl inspiré du poulet basilic thaï, avec riz jasmin, poulet sauté, légumes et basilic frais. Simple, parfumé, efficace.",
+        "ingredients": [
+          { "nom": "Poulet haché ou émincé", "qty": "160 g" },
+          { "nom": "Riz jasmin cuit", "qty": "150 g" },
+          { "nom": "Poivron", "qty": "1/2" },
+          { "nom": "Haricots verts", "qty": "100 g" },
+          { "nom": "Ail", "qty": "1 gousse" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Basilic frais", "qty": "1 poignée" },
+          { "nom": "Œuf", "qty": "1 optionnel" },
+          { "nom": "Citron vert", "qty": "1/2" }
+        ],
+        "etapes": [
+          "Faire revenir l’ail dans une poêle chaude.",
+          "Ajouter le poulet et le faire dorer.",
+          "Ajouter le poivron et les haricots verts.",
+          "Verser la sauce soja et mélanger.",
+          "Ajouter le basilic frais en fin de cuisson.",
+          "Servir avec le riz jasmin et un œuf au plat si souhaité."
+        ],
+        "valeurs": {
+          "calories": 540,
+          "proteines": 42,
+          "glucides": 52,
+          "lipides": 17
+        },
+        "tags": ["parfumé", "protéiné", "bowl"]
+      },
+      {
+        "id": "curry-vert-poulet-th",
+        "nom": "Curry Vert Poulet & Légumes",
+        "repas": "diner",
+        "temps": 30,
+        "difficulte": "facile",
+        "emoji": "🥥",
+        "description": "Un curry vert thaï crémeux et parfumé avec poulet, légumes croquants, lait de coco et riz jasmin.",
+        "ingredients": [
+          { "nom": "Blanc de poulet", "qty": "160 g" },
+          { "nom": "Riz jasmin cuit", "qty": "150 g" },
+          { "nom": "Lait de coco", "qty": "120 ml" },
+          { "nom": "Pâte de curry vert", "qty": "1 c. à café" },
+          { "nom": "Courgette", "qty": "1/2" },
+          { "nom": "Poivron", "qty": "1/2" },
+          { "nom": "Brocoli", "qty": "100 g" },
+          { "nom": "Citron vert", "qty": "1/2" },
+          { "nom": "Basilic ou coriandre", "qty": "quelques feuilles" }
+        ],
+        "etapes": [
+          "Couper le poulet et les légumes en morceaux.",
+          "Faire revenir la pâte de curry vert dans une poêle.",
+          "Ajouter le poulet et le faire dorer.",
+          "Ajouter les légumes et le lait de coco.",
+          "Laisser mijoter 15 min à feu doux.",
+          "Servir avec le riz jasmin, le citron vert et les herbes fraîches."
+        ],
+        "valeurs": {
+          "calories": 580,
+          "proteines": 40,
+          "glucides": 55,
+          "lipides": 22
+        },
+        "tags": ["crémeux", "épicé", "comfort food"]
+      },
+      {
+        "id": "soupe-thai-coco-crevettes-th",
+        "nom": "Soupe Thaï Coco & Crevettes",
+        "repas": "diner",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🍲",
+        "description": "Une soupe thaï douce et parfumée, inspirée du tom kha, avec lait de coco, crevettes, citron vert, gingembre et champignons.",
+        "ingredients": [
+          { "nom": "Crevettes", "qty": "150 g" },
+          { "nom": "Lait de coco", "qty": "150 ml" },
+          { "nom": "Bouillon", "qty": "350 ml" },
+          { "nom": "Champignons", "qty": "100 g" },
+          { "nom": "Gingembre", "qty": "1 morceau" },
+          { "nom": "Citron vert", "qty": "1/2" },
+          { "nom": "Sauce soja", "qty": "1 c. à café" },
+          { "nom": "Coriandre", "qty": "quelques feuilles" },
+          { "nom": "Riz cuit", "qty": "100 g optionnel" }
+        ],
+        "etapes": [
+          "Faire chauffer le bouillon avec le gingembre.",
+          "Ajouter les champignons et laisser cuire 5 min.",
+          "Ajouter le lait de coco et la sauce soja.",
+          "Ajouter les crevettes et cuire quelques minutes.",
+          "Finir avec le jus de citron vert.",
+          "Servir avec coriandre et un peu de riz si souhaité."
+        ],
+        "valeurs": {
+          "calories": 420,
+          "proteines": 30,
+          "glucides": 28,
+          "lipides": 22
+        },
+        "tags": ["soupe", "crémeux", "parfumé"]
+      },
+      {
+        "id": "salade-thai-poulet-mangue-th",
+        "nom": "Salade Thaï Poulet, Mangue & Cacahuètes",
+        "repas": "dej",
+        "temps": 20,
+        "difficulte": "facile",
+        "emoji": "🥭",
+        "description": "Une salade thaï fraîche, sucrée-salée et croquante avec poulet, mangue, concombre, herbes fraîches et cacahuètes.",
+        "ingredients": [
+          { "nom": "Poulet grillé", "qty": "150 g" },
+          { "nom": "Mangue", "qty": "1/2" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Carotte", "qty": "1" },
+          { "nom": "Salade", "qty": "1 poignée" },
+          { "nom": "Menthe ou coriandre", "qty": "quelques feuilles" },
+          { "nom": "Cacahuètes", "qty": "1 c. à soupe" },
+          { "nom": "Citron vert", "qty": "1/2" },
+          { "nom": "Sauce soja", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Couper le poulet grillé en lamelles.",
+          "Couper la mangue, le concombre et la carotte.",
+          "Mélanger les crudités avec la salade et les herbes.",
+          "Ajouter le poulet.",
+          "Préparer une sauce avec citron vert et sauce soja.",
+          "Ajouter les cacahuètes au moment de servir."
+        ],
+        "valeurs": {
+          "calories": 430,
+          "proteines": 38,
+          "glucides": 34,
+          "lipides": 16
+        },
+        "tags": ["frais", "sucré-salé", "croquant"]
+      }
+    ]
+  },
+  "Japon": {
+    "coords": [36.2048, 138.2529],
+    "recettes": [
+      {
+        "id": "sushi-bowl-saumon-avocat-jp",
+        "nom": "Sushi Bowl Saumon & Avocat",
+        "repas": "dej",
+        "temps": 20,
+        "difficulte": "facile",
+        "emoji": "🍣",
+        "description": "Un sushi bowl simple et coloré avec riz vinaigré, saumon, avocat, concombre, edamame et sauce soja.",
+        "ingredients": [
+          { "nom": "Riz à sushi ou riz rond cuit", "qty": "160 g" },
+          { "nom": "Saumon frais ou fumé", "qty": "120 g" },
+          { "nom": "Avocat", "qty": "1/2" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Edamame", "qty": "80 g" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Vinaigre de riz", "qty": "1 c. à café" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" },
+          { "nom": "Nori", "qty": "1 feuille émiettée" }
+        ],
+        "etapes": [
+          "Mélanger le riz cuit avec un peu de vinaigre de riz.",
+          "Couper le saumon, l’avocat et le concombre.",
+          "Déposer le riz dans un bol.",
+          "Ajouter le saumon, l’avocat, le concombre et les edamame.",
+          "Verser la sauce soja.",
+          "Ajouter les graines de sésame et la feuille de nori émiettée."
+        ],
+        "valeurs": {
+          "calories": 560,
+          "proteines": 32,
+          "glucides": 58,
+          "lipides": 22
+        },
+        "tags": ["frais", "bowl", "coloré"]
+      },
+      {
+        "id": "ramen-express-poulet-jp",
+        "nom": "Ramen Express Poulet & Œuf Mollet",
+        "repas": "diner",
+        "temps": 30,
+        "difficulte": "facile",
+        "emoji": "🍜",
+        "description": "Un ramen maison rapide avec bouillon parfumé, nouilles, poulet, champignons, épinards et œuf mollet.",
+        "ingredients": [
+          { "nom": "Nouilles ramen ou nouilles de blé", "qty": "80 g" },
+          { "nom": "Poulet cuit ou grillé", "qty": "140 g" },
+          { "nom": "Œuf", "qty": "1" },
+          { "nom": "Bouillon", "qty": "500 ml" },
+          { "nom": "Champignons", "qty": "100 g" },
+          { "nom": "Épinards", "qty": "1 poignée" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Gingembre", "qty": "1 petit morceau" },
+          { "nom": "Oignon nouveau", "qty": "1" }
+        ],
+        "etapes": [
+          "Cuire l’œuf 6 min pour obtenir un œuf mollet.",
+          "Faire chauffer le bouillon avec sauce soja et gingembre.",
+          "Ajouter les champignons et les épinards.",
+          "Cuire les nouilles dans le bouillon.",
+          "Ajouter le poulet dans le bol.",
+          "Servir avec l’œuf mollet et l’oignon nouveau."
+        ],
+        "valeurs": {
+          "calories": 520,
+          "proteines": 38,
+          "glucides": 55,
+          "lipides": 16
+        },
+        "tags": ["réconfortant", "express", "protéiné"]
+      },
+      {
+        "id": "teriyaki-salmon-bowl-jp",
+        "nom": "Teriyaki Salmon Bowl",
+        "repas": "dej",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🐟",
+        "description": "Un bowl japonais simple avec saumon teriyaki, riz, brocolis et concombre. Brillant, gourmand et bien équilibré.",
+        "ingredients": [
+          { "nom": "Pavé de saumon", "qty": "1" },
+          { "nom": "Riz cuit", "qty": "150 g" },
+          { "nom": "Brocolis", "qty": "150 g" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Miel", "qty": "1 c. à café" },
+          { "nom": "Ail", "qty": "1 gousse" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" },
+          { "nom": "Citron", "qty": "1/2" }
+        ],
+        "etapes": [
+          "Cuire le riz et les brocolis.",
+          "Mélanger sauce soja, miel, ail et citron.",
+          "Cuire le saumon à la poêle.",
+          "Verser la sauce sur le saumon et laisser légèrement caraméliser.",
+          "Assembler riz, brocolis, concombre et saumon dans un bol.",
+          "Ajouter les graines de sésame."
+        ],
+        "valeurs": {
+          "calories": 570,
+          "proteines": 36,
+          "glucides": 55,
+          "lipides": 24
+        },
+        "tags": ["teriyaki", "bowl", "gourmand"]
+      },
+      {
+        "id": "onigiri-thon-mayo-light-jp",
+        "nom": "Onigiri Thon Mayo Légère",
+        "repas": "collation",
+        "temps": 20,
+        "difficulte": "moyen",
+        "emoji": "🍙",
+        "description": "Des onigiri maison au thon et sauce yaourt-mayo légère, parfaits en snack salé ou lunch rapide.",
+        "ingredients": [
+          { "nom": "Riz rond cuit", "qty": "180 g" },
+          { "nom": "Thon égoutté", "qty": "90 g" },
+          { "nom": "Yaourt grec", "qty": "1 c. à soupe" },
+          { "nom": "Mayonnaise légère", "qty": "1 c. à café" },
+          { "nom": "Sauce soja", "qty": "1 c. à café" },
+          { "nom": "Nori", "qty": "1 feuille" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Mélanger le thon avec yaourt grec, mayonnaise légère et sauce soja.",
+          "Humidifier les mains.",
+          "Former une boule ou un triangle avec une partie du riz.",
+          "Ajouter la farce au thon au centre.",
+          "Refermer avec le reste du riz.",
+          "Ajouter une bande de nori et des graines de sésame."
+        ],
+        "valeurs": {
+          "calories": 390,
+          "proteines": 25,
+          "glucides": 55,
+          "lipides": 8
+        },
+        "tags": ["snack salé", "pratique", "japonais"]
+      },
+      {
+        "id": "soba-bowl-tofu-edamame-jp",
+        "nom": "Soba Bowl Tofu, Edamame & Sauce Sésame",
+        "repas": "diner",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🥣",
+        "description": "Un bowl végétarien inspiré du Japon avec nouilles soba, tofu doré, edamame, légumes croquants et sauce sésame.",
+        "ingredients": [
+          { "nom": "Nouilles soba", "qty": "80 g" },
+          { "nom": "Tofu ferme", "qty": "140 g" },
+          { "nom": "Edamame", "qty": "80 g" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Carotte", "qty": "1" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Purée de sésame ou tahini", "qty": "1 c. à café" },
+          { "nom": "Citron", "qty": "1/2" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Cuire les nouilles soba puis les rincer à l’eau froide.",
+          "Couper le tofu en cubes et le faire dorer à la poêle.",
+          "Préparer les crudités.",
+          "Mélanger sauce soja, tahini, citron et un peu d’eau.",
+          "Assembler soba, tofu, edamame, concombre et carotte.",
+          "Ajouter la sauce et les graines de sésame."
+        ],
+        "valeurs": {
+          "calories": 520,
+          "proteines": 30,
+          "glucides": 58,
+          "lipides": 18
+        },
+        "tags": ["veggie", "frais", "sésame"]
+      }
+    ]
+  },
+  "Corée du Sud": {
+    "coords": [35.9078, 127.7669],
+    "recettes": [
+      {
+        "id": "bibimbap-boeuf-oeuf-kr",
+        "nom": "Bibimbap Bowl Bœuf & Œuf Mollet",
+        "repas": "dej",
+        "temps": 30,
+        "difficulte": "facile",
+        "emoji": "🍚",
+        "description": "Un bibimbap coloré avec riz, bœuf mariné, légumes sautés, œuf mollet et sauce gochujang légère.",
+        "ingredients": [
+          { "nom": "Riz cuit", "qty": "150 g" },
+          { "nom": "Bœuf émincé", "qty": "130 g" },
+          { "nom": "Œuf", "qty": "1" },
+          { "nom": "Carotte", "qty": "1" },
+          { "nom": "Courgette", "qty": "1/2" },
+          { "nom": "Épinards", "qty": "1 poignée" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Gochujang", "qty": "1 c. à café" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Faire mariner le bœuf avec sauce soja et un peu de gochujang.",
+          "Faire sauter séparément la carotte, la courgette et les épinards.",
+          "Cuire l’œuf mollet ou au plat.",
+          "Faire revenir le bœuf rapidement à la poêle.",
+          "Déposer le riz dans un bol et ajouter les légumes, le bœuf et l’œuf.",
+          "Ajouter graines de sésame et sauce gochujang légère."
+        ],
+        "valeurs": {
+          "calories": 590,
+          "proteines": 38,
+          "glucides": 58,
+          "lipides": 22
+        },
+        "tags": ["coloré", "protéiné", "coréen"]
+      },
+      {
+        "id": "poulet-gochujang-bowl-kr",
+        "nom": "Poulet Gochujang Bowl",
+        "repas": "diner",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🌶️",
+        "description": "Un bowl coréen épicé et gourmand avec poulet gochujang, riz, brocolis, concombre et sésame.",
+        "ingredients": [
+          { "nom": "Blanc de poulet", "qty": "170 g" },
+          { "nom": "Riz cuit", "qty": "150 g" },
+          { "nom": "Brocolis", "qty": "150 g" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Gochujang", "qty": "1 c. à café" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Miel", "qty": "1 c. à café" },
+          { "nom": "Ail", "qty": "1 gousse" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Couper le poulet en morceaux.",
+          "Mélanger gochujang, sauce soja, miel et ail.",
+          "Faire dorer le poulet à la poêle.",
+          "Ajouter la sauce et laisser caraméliser légèrement.",
+          "Servir avec riz, brocolis et concombre.",
+          "Ajouter les graines de sésame."
+        ],
+        "valeurs": {
+          "calories": 560,
+          "proteines": 44,
+          "glucides": 56,
+          "lipides": 16
+        },
+        "tags": ["épicé", "bowl", "protéiné"]
+      },
+      {
+        "id": "kimchi-fried-rice-oeuf-kr",
+        "nom": "Kimchi Fried Rice & Œuf Mollet",
+        "repas": "diner",
+        "temps": 20,
+        "difficulte": "facile",
+        "emoji": "🍳",
+        "description": "Un riz sauté au kimchi rapide, relevé et ultra réconfortant avec œuf mollet et graines de sésame.",
+        "ingredients": [
+          { "nom": "Riz cuit froid", "qty": "180 g" },
+          { "nom": "Kimchi", "qty": "100 g" },
+          { "nom": "Œuf", "qty": "1" },
+          { "nom": "Tofu ou poulet", "qty": "100 g optionnel" },
+          { "nom": "Sauce soja", "qty": "1 c. à café" },
+          { "nom": "Oignon nouveau", "qty": "1" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" },
+          { "nom": "Huile", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Faire chauffer l’huile dans une poêle.",
+          "Ajouter le kimchi et le faire revenir quelques minutes.",
+          "Ajouter le riz froid et mélanger à feu vif.",
+          "Ajouter la sauce soja.",
+          "Cuire l’œuf mollet ou au plat à côté.",
+          "Servir le riz avec l’œuf, l’oignon nouveau et le sésame."
+        ],
+        "valeurs": {
+          "calories": 460,
+          "proteines": 22,
+          "glucides": 62,
+          "lipides": 14
+        },
+        "tags": ["express", "épicé", "comfort food"]
+      },
+      {
+        "id": "beef-bulgogi-bowl-kr",
+        "nom": "Beef Bulgogi Bowl",
+        "repas": "dej",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🥩",
+        "description": "Un bowl bulgogi avec bœuf mariné sucré-salé, riz, légumes sautés et sésame. Simple, brillant et très gourmand.",
+        "ingredients": [
+          { "nom": "Bœuf émincé", "qty": "150 g" },
+          { "nom": "Riz cuit", "qty": "150 g" },
+          { "nom": "Carotte", "qty": "1" },
+          { "nom": "Champignons", "qty": "100 g" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Miel", "qty": "1 c. à café" },
+          { "nom": "Ail", "qty": "1 gousse" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" }
+        ],
+        "etapes": [
+          "Mélanger sauce soja, miel et ail.",
+          "Faire mariner le bœuf quelques minutes.",
+          "Faire sauter les champignons et la carotte.",
+          "Cuire le bœuf rapidement à feu vif.",
+          "Déposer le riz dans un bol.",
+          "Ajouter bœuf, légumes, concombre et graines de sésame."
+        ],
+        "valeurs": {
+          "calories": 580,
+          "proteines": 38,
+          "glucides": 58,
+          "lipides": 21
+        },
+        "tags": ["sucré-salé", "bowl", "gourmand"]
+      },
+      {
+        "id": "tofu-croustillant-gochujang-kr",
+        "nom": "Tofu Croustillant Sauce Gochujang",
+        "repas": "diner",
+        "temps": 25,
+        "difficulte": "facile",
+        "emoji": "🔥",
+        "description": "Du tofu bien croustillant nappé d’une sauce gochujang sucrée-épicée, servi avec riz et concombre frais.",
+        "ingredients": [
+          { "nom": "Tofu ferme", "qty": "180 g" },
+          { "nom": "Riz cuit", "qty": "150 g" },
+          { "nom": "Concombre", "qty": "1/2" },
+          { "nom": "Gochujang", "qty": "1 c. à café" },
+          { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+          { "nom": "Miel", "qty": "1 c. à café" },
+          { "nom": "Fécule de maïs", "qty": "1 c. à soupe" },
+          { "nom": "Graines de sésame", "qty": "1 c. à café" },
+          { "nom": "Huile", "qty": "1 c. à soupe" }
+        ],
+        "etapes": [
+          "Presser le tofu puis le couper en cubes.",
+          "Enrober les cubes de tofu avec la fécule.",
+          "Les faire dorer à la poêle avec un peu d’huile.",
+          "Mélanger gochujang, sauce soja et miel.",
+          "Ajouter la sauce au tofu et mélanger.",
+          "Servir avec riz, concombre et graines de sésame."
+        ],
+        "valeurs": {
+          "calories": 530,
+          "proteines": 28,
+          "glucides": 58,
+          "lipides": 20
+        },
+        "tags": ["veggie", "croustillant", "épicé"]
+    }
+  ]
+}
+},
   "Afrique du Nord & Moyen-Orient": {
     "Maroc": {
       "coords": [31.7917, -7.0926],
