@@ -402,6 +402,299 @@
         "tags": ["frais", "bowl", "coloré"]
       },
       {
+
+      "id": "udon-boeuf-legumes-jp",
+
+      "nom": "Nouilles Udon Bœuf & Légumes Sauce Soja",
+
+      "repas": "diner",
+
+      "temps": 20,
+
+      "difficulte": "facile",
+
+      "emoji": "🍜",
+
+      "description": "Des udon bien nappées avec du bœuf tendre, des légumes croquants et une sauce soja-miel-gingembre brillante. Le dîner express qui a du goût.",
+
+      "ingredients": [
+
+        { "nom": "Nouilles udon", "qty": "180 g" },
+
+        { "nom": "Bœuf émincé", "qty": "140 g" },
+
+        { "nom": "Poivron", "qty": "1/2" },
+
+        { "nom": "Carotte", "qty": "1" },
+
+        { "nom": "Brocolis", "qty": "100 g" },
+
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+
+        { "nom": "Miel", "qty": "1 c. à café" },
+
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Graines de sésame", "qty": "1 c. à café" }
+
+      ],
+
+      "etapes": [
+
+        "Cuire les udon selon les indications du paquet.",
+
+        "Faire revenir l’ail et le gingembre dans une poêle chaude.",
+
+        "Ajouter le bœuf émincé et le saisir rapidement.",
+
+        "Ajouter les légumes en lamelles et les faire sauter quelques minutes.",
+
+        "Mélanger sauce soja, miel et un peu d’eau.",
+
+        "Ajouter les udon et la sauce dans la poêle, mélanger jusqu’à ce que tout soit bien nappé.",
+
+        "Servir avec les graines de sésame."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 610,
+
+        "proteines": 36,
+
+        "glucides": 72,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["wok", "saucy", "express"]
+
+    },
+
+    {
+
+      "id": "saumon-miel-soja-riz-jp",
+
+      "nom": "Saumon Miel Soja, Haricots Verts & Riz",
+
+      "repas": "diner",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🍯",
+
+      "description": "Un saumon laqué miel-soja avec haricots verts, riz et concombre frais. Sucré-salé, brillant, simple, pas sec du tout.",
+
+      "ingredients": [
+
+        { "nom": "Pavé de saumon", "qty": "1" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Haricots verts", "qty": "180 g" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+
+        { "nom": "Miel", "qty": "1 c. à café" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Graines de sésame", "qty": "1 c. à café" }
+
+      ],
+
+      "etapes": [
+
+        "Cuire le riz et les haricots verts.",
+
+        "Mélanger sauce soja, miel, ail haché et citron vert.",
+
+        "Cuire le saumon à la poêle ou au four.",
+
+        "Verser la sauce sur le saumon et laisser légèrement caraméliser.",
+
+        "Couper le concombre en fines tranches.",
+
+        "Servir le saumon avec le riz, les haricots verts et le concombre.",
+
+        "Ajouter les graines de sésame."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 570,
+
+        "proteines": 36,
+
+        "glucides": 56,
+
+        "lipides": 22
+
+      },
+
+      "tags": ["laqué", "sucré-salé", "frais"]
+
+    },
+
+    {
+
+      "id": "ramen-poulet-sesame-jp",
+
+      "nom": "Ramen Poulet au Sésame",
+
+      "repas": "diner",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🍜",
+
+      "description": "Un ramen crémeux au sésame avec poulet, bouillon parfumé, champignons, épinards et œuf mollet. Réconfortant mais pas lourd.",
+
+      "ingredients": [
+
+        { "nom": "Nouilles ramen", "qty": "80 g" },
+
+        { "nom": "Poulet cuit ou grillé", "qty": "150 g" },
+
+        { "nom": "Œuf", "qty": "1" },
+
+        { "nom": "Bouillon", "qty": "500 ml" },
+
+        { "nom": "Champignons", "qty": "100 g" },
+
+        { "nom": "Épinards", "qty": "1 poignée" },
+
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+
+        { "nom": "Purée de sésame ou tahini", "qty": "1 c. à café" },
+
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+
+        { "nom": "Graines de sésame", "qty": "1 c. à café" }
+
+      ],
+
+      "etapes": [
+
+        "Cuire l’œuf 6 min pour obtenir un œuf mollet.",
+
+        "Faire chauffer le bouillon avec gingembre et sauce soja.",
+
+        "Ajouter les champignons et les épinards.",
+
+        "Incorporer la purée de sésame pour rendre le bouillon plus crémeux.",
+
+        "Cuire les nouilles ramen dans le bouillon.",
+
+        "Ajouter le poulet en lamelles.",
+
+        "Servir avec l’œuf mollet et les graines de sésame."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 560,
+
+        "proteines": 42,
+
+        "glucides": 58,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["crémeux", "réconfortant", "sésame"]
+
+    },
+
+    {
+
+      "id": "beef-bowl-soja-sesame-jp",
+
+      "nom": "Beef Bowl Soja Sésame",
+
+      "repas": "dej",
+
+      "temps": 20,
+
+      "difficulte": "facile",
+
+      "emoji": "🥩",
+
+      "description": "Un beef bowl rapide avec bœuf émincé, riz, légumes croquants et sauce soja-sésame bien nappante. Simple, brillant, efficace.",
+
+      "ingredients": [
+
+        { "nom": "Bœuf émincé", "qty": "150 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Carotte", "qty": "1" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Champignons", "qty": "100 g" },
+
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+
+        { "nom": "Miel", "qty": "1 c. à café" },
+
+        { "nom": "Huile de sésame", "qty": "1 c. à café" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Graines de sésame", "qty": "1 c. à café" }
+
+      ],
+
+      "etapes": [
+
+        "Mélanger sauce soja, miel, huile de sésame et ail.",
+
+        "Faire sauter les champignons et la carotte en lamelles.",
+
+        "Ajouter le bœuf et le saisir rapidement.",
+
+        "Verser la sauce et laisser napper quelques minutes.",
+
+        "Déposer le riz dans un bol.",
+
+        "Ajouter le bœuf, les légumes et le concombre frais.",
+
+        "Terminer avec les graines de sésame."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 590,
+
+        "proteines": 38,
+
+        "glucides": 58,
+
+        "lipides": 22
+
+      },
+
+      "tags": ["bowl", "saucy", "protéiné"]
+
+    },
+      {
         "id": "ramen-express-poulet-jp",
         "nom": "Ramen Express Poulet & Œuf Mollet",
         "repas": "diner",
