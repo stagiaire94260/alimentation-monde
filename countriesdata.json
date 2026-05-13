@@ -2157,6 +2157,152 @@
           "tags": ["national", "familial", "traditionnel"]
         },
         {
+
+      "id": "sweet-spicy-chicken-nokoss-sn",
+
+      "nom": "Sweet Spicy Chicken au Nokoss & Riz",
+
+      "repas": "diner",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🌶️",
+
+      "description": "Du poulet sucré-épicé avec nokoss, ail, citron, miel et riz. Une sauce bien nappante, parfumée, un peu piquante, exactement ce qu’il faut.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "180 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Nokoss", "qty": "1 c. à soupe" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Miel", "qty": "1 c. à café" },
+
+        { "nom": "Sauce soja", "qty": "1 c. à café" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Piment doux", "qty": "selon goût" },
+
+        { "nom": "Bouillon", "qty": "80 ml" }
+
+      ],
+
+      "etapes": [
+
+        "Couper le poulet en morceaux.",
+
+        "Le mariner avec nokoss, ail, citron, miel, sauce soja et piment doux.",
+
+        "Faire revenir l’oignon dans une poêle.",
+
+        "Ajouter le poulet et le faire dorer.",
+
+        "Verser le bouillon et laisser réduire pour obtenir une sauce nappante.",
+
+        "Rectifier l’assaisonnement.",
+
+        "Servir avec le riz chaud."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 560,
+
+        "proteines": 43,
+
+        "glucides": 58,
+
+        "lipides": 16
+
+      },
+
+      "tags": ["épicé", "saucy", "protéiné"]
+
+    },
+        {
+
+      "id": "mafe-poulet-riz-sn",
+
+      "nom": "Mafé Poulet, Riz & Légumes",
+
+      "repas": "diner",
+
+      "temps": 40,
+
+      "difficulte": "facile",
+
+      "emoji": "🥜",
+
+      "description": "Un mafé crémeux et parfumé avec poulet, légumes, tomate et beurre de cacahuète. La sauce est généreuse, douce, épicée juste ce qu’il faut.",
+
+      "ingredients": [
+
+        { "nom": "Poulet", "qty": "180 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Beurre de cacahuète", "qty": "1 grosse c. à soupe" },
+
+        { "nom": "Tomate concassée", "qty": "150 g" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Carotte", "qty": "1" },
+
+        { "nom": "Patate douce", "qty": "120 g" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Bouillon", "qty": "250 ml" },
+
+        { "nom": "Paprika, piment doux, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’oignon et l’ail dans une casserole.",
+
+        "Ajouter le poulet et le faire dorer.",
+
+        "Ajouter la tomate concassée, les épices, la carotte et la patate douce.",
+
+        "Verser le bouillon et laisser mijoter 20 min.",
+
+        "Ajouter le beurre de cacahuète et mélanger jusqu’à obtenir une sauce crémeuse.",
+
+        "Laisser réduire quelques minutes.",
+
+        "Servir avec le riz chaud."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 650,
+
+        "proteines": 42,
+
+        "glucides": 68,
+
+        "lipides": 24
+
+      },
+
+      "tags": ["afro", "crémeux", "réconfortant"]
+
+    },
+        {
           "id": "thieboudienne-poulet-sn",
           "nom": "Thiébou Yapp (Riz au Poulet)",
           "repas": "dej",
@@ -2463,6 +2609,75 @@
           },
           "tags": ["rue", "rapide", "local"]
         },
+        {
+
+      "id": "attieke-choukouya-poulet-ci",
+
+      "nom": "Attiéké Choukouya Poulet & Crudités",
+
+      "repas": "dej",
+
+      "temps": 35,
+
+      "difficulte": "facile",
+
+      "emoji": "🍗",
+
+      "description": "Un plat ivoirien généreux avec attiéké, poulet bien épicé, oignons, tomates, concombre et petite sauce citronnée. Frais, grillé, ultra savoureux.",
+
+      "ingredients": [
+
+        { "nom": "Poulet", "qty": "180 g" },
+
+        { "nom": "Attiéké", "qty": "180 g" },
+
+        { "nom": "Tomate", "qty": "1" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Oignon rouge", "qty": "1/4" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+
+        { "nom": "Paprika, ail, gingembre, piment doux", "qty": "selon goût" },
+
+        { "nom": "Moutarde", "qty": "1 c. à café" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poulet avec ail, gingembre, paprika, moutarde, citron et piment doux.",
+
+        "Cuire le poulet au four, au grill ou à la poêle jusqu’à ce qu’il soit bien doré.",
+
+        "Réchauffer l’attiéké à la vapeur ou au micro-ondes.",
+
+        "Couper tomate, concombre et oignon rouge.",
+
+        "Préparer une petite sauce avec citron, huile, sel, poivre et un peu de moutarde.",
+
+        "Servir l’attiéké avec le poulet grillé, les crudités et la sauce."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 610,
+
+        "proteines": 42,
+
+        "glucides": 68,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["afro", "grillé", "frais"]
+
+    },
         {
           "id": "garba-poulet-ci",
           "nom": "Garba Poulet",
