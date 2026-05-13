@@ -1014,8 +1014,324 @@
   ]
 }
 },
-  "Afrique du Nord & Moyen-Orient": {
-    "Maroc": {
+  "Moyen-Orient": {
+    "Turquie": {
+      "coords": [38.9637, 35.2433],
+      "recettes": [
+        {
+          "id": "menemen-tr",
+          "nom": "Menemen",
+          "repas": "petitdej",
+          "temps": 20,
+          "difficulte": "facile",
+          "emoji": "🍳",
+          "description": "Des œufs brouillés ou mollets cuits dans une sauce tomate-poivron avec du piment. Le petit-déjeuner de tous les jours en Turquie. Servi directement dans la poêle avec du pain. Débat national : avec ou sans oignon ? Chacun a son camp.",
+          "ingredients": [
+            { "nom": "Œufs", "qty": "3" },
+            { "nom": "Tomates mûres", "qty": "3" },
+            { "nom": "Poivron vert ou rouge", "qty": "2" },
+            { "nom": "Piment vert turc (sivri biber)", "qty": "1" },
+            { "nom": "Oignon (optionnel, débat national)", "qty": "1/2" },
+            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
+            { "nom": "Sel, poivre noir", "qty": "selon goût" },
+            { "nom": "Pain turc (ekmek)", "qty": "pour servir" }
+          ],
+          "etapes": [
+            "Hacher grossièrement les poivrons et les piments.",
+            "Faire revenir les poivrons dans l'huile d'olive 5 min.",
+            "Ajouter les tomates concassées grossièrement.",
+            "Cuire la sauce 8 à 10 min jusqu'à réduction.",
+            "Saler et poivrer.",
+            "Casser les œufs directement dans la sauce.",
+            "Mélanger légèrement et cuire selon préférence (coulant ou pris).",
+            "Servir directement dans la poêle avec du pain."
+          ],
+          "valeurs": {
+            "calories": 320,
+            "proteines": 18,
+            "glucides": 14,
+            "lipides": 22
+          },
+          "tags": ["petitdej", "classique", "rapide"]
+        },
+        {
+          "id": "mercimek-corbasi-tr",
+          "nom": "Mercimek Çorbası (Soupe de Lentilles)",
+          "repas": "diner",
+          "temps": 35,
+          "difficulte": "facile",
+          "emoji": "🍵",
+          "description": "La soupe la plus mangée en Turquie. Des lentilles rouges mixées avec oignon, carotte et épices, finies avec du beurre et du paprika. Simple, rapide, profonde. On en mange au déjeuner, au dîner, dans les lokanta (cantines), partout.",
+          "ingredients": [
+            { "nom": "Lentilles rouges", "qty": "250 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Carotte", "qty": "1" },
+            { "nom": "Pomme de terre", "qty": "1" },
+            { "nom": "Ail", "qty": "2 gousses" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Cumin", "qty": "1 c. à café" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Beurre", "qty": "30 g" },
+            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
+            { "nom": "Bouillon de volaille", "qty": "1 l" },
+            { "nom": "Sel, poivre", "qty": "selon goût" },
+            { "nom": "Citron", "qty": "1 (pour servir)" }
+          ],
+          "etapes": [
+            "Faire revenir l'oignon et l'ail dans l'huile d'olive.",
+            "Ajouter la carotte et la pomme de terre en dés, cuire 3 min.",
+            "Ajouter le concentré de tomate et cuire 2 min.",
+            "Ajouter les lentilles rouges et le bouillon.",
+            "Laisser cuire 20 min jusqu'à ce que tout soit très tendre.",
+            "Mixer jusqu'à texture veloutée.",
+            "Dans une petite poêle, faire fondre le beurre avec le paprika et verser sur la soupe.",
+            "Servir avec un quartier de citron."
+          ],
+          "valeurs": {
+            "calories": 340,
+            "proteines": 16,
+            "glucides": 48,
+            "lipides": 10
+          },
+          "tags": ["soupe", "quotidien", "veloutée"]
+        },
+        {
+          "id": "kuru-fasulye-tr",
+          "nom": "Kuru Fasulye (Haricots Blancs en Sauce)",
+          "repas": "dej",
+          "temps": 70,
+          "difficulte": "facile",
+          "emoji": "🫘",
+          "description": "Des haricots blancs mijotés dans une sauce tomate avec oignon et poivron. Le plat national non officiel de Turquie. Servi dans toutes les lokanta (cantines populaires) avec du riz pilaf à part. Simple, nourrissant, très ancré dans le quotidien.",
+          "ingredients": [
+            { "nom": "Haricots blancs secs", "qty": "300 g" },
+            { "nom": "Oignon", "qty": "2" },
+            { "nom": "Poivron rouge", "qty": "1" },
+            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
+            { "nom": "Tomates concassées", "qty": "200 g" },
+            { "nom": "Huile végétale ou beurre", "qty": "3 c. à soupe" },
+            { "nom": "Paprika doux", "qty": "1 c. à café" },
+            { "nom": "Sel, poivre", "qty": "selon goût" },
+            { "nom": "Riz pilaf", "qty": "300 g (pour servir)" }
+          ],
+          "etapes": [
+            "Tremper les haricots la veille, puis les cuire dans l'eau 40 min jusqu'à tendres. Égoutter.",
+            "Faire revenir les oignons et le poivron dans le beurre.",
+            "Ajouter le concentré et les tomates. Cuire 8 min.",
+            "Ajouter les haricots cuits et le paprika.",
+            "Verser un peu d'eau de cuisson des haricots et laisser mijoter 20 min.",
+            "La sauce doit être épaisse et enrober les haricots.",
+            "Servir avec du riz pilaf à part."
+          ],
+          "valeurs": {
+            "calories": 440,
+            "proteines": 22,
+            "glucides": 64,
+            "lipides": 12
+          },
+          "tags": ["lokanta", "quotidien", "populaire"]
+        },
+        {
+          "id": "manti-tr",
+          "nom": "Mantı (Raviolis Turcs au Yaourt)",
+          "repas": "dej",
+          "temps": 90,
+          "difficulte": "moyen",
+          "emoji": "🥟",
+          "description": "De très petits raviolis farcis à l'agneau haché et à l'oignon, servis avec du yaourt à l'ail et un beurre fondu au paprika versé par-dessus. Plus ils sont petits, plus la cuisinière est habile. Un plat de dimanche et de fête, profondément turc.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "300 g" },
+            { "nom": "Œuf", "qty": "2" },
+            { "nom": "Eau tiède", "qty": "80 ml" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Agneau haché", "qty": "200 g" },
+            { "nom": "Oignon râpé", "qty": "1" },
+            { "nom": "Yaourt nature épais", "qty": "300 g" },
+            { "nom": "Ail", "qty": "3 gousses" },
+            { "nom": "Beurre", "qty": "60 g" },
+            { "nom": "Paprika ou piment d'Alep", "qty": "1 c. à soupe" },
+            { "nom": "Menthe séchée", "qty": "1 c. à café" }
+          ],
+          "etapes": [
+            "Pétrir la farine avec les œufs, l'eau et le sel jusqu'à pâte ferme. Laisser reposer 30 min.",
+            "Mélanger la viande avec l'oignon râpé, sel et poivre.",
+            "Étaler la pâte très finement et découper en petits carrés de 3 cm.",
+            "Déposer une petite noisette de farce au centre de chaque carré.",
+            "Refermer en pinçant les coins ensemble pour former de petits raviolis.",
+            "Cuire les mantı dans de l'eau bouillante salée 10 à 12 min.",
+            "Écraser l'ail dans le yaourt, saler.",
+            "Faire fondre le beurre avec le paprika et la menthe.",
+            "Servir les mantı avec le yaourt à l'ail dessous et le beurre fondu par-dessus."
+          ],
+          "valeurs": {
+            "calories": 580,
+            "proteines": 28,
+            "glucides": 62,
+            "lipides": 24
+          },
+          "tags": ["dimanche", "pâtes maison", "yaourt"]
+        },
+        {
+          "id": "lahmacun-tr",
+          "nom": "Lahmacun",
+          "repas": "dej",
+          "temps": 45,
+          "difficulte": "moyen",
+          "emoji": "🫓",
+          "description": "Une fine galette de pâte garnie de viande hachée épicée, oignon, tomate et herbes, cuite très rapidement au four très chaud. On la roule avec des feuilles de salade et du persil, et on mange en marchant. La pizza turque du peuple.",
+          "ingredients": [
+            { "nom": "Farine", "qty": "300 g" },
+            { "nom": "Levure boulangère", "qty": "1 c. à café" },
+            { "nom": "Sel", "qty": "1 c. à café" },
+            { "nom": "Eau tiède", "qty": "180 ml" },
+            { "nom": "Viande hachée agneau ou bœuf", "qty": "250 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Tomate", "qty": "2" },
+            { "nom": "Poivron", "qty": "1" },
+            { "nom": "Persil plat", "qty": "1/2 botte" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Piment d'Alep ou cumin", "qty": "1 c. à café" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Feuilles de salade et citron", "qty": "pour servir" }
+          ],
+          "etapes": [
+            "Préparer la pâte : farine, levure, sel et eau. Pétrir 10 min. Laisser lever 30 min.",
+            "Mixer finement au hachoir ou couteau : viande, oignon, tomate, poivron, persil, épices et concentré.",
+            "La garniture doit être presque une pâte homogène.",
+            "Diviser la pâte en petites boules et les étaler très finement.",
+            "Étaler une fine couche de garniture viande sur chaque galette.",
+            "Cuire dans un four très chaud (240°C) 8 à 10 min.",
+            "Rouler avec des feuilles de salade, du persil et un filet de citron."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 24,
+            "glucides": 52,
+            "lipides": 14
+          },
+          "tags": ["rue", "galette", "épicé"]
+        },
+        {
+          "id": "ezogelin-corbasi-tr",
+          "nom": "Ezogelin Çorbası",
+          "repas": "diner",
+          "temps": 35,
+          "difficulte": "facile",
+          "emoji": "🌶️",
+          "description": "Une soupe de lentilles rouges et de boulgour, plus épicée que la mercimek classique, avec de la menthe séchée et du piment d'Alep. Originaire de Gaziantep, c'est la soupe du soir dans des millions de foyers turcs. On dit qu'elle tire son nom d'une mariée malheureuse.",
+          "ingredients": [
+            { "nom": "Lentilles rouges", "qty": "150 g" },
+            { "nom": "Boulgour fin", "qty": "60 g" },
+            { "nom": "Riz", "qty": "30 g" },
+            { "nom": "Oignon", "qty": "1" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Concentré de poivron", "qty": "1 c. à café" },
+            { "nom": "Beurre", "qty": "30 g" },
+            { "nom": "Huile végétale", "qty": "2 c. à soupe" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Piment d'Alep (isot)", "qty": "1 c. à café" },
+            { "nom": "Menthe séchée", "qty": "1 c. à café" },
+            { "nom": "Sel", "qty": "selon goût" },
+            { "nom": "Bouillon", "qty": "1,2 l" }
+          ],
+          "etapes": [
+            "Faire revenir l'oignon émincé dans l'huile.",
+            "Ajouter les concentrés de tomate et poivron, cuire 2 min.",
+            "Ajouter les lentilles, le boulgour, le riz et le bouillon.",
+            "Laisser cuire 20 à 25 min jusqu'à lentilles très tendres.",
+            "Mixer partiellement ou entièrement selon texture souhaitée.",
+            "Dans une petite poêle, faire fondre le beurre avec le paprika, le piment et la menthe.",
+            "Verser ce beurre épicé sur la soupe et servir immédiatement."
+          ],
+          "valeurs": {
+            "calories": 360,
+            "proteines": 16,
+            "glucides": 52,
+            "lipides": 10
+          },
+          "tags": ["soupe", "Gaziantep", "épicé"]
+        },
+        {
+          "id": "islim-kebabi-tr",
+          "nom": "İslim Kebabı (Kebab à l'Aubergine)",
+          "repas": "dej",
+          "temps": 60,
+          "difficulte": "moyen",
+          "emoji": "🍆",
+          "description": "Des tranches d'aubergines enroulées autour de boulettes d'agneau, cuites au four avec une sauce tomate. Un plat de lokanta et de maison, profondément anatolien. Moins connu que l'iskender ou le döner mais bien plus représentatif de ce que les Turcs mangent chez eux.",
+          "ingredients": [
+            { "nom": "Aubergines", "qty": "3" },
+            { "nom": "Agneau haché", "qty": "400 g" },
+            { "nom": "Oignon râpé", "qty": "1" },
+            { "nom": "Persil haché", "qty": "2 c. à soupe" },
+            { "nom": "Paprika", "qty": "1 c. à café" },
+            { "nom": "Cumin", "qty": "1/2 c. à café" },
+            { "nom": "Tomates", "qty": "3" },
+            { "nom": "Poivron vert", "qty": "2" },
+            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
+            { "nom": "Huile végétale", "qty": "80 ml" },
+            { "nom": "Sel, poivre", "qty": "selon goût" }
+          ],
+          "etapes": [
+            "Couper les aubergines en tranches épaisses dans le sens de la longueur.",
+            "Les faire frire rapidement dans l'huile jusqu'à dorées. Égoutter.",
+            "Mélanger l'agneau haché avec l'oignon, le persil, le paprika, le cumin, sel et poivre.",
+            "Former des petites boulettes allongées.",
+            "Enrouler chaque boulette dans une tranche d'aubergine.",
+            "Placer dans un plat allant au four.",
+            "Couvrir de tomates en rondelles, de poivrons et de la sauce tomate au concentré.",
+            "Cuire 35 min à 180°C."
+          ],
+          "valeurs": {
+            "calories": 480,
+            "proteines": 32,
+            "glucides": 16,
+            "lipides": 34
+          },
+          "tags": ["four", "aubergine", "lokanta"]
+        },
+        {
+          "id": "borek-tr",
+          "nom": "Börek au Fromage et Persil",
+          "repas": "petitdej",
+          "temps": 50,
+          "difficulte": "moyen",
+          "emoji": "🥐",
+          "description": "Des couches de pâte filo garnies de fromage blanc (beyaz peynir) et de persil, cuites au four jusqu'à dorées et croustillantes. On en mange au petit-déjeuner, comme collation, ou comme repas léger. Il existe des centaines de variantes. Celle-là est la plus quotidienne.",
+          "ingredients": [
+            { "nom": "Feuilles de filo ou yufka", "qty": "6" },
+            { "nom": "Feta ou fromage blanc salé", "qty": "250 g" },
+            { "nom": "Persil frais haché", "qty": "1 botte" },
+            { "nom": "Œufs", "qty": "2" },
+            { "nom": "Lait", "qty": "100 ml" },
+            { "nom": "Huile végétale ou beurre fondu", "qty": "80 ml" },
+            { "nom": "Graines de nigelle ou sésame", "qty": "1 c. à soupe" }
+          ],
+          "etapes": [
+            "Écraser la feta à la fourchette et mélanger avec le persil haché.",
+            "Battre les œufs avec le lait et la moitié de l'huile.",
+            "Huiler un plat rectangulaire allant au four.",
+            "Déposer 2 feuilles de filo, badigeonner du mélange œuf-lait.",
+            "Étaler la farce fromage-persil.",
+            "Couvrir avec 2 feuilles de filo badigeonnées.",
+            "Répéter une couche et terminer par 2 feuilles de filo.",
+            "Verser le reste du mélange œuf-lait sur le dessus.",
+            "Parsemer de graines de nigelle ou sésame.",
+            "Cuire 30 à 35 min à 180°C jusqu'à bien doré."
+          ],
+          "valeurs": {
+            "calories": 420,
+            "proteines": 18,
+            "glucides": 38,
+            "lipides": 22
+          },
+          "tags": ["petitdej", "fromage", "filo"]
+    }
+  ]
+}
+     },
+  "Afrique": {
+      "Maroc": {
       "coords": [31.7917, -7.0926],
       "recettes": [
         {
@@ -1791,323 +2107,6 @@
         }
       ]
     },
-
-    "Turquie": {
-      "coords": [38.9637, 35.2433],
-      "recettes": [
-        {
-          "id": "menemen-tr",
-          "nom": "Menemen",
-          "repas": "petitdej",
-          "temps": 20,
-          "difficulte": "facile",
-          "emoji": "🍳",
-          "description": "Des œufs brouillés ou mollets cuits dans une sauce tomate-poivron avec du piment. Le petit-déjeuner de tous les jours en Turquie. Servi directement dans la poêle avec du pain. Débat national : avec ou sans oignon ? Chacun a son camp.",
-          "ingredients": [
-            { "nom": "Œufs", "qty": "3" },
-            { "nom": "Tomates mûres", "qty": "3" },
-            { "nom": "Poivron vert ou rouge", "qty": "2" },
-            { "nom": "Piment vert turc (sivri biber)", "qty": "1" },
-            { "nom": "Oignon (optionnel, débat national)", "qty": "1/2" },
-            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
-            { "nom": "Sel, poivre noir", "qty": "selon goût" },
-            { "nom": "Pain turc (ekmek)", "qty": "pour servir" }
-          ],
-          "etapes": [
-            "Hacher grossièrement les poivrons et les piments.",
-            "Faire revenir les poivrons dans l'huile d'olive 5 min.",
-            "Ajouter les tomates concassées grossièrement.",
-            "Cuire la sauce 8 à 10 min jusqu'à réduction.",
-            "Saler et poivrer.",
-            "Casser les œufs directement dans la sauce.",
-            "Mélanger légèrement et cuire selon préférence (coulant ou pris).",
-            "Servir directement dans la poêle avec du pain."
-          ],
-          "valeurs": {
-            "calories": 320,
-            "proteines": 18,
-            "glucides": 14,
-            "lipides": 22
-          },
-          "tags": ["petitdej", "classique", "rapide"]
-        },
-        {
-          "id": "mercimek-corbasi-tr",
-          "nom": "Mercimek Çorbası (Soupe de Lentilles)",
-          "repas": "diner",
-          "temps": 35,
-          "difficulte": "facile",
-          "emoji": "🍵",
-          "description": "La soupe la plus mangée en Turquie. Des lentilles rouges mixées avec oignon, carotte et épices, finies avec du beurre et du paprika. Simple, rapide, profonde. On en mange au déjeuner, au dîner, dans les lokanta (cantines), partout.",
-          "ingredients": [
-            { "nom": "Lentilles rouges", "qty": "250 g" },
-            { "nom": "Oignon", "qty": "1" },
-            { "nom": "Carotte", "qty": "1" },
-            { "nom": "Pomme de terre", "qty": "1" },
-            { "nom": "Ail", "qty": "2 gousses" },
-            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
-            { "nom": "Cumin", "qty": "1 c. à café" },
-            { "nom": "Paprika", "qty": "1 c. à café" },
-            { "nom": "Beurre", "qty": "30 g" },
-            { "nom": "Huile d'olive", "qty": "2 c. à soupe" },
-            { "nom": "Bouillon de volaille", "qty": "1 l" },
-            { "nom": "Sel, poivre", "qty": "selon goût" },
-            { "nom": "Citron", "qty": "1 (pour servir)" }
-          ],
-          "etapes": [
-            "Faire revenir l'oignon et l'ail dans l'huile d'olive.",
-            "Ajouter la carotte et la pomme de terre en dés, cuire 3 min.",
-            "Ajouter le concentré de tomate et cuire 2 min.",
-            "Ajouter les lentilles rouges et le bouillon.",
-            "Laisser cuire 20 min jusqu'à ce que tout soit très tendre.",
-            "Mixer jusqu'à texture veloutée.",
-            "Dans une petite poêle, faire fondre le beurre avec le paprika et verser sur la soupe.",
-            "Servir avec un quartier de citron."
-          ],
-          "valeurs": {
-            "calories": 340,
-            "proteines": 16,
-            "glucides": 48,
-            "lipides": 10
-          },
-          "tags": ["soupe", "quotidien", "veloutée"]
-        },
-        {
-          "id": "kuru-fasulye-tr",
-          "nom": "Kuru Fasulye (Haricots Blancs en Sauce)",
-          "repas": "dej",
-          "temps": 70,
-          "difficulte": "facile",
-          "emoji": "🫘",
-          "description": "Des haricots blancs mijotés dans une sauce tomate avec oignon et poivron. Le plat national non officiel de Turquie. Servi dans toutes les lokanta (cantines populaires) avec du riz pilaf à part. Simple, nourrissant, très ancré dans le quotidien.",
-          "ingredients": [
-            { "nom": "Haricots blancs secs", "qty": "300 g" },
-            { "nom": "Oignon", "qty": "2" },
-            { "nom": "Poivron rouge", "qty": "1" },
-            { "nom": "Concentré de tomate", "qty": "2 c. à soupe" },
-            { "nom": "Tomates concassées", "qty": "200 g" },
-            { "nom": "Huile végétale ou beurre", "qty": "3 c. à soupe" },
-            { "nom": "Paprika doux", "qty": "1 c. à café" },
-            { "nom": "Sel, poivre", "qty": "selon goût" },
-            { "nom": "Riz pilaf", "qty": "300 g (pour servir)" }
-          ],
-          "etapes": [
-            "Tremper les haricots la veille, puis les cuire dans l'eau 40 min jusqu'à tendres. Égoutter.",
-            "Faire revenir les oignons et le poivron dans le beurre.",
-            "Ajouter le concentré et les tomates. Cuire 8 min.",
-            "Ajouter les haricots cuits et le paprika.",
-            "Verser un peu d'eau de cuisson des haricots et laisser mijoter 20 min.",
-            "La sauce doit être épaisse et enrober les haricots.",
-            "Servir avec du riz pilaf à part."
-          ],
-          "valeurs": {
-            "calories": 440,
-            "proteines": 22,
-            "glucides": 64,
-            "lipides": 12
-          },
-          "tags": ["lokanta", "quotidien", "populaire"]
-        },
-        {
-          "id": "manti-tr",
-          "nom": "Mantı (Raviolis Turcs au Yaourt)",
-          "repas": "dej",
-          "temps": 90,
-          "difficulte": "moyen",
-          "emoji": "🥟",
-          "description": "De très petits raviolis farcis à l'agneau haché et à l'oignon, servis avec du yaourt à l'ail et un beurre fondu au paprika versé par-dessus. Plus ils sont petits, plus la cuisinière est habile. Un plat de dimanche et de fête, profondément turc.",
-          "ingredients": [
-            { "nom": "Farine", "qty": "300 g" },
-            { "nom": "Œuf", "qty": "2" },
-            { "nom": "Eau tiède", "qty": "80 ml" },
-            { "nom": "Sel", "qty": "1 c. à café" },
-            { "nom": "Agneau haché", "qty": "200 g" },
-            { "nom": "Oignon râpé", "qty": "1" },
-            { "nom": "Yaourt nature épais", "qty": "300 g" },
-            { "nom": "Ail", "qty": "3 gousses" },
-            { "nom": "Beurre", "qty": "60 g" },
-            { "nom": "Paprika ou piment d'Alep", "qty": "1 c. à soupe" },
-            { "nom": "Menthe séchée", "qty": "1 c. à café" }
-          ],
-          "etapes": [
-            "Pétrir la farine avec les œufs, l'eau et le sel jusqu'à pâte ferme. Laisser reposer 30 min.",
-            "Mélanger la viande avec l'oignon râpé, sel et poivre.",
-            "Étaler la pâte très finement et découper en petits carrés de 3 cm.",
-            "Déposer une petite noisette de farce au centre de chaque carré.",
-            "Refermer en pinçant les coins ensemble pour former de petits raviolis.",
-            "Cuire les mantı dans de l'eau bouillante salée 10 à 12 min.",
-            "Écraser l'ail dans le yaourt, saler.",
-            "Faire fondre le beurre avec le paprika et la menthe.",
-            "Servir les mantı avec le yaourt à l'ail dessous et le beurre fondu par-dessus."
-          ],
-          "valeurs": {
-            "calories": 580,
-            "proteines": 28,
-            "glucides": 62,
-            "lipides": 24
-          },
-          "tags": ["dimanche", "pâtes maison", "yaourt"]
-        },
-        {
-          "id": "lahmacun-tr",
-          "nom": "Lahmacun",
-          "repas": "dej",
-          "temps": 45,
-          "difficulte": "moyen",
-          "emoji": "🫓",
-          "description": "Une fine galette de pâte garnie de viande hachée épicée, oignon, tomate et herbes, cuite très rapidement au four très chaud. On la roule avec des feuilles de salade et du persil, et on mange en marchant. La pizza turque du peuple.",
-          "ingredients": [
-            { "nom": "Farine", "qty": "300 g" },
-            { "nom": "Levure boulangère", "qty": "1 c. à café" },
-            { "nom": "Sel", "qty": "1 c. à café" },
-            { "nom": "Eau tiède", "qty": "180 ml" },
-            { "nom": "Viande hachée agneau ou bœuf", "qty": "250 g" },
-            { "nom": "Oignon", "qty": "1" },
-            { "nom": "Tomate", "qty": "2" },
-            { "nom": "Poivron", "qty": "1" },
-            { "nom": "Persil plat", "qty": "1/2 botte" },
-            { "nom": "Paprika", "qty": "1 c. à café" },
-            { "nom": "Piment d'Alep ou cumin", "qty": "1 c. à café" },
-            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
-            { "nom": "Feuilles de salade et citron", "qty": "pour servir" }
-          ],
-          "etapes": [
-            "Préparer la pâte : farine, levure, sel et eau. Pétrir 10 min. Laisser lever 30 min.",
-            "Mixer finement au hachoir ou couteau : viande, oignon, tomate, poivron, persil, épices et concentré.",
-            "La garniture doit être presque une pâte homogène.",
-            "Diviser la pâte en petites boules et les étaler très finement.",
-            "Étaler une fine couche de garniture viande sur chaque galette.",
-            "Cuire dans un four très chaud (240°C) 8 à 10 min.",
-            "Rouler avec des feuilles de salade, du persil et un filet de citron."
-          ],
-          "valeurs": {
-            "calories": 420,
-            "proteines": 24,
-            "glucides": 52,
-            "lipides": 14
-          },
-          "tags": ["rue", "galette", "épicé"]
-        },
-        {
-          "id": "ezogelin-corbasi-tr",
-          "nom": "Ezogelin Çorbası",
-          "repas": "diner",
-          "temps": 35,
-          "difficulte": "facile",
-          "emoji": "🌶️",
-          "description": "Une soupe de lentilles rouges et de boulgour, plus épicée que la mercimek classique, avec de la menthe séchée et du piment d'Alep. Originaire de Gaziantep, c'est la soupe du soir dans des millions de foyers turcs. On dit qu'elle tire son nom d'une mariée malheureuse.",
-          "ingredients": [
-            { "nom": "Lentilles rouges", "qty": "150 g" },
-            { "nom": "Boulgour fin", "qty": "60 g" },
-            { "nom": "Riz", "qty": "30 g" },
-            { "nom": "Oignon", "qty": "1" },
-            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
-            { "nom": "Concentré de poivron", "qty": "1 c. à café" },
-            { "nom": "Beurre", "qty": "30 g" },
-            { "nom": "Huile végétale", "qty": "2 c. à soupe" },
-            { "nom": "Paprika", "qty": "1 c. à café" },
-            { "nom": "Piment d'Alep (isot)", "qty": "1 c. à café" },
-            { "nom": "Menthe séchée", "qty": "1 c. à café" },
-            { "nom": "Sel", "qty": "selon goût" },
-            { "nom": "Bouillon", "qty": "1,2 l" }
-          ],
-          "etapes": [
-            "Faire revenir l'oignon émincé dans l'huile.",
-            "Ajouter les concentrés de tomate et poivron, cuire 2 min.",
-            "Ajouter les lentilles, le boulgour, le riz et le bouillon.",
-            "Laisser cuire 20 à 25 min jusqu'à lentilles très tendres.",
-            "Mixer partiellement ou entièrement selon texture souhaitée.",
-            "Dans une petite poêle, faire fondre le beurre avec le paprika, le piment et la menthe.",
-            "Verser ce beurre épicé sur la soupe et servir immédiatement."
-          ],
-          "valeurs": {
-            "calories": 360,
-            "proteines": 16,
-            "glucides": 52,
-            "lipides": 10
-          },
-          "tags": ["soupe", "Gaziantep", "épicé"]
-        },
-        {
-          "id": "islim-kebabi-tr",
-          "nom": "İslim Kebabı (Kebab à l'Aubergine)",
-          "repas": "dej",
-          "temps": 60,
-          "difficulte": "moyen",
-          "emoji": "🍆",
-          "description": "Des tranches d'aubergines enroulées autour de boulettes d'agneau, cuites au four avec une sauce tomate. Un plat de lokanta et de maison, profondément anatolien. Moins connu que l'iskender ou le döner mais bien plus représentatif de ce que les Turcs mangent chez eux.",
-          "ingredients": [
-            { "nom": "Aubergines", "qty": "3" },
-            { "nom": "Agneau haché", "qty": "400 g" },
-            { "nom": "Oignon râpé", "qty": "1" },
-            { "nom": "Persil haché", "qty": "2 c. à soupe" },
-            { "nom": "Paprika", "qty": "1 c. à café" },
-            { "nom": "Cumin", "qty": "1/2 c. à café" },
-            { "nom": "Tomates", "qty": "3" },
-            { "nom": "Poivron vert", "qty": "2" },
-            { "nom": "Concentré de tomate", "qty": "1 c. à soupe" },
-            { "nom": "Huile végétale", "qty": "80 ml" },
-            { "nom": "Sel, poivre", "qty": "selon goût" }
-          ],
-          "etapes": [
-            "Couper les aubergines en tranches épaisses dans le sens de la longueur.",
-            "Les faire frire rapidement dans l'huile jusqu'à dorées. Égoutter.",
-            "Mélanger l'agneau haché avec l'oignon, le persil, le paprika, le cumin, sel et poivre.",
-            "Former des petites boulettes allongées.",
-            "Enrouler chaque boulette dans une tranche d'aubergine.",
-            "Placer dans un plat allant au four.",
-            "Couvrir de tomates en rondelles, de poivrons et de la sauce tomate au concentré.",
-            "Cuire 35 min à 180°C."
-          ],
-          "valeurs": {
-            "calories": 480,
-            "proteines": 32,
-            "glucides": 16,
-            "lipides": 34
-          },
-          "tags": ["four", "aubergine", "lokanta"]
-        },
-        {
-          "id": "borek-tr",
-          "nom": "Börek au Fromage et Persil",
-          "repas": "petitdej",
-          "temps": 50,
-          "difficulte": "moyen",
-          "emoji": "🥐",
-          "description": "Des couches de pâte filo garnies de fromage blanc (beyaz peynir) et de persil, cuites au four jusqu'à dorées et croustillantes. On en mange au petit-déjeuner, comme collation, ou comme repas léger. Il existe des centaines de variantes. Celle-là est la plus quotidienne.",
-          "ingredients": [
-            { "nom": "Feuilles de filo ou yufka", "qty": "6" },
-            { "nom": "Feta ou fromage blanc salé", "qty": "250 g" },
-            { "nom": "Persil frais haché", "qty": "1 botte" },
-            { "nom": "Œufs", "qty": "2" },
-            { "nom": "Lait", "qty": "100 ml" },
-            { "nom": "Huile végétale ou beurre fondu", "qty": "80 ml" },
-            { "nom": "Graines de nigelle ou sésame", "qty": "1 c. à soupe" }
-          ],
-          "etapes": [
-            "Écraser la feta à la fourchette et mélanger avec le persil haché.",
-            "Battre les œufs avec le lait et la moitié de l'huile.",
-            "Huiler un plat rectangulaire allant au four.",
-            "Déposer 2 feuilles de filo, badigeonner du mélange œuf-lait.",
-            "Étaler la farce fromage-persil.",
-            "Couvrir avec 2 feuilles de filo badigeonnées.",
-            "Répéter une couche et terminer par 2 feuilles de filo.",
-            "Verser le reste du mélange œuf-lait sur le dessus.",
-            "Parsemer de graines de nigelle ou sésame.",
-            "Cuire 30 à 35 min à 180°C jusqu'à bien doré."
-          ],
-          "valeurs": {
-            "calories": 420,
-            "proteines": 18,
-            "glucides": 38,
-            "lipides": 22
-          },
-          "tags": ["petitdej", "fromage", "filo"]
-    }
-  ]
-}
-     },
-  "Afrique": {
     "Sénégal": {
       "coords": [14.4974, -14.4524],
       "recettes": [
@@ -3112,6 +3111,87 @@
 }
      },
   "Amérique": {
+    "Mexique": {
+
+  "coords": [23.6345, -102.5528],
+
+  "recettes": [
+
+    {
+
+      "id": "patate-douce-boeuf-haricots-mx",
+
+      "nom": "Patate Douce Rôtie, Bœuf & Haricots Rouges",
+
+      "repas": "diner",
+
+      "temps": 40,
+
+      "difficulte": "facile",
+
+      "emoji": "🍠",
+
+      "description": "Une patate douce bien fondante garnie de bœuf épicé, haricots rouges, tomate et sauce yaourt. Le genre de plat qui cale et qui donne envie.",
+
+      "ingredients": [
+
+        { "nom": "Patate douce", "qty": "1 grosse" },
+
+        { "nom": "Bœuf haché 5%", "qty": "130 g" },
+
+        { "nom": "Haricots rouges", "qty": "100 g" },
+
+        { "nom": "Tomate concassée", "qty": "120 g" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Yaourt grec", "qty": "60 g" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Paprika, cumin, piment doux", "qty": "selon goût" },
+
+        { "nom": "Coriandre", "qty": "optionnel" }
+
+      ],
+
+      "etapes": [
+
+        "Cuire la patate douce entière au four 35 à 40 min à 200°C.",
+
+        "Faire revenir l’oignon avec le bœuf haché.",
+
+        "Ajouter les haricots rouges, la tomate et les épices.",
+
+        "Laisser mijoter 10 à 15 min pour obtenir une garniture bien saucée.",
+
+        "Mélanger le yaourt grec avec citron, sel et poivre.",
+
+        "Ouvrir la patate douce et la garnir avec le mélange bœuf-haricots.",
+
+        "Ajouter la sauce yaourt et la coriandre."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 610,
+
+        "proteines": 38,
+
+        "glucides": 72,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["fondant", "épicé", "rassasiant"]
+
+    }
+
+  ]
+
+},
     "Martinique": {
   "coords": [14.6415, -61.0242],
   "recettes": [
@@ -4004,6 +4084,149 @@
         "lipides": 10
       },
       "tags": ["protéiné", "gourmand", "rapide"]
+    },
+     {
+
+      "id": "banana-bread-pecan-sans-gluten-us",
+
+      "nom": "Banana Bread Noix de Pécan Sans Gluten",
+
+      "repas": "collation",
+
+      "temps": 45,
+
+      "difficulte": "facile",
+
+      "emoji": "🍌",
+
+      "description": "Un banana bread moelleux sans gluten avec noix de pécan, chocolat noir et une texture bien fondante. Parfait en snack ou petit-déj préparé à l’avance.",
+
+      "ingredients": [
+
+        { "nom": "Bananes bien mûres", "qty": "3" },
+
+        { "nom": "Œufs", "qty": "2" },
+
+        { "nom": "Farine d’avoine sans gluten", "qty": "140 g" },
+
+        { "nom": "Poudre d’amande", "qty": "40 g" },
+
+        { "nom": "Compote sans sucre ajouté", "qty": "100 g" },
+
+        { "nom": "Noix de pécan", "qty": "40 g" },
+
+        { "nom": "Chocolat noir", "qty": "40 g" },
+
+        { "nom": "Levure sans gluten", "qty": "1 c. à café" },
+
+        { "nom": "Cannelle", "qty": "1 pincée" }
+
+      ],
+
+      "etapes": [
+
+        "Écraser les bananes dans un saladier.",
+
+        "Ajouter les œufs et la compote puis mélanger.",
+
+        "Incorporer la farine d’avoine, la poudre d’amande, la levure et la cannelle.",
+
+        "Ajouter les noix de pécan concassées et le chocolat noir.",
+
+        "Verser dans un moule à cake.",
+
+        "Cuire 35 à 40 min à 180°C.",
+
+        "Laisser refroidir avant de couper en tranches."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 280,
+
+        "proteines": 8,
+
+        "glucides": 34,
+
+        "lipides": 13
+
+      },
+
+      "tags": ["sans gluten", "moelleux", "meal prep"]
+
+    },
+
+    {
+
+      "id": "pomme-terre-farcie-boeuf-effiloche-us",
+
+      "nom": "Pomme de Terre Farcie Bœuf Effiloché & Épinards",
+
+      "repas": "diner",
+
+      "temps": 45,
+
+      "difficulte": "facile",
+
+      "emoji": "🥔",
+
+      "description": "Une pomme de terre bien fondante garnie de bœuf effiloché, épinards et sauce yaourt-moutarde. Cozy, généreux, jamais sec.",
+
+      "ingredients": [
+
+        { "nom": "Grosse pomme de terre", "qty": "1" },
+
+        { "nom": "Bœuf effiloché ou bœuf cuit", "qty": "150 g" },
+
+        { "nom": "Épinards", "qty": "1 poignée" },
+
+        { "nom": "Yaourt grec", "qty": "70 g" },
+
+        { "nom": "Moutarde", "qty": "1 c. à café" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Bouillon", "qty": "80 ml" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Paprika, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Cuire la pomme de terre entière au four jusqu’à ce qu’elle soit tendre.",
+
+        "Faire revenir l’oignon et l’ail dans une poêle.",
+
+        "Ajouter le bœuf effiloché, le paprika et le bouillon.",
+
+        "Laisser réduire pour obtenir une garniture bien juteuse.",
+
+        "Ajouter les épinards et les faire tomber quelques minutes.",
+
+        "Mélanger le yaourt grec avec la moutarde, sel et poivre.",
+
+        "Ouvrir la pomme de terre et la garnir avec le bœuf, les épinards et la sauce."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 580,
+
+        "proteines": 40,
+
+        "glucides": 62,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["loaded potato", "fondant", "saucy"]
+
     },
     {
   "id": "bowl-poulet-hot-honey-fr",
