@@ -1,5 +1,226 @@
 {
   "Asie": {
+    "Inde": {
+
+  "coords": [20.5937, 78.9629],
+
+  "recettes": [
+
+    {
+
+      "id": "butter-chicken-light-inde",
+
+      "nom": "Butter Chicken Light & Riz Basmati",
+
+      "repas": "diner",
+
+      "temps": 35,
+
+      "difficulte": "facile",
+
+      "emoji": "🍛",
+
+      "description": "Un butter chicken plus léger, mais toujours crémeux, avec une sauce tomate-yaourt aux épices. Doux, parfumé, jamais sec.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "180 g" },
+
+        { "nom": "Riz basmati cuit", "qty": "150 g" },
+
+        { "nom": "Tomate concassée", "qty": "180 g" },
+
+        { "nom": "Yaourt grec", "qty": "80 g" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+
+        { "nom": "Garam masala", "qty": "1 c. à café" },
+
+        { "nom": "Curcuma, paprika, cumin", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poulet avec yaourt, ail, gingembre, garam masala et paprika.",
+
+        "Faire revenir l’oignon dans une poêle.",
+
+        "Ajouter le poulet et le faire dorer.",
+
+        "Ajouter la tomate concassée et les épices.",
+
+        "Laisser mijoter 15 à 20 min.",
+
+        "Ajouter un peu de yaourt grec hors du feu pour rendre la sauce crémeuse.",
+
+        "Servir avec le riz basmati."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 590,
+
+        "proteines": 45,
+
+        "glucides": 62,
+
+        "lipides": 16
+
+      },
+
+      "tags": ["crémeux", "épicé doux", "protéiné"]
+
+    },
+
+    {
+
+      "id": "dahl-coco-epinards-inde",
+
+      "nom": "Dahl Lentilles Corail, Coco & Épinards",
+
+      "repas": "diner",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🥥",
+
+      "description": "Un dahl doux et crémeux avec lentilles corail, lait de coco, épinards et épices. Végétarien, rassasiant, plein de goût.",
+
+      "ingredients": [
+
+        { "nom": "Lentilles corail", "qty": "90 g cru" },
+
+        { "nom": "Riz basmati cuit", "qty": "120 g" },
+
+        { "nom": "Lait de coco", "qty": "120 ml" },
+
+        { "nom": "Tomate concassée", "qty": "150 g" },
+
+        { "nom": "Épinards", "qty": "2 poignées" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Curry, cumin, curcuma", "qty": "selon goût" },
+
+        { "nom": "Citron vert", "qty": "1/2" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’oignon et l’ail avec les épices.",
+
+        "Ajouter les lentilles corail et la tomate concassée.",
+
+        "Couvrir d’eau et laisser cuire 15 min.",
+
+        "Ajouter le lait de coco et les épinards.",
+
+        "Laisser mijoter jusqu’à obtenir une texture crémeuse.",
+
+        "Servir avec le riz basmati et un filet de citron vert."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 560,
+
+        "proteines": 22,
+
+        "glucides": 76,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["veggie", "crémeux", "réconfortant"]
+
+    },
+
+    {
+
+      "id": "tikka-bowl-poulet-concombre-inde",
+
+      "nom": "Tikka Bowl Poulet, Concombre & Sauce Menthe",
+
+      "repas": "dej",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🌿",
+
+      "description": "Un bowl indien frais et parfumé avec poulet tikka, riz basmati, concombre, crudités et sauce yaourt-menthe. Épicé juste ce qu’il faut.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "160 g" },
+
+        { "nom": "Riz basmati cuit", "qty": "150 g" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Carotte râpée", "qty": "1" },
+
+        { "nom": "Yaourt grec", "qty": "80 g" },
+
+        { "nom": "Menthe", "qty": "quelques feuilles" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Tikka masala", "qty": "1 c. à café" },
+
+        { "nom": "Ail, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poulet avec yaourt, tikka masala, ail, citron, sel et poivre.",
+
+        "Faire griller le poulet à la poêle.",
+
+        "Préparer une sauce avec yaourt grec, menthe, citron, sel et poivre.",
+
+        "Couper le concombre et râper la carotte.",
+
+        "Assembler le riz, le poulet et les crudités dans un bol.",
+
+        "Ajouter la sauce menthe par-dessus."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 560,
+
+        "proteines": 43,
+
+        "glucides": 58,
+
+        "lipides": 17
+
+      },
+
+      "tags": ["frais", "parfumé", "protéiné"]
+
+    }
+
+  ]
+
+}
   "Vietnam": {
     "coords": [14.0583, 108.2772],
     "recettes": [
@@ -3111,11 +3332,866 @@
 }
      },
   "Amérique": {
+    "Réunion": {
+
+  "coords": [-21.1151, 55.5364],
+
+  "recettes": [
+
+    {
+
+      "id": "rougail-poulet-riz-reunion",
+
+      "nom": "Rougail Poulet, Riz & Lentilles",
+
+      "repas": "diner",
+
+      "temps": 35,
+
+      "difficulte": "facile",
+
+      "emoji": "🌶️",
+
+      "description": "Un plat réunionnais généreux avec poulet mijoté, tomate, épices, riz et lentilles. Une sauce bien parfumée, exactement comme on aime.",
+
+      "ingredients": [
+
+        { "nom": "Poulet", "qty": "180 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Lentilles cuites", "qty": "100 g" },
+
+        { "nom": "Tomate concassée", "qty": "150 g" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+
+        { "nom": "Curcuma, thym, piment doux", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’oignon, l’ail et le gingembre.",
+
+        "Ajouter le poulet et le faire dorer.",
+
+        "Ajouter la tomate, le curcuma, le thym et le piment doux.",
+
+        "Laisser mijoter 20 min jusqu’à obtenir une sauce bien réduite.",
+
+        "Servir avec le riz et les lentilles.",
+
+        "Ajouter un peu de citron ou de piment si souhaité."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 610,
+
+        "proteines": 43,
+
+        "glucides": 72,
+
+        "lipides": 14
+
+      },
+
+      "tags": ["réunionnais", "saucy", "épicé"]
+
+    },
+
+    {
+
+      "id": "bol-renverse-poulet-reunion",
+
+      "nom": "Bol Renversé Poulet & Légumes",
+
+      "repas": "dej",
+
+      "temps": 30,
+
+      "difficulte": "moyen",
+
+      "emoji": "🍚",
+
+      "description": "Une version healthy du bol renversé avec riz, poulet, légumes croquants, œuf et sauce soja-gingembre. Visuel, complet, bien nappé.",
+
+      "ingredients": [
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Poulet", "qty": "150 g" },
+
+        { "nom": "Œuf", "qty": "1" },
+
+        { "nom": "Carotte", "qty": "1" },
+
+        { "nom": "Champignons", "qty": "100 g" },
+
+        { "nom": "Brocolis", "qty": "100 g" },
+
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+
+        { "nom": "Ail", "qty": "1 gousse" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’ail et le gingembre.",
+
+        "Ajouter le poulet en morceaux et le faire dorer.",
+
+        "Ajouter les légumes et les faire sauter quelques minutes.",
+
+        "Verser la sauce soja avec un peu d’eau pour créer une sauce légère.",
+
+        "Cuire un œuf au plat.",
+
+        "Dresser dans un bol puis renverser dans une assiette si souhaité."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 570,
+
+        "proteines": 42,
+
+        "glucides": 58,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["complet", "visuel", "protéiné"]
+
+    },
+
+    {
+
+      "id": "cari-crevettes-coco-reunion",
+
+      "nom": "Cari Crevettes Coco & Riz",
+
+      "repas": "diner",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🦐",
+
+      "description": "Un cari de crevettes crémeux au lait de coco, tomate, gingembre et curcuma. Rapide, parfumé, avec une vraie sauce.",
+
+      "ingredients": [
+
+        { "nom": "Crevettes", "qty": "160 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Lait de coco", "qty": "120 ml" },
+
+        { "nom": "Tomate concassée", "qty": "120 g" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+
+        { "nom": "Curcuma, thym, piment doux", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’oignon, l’ail et le gingembre.",
+
+        "Ajouter la tomate, le curcuma, le thym et le piment doux.",
+
+        "Laisser mijoter quelques minutes.",
+
+        "Ajouter le lait de coco et les crevettes.",
+
+        "Cuire jusqu’à ce que les crevettes soient roses et la sauce crémeuse.",
+
+        "Servir avec le riz chaud."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 540,
+
+        "proteines": 34,
+
+        "glucides": 54,
+
+        "lipides": 20
+
+      },
+
+      "tags": ["crémeux", "parfumé", "rapide"]
+
+    }
+
+  ]
+
+},
+
+"Guyane": {
+
+  "coords": [4.8604, -52.3350],
+
+  "recettes": [
+
+    {
+
+      "id": "poulet-boucane-riz-creole-guyane",
+
+      "nom": "Poulet Boucané, Riz Créole & Sauce Chien",
+
+      "repas": "dej",
+
+      "temps": 35,
+
+      "difficulte": "facile",
+
+      "emoji": "🍗",
+
+      "description": "Un poulet bien grillé avec riz créole, crudités et sauce chien citronnée. Frais, parfumé, grillé, pas sec une seconde.",
+
+      "ingredients": [
+
+        { "nom": "Poulet", "qty": "180 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Tomate", "qty": "1" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Cives ou ciboulette", "qty": "quelques brins" },
+
+        { "nom": "Piment végétarien", "qty": "optionnel" },
+
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poulet avec citron vert, ail, sel, poivre et cives.",
+
+        "Le cuire au four, au grill ou à la poêle jusqu’à dorure.",
+
+        "Préparer la sauce chien avec citron, ail, cives, huile et un peu d’eau chaude.",
+
+        "Couper les crudités.",
+
+        "Servir le poulet avec le riz, les crudités et la sauce chien."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 590,
+
+        "proteines": 43,
+
+        "glucides": 58,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["grillé", "frais", "créole"]
+
+    },
+
+    {
+
+      "id": "blaff-poisson-patate-douce-guyane",
+
+      "nom": "Blaff de Poisson, Patate Douce & Légumes",
+
+      "repas": "diner",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🐟",
+
+      "description": "Un poisson poché dans un bouillon citronné aux herbes, servi avec patate douce et légumes. Léger, parfumé, très doux le soir.",
+
+      "ingredients": [
+
+        { "nom": "Poisson blanc", "qty": "170 g" },
+
+        { "nom": "Patate douce", "qty": "220 g" },
+
+        { "nom": "Courgette", "qty": "1/2" },
+
+        { "nom": "Citron vert", "qty": "1" },
+
+        { "nom": "Ail", "qty": "2 gousses" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Thym", "qty": "2 branches" },
+
+        { "nom": "Piment végétarien", "qty": "optionnel" },
+
+        { "nom": "Cives", "qty": "quelques brins" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poisson avec citron vert, ail, sel et cives.",
+
+        "Cuire la patate douce à la vapeur ou à l’eau.",
+
+        "Préparer un bouillon avec oignon, thym, piment végétarien et eau.",
+
+        "Ajouter le poisson et laisser pocher doucement.",
+
+        "Ajouter la courgette quelques minutes avant la fin.",
+
+        "Servir avec la patate douce et un peu de bouillon citronné."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 470,
+
+        "proteines": 38,
+
+        "glucides": 54,
+
+        "lipides": 10
+
+      },
+
+      "tags": ["léger", "parfumé", "digeste"]
+
+    },
+
+    {
+
+      "id": "riz-crevettes-coco-guyane",
+
+      "nom": "Riz Crevettes Coco & Giraumon",
+
+      "repas": "dej",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🥥",
+
+      "description": "Un riz crémeux avec crevettes, lait de coco, giraumon et épices douces. Fondant, solaire, et bien plus intéressant qu’un riz sec.",
+
+      "ingredients": [
+
+        { "nom": "Crevettes", "qty": "160 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Giraumon ou courge", "qty": "180 g" },
+
+        { "nom": "Lait de coco", "qty": "100 ml" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Curcuma, gingembre, piment doux", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’oignon et l’ail dans une poêle.",
+
+        "Ajouter le giraumon en cubes avec un peu d’eau et laisser fondre.",
+
+        "Ajouter les crevettes et les épices.",
+
+        "Verser le lait de coco et laisser mijoter quelques minutes.",
+
+        "Ajouter le riz cuit et mélanger jusqu’à ce qu’il soit bien nappé.",
+
+        "Servir avec un filet de citron vert."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 560,
+
+        "proteines": 34,
+
+        "glucides": 62,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["crémeux", "créole", "gourmand"]
+
+    }
+
+  ]
+
+},
+    "Brésil": {
+
+  "coords": [-14.2350, -51.9253],
+
+  "recettes": [
+
+    {
+
+      "id": "bowl-poulet-acai-riz-bresil",
+
+      "nom": "Brazilian Bowl Poulet, Riz & Sauce Mangue Citron Vert",
+
+      "repas": "dej",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🥭",
+
+      "description": "Un bowl coloré inspiré du Brésil avec poulet grillé, riz, avocat, crudités et sauce mangue-citron vert. Frais, solaire, bien saucé.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "160 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Avocat", "qty": "1/2" },
+
+        { "nom": "Mangue", "qty": "1/2" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Yaourt grec", "qty": "70 g" },
+
+        { "nom": "Paprika, ail, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poulet avec citron vert, ail, paprika, sel et poivre.",
+
+        "Faire griller le poulet à la poêle jusqu’à ce qu’il soit doré.",
+
+        "Mixer ou écraser la mangue avec le yaourt grec, le citron vert, sel et poivre.",
+
+        "Couper l’avocat, le concombre et les tomates.",
+
+        "Assembler le riz, le poulet et les crudités dans un bol.",
+
+        "Ajouter la sauce mangue-citron vert par-dessus."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 590,
+
+        "proteines": 43,
+
+        "glucides": 62,
+
+        "lipides": 19
+
+      },
+
+      "tags": ["coloré", "frais", "protéiné"]
+
+    },
+
+    {
+
+      "id": "feijoada-bowl-light-bresil",
+
+      "nom": "Feijoada Bowl Light",
+
+      "repas": "diner",
+
+      "temps": 35,
+
+      "difficulte": "facile",
+
+      "emoji": "🫘",
+
+      "description": "Une version plus légère de la feijoada avec haricots noirs, bœuf, riz, orange et sauce tomate épicée. Réconfortant, mais pas lourd.",
+
+      "ingredients": [
+
+        { "nom": "Bœuf haché 5%", "qty": "130 g" },
+
+        { "nom": "Haricots noirs", "qty": "120 g" },
+
+        { "nom": "Riz cuit", "qty": "140 g" },
+
+        { "nom": "Tomate concassée", "qty": "150 g" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Orange", "qty": "1/2" },
+
+        { "nom": "Paprika fumé, cumin, piment doux", "qty": "selon goût" },
+
+        { "nom": "Coriandre", "qty": "optionnel" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’oignon et l’ail dans une poêle.",
+
+        "Ajouter le bœuf haché et le faire dorer.",
+
+        "Ajouter les haricots noirs, la tomate concassée et les épices.",
+
+        "Laisser mijoter 15 à 20 min pour obtenir une sauce épaisse.",
+
+        "Servir avec le riz, quelques morceaux d’orange et de la coriandre.",
+
+        "Ajouter un filet de jus d’orange pour la fraîcheur."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 610,
+
+        "proteines": 38,
+
+        "glucides": 72,
+
+        "lipides": 17
+
+      },
+
+      "tags": ["réconfortant", "épicé", "rassasiant"]
+
+    },
+
+    {
+
+      "id": "tapioca-crepe-poulet-avocat-bresil",
+
+      "nom": "Tapioca Crêpe Poulet, Avocat & Sauce Yaourt",
+
+      "repas": "dej",
+
+      "temps": 20,
+
+      "difficulte": "facile",
+
+      "emoji": "🌮",
+
+      "description": "Une crêpe brésilienne à base de tapioca, garnie de poulet, avocat et sauce yaourt citronnée. Sans gluten, légère, mais bien gourmande.",
+
+      "ingredients": [
+
+        { "nom": "Gomme ou farine de tapioca", "qty": "60 g" },
+
+        { "nom": "Poulet cuit", "qty": "120 g" },
+
+        { "nom": "Avocat", "qty": "1/2" },
+
+        { "nom": "Yaourt grec", "qty": "70 g" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Tomate", "qty": "1" },
+
+        { "nom": "Salade", "qty": "1 poignée" },
+
+        { "nom": "Paprika, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Déposer le tapioca dans une poêle chaude pour former une crêpe.",
+
+        "Cuire 1 à 2 min jusqu’à ce que la crêpe se tienne.",
+
+        "Mélanger le yaourt grec avec citron vert, paprika, sel et poivre.",
+
+        "Garnir la crêpe avec poulet, avocat, tomate et salade.",
+
+        "Ajouter la sauce yaourt.",
+
+        "Refermer et servir tiède."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 480,
+
+        "proteines": 32,
+
+        "glucides": 52,
+
+        "lipides": 16
+
+      },
+
+      "tags": ["sans gluten", "frais", "rapide"]
+
+    }
+
+  ]
+
+},
     "Mexique": {
 
   "coords": [23.6345, -102.5528],
 
   "recettes": [
+    {
+
+      "id": "burrito-bowl-poulet-avocat-mx",
+
+      "nom": "Burrito Bowl Poulet, Avocat & Sauce Yaourt Épicée",
+
+      "repas": "dej",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🌯",
+
+      "description": "Un burrito bowl coloré avec poulet épicé, riz, haricots rouges, avocat, maïs et sauce yaourt citronnée. Tout ce qu’on aime, mais en version fraîche.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "160 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Haricots rouges", "qty": "100 g" },
+
+        { "nom": "Maïs", "qty": "60 g" },
+
+        { "nom": "Avocat", "qty": "1/2" },
+
+        { "nom": "Tomate", "qty": "1" },
+
+        { "nom": "Yaourt grec", "qty": "70 g" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Paprika, cumin, piment doux", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poulet avec paprika, cumin, piment doux, sel et citron vert.",
+
+        "Faire griller le poulet à la poêle.",
+
+        "Préparer la sauce avec yaourt grec, citron vert, paprika, sel et poivre.",
+
+        "Couper l’avocat et la tomate.",
+
+        "Assembler le riz, les haricots rouges, le maïs, le poulet et les crudités.",
+
+        "Ajouter la sauce yaourt épicée par-dessus."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 620,
+
+        "proteines": 45,
+
+        "glucides": 70,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["coloré", "épicé", "protéiné"]
+
+    },
+
+    {
+
+      "id": "tacos-crevettes-mangue-mx",
+
+      "nom": "Tacos Crevettes, Mangue & Sauce Citron Vert",
+
+      "repas": "diner",
+
+      "temps": 20,
+
+      "difficulte": "facile",
+
+      "emoji": "🌮",
+
+      "description": "Des tacos frais et légèrement sucrés avec crevettes épicées, mangue, avocat et sauce citron vert. Très Instagram, très simple, très bon.",
+
+      "ingredients": [
+
+        { "nom": "Petites tortillas", "qty": "2" },
+
+        { "nom": "Crevettes", "qty": "150 g" },
+
+        { "nom": "Mangue", "qty": "1/2" },
+
+        { "nom": "Avocat", "qty": "1/2" },
+
+        { "nom": "Chou rouge", "qty": "1 poignée" },
+
+        { "nom": "Yaourt grec", "qty": "60 g" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Paprika, ail, piment doux", "qty": "selon goût" },
+
+        { "nom": "Coriandre", "qty": "optionnel" }
+
+      ],
+
+      "etapes": [
+
+        "Faire sauter les crevettes avec paprika, ail, piment doux, sel et poivre.",
+
+        "Couper la mangue et l’avocat en dés.",
+
+        "Préparer la sauce avec yaourt grec, citron vert, sel et poivre.",
+
+        "Réchauffer les tortillas.",
+
+        "Garnir avec chou rouge, crevettes, mangue et avocat.",
+
+        "Ajouter la sauce et la coriandre avant de servir."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 490,
+
+        "proteines": 34,
+
+        "glucides": 48,
+
+        "lipides": 18
+
+      },
+
+      "tags": ["frais", "sucré-salé", "rapide"]
+
+    },
+
+    {
+
+      "id": "patate-douce-nachos-boeuf-mx",
+
+      "nom": "Patate Douce Façon Nachos Bœuf & Haricots",
+
+      "repas": "diner",
+
+      "temps": 35,
+
+      "difficulte": "facile",
+
+      "emoji": "🍠",
+
+      "description": "Des rondelles de patate douce rôties, garnies de bœuf épicé, haricots rouges, avocat et sauce yaourt. Le nachos healthy qui cale vraiment.",
+
+      "ingredients": [
+
+        { "nom": "Patate douce", "qty": "300 g" },
+
+        { "nom": "Bœuf haché 5%", "qty": "130 g" },
+
+        { "nom": "Haricots rouges", "qty": "100 g" },
+
+        { "nom": "Avocat", "qty": "1/2" },
+
+        { "nom": "Tomate", "qty": "1" },
+
+        { "nom": "Yaourt grec", "qty": "60 g" },
+
+        { "nom": "Citron vert", "qty": "1/2" },
+
+        { "nom": "Paprika, cumin, piment doux", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Couper la patate douce en rondelles et la cuire au four avec paprika et sel.",
+
+        "Faire revenir le bœuf haché avec cumin, paprika et piment doux.",
+
+        "Ajouter les haricots rouges et la tomate pour obtenir une garniture saucée.",
+
+        "Préparer une sauce avec yaourt grec, citron vert, sel et poivre.",
+
+        "Dresser les rondelles de patate douce avec le bœuf, les haricots et l’avocat.",
+
+        "Ajouter la sauce yaourt par-dessus."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 610,
+
+        "proteines": 38,
+
+        "glucides": 68,
+
+        "lipides": 20
+
+      },
+
+      "tags": ["fun", "fondant", "healthy"]
+
+    },
 
     {
 
@@ -4051,6 +5127,211 @@
     "France": {
   "coords": [46.6034, 1.8883],
   "recettes": [
+     {
+
+      "id": "poulet-moutarde-riz-brocolis-fr",
+
+      "nom": "Poulet Crème Moutarde, Riz & Brocolis",
+
+      "repas": "diner",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🍗",
+
+      "description": "Un plat simple, crémeux et efficace avec poulet tendre, sauce moutarde légère, riz et brocolis. Basique, mais jamais sec.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "180 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Brocolis", "qty": "200 g" },
+
+        { "nom": "Crème légère", "qty": "2 c. à soupe" },
+
+        { "nom": "Moutarde", "qty": "1 c. à soupe" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Bouillon", "qty": "80 ml" },
+
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Cuire les brocolis à la vapeur.",
+
+        "Faire revenir l’oignon dans une poêle.",
+
+        "Ajouter le poulet coupé en morceaux et le faire dorer.",
+
+        "Ajouter le bouillon, la crème et la moutarde.",
+
+        "Laisser réduire jusqu’à obtenir une sauce nappante.",
+
+        "Servir avec le riz et les brocolis."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 520,
+
+        "proteines": 45,
+
+        "glucides": 52,
+
+        "lipides": 14
+
+      },
+
+      "tags": ["crémeux", "simple", "protéiné"]
+
+    },
+
+    {
+
+      "id": "gnocchis-courgettes-burrata-fr",
+
+      "nom": "Gnocchis Poêlés, Courgettes & Burrata",
+
+      "repas": "diner",
+
+      "temps": 20,
+
+      "difficulte": "facile",
+
+      "emoji": "🧀",
+
+      "description": "Des gnocchis dorés, des courgettes fondantes, des tomates cerises et une burrata crémeuse. Simple, beau, beaucoup trop bon.",
+
+      "ingredients": [
+
+        { "nom": "Gnocchis", "qty": "180 g" },
+
+        { "nom": "Courgette", "qty": "1" },
+
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+
+        { "nom": "Burrata", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+
+        { "nom": "Basilic", "qty": "quelques feuilles" },
+
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’ail dans l’huile d’olive.",
+
+        "Ajouter les courgettes en demi-rondelles.",
+
+        "Ajouter les gnocchis et les faire dorer à la poêle.",
+
+        "Ajouter les tomates cerises coupées en deux.",
+
+        "Assaisonner avec sel et poivre.",
+
+        "Servir avec la burrata et le basilic frais."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 540,
+
+        "proteines": 18,
+
+        "glucides": 68,
+
+        "lipides": 22
+
+      },
+
+      "tags": ["gourmand", "rapide", "fondant"]
+
+    },
+
+    {
+
+      "id": "bowl-lentilles-oeuf-feta-fr",
+
+      "nom": "Bowl Lentilles Vertes, Œuf Mollet & Feta",
+
+      "repas": "dej",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🥣",
+
+      "description": "Un bowl complet, nourrissant et coloré avec lentilles, œuf mollet, feta et légumes rôtis. Healthy, mais pas triste.",
+
+      "ingredients": [
+
+        { "nom": "Lentilles vertes cuites", "qty": "180 g" },
+
+        { "nom": "Œuf", "qty": "1" },
+
+        { "nom": "Feta", "qty": "40 g" },
+
+        { "nom": "Courgette", "qty": "1/2" },
+
+        { "nom": "Carotte", "qty": "1" },
+
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+
+        { "nom": "Moutarde", "qty": "1 c. à café" },
+
+        { "nom": "Vinaigre balsamique", "qty": "1 c. à café" },
+
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire rôtir les légumes au four avec huile d’olive, sel et poivre.",
+
+        "Cuire l’œuf mollet pendant 6 min.",
+
+        "Déposer les lentilles dans un bol.",
+
+        "Ajouter les légumes rôtis, la feta et l’œuf.",
+
+        "Préparer une sauce avec moutarde, vinaigre, sel et poivre.",
+
+        "Verser la sauce et servir."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 500,
+
+        "proteines": 28,
+
+        "glucides": 48,
+
+        "lipides": 22
+
+      },
+
+      "tags": ["complet", "végétarien", "rassasiant"]
+
+    },
     {
       "id": "bowlcake-choco-fruits-fr",
       "nom": "Bowlcake Chocolat Noir , Fruits Rouges",
