@@ -3165,6 +3165,301 @@
 }
      },
   "Europe": {
+    "Grèce": {
+
+  "coords": [39.0742, 21.8243],
+
+  "recettes": [
+
+    {
+
+      "id": "greek-bowl-poulet-feta-gr",
+
+      "nom": "Greek Bowl Poulet, Feta & Sauce Yaourt",
+
+      "repas": "dej",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🥗",
+
+      "description": "Un bowl frais et ultra parfumé avec poulet mariné citron-origan, riz, crudités, feta et sauce yaourt crémeuse. Simple, coloré, pas sec une seule seconde.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "160 g" },
+
+        { "nom": "Riz cuit", "qty": "150 g" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+
+        { "nom": "Oignon rouge", "qty": "1/4" },
+
+        { "nom": "Feta", "qty": "40 g" },
+
+        { "nom": "Yaourt grec", "qty": "80 g" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+
+        { "nom": "Origan, ail, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Mariner le poulet avec citron, huile d’olive, ail, origan, sel et poivre.",
+
+        "Faire griller le poulet à la poêle jusqu’à ce qu’il soit bien doré.",
+
+        "Préparer la sauce avec yaourt grec, citron, ail, sel et poivre.",
+
+        "Couper le concombre, les tomates et l’oignon rouge.",
+
+        "Assembler le riz, le poulet, les crudités et la feta dans un bol.",
+
+        "Ajouter la sauce yaourt par-dessus avant de servir."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 570,
+
+        "proteines": 45,
+
+        "glucides": 52,
+
+        "lipides": 20
+
+      },
+
+      "tags": ["frais", "protéiné", "crémeux"]
+
+    },
+
+    {
+
+      "id": "brochettes-poulet-boulgour-gr",
+
+      "nom": "Brochettes de Poulet, Boulgour & Crudités",
+
+      "repas": "dej",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🍢",
+
+      "description": "Des brochettes de poulet bien marinées avec boulgour, crudités et sauce yaourt citronnée. Simple, frais, et surtout jamais sec.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "180 g" },
+
+        { "nom": "Boulgour cuit", "qty": "150 g" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Tomate", "qty": "1" },
+
+        { "nom": "Salade", "qty": "1 poignée" },
+
+        { "nom": "Yaourt grec", "qty": "80 g" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+
+        { "nom": "Paprika, ail, cumin, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Couper le poulet en cubes.",
+
+        "Le mariner avec huile d’olive, citron, ail, paprika, cumin, sel et poivre.",
+
+        "Piquer les morceaux sur des brochettes.",
+
+        "Cuire à la poêle, au four ou au grill jusqu’à dorure.",
+
+        "Préparer une sauce avec yaourt grec, citron, sel et poivre.",
+
+        "Servir avec le boulgour, les crudités et la sauce."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 540,
+
+        "proteines": 44,
+
+        "glucides": 52,
+
+        "lipides": 16
+
+      },
+
+      "tags": ["grillé", "frais", "protéiné"]
+
+    },
+
+    {
+
+      "id": "orzo-saumon-epinards-gr",
+
+      "nom": "Orzo Saumon, Épinards & Sauce Citron",
+
+      "repas": "diner",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🍋",
+
+      "description": "Un plat crémeux et lumineux avec orzo, saumon, épinards et sauce citronnée. Ça a le goût du soleil, mais version dîner rapide.",
+
+      "ingredients": [
+
+        { "nom": "Orzo", "qty": "90 g" },
+
+        { "nom": "Saumon", "qty": "130 g" },
+
+        { "nom": "Épinards frais", "qty": "2 poignées" },
+
+        { "nom": "Yaourt grec", "qty": "80 g" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Feta", "qty": "30 g" },
+
+        { "nom": "Bouillon", "qty": "250 ml" },
+
+        { "nom": "Aneth ou persil", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’ail dans une poêle.",
+
+        "Ajouter l’orzo et le bouillon, puis laisser cuire en remuant.",
+
+        "Ajouter les épinards en fin de cuisson.",
+
+        "Cuire le saumon à part ou directement en morceaux dans la poêle.",
+
+        "Mélanger le yaourt grec avec citron, sel, poivre et herbes.",
+
+        "Ajouter la sauce citronnée à l’orzo hors du feu.",
+
+        "Servir avec le saumon et la feta émiettée."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 590,
+
+        "proteines": 38,
+
+        "glucides": 62,
+
+        "lipides": 20
+
+      },
+
+      "tags": ["crémeux", "citronné", "gourmand"]
+
+    },
+
+    {
+
+      "id": "one-pot-rice-citron-poulet-gr",
+
+      "nom": "One Pot Rice Poulet & Citron",
+
+      "repas": "diner",
+
+      "temps": 30,
+
+      "difficulte": "facile",
+
+      "emoji": "🍚",
+
+      "description": "Un riz fondant cuit avec poulet, citron, herbes et bouillon. Tout cuit ensemble, tout prend le goût, zéro assiette sèche.",
+
+      "ingredients": [
+
+        { "nom": "Blanc de poulet", "qty": "170 g" },
+
+        { "nom": "Riz", "qty": "80 g cru" },
+
+        { "nom": "Bouillon", "qty": "300 ml" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Oignon", "qty": "1/2" },
+
+        { "nom": "Ail", "qty": "1 gousse" },
+
+        { "nom": "Épinards", "qty": "1 poignée" },
+
+        { "nom": "Yaourt grec", "qty": "1 c. à soupe" },
+
+        { "nom": "Origan, sel, poivre", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Faire revenir l’oignon et l’ail dans une poêle profonde.",
+
+        "Ajouter le poulet en morceaux et le faire dorer.",
+
+        "Ajouter le riz, le bouillon, le citron et l’origan.",
+
+        "Couvrir et laisser cuire jusqu’à absorption du liquide.",
+
+        "Ajouter les épinards en fin de cuisson.",
+
+        "Terminer avec une cuillère de yaourt grec pour rendre le riz crémeux.",
+
+        "Servir chaud avec un peu de citron en plus."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 560,
+
+        "proteines": 42,
+
+        "glucides": 62,
+
+        "lipides": 14
+
+      },
+
+      "tags": ["one pot", "citronné", "fondant"]
+
+    }
+
+  ]
+
+},
     "France": {
   "coords": [46.6034, 1.8883],
   "recettes": [
