@@ -1,5 +1,116 @@
 {
   "Asie": {
+    "Laos": {
+  "coords": [19.8563, 102.4955],
+  "recettes": [
+    {
+      "id": "larb-poulet-riz-laos",
+      "nom": "Larb Poulet, Riz & Herbes Fraîches",
+      "repas": "dej",
+      "temps": 20,
+      "difficulte": "facile",
+      "emoji": "🌿",
+      "description": "Un larb laotien frais et parfumé avec poulet, citron vert, menthe, coriandre et riz. Léger, protéiné, avec une vraie explosion d’herbes.",
+      "ingredients": [
+        { "nom": "Poulet haché", "qty": "170 g" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Citron vert", "qty": "1" },
+        { "nom": "Menthe", "qty": "1 poignée" },
+        { "nom": "Coriandre", "qty": "1 poignée" },
+        { "nom": "Oignon rouge", "qty": "1/4" },
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+        { "nom": "Piment doux", "qty": "selon goût" },
+        { "nom": "Cacahuètes concassées", "qty": "1 c. à soupe" }
+      ],
+      "etapes": [
+        "Faire cuire le poulet haché dans une poêle.",
+        "Ajouter la sauce soja, le citron vert et le piment doux.",
+        "Émincer l’oignon rouge.",
+        "Mélanger le poulet avec les herbes fraîches et l’oignon.",
+        "Servir avec le riz chaud.",
+        "Ajouter les cacahuètes concassées au moment de servir."
+      ],
+      "valeurs": {
+        "calories": 520,
+        "proteines": 42,
+        "glucides": 54,
+        "lipides": 15
+      },
+      "tags": ["frais", "herbes", "protéiné"]
+    },
+    {
+      "id": "khao-piak-poulet-laos",
+      "nom": "Khao Piak Poulet & Bouillon Gingembre",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🍜",
+      "description": "Une soupe laotienne réconfortante avec nouilles de riz, poulet, gingembre, bouillon parfumé et herbes fraîches. Doux, chaud, jamais fade.",
+      "ingredients": [
+        { "nom": "Nouilles de riz", "qty": "80 g" },
+        { "nom": "Poulet cuit ou cru émincé", "qty": "160 g" },
+        { "nom": "Bouillon", "qty": "500 ml" },
+        { "nom": "Gingembre", "qty": "1 morceau" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Oignon nouveau", "qty": "1" },
+        { "nom": "Coriandre", "qty": "quelques feuilles" },
+        { "nom": "Citron vert", "qty": "1/2" },
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" }
+      ],
+      "etapes": [
+        "Faire chauffer le bouillon avec l’ail et le gingembre.",
+        "Ajouter le poulet et laisser cuire doucement.",
+        "Ajouter les nouilles de riz.",
+        "Verser la sauce soja.",
+        "Laisser mijoter jusqu’à ce que les nouilles soient tendres.",
+        "Servir avec coriandre, oignon nouveau et citron vert."
+      ],
+      "valeurs": {
+        "calories": 480,
+        "proteines": 38,
+        "glucides": 56,
+        "lipides": 10
+      },
+      "tags": ["soupe", "réconfortant", "léger"]
+    },
+    {
+      "id": "sticky-rice-beef-bowl-laos",
+      "nom": "Sticky Rice Beef Bowl & Sauce Citron Vert",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🥩",
+      "description": "Un bowl inspiré du Laos avec riz gluant, bœuf sauté, crudités, herbes fraîches et sauce citron vert-soja. Frais, intense, bien nappé.",
+      "ingredients": [
+        { "nom": "Bœuf émincé", "qty": "150 g" },
+        { "nom": "Riz gluant ou riz jasmin cuit", "qty": "150 g" },
+        { "nom": "Concombre", "qty": "1/2" },
+        { "nom": "Carotte", "qty": "1" },
+        { "nom": "Menthe", "qty": "quelques feuilles" },
+        { "nom": "Coriandre", "qty": "quelques feuilles" },
+        { "nom": "Sauce soja", "qty": "1 c. à soupe" },
+        { "nom": "Citron vert", "qty": "1/2" },
+        { "nom": "Miel", "qty": "1 c. à café" },
+        { "nom": "Ail", "qty": "1 gousse" }
+      ],
+      "etapes": [
+        "Mélanger sauce soja, citron vert, miel et ail.",
+        "Faire sauter le bœuf à feu vif.",
+        "Ajouter une partie de la sauce pour le napper.",
+        "Couper le concombre et râper la carotte.",
+        "Assembler le riz, le bœuf et les crudités.",
+        "Ajouter les herbes fraîches et le reste de sauce."
+      ],
+      "valeurs": {
+        "calories": 570,
+        "proteines": 38,
+        "glucides": 58,
+        "lipides": 20
+      },
+      "tags": ["bowl", "frais", "saucy"]
+    }
+  ]
+},
     "Inde": {
 
   "coords": [20.5937, 78.9629],
@@ -1236,6 +1347,116 @@
 }
 },
   "Moyen-Orient": {
+"Égypte": {
+  "coords": [26.8206, 30.8025],
+  "recettes": [
+    {
+      "id": "koshari-bowl-light-eg",
+      "nom": "Koshari Bowl Light",
+      "repas": "dej",
+      "temps": 35,
+      "difficulte": "facile",
+      "emoji": "🍚",
+      "description": "Une version plus légère du koshari égyptien avec riz, lentilles, pois chiches, sauce tomate épicée et oignons croustillants. Vegan, rassasiant, très saucé.",
+      "ingredients": [
+        { "nom": "Riz cuit", "qty": "120 g" },
+        { "nom": "Lentilles cuites", "qty": "100 g" },
+        { "nom": "Pois chiches", "qty": "80 g" },
+        { "nom": "Pâtes courtes cuites", "qty": "60 g" },
+        { "nom": "Tomate concassée", "qty": "180 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Cumin, paprika, piment doux", "qty": "selon goût" },
+        { "nom": "Citron", "qty": "1/2" }
+      ],
+      "etapes": [
+        "Faire revenir l’ail avec les épices.",
+        "Ajouter la tomate concassée et laisser réduire en sauce.",
+        "Faire griller légèrement l’oignon en lamelles.",
+        "Assembler le riz, les lentilles, les pois chiches et les pâtes.",
+        "Verser la sauce tomate épicée par-dessus.",
+        "Ajouter les oignons et un filet de citron."
+      ],
+      "valeurs": {
+        "calories": 590,
+        "proteines": 22,
+        "glucides": 98,
+        "lipides": 10
+      },
+      "tags": ["veggie", "rassasiant", "saucy"]
+    },
+    {
+      "id": "shawarma-poulet-bowl-eg",
+      "nom": "Shawarma Bowl Poulet & Sauce Yaourt",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🥙",
+      "description": "Un bowl façon shawarma avec poulet épicé, riz, crudités, pickles et sauce yaourt-citron. Frais, généreux, bien parfumé.",
+      "ingredients": [
+        { "nom": "Blanc de poulet", "qty": "170 g" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Concombre", "qty": "1/2" },
+        { "nom": "Tomate", "qty": "1" },
+        { "nom": "Oignon rouge", "qty": "1/4" },
+        { "nom": "Yaourt grec", "qty": "80 g" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Cumin, paprika, cannelle, curcuma", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Mariner le poulet avec citron, ail et épices.",
+        "Faire griller le poulet à la poêle.",
+        "Préparer une sauce avec yaourt grec, citron, ail, sel et poivre.",
+        "Couper les crudités.",
+        "Assembler le riz, le poulet et les crudités dans un bol.",
+        "Ajouter la sauce yaourt par-dessus."
+      ],
+      "valeurs": {
+        "calories": 570,
+        "proteines": 45,
+        "glucides": 58,
+        "lipides": 17
+      },
+      "tags": ["protéiné", "frais", "oriental"]
+    },
+    {
+      "id": "falafel-bowl-tahini-eg",
+      "nom": "Falafel Bowl, Patate Douce & Sauce Tahini",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🧆",
+      "description": "Un bowl égyptien veggie avec falafels, patate douce rôtie, crudités et sauce tahini-citron. Croquant, fondant, bien équilibré.",
+      "ingredients": [
+        { "nom": "Falafels", "qty": "4 pièces" },
+        { "nom": "Patate douce", "qty": "250 g" },
+        { "nom": "Concombre", "qty": "1/2" },
+        { "nom": "Tomate", "qty": "1" },
+        { "nom": "Salade", "qty": "1 poignée" },
+        { "nom": "Tahini", "qty": "1 c. à soupe" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Yaourt grec", "qty": "60 g" },
+        { "nom": "Cumin, paprika, ail", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Couper la patate douce en cubes et la rôtir au four avec les épices.",
+        "Réchauffer ou cuire les falafels.",
+        "Préparer les crudités.",
+        "Mélanger tahini, yaourt grec, citron, ail, sel et un peu d’eau.",
+        "Assembler patate douce, falafels, crudités et salade.",
+        "Ajouter la sauce tahini par-dessus."
+      ],
+      "valeurs": {
+        "calories": 560,
+        "proteines": 22,
+        "glucides": 68,
+        "lipides": 22
+      },
+      "tags": ["veggie", "fondant", "croquant"]
+    }
+  ]
+},
     "Turquie": {
       "coords": [38.9637, 35.2433],
       "recettes": [
@@ -1552,6 +1773,230 @@
 }
      },
   "Afrique": {
+    "Cameroun": {
+  "coords": [7.3697, 12.3547],
+  "recettes": [
+    {
+      "id": "ndole-poulet-riz-cm",
+      "nom": "Ndolé Poulet, Riz & Sauce Arachide",
+      "repas": "dej",
+      "temps": 45,
+      "difficulte": "moyen",
+      "emoji": "🥜",
+      "description": "Un ndolé généreux avec poulet, feuilles amères, arachide et riz. Une sauce crémeuse, profonde, bien parfumée, le genre de plat qui ne fait pas semblant.",
+      "ingredients": [
+        { "nom": "Poulet", "qty": "180 g" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Feuilles de ndolé ou épinards", "qty": "180 g" },
+        { "nom": "Pâte d’arachide", "qty": "1 grosse c. à soupe" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+        { "nom": "Crevettes séchées", "qty": "optionnel" },
+        { "nom": "Piment doux, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’oignon, l’ail et le gingembre.",
+        "Ajouter le poulet et le faire dorer.",
+        "Ajouter les feuilles de ndolé ou les épinards.",
+        "Délayer la pâte d’arachide avec un peu d’eau chaude.",
+        "Verser la sauce arachide dans la poêle.",
+        "Laisser mijoter jusqu’à obtenir une sauce crémeuse.",
+        "Servir avec le riz chaud."
+      ],
+      "valeurs": {
+        "calories": 640,
+        "proteines": 44,
+        "glucides": 58,
+        "lipides": 26
+      },
+      "tags": ["crémeux", "afro", "protéiné"]
+    },
+    {
+      "id": "poulet-dg-light-cm",
+      "nom": "Poulet DG Light, Plantain & Légumes",
+      "repas": "diner",
+      "temps": 40,
+      "difficulte": "facile",
+      "emoji": "🍗",
+      "description": "Une version plus légère du Poulet DG avec poulet doré, plantain, carottes, poivrons et une sauce tomate-épicée bien nappante.",
+      "ingredients": [
+        { "nom": "Poulet", "qty": "180 g" },
+        { "nom": "Banane plantain", "qty": "1 petite" },
+        { "nom": "Carotte", "qty": "1" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Tomate concassée", "qty": "150 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+        { "nom": "Paprika, piment doux, thym", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Couper la plantain en rondelles et la cuire au four ou à l’air fryer.",
+        "Faire revenir l’oignon, l’ail et le gingembre.",
+        "Ajouter le poulet et le faire dorer.",
+        "Ajouter la tomate, les épices, la carotte et le poivron.",
+        "Laisser mijoter 15 à 20 min.",
+        "Ajouter la plantain rôtie en fin de cuisson.",
+        "Servir bien chaud avec un peu de sauce."
+      ],
+      "valeurs": {
+        "calories": 610,
+        "proteines": 42,
+        "glucides": 62,
+        "lipides": 20
+      },
+      "tags": ["gourmand", "saucy", "coloré"]
+    },
+    {
+      "id": "poisson-braise-attiéké-cm",
+      "nom": "Poisson Braisé, Attiéké & Sauce Verte",
+      "repas": "dej",
+      "temps": 35,
+      "difficulte": "facile",
+      "emoji": "🐟",
+      "description": "Un poisson bien mariné, grillé, servi avec attiéké, crudités et sauce verte aux herbes. Frais, parfumé, jamais sec.",
+      "ingredients": [
+        { "nom": "Poisson blanc ou dorade", "qty": "180 g" },
+        { "nom": "Attiéké", "qty": "180 g" },
+        { "nom": "Concombre", "qty": "1/2" },
+        { "nom": "Tomate", "qty": "1" },
+        { "nom": "Persil ou coriandre", "qty": "1 poignée" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+        { "nom": "Piment végétarien", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Mariner le poisson avec ail, citron, sel, poivre et piment doux.",
+        "Cuire le poisson au four, au grill ou à la poêle.",
+        "Réchauffer l’attiéké.",
+        "Mixer les herbes avec citron, ail, huile et un peu d’eau pour faire une sauce verte.",
+        "Couper les crudités.",
+        "Servir le poisson avec l’attiéké, les crudités et la sauce verte."
+      ],
+      "valeurs": {
+        "calories": 540,
+        "proteines": 40,
+        "glucides": 54,
+        "lipides": 16
+      },
+      "tags": ["grillé", "frais", "healthy"]
+    }
+  ]
+},
+"Congo": {
+  "coords": [-0.2280, 15.8277],
+  "recettes": [
+    {
+      "id": "saka-saka-poulet-riz-cg",
+      "nom": "Saka-Saka Poulet, Riz & Sauce Arachide",
+      "repas": "dej",
+      "temps": 50,
+      "difficulte": "moyen",
+      "emoji": "🌿",
+      "description": "Du saka-saka crémeux avec feuilles de manioc, arachide, poulet et riz. Un plat congolais intense, fondant, bien saucé.",
+      "ingredients": [
+        { "nom": "Poulet", "qty": "180 g" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Feuilles de manioc ou épinards", "qty": "200 g" },
+        { "nom": "Pâte d’arachide", "qty": "1 grosse c. à soupe" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Poisson fumé", "qty": "optionnel" },
+        { "nom": "Bouillon", "qty": "200 ml" },
+        { "nom": "Piment doux, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’oignon et l’ail.",
+        "Ajouter le poulet et le faire dorer.",
+        "Ajouter les feuilles de manioc ou les épinards.",
+        "Verser le bouillon et laisser mijoter.",
+        "Ajouter la pâte d’arachide diluée dans un peu d’eau chaude.",
+        "Laisser cuire jusqu’à obtenir une texture crémeuse.",
+        "Servir avec le riz chaud."
+      ],
+      "valeurs": {
+        "calories": 650,
+        "proteines": 43,
+        "glucides": 58,
+        "lipides": 28
+      },
+      "tags": ["crémeux", "traditionnel", "saucy"]
+    },
+    {
+      "id": "poulet-moambe-riz-cg",
+      "nom": "Poulet Moambe, Riz & Légumes",
+      "repas": "diner",
+      "temps": 45,
+      "difficulte": "facile",
+      "emoji": "🍛",
+      "description": "Un poulet moambe revisité avec une sauce tomate-arachide bien onctueuse, du riz et des légumes. Riche en goût, sans être lourd.",
+      "ingredients": [
+        { "nom": "Poulet", "qty": "180 g" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Tomate concassée", "qty": "150 g" },
+        { "nom": "Pâte d’arachide", "qty": "1 c. à soupe" },
+        { "nom": "Épinards", "qty": "1 poignée" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+        { "nom": "Paprika, piment doux", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’oignon, l’ail et le gingembre.",
+        "Ajouter le poulet et le faire dorer.",
+        "Ajouter la tomate concassée et les épices.",
+        "Laisser mijoter 15 min.",
+        "Ajouter la pâte d’arachide et un peu d’eau.",
+        "Incorporer les épinards en fin de cuisson.",
+        "Servir avec le riz."
+      ],
+      "valeurs": {
+        "calories": 620,
+        "proteines": 42,
+        "glucides": 58,
+        "lipides": 24
+      },
+      "tags": ["mijoté", "crémeux", "protéiné"]
+    },
+    {
+      "id": "makayabu-patate-douce-cg",
+      "nom": "Makayabu, Patate Douce & Sauce Tomate",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🐟",
+      "description": "De la morue salée façon makayabu avec patate douce, tomate, oignon et piment doux. Simple, goûteux, avec une vraie sauce.",
+      "ingredients": [
+        { "nom": "Morue dessalée", "qty": "150 g" },
+        { "nom": "Patate douce", "qty": "250 g" },
+        { "nom": "Tomate concassée", "qty": "150 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Piment doux", "qty": "selon goût" },
+        { "nom": "Cives ou ciboulette", "qty": "quelques brins" }
+      ],
+      "etapes": [
+        "Cuire la patate douce à l’eau ou à la vapeur.",
+        "Faire revenir l’oignon, l’ail et le poivron.",
+        "Ajouter la tomate concassée et le piment doux.",
+        "Ajouter la morue dessalée et émiettée.",
+        "Laisser mijoter quelques minutes.",
+        "Servir avec la patate douce et un filet de citron."
+      ],
+      "valeurs": {
+        "calories": 500,
+        "proteines": 34,
+        "glucides": 58,
+        "lipides": 12
+      },
+      "tags": ["salé", "fondant", "rapide"]
+    }
+  ]
+},
       "Maroc": {
       "coords": [31.7917, -7.0926],
       "recettes": [
@@ -4904,6 +5349,75 @@
       },
 
       "tags": ["frais", "protéiné", "crémeux"]
+
+    },
+    {
+
+      "id": "pita-kefta-feta-gr",
+
+      "nom": "Pita Kefta, Crudités & Sauce Feta",
+
+      "repas": "dej",
+
+      "temps": 25,
+
+      "difficulte": "facile",
+
+      "emoji": "🥙",
+
+      "description": "Une pita grecque avec kefta épicée, crudités croquantes et sauce feta-yaourt. Street food vibe, mais version équilibrée.",
+
+      "ingredients": [
+
+        { "nom": "Pain pita", "qty": "1" },
+
+        { "nom": "Bœuf haché 5%", "qty": "130 g" },
+
+        { "nom": "Concombre", "qty": "1/2" },
+
+        { "nom": "Tomate", "qty": "1" },
+
+        { "nom": "Oignon rouge", "qty": "1/4" },
+
+        { "nom": "Yaourt grec", "qty": "70 g" },
+
+        { "nom": "Feta", "qty": "35 g" },
+
+        { "nom": "Citron", "qty": "1/2" },
+
+        { "nom": "Cumin, paprika, origan", "qty": "selon goût" }
+
+      ],
+
+      "etapes": [
+
+        "Mélanger le bœuf haché avec les épices, sel et poivre.",
+
+        "Former de petites keftas et les cuire à la poêle.",
+
+        "Préparer la sauce avec yaourt grec, feta émiettée, citron et poivre.",
+
+        "Réchauffer la pita.",
+
+        "Garnir avec crudités, kefta et sauce feta.",
+
+        "Refermer et servir tiède."
+
+      ],
+
+      "valeurs": {
+
+        "calories": 560,
+
+        "proteines": 38,
+
+        "glucides": 46,
+
+        "lipides": 24
+
+      },
+
+      "tags": ["street food", "saucy", "protéiné"]
 
     },
 
