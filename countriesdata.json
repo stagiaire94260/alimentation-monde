@@ -1813,6 +1813,43 @@
       "tags": ["crémeux", "afro", "protéiné"]
     },
     {
+  "id": "koki-plantain-sauce-tomate-cm",
+  "nom": "Koki, Plantain Rôti & Sauce Tomate Épicée",
+  "repas": "diner",
+  "temps": 60,
+  "difficulte": "moyen",
+  "emoji": "🍌",
+  "description": "Un plat camerounais généreux avec koki fondant, plantain rôti et petite sauce tomate-oignon bien relevée. C’est nourrissant, parfumé, et surtout pas sec.",
+  "ingredients": [
+    { "nom": "Haricots cornille décortiqués", "qty": "120 g" },
+    { "nom": "Banane plantain mûre", "qty": "1 petite" },
+    { "nom": "Huile rouge ou huile végétale", "qty": "1 c. à soupe" },
+    { "nom": "Oignon", "qty": "1/2" },
+    { "nom": "Tomate concassée", "qty": "150 g" },
+    { "nom": "Ail", "qty": "1 gousse" },
+    { "nom": "Gingembre", "qty": "1 petit morceau" },
+    { "nom": "Piment doux", "qty": "selon goût" },
+    { "nom": "Paprika, sel, poivre", "qty": "selon goût" },
+    { "nom": "Citron vert", "qty": "1/2" }
+  ],
+  "etapes": [
+    "Faire tremper les haricots cornille, puis les mixer avec un peu d’eau pour obtenir une pâte lisse.",
+    "Assaisonner la pâte avec sel, poivre, paprika et un peu d’huile.",
+    "Verser dans un petit moule ou dans du papier cuisson bien fermé, puis cuire à la vapeur environ 40 à 45 min.",
+    "Couper la plantain en rondelles et la faire rôtir au four ou à l’air fryer jusqu’à ce qu’elle soit dorée.",
+    "Faire revenir l’oignon, l’ail et le gingembre dans une poêle.",
+    "Ajouter la tomate concassée, le piment doux, le sel et le poivre, puis laisser réduire en sauce.",
+    "Servir le koki avec la plantain rôtie, la sauce tomate épicée et un filet de citron vert."
+  ],
+  "valeurs": {
+    "calories": 590,
+    "proteines": 24,
+    "glucides": 78,
+    "lipides": 20
+  },
+  "tags": ["fondant", "saucy"]
+},
+    {
       "id": "poulet-dg-light-cm",
       "nom": "Poulet DG Light, Plantain & Légumes",
       "repas": "diner",
