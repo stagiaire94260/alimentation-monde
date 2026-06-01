@@ -1926,6 +1926,43 @@
   "coords": [-0.2280, 15.8277],
   "recettes": [
     {
+  "id": "poulet-mayo-riz-crudites-cg",
+  "nom": "Poulet Mayo, Riz & Crudités",
+  "repas": "dej",
+  "temps": 35,
+  "difficulte": "facile",
+  "emoji": "🍗",
+  "description": "Un poulet bien mariné, doré, nappé d’une sauce mayo légère ail-citron, avec du riz et des crudités fraîches. Généreux, crémeux, bien congolais dans l’esprit, mais en version plus clean.",
+  "ingredients": [
+    { "nom": "Poulet", "qty": "180 g" },
+    { "nom": "Riz cuit", "qty": "150 g" },
+    { "nom": "Mayonnaise légère", "qty": "1 c. à soupe" },
+    { "nom": "Yaourt grec", "qty": "1 c. à soupe" },
+    { "nom": "Moutarde", "qty": "1 c. à café" },
+    { "nom": "Citron", "qty": "1/2" },
+    { "nom": "Ail", "qty": "1 gousse" },
+    { "nom": "Oignon", "qty": "1/2" },
+    { "nom": "Tomate", "qty": "1" },
+    { "nom": "Concombre", "qty": "1/2" },
+    { "nom": "Paprika, gingembre, sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Mariner le poulet avec ail, citron, paprika, gingembre, sel et poivre.",
+    "Cuire le poulet au four, à l’air fryer ou à la poêle jusqu’à ce qu’il soit bien doré.",
+    "Mélanger la mayonnaise légère, le yaourt grec, la moutarde, un peu de citron et une pincée d’ail pour obtenir une sauce crémeuse.",
+    "Couper la tomate, le concombre et l’oignon en crudités.",
+    "Servir le poulet avec le riz chaud et les crudités.",
+    "Napper le poulet avec la sauce mayo légère juste avant de servir."
+  ],
+  "valeurs": {
+    "calories": 610,
+    "proteines": 43,
+    "glucides": 58,
+    "lipides": 22
+  },
+  "tags": ["crémeux", "grillé", "saucy"]
+},
+    {
       "id": "saka-saka-poulet-riz-cg",
       "nom": "Saka-Saka Poulet, Riz & Sauce Arachide",
       "repas": "dej",
@@ -5311,6 +5348,441 @@
 }
      },
   "Europe": {
+    "Italie": {
+  "coords": [41.8719, 12.5674],
+  "recettes": [
+    {
+      "id": "orzo-poulet-tomates-sechees-it",
+      "nom": "Orzo Poulet, Tomates Séchées & Épinards",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🍅",
+      "description": "Un orzo crémeux façon Italie avec poulet, tomates séchées, épinards et parmesan. Rapide, fondant, bien saucé, le genre d’assiette qui ne fatigue personne.",
+      "ingredients": [
+        { "nom": "Blanc de poulet", "qty": "160 g" },
+        { "nom": "Orzo cru", "qty": "80 g" },
+        { "nom": "Tomates séchées", "qty": "30 g" },
+        { "nom": "Épinards", "qty": "2 poignées" },
+        { "nom": "Crème légère ou soja cuisine", "qty": "80 ml" },
+        { "nom": "Parmesan", "qty": "20 g" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Bouillon", "qty": "250 ml" },
+        { "nom": "Basilic, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’ail avec le poulet coupé en morceaux.",
+        "Ajouter l’orzo cru, les tomates séchées et le bouillon.",
+        "Laisser cuire en remuant jusqu’à ce que l’orzo soit tendre.",
+        "Ajouter les épinards en fin de cuisson.",
+        "Verser la crème légère et ajouter le parmesan.",
+        "Mélanger jusqu’à obtenir une texture crémeuse.",
+        "Servir avec du basilic frais."
+      ],
+      "valeurs": {
+        "calories": 610,
+        "proteines": 44,
+        "glucides": 60,
+        "lipides": 21
+      },
+      "tags": ["crémeux", "italien", "protéiné"]
+    },
+    {
+      "id": "pasta-pesto-burrata-poulet-it",
+      "nom": "Pasta Pesto, Poulet & Burrata",
+      "repas": "diner",
+      "temps": 20,
+      "difficulte": "facile",
+      "emoji": "🍝",
+      "description": "Des pâtes au pesto avec poulet grillé, tomates cerises et burrata fondante. Simple, beau, gourmand, avec une vraie sauce qui nappe tout.",
+      "ingredients": [
+        { "nom": "Pâtes", "qty": "90 g cru" },
+        { "nom": "Blanc de poulet", "qty": "150 g" },
+        { "nom": "Pesto", "qty": "1 c. à soupe" },
+        { "nom": "Burrata", "qty": "1/2" },
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+        { "nom": "Roquette", "qty": "1 poignée" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Ail, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Cuire les pâtes al dente.",
+        "Faire griller le poulet avec ail, sel et poivre.",
+        "Garder un peu d’eau de cuisson des pâtes.",
+        "Mélanger les pâtes avec le pesto et un peu d’eau de cuisson pour créer une sauce.",
+        "Ajouter les tomates cerises et la roquette.",
+        "Servir avec le poulet tranché, la burrata et un filet de citron."
+      ],
+      "valeurs": {
+        "calories": 650,
+        "proteines": 42,
+        "glucides": 68,
+        "lipides": 25
+      },
+      "tags": ["gourmand", "saucy", "rapide"]
+    },
+    {
+      "id": "risotto-courgette-crevettes-citron-it",
+      "nom": "Risotto Courgette, Crevettes & Citron",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "moyen",
+      "emoji": "🍋",
+      "description": "Un risotto crémeux aux crevettes, courgette et citron. Une recette fraîche mais réconfortante, parfaite quand tu veux du goût sans lourdeur.",
+      "ingredients": [
+        { "nom": "Riz arborio", "qty": "80 g" },
+        { "nom": "Crevettes", "qty": "150 g" },
+        { "nom": "Courgette", "qty": "1/2" },
+        { "nom": "Bouillon", "qty": "400 ml" },
+        { "nom": "Parmesan", "qty": "20 g" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Persil, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’oignon et l’ail.",
+        "Ajouter le riz arborio et mélanger une minute.",
+        "Verser le bouillon petit à petit en remuant.",
+        "Ajouter la courgette en petits dés à mi-cuisson.",
+        "Faire sauter les crevettes à part quelques minutes.",
+        "Ajouter le parmesan et le citron dans le risotto.",
+        "Servir avec les crevettes et le persil."
+      ],
+      "valeurs": {
+        "calories": 560,
+        "proteines": 34,
+        "glucides": 66,
+        "lipides": 16
+      },
+      "tags": ["crémeux", "citronné", "raffiné"]
+    },
+    {
+      "id": "bruschetta-bowl-tomate-mozza-poulet-it",
+      "nom": "Bruschetta Bowl Poulet, Tomate & Mozza",
+      "repas": "dej",
+      "temps": 20,
+      "difficulte": "facile",
+      "emoji": "🥗",
+      "description": "Un bowl façon bruschetta avec poulet, tomate, mozzarella, basilic, riz ou pain grillé. Frais, juteux, plein de goût.",
+      "ingredients": [
+        { "nom": "Blanc de poulet", "qty": "150 g" },
+        { "nom": "Riz cuit ou pain complet grillé", "qty": "150 g" },
+        { "nom": "Tomates", "qty": "2" },
+        { "nom": "Mozzarella", "qty": "60 g" },
+        { "nom": "Basilic frais", "qty": "quelques feuilles" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+        { "nom": "Vinaigre balsamique", "qty": "1 c. à café" },
+        { "nom": "Ail", "qty": "1 petite gousse" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire griller le poulet avec sel, poivre et ail.",
+        "Couper les tomates et la mozzarella.",
+        "Mélanger les tomates avec basilic, huile d’olive, balsamique, sel et poivre.",
+        "Déposer le riz ou le pain grillé dans l’assiette.",
+        "Ajouter le poulet, les tomates et la mozzarella.",
+        "Verser le jus tomate-basilic par-dessus pour bien saucer."
+      ],
+      "valeurs": {
+        "calories": 560,
+        "proteines": 40,
+        "glucides": 50,
+        "lipides": 22
+      },
+      "tags": ["frais", "juteux", "méditerranéen"]
+    }
+  ]
+},
+"Espagne": {
+  "coords": [40.4637, -3.7492],
+  "recettes": [
+    {
+      "id": "paella-bowl-poulet-crevettes-es",
+      "nom": "Paella Bowl Poulet, Crevettes & Légumes",
+      "repas": "dej",
+      "temps": 35,
+      "difficulte": "moyen",
+      "emoji": "🥘",
+      "description": "Une paella version bowl, colorée et plus simple, avec riz safrané, poulet, crevettes, poivrons et petits pois. Goût maximum, assiette solaire.",
+      "ingredients": [
+        { "nom": "Riz", "qty": "80 g cru" },
+        { "nom": "Poulet", "qty": "120 g" },
+        { "nom": "Crevettes", "qty": "100 g" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Petits pois", "qty": "60 g" },
+        { "nom": "Tomate concassée", "qty": "120 g" },
+        { "nom": "Bouillon", "qty": "300 ml" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Paprika, curcuma ou safran", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’ail, le poulet et le poivron.",
+        "Ajouter le riz, la tomate concassée et les épices.",
+        "Verser le bouillon et laisser cuire doucement.",
+        "Ajouter les petits pois et les crevettes en fin de cuisson.",
+        "Laisser le riz absorber le liquide sans trop remuer.",
+        "Servir chaud avec un filet de citron."
+      ],
+      "valeurs": {
+        "calories": 610,
+        "proteines": 42,
+        "glucides": 72,
+        "lipides": 14
+      },
+      "tags": ["coloré", "saucy", "complet"]
+    },
+    {
+      "id": "tortilla-patate-douce-salade-es",
+      "nom": "Tortilla Patate Douce & Salade Tomate",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🍳",
+      "description": "Une tortilla moelleuse à la patate douce avec une salade tomate-oignon bien juteuse. Simple, rassasiant, très bon froid ou chaud.",
+      "ingredients": [
+        { "nom": "Œufs", "qty": "2" },
+        { "nom": "Patate douce", "qty": "220 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Tomate", "qty": "1" },
+        { "nom": "Salade", "qty": "1 poignée" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+        { "nom": "Paprika", "qty": "1 pincée" },
+        { "nom": "Sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Couper la patate douce en petits dés et la cuire à la poêle ou au four.",
+        "Faire revenir l’oignon jusqu’à ce qu’il soit fondant.",
+        "Battre les œufs avec sel, poivre et paprika.",
+        "Ajouter la patate douce et l’oignon aux œufs.",
+        "Cuire à feu doux dans une poêle jusqu’à ce que la tortilla soit prise.",
+        "Servir avec tomate, salade et un filet d’huile d’olive."
+      ],
+      "valeurs": {
+        "calories": 480,
+        "proteines": 22,
+        "glucides": 48,
+        "lipides": 22
+      },
+      "tags": ["moelleux", "végétarien", "rassasiant"]
+    },
+    {
+      "id": "bowl-chorizo-light-pois-chiches-es",
+      "nom": "Bowl Pois Chiches, Poulet & Sauce Paprika",
+      "repas": "dej",
+      "temps": 25,
+      "difficulte": "facile",
+      "emoji": "🌶️",
+      "description": "Un bowl inspiré des saveurs espagnoles avec poulet, pois chiches, poivrons, paprika fumé et sauce yaourt. Épicé doux, crémeux, pas sec.",
+      "ingredients": [
+        { "nom": "Poulet", "qty": "150 g" },
+        { "nom": "Pois chiches", "qty": "130 g" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Riz cuit", "qty": "100 g" },
+        { "nom": "Yaourt grec", "qty": "70 g" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Paprika fumé", "qty": "1 c. à café" },
+        { "nom": "Persil", "qty": "optionnel" }
+      ],
+      "etapes": [
+        "Faire revenir le poulet avec ail et paprika fumé.",
+        "Ajouter les pois chiches et le poivron.",
+        "Laisser dorer quelques minutes.",
+        "Préparer une sauce avec yaourt grec, citron, paprika, sel et poivre.",
+        "Assembler le riz, les pois chiches, le poulet et les légumes.",
+        "Ajouter la sauce paprika par-dessus."
+      ],
+      "valeurs": {
+        "calories": 560,
+        "proteines": 42,
+        "glucides": 58,
+        "lipides": 17
+      },
+      "tags": ["paprika", "crémeux", "protéiné"]
+    },
+    {
+      "id": "tapas-bowl-crevettes-patatas-es",
+      "nom": "Tapas Bowl Crevettes, Patatas & Sauce Ail",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🦐",
+      "description": "Un bowl façon tapas avec pommes de terre rôties, crevettes à l’ail, tomates et sauce yaourt-ail. Croustillant, crémeux, très vacances.",
+      "ingredients": [
+        { "nom": "Crevettes", "qty": "160 g" },
+        { "nom": "Pommes de terre", "qty": "250 g" },
+        { "nom": "Tomates cerises", "qty": "1 poignée" },
+        { "nom": "Salade", "qty": "1 poignée" },
+        { "nom": "Yaourt grec", "qty": "70 g" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Paprika, sel, poivre", "qty": "selon goût" },
+        { "nom": "Persil", "qty": "quelques feuilles" }
+      ],
+      "etapes": [
+        "Couper les pommes de terre en cubes et les rôtir avec paprika, sel et poivre.",
+        "Faire sauter les crevettes avec ail et citron.",
+        "Mélanger le yaourt grec avec ail, citron, sel et poivre.",
+        "Couper les tomates cerises.",
+        "Assembler pommes de terre, crevettes, salade et tomates.",
+        "Ajouter la sauce ail et le persil."
+      ],
+      "valeurs": {
+        "calories": 520,
+        "proteines": 34,
+        "glucides": 54,
+        "lipides": 18
+      },
+      "tags": ["tapas", "croustillant", "crémeux"]
+    }
+  ]
+},
+"Portugal": {
+  "coords": [39.3999, -8.2245],
+  "recettes": [
+    {
+      "id": "bowl-bacalhau-patate-douce-pt",
+      "nom": "Bowl Bacalhau, Patate Douce & Sauce Citron",
+      "repas": "dej",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🐟",
+      "description": "Un bowl portugais avec morue, patate douce, œuf, crudités et sauce citronnée. Protéiné, frais, nourrissant, avec du vrai goût.",
+      "ingredients": [
+        { "nom": "Morue dessalée", "qty": "150 g" },
+        { "nom": "Patate douce", "qty": "220 g" },
+        { "nom": "Œuf", "qty": "1" },
+        { "nom": "Concombre", "qty": "1/2" },
+        { "nom": "Tomate", "qty": "1" },
+        { "nom": "Yaourt grec", "qty": "60 g" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 petite gousse" },
+        { "nom": "Persil, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Cuire la patate douce en cubes au four ou à la vapeur.",
+        "Cuire l’œuf mollet ou dur selon préférence.",
+        "Faire revenir la morue dessalée avec ail et persil.",
+        "Préparer une sauce avec yaourt grec, citron, ail, sel et poivre.",
+        "Couper les crudités.",
+        "Assembler patate douce, morue, œuf et crudités.",
+        "Ajouter la sauce citronnée par-dessus."
+      ],
+      "valeurs": {
+        "calories": 530,
+        "proteines": 40,
+        "glucides": 52,
+        "lipides": 18
+      },
+      "tags": ["protéiné", "frais", "portugais"]
+    },
+    {
+      "id": "poulet-piri-piri-riz-legumes-pt",
+      "nom": "Poulet Piri-Piri, Riz & Légumes Grillés",
+      "repas": "diner",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🌶️",
+      "description": "Un poulet piri-piri bien mariné avec riz, légumes grillés et sauce yaourt-citron. Épicé, juteux, coloré.",
+      "ingredients": [
+        { "nom": "Poulet", "qty": "180 g" },
+        { "nom": "Riz cuit", "qty": "150 g" },
+        { "nom": "Courgette", "qty": "1/2" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Yaourt grec", "qty": "70 g" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Paprika, piment doux, origan", "qty": "selon goût" },
+        { "nom": "Huile d’olive", "qty": "1 c. à soupe" }
+      ],
+      "etapes": [
+        "Mariner le poulet avec citron, ail, paprika, piment doux, origan et huile d’olive.",
+        "Faire griller le poulet à la poêle ou au four.",
+        "Faire griller les légumes en lamelles.",
+        "Préparer une sauce avec yaourt grec, citron, ail, sel et poivre.",
+        "Servir le poulet avec le riz, les légumes et la sauce.",
+        "Ajouter un peu de citron au moment de servir."
+      ],
+      "valeurs": {
+        "calories": 560,
+        "proteines": 44,
+        "glucides": 56,
+        "lipides": 18
+      },
+      "tags": ["épicé", "grillé", "juteux"]
+    },
+    {
+      "id": "riz-crevettes-tomate-poivron-pt",
+      "nom": "Riz Crémeux Crevettes, Tomate & Poivron",
+      "repas": "dej",
+      "temps": 30,
+      "difficulte": "facile",
+      "emoji": "🦐",
+      "description": "Un riz aux crevettes inspiré du Portugal, avec tomate, poivron, ail et persil. Bien juteux, bien parfumé, pas besoin d’en faire trop.",
+      "ingredients": [
+        { "nom": "Crevettes", "qty": "160 g" },
+        { "nom": "Riz", "qty": "80 g cru" },
+        { "nom": "Tomate concassée", "qty": "150 g" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Bouillon", "qty": "300 ml" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Persil", "qty": "quelques feuilles" },
+        { "nom": "Paprika, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’oignon, l’ail et le poivron.",
+        "Ajouter le riz et la tomate concassée.",
+        "Verser le bouillon et laisser cuire doucement.",
+        "Ajouter les crevettes en fin de cuisson.",
+        "Laisser le riz devenir fondant et légèrement crémeux.",
+        "Servir avec persil et un filet de citron."
+      ],
+      "valeurs": {
+        "calories": 540,
+        "proteines": 34,
+        "glucides": 68,
+        "lipides": 12
+      },
+      "tags": ["crémeux", "parfumé", "rapide"]
+    },
+    {
+      "id": "toast-sardines-avocat-pt",
+      "nom": "Toast Sardines, Avocat & Citron",
+      "repas": "dej",
+      "temps": 10,
+      "difficulte": "facile",
+      "emoji": "🥑",
+      "description": "Un toast portugais modernisé avec sardines, avocat, citron, tomate et herbes. Rapide, riche en protéines, frais et très efficace.",
+      "ingredients": [
+        { "nom": "Pain complet ou pain au levain", "qty": "1 grande tranche" },
+        { "nom": "Sardines", "qty": "1 petite boîte" },
+        { "nom": "Avocat", "qty": "1/2" },
+        { "nom": "Tomate", "qty": "1" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Yaourt grec", "qty": "1 c. à soupe" },
+        { "nom": "Persil", "qty": "quelques feuilles" },
+        { "nom": "Poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Toaster le pain.",
+        "Écraser l’avocat avec citron, poivre et un peu de yaourt grec.",
+        "Couper la tomate en dés.",
+        "Déposer l’avocat sur le toast.",
+        "Ajouter les sardines et la tomate.",
+        "Terminer avec persil et citron."
+      ],
+      "valeurs": {
+        "calories": 430,
+        "proteines": 28,
+        "glucides": 34,
+        "lipides": 22
+      },
+      "tags": ["rapide", "frais", "oméga 3"]
+    }
+  ]
+},
     "Grèce": {
 
   "coords": [39.0742, 21.8243],
