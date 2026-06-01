@@ -1773,6 +1773,154 @@
 }
      },
   "Afrique": {
+    "Bénin": {
+  "coords": [9.3077, 2.3158],
+  "recettes": [
+    {
+      "id": "riz-gras-poulet-benin",
+      "nom": "Riz Gras Poulet, Légumes & Sauce Tomate Épicée",
+      "repas": "dej",
+      "temps": 35,
+      "difficulte": "facile",
+      "emoji": "🍛",
+      "description": "Un riz gras béninois revisité en version plus légère, avec poulet, légumes et une sauce tomate bien parfumée. C’est généreux, coloré, et surtout pas sec.",
+      "ingredients": [
+        { "nom": "Poulet", "qty": "180 g" },
+        { "nom": "Riz", "qty": "80 g cru" },
+        { "nom": "Tomate concassée", "qty": "180 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Carotte", "qty": "1" },
+        { "nom": "Poivron", "qty": "1/2" },
+        { "nom": "Bouillon", "qty": "300 ml" },
+        { "nom": "Paprika, gingembre, piment doux", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir l’oignon, l’ail et le gingembre dans une poêle profonde.",
+        "Ajouter le poulet en morceaux et le faire dorer.",
+        "Ajouter la tomate concassée, le paprika, le piment doux et les légumes coupés.",
+        "Verser le riz cru et le bouillon.",
+        "Couvrir et laisser cuire doucement jusqu’à absorption du liquide.",
+        "Mélanger en fin de cuisson pour que le riz soit bien nappé de sauce.",
+        "Servir chaud avec un peu de citron si souhaité."
+      ],
+      "valeurs": {
+        "calories": 610,
+        "proteines": 43,
+        "glucides": 74,
+        "lipides": 14
+      },
+      "tags": ["béninois", "saucy", "complet"]
+    },
+    {
+      "id": "amiwo-poulet-sauce-tomate-benin",
+      "nom": "Amiwo Poulet & Sauce Tomate Épicée",
+      "repas": "diner",
+      "temps": 40,
+      "difficulte": "moyen",
+      "emoji": "🌽",
+      "description": "Une assiette béninoise avec amiwo, poulet doré et sauce tomate-oignon bien relevée. C’est fondant, parfumé, avec une vraie sauce qui fait tout.",
+      "ingredients": [
+        { "nom": "Farine de maïs", "qty": "80 g" },
+        { "nom": "Poulet", "qty": "180 g" },
+        { "nom": "Tomate concassée", "qty": "180 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+        { "nom": "Bouillon", "qty": "300 ml" },
+        { "nom": "Huile", "qty": "1 c. à soupe" },
+        { "nom": "Piment doux, paprika, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Faire revenir une partie de la tomate avec oignon, ail, gingembre et épices.",
+        "Ajouter de l’eau ou du bouillon, puis verser progressivement la farine de maïs en remuant.",
+        "Cuire jusqu’à obtenir une pâte fondante et bien liée.",
+        "Faire dorer le poulet à part avec ail, paprika, sel et poivre.",
+        "Préparer une sauce tomate avec le reste de tomate, oignon et piment doux.",
+        "Laisser réduire jusqu’à obtenir une sauce bien nappante.",
+        "Servir l’amiwo avec le poulet et la sauce tomate."
+      ],
+      "valeurs": {
+        "calories": 620,
+        "proteines": 42,
+        "glucides": 68,
+        "lipides": 18
+      },
+      "tags": ["traditionnel", "fondant", "épicé"]
+    },
+    {
+      "id": "igname-pilee-sauce-arachide-boeuf-benin",
+      "nom": "Igname Pilée, Bœuf & Sauce Arachide",
+      "repas": "dej",
+      "temps": 45,
+      "difficulte": "moyen",
+      "emoji": "🥜",
+      "description": "Une version généreuse et crémeuse avec igname pilée, bœuf mijoté et sauce arachide. Très comfort food, mais toujours propre et bien équilibré.",
+      "ingredients": [
+        { "nom": "Igname", "qty": "250 g" },
+        { "nom": "Bœuf maigre", "qty": "150 g" },
+        { "nom": "Pâte d’arachide", "qty": "1 grosse c. à soupe" },
+        { "nom": "Tomate concassée", "qty": "120 g" },
+        { "nom": "Oignon", "qty": "1/2" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Gingembre", "qty": "1 petit morceau" },
+        { "nom": "Bouillon", "qty": "250 ml" },
+        { "nom": "Piment doux, sel, poivre", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Cuire l’igname dans l’eau jusqu’à ce qu’elle soit bien tendre.",
+        "L’écraser ou la piler jusqu’à obtenir une texture lisse.",
+        "Faire revenir l’oignon, l’ail et le gingembre.",
+        "Ajouter le bœuf et le faire dorer.",
+        "Ajouter la tomate concassée, le bouillon et les épices.",
+        "Incorporer la pâte d’arachide et laisser mijoter jusqu’à obtenir une sauce crémeuse.",
+        "Servir l’igname pilée avec le bœuf et la sauce arachide."
+      ],
+      "valeurs": {
+        "calories": 680,
+        "proteines": 38,
+        "glucides": 74,
+        "lipides": 24
+      },
+      "tags": ["crémeux", "rassasiant", "afro"]
+    },
+    {
+      "id": "poisson-braise-ablo-crudites-benin",
+      "nom": "Poisson Braisé, Ablo & Crudités",
+      "repas": "diner",
+      "temps": 35,
+      "difficulte": "facile",
+      "emoji": "🐟",
+      "description": "Un poisson bien mariné, servi avec ablo moelleux, crudités fraîches et sauce verte citronnée. C’est frais, grillé, parfumé, vraiment pas sec.",
+      "ingredients": [
+        { "nom": "Poisson blanc ou dorade", "qty": "180 g" },
+        { "nom": "Ablo", "qty": "2 petits" },
+        { "nom": "Concombre", "qty": "1/2" },
+        { "nom": "Tomate", "qty": "1" },
+        { "nom": "Oignon rouge", "qty": "1/4" },
+        { "nom": "Citron", "qty": "1/2" },
+        { "nom": "Persil ou coriandre", "qty": "1 poignée" },
+        { "nom": "Ail", "qty": "1 gousse" },
+        { "nom": "Piment végétarien ou piment doux", "qty": "selon goût" }
+      ],
+      "etapes": [
+        "Mariner le poisson avec ail, citron, sel, poivre et piment doux.",
+        "Cuire le poisson au four, au grill ou à la poêle.",
+        "Réchauffer les ablo à la vapeur.",
+        "Couper les crudités.",
+        "Mixer les herbes avec citron, ail, un peu d’eau, sel et poivre pour obtenir une sauce verte.",
+        "Servir le poisson avec les ablo, les crudités et la sauce verte."
+      ],
+      "valeurs": {
+        "calories": 520,
+        "proteines": 38,
+        "glucides": 54,
+        "lipides": 16
+      },
+      "tags": ["grillé", "frais", "saucy"]
+    }
+  ]
+},
     "Cameroun": {
   "coords": [7.3697, 12.3547],
   "recettes": [
