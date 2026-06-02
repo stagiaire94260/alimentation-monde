@@ -6299,6 +6299,93 @@
   "coords": [46.6034, 1.8883],
   "recettes": [
     {
+
+  "id": "bowl-riz-crevettes-legumes-pommes-de-terre-fr",
+
+  "nom": "Bowl Riz, Crevettes, Légumes & Pommes de Terre",
+
+  "repas": "dej",
+
+  "temps": 35,
+
+  "difficulte": "facile",
+
+  "emoji": "🍤",
+
+  "description": "Un bowl complet avec riz, crevettes grillées, légumes fondants, pommes de terre rôties et sauce blanche légère. Le genre d’assiette qui rappelle que bien manger, ce n’est clairement pas une punition.",
+
+  "ingredients": [
+
+    { "nom": "Riz cuit", "qty": "150 g" },
+
+    { "nom": "Crevettes ou brochettes de crevettes", "qty": "150 g" },
+
+    { "nom": "Pommes de terre", "qty": "200 g" },
+
+    { "nom": "Courgette", "qty": "1/2" },
+
+    { "nom": "Oignon", "qty": "1/2" },
+
+    { "nom": "Poivron vert", "qty": "1/2" },
+
+    { "nom": "Yaourt grec ou fromage blanc", "qty": "2 c. à soupe" },
+
+    { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+
+    { "nom": "Jus de citron", "qty": "1 filet" },
+
+    { "nom": "Ail", "qty": "1 gousse" },
+
+    { "nom": "Paprika", "qty": "1 c. à café" },
+
+    { "nom": "Persil ou coriandre", "qty": "selon goût" },
+
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+
+  ],
+
+  "etapes": [
+
+    "Faire cuire le riz selon les indications du paquet.",
+
+    "Couper les pommes de terre en morceaux.",
+
+    "Assaisonner les pommes de terre avec l’huile d’olive, le paprika, l’ail, le sel et le poivre.",
+
+    "Faire rôtir les pommes de terre au four à 200°C pendant 25 à 30 minutes ou les faire dorer à la poêle.",
+
+    "Émincer l’oignon, la courgette et le poivron.",
+
+    "Faire revenir les légumes à la poêle avec un peu d’ail, du sel, du poivre et des herbes.",
+
+    "Assaisonner les crevettes avec du citron, du paprika, de l’ail, du sel et du poivre.",
+
+    "Faire griller les crevettes 2 à 3 minutes de chaque côté.",
+
+    "Mélanger le yaourt grec ou le fromage blanc avec du citron, de l’ail, du sel, du poivre et des herbes pour faire la sauce.",
+
+    "Assembler le bowl avec le riz, les légumes, les pommes de terre, les crevettes et la sauce blanche.",
+
+    "Ajouter un peu de paprika ou d’herbes par-dessus avant de servir."
+
+  ],
+
+  "valeurs": {
+
+    "calories": 620,
+
+    "proteines": 38,
+
+    "glucides": 74,
+
+    "lipides": 18
+
+  },
+
+  "tags": ["bowl", "protéiné", "équilibré"]
+
+},
+    {
   "id": "entree-concombre-tomates-nectarine-stracciatella-fr",
   "nom": "Entrée Concombre, Tomates & Stracciatella",
   "repas": "dej",
