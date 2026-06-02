@@ -6298,6 +6298,47 @@
     "France": {
   "coords": [46.6034, 1.8883],
   "recettes": [
+    {
+  "id": "entree-concombre-tomates-nectarine-stracciatella-fr",
+  "nom": "Entrée Concombre, Tomates & Stracciatella",
+  "repas": "dej",
+  "temps": 10,
+  "difficulte": "facile",
+  "emoji": "🥒",
+  "description": "Une petite entrée fraîche, croquante et sucrée-salée avec concombre, tomates, nectarine et stracciatella. Simple, jolie, un peu crémeuse. Le genre d’entrée qui fait très maison mais quand même petit resto.",
+  "ingredients": [
+    { "nom": "Concombre", "qty": "1/2" },
+    { "nom": "Tomates cerises", "qty": "8 à 10" },
+    { "nom": "Nectarine ou pêche jaune", "qty": "1/2" },
+    { "nom": "Salade verte ou roquette", "qty": "1 poignée" },
+    { "nom": "Stracciatella", "qty": "40 g" },
+    { "nom": "Huile d’olive", "qty": "1 filet" },
+    { "nom": "Jus de citron", "qty": "1 filet" },
+    { "nom": "Menthe, basilic ou coriandre", "qty": "selon goût" },
+    { "nom": "Origan ou zaatar", "qty": "selon goût" },
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Couper le concombre en petits dés.",
+    "Couper les tomates cerises en deux.",
+    "Couper la nectarine ou la pêche en petits morceaux.",
+    "Déposer la salade au fond d’un petit bol.",
+    "Ajouter le concombre, les tomates et la nectarine.",
+    "Ajouter la stracciatella au centre.",
+    "Assaisonner avec l’huile d’olive, le citron, le sel, le poivre et l’origan ou le zaatar.",
+    "Terminer avec quelques herbes fraîches.",
+    "Servir bien frais."
+  ],
+  "valeurs": {
+    "calories": 230,
+    "proteines": 8,
+    "glucides": 14,
+    "lipides": 16
+  },
+  "tags": ["entrée", "frais", "stracciatella"]
+},
+    
+    
      {
 
       "id": "poulet-moutarde-riz-brocolis-fr",
