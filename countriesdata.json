@@ -6298,6 +6298,54 @@
     "France": {
   "coords": [46.6034, 1.8883],
   "recettes": [
+   {
+  "id": "tartines-avocat-crevettes-salade-stracciatella-fr",
+  "nom": "Tartines Avocat, Crevettes & Salade Stracciatella",
+  "repas": "dej",
+  "temps": 25,
+  "difficulte": "facile",
+  "emoji": "🥑",
+  "description": "Une assiette façon brunch maison avec tartines croustillantes, avocat écrasé, crevettes poêlées, œufs au plat et salade fraîche à la stracciatella. C’est simple, beau, protéiné, et ça donne clairement envie de manger à la maison.",
+  "ingredients": [
+    { "nom": "Pain complet ou pain de campagne", "qty": "2 tranches" },
+    { "nom": "Avocat", "qty": "1/2" },
+    { "nom": "Crevettes décortiquées", "qty": "120 g" },
+    { "nom": "Œufs", "qty": "2" },
+    { "nom": "Salade verte ou jeunes pousses", "qty": "2 poignées" },
+    { "nom": "Stracciatella", "qty": "50 g" },
+    { "nom": "Pomme", "qty": "1/2" },
+    { "nom": "Tomates cerises", "qty": "8" },
+    { "nom": "Concombre", "qty": "1/3" },
+    { "nom": "Olives noires", "qty": "6" },
+    { "nom": "Huile d’olive", "qty": "1 c. à soupe" },
+    { "nom": "Jus de citron", "qty": "1 filet" },
+    { "nom": "Ail", "qty": "1 gousse" },
+    { "nom": "Paprika", "qty": "1/2 c. à café" },
+    { "nom": "Persil, coriandre ou basilic", "qty": "selon goût" },
+    { "nom": "Sel, poivre", "qty": "selon goût" }
+  ],
+  "etapes": [
+    "Faire griller les tranches de pain jusqu’à ce qu’elles soient bien croustillantes.",
+    "Écraser l’avocat avec un filet de citron, du sel, du poivre et quelques herbes fraîches.",
+    "Faire revenir les crevettes à la poêle avec un peu d’huile d’olive, l’ail, le paprika, le sel et le poivre.",
+    "Cuire les œufs au plat dans une poêle antiadhésive.",
+    "Étaler l’avocat écrasé sur les tartines.",
+    "Ajouter les œufs au plat sur les tartines, puis déposer les crevettes par-dessus.",
+    "Dans un bol, déposer la salade verte.",
+    "Couper la pomme, les tomates cerises et le concombre en petits morceaux.",
+    "Ajouter la pomme, les tomates, le concombre, les olives noires et la stracciatella dans la salade.",
+    "Assaisonner la salade avec l’huile d’olive, le citron, le sel, le poivre et les herbes fraîches.",
+    "Servir les tartines avec la salade à côté."
+  ],
+  "valeurs": {
+    "calories": 720,
+    "proteines": 45,
+    "glucides": 55,
+    "lipides": 36
+  },
+  "tags": ["brunch", "protéiné", "stracciatella"]
+}
+    
     {
 
   "id": "bowl-riz-crevettes-legumes-pommes-de-terre-fr",
