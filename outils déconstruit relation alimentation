@@ -1,0 +1,572 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --red:#A91B18;--red-d:#8a1512;--burgundy:#700243;
+  --cream:#FBF6F6;--cream2:#F7EEEE;--cream3:#EDE4E4;
+  --white:#FFFEFE;--text:#3F0405;--muted:#6F4A4C;--soft:#9D7A7C;
+  --line:rgba(169,27,24,.11);--line-s:rgba(169,27,24,.22);
+  --sh:0 8px 28px rgba(63,4,5,.10);--sh-lg:0 18px 50px rgba(63,4,5,.14);
+  --f:'Inter',system-ui,-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--f);background:var(--cream);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+
+.hero{padding:3rem 1.25rem 2.5rem;text-align:center;
+  background:linear-gradient(160deg,#f2e8e8 0%,#fbf6f6 50%,#f0eaf5 100%);
+  border-bottom:1px solid var(--line);position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse at 10% 20%,rgba(169,27,24,.07) 0%,transparent 50%),
+             radial-gradient(ellipse at 90% 80%,rgba(112,2,67,.05) 0%,transparent 50%);}
+.eyebrow{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--red);background:rgba(169,27,24,.07);border:1px solid rgba(169,27,24,.14);
+  border-radius:999px;padding:6px 13px;margin-bottom:.9rem;}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;
+  color:var(--text);margin-bottom:.9rem;}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--red);}
+.hero-lead{font-size:14px;color:var(--muted);max-width:540px;margin:0 auto;line-height:1.75;}
+
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem;}
+.section{padding:2.5rem 0;}.section-border{border-top:1px solid var(--line);}
+.sh{text-align:center;margin-bottom:1.75rem;}
+.sh-eye{font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--red);margin-bottom:.4rem;}
+.sh-title{font-size:clamp(1.3rem,3vw,1.85rem);font-weight:800;letter-spacing:-.025em;color:var(--text);line-height:1.2;}
+.sh-title em{font-style:italic;font-weight:400;color:var(--red);}
+.sh-sub{font-size:13px;color:var(--muted);margin-top:.4rem;line-height:1.6;}
+
+/* PROFILS */
+.profils-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:2rem;}
+.profil-card{background:var(--white);border:1px solid var(--line);border-radius:14px;
+  padding:1rem 1.1rem;border-left:3px solid var(--red);}
+.profil-card.p-vis{border-left-color:#c07a1a;}
+.profil-card.p-ctl{border-left-color:#5a2d8a;}
+.profil-card.p-emo{border-left-color:#1a6aa9;}
+.profil-name{font-size:13px;font-weight:800;color:var(--text);margin-bottom:3px;}
+.profil-desc{font-size:11.5px;color:var(--muted);line-height:1.5;}
+
+/* CROYANCES — accordéon, croix retirée, juste le + à droite */
+.croy-acc{display:grid;gap:9px;margin-bottom:2rem;}
+.croy-item{background:var(--white);border:1px solid var(--line);border-radius:13px;overflow:hidden;}
+.croy-btn{width:100%;border:none;background:var(--white);padding:.9rem 1.1rem;cursor:pointer;
+  font-family:var(--f);display:flex;align-items:flex-start;justify-content:space-between;
+  gap:12px;text-align:left;transition:background .15s;}
+.croy-btn:hover{background:var(--cream2);}
+.croy-false{font-size:12.5px;font-weight:800;color:var(--red);margin-bottom:3px;}
+.croy-hint{font-size:11.5px;color:var(--soft);font-style:italic;}
+.croy-arr{font-size:20px;color:var(--red);transition:transform .2s;flex-shrink:0;line-height:1;
+  margin-top:2px;}
+.croy-item.open .croy-arr{transform:rotate(45deg);}
+.croy-content{display:none;padding:.85rem 1.1rem;border-top:1px solid var(--line);background:var(--cream2);}
+.croy-item.open .croy-content{display:block;}
+.croy-truth{font-size:12.5px;color:var(--muted);line-height:1.7;}
+.croy-truth strong{color:var(--text);font-weight:700;}
+
+/* QUIZ */
+.quiz-wrap{background:var(--white);border:1px solid var(--line);border-radius:20px;
+  overflow:hidden;box-shadow:var(--sh-lg);margin-bottom:1.5rem;}
+.quiz-header{padding:1.25rem 1.5rem 1rem;background:var(--cream2);border-bottom:1px solid var(--line);}
+.quiz-badge{display:inline-flex;align-items:center;font-size:10px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--red);background:rgba(169,27,24,.07);
+  border:1px solid rgba(169,27,24,.12);border-radius:999px;padding:6px 11px;margin-bottom:.6rem;}
+.quiz-title{font-size:1.25rem;font-weight:800;letter-spacing:-.02em;color:var(--text);margin-bottom:.3rem;}
+.quiz-intro{font-size:13px;color:var(--muted);line-height:1.65;}
+.quiz-progress-wrap{margin-top:1rem;}
+.quiz-progress{width:100%;height:8px;background:rgba(169,27,24,.1);border-radius:999px;overflow:hidden;}
+.quiz-bar{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--red),var(--burgundy));transition:width .28s ease;}
+.quiz-progress-meta{display:flex;justify-content:space-between;margin-top:8px;font-size:11.5px;font-weight:700;color:var(--soft);}
+.quiz-body{padding:1.25rem 1.5rem;}
+.q-step{display:block;}.q-step[hidden]{display:none;}
+.q-card{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:1.25rem 1.35rem;}
+.q-badge{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);background:rgba(169,27,24,.07);border:1px solid rgba(169,27,24,.12);
+  border-radius:999px;padding:4px 10px;margin-bottom:.7rem;}
+.q-title{font-size:1.05rem;font-weight:800;letter-spacing:-.02em;color:var(--text);line-height:1.3;margin-bottom:1rem;}
+.q-opts{display:grid;gap:8px;}
+.q-opt{width:100%;text-align:left;padding:13px 15px;border-radius:13px;border:1px solid var(--line);
+  background:var(--white);cursor:pointer;font-family:var(--f);font-size:13.5px;font-weight:600;
+  color:var(--text);transition:all .18s;line-height:1.5;}
+.q-opt:hover{border-color:var(--line-s);transform:translateY(-1px);}
+.q-opt.sel{background:var(--red);color:#fff;border-color:var(--red);}
+.q-nav{display:flex;gap:10px;margin-top:1rem;}
+.q-btn{flex:1;padding:13px 16px;border:none;border-radius:999px;font-family:var(--f);
+  font-size:13px;font-weight:800;cursor:pointer;transition:all .18s;}
+.q-btn-primary{background:var(--red);color:#fff;box-shadow:0 6px 18px rgba(169,27,24,.22);}
+.q-btn-primary:hover{background:var(--red-d);transform:translateY(-1px);}
+.q-btn-secondary{background:var(--white);color:var(--red);border:1px solid rgba(169,27,24,.18);}
+.q-btn:disabled{opacity:.5;cursor:default;transform:none;}
+.q-error{font-size:12.5px;font-weight:700;color:var(--red);margin-top:.5rem;min-height:18px;}
+.q-results{margin-top:1.25rem;display:none;}.q-results.show{display:block;}
+
+/* RESULTS */
+.qr-wrap{background:var(--cream);border:1px solid var(--line);border-radius:18px;overflow:hidden;}
+.score-section{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.25rem;margin-bottom:1rem;}
+.score-title{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:.9rem;}
+.score-row{display:grid;grid-template-columns:150px 1fr 32px;align-items:center;gap:10px;margin-bottom:10px;}
+.score-row:last-child{margin-bottom:0;}
+.score-label{font-size:12px;font-weight:800;color:var(--text);}
+.score-track{height:8px;background:rgba(169,27,24,.08);border-radius:999px;overflow:hidden;}
+.score-fill{height:100%;border-radius:999px;transition:width 1s cubic-bezier(.16,1,.3,1);}
+.score-fill.f-reg{background:linear-gradient(90deg,#A91B18,#c43232);}
+.score-fill.f-vis{background:linear-gradient(90deg,#c07a1a,#e09030);}
+.score-fill.f-ctl{background:linear-gradient(90deg,#5a2d8a,#7a4daa);}
+.score-fill.f-emo{background:linear-gradient(90deg,#1a6aa9,#3a8ac9);}
+.score-pct{font-size:11px;font-weight:800;color:var(--soft);text-align:right;}
+.qr-head{padding:1.25rem 1.5rem 1rem;background:var(--cream2);border-bottom:1px solid var(--line);}
+.qr-badge{display:inline-flex;align-items:center;font-size:9.5px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--red);background:rgba(169,27,24,.07);
+  border:1px solid rgba(169,27,24,.12);border-radius:999px;padding:4px 10px;margin-bottom:.5rem;}
+.qr-profil{font-size:1.3rem;font-weight:800;letter-spacing:-.025em;color:var(--text);line-height:1.2;margin-bottom:.25rem;}
+.qr-tagline{font-size:13px;color:var(--muted);line-height:1.5;}
+.qr-body{padding:1.25rem 1.5rem;}
+.acc-item{border:1px solid var(--line);border-radius:13px;background:var(--white);overflow:hidden;margin-bottom:8px;}
+.acc-item:last-child{margin-bottom:0;}
+.acc-btn{width:100%;border:none;background:var(--white);padding:12px 14px;text-align:left;cursor:pointer;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:var(--f);}
+.acc-btn-title{font-size:12.5px;font-weight:800;color:var(--text);line-height:1.3;}
+.acc-arrow{font-size:18px;color:var(--red);transition:transform .2s;flex-shrink:0;line-height:1;}
+.acc-item.open .acc-arrow{transform:rotate(45deg);}
+.acc-content{display:none;padding:0 13px 12px;border-top:1px solid var(--line);}
+.acc-item.open .acc-content{display:block;}
+.acc-block{background:var(--cream);border:1px solid var(--line);border-radius:11px;padding:10px 12px;margin-top:8px;}
+.acc-label{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:4px;}
+.acc-text{font-size:12.5px;color:var(--muted);line-height:1.65;}
+
+/* PÉPITE — corrigée : texte aligné à gauche, pas centré */
+.pepite{background:linear-gradient(135deg,#2e1010 0%,#6b1a1a 100%);border-radius:13px;
+  padding:1rem 1.1rem;margin-top:8px;}
+.pepite-label{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);margin-bottom:6px;}
+.pepite-text{font-size:12.5px;color:rgba(255,255,255,.88);line-height:1.7;text-align:left;}
+.pepite-text strong{color:#fff;font-weight:800;}
+
+.cr-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.cr-tag{font-size:11.5px;padding:4px 11px;border-radius:999px;background:rgba(169,27,24,.07);
+  color:var(--red);border:1px solid rgba(169,27,24,.15);font-weight:700;}
+.comp-link{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:800;
+  color:var(--red);text-decoration:none;border:1px solid rgba(169,27,24,.2);border-radius:999px;
+  padding:5px 13px;background:rgba(169,27,24,.06);transition:all .15s;}
+.comp-link:hover{background:var(--red);color:#fff;}
+
+.connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:2rem;}
+.connect-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem;
+  display:flex;flex-direction:column;gap:.5rem;transition:transform .16s,box-shadow .16s;text-decoration:none;}
+.connect-card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(63,4,5,.11);}
+.cc-tag{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);}
+.cc-title{font-size:13.5px;font-weight:800;color:var(--text);line-height:1.3;}
+.cc-desc{font-size:12px;color:var(--muted);line-height:1.6;}
+.cc-arrow{font-size:11px;color:var(--soft);margin-top:.2rem;}
+footer{text-align:center;padding:2.5rem 1.25rem 2rem;border-top:1px solid var(--line);margin-top:1rem;
+  font-size:11.5px;color:var(--soft);line-height:1.9;}
+footer em{font-style:italic;color:var(--muted);}
+
+@media(min-width:600px){
+  .hero{padding:4.5rem 2rem 3.5rem;}
+  .wrap{padding:0 2rem;}
+  .quiz-body{padding:1.5rem 2rem;}
+  .quiz-header{padding:1.5rem 2rem 1.25rem;}
+  .qr-body{padding:1.5rem 2rem;}
+  .qr-head{padding:1.5rem 2rem 1.25rem;}
+  .score-row{grid-template-columns:160px 1fr 32px;}
+}
+@media(max-width:480px){
+  .hero{padding:2rem 1rem 1.75rem;}
+  .wrap{padding:0 .9rem;}
+  .section{padding:1.75rem 0;}
+  .profils-grid{grid-template-columns:1fr;}
+  .quiz-header{padding:1rem 1rem .9rem;}
+  .quiz-body{padding:1rem;}
+  .q-card{padding:1rem 1.1rem;}
+  .q-title{font-size:.95rem;}
+  .q-opt{font-size:13px;padding:11px 12px;}
+  .q-nav{flex-direction:column;gap:7px;}
+  .q-btn{width:100%;}
+  .qr-head{padding:1rem;}
+  .qr-body{padding:1rem;}
+  .score-row{grid-template-columns:105px 1fr 28px;}
+  .score-label{font-size:11px;}
+  .connect-grid{grid-template-columns:1fr;}
+  .sh{margin-bottom:1.25rem;}
+  .croy-btn{padding:.8rem .9rem;}
+  .croy-false{font-size:12px;}
+}
+@media(max-width:360px){
+  .hero h1{font-size:1.6rem;}
+  .score-row{grid-template-columns:85px 1fr 24px;}
+}
+</style>
+
+
+<header class="hero">
+  <div class="eyebrow">Relation à l'alimentation</div>
+  <h1>Non, tu ne fous pas<br>tout <em>en l'air</em></h1>
+  <p class="hero-lead">Tu manges comme on t'a appris à faire. Ce quiz est là pour comprendre quoi.</p>
+</header>
+
+<section class="section" id="profils">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">4 profils</div>
+      <h2 class="sh-title">Tu te reconnais dans <em>lequel</em> ?</h2>
+      <p class="sh-sub">La plupart d'entre nous sommes un mélange. Le quiz va peser chaque dimension pour toi.</p>
+    </div>
+    <div class="profils-grid">
+      <div class="profil-card">
+        <div class="profil-name">Je mange par habitude</div>
+        <div class="profil-desc">Les règles de ton enfance guident encore tes choix. Finir l'assiette. Manger à heures fixes. Ne pas gaspiller. Tu n'as jamais vraiment décidé ces règles — elles étaient là avant toi.</div>
+      </div>
+      <div class="profil-card p-vis">
+        <div class="profil-name">Je craque facilement</div>
+        <div class="profil-desc">Tu manges pour le goût et le plaisir, souvent déclenché par ce que tu vois ou sens. Tu n'avais pas faim, et pourtant. La nourriture attire avant que la faim arrive.</div>
+      </div>
+      <div class="profil-card p-ctl">
+        <div class="profil-name">J'ai peur de mal manger</div>
+        <div class="profil-desc">Tu classes les aliments en bons et mauvais. Tu évites certaines choses par peur de grossir. Et plus tu te surveilles, plus la nourriture prend de la place dans ta tête.</div>
+      </div>
+      <div class="profil-card p-emo">
+        <div class="profil-name">Je mange mes émotions</div>
+        <div class="profil-desc">Ta faim varie selon ton état intérieur. Le stress, l'ennui, la tristesse, la fatigue — tous parlent dans ton assiette. La nourriture calme quelque chose que les mots ne résolvent pas.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-border" id="croyances">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Ce qu'on entend partout</div>
+      <h2 class="sh-title">Les croyances qui <em>compliquent ta relation</em> à la nourriture</h2>
+      <p class="sh-sub">Clique sur chacune pour voir ce qui est vrai.</p>
+    </div>
+    <div class="croy-acc">
+
+      <div class="croy-item">
+        <button class="croy-btn" type="button">
+          <div><div class="croy-false">"Les glucides font grossir"</div><div class="croy-hint">Clique pour voir</div></div>
+          <span class="croy-arr">+</span>
+        </button>
+        <div class="croy-content"><p class="croy-truth">Les glucides sont le carburant n°1 du muscle et du cerveau. <strong>Ce qui fait grossir, c'est un excès calorique global</strong> — pas un macronutriment isolé. Les éviter crée souvent des fringales intenses, des écarts compensés, et une relation encore plus compliquée à l'alimentation.</p></div>
+      </div>
+
+      <div class="croy-item">
+        <button class="croy-btn" type="button">
+          <div><div class="croy-false">"Il faut finir son assiette, on ne gaspille pas"</div><div class="croy-hint">Clique pour voir</div></div>
+          <span class="croy-arr">+</span>
+        </button>
+        <div class="croy-content"><p class="croy-truth">Manger au-delà de sa satiété pour ne pas gaspiller <strong>déconnecte des signaux internes</strong>. Ce réflexe appris dans l'enfance court-circuite la capacité naturelle du corps à réguler ses apports. C'est une règle qu'on t'a apprise, qui pour toi est naturelle.</p></div>
+      </div>
+
+      <div class="croy-item">
+        <button class="croy-btn" type="button">
+          <div><div class="croy-false">"Sauter un repas aide à perdre du poids"</div><div class="croy-hint">Clique pour voir</div></div>
+          <span class="croy-arr">+</span>
+        </button>
+        <div class="croy-content"><p class="croy-truth">Sauter un repas augmente le cortisol, accroît les fringales en fin de journée et perturbe la glycémie. <strong>Le corps répond en favorisant le stockage au repas suivant.</strong> La restriction crée exactement ce qu'on voulait éviter.</p></div>
+      </div>
+
+      <div class="croy-item">
+        <button class="croy-btn" type="button">
+          <div><div class="croy-false">"La balance monte = j'ai trop mangé"</div><div class="croy-hint">Clique pour voir</div></div>
+          <span class="croy-arr">+</span>
+        </button>
+        <div class="croy-content"><p class="croy-truth">Le poids fluctue de 1 à 3 kg par jour selon l'hydratation, le cycle menstruel, le sel, le transit, l'inflammation. <strong>Un chiffre qui monte ne reflète pas la masse grasse — il reflète l'eau et la digestion.</strong> La balance prend une décision sur 24h alors que ton corps joue sur des semaines.</p></div>
+      </div>
+
+      <div class="croy-item">
+        <button class="croy-btn" type="button">
+          <div><div class="croy-false">"Je dois mériter ce que je mange ou compenser"</div><div class="croy-hint">Clique pour voir</div></div>
+          <span class="croy-arr">+</span>
+        </button>
+        <div class="croy-content"><p class="croy-truth">Manger n'est pas une récompense à mériter. <strong>La logique compensation–restriction alimente le cycle culpabilité–écart–punition</strong> qui épuise mentalement et physiquement. L'énergie dépensée à surveiller pourrait nourrir autre chose.</p></div>
+      </div>
+
+      <div class="croy-item">
+        <button class="croy-btn" type="button">
+          <div><div class="croy-false">"Manger émotionnellement c'est un manque de volonté"</div><div class="croy-hint">Clique pour voir</div></div>
+          <span class="croy-arr">+</span>
+        </button>
+        <div class="croy-content"><p class="croy-truth">Manger pour se réconforter est un comportement <strong>appris et neurobiologiquement cohérent</strong> — la nourriture active les circuits de récompense. Ce n'est pas une faiblesse de caractère. C'est un schéma qui peut évoluer quand on comprend ce qu'il cherche à combler.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-border" id="quiz-section">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Auto-diagnostic</div>
+      <h2 class="sh-title">Quel est ton <em>profil dominant</em> ?</h2>
+      <p class="sh-sub">10 questions. Tu verras ensuite ton score sur chaque profil — parce que tu es rarement "que" l'un d'eux.</p>
+    </div>
+    <div class="quiz-wrap">
+      <div class="quiz-header">
+        <div class="quiz-badge">Quiz · Relation alimentaire</div>
+        <div class="quiz-title">Ta relation à la nourriture en 10 questions</div>
+        <p class="quiz-intro">Choisis la réponse qui te ressemble le plus — même si aucune n'est parfaite. Ton instinct est souvent juste.</p>
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress"><div class="quiz-bar" id="qbar"></div></div>
+          <div class="quiz-progress-meta"><span id="qstep">Question 1 sur 10</span><span>Une question à la fois</span></div>
+        </div>
+      </div>
+      <div class="quiz-body">
+        <div id="qsteps"></div>
+        <div class="q-nav">
+          <button class="q-btn q-btn-secondary" id="qprev" disabled>Retour</button>
+          <button class="q-btn q-btn-primary" id="qnext">Suivant</button>
+        </div>
+        <p class="q-error" id="qerror"></p>
+        <div class="q-results" id="qresults"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-border">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Aller plus loin</div>
+      <h2 class="sh-title">Comprendre, c'est déjà <em>changer quelque chose</em></h2>
+    </div>
+    <div class="connect-grid">
+      <a class="connect-card" href="https://www.thenarcissichealth.fr/school/course/mybetterself/lecture/9442303" target="_blank">
+        <div class="cc-tag">Compléments</div>
+        <div class="cc-title">Magnésium, ashwagandha, oméga-3…</div>
+        <div class="cc-desc">Certains compléments soutiennent la gestion du stress émotionnel et les envies compulsives. Fiches détaillées avec dosages et synergies.</div>
+        <div class="cc-arrow">Voir le guide compléments →</div>
+      </a>
+      <a class="connect-card" href="https://www.thenarcissichealth.fr/school/course/mybetterself/lecture/9442187" target="_blank">
+        <div class="cc-tag">Cycle menstruel</div>
+        <div class="cc-title">Envies, émotions et phases du cycle</div>
+        <div class="cc-desc">Les envies alimentaires varient fortement selon les phases du cycle. Comprendre ça change tout sur la culpabilité autour de la nourriture.</div>
+        <div class="cc-arrow">Voir le guide cycle →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <em>Ce quiz est un outil de prise de conscience, pas un diagnostic médical ou psychologique.</em><br>
+  Si ta relation à la nourriture affecte significativement ta qualité de vie, parler à un professionnel de santé est la bonne démarche.
+</footer>
+
+<script>
+(function(){
+
+var COMP_URL = "https://www.thenarcissichealth.fr/school/course/mybetterself/lecture/9442303";
+
+var Q = [
+  {step:1,name:"q1",q:"Quand tu décides quoi manger, qu'est-ce qui guide le plus souvent ton choix ?",opts:[
+    {l:"Les habitudes installées — ce qu'on mangeait à la maison, ce qui est prévu, les horaires.",v:"reg"},
+    {l:"Ce qui me donne envie sur le moment : la vue, l'odeur, ce que mange l'autre.",v:"vis"},
+    {l:"Ce que j'estime autoriser selon mes objectifs ou mes peurs alimentaires.",v:"ctl"},
+    {l:"Mon état intérieur : le stress, la fatigue, l'ennui influencent mes envies.",v:"emo"}
+  ]},
+  {step:2,name:"q2",q:"Tu as fini ton repas. Tu n'as plus vraiment faim, mais il reste de la nourriture dans ton assiette.",opts:[
+    {l:"Je finis : on ne gaspille pas, c'est automatique chez moi.",v:"reg"},
+    {l:"Je finis si c'est bon : même si je suis calée je savoure mon plat.",v:"vis"},
+    {l:"Je vérifie si j'ai le droit de finir selon ce que j'ai mangé dans la journée.",v:"ctl"},
+    {l:"Ça dépend de comment je me sens : parfois je finis tout, parfois plus du tout envie.",v:"emo"}
+  ]},
+  {step:3,name:"q3",q:"Tu passes devant une boulangerie ou tu vois quelqu'un manger quelque chose d'appétissant. Tu n'avais pas faim.",opts:[
+    {l:"Je résiste : ce n'est pas l'heure et ce n'est pas prévu.",v:"reg"},
+    {l:"Je craque souvent : la vue ou l'odeur suffit à déclencher l'envie.",v:"vis"},
+    {l:"Je résiste mais je me fais une guerre intérieure et j'y pense encore après.",v:"ctl"},
+    {l:"Si je suis stressée : je craque beaucoup plus facilement.",v:"emo"}
+  ]},
+  {step:4,name:"q4",q:"Les glucides — pain, pâtes, riz, pommes de terre — ta relation avec eux c'est ?",opts:[
+    {l:"J'en mange parce que ça a toujours fait partie des repas, sans me poser de questions.",v:"reg"},
+    {l:"Je les adore, c'est souvent ce dont j'ai envie en premier.",v:"vis"},
+    {l:"Je les évite ou je les réduis : j'ai peur que ça fasse grossir.",v:"ctl"},
+    {l:"J'en mange surtout quand je suis fatiguée, stressée ou que j'ai besoin de réconfort.",v:"emo"}
+  ]},
+  {step:5,name:"q5",q:"Après avoir mangé quelque chose que tu considères de trop, tu ressens ?",opts:[
+    {l:"Une obligation de compenser : manger moins après, ou faire plus d'efforts.",v:"reg"},
+    {l:"Peu de culpabilité sur le moment, mais une inquiétude qui revient plus tard.",v:"vis"},
+    {l:"Une vraie culpabilité : j'ai tout gâché, je manque de volonté.",v:"ctl"},
+    {l:"Un mélange de soulagement et de honte : ça calme, mais je regrette.",v:"emo"}
+  ]},
+  {step:6,name:"q6",q:"Quand tu as eu une journée émotionnellement lourde — stress, dispute, fatigue — ton alimentation ?",opts:[
+    {l:"Ne change pas vraiment : je mange aux mêmes heures, les mêmes choses.",v:"reg"},
+    {l:"Je mange plus de choses que j'aime : les repas deviennent des petits plaisirs.",v:"vis"},
+    {l:"Je mange moins ou saute un repas : le stress me coupe l'appétit.",v:"ctl"},
+    {l:"Je grignote ou je mange beaucoup plus : ça calme quelque chose à l'intérieur.",v:"emo"}
+  ]},
+  {step:7,name:"q7",q:"La balance, pour toi c'est ?",opts:[
+    {l:"Un rituel : je me pèse régulièrement parce que ça a toujours été comme ça.",v:"reg"},
+    {l:"Quelque chose que je regarde mais qui ne change pas vraiment ce que je mange.",v:"vis"},
+    {l:"Un outil qui a trop de pouvoir : un chiffre qui monte peut changer toute ma journée.",v:"ctl"},
+    {l:"Quelque chose que j'évite certains jours parce que le chiffre va m'affecter.",v:"emo"}
+  ]},
+  {step:8,name:"q8",q:"En société — au restaurant, chez des amis, un repas de famille — comment tu manges ?",opts:[
+    {l:"Comme d'habitude, je suis les codes sociaux : ce qu'on sert, quand on sert.",v:"reg"},
+    {l:"Je profite vraiment : les repas sociaux sont souvent les meilleurs.",v:"vis"},
+    {l:"J'ai du mal à me laisser aller : je calcule ou je culpabilise de ce que je mange.",v:"ctl"},
+    {l:"Ça dépend de l'ambiance — si je suis à l'aise je mange bien, si je suis tendue différemment.",v:"emo"}
+  ]},
+  {step:9,name:"q9",q:"Avant de manger, je pense surtout à…",opts:[
+    {l:"Si c'est l'heure, si c'est ce qu'on doit manger.",v:"reg"},
+    {l:"Si ça va me faire plaisir et si ça a l'air bon.",v:"vis"},
+    {l:"Si c'est raisonnable, si je peux me le permettre.",v:"ctl"},
+    {l:"Comment je me sens et ce dont j'ai besoin à ce moment-là.",v:"emo"}
+  ]},
+  {step:10,name:"q10",q:"Si tu pouvais changer une chose dans ta relation à la nourriture, ce serait ?",opts:[
+    {l:"Arrêter de manger par habitude ou obligation et manger vraiment pour moi.",v:"reg"},
+    {l:"Apprendre à distinguer la faim réelle de l'envie de manger pour le plaisir.",v:"vis"},
+    {l:"Arrêter d'avoir peur de certains aliments et manger sans me faire la guerre.",v:"ctl"},
+    {l:"Arrêter d'utiliser la nourriture pour gérer mes émotions.",v:"emo"}
+  ]}
+];
+
+var LABELS = {
+  reg:"Je mange par habitude",
+  vis:"Je craque facilement",
+  ctl:"J'ai peur de mal manger",
+  emo:"Je mange mes émotions"
+};
+var FILLS = {reg:"f-reg",vis:"f-vis",ctl:"f-ctl",emo:"f-emo"};
+
+var PROFILES = {
+  reg:{
+    profil:"Je mange par habitude",
+    tagline:"Tu manges selon des règles apprises — pas toujours selon ce que ton corps demande réellement.",
+    analyse:"Les règles alimentaires de ton enfance et de ton environnement guident encore tes choix sans que tu l'aies décidé. Finir son assiette. Manger aux heures fixes. Ne pas gaspiller. Ces automatismes ont été intégrés avant que tu puisses les questionner. C'est ce que tu as entendu depuis enfant donc c'est normal.",
+    action:"L'étape clé pour toi : commencer à distinguer ce que TON corps veut de ce qu'on t'a appris à faire. Un exercice concret : au prochain repas, arrête-toi avant de finir l'assiette et évalue ta satiété sur 10. Tu as le droit de ne pas finir. Tu as le droit de recommencer à décider.",
+    pepite:"Le système nerveux entend les règles énoncées par les figures d'autorité de l'enfance comme des instructions de survie — même quand elles ne font plus sens 20 ans plus tard. Ce n'est pas de la faiblesse. C'est de la neurobiologie.",
+    croyances:["Finir son assiette","Ne pas gaspiller","Manger à heures fixes"],
+    comps:[]
+  },
+  vis:{
+    profil:"Je craque facilement",
+    tagline:"Ta faim naît souvent de ce que tu vois ou sens — avant même d'avoir réellement faim.",
+    analyse:"On adoooore manger BUT quand tu vois ou tu sens un truc t'as envie de manger direct même sans faim, là il faut creuser. Peut-être que ton cerveau a juste pris l'habitude de te dire : viens on goûte ça. Et le vrai sujet, il est là : dans ces moments-là c'est pas ton corps qui a faim c'est autre chose que t'essaies de combler sans t'en rendre compte.",
+    action:"Avant de manger en dehors des repas, pose-toi juste la question : est-ce que j'ai vraiment faim, ou est-ce que c'est juste le cookie devant moi qui me drague ? La vraie faim elle arrive doucement dans la journée. L'envie elle débarque d'un coup et souvent elle disparaît si tu prends le temps d'attendre un peu.",
+    pepite:"Les études sur l'alimentation montrent que la vue de nourriture déclenche une libération d'insuline avant même de manger — le corps se prépare à recevoir quelque chose qu'il n'a pas encore demandé. Ce mécanisme peut être réduit avec la pratique de la pleine conscience alimentaire.",
+    croyances:["Je ne mange pas beaucoup, je grignote juste","Il faut se faire plaisir"],
+    comps:[]
+  },
+  ctl:{
+    profil:"J'ai peur de mal manger",
+    tagline:"Tu te surveilles, tu calcules, tu classes. Et plus tu contrôles, plus la nourriture prend de la place dans ta tête.",
+    analyse:"Tu as intégré l'idée qu'il y a des bons et des mauvais aliments. La peur de grossir guide beaucoup tes décisions. Ce système de contrôle est mentalement épuisant et paradoxalement, il crée des écarts plus intenses et culpabilisants. La restriction appelle l'excès. C'est biologique, pas psychologique.",
+    action:"La première chose à regarder : les aliments que tu t'interdis. Parce que plus tu te dis j'ai pas le droit plus ton cerveau en fait une obsession. Réintroduire petit à petit dans ton alimentation peut t'aider à casser le schéma culpabilité. L'ashwagandha peut aider à réduire l'anxiété liée au contrôle. Le magnésium soutient le système nerveux.",
+    pepite:"Le cycle restriction–craquage–culpabilité est documenté depuis les années 70. Quand tu dépasses une règle que toi-même t'as posée, ton cerveau ne comprend pas le petit écart — il comprend c'est foutu. Du coup il te pousse à continuer en mode : foutu pour foutu. Donc on arrête de culpabiliser, on essaie de trouver des solutions et surtout on ne CULPABILISE PLUS.",
+    croyances:["Les glucides font grossir","Je dois mériter ce que je mange","Compenser après un écart"],
+    comps:["Magnésium Pure Sommeil","Ashwagandha KSM-66"]
+  },
+  emo:{
+    profil:"Je mange mes émotions",
+    tagline:"Ta faim dit parfois ce que t'arrives pas encore à exprimer autrement.",
+    analyse:"La nourriture, pour toi, elle fait plus que nourrir. Elle apaise, réconforte, remplit un vide — et en vrai, y'a rien d'anormal à ça. Manger peut être une forme de self-care. Là où ça devient compliqué, c'est quand c'est ton seul moyen de gérer ce que tu ressens. Et derrière, la culpabilité débarque, et rajoute une couche d'émotion à gérer. Donc forcément, le cercle continue.",
+    action:"Le but, c'est pas de manger moins. C'est d'avoir d'autres options en parallèle. Commence par repérer : c'est quoi tes déclencheurs ? Le stress, l'ennui, la solitude. Puis crée un mini espace entre ce que tu ressens et le fait de manger. Juste une pause, même de 2 minutes. Et si t'as besoin d'un coup de pouce, le magnésium peut aider à calmer le système nerveux, l'ashwagandha peut aider à baisser la pression quand t'es stressée.",
+    pepite:"L'alimentation émotionnelle est liée à un niveau de cortisol élevé chronique. Quand le cortisol monte, le corps réclame des aliments à haute densité énergétique — sucre, gras, sel. C'est une réponse de survie calorique à du stress chronique.",
+    croyances:["Manger me calme","Quand je suis stressée je ne peux pas m'en empêcher"],
+    comps:["Magnésium Pure Sommeil","Ashwagandha KSM-66","Oméga-3 EPA / DHA"]
+  }
+};
+
+var container=document.getElementById("qsteps");
+var prevBtn=document.getElementById("qprev");
+var nextBtn=document.getElementById("qnext");
+var errBox=document.getElementById("qerror");
+var bar=document.getElementById("qbar");
+var stepTxt=document.getElementById("qstep");
+var resultsEl=document.getElementById("qresults");
+var answers={},cur=1,tot=Q.length;
+
+container.innerHTML=Q.map(function(q){
+  var opts=q.opts.map(function(o){
+    return '<button type="button" class="q-opt" data-name="'+q.name+'" data-value="'+o.v+'">'+o.l+'</button>';
+  }).join("");
+  return '<div class="q-step" data-step="'+q.step+'"'+(q.step>1?' hidden':'')+'>'+
+    '<div class="q-card"><div class="q-badge">Question '+q.step+' / '+tot+'</div>'+
+    '<div class="q-title">'+q.q+'</div><div class="q-opts">'+opts+'</div></div></div>';
+}).join("");
+
+function restoreSel(){
+  container.querySelectorAll(".q-opt").forEach(function(b){
+    b.classList.toggle("sel",answers[b.dataset.name]===b.dataset.value);
+  });
+}
+container.addEventListener("click",function(e){
+  var b=e.target.closest(".q-opt");
+  if(!b)return;
+  answers[b.dataset.name]=b.dataset.value;
+  errBox.textContent="";
+  restoreSel();
+});
+function update(){
+  container.querySelectorAll(".q-step").forEach(function(s){s.hidden=parseInt(s.dataset.step)!==cur;});
+  stepTxt.textContent="Question "+cur+" sur "+tot;
+  bar.style.width=Math.round(((cur-1)/tot)*100)+"%";
+  prevBtn.disabled=cur===1;prevBtn.style.opacity=cur===1?".5":"1";
+  nextBtn.textContent=cur===tot?"Voir mon profil":"Suivant";
+  restoreSel();
+}
+function answered(){return !!answers[Q[cur-1].name];}
+function getScores(){
+  var cnt={reg:0,vis:0,ctl:0,emo:0};
+  Q.forEach(function(q){var v=answers[q.name];if(v&&cnt[v]!==undefined)cnt[v]++;});
+  return cnt;
+}
+function pickProfile(cnt){return Object.keys(cnt).reduce(function(a,b){return cnt[a]>=cnt[b]?a:b;});}
+function bindAcc(el){
+  el.querySelectorAll(".acc-btn").forEach(function(b){
+    b.addEventListener("click",function(){this.parentElement.classList.toggle("open");});
+  });
+}
+function showResults(){
+  var cnt=getScores(),key=pickProfile(cnt),p=PROFILES[key];
+  var barsHtml=["reg","vis","ctl","emo"].map(function(k){
+    var pct=Math.round((cnt[k]/tot)*100);
+    return '<div class="score-row">'+
+      '<div class="score-label">'+LABELS[k]+'</div>'+
+      '<div class="score-track"><div class="score-fill '+FILLS[k]+'" data-pct="'+pct+'" style="width:0%"></div></div>'+
+      '<div class="score-pct">'+pct+'%</div></div>';
+  }).join("");
+  var tagsHtml=p.croyances.map(function(c){return '<span class="cr-tag">'+c+'</span>';}).join("");
+  var compsHtml=p.comps.length?
+    '<div class="acc-block" style="margin-top:8px;"><div class="acc-label">Compléments qui peuvent aider</div>'+
+    '<div class="cr-tags" style="margin-top:6px;">'+p.comps.map(function(c){return '<span class="cr-tag">'+c+'</span>';}).join("")+'</div>'+
+    '<a class="comp-link" href="'+COMP_URL+'" target="_blank">Voir le guide compléments</a></div>':"";
+  resultsEl.innerHTML=
+    '<div class="qr-wrap">'+
+      '<div class="qr-head">'+
+        '<div class="qr-badge">Ton profil dominant</div>'+
+        '<div class="qr-profil">'+p.profil+'</div>'+
+        '<div class="qr-tagline">'+p.tagline+'</div>'+
+      '</div>'+
+      '<div class="qr-body">'+
+        '<div class="score-section"><div class="score-title">Ton score par profil</div>'+barsHtml+'</div>'+
+        '<div class="acc-item open"><button class="acc-btn" type="button"><span class="acc-btn-title">Ce que ça dit de toi</span><span class="acc-arrow">+</span></button>'+
+          '<div class="acc-content"><div class="acc-block"><p class="acc-text">'+p.analyse+'</p></div></div></div>'+
+        '<div class="acc-item open"><button class="acc-btn" type="button"><span class="acc-btn-title">Plan d&#39;action</span><span class="acc-arrow">+</span></button>'+
+          '<div class="acc-content"><div class="acc-block"><p class="acc-text">'+p.action+'</p></div>'+compsHtml+'</div></div>'+
+        '<div class="acc-item"><button class="acc-btn" type="button"><span class="acc-btn-title">Ce que la science dit</span><span class="acc-arrow">+</span></button>'+
+          '<div class="acc-content"><div class="pepite"><div class="pepite-label">La science</div><p class="pepite-text">'+p.pepite+'</p></div></div></div>'+
+        '<div class="acc-item"><button class="acc-btn" type="button"><span class="acc-btn-title">Les croyances qui vont avec ton profil</span><span class="acc-arrow">+</span></button>'+
+          '<div class="acc-content"><div class="acc-block"><div class="acc-label">Ce que tu entends peut-être souvent en toi</div><div class="cr-tags">'+tagsHtml+'</div></div></div></div>'+
+      '</div></div>';
+  resultsEl.classList.add("show");
+  bindAcc(resultsEl);
+  setTimeout(function(){
+    resultsEl.querySelectorAll(".score-fill").forEach(function(el){el.style.width=el.dataset.pct+"%";});
+    resultsEl.scrollIntoView({behavior:"smooth",block:"start"});
+  },120);
+}
+nextBtn.addEventListener("click",function(){
+  errBox.textContent="";
+  if(!answered()){errBox.textContent="Choisis une réponse pour continuer.";return;}
+  if(cur<tot){cur++;update();return;}
+  showResults();
+});
+prevBtn.addEventListener("click",function(){errBox.textContent="";if(cur>1){cur--;update();}});
+update();
+
+document.querySelectorAll('.croy-btn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    this.closest('.croy-item').classList.toggle('open');
+  });
+});
+
+})();
+</script>
