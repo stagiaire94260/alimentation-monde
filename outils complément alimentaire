@@ -1,0 +1,1429 @@
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+:root{
+  --red:#A91B18;
+  --red-d:#8f1614;
+  --burgundy:#700243;
+  --cream:#FBF6F6;
+  --cream2:#F7EEEE;
+  --cream3:#F3EEEE;
+  --white:#FFFEFE;
+  --text:#3F0405;
+  --muted:#6F4A4C;
+  --soft:#8D6A6B;
+  --line:rgba(169,27,24,.10);
+  --line-s:rgba(169,27,24,.20);
+  --shadow:0 16px 40px rgba(63,4,5,.12);
+  --shadow-sm:0 6px 20px rgba(63,4,5,.07);
+}
+
+html{
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  background:var(--cream);
+  color:var(--text);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* Force absolue de la typo partout */
+body,
+body *:not(i):not(svg):not(path):not(img),
+.hero,
+.hero *,
+.wrap,
+.wrap *,
+.test-wrap,
+.test-wrap *,
+.cards-area,
+.cards-area *,
+.modal,
+.modal *,
+.modal-header,
+.modal-header *,
+.modal-body,
+.modal-body *,
+.modal-tabs,
+.modal-tabs *,
+button,
+input,
+textarea,
+select,
+label,
+p,
+span,
+div,
+h1,h2,h3,h4,h5,h6{
+  font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+/* HERO */
+.hero{
+  padding:2.5rem 1rem 2rem;
+  text-align:center;
+  background:linear-gradient(150deg,#f7eeee 0%,#fbf6f6 50%,#f5eef7 100%);
+  border-bottom:1px solid var(--line);
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 15% 25%,rgba(169,27,24,.07) 0%,transparent 55%),
+    radial-gradient(ellipse at 85% 75%,rgba(112,2,67,.05) 0%,transparent 55%);
+}
+
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--red);
+  background:rgba(169,27,24,.07);
+  border:1px solid rgba(169,27,24,.12);
+  border-radius:999px;
+  padding:7px 12px;
+  margin-bottom:1rem;
+}
+
+.hero h1{
+  font-size:clamp(1.8rem,5.5vw,3.4rem);
+  font-weight:800;
+  line-height:1.08;
+  letter-spacing:-.03em;
+  margin-bottom:1rem;
+  color:var(--text);
+}
+
+.hero h1 em{
+  font-style:italic;
+  font-weight:400;
+  color:var(--red);
+}
+
+.hero-lead{
+  font-size:14px;
+  color:var(--muted);
+  max-width:560px;
+  margin:0 auto 1.75rem;
+  line-height:1.75;
+}
+
+.hero-stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(.5rem,2vw,.8rem);
+  max-width:400px;
+  margin:0 auto;
+}
+
+.stat-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:.75rem 1rem;
+  text-align:center;
+  box-shadow:var(--shadow-sm);
+}
+
+.stat-num{
+  font-size:clamp(1.3rem,3.5vw,1.9rem);
+  font-weight:800;
+  color:var(--red);
+  letter-spacing:-.02em;
+}
+
+.stat-lbl{
+  font-size:11px;
+  color:var(--soft);
+  margin-top:2px;
+  line-height:1.4;
+}
+
+/* SHARED */
+.wrap{
+  max-width:880px;
+  margin:0 auto;
+  padding:0 1rem;
+}
+
+.sec-eyebrow{
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--red);
+  margin-bottom:.5rem;
+}
+
+.sec-title{
+  font-size:clamp(1.35rem,3.5vw,2rem);
+  font-weight:800;
+  letter-spacing:-.025em;
+  color:var(--text);
+}
+
+.sec-title em{
+  font-style:italic;
+  font-weight:400;
+  color:var(--red);
+}
+
+.sec-sub{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:.35rem;
+}
+
+.sec-head{
+  text-align:center;
+  margin-bottom:1.6rem;
+}
+
+/* WHY */
+.why-section{
+  padding:clamp(2rem,5vw,3.5rem) 0;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));
+  gap:11px;
+}
+
+.why-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:1.2rem 1.3rem;
+  border-top:3px solid var(--red);
+}
+
+.why-card h3{
+  font-size:13.5px;
+  font-weight:800;
+  margin-bottom:5px;
+  color:var(--text);
+}
+
+.why-card p{
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* TEST */
+.test-section{
+  padding:0 0 clamp(2rem,4vw,3rem);
+}
+
+.test-wrap{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+}
+
+.test-inner{
+  padding:1rem;
+}
+
+.test-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));
+  gap:8px;
+}
+
+.topt{
+  display:flex;
+  cursor:pointer;
+}
+
+.topt input{
+  display:none;
+}
+
+.topt-inner{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  width:100%;
+  background:var(--cream2);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:11px 13px;
+  transition:all .15s;
+}
+
+.topt:hover .topt-inner{
+  border-color:var(--line-s);
+  background:var(--cream3);
+}
+
+.topt input:checked~.topt-inner{
+  background:rgba(169,27,24,.08);
+  border-color:rgba(169,27,24,.3);
+}
+
+.topt input:checked~.topt-inner .topt-check{
+  background:var(--red);
+  border-color:var(--red);
+  color:#fff;
+}
+
+.topt input:checked~.topt-inner span{
+  color:var(--red);
+  font-weight:700;
+}
+
+.topt-check{
+  width:18px;
+  height:18px;
+  border-radius:5px;
+  border:1.5px solid rgba(169,27,24,.28);
+  flex-shrink:0;
+  margin-top:1px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+  color:transparent;
+  transition:all .15s;
+  background:var(--white);
+}
+
+.topt span{
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.test-btn{
+  display:block;
+  margin:1.2rem auto 0;
+  background:var(--red);
+  color:#fff;
+  border:none;
+  border-radius:999px;
+  padding:12px 32px;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+  transition:all .18s;
+  box-shadow:0 8px 20px rgba(169,27,24,.22);
+}
+
+.test-btn:hover{
+  background:var(--red-d);
+  transform:translateY(-1px);
+}
+
+#test-res{
+  margin-top:1.4rem;
+}
+
+.tr-empty{
+  text-align:center;
+  font-size:13px;
+  color:var(--soft);
+  padding:.25rem 0;
+}
+
+.tr-grid{
+  display:grid;
+  gap:9px;
+  margin-bottom:1.1rem;
+}
+
+.tr-item{
+  border-radius:14px;
+  border:1px solid var(--line);
+  overflow:hidden;
+  background:var(--cream2);
+}
+
+.tr-btn{
+  width:100%;
+  border:none;
+  background:transparent;
+  padding:12px 14px;
+  text-align:left;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.tr-sym{
+  font-size:13px;
+  font-weight:800;
+  color:var(--text);
+  line-height:1.3;
+}
+
+.tr-piste{
+  font-size:11px;
+  color:var(--red);
+  font-weight:700;
+  margin-top:2px;
+}
+
+.tr-arrow{
+  font-size:20px;
+  color:var(--red);
+  transition:transform .2s;
+  flex-shrink:0;
+  line-height:1;
+}
+
+.tr-item.open .tr-arrow{
+  transform:rotate(45deg);
+}
+
+.tr-body{
+  display:none;
+  padding:0 14px 12px;
+  border-top:1px solid var(--line);
+}
+
+.tr-item.open .tr-body{
+  display:block;
+}
+
+.tr-block{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:10px 12px;
+  margin-top:8px;
+}
+
+.tr-blabel{
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--red);
+  margin-bottom:4px;
+}
+
+.tr-btext{
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.tr-comps{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  margin-top:7px;
+}
+
+.tr-ctag{
+  font-size:11.5px;
+  padding:4px 11px;
+  border-radius:999px;
+  background:rgba(169,27,24,.07);
+  color:var(--red);
+  border:1px solid rgba(169,27,24,.15);
+  cursor:pointer;
+  font-weight:700;
+  transition:all .15s;
+}
+
+.tr-ctag:hover{
+  background:var(--red);
+  color:#fff;
+}
+
+.tr-note{
+  background:var(--cream3);
+  border-radius:12px;
+  padding:10px 13px;
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.65;
+  border:1px solid var(--line);
+}
+
+/* CAT NAV */
+.cat-nav{
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+  gap:6px;
+  padding:0 1rem 1.2rem;
+  max-width:880px;
+  margin:0 auto;
+  flex-wrap:nowrap;
+}
+
+.cat-nav::-webkit-scrollbar{
+  display:none;
+}
+
+.cat-btn{
+  flex:none;
+  padding:8px 16px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  border:1px solid var(--line);
+  background:var(--white);
+  color:var(--muted);
+  cursor:pointer;
+  transition:all .18s;
+  white-space:nowrap;
+}
+
+.cat-btn:hover{
+  border-color:var(--line-s);
+  color:var(--text);
+}
+
+.cat-btn.active{
+  background:var(--red);
+  color:#fff;
+  border-color:var(--red);
+}
+
+/* CARDS */
+.cards-area{
+  max-width:880px;
+  margin:0 auto;
+  padding:0 1rem 3rem;
+}
+
+.cards-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));
+  gap:12px;
+}
+
+.comp-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:transform .18s,box-shadow .18s;
+  box-shadow:var(--shadow-sm);
+}
+
+.comp-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 36px rgba(63,4,5,.13);
+}
+
+.card-top{
+  padding:1.1rem 1.3rem .85rem;
+  border-bottom:1px solid var(--line);
+}
+
+.card-cat-tag{
+  display:inline-block;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  padding:3px 8px;
+  border-radius:7px;
+  margin-bottom:.45rem;
+}
+
+.tag-sante,.tag-immunite{background:rgba(169,27,24,.07);color:var(--red);}
+.tag-sport{background:rgba(30,79,160,.08);color:#1e4fa0;}
+.tag-sommeil{background:rgba(90,45,138,.08);color:#5a2d8a;}
+.tag-energie{background:rgba(122,80,16,.08);color:#7a5010;}
+
+.card-name{
+  font-size:clamp(.95rem,2.5vw,1.15rem);
+  font-weight:800;
+  line-height:1.2;
+  margin-bottom:.2rem;
+  letter-spacing:-.02em;
+  color:var(--text);
+}
+
+.card-brand{
+  font-size:10.5px;
+  color:var(--soft);
+}
+
+.card-body{
+  padding:.85rem 1.3rem 1.1rem;
+}
+
+.card-desc{
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.6;
+  margin-bottom:.75rem;
+}
+
+.card-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+}
+
+.chip{
+  font-size:11px;
+  padding:3px 9px;
+  border-radius:999px;
+  background:var(--cream2);
+  color:var(--muted);
+  border:1px solid var(--line);
+  font-weight:600;
+}
+
+.chip.blue{background:rgba(30,79,160,.06);color:#1e4fa0;border-color:rgba(30,79,160,.12);}
+.chip.gold{background:rgba(122,80,16,.07);color:#7a5010;border-color:rgba(122,80,16,.13);}
+.chip.violet{background:rgba(90,45,138,.07);color:#5a2d8a;border-color:rgba(90,45,138,.13);}
+.chip.rose{background:rgba(169,27,24,.07);color:var(--red);border-color:rgba(169,27,24,.14);}
+
+/* MODAL / POP UP */
+.modal-overlay{
+  display:flex;
+  position:fixed;
+  inset:0;
+  z-index:1000;
+  background:rgba(20,3,3,.52);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .24s ease, visibility .24s ease;
+}
+
+.modal-overlay.open{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.modal{
+  background:var(--cream);
+  border-radius:24px;
+  width:100%;
+  max-width:620px;
+  max-height:min(88vh,780px);
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  box-shadow:0 24px 80px rgba(63,4,5,.22);
+  overscroll-behavior:contain;
+
+  opacity:0;
+  transform:
+    translate3d(var(--modal-start-x,0), var(--modal-start-y,24px), 0)
+    scale(var(--modal-start-scale,.96));
+  transform-origin:center top;
+  transition:
+    transform .34s cubic-bezier(.22,1,.36,1),
+    opacity .24s ease;
+  will-change:transform, opacity;
+}
+
+.modal-overlay.open .modal{
+  opacity:1;
+  transform:translate3d(0,0,0) scale(1);
+}
+
+.modal-header{
+  padding:1rem 1rem .85rem;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  background:var(--cream2);
+  z-index:2;
+  border-radius:24px 24px 0 0;
+}
+
+@media(max-width:700px){
+  .modal-overlay{
+    align-items:flex-start;
+    justify-content:center;
+    padding:clamp(18px,5vw,28px) 12px max(18px, env(safe-area-inset-bottom));
+  }
+
+  .modal{
+    border-radius:22px;
+    max-width:100%;
+    max-height:82vh;
+  }
+
+  .modal-header{
+    border-radius:22px 22px 0 0;
+  }
+}
+
+.modal-close{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:var(--red);
+  color:#fff;
+  border:none;
+  border-radius:14px;
+  width:56px;
+  height:56px;
+  cursor:pointer;
+  font-size:22px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:background .15s,transform .15s;
+  box-shadow:0 8px 18px rgba(169,27,24,.18);
+}
+
+.modal-close:hover{
+  background:var(--red-d);
+  transform:scale(.98);
+}
+
+.modal-tag{
+  display:inline-block;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--red);
+  background:rgba(169,27,24,.07);
+  border:1px solid rgba(169,27,24,.12);
+  border-radius:999px;
+  padding:8px 14px;
+  margin-bottom:.8rem;
+  line-height:1.3;
+}
+
+.modal-name{
+  font-size:clamp(1.8rem,4vw,2.4rem);
+  font-weight:800;
+  letter-spacing:-.03em;
+  line-height:1.08;
+  margin-bottom:.3rem;
+  color:var(--text);
+  padding-right:84px;
+}
+
+.modal-brand{
+  font-size:14px;
+  color:var(--soft);
+  line-height:1.5;
+  padding-right:84px;
+}
+
+.modal-tabs{
+  display:flex;
+  border-bottom:1px solid var(--line);
+  overflow-x:auto;
+  scrollbar-width:none;
+  background:var(--cream2);
+  -webkit-overflow-scrolling:touch;
+}
+
+.modal-tabs::-webkit-scrollbar{
+  display:none;
+}
+
+.mtab{
+  flex:none;
+  padding:14px 18px;
+  font-size:13px;
+  font-weight:700;
+  color:var(--soft);
+  background:none;
+  border:none;
+  border-bottom:3px solid transparent;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:all .16s;
+}
+
+.mtab:hover{
+  color:var(--muted);
+}
+
+.mtab.active{
+  color:var(--red);
+  border-bottom-color:var(--red);
+  background:var(--cream);
+}
+
+.modal-body{
+  padding:1rem;
+}
+
+.mtab-content{
+  display:none;
+}
+
+.mtab-content.active{
+  display:block;
+}
+
+.m-block{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:18px 18px;
+  margin-bottom:10px;
+  font-size:15px;
+  color:var(--muted);
+  line-height:1.9;
+}
+
+.m-block:last-child{
+  margin-bottom:0;
+}
+
+.m-block strong{
+  color:var(--text);
+  font-weight:800;
+}
+
+.m-block.warn{
+  border-left:5px solid var(--red);
+  background:rgba(169,27,24,.04);
+}
+
+.m-lbl{
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--red);
+  margin:1rem 0 .35rem;
+}
+
+.m-lbl:first-child{
+  margin-top:0;
+}
+
+.d-card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:.95rem 1rem;
+  margin-bottom:7px;
+}
+
+.d-card:last-child{
+  margin-bottom:0;
+}
+
+.d-title{
+  font-size:13px;
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:4px;
+}
+
+.d-detail{
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.syn-row{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.syn-row:last-child{
+  border-bottom:none;
+}
+
+.syn-ico{
+  width:30px;
+  height:30px;
+  border-radius:9px;
+  flex-shrink:0;
+  background:rgba(169,27,24,.07);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10.5px;
+  font-weight:800;
+  color:var(--red);
+}
+
+.syn-text strong{
+  display:block;
+  font-size:12.5px;
+  font-weight:800;
+  color:var(--text);
+  margin-bottom:2px;
+}
+
+.syn-text span{
+  font-size:12px;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.c-row{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:8px;
+}
+
+.c-lbl{
+  width:clamp(100px,25vw,140px);
+  flex-shrink:0;
+  font-size:12px;
+  color:var(--muted);
+}
+
+.c-track{
+  flex:1;
+  height:6px;
+  background:rgba(169,27,24,.08);
+  border-radius:999px;
+  overflow:hidden;
+}
+
+.c-fill{
+  height:100%;
+  border-radius:999px;
+  background:var(--red);
+}
+
+.c-pct{
+  font-size:11px;
+  color:var(--soft);
+  width:32px;
+  text-align:right;
+  font-weight:700;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:clamp(2rem,4vw,3rem) 1.5rem clamp(1.5rem,3vw,2.5rem);
+  border-top:1px solid var(--line);
+  margin-top:1rem;
+  color:var(--soft);
+  font-size:12px;
+  line-height:1.9;
+}
+
+footer em{
+  font-style:italic;
+  color:var(--muted);
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  .hero{
+    padding:2rem 1rem 1.75rem;
+  }
+
+  .hero h1{
+    font-size:1.75rem;
+  }
+
+  .hero-stats{
+    grid-template-columns:1fr 1fr;
+    max-width:100%;
+  }
+
+  .sec-title{
+    font-size:1.35rem;
+  }
+
+  .why-section{
+    padding:1.75rem 0;
+  }
+
+  .wrap{
+    padding:0 1rem;
+  }
+
+  .test-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .cards-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  .cat-nav{
+    flex-wrap:nowrap;
+    padding-bottom:1rem;
+  }
+
+  .modal{
+    max-height:90vh;
+    max-width:100%;
+    border-radius:22px 22px 0 0;
+  }
+
+  .modal-header{
+    padding:1rem 1rem .85rem;
+    border-radius:22px 22px 0 0;
+  }
+
+  .modal-close{
+    top:12px;
+    right:12px;
+    width:50px;
+    height:50px;
+    font-size:20px;
+    border-radius:14px;
+  }
+
+  .modal-name{
+    font-size:1.2rem;
+    line-height:1.1;
+    padding-right:68px;
+  }
+
+  .modal-brand{
+    font-size:11px;
+    padding-right:68px;
+  }
+
+  .modal-tag{
+    font-size:10px;
+    padding:7px 12px;
+    margin-bottom:.7rem;
+  }
+
+  .modal-body{
+    padding:.9rem 1rem 1rem;
+  }
+
+  .mtab{
+    padding:13px 16px;
+    font-size:12px;
+  }
+
+  .m-block{
+    font-size:13px;
+    line-height:1.8;
+    padding:14px 14px;
+    border-radius:16px;
+  }
+
+  .c-lbl{
+    width:100px;
+    font-size:11px;
+  }
+
+  .test-inner{
+    padding:.9rem;
+  }
+
+  .card-top,.card-body{
+    padding:.9rem 1rem;
+  }
+}
+
+@media(max-width:400px){
+  .hero-stats{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stat-card{
+    padding:.6rem .7rem;
+  }
+
+  .stat-num{
+    font-size:1.3rem;
+  }
+
+  .hero h1{
+    font-size:1.55rem;
+  }
+
+  .modal-name{
+    font-size:1.08rem;
+  }
+
+  .modal-close{
+    width:46px;
+    height:46px;
+    font-size:18px;
+  }
+
+  .mtab{
+    padding:12px 14px;
+    font-size:11.5px;
+  }
+}
+</style>
+
+<header class="hero">
+  <div class="hero-badge">Nutrition & Santé</div>
+  <h1>Pourquoi se <em>compléter</em><br>est devenu essentiel</h1>
+  <p class="hero-lead">Sols appauvris, alimentation ultra-transformée, stress chronique : la complémentation n'est plus un luxe pour la grande majorité des Français. Ce guide t'explique quoi prendre, pourquoi, et avec quelles marques de confiance.</p>
+  <div class="hero-stats">
+    <div class="stat-card"><div class="stat-num">80%</div><div class="stat-lbl">des Français<br>déficients en vitamine D</div></div>
+    <div class="stat-card"><div class="stat-num">20%</div><div class="stat-lbl">des femmes carencées<br>en fer (étude Esteban)</div></div>
+    <div class="stat-card"><div class="stat-num">−90%</div><div class="stat-lbl">de minéraux dans les<br>légumes vs début XXe s.</div></div>
+    <div class="stat-card"><div class="stat-num">68%</div><div class="stat-lbl">de la population mondiale<br>en déficit d'iode</div></div>
+  </div>
+</header>
+
+<section class="why-section">
+  <div class="wrap">
+    <div class="sec-head"><div class="sec-eyebrow">Le contexte</div><h2 class="sec-title">Pourquoi l'alimentation seule <em>ne suffit plus</em></h2></div>
+    <div class="why-grid">
+      <div class="why-card"><h3>Sols appauvris</h3><p>La concentration en magnésium, calcium et fer des légumes a chuté de 80 à 90 % depuis le XXe siècle. Un légume d'aujourd'hui n'est plus nutritionnellement le même.</p></div>
+      <div class="why-card" style="border-top-color:#1e4fa0;"><h3>Ultra-transformation</h3><p>Les aliments ultra-transformés dominent nos assiettes et sont quasi vides en micronutriments. 45 % des Occidentaux sont en déficit de magnésium.</p></div>
+      <div class="why-card" style="border-top-color:#5a2d8a;"><h3>Stress chronique</h3><p>Le stress épuise le magnésium et les vitamines B en quelques heures. Le manque de soleil crée une carence en vitamine D chez presque toute la population en hiver.</p></div>
+      <div class="why-card" style="border-top-color:#7a5010;"><h3>Besoins accrus</h3><p>Sport, cycle menstruel, grossesse, régimes restrictifs — tous ces contextes augmentent les besoins bien au-delà de ce que l'alimentation moderne peut fournir.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="test-section">
+  <div class="wrap">
+    <div class="sec-head"><div class="sec-eyebrow">Auto-diagnostic</div><h2 class="sec-title">De quoi ton corps <em>manque-t-il ?</em></h2><p class="sec-sub">Coche tes symptômes — reçois les pistes nutritionnelles et les compléments associés.</p></div>
+    <div class="test-wrap">
+      <div class="test-inner">
+        <div class="test-grid" id="test-grid">
+          <label class="topt"><input type="checkbox" value="fatigue"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Fatigue permanente, même après une nuit complète</span></div></label>
+          <label class="topt"><input type="checkbox" value="stress"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Anxiété, stress chronique ou coups de déprime</span></div></label>
+          <label class="topt"><input type="checkbox" value="sommeil"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Sommeil difficile ou réveils nocturnes fréquents</span></div></label>
+          <label class="topt"><input type="checkbox" value="crampes"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Crampes musculaires, paupières qui tressautent</span></div></label>
+          <label class="topt"><input type="checkbox" value="peau"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Peau terne, réactive, cicatrisation lente ou acné</span></div></label>
+          <label class="topt"><input type="checkbox" value="cheveux"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Cheveux secs, cassants ou chute importante</span></div></label>
+          <label class="topt"><input type="checkbox" value="anemie"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Anémie connue, fer bas ou règles très abondantes</span></div></label>
+          <label class="topt"><input type="checkbox" value="sport"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Récupération sportive difficile, performances qui stagnent</span></div></label>
+          <label class="topt"><input type="checkbox" value="immuno"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Infections à répétition, rhumes fréquents en hiver</span></div></label>
+          <label class="topt"><input type="checkbox" value="poids"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Prise ou perte de poids inexpliquée, métabolisme lent</span></div></label>
+          <label class="topt"><input type="checkbox" value="spm"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>SPM marqué : ballonnements, irritabilité, douleurs</span></div></label>
+          <label class="topt"><input type="checkbox" value="cerveau"/><div class="topt-inner"><div class="topt-check">&#x2713;</div><span>Brouillard mental, concentration difficile, mémoire en baisse</span></div></label>
+        </div>
+        <button class="test-btn" onclick="runTest()">Voir mes pistes nutritionnelles</button>
+        <div id="test-res"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding-top:clamp(2rem,4vw,3rem);padding-bottom:1rem;">
+  <div class="sec-head"><div class="sec-eyebrow">La sélection</div><h2 class="sec-title">Compléments <em>essentiels</em></h2><p class="sec-sub">Clique sur une fiche pour tout savoir : pourquoi, bienfaits, dosage, synergies.</p></div>
+</div>
+
+<div class="cat-nav">
+  <button class="cat-btn active" onclick="filterCat('all',this)">Tous</button>
+  <button class="cat-btn" onclick="filterCat('sante',this)">Santé & Bien-être</button>
+  <button class="cat-btn" onclick="filterCat('sport',this)">Performance Sport</button>
+  <button class="cat-btn" onclick="filterCat('sommeil',this)">Sommeil & Stress</button>
+  <button class="cat-btn" onclick="filterCat('immunite',this)">Immunité & Vitalité</button>
+  <button class="cat-btn" onclick="filterCat('energie',this)">Énergie & Hormones</button>
+</div>
+
+<div class="cards-area"><div class="cards-grid" id="cards-grid"></div></div>
+
+<div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+      <span class="modal-tag" id="m-tag"></span>
+      <div class="modal-name" id="m-name"></div>
+      <div class="modal-brand" id="m-brand"></div>
+    </div>
+    <div class="modal-tabs">
+      <button class="mtab active" onclick="switchMTab('pourquoi',this)">Pourquoi</button>
+      <button class="mtab" onclick="switchMTab('bienfaits',this)">Bienfaits</button>
+      <button class="mtab" onclick="switchMTab('dosage',this)">Dosage</button>
+      <button class="mtab" onclick="switchMTab('synergie',this)">Synergies</button>
+      <button class="mtab" onclick="switchMTab('carence',this)">Carences</button>
+    </div>
+    <div class="modal-body">
+      <div class="mtab-content active" id="mtab-pourquoi"></div>
+      <div class="mtab-content" id="mtab-bienfaits"></div>
+      <div class="mtab-content" id="mtab-dosage"></div>
+      <div class="mtab-content" id="mtab-synergie"></div>
+      <div class="mtab-content" id="mtab-carence"></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <em>Ce guide est fourni à titre éducatif et ne remplace pas un avis médical.</em><br>
+  Consultez un médecin ou un nutritionniste avant de démarrer une supplémentation,<br>
+  notamment en cas de traitement médical en cours ou de grossesse.
+</footer>
+
+<script>
+const C=[
+ {id:1,cat:'sante',nom:'Magnésium Pure Sommeil',marque:'Nutripure',tl:'Santé & Bien-être',tc:'tag-sante',chips:['Anti-stress','Sommeil','Crampes','SPM'],cc:'',desc:'Le complément le plus fondamental. 80 % de la population est en déficit. Indispensable au système nerveux, aux muscles et à la qualité du sommeil.',pq:'Le magnésium est impliqué dans plus de 300 réactions enzymatiques. Le stress chronique l\'épuise en quelques heures, et les sols modernes en contiennent de moins en moins. La forme bisglycinate (Nutripure) est la plus absorbable et la mieux tolérée digestivement.',bf:[{t:'Système nerveux',d:'Régule la transmission nerveuse. Un déficit crée anxiété, irritabilité, hyperexcitabilité. La supplémentation calme littéralement le système nerveux en quelques jours.'},{t:'Qualité du sommeil',d:'Active les récepteurs GABA qui favorisent l\'endormissement et le sommeil profond. L\'effet sur le sommeil est parmi les plus documentés de tous les compléments.'},{t:'Crampes et muscles',d:'Essentiel à la relaxation musculaire. Les sportifs qui ont des crampes nocturnes ou en fin de séance en sont presque toujours déficients.'},{t:'SPM et cycle féminin',d:'Réduit significativement les symptômes du SPM : irritabilité, rétention d\'eau, douleurs. Recommandé en phase lutéale.'}],ds:[{t:'Standard',d:'300 à 400 mg/jour en bisglycinate. Le soir, 1h avant le coucher pour l\'effet sommeil.'},{t:'Sportifs et stress intense',d:'Jusqu\'à 500 mg/jour, fractionné en 2 prises. Le corps n\'absorbe pas plus de 200 mg en une seule prise.'},{t:'Phase lutéale SPM',d:'400 mg/jour les 10 derniers jours du cycle.'}],sy:[{icon:'B6',titre:'Vitamine B6',desc:'Magnésium et B6 fonctionnent en synergie directe pour la synthèse de sérotonine.'},{icon:'D3',titre:'Vitamine D3',desc:'La vitamine D a besoin de magnésium pour se transformer en sa forme active.'},{icon:'Zn',titre:'Zinc',desc:'Trio magnésium + zinc + B6 classique pour l\'immunité, les hormones et la récupération.'}],cr:[{n:'Population adulte',p:70},{n:'Femmes stressées',p:85},{n:'Sportifs intensifs',p:90},{n:'Personnes âgées',p:80}],ca:'Attention aux formes oxyde ou carbonate (mauvaise absorption, effets laxatifs). Préférer le bisglycinate ou le glycérophosphate.'},
+ {id:2,cat:'sommeil',nom:'Ashwagandha KSM-66®',marque:'Nutripure',tl:'Sommeil & Stress',tc:'tag-sommeil',chips:['Anti-stress','Cortisol','Énergie','Hormones'],cc:'violet',desc:'La plante adaptogène la plus étudiée au monde. Régule le cortisol, améliore la résistance au stress et soutient les performances physiques et mentales.',pq:'L\'ashwagandha KSM-66® est la référence : extrait standardisé à 5% de withanolides, avec plus de 24 études cliniques. Elle réduit la production de cortisol et aide l\'organisme à mieux s\'adapter aux situations de stress physique et mental.',bf:[{t:'Réduction du cortisol',d:'Réduction de 15 à 30% du cortisol salivaire après 60 jours. Résultat direct : moins d\'anxiété, meilleur sommeil, récupération améliorée.'},{t:'Performance physique',d:'Augmente la VO2max, améliore la force et la résistance musculaire, réduit les marqueurs de fatigue après l\'effort.'},{t:'Équilibre hormonal',d:'Soutient l’équilibre hormonal global et aide l’organisme à mieux s’adapter au stress. Chez les femmes, elle peut aussi soutenir la thyroïde et les hormones reproductives.'},{t:'Fonctions cognitives',d:'Améliore la concentration, la mémoire et la clarté mentale en périodes de stress.'}],ds:[{t:'Dose standard',d:'300 à 600 mg/jour d\'extrait KSM-66® (5% withanolides). Le matin avec un repas ou en soirée.'},{t:'Cure recommandée',d:'Minimum 8 semaines pour observer les effets. Les effets s\'accumulent dans le temps.'},{t:'Contre-indications',d:'Déconseillé en cas de grossesse, allaitement, maladies auto-immunes ou hyperthyroïdie.'}],sy:[{icon:'Mg',titre:'Magnésium',desc:'Synergie puissante pour le sommeil. Le magnésium agit plus vite, l\'ashwagandha consolide sur la durée.'},{icon:'B',titre:'Vitamines B',desc:'L\'ashwagandha gère le stress ; les vitamines B alimentent les neurotransmetteurs.'},{icon:'C',titre:'Vitamine C',desc:'Les deux protègent le système immunitaire contre le stress oxydatif.'}],cr:[{n:'Pas une carence',p:0}],ca:'L\'ashwagandha n\'est pas un complément de carence mais un adaptogène. La forme KSM-66® est la seule certifiée par des études cliniques sérieuses.'},
+ {id:3,cat:'immunite',nom:'Vitamine C liposomale',marque:'Nutripure',tl:'Immunité & Vitalité',tc:'tag-immunite',chips:['Immunité','Antioxydant','Collagène','Fer'],cc:'rose',desc:'Bien plus qu\'un bouclier hivernal. Indispensable à la synthèse de collagène, à l\'absorption du fer et à la protection cellulaire quotidienne.',pq:'Plus de 50 % de la population mondiale a des apports insuffisants en vitamine C. La forme liposomale est absorbée jusqu\'à 3 fois mieux que la forme classique, et ne crée pas d\'acidité gastrique même à fortes doses.',bf:[{t:'Synthèse du collagène',d:'La vitamine C est le cofacteur indispensable des enzymes qui fabriquent le collagène. Sans elle, pas de renouvellement de la peau, des articulations, des vaisseaux ni des os.'},{t:'Absorption du fer',d:'Multiplie par 2 à 3 l\'absorption du fer non-héminique (végétal). Essentiel de les prendre ensemble dans le même repas.'},{t:'Protection antioxydante',d:'Neutralise les radicaux libres générés par le stress, la pollution et l\'exercice intense. Protège les cellules du vieillissement prématuré.'},{t:'Immunité',d:'Soutient la production et la fonction des globules blancs. Réduit la durée des rhumes.'}],ds:[{t:'Prévention quotidienne',d:'500 à 1000 mg/jour en liposomale. Le matin avec un repas.'},{t:'Période d\'infection',d:'Jusqu\'à 2000-3000 mg/jour en fractionnant les prises. Excellente tolérance en forme liposomale.'},{t:'Sportifs et récupération',d:'1000 mg post-entraînement pour neutraliser le stress oxydatif de l\'effort.'}],sy:[{icon:'Fe',titre:'Fer',desc:'La vitamine C double ou triple l\'absorption du fer végétal. Toujours prendre ensemble dans le même repas.'},{icon:'E',titre:'Vitamine E',desc:'Les deux antioxydants travaillent en synergie : la C régénère la E après son action.'},{icon:'Zn',titre:'Zinc',desc:'Zinc + vitamine C forment le duo immunité le plus documenté.'}],cr:[{n:'Population générale',p:52},{n:'Fumeurs',p:80},{n:'Personnes âgées',p:65},{n:'Faible conso fruits/légumes',p:75}],ca:'Préférer la forme liposomale ou tamponnée aux fortes doses d\'acide ascorbique pur qui peut irriter l\'estomac.'},
+ {id:4,cat:'immunite',nom:'Vitamines B complexe',marque:'Nutripure',tl:'Immunité & Vitalité',tc:'tag-immunite',chips:['Nerfs','Énergie','Humeur','B6 B9 B12'],cc:'rose',desc:'Les 8 vitamines B sont le carburant du système nerveux et de la production d\'énergie cellulaire. Déficit = fatigue profonde, brouillard mental, humeur instable.',pq:'Les vitamines B sont hydrosolubles et ne se stockent pas — l\'organisme les consomme en continu. Le stress, l\'alcool et les contraceptifs oraux les épuisent. La B12 est absente des aliments végétaux : tous les végétaliens sans supplémentation s\'acheminent vers la carence.',bf:[{t:'Énergie cellulaire',d:'Les vitamines B1, B2, B3 et B5 sont indispensables au cycle de Krebs — la machine à produire l\'ATP dans chaque cellule. Sans elles, la fatigue est profonde et inexpliquée.'},{t:'Système nerveux (B6, B12)',d:'B6 et B12 sont essentielles à la synthèse de sérotonine, dopamine et GABA. Leurs déficits causent dépression, anxiété et troubles du sommeil.'},{t:'Globules rouges (B9, B12)',d:'La B9 et la B12 fabriquent les globules rouges. Leur carence cause une anémie mégaloblastique : fatigue extrême, essoufflement, fourmillements.'},{t:'Peau, cheveux, ongles (B8)',d:'La biotine (B8) est le complément n°1 pour la solidité des ongles et la qualité des cheveux.'}],ds:[{t:'Complexe B complet',d:'1 gélule de complexe B par jour avec le petit-déjeuner. Les formes actives (méthylcobalamine pour B12, méthylfolate pour B9) sont beaucoup mieux assimilées.'},{t:'B12 seule',d:'Pour les végétariens/végétaliens : 500 mcg/jour de méthylcobalamine, en pastille sublinguale de préférence.'},{t:'B6 seule (SPM)',d:'50 mg/jour de B6 active (P-5-P) les 10 derniers jours du cycle. Ne pas dépasser 200 mg/jour sur le long terme.'}],sy:[{icon:'Mg',titre:'Magnésium',desc:'B6 + magnésium est la synergie la plus documentée pour le système nerveux et le SPM.'},{icon:'Fe',titre:'Fer',desc:'B9 et B12 sont indispensables à l\'utilisation du fer pour fabriquer l\'hémoglobine.'},{icon:'C',titre:'Vitamine C',desc:'La vitamine C protège la B12 de l\'oxydation et améliore l\'utilisation des vitamines B.'}],cr:[{n:'B12 (végétaliens)',p:78},{n:'B9 (femmes fertiles)',p:40},{n:'B6 (contraceptifs oraux)',p:50},{n:'B12 (personnes âgées)',p:45}],ca:'Choisir des formes actives (méthylcobalamine, méthylfolate, P-5-P) et non les formes synthétiques moins bien assimilées.'},
+ {id:5,cat:'sante',nom:'Vitamine D3 + K2',marque:'Nutripure',tl:'Santé & Bien-être',tc:'tag-sante',chips:['Os','Immunité','Humeur','Hormones'],cc:'',desc:'80 % des Français sont déficients. La vitamine D est en réalité une hormone qui régule l\'immunité, l\'humeur, les hormones sexuelles et la solidité osseuse.',pq:'La vitamine D est synthétisée par la peau sous le soleil, mais la latitude de la France rend cette synthèse insuffisante 9 mois sur 12. La forme D3 est bien plus active que D2. L\'association avec la K2 (MK-7) est essentielle : elle dirige le calcium vers les os et non vers les artères.',bf:[{t:'Immunité profonde',d:'La vitamine D active directement les lymphocytes T et les macrophages. Les personnes carencées ont un risque 2 à 3 fois plus élevé d\'infections respiratoires en hiver.'},{t:'Santé osseuse',d:'Permet l\'absorption intestinale du calcium. Sans D3, le calcium alimentaire n\'est pas fixé sur les os. La K2 le dirige vers le squelette et non les vaisseaux.'},{t:'Humeur et dépression',d:'Les récepteurs à la vitamine D sont présents dans le cerveau. La carence est associée à la dépression saisonnière.'},{t:'Hormones et fertilité',d:'La D3 module la production d\'œstrogènes et de testostérone. Les carences sont associées à des cycles menstruels irréguliers.'}],ds:[{t:'Entretien quotidien',d:'1000 à 2000 UI/jour toute l\'année, 4000 UI/jour d\'octobre à avril. Toujours associer avec K2 (100-200 mcg MK-7).'},{t:'Correction d\'une carence',d:'5000 à 10 000 UI/jour pendant 2-3 mois puis revenir à la dose d\'entretien. Uniquement sur bilan sanguin.'},{t:'Prise idéale',d:'Le midi avec le repas le plus riche en matières grasses (vitamine liposoluble).'}],sy:[{icon:'K2',titre:'Vitamine K2 MK-7',desc:'Indispensable avec la D3 pour diriger le calcium vers les os. Ne jamais prendre D3 sans K2 sur le long terme.'},{icon:'Mg',titre:'Magnésium',desc:'Le magnésium est nécessaire pour que la D3 se transforme en sa forme active.'},{icon:'A',titre:'Vitamine A',desc:'D3 et A sont en équilibre dynamique. Un excès de l\'un peut masquer la carence de l\'autre.'}],cr:[{n:'Population française',p:80},{n:'En hiver (nord France)',p:92},{n:'Personnes âgées',p:88},{n:'Peaux noires',p:85}],ca:'Faire doser son taux de 25-OH vitamine D avant de commencer (taux optimal : 60-80 ng/mL). Ne pas confondre D2 et D3.'},
+ {id:6,cat:'energie',nom:'Oméga-3 EPA / DHA',marque:'Nutripure',tl:'Énergie & Hormones',tc:'tag-energie',chips:['Cerveau','Anti-inflam.','Cœur','Hormones'],cc:'gold',desc:'Les acides gras essentiels que le corps ne peut pas fabriquer. EPA contre l\'inflammation, DHA pour le cerveau, la vision et la régulation hormonale.',pq:'Les oméga-3 ne peuvent pas être synthétisés par le corps. Le ratio oméga-6/oméga-3 dans l\'alimentation moderne est de 20:1 là où il devrait être de 4:1. Ce déséquilibre crée une inflammation chronique de fond qui accélère le vieillissement et perturbe les hormones.',bf:[{t:'Anti-inflammatoire systémique',d:'L\'EPA est le précurseur des prostaglandines anti-inflammatoires. Une supplémentation régulière réduit les marqueurs d\'inflammation et soulage les douleurs articulaires et menstruelles.'},{t:'Cerveau et humeur',d:'Le DHA constitue 60 % des acides gras du cerveau. Il est indispensable à la transmission synaptique et à la protection contre la dépression.'},{t:'Hormones sexuelles',d:'Les oméga-3 sont les précurseurs des hormones stéroïdiennes. Ils améliorent la qualité de la muqueuse utérine et réduisent les crampes menstruelles.'},{t:'Cardio-vasculaire',d:'Réduisent les triglycérides et améliorent la flexibilité vasculaire. L\'OMS recommande 250 mg d\'EPA+DHA par jour minimum.'}],ds:[{t:'Prévention quotidienne',d:'1 à 2 g d\'EPA+DHA par jour. Lire la teneur en EPA/DHA sur l\'étiquette, pas juste "huile de poisson". Avec un repas gras.'},{t:'Anti-inflammatoire',d:'2 à 4 g d\'EPA+DHA par jour en cure de 3 mois. Doses validées pour réduire l\'inflammation.'},{t:'Cycle menstruel',d:'2 g/jour d\'EPA pendant la phase menstruelle pour réduire les crampes. Effet dès la 2e cure mensuelle.'}],sy:[{icon:'D3',titre:'Vitamine D3',desc:'D3 et oméga-3 sont tous deux liposolubles et agissent en synergie sur l\'immunité. Prendre ensemble avec un repas gras.'},{icon:'E',titre:'Vitamine E',desc:'Protège les oméga-3 de l\'oxydation in vivo. Toujours choisir un complément oméga-3 contenant de la vitamine E.'},{icon:'Mg',titre:'Magnésium',desc:'La synergie oméga-3 + magnésium est particulièrement documentée pour réduire les douleurs menstruelles.'}],cr:[{n:'Population générale',p:75},{n:'Végétariens/Végétaliens',p:95},{n:'Femmes fertiles',p:70},{n:'Personnes ≥ 50 ans',p:80}],ca:'Choisir des oméga-3 avec certification IFOS. Préférer les formes triglycérides (TG) aux formes esters éthyliques (EE) — meilleure absorption.'},
+ {id:7,cat:'sport',nom:'Whey Isolat Native',marque:'Nutripure — lait pâturages français',tl:'Performance Sport',tc:'tag-sport',chips:['Muscle','Récupération','BCAA','Digestion'],cc:'blue',desc:'La protéine premium par excellence. Filtrée à froid, issue de lait frais de pâturages français, 94 % de protéines, 25 % de BCAA. Certifiée antidopage AMA.',pq:'La whey isolat native est obtenue directement du lait frais (non dénaturée par la chaleur), pas des résidus de fromagerie. Profil d\'acides aminés intact, meilleure digestibilité. La version Nutripure est certifiée AMA et contient seulement 2 ingrédients dans sa version neutre.',bf:[{t:'Synthèse musculaire',d:'Apporte l\'ensemble des acides aminés essentiels (EAA) et des BCAA qui déclenchent la synthèse des protéines musculaires. 30 g post-entraînement est le timing le plus efficace.'},{t:'Récupération accélérée',d:'Les BCAA réduisent les dommages musculaires induits par l\'effort et accélèrent la réparation tissulaire. Moins de courbatures, retour plus rapide.'},{t:'Satiété et composition',d:'Les protéines sont les macronutriments les plus rassasiants. La whey aide à atteindre les objectifs protéiques quotidiens (1.6 à 2.2 g/kg).'},{t:'Santé immunitaire',d:'Riche en lactoferrine et immunoglobulines qui soutiennent l\'immunité intestinale.'}],ds:[{t:'Post-entraînement',d:'25 à 30 g dans les 30 min après l\'effort. En shaker avec de l\'eau, en smoothie ou dans des pancakes.'},{t:'Complément alimentaire',d:'1 à 2 doses/jour selon l\'apport protéique alimentaire. Objectif : 1.6 à 2.2 g de protéines par kg de poids corporel.'},{t:'Femmes',d:'La whey est tout aussi efficace pour le tonus musculaire féminin et la récupération.'}],sy:[{icon:'Cr',titre:'Créatine',desc:'Le duo le plus documenté du sport : whey pour la synthèse musculaire, créatine pour la force et la puissance.'},{icon:'Mg',titre:'Magnésium',desc:'Le magnésium soutient la contraction musculaire et la récupération nerveuse. Whey post-entraînement + magnésium le soir.'},{icon:'D3',titre:'Vitamine D3',desc:'La D3 améliore la synthèse musculaire en elle-même. Les athlètes déficients en D3 progressent moins.'}],cr:[{n:'Pas une carence',p:0}],ca:'La whey n\'est pas du dopage — c\'est une protéine alimentaire concentrée. Vérifier la certification antidopage si tu es sportif de compétition. Préférer l\'isolat en cas d\'intolérance au lactose.'},
+ {id:8,cat:'sport',nom:'Créatine Monohydrate Creapure®',marque:'Décathlon / Nutripure',tl:'Performance Sport',tc:'tag-sport',chips:['Force','Puissance','Récupération','Cerveau'],cc:'blue',desc:'Le complément sportif le plus étudié de l\'histoire. 500+ études cliniques. Améliore la force, la puissance explosive, la récupération et même les fonctions cognitives.',pq:'La créatine sert de batterie rapide pour produire de l\'ATP lors des efforts courts et intenses. La supplémentation augmente ces réserves de 20 à 40 %, permettant de s\'entraîner plus dur et de récupérer plus vite. Forme à choisir : Creapure® (monohydrate allemand certifié ISO, la référence mondiale).',bf:[{t:'Force et puissance',d:'Augmentation de 5 à 15 % sur les charges maximales en 4 à 8 semaines. Particulièrement efficace sur les efforts courts et intenses.'},{t:'Récupération',d:'Réduit les marqueurs de dommages musculaires et accélère la resynthèse du glycogène. Moins de courbatures, récupération entre séances améliorée.'},{t:'Cerveau et mémoire',d:'Le cerveau utilise la créatine comme le muscle. Les études montrent une amélioration de la mémoire de travail et de la résistance mentale à la fatigue.'},{t:'Végétariens et végétaliens',d:'Les végétariens n\'obtiennent presque pas de créatine via l\'alimentation — leur réponse à la supplémentation est encore plus marquée.'}],ds:[{t:'Protocole simple (recommandé)',d:'3 à 5 g par jour, tous les jours, à n\'importe quel moment. La saturation progressive prend 3-4 semaines sans effets secondaires.'},{t:'Protocole avec charge (optionnel)',d:'20 g/jour (4 x 5 g) pendant 5 jours, puis 3-5 g/jour d\'entretien. Peut causer des inconforts digestifs.'},{t:'Avec quoi la prendre',d:'Avec des glucides ou des protéines pour améliorer l\'uptake musculaire. Association avec la whey post-entraînement classique.'}],sy:[{icon:'W',titre:'Whey protéine',desc:'Le duo de base de tout sportif sérieux. Whey pour la synthèse musculaire, créatine pour la force.'},{icon:'B',titre:'Vitamines B',desc:'Les vitamines B soutiennent le métabolisme énergétique et la production d\'ATP dans lesquelles la créatine intervient.'},{icon:'Mg',titre:'Magnésium',desc:'Le magnésium est impliqué dans l\'utilisation de l\'ATP. Créatine + magnésium améliore production et utilisation d\'énergie.'}],cr:[{n:'Pas une carence',p:0}],ca:'La créatine est l\'un des compléments les plus sûrs connus. Elle ne provoque pas de problèmes rénaux chez les personnes en bonne santé. Elle peut faire prendre 0.5 à 1 kg d\'eau intramusculaire en début de cure — c\'est normal. Choisir Creapure® pour la pureté certifiée.'},
+ {id:9,cat:'sante',nom:'Zinc bisglycinate',marque:'Nutripure',tl:'Santé & Bien-être',tc:'tag-sante',chips:['Immunité','Peau','Hormones','Synthèse'],cc:'',desc:'Cofacteur de plus de 300 enzymes. Indispensable au système immunitaire, à la synthèse hormonale, à la peau, aux cheveux et à la fertilité.',pq:'Le zinc intervient dans plus de 300 réactions enzymatiques. Il est particulièrement difficile à obtenir via une alimentation végétarienne car l\'acide phytique des céréales inhibe son absorption. Le bisglycinate est la forme la mieux absorbée et la mieux tolérée.',bf:[{t:'Immunité',d:'Active les lymphocytes T et NK. La supplémentation réduit la durée et la sévérité des infections ORL. C\'est le minéral le plus directement impliqué dans la réponse immunitaire rapide.'},{t:'Peau, cheveux, ongles',d:'Le zinc est indispensable à la synthèse de kératine et de collagène. Une carence cause acné, cicatrisation lente, chute de cheveux et ongles tachés de blanc.'},{t:'Synthèse hormonale',d:'Cofacteur essentiel de la synthèse de testostérone, d\'œstrogènes et de progestérone. Crucial pour soutenir la croissance folliculaire ovarienne.'},{t:'Fertilité',d:'Soutient l’ovulation, la qualité ovocytaire et l’équilibre hormonal féminin.'}],ds:[{t:'Dose standard',d:'10 à 15 mg/jour de zinc élémentaire en bisglycinate. À prendre à distance des repas riches en phytates.'},{t:'Immunité (cure hivernale)',d:'25 à 30 mg/jour pendant 3 mois. Ne pas dépasser 40 mg/jour sur la durée (antagonisme avec le cuivre).'},{t:'Avec du cuivre',d:'Si supplémentation prolongée en zinc, ajouter 1 à 2 mg de cuivre pour éviter le déséquilibre zinc-cuivre.'}],sy:[{icon:'C',titre:'Vitamine C',desc:'Zinc + vitamine C forment le duo immunité le plus documenté. Les deux en début de symptômes infectieux.'},{icon:'Mg',titre:'Magnésium',desc:'Le trio magnésium + zinc + B6 est classique pour soutenir le système nerveux, les hormones et l\'immunité.'},{icon:'B6',titre:'Vitamine B6',desc:'B6 améliore l\'utilisation intracellulaire du zinc. Synergie importante pour la synthèse des neurotransmetteurs.'}],cr:[{n:'Végétariens/Végétaliens',p:65},{n:'Sportifs intensifs',p:45},{n:'Personnes âgées',p:40},{n:'Femmes fertiles',p:35}],ca:'Le zinc inhibe l\'absorption du cuivre. Éviter les doses > 40 mg/jour sur le long terme. Le zinc à jeun peut causer des nausées : prendre avec une petite collation.'},
+ {id:10,cat:'energie',nom:'Fer bisglycinate + Vitamine C',marque:'Nutripure',tl:'Énergie & Hormones',tc:'tag-energie',chips:['Énergie','Anémie','Cycle','Cognition'],cc:'gold',desc:'20 % des femmes en âge de procréer sont en déficit de fer en France. Fatigue inexpliquée, essoufflement, brouillard mental : c\'est souvent le fer.',pq:'La carence en fer est la plus répandue en France chez les femmes. Chaque cycle menstruel entraîne des pertes de fer. Le bisglycinate est mieux absorbé et bien mieux toléré que le sulfate de fer classique. L\'association avec la vitamine C est indispensable pour doubler l\'absorption.',bf:[{t:'Énergie et vitalité',d:'Le fer transporte l\'oxygène via l\'hémoglobine. Une carence, même légère, crée une fatigue profonde, un essoufflement à l\'effort et une difficulté à se concentrer.'},{t:'Fonctions cognitives',d:'Le fer est indispensable à la myélinisation des nerfs et à la synthèse des neurotransmetteurs dopamine et sérotonine.'},{t:'Système immunitaire',d:'Les globules blancs ont besoin de fer pour fonctionner. La carence fragilise l\'immunité et augmente la susceptibilité aux infections.'},{t:'Cycle menstruel',d:'Reconstituer les réserves de fer après les règles est essentiel pour l\'énergie globale. La carence aggrave la fatigue prémenstruelle et la dysménorrhée.'}],ds:[{t:'Prévention (femmes fertiles)',d:'14 à 18 mg/jour de fer élémentaire en bisglycinate avec vitamine C au même repas. Éviter café, thé et produits laitiers autour de la prise.'},{t:'Correction de carence',d:'60 à 120 mg/jour uniquement sur bilan sanguin confirmant la carence. Durée : 3 à 6 mois pour reconstituer les réserves.'},{t:'Post-règles (cure mensuelle)',d:'Concentrer la prise les jours de règles et les 5 jours suivants pour reconstituer les pertes.'}],sy:[{icon:'C',titre:'Vitamine C',desc:'La vitamine C double ou triple l\'absorption du fer non-héminique. Toujours les prendre ensemble dans le même repas.'},{icon:'B9/12',titre:'Vitamines B9 et B12',desc:'Sans B9 et B12, le fer ne peut pas être utilisé pour fabriquer des globules rouges normaux.'},{icon:'A',titre:'Vitamine A',desc:'La vitamine A améliore la mobilisation du fer des réserves hépatiques. Sa carence aggrave l\'anémie ferriprive.'}],cr:[{n:'Femmes 18-39 ans',p:20},{n:'Filles adolescentes',p:25},{n:'Femmes enceintes',p:35},{n:'Végétariens/Végétaliens',p:30}],ca:'Ne jamais se supplémenter en fer sans bilan sanguin (ferritine + NFS). Un excès de fer est toxique et pro-oxydant.'},
+];
+
+const TD={
+ fatigue:{s:'Fatigue persistante',p:'Fer, vitamine D, magnésium ou vitamines B',e:'La fatigue chronique sans cause évidente pointe souvent vers le fer (surtout chez les femmes), la vitamine D (déficit quasi universel en hiver), le magnésium ou les vitamines B — les 4 piliers de la production d\'énergie cellulaire.',c:'Commencer par un bilan sanguin (ferritine, 25-OH vitamine D, NFS). Si tout est dans les normes, le magnésium bisglycinate est la première piste à tester sans ordonnance.',ids:[1,5,4]},
+ stress:{s:'Stress, anxiété ou déprime légère',p:'Magnésium, ashwagandha ou vitamines B',e:'Le stress chronique épuise le magnésium et les vitamines B en quelques heures. L\'axe cortisol peut être régulé par l\'ashwagandha KSM-66®. Les oméga-3 ont aussi un rôle documenté dans la stabilité de l\'humeur.',c:'La synergie magnésium bisglycinate + ashwagandha KSM-66® est la combinaison la plus étudiée pour le stress chronique.',ids:[1,2,6]},
+ sommeil:{s:'Troubles du sommeil',p:'Magnésium bisglycinate ou ashwagandha',e:'Le magnésium active les récepteurs GABA favorisant l\'endormissement. Le cortisol élevé (ashwagandha) perturbe aussi le cycle veille-sommeil.',c:'Magnésium bisglycinate 300-400 mg le soir 1h avant le coucher. Si le stress est la cause principale, ajouter ashwagandha KSM-66® en cure de 2 mois.',ids:[1,2]},
+ crampes:{s:'Crampes ou contractures',p:'Magnésium — carence très fréquente',e:'Les crampes musculaires sont l\'un des signes les plus spécifiques d\'un déficit en magnésium. Il est impliqué dans la relaxation musculaire.',c:'Magnésium bisglycinate 400 mg/jour. Les crampes nocturnes disparaissent souvent en 2 à 3 semaines.',ids:[1]},
+ peau:{s:'Peau terne ou réactive',p:'Zinc, vitamine C ou oméga-3',e:'Le zinc est le minéral n°1 de la peau : synthèse de collagène, cicatrisation, régulation du sébum. La vitamine C est cofacteur indispensable du collagène. Les oméga-3 renforcent la barrière cutanée.',c:'La triade zinc bisglycinate + vitamine C liposomale + oméga-3 est très efficace. Résultats visibles en 6 à 8 semaines.',ids:[9,3,6]},
+ cheveux:{s:'Chute ou fragilité des cheveux',p:'Zinc, fer ou vitamines B (biotine B8)',e:'La chute de cheveux peut signaler un déficit en fer (ferritine basse), en zinc (cofacteur de la kératine) ou en biotine (B8). Ces trois nutriments sont indispensables à la croissance du cheveu.',c:'Faire un bilan ferritine avant toute supplémentation en fer. Le zinc bisglycinate et le complexe B peuvent être démarrés sans ordonnance.',ids:[9,4,10]},
+ anemie:{s:'Anémie ou fer bas',p:'Fer bisglycinate + vitamine C (indispensables ensemble)',e:'La carence en fer touche 20% des femmes en France. Elle provoque fatigue profonde, essoufflement et brouillard mental. Le bisglycinate est mieux absorbé et bien mieux toléré que le sulfate.',c:'Toujours associer fer + vitamine C dans le même repas. Ne jamais se supplémenter en fer sans bilan sanguin (ferritine + NFS) au préalable.',ids:[10,3]},
+ sport:{s:'Récupération ou performance sportive',p:'Créatine Creapure®, whey isolat ou magnésium',e:'La créatine est le complément sportif le plus étudié (500+ études). La whey isolat native assure les apports en acides aminés essentiels post-effort. Le magnésium soutient la contraction et la récupération nerveuse.',c:'Créatine 3-5g/jour + whey isolat 25-30g post-entraînement + magnésium bisglycinate 400mg le soir. Le trio de base de tout sportif sérieux.',ids:[8,7,1]},
+ immuno:{s:'Immunité faible, infections fréquentes',p:'Vitamine D3 + zinc + vitamine C',e:'Ce trio est le plus documenté pour l\'immunité : la D3 active les lymphocytes T, le zinc active les globules blancs et la vitamine C soutient la production d\'anticorps. 80% des Français sont déficients en D3.',c:'Vitamine D3 (2000 UI/jour en entretien, 4000 UI en hiver) toujours avec K2. Zinc 15mg/jour. Vitamine C liposomale 500-1000mg/jour.',ids:[5,9,3]},
+ poids:{s:'Métabolisme ou poids inexpliqué',p:'Vitamine D, iode ou magnésium (piste thyroïdienne)',e:'La vitamine D régule le métabolisme insulinique. Le magnésium est cofacteur de nombreuses enzymes métaboliques. Si la variation est inexpliquée, une piste thyroïdienne mérite d\'être explorée avec un médecin.',c:'En premier lieu : bilan thyroïdien (TSH, T3, T4) + dosage vitamine D. Ne pas traiter un problème métabolique avec des compléments sans diagnostic.',ids:[5,1]},
+ spm:{s:'Syndrome prémenstruel (SPM)',p:'Magnésium + vitamines B6 — duo le plus documenté',e:'La chute de progestérone en fin de cycle épuise le magnésium et déséquilibre la synthèse de sérotonine. La vitamine B6 est cofacteur de cette synthèse. Les oméga-3 réduisent les prostaglandines responsables des crampes.',c:'Magnésium bisglycinate 400mg/jour + complexe B (avec B6 active P-5-P) les 10 derniers jours du cycle. Oméga-3 en continu pour les crampes.',ids:[1,4,6]},
+ cerveau:{s:'Brouillard mental ou concentration difficile',p:'Oméga-3 DHA, vitamines B ou créatine',e:'Le DHA constitue 60% des acides gras du cerveau — un déficit affecte directement la transmission synaptique. Les vitamines B12 et B9 sont indispensables à la myélinisation. La créatine améliore la mémoire de travail.',c:'Oméga-3 (minimum 1g DHA/jour) + complexe B actif. La créatine 3g/jour est particulièrement efficace pour le brouillard mental des végétariens.',ids:[6,4,8]},
+};
+
+function runTest(){
+ const checked=[...document.querySelectorAll('#test-grid input:checked')];
+ const area=document.getElementById('test-res');
+ if(!checked.length){area.innerHTML='<p class="tr-empty">Coche au moins un symptôme pour voir tes pistes.</p>';return;}
+ const items=checked.map(cb=>{
+  const d=TD[cb.value];
+  const links=(d.ids||[]).map(id=>{const c=C.find(x=>x.id===id);return c?`<button class="tr-ctag" onclick="openModal(${c.id}, event)">${c.nom}</button>`:''}).join('');
+  return `<div class="tr-item open">
+   <button class="tr-btn" onclick="this.parentElement.classList.toggle('open')" type="button">
+    <div><div class="tr-sym">${d.s}</div><div class="tr-piste">${d.p}</div></div>
+    <span class="tr-arrow">+</span>
+   </button>
+   <div class="tr-body">
+    <div class="tr-block"><div class="tr-blabel">Ce que ça peut vouloir dire</div><p class="tr-btext">${d.e}</p></div>
+    <div class="tr-block"><div class="tr-blabel">Par où commencer</div><p class="tr-btext">${d.c}</p></div>
+    ${links?`<div class="tr-block"><div class="tr-blabel">Compléments associés — clique pour ouvrir la fiche</div><div class="tr-comps">${links}</div></div>`:''}
+   </div>
+  </div>`;
+ }).join('');
+ area.innerHTML=`
+  <div style="margin-bottom:.9rem;padding-top:.2rem;">
+   <div class="sec-eyebrow" style="text-align:left;font-size:10px;margin-bottom:.2rem;">${checked.length} signal${checked.length>1?'s':''} détecté${checked.length>1?'s':''}</div>
+   <div style="font-size:15px;font-weight:800;letter-spacing:-.02em;color:var(--text);">Tes pistes nutritionnelles personnalisées</div>
+  </div>
+  <div class="tr-grid">${items}</div>
+  <div class="tr-note"><strong>Important :</strong> Ce test est indicatif et ne remplace ni une prise de sang ni un avis médical. Si plusieurs signaux reviennent régulièrement, consulter un professionnel de santé reste la meilleure démarche.</div>`;
+ area.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function renderCards(cat){
+ const grid=document.getElementById('cards-grid');
+ const list=cat==='all'?C:C.filter(c=>c.cat===cat);
+ grid.innerHTML=list.map(c=>`
+ <div class="comp-card" onclick="openModal(${c.id}, event)">
+   <div class="card-top">
+    <div class="card-cat-tag ${c.tc}">${c.tl}</div>
+    <div class="card-name">${c.nom}</div>
+    <div class="card-brand">${c.marque}</div>
+   </div>
+   <div class="card-body">
+    <p class="card-desc">${c.desc}</p>
+    <div class="card-chips">${c.chips.map(ch=>`<span class="chip ${c.cc}">${ch}</span>`).join('')}</div>
+   </div>
+  </div>`).join('');
+}
+
+function filterCat(cat,btn){
+ document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+ btn.classList.add('active');renderCards(cat);
+}
+
+
+function openModal(id, ev){
+  const c = C.find(x => x.id === id);
+  if(!c) return;
+
+  document.getElementById('m-tag').textContent = c.tl;
+  document.getElementById('m-name').textContent = c.nom;
+  document.getElementById('m-brand').textContent = c.marque;
+
+  document.getElementById('mtab-pourquoi').innerHTML = `
+    <div class="m-block"><strong>Pourquoi se supplémenter ?</strong><br><br>${c.pq}</div>
+    ${c.ca ? `<div class="m-block warn"><strong>À savoir :</strong> ${c.ca}</div>` : ''}
+  `;
+
+  document.getElementById('mtab-bienfaits').innerHTML = c.bf.map(b => `
+    <div class="m-lbl">${b.t}</div>
+    <div class="m-block">${b.d}</div>
+  `).join('');
+
+  document.getElementById('mtab-dosage').innerHTML = c.ds.map(d => `
+    <div class="d-card">
+      <div class="d-title">${d.t}</div>
+      <div class="d-detail">${d.d}</div>
+    </div>
+  `).join('');
+
+  document.getElementById('mtab-synergie').innerHTML = `
+    <p style="font-size:12px;color:var(--soft);margin-bottom:1rem;line-height:1.6;">
+      Compléments qui fonctionnent en synergie avec celui-ci :
+    </p>
+    ${c.sy.map(s => `
+      <div class="syn-row">
+        <div class="syn-ico">${s.icon}</div>
+        <div class="syn-text">
+          <strong>${s.titre}</strong>
+          <span>${s.desc}</span>
+        </div>
+      </div>
+    `).join('')}
+  `;
+
+  document.getElementById('mtab-carence').innerHTML = c.cr[0].p === 0
+    ? `<div class="m-block"><strong>${c.nom}</strong> n'est pas un complément de carence — c'est un optimiseur de performance ou un adaptogène. Son usage est basé sur l'objectif et non sur un déficit mesurable.</div>`
+    : `
+      <p style="font-size:12px;color:var(--soft);margin-bottom:1rem;line-height:1.6;">
+        Pourcentage estimé de personnes en déficit selon les populations :
+      </p>
+      ${c.cr.map(r => `
+        <div class="c-row">
+          <span class="c-lbl">${r.n}</span>
+          <div class="c-track"><div class="c-fill" style="width:${r.p}%"></div></div>
+          <span class="c-pct">${r.p}%</span>
+        </div>
+      `).join('')}
+      <div class="m-block" style="margin-top:.9rem;font-size:12px;">
+        Données issues d'études épidémiologiques et de l'étude française Esteban (2014-2016). Ces chiffres représentent les déficits subcliniques.
+      </div>
+    `;
+
+  document.querySelectorAll('.mtab,.mtab-content').forEach(el => el.classList.remove('active'));
+  document.querySelector('.mtab').classList.add('active');
+  document.getElementById('mtab-pourquoi').classList.add('active');
+
+  const overlay = document.getElementById('modal-overlay');
+  const modal = document.getElementById('modal');
+
+  overlay.classList.remove('open');
+
+  let startX = '0px';
+  let startY = '24px';
+  let startScale = '.96';
+
+  if(ev && ev.currentTarget){
+    const triggerRect = ev.currentTarget.getBoundingClientRect();
+
+    const viewportW = window.innerWidth;
+    const viewportH = window.innerHeight;
+
+    const modalTargetW = Math.min(620, viewportW - 24);
+    const modalTargetH = Math.min(viewportH * 0.82, 780);
+
+    const targetLeft = (viewportW - modalTargetW) / 2;
+
+    const marginTop = 12;
+    const marginBottom = 12;
+
+    let targetTop = triggerRect.top - 20;
+
+    const maxTop = viewportH - modalTargetH - marginBottom;
+
+    if(targetTop < marginTop) targetTop = marginTop;
+    if(targetTop > maxTop) targetTop = maxTop;
+
+    const triggerCenterX = triggerRect.left + (triggerRect.width / 2);
+    const triggerTopY = triggerRect.top + 12;
+
+    const deltaX = triggerCenterX - (targetLeft + modalTargetW / 2);
+    const deltaY = triggerTopY - targetTop;
+
+    startX = `${deltaX}px`;
+    startY = `${deltaY}px`;
+    startScale = viewportW <= 700 ? '.94' : '.96';
+
+    overlay.style.alignItems = 'flex-start';
+    overlay.style.justifyContent = 'center';
+    overlay.style.paddingTop = `${targetTop}px`;
+    overlay.style.paddingRight = '12px';
+    overlay.style.paddingBottom = '12px';
+    overlay.style.paddingLeft = '12px';
+  } else {
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.padding = '16px';
+  }
+
+  modal.style.setProperty('--modal-start-x', startX);
+  modal.style.setProperty('--modal-start-y', startY);
+  modal.style.setProperty('--modal-start-scale', startScale);
+
+  document.body.style.overflow = 'hidden';
+
+  requestAnimationFrame(() => {
+    modal.scrollTop = 0;
+    overlay.classList.add('open');
+  });
+}
+
+function closeModal(){
+  const overlay = document.getElementById('modal-overlay');
+  overlay.classList.remove('open');
+  overlay.style.alignItems = '';
+  overlay.style.justifyContent = '';
+  overlay.style.paddingTop = '';
+  overlay.style.paddingRight = '';
+  overlay.style.paddingBottom = '';
+  overlay.style.paddingLeft = '';
+  document.body.style.overflow = '';
+}
+
+function handleOverlayClick(e){
+  if(e.target===document.getElementById('modal-overlay')){
+    closeModal();
+  }
+}
+
+function switchMTab(tab,btn){
+  document.querySelectorAll('.mtab,.mtab-content').forEach(el=>el.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('mtab-'+tab).classList.add('active');
+
+  const modal=document.getElementById('modal');
+  const tabsTop=document.querySelector('.modal-tabs')?.offsetTop || 0;
+  if(modal.scrollTop > tabsTop){
+    modal.scrollTo({top:tabsTop-6,behavior:'smooth'});
+  }
+}
+
+document.addEventListener('keydown',function(e){
+  if(e.key === 'Escape'){
+    closeModal();
+  }
+});
+
+window.runTest=runTest;
+window.filterCat=filterCat;
+window.openModal=openModal;
+window.closeModal=closeModal;
+window.handleOverlayClick=handleOverlayClick;
+window.switchMTab=switchMTab;
+
+renderCards('all');
+</script>
