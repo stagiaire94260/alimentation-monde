@@ -1,0 +1,990 @@
+<!-- ======= Cycle menstruel TNH — roue 3D douce + logo centré ======= -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<div id="cycle-premium">
+  <div class="cycle-wheel-wrap">
+    <div class="cycle-wheel" id="cycle-wheel">
+      <svg id="cycle-wheel-svg" viewBox="0 0 500 500" aria-label="Cycle menstruel interactif">
+        <defs>
+          <radialGradient id="centerFill" cx="50%" cy="45%" r="75%">
+            <stop offset="0%" stop-color="#fffefe"></stop>
+            <stop offset="100%" stop-color="#f7efef"></stop>
+          </radialGradient>
+
+          <filter id="softDepth" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#5f1212" flood-opacity=".10"/>
+          </filter>
+
+          <filter id="segmentDepth" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#4a0e10" flood-opacity=".10"/>
+          </filter>
+        </defs>
+
+        <circle class="wheel-base-ring" cx="250" cy="250" r="214"></circle>
+        <circle class="wheel-inner-ring" cx="250" cy="250" r="118"></circle>
+
+        <g id="wheel-segments"></g>
+
+        <circle cx="250" cy="250" r="102" fill="url(#centerFill)" filter="url(#softDepth)"></circle>
+        <circle cx="250" cy="250" r="102" fill="none" stroke="rgba(169,27,24,.08)" stroke-width="1"></circle>
+
+        <g class="wheel-center-logo">
+          <image
+            href="https://d1yei2z3i6k35z.cloudfront.net/9069669/696295d9d3781_Group332.png"
+            x="196"
+            y="196"
+            width="108"
+            height="108"
+            preserveAspectRatio="xMidYMid meet"
+          ></image>
+        </g>
+
+        <g id="wheel-labels"></g>
+      </svg>
+    </div>
+  </div>
+
+  <div id="phase-popup">
+    <button id="popup-close" onclick="closePopup()" aria-label="Fermer">✕</button>
+
+    <div class="popup-head">
+      <div id="phase-badge"></div>
+      <h3 id="phase-title"></h3>
+      <p id="phase-intro"></p>
+    </div>
+
+    <div class="popup-tabs">
+      <button class="popup-tab active" data-tab="hormones">Hormones</button>
+      <button class="popup-tab" data-tab="aliments">Aliments</button>
+      <button class="popup-tab" data-tab="bienfaits">Bienfaits</button>
+      <button class="popup-tab" data-tab="recettes">Recettes</button>
+    </div>
+
+    <div class="popup-body">
+      <div class="popup-panel active" id="tab-hormones"></div>
+      <div class="popup-panel" id="tab-aliments"></div>
+      <div class="popup-panel" id="tab-bienfaits"></div>
+      <div class="popup-panel" id="tab-recettes"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #cycle-premium{
+    font-family:'Inter', Helvetica, Arial, sans-serif;
+    color:#3F0405;
+    width:100%;
+    max-width:980px;
+    margin:0 auto;
+    position:relative;
+  }
+
+  #cycle-premium *{
+    box-sizing:border-box;
+  }
+
+  .cycle-wheel-wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px 10px 0;
+  }
+
+  .cycle-wheel{
+    width:min(84vw, 620px);
+    max-width:620px;
+    position:relative;
+  }
+
+  #cycle-wheel-svg{
+    display:block;
+    width:100%;
+    height:auto;
+    overflow:visible;
+  }
+
+  .wheel-base-ring{
+    fill:none;
+    stroke:#eee1e1;
+    stroke-width:22;
+  }
+
+  .wheel-inner-ring{
+    fill:none;
+    stroke:#f6eded;
+    stroke-width:10;
+  }
+
+  .wheel-segment{
+    cursor:pointer;
+    transition:transform .18s ease, opacity .18s ease, filter .18s ease;
+    transform-origin:250px 250px;
+    filter:url(#segmentDepth);
+  }
+
+  .wheel-segment:hover{
+    transform:translateY(-1px);
+    opacity:.97;
+  }
+
+  .wheel-segment.is-active{
+    transform:scale(1.018);
+    filter:brightness(.98);
+  }
+
+  .wheel-label{
+    pointer-events:none;
+  }
+
+  .wheel-label-title{
+    font-size:15px;
+    font-weight:800;
+    fill:#fff;
+    letter-spacing:-.02em;
+  }
+
+  .wheel-label-days{
+    font-size:11px;
+    font-weight:600;
+    fill:rgba(255,255,255,.94);
+  }
+
+  .wheel-center-logo image{
+    filter:drop-shadow(0 4px 10px rgba(63,4,5,.06));
+  }
+
+  #phase-popup{
+    display:none;
+    position:fixed;
+    width:min(92vw, 440px);
+    max-width:440px;
+    background:#fbf6f6;
+    color:#3F0405;
+    border:1px solid rgba(169,27,24,.12);
+    border-radius:24px;
+    box-shadow:0 18px 40px rgba(63,4,5,.14);
+    text-align:left;
+    z-index:9999;
+    overflow:hidden;
+    transform:scale(.96);
+    opacity:0;
+    transition:transform .22s ease, opacity .22s ease;
+  }
+
+  #popup-close{
+    position:absolute;
+    top:14px;
+    right:14px;
+    border:none;
+    background:#a91b18;
+    color:#fff;
+    border-radius:10px;
+    width:28px;
+    height:28px;
+    cursor:pointer;
+    font-weight:700;
+    font-size:13px;
+    line-height:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:4;
+  }
+
+  .popup-head{
+    padding:20px 20px 16px;
+    background:#f7eeee;
+    border-bottom:1px solid rgba(169,27,24,.08);
+  }
+
+  #phase-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:#a91b18;
+    background:rgba(169,27,24,.07);
+    border:1px solid rgba(169,27,24,.10);
+    border-radius:999px;
+    padding:7px 10px;
+    margin-bottom:10px;
+  }
+
+  #phase-title{
+    margin:0 0 8px;
+    font-size:24px;
+    line-height:1.08;
+    font-weight:800;
+    letter-spacing:-.03em;
+    color:#3F0405;
+    padding-right:34px;
+  }
+
+  #phase-intro{
+    margin:0;
+    font-size:13.5px;
+    line-height:1.65;
+    color:#6f4a4c;
+  }
+
+  .popup-tabs{
+    display:flex;
+    overflow-x:auto;
+    background:#f5eded;
+    border-bottom:1px solid rgba(169,27,24,.08);
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .popup-tabs::-webkit-scrollbar{
+    display:none;
+  }
+
+  .popup-tab{
+    border:none;
+    background:transparent;
+    padding:14px 14px;
+    font-family:'Inter', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    font-weight:700;
+    color:#8d6a6b;
+    cursor:pointer;
+    white-space:nowrap;
+    border-bottom:2px solid transparent;
+    flex:none;
+  }
+
+  .popup-tab.active{
+    color:#a91b18;
+    border-bottom-color:#a91b18;
+    background:#fbf6f6;
+  }
+
+  .popup-body{
+    padding:18px;
+    max-height:min(68vh, 620px);
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .popup-panel{
+    display:none;
+  }
+
+  .popup-panel.active{
+    display:block;
+  }
+
+  .info-block{
+    background:#fffefe;
+    border:1px solid rgba(169,27,24,.10);
+    border-radius:18px;
+    padding:14px;
+    margin-bottom:12px;
+  }
+
+  .info-block:last-child{
+    margin-bottom:0;
+  }
+
+  .info-label{
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:#a91b18;
+    margin-bottom:8px;
+  }
+
+  .info-text{
+    font-size:13.5px;
+    line-height:1.7;
+    color:#5f4445;
+  }
+
+  .hormone-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:10px 0;
+  }
+
+  .hormone-name{
+    width:96px;
+    flex:0 0 96px;
+    font-size:12px;
+    font-weight:700;
+    color:#3F0405;
+  }
+
+  .hormone-track{
+    flex:1;
+    height:8px;
+    border-radius:999px;
+    background:#eee1e1;
+    overflow:hidden;
+  }
+
+  .hormone-fill{
+    height:100%;
+    border-radius:999px;
+  }
+
+  .hormone-level{
+    min-width:52px;
+    text-align:right;
+    font-size:11px;
+    font-weight:700;
+    color:#8d6a6b;
+  }
+
+  .accordion{
+    display:grid;
+    gap:10px;
+  }
+
+  .acc-item{
+    border:1px solid rgba(169,27,24,.10);
+    border-radius:16px;
+    background:#fffefe;
+    overflow:hidden;
+  }
+
+  .acc-btn{
+    width:100%;
+    border:none;
+    background:#fffefe;
+    padding:14px 16px;
+    text-align:left;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    font-family:'Inter', Helvetica, Arial, sans-serif;
+  }
+
+  .acc-btn span{
+    display:block;
+    font-size:13px;
+    font-weight:800;
+    color:#3F0405;
+    line-height:1.35;
+  }
+
+  .acc-btn em{
+    font-style:normal;
+    font-size:18px;
+    color:#a91b18;
+    flex:0 0 auto;
+    transition:transform .22s ease;
+  }
+
+  .acc-item.open .acc-btn em{
+    transform:rotate(45deg);
+  }
+
+  .acc-content{
+    display:none;
+    padding:0 16px 14px;
+    border-top:1px solid rgba(169,27,24,.08);
+  }
+
+  .acc-item.open .acc-content{
+    display:block;
+  }
+
+  .cat-desc,
+  .benefit-text,
+  .recipe-text{
+    font-size:13px;
+    line-height:1.7;
+    color:#5f4445;
+    margin-top:10px;
+  }
+
+  .pill-wrap{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:10px;
+  }
+
+  .pill{
+    display:inline-flex;
+    align-items:center;
+    padding:8px 11px;
+    border-radius:999px;
+    background:#fff;
+    border:1px solid rgba(169,27,24,.10);
+    color:#4c2a2b;
+    font-size:12px;
+    font-weight:600;
+    line-height:1.2;
+  }
+
+  .pill.bissap{
+    background:#70024312;
+    border-color:#70024326;
+    color:#700243;
+  }
+
+  .phase-note{
+    margin-top:10px;
+    padding:12px;
+    border-radius:14px;
+    background:#f3eeee;
+    border:1px solid rgba(169,27,24,.08);
+    font-size:12.5px;
+    line-height:1.6;
+    color:#6e4c4e;
+  }
+
+  @media (max-width:900px){
+    .cycle-wheel{
+      width:min(88vw, 560px);
+    }
+  }
+
+  @media (max-width:640px){
+    .cycle-wheel{
+      width:min(94vw, 520px);
+    }
+
+    .wheel-label-title{
+      font-size:13px;
+    }
+
+    .wheel-label-days{
+      font-size:10px;
+    }
+
+    #phase-popup{
+      left:12px !important;
+      right:12px !important;
+      top:auto !important;
+      bottom:12px !important;
+      width:auto;
+      max-width:none;
+      border-radius:22px;
+      transform:translateY(18px);
+    }
+
+    #phase-popup.is-open{
+      transform:translateY(0);
+      opacity:1;
+    }
+
+    .popup-head{
+      padding:18px 16px 14px;
+    }
+
+    .popup-body{
+      padding:14px;
+      max-height:calc(78vh - 145px);
+    }
+
+    #phase-title{
+      font-size:21px;
+    }
+
+    .popup-tab{
+      padding:12px 12px;
+      font-size:11.5px;
+    }
+
+    .hormone-name{
+      width:82px;
+      flex:0 0 82px;
+      font-size:11.5px;
+    }
+
+    .hormone-level{
+      min-width:46px;
+      font-size:10.5px;
+    }
+  }
+</style>
+
+<script>
+(function() {
+  const phases = [
+    {
+      key:'regles',
+      color:'#A91B18',
+      labelColor:'#ffffff',
+      badge:'Phase 1 · Jours 1 à 5',
+      short:'Règles',
+      days:'J1–J5',
+      title:'Les règles',
+      intro:'Au début du cycle, les œstrogènes et la progestérone sont au plus bas. Le corps élimine la muqueuse utérine, ce qui peut s’accompagner de fatigue, de crampes, d’une sensation de vide ou d’une énergie plus basse.',
+      hormonesIntro:'Ici, l’objectif est de reconstruire, apaiser et soutenir ton énergie. La FSH recommence doucement à monter pour relancer un nouveau cycle.',
+      hormones:[
+        { name:'FSH', level:32, label:'remonte', color:'#a91b18' },
+        { name:'LH', level:12, label:'basse', color:'#d86a5f' },
+        { name:'Œstrogènes', level:14, label:'bas', color:'#700243' },
+        { name:'Progestérone', level:8, label:'très basse', color:'#b85c8a' }
+      ],
+      whyEat:'Ton corps perd du sang, donc chez certaines femmes le fer devient plus stratégique. C’est aussi une phase où magnésium, oméga-3 et aliments faciles à digérer peuvent faire une vraie différence sur le confort.',
+      aliments:[
+        { title:'Fer — compenser les pertes', desc:'Le but ici, c’est de nourrir sans vider encore plus le corps.', items:['lentilles','épinards','œufs','viande rouge'] },
+        { title:'Vitamine C — mieux utiliser le fer', desc:'Utile surtout quand ton fer vient en partie des végétaux.', items:['kiwi','agrumes','poivron rouge','persil'] },
+        { title:'Magnésium — confort nerveux et musculaire', desc:'Intéressant quand tu te sens tendue, fatiguée ou plus irritable.', items:['amandes','cacao','céréales complètes','brocoli'] },
+        { title:'Oméga-3 — terrain anti-inflammatoire', desc:'Cohérents quand il y a plus d’inconfort et de tension.', items:['sardines','saumon','maquereau'] },
+        { title:'Bissap — boisson soutien de phase', desc:'À mettre ici dans une logique boisson plaisir, légère et antioxydante.', items:['bissap chaud ou tiède au citron'], bissap:true }
+      ],
+      bienfaits:[
+        { title:'Fer + vitamine C', text:'Le fer devient particulièrement intéressant si tes règles sont abondantes ou si tu te sens vidée. La vitamine C aide à mieux absorber le fer non héminique des lentilles, légumes verts et autres sources végétales.' },
+        { title:'Magnésium + chocolat noir', text:'Le chocolat noir n’est pas juste une envie “au hasard”. Il peut aussi apporter du magnésium, un minéral pertinent pour le confort musculaire, nerveux et la sensation globale de tension.' },
+        { title:'Oméga-3', text:'Ils s’intègrent bien ici parce qu’ils soutiennent un terrain moins inflammatoire et peuvent être intéressants quand les règles sont synonymes d’inconfort.' }
+      ],
+      recettes:[
+        { title:'Bowl règles', text:'Lentilles + épinards + œufs + filet de citron. Simple, digeste, utile pour le fer et la vitamine C.' },
+        { title:'Assiette réconfort', text:'Saumon + riz + brocoli + huile d’olive. Une base nourrissante, sans en faire trop.' },
+        { title:'Recette bissap', text:'Bissap chaud avec citron et un peu de miel, à boire à côté d’un repas riche en fer végétal.' }
+      ],
+      note:'Pendant cette phase, tu n’as pas besoin de manger “parfait”. Tu as surtout besoin de manger intelligemment pour soutenir un corps qui reconstruit.'
+    },
+
+    {
+      key:'folliculaire',
+      color:'#BD3125',
+      labelColor:'#ffffff',
+      badge:'Phase 2 · Jours 6 à 13',
+      short:'Folliculaire',
+      days:'J6–J13',
+      title:'La phase folliculaire',
+      intro:'Après les règles, la FSH stimule la croissance folliculaire et les œstrogènes remontent progressivement. C’est souvent une phase de reprise : plus d’élan, plus de clarté, parfois une meilleure sensation d’énergie.',
+      hormonesIntro:'Ici, ton corps est souvent plus prêt à construire, récupérer, performer et recharger ses réserves.',
+      hormones:[
+        { name:'FSH', level:65, label:'active', color:'#a91b18' },
+        { name:'LH', level:20, label:'calme', color:'#d86a5f' },
+        { name:'Œstrogènes', level:58, label:'montent', color:'#700243' },
+        { name:'Progestérone', level:10, label:'basse', color:'#b85c8a' }
+      ],
+      whyEat:'C’est une phase où tu peux davantage miser sur les glucides de qualité, les protéines, le zinc et une alimentation complète. Le sujet ici, c’est la construction, pas juste le contrôle.',
+      aliments:[
+        { title:'Glucides de qualité — énergie stable', desc:'Utile pour soutenir la reprise, l’entraînement et une énergie plus régulière.', items:['avoine','quinoa','riz','patate douce'] },
+        { title:'Protéines — récupération et structure', desc:'Une base solide pour reconstruire et soutenir la phase.', items:['tofu','œufs','poisson','poulet'] },
+        { title:'Zinc — soutien des fonctions hormonales', desc:'Le zinc intervient dans plein de fonctions clés, pas juste “les hormones”.', items:['graines de courge','œufs','fruits de mer'] },
+        { title:'Phyto-œstrogènes — soutien doux', desc:'À voir comme un soutien alimentaire, pas comme des hormones naturelles magiques.', items:['tofu','graines de lin','légumineuses'] },
+        { title:'Bissap — version fraîche', desc:'Plus léger ici, en boisson antioxydante de journée.', items:['bissap glacé citron-menthe'], bissap:true }
+      ],
+      bienfaits:[
+        { title:'Glucides complexes', text:'Ils aident à garder une énergie plus stable et sont particulièrement intéressants dans une phase où beaucoup de femmes se sentent plus aptes à bouger, créer, s’entraîner et récupérer.' },
+        { title:'Protéines + zinc', text:'Les protéines soutiennent la récupération et la structure. Le zinc, lui, intervient dans de nombreux processus métaboliques et reproductifs.' },
+        { title:'Phyto-œstrogènes', text:'Ils peuvent interagir faiblement avec certaines voies œstrogéniques, donc mieux vaut les présenter comme un soutien doux et cohérent, pas comme une solution miracle.' }
+      ],
+      recettes:[
+        { title:'Salade de reprise', text:'Quinoa + œufs + légumes croquants + huile d’olive.' },
+        { title:'Bol folliculaire', text:'Tofu grillé + riz + courgettes + graines de courge.' },
+        { title:'Recette bissap', text:'Bissap glacé citron-menthe, parfait en boisson de journée.' }
+      ],
+      note:'C’est une phase où tu peux te sentir plus “toi”. Profites-en pour remettre des bases solides dans ton assiette sans partir dans l’excès inverse.'
+    },
+
+    {
+      key:'ovulation',
+      color:'#CEE7F3',
+      labelColor:'#7F1210',
+      badge:'Phase 3 · Jours 14 à 16',
+      short:'Ovulation',
+      days:'J14–J16',
+      title:'L’ovulation',
+      intro:'Les œstrogènes atteignent un niveau élevé, puis le pic de LH déclenche l’ovulation. C’est une phase courte mais très active. Beaucoup de femmes s’y sentent plus dynamiques, plus confiantes ou plus “up”.',
+      hormonesIntro:'Ici, l’idée est de soutenir la protection cellulaire, la qualité du terrain, et l’élimination des hormones déjà utilisées.',
+      hormones:[
+        { name:'FSH', level:38, label:'modérée', color:'#a91b18' },
+        { name:'LH', level:94, label:'pic', color:'#d86a5f' },
+        { name:'Œstrogènes', level:92, label:'haut', color:'#700243' },
+        { name:'Progestérone', level:18, label:'commence', color:'#b85c8a' }
+      ],
+      whyEat:'Les antioxydants, les fibres, la vitamine E et les protéines prennent tout leur sens ici. Le sujet n’est pas juste la performance, mais aussi la protection et l’équilibre.',
+      aliments:[
+        { title:'Antioxydants — protection cellulaire', desc:'Une vraie logique de soutien dans une phase hormonologiquement active.', items:['fruits rouges','kiwi','poivron','tomate'] },
+        { title:'Fibres — transit et élimination', desc:'Intéressantes pour éviter la sensation de lourdeur et soutenir l’élimination digestive.', items:['brocoli','artichaut','asperges','chou'] },
+        { title:'Protéines — base simple et efficace', desc:'Toujours utiles pour la satiété et la structure.', items:['œufs','poisson','poulet','yaourt grec'] },
+        { title:'Vitamine E / bons lipides', desc:'À intégrer facilement sans compliquer les repas.', items:['avocat','amandes','graines de tournesol','huile d’olive'] },
+        { title:'Bissap — version antioxydante', desc:'Très cohérent ici en boisson fraîche.', items:['bissap froid aux fruits rouges et citron'], bissap:true }
+      ],
+      bienfaits:[
+        { title:'Antioxydants', text:'Ils sont intéressants dans une logique de protection cellulaire et de soutien du terrain général pendant cette phase courte mais active.' },
+        { title:'Fibres', text:'Elles soutiennent le transit et participent à l’élimination digestive. C’est une formulation plus juste que de promettre qu’elles “équilibrent automatiquement” les œstrogènes.' },
+        { title:'Vitamine E + bons lipides', text:'Ils complètent bien cette phase dans une logique de protection et d’équilibre global, tout en aidant aussi à la satiété.' }
+      ],
+      recettes:[
+        { title:'Assiette ovulation', text:'Poulet grillé + patate douce + asperges.' },
+        { title:'Bol frais', text:'Yaourt grec + fruits rouges + amandes.' },
+        { title:'Recette bissap', text:'Infusion de bissap froide avec fruits rouges et citron.' }
+      ],
+      note:'Tu peux te sentir en feu ici. Garde quand même une vraie base alimentaire. Pas besoin de vivre sur trois fruits et deux vibes.'
+    },
+
+    {
+      key:'luteale',
+      color:'#700243',
+      labelColor:'#ffffff',
+      badge:'Phase 4 · Jours 17 à 28',
+      short:'Lutéale',
+      days:'J17–J28',
+      title:'La phase lutéale',
+      intro:'Après l’ovulation, la progestérone prend le relais. Puis, si grossesse il n’y a pas, progestérone et œstrogènes chutent en fin de phase. C’est souvent là que le corps se fait le plus ressentir : fringales, fatigue, rétention d’eau, ventre gonflé, irritabilité, envie de sucre, tension dans la poitrine.',
+      hormonesIntro:'Cette phase mérite plus de soutien que de contrôle. Le vrai move ici, c’est de sécuriser ton énergie, ta satiété, ton système nerveux et ton confort digestif.',
+      hormones:[
+        { name:'FSH', level:14, label:'basse', color:'#a91b18' },
+        { name:'LH', level:10, label:'basse', color:'#d86a5f' },
+        { name:'Œstrogènes', level:46, label:'moyens', color:'#700243' },
+        { name:'Progestérone', level:88, label:'dominante', color:'#b85c8a' }
+      ],
+      whyEat:'Le sujet ici n’est pas de manger moins, mais de manger plus stratégiquement. Quand la satiété baisse, que l’humeur bouge et que les fringales montent, les repas trop légers ou mal structurés te font souvent partir encore plus loin dans la journée.',
+      aliments:[
+        { title:'Magnésium — système nerveux et confort', desc:'C’est l’un des nutriments les plus cohérents ici.', items:['chocolat noir','amandes','graines de courge','cacao'] },
+        { title:'Vitamine B6 — soutien des neurotransmetteurs', desc:'Intéressante dans une phase où l’humeur et les envies peuvent bouger.', items:['banane','pommes de terre','volaille','légumineuses'] },
+        { title:'Tryptophane / protéines — satiété et terrain', desc:'Base importante quand les fringales commencent à grimper.', items:['dinde','œufs','poisson','yaourt grec'] },
+        { title:'Calcium — phase PMS friendly', desc:'Très pertinent à mettre en avant ici.', items:['skyr','yaourt','fromage blanc','sardines avec arêtes'] },
+        { title:'Glucides complexes — stabilité', desc:'Ici, ils ne sont pas “en trop”. Ils sont souvent exactement ce qu’il manque.', items:['avoine','riz','quinoa','patate douce'] },
+        { title:'Potassium / aliments riches en eau — sensation de légèreté', desc:'À intégrer quand tu te sens gonflée ou lourde.', items:['banane','concombre','courgette','kiwi'] },
+        { title:'Bissap — rituel de phase lutéale', desc:'C’est probablement la phase où il a le plus de sens dans ton storytelling : hydratation, rituel, légèreté.', items:['bissap chaud au gingembre','bissap froid peu sucré'], bissap:true }
+      ],
+      bienfaits:[
+        { title:'Pourquoi le chocolat noir n’est pas “juste une envie”', text:'En phase lutéale, beaucoup de femmes ressentent plus d’envies de sucre, de gras ou de chocolat. Le chocolat noir apporte notamment du magnésium, ce qui en fait un aliment cohérent dans cette phase, au-delà du simple côté plaisir.' },
+        { title:'Pourquoi la banane est intéressante ici', text:'La banane n’est pas magique, mais elle coche plusieurs cases : glucides, potassium, vitamine B6. Donc oui, elle peut s’intégrer intelligemment dans une stratégie anti-fringales, énergie et confort.' },
+        { title:'Pourquoi les glucides complexes deviennent stratégiques', text:'Quand tu as plus faim, plus d’envies et une humeur plus fragile, les repas trop légers empirent souvent tout. Les glucides complexes aident à rendre cette phase plus stable, plus rassasiante et plus vivable.' },
+        { title:'Pourquoi les fibres aident quand tu te sens lourde', text:'Elles soutiennent le transit et participent à une meilleure élimination digestive. Dans une phase où beaucoup se sentent gonflées, ballonnées ou ralenties, elles deviennent particulièrement intéressantes.' },
+        { title:'Pourquoi calcium + magnésium + protéines font équipe', text:'Le calcium est pertinent dans une logique PMS. Le magnésium soutient davantage le système nerveux et le confort. Les protéines, elles, aident à la satiété et évitent de finir la journée en mode survie.' }
+      ],
+      recettes:[
+        { title:'Bowl lutéal solide', text:'Riz + saumon + avocat + concombre + graines de courge. Satiété, magnésium, bons lipides et structure.' },
+        { title:'Assiette anti-fringale', text:'Patate douce rôtie + œufs + légumes verts. Simple, rassasiant, stable.' },
+        { title:'Petit-déj ou collation de phase', text:'Yaourt grec + banane + cacao + amandes.' },
+        { title:'Porridge lutéal', text:'Avoine + banane + chocolat noir. La vraie version “je sécurise ma phase” au lieu de culpabiliser.' },
+        { title:'Recette bissap', text:'Bissap chaud avec gingembre et un peu de miel en rituel de fin de journée.' }
+      ],
+      note:'La phase lutéale n’est pas un moment où tu manques de discipline. C’est un moment où ton corps te demande plus de structure, plus de soutien et parfois un peu plus de nourriture, tout simplement.'
+    }
+  ];
+
+  const geometry = [
+    { key:'regles', start:-90, end:0, labelAngle:-45 },
+    { key:'folliculaire', start:0, end:135, labelAngle:67.5 },
+    { key:'ovulation', start:135, end:180, labelAngle:157.5 },
+    { key:'luteale', start:180, end:270, labelAngle:225 }
+  ];
+
+  const tabs = Array.from(document.querySelectorAll('.popup-tab'));
+  const popup = document.getElementById('phase-popup');
+  const segmentGroup = document.getElementById('wheel-segments');
+  const labelGroup = document.getElementById('wheel-labels');
+
+  const phaseBadge = document.getElementById('phase-badge');
+  const phaseTitle = document.getElementById('phase-title');
+  const phaseIntro = document.getElementById('phase-intro');
+
+  const tabHormones = document.getElementById('tab-hormones');
+  const tabAliments = document.getElementById('tab-aliments');
+  const tabBienfaits = document.getElementById('tab-bienfaits');
+  const tabRecettes = document.getElementById('tab-recettes');
+
+  let activePhaseKey = null;
+
+  function polarToCartesian(cx, cy, r, angleDeg){
+    const angleRad = (angleDeg - 90) * Math.PI / 180;
+    return {
+      x: cx + (r * Math.cos(angleRad)),
+      y: cy + (r * Math.sin(angleRad))
+    };
+  }
+
+  function arcPath(cx, cy, innerR, outerR, startAngle, endAngle){
+    const startOuter = polarToCartesian(cx, cy, outerR, endAngle);
+    const endOuter = polarToCartesian(cx, cy, outerR, startAngle);
+    const startInner = polarToCartesian(cx, cy, innerR, endAngle);
+    const endInner = polarToCartesian(cx, cy, innerR, startAngle);
+    const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+
+    return [
+      "M", startOuter.x, startOuter.y,
+      "A", outerR, outerR, 0, largeArcFlag, 0, endOuter.x, endOuter.y,
+      "L", endInner.x, endInner.y,
+      "A", innerR, innerR, 0, largeArcFlag, 1, startInner.x, startInner.y,
+      "Z"
+    ].join(" ");
+  }
+
+  function renderWheel(){
+    geometry.forEach(g => {
+      const ph = phases.find(p => p.key === g.key);
+      const basePath = arcPath(250, 250, 124, 214, g.start, g.end);
+
+      const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+      path.setAttribute('d', basePath);
+      path.setAttribute('fill', ph.color);
+      path.setAttribute('stroke', 'rgba(255,255,255,.50)');
+      path.setAttribute('stroke-width', '2');
+      path.setAttribute('class', 'wheel-segment');
+      path.setAttribute('data-key', ph.key);
+      path.setAttribute('aria-label', ph.short);
+      segmentGroup.appendChild(path);
+
+      const point = polarToCartesian(250, 250, 170, g.labelAngle);
+      const text = document.createElementNS('http://www.w3.org/2000/svg','g');
+      text.setAttribute('class', 'wheel-label');
+      text.setAttribute('transform', `translate(${point.x}, ${point.y})`);
+      const textColor = ph.labelColor || '#ffffff';
+      const dayColor = ph.labelColor === '#7F1210' ? 'rgba(127,18,16,.82)' : 'rgba(255,255,255,.94)';
+      text.innerHTML = `
+        <text class="wheel-label-title" fill="${textColor}" text-anchor="middle" y="-2">${ph.short}</text>
+        <text class="wheel-label-days" fill="${dayColor}" text-anchor="middle" y="16">${ph.days}</text>
+      `;
+      labelGroup.appendChild(text);
+    });
+  }
+
+  function renderHormones(ph){
+    return `
+      <div class="info-block">
+        <div class="info-label">Ce qui se passe</div>
+        <div class="info-text">${ph.hormonesIntro}</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Niveaux hormonaux</div>
+        ${ph.hormones.map(h => `
+          <div class="hormone-row">
+            <div class="hormone-name">${h.name}</div>
+            <div class="hormone-track">
+              <div class="hormone-fill" style="width:${h.level}%; background:${h.color};"></div>
+            </div>
+            <div class="hormone-level">${h.label}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="info-block">
+        <div class="info-label">Le lien avec ton alimentation</div>
+        <div class="info-text">${ph.whyEat}</div>
+      </div>
+    `;
+  }
+
+  function renderAliments(ph){
+    return `
+      <div class="accordion">
+        ${ph.aliments.map((cat, index) => `
+          <div class="acc-item ${index === 0 ? 'open' : ''}">
+            <button class="acc-btn" type="button">
+              <span>${cat.title}</span>
+              <em>+</em>
+            </button>
+            <div class="acc-content">
+              <div class="cat-desc">${cat.desc}</div>
+              <div class="pill-wrap">
+                ${cat.items.map(item => `<span class="pill ${cat.bissap ? 'bissap' : ''}">${item}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function renderBienfaits(ph){
+    return `
+      <div class="accordion">
+        ${ph.bienfaits.map((item, index) => `
+          <div class="acc-item ${index === 0 ? 'open' : ''}">
+            <button class="acc-btn" type="button">
+              <span>${item.title}</span>
+              <em>+</em>
+            </button>
+            <div class="acc-content">
+              <div class="benefit-text">${item.text}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function renderRecettes(ph){
+    return `
+      <div class="accordion">
+        ${ph.recettes.map((item, index) => `
+          <div class="acc-item ${index === 0 ? 'open' : ''}">
+            <button class="acc-btn" type="button">
+              <span>${item.title}</span>
+              <em>+</em>
+            </button>
+            <div class="acc-content">
+              <div class="recipe-text">${item.text}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="phase-note">${ph.note}</div>
+    `;
+  }
+
+  function bindAccordions(){
+    document.querySelectorAll('.acc-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        this.parentElement.classList.toggle('open');
+      });
+    });
+  }
+
+  function switchTab(tabName){
+    tabs.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tabName));
+    document.querySelectorAll('.popup-panel').forEach(panel => panel.classList.remove('active'));
+    document.getElementById('tab-' + tabName).classList.add('active');
+  }
+
+  tabs.forEach(btn => {
+    btn.addEventListener('click', function(){
+      switchTab(this.dataset.tab);
+    });
+  });
+
+  function setActiveSegment(key){
+    document.querySelectorAll('.wheel-segment').forEach(seg => {
+      seg.classList.toggle('is-active', seg.dataset.key === key);
+    });
+  }
+
+  function showPopup(ph, anchorEvent){
+    phaseBadge.textContent = ph.badge;
+    phaseTitle.textContent = ph.title;
+    phaseTitle.style.color = ph.color;
+    phaseBadge.style.color = ph.color;
+    phaseBadge.style.background = ph.color + '12';
+    phaseBadge.style.borderColor = ph.color + '26';
+
+    phaseIntro.textContent = ph.intro;
+    tabHormones.innerHTML = renderHormones(ph);
+    tabAliments.innerHTML = renderAliments(ph);
+    tabBienfaits.innerHTML = renderBienfaits(ph);
+    tabRecettes.innerHTML = renderRecettes(ph);
+    bindAccordions();
+    switchTab('hormones');
+    setActiveSegment(ph.key);
+    activePhaseKey = ph.key;
+
+    popup.style.display = 'block';
+
+    const isMobile = window.innerWidth <= 640;
+
+    if(isMobile){
+      popup.style.left = '12px';
+      popup.style.right = '12px';
+      popup.style.top = 'auto';
+      popup.style.bottom = '12px';
+      popup.style.width = 'auto';
+      popup.style.opacity = '0';
+
+      requestAnimationFrame(() => {
+        popup.classList.add('is-open');
+        popup.style.opacity = '1';
+      });
+      return;
+    }
+
+    popup.classList.remove('is-open');
+    popup.style.width = 'min(92vw, 440px)';
+    popup.style.maxWidth = '440px';
+
+    const margin = 14;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+
+    const popupRect = popup.getBoundingClientRect();
+    const popupWidth = popupRect.width || 440;
+    const popupHeight = popupRect.height || 320;
+
+    let clientX = vw / 2;
+    let clientY = vh / 2;
+
+    if(anchorEvent){
+      clientX = anchorEvent.clientX;
+      clientY = anchorEvent.clientY;
+    }
+
+    let left = clientX + 18;
+    if (left + popupWidth > vw - margin) left = clientX - popupWidth - 18;
+    if (left < margin) left = margin;
+
+    let top = clientY - (popupHeight / 2);
+    if (top + popupHeight > vh - margin) top = vh - popupHeight - margin;
+    if (top < margin) top = margin;
+
+    popup.style.left = `${left}px`;
+    popup.style.right = 'auto';
+    popup.style.top = `${top}px`;
+    popup.style.bottom = 'auto';
+    popup.style.transform = 'scale(.96)';
+    popup.style.opacity = '0';
+
+    requestAnimationFrame(() => {
+      popup.style.transform = 'scale(1)';
+      popup.style.opacity = '1';
+    });
+  }
+
+  function hidePopup(){
+    const isMobile = window.innerWidth <= 640;
+
+    if(isMobile){
+      popup.classList.remove('is-open');
+      popup.style.opacity = '0';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 220);
+    } else {
+      popup.style.transform = 'scale(.96)';
+      popup.style.opacity = '0';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 220);
+    }
+
+    activePhaseKey = null;
+    setActiveSegment(null);
+  }
+
+  window.closePopup = function() {
+    hidePopup();
+  };
+
+  document.addEventListener('click', function(e){
+    const clickedInsidePopup = popup.contains(e.target);
+    const clickedSegment = e.target.closest('.wheel-segment');
+    if (popup.style.display !== 'none' && popup.style.display !== '' && !clickedInsidePopup && !clickedSegment) {
+      hidePopup();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && popup.style.display === 'block'){
+      hidePopup();
+    }
+  });
+
+  segmentGroup.addEventListener('click', function(e){
+    const seg = e.target.closest('.wheel-segment');
+    if(!seg) return;
+
+    const key = seg.dataset.key;
+    const ph = phases.find(p => p.key === key);
+    if(!ph) return;
+
+    if(activePhaseKey === key && popup.style.display === 'block'){
+      hidePopup();
+      return;
+    }
+
+    showPopup(ph, e);
+  });
+
+  renderWheel();
+})();
+</script>
