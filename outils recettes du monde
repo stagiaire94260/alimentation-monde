@@ -1,0 +1,1976 @@
+<!-- LEAFLET CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+:root{
+  --red:#a91b18;
+  --red-dark:#7a130f;
+  --pink:#fff0f6;
+  --pink-mid:#ffd6e8;
+  --bg:#f8f7f5;
+  --white:#fff;
+  --g100:#f1eeea;
+  --g200:#e0dcd6;
+  --g400:#9e9b95;
+  --g700:#4a4845;
+  --g900:#1a1917;
+  --font-d:'Playfair Display',Georgia,serif;
+  --font-b:'DM Sans',system-ui,sans-serif;
+  --r-sm:8px;
+  --r-md:12px;
+  --r-lg:20px;
+}
+
+#aw{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  font-family:var(--font-b);
+  color:var(--g900);
+}
+
+/* TABS */
+.aw-tabs{
+  display:flex;
+  background:var(--white);
+  border-bottom:1.5px solid var(--g200);
+  padding:0 24px;
+  border-radius:var(--r-lg) var(--r-lg) 0 0;
+  overflow:hidden;
+}
+
+.aw-tab{
+  padding:15px 22px;
+  font-family:var(--font-b);
+  font-size:14px;
+  font-weight:700;
+  color:var(--g400);
+  border:none;
+  background:none;
+  cursor:pointer;
+  border-bottom:2.5px solid transparent;
+  margin-bottom:-1.5px;
+  transition:.2s;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+
+.aw-tab:hover{color:var(--red)}
+.aw-tab.on{color:var(--red);border-bottom-color:var(--red)}
+
+.aw-pane{
+  display:none;
+  background:var(--bg);
+  border-radius:0 0 var(--r-lg) var(--r-lg);
+}
+
+.aw-pane.on{display:block}
+
+/* CARTE */
+.map-wrap{
+  padding:20px;
+}
+
+.map-intro{
+  background:#fff;
+  border:1px solid var(--g200);
+  border-radius:16px;
+  padding:14px 16px;
+  margin-bottom:14px;
+  text-align:center;
+}
+
+.map-intro h2{
+  font-family:var(--font-d);
+  color:var(--red-dark);
+  font-size:28px;
+  margin:0 0 6px;
+}
+
+.map-intro p{
+  color:var(--g700);
+  font-size:13px;
+  line-height:1.5;
+  margin:0;
+}
+
+#aw-map{
+  width:100%;
+  height:430px;
+  min-height:430px;
+  border-radius:15px;
+  background:white;
+  overflow:hidden;
+  border:1px solid var(--g200);
+  z-index:1;
+}
+
+.map-loader{
+  text-align:center;
+  padding:12px;
+  color:var(--g400);
+  font-size:13px;
+}
+
+/* RECETTES */
+.rec-wrap{padding:24px}
+
+.rec-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  margin-bottom:20px;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.rec-title{
+  font-family:var(--font-d);
+  font-size:30px;
+  color:var(--red-dark);
+  line-height:1;
+  margin:0;
+}
+
+.rec-subtitle{
+  font-size:13px;
+  color:var(--g400);
+  margin-top:4px;
+}
+
+.selected-country{
+  display:none;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  background:var(--pink);
+  border:1px solid var(--pink-mid);
+  border-radius:var(--r-md);
+  padding:12px 14px;
+  margin-bottom:14px;
+  color:var(--red-dark);
+  font-size:13px;
+  font-weight:700;
+}
+
+.selected-country.show{
+  display:flex;
+}
+
+.clear-country{
+  border:none;
+  background:#fff;
+  color:var(--red);
+  border-radius:999px;
+  padding:7px 12px;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+/* FAVORIS */
+.fav-toggle-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  background:#fff;
+  border:1px solid var(--g200);
+  border-radius:var(--r-md);
+  padding:10px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+
+.fav-toggle-left{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.fav-view-btn{
+  border:none;
+  border-radius:999px;
+  padding:9px 14px;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+  background:var(--bg);
+  color:var(--g700);
+  transition:.2s;
+}
+
+.fav-view-btn:hover{
+  color:var(--red);
+  background:var(--pink);
+}
+
+.fav-view-btn.on{
+  background:var(--red);
+  color:#fff;
+}
+
+.fav-count{
+  font-size:12px;
+  color:var(--g400);
+  font-weight:700;
+}
+
+/* FILTRES */
+.rec-filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:22px;
+  padding:16px;
+  background:#fff;
+  border-radius:var(--r-md);
+  border:1px solid var(--g200);
+}
+
+.rec-filters select,
+.rec-filters input[type=search]{
+  padding:8px 12px;
+  border:1.5px solid var(--g200);
+  border-radius:var(--r-sm);
+  font-family:var(--font-b);
+  font-size:13px;
+  color:var(--g700);
+  background:var(--bg);
+  cursor:pointer;
+  transition:border-color .2s;
+  outline:none;
+}
+
+.rec-filters select:focus,
+.rec-filters input:focus{
+  border-color:var(--red);
+}
+
+.rec-filters input[type=search]{
+  flex:1;
+  min-width:160px;
+}
+
+/* CARTES RECETTES */
+.rec-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:16px;
+}
+
+.r-card{
+  background:#fff;
+  border-radius:var(--r-md);
+  overflow:hidden;
+  cursor:pointer;
+  transition:transform .2s,box-shadow .2s;
+  border:1px solid var(--g200);
+  position:relative;
+}
+
+.r-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 28px rgba(169,27,24,.13);
+}
+
+.r-thumb{
+  height:120px;
+  background:var(--pink);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:54px;
+  transition:background .2s;
+}
+
+.r-card:hover .r-thumb{
+  background:var(--pink-mid);
+}
+
+.r-body{padding:14px}
+
+.r-country{
+  font-size:11px;
+  font-weight:700;
+  color:var(--red);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  margin-bottom:3px;
+}
+
+.r-name{
+  font-family:var(--font-d);
+  font-size:16px;
+  color:var(--g900);
+  margin-bottom:9px;
+  line-height:1.3;
+}
+
+.r-meta{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-bottom:9px;
+}
+
+.badge{
+  font-size:11px;
+  padding:3px 9px;
+  border-radius:20px;
+  font-weight:700;
+}
+
+.b-time{background:#e8f2fd;color:#1360a0}
+.b-facile{background:#e6f5e6;color:#196a19}
+.b-moyen{background:#fff2df;color:#9a5c08}
+.b-difficile{background:#fde8e8;color:#a01818}
+.b-repas{background:var(--pink);color:var(--red)}
+
+.r-tags{
+  display:flex;
+  gap:4px;
+  flex-wrap:wrap;
+}
+
+.tag{
+  font-size:10px;
+  padding:2px 8px;
+  background:var(--g100);
+  color:var(--g400);
+  border-radius:20px;
+  font-weight:700;
+}
+
+.fav-btn{
+  position:absolute;
+  top:9px;
+  right:9px;
+  background:#fff;
+  border:none;
+  border-radius:50%;
+  width:32px;
+  height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  font-size:15px;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+  transition:transform .15s;
+  z-index:5;
+}
+
+.fav-btn:hover{transform:scale(1.18)}
+
+.rec-empty{
+  text-align:center;
+  padding:60px 20px;
+  color:var(--g400);
+  grid-column:1/-1;
+}
+
+.rec-empty-icon{
+  font-size:48px;
+  margin-bottom:12px;
+}
+
+.rec-empty-title{
+  font-family:var(--font-d);
+  font-size:20px;
+  color:var(--g700);
+  margin-bottom:8px;
+}
+
+/* ── MODAL — STYLE ORIGINAL COMPACT ── */
+.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(26,25,23,.62);
+  z-index:100000;
+  overflow-y:auto;
+  padding:40px 16px;
+}
+
+.modal-overlay.open{
+  display:flex;
+  animation:fadeIn .2s;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+.modal-box{
+  background:#fff;
+  border-radius:var(--r-lg);
+  max-width:640px;
+  width:100%;
+  overflow:hidden;
+  animation:slideUp .25s ease;
+  margin:auto;
+  box-shadow:0 18px 60px rgba(26,25,23,.22);
+}
+
+@keyframes slideUp{
+  from{opacity:0;transform:translateY(24px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.modal-hd{
+  background:var(--pink);
+  padding:28px 32px;
+  position:relative;
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+}
+
+.modal-emoji{
+  font-size:64px;
+  line-height:1;
+  flex-shrink:0;
+}
+
+.modal-close{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:#fff;
+  border:none;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  font-size:20px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--g700);
+  transition:background .15s;
+  font-weight:600;
+}
+
+.modal-close:hover{
+  background:var(--g200);
+}
+
+.modal-title{
+  font-family:var(--font-d);
+  font-size:24px;
+  color:var(--red-dark);
+  line-height:1.2;
+  margin:0 0 5px;
+}
+
+.modal-country-lbl{
+  font-size:12px;
+  color:var(--red);
+  font-weight:500;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+  padding-right:42px;
+}
+
+.modal-desc{
+  font-size:13px;
+  color:var(--g700);
+  line-height:1.6;
+  margin:0;
+}
+
+.modal-meta{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.modal-meta .badge{
+  font-size:11px;
+  padding:3px 9px;
+  border-radius:20px;
+  font-weight:500;
+}
+
+.modal-meta .tag{
+  font-size:10px;
+  padding:2px 8px;
+  background:var(--g100);
+  color:var(--g400);
+  border-radius:20px;
+  font-weight:500;
+}
+
+.modal-bd{
+  padding:24px 32px;
+}
+
+.modal-sec{
+  font-family:var(--font-d);
+  font-size:18px;
+  color:var(--red-dark);
+  margin:0 0 14px;
+  padding-bottom:8px;
+  border-bottom:1.5px solid var(--pink-mid);
+}
+
+.modal-sec small{
+  font-family:var(--font-b);
+  font-size:13px;
+  font-weight:400;
+  color:var(--g400);
+}
+
+.ingr-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-bottom:28px;
+}
+
+.ingr-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:8px 12px;
+  background:var(--bg);
+  border-radius:var(--r-sm);
+  font-size:13px;
+}
+
+.ingr-name{
+  color:var(--g700);
+}
+
+.ingr-qty{
+  color:var(--red);
+  font-weight:500;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.steps-list{
+  margin-bottom:28px;
+}
+
+.step{
+  display:flex;
+  gap:14px;
+  margin-bottom:14px;
+  align-items:flex-start;
+}
+
+.step-n{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--red);
+  color:#fff;
+  font-size:12px;
+  font-weight:500;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.step-t{
+  font-size:13px;
+  color:var(--g700);
+  line-height:1.6;
+  padding-top:4px;
+}
+
+.nutri-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  padding:16px;
+  background:var(--pink);
+  border-radius:var(--r-md);
+}
+
+.nutri-item{
+  text-align:center;
+}
+
+.nutri-val{
+  font-family:var(--font-d);
+  font-size:22px;
+  color:var(--red);
+  display:block;
+}
+
+.nutri-lbl{
+  font-size:11px;
+  color:var(--g400);
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+/* TOAST */
+.toast{
+  position:fixed;
+  bottom:24px;
+  left:50%;
+  transform:translateX(-50%) translateY(80px);
+  background:var(--g900);
+  color:#fff;
+  padding:11px 20px;
+  border-radius:var(--r-md);
+  font-size:13px;
+  z-index:200000;
+  transition:transform .3s;
+  pointer-events:none;
+}
+
+.toast.show{
+  transform:translateX(-50%) translateY(0);
+}
+
+/* MOBILE */
+@media(max-width:580px){
+  .aw-tabs{
+    padding:0 12px;
+  }
+
+  .aw-tab{
+    flex:1;
+    justify-content:center;
+    padding:14px 10px;
+    font-size:13px;
+  }
+
+  .map-wrap,
+  .rec-wrap{
+    padding:14px;
+  }
+
+  #aw-map{
+    height:380px;
+    min-height:380px;
+  }
+
+  .map-intro h2{
+    font-size:24px;
+  }
+
+  .rec-grid{
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .r-thumb{
+    height:96px;
+    font-size:42px;
+  }
+
+  .r-body{
+    padding:11px;
+  }
+
+  .r-name{
+    font-size:14px;
+  }
+
+  .badge{
+    font-size:10px;
+    padding:3px 7px;
+  }
+
+  .selected-country{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .fav-toggle-wrap{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .ingr-grid{
+    grid-template-columns:1fr;
+  }
+
+  .nutri-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .modal-overlay{
+    padding:20px 12px;
+  }
+
+  .modal-hd{
+    flex-direction:column;
+    padding:24px 22px;
+  }
+
+  .modal-emoji{
+    font-size:52px;
+  }
+
+  .modal-title{
+    font-size:22px;
+  }
+
+  .modal-desc{
+    font-size:13px;
+  }
+
+  .modal-bd{
+    padding:22px;
+  }
+}
+/* FORCE MODAL STYLE ORIGINAL COMPACT */
+#modal-overlay.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(26,25,23,.62);
+  z-index:100000;
+  overflow-y:auto;
+  padding:40px 16px;
+}
+
+#modal-overlay.modal-overlay.open{
+  display:flex;
+  animation:fadeIn .2s;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+#modal-overlay .modal-box{
+  background:#fff;
+  border-radius:20px;
+  max-width:640px;
+  width:100%;
+  overflow:hidden;
+  animation:slideUp .25s ease;
+  margin:auto;
+  box-shadow:0 18px 60px rgba(26,25,23,.22);
+}
+
+#modal-overlay .modal-hd{
+  background:#fff0f6;
+  padding:28px 32px;
+  position:relative;
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  text-align:left;
+}
+
+#modal-overlay .modal-emoji{
+  font-size:64px;
+  line-height:1;
+  flex-shrink:0;
+  width:auto;
+  height:auto;
+  background:transparent;
+  box-shadow:none;
+  margin:0;
+  border-radius:0;
+}
+
+#modal-overlay .modal-close{
+  position:absolute;
+  top:14px;
+  right:14px;
+  background:#fff;
+  border:none;
+  border-radius:50%;
+  width:36px;
+  height:36px;
+  font-size:20px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#4a4845;
+  transition:background .15s;
+  font-weight:700;
+}
+
+#modal-overlay .modal-title{
+  font-family:'Playfair Display', Georgia, serif;
+  font-size:24px;
+  color:#7a130f;
+  line-height:1.2;
+  margin:0 0 5px;
+  font-weight:700;
+  text-align:left;
+}
+
+#modal-overlay .modal-country-lbl{
+  font-family:'DM Sans', system-ui, sans-serif;
+  font-size:12px;
+  color:#a91b18;
+  font-weight:700;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+  padding-right:42px;
+  text-align:left;
+}
+
+#modal-overlay .modal-desc{
+  font-family:'DM Sans', system-ui, sans-serif;
+  font-size:13px;
+  color:#4a4845;
+  line-height:1.6;
+  margin:0;
+  text-align:left;
+}
+
+#modal-overlay .modal-meta{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-top:10px;
+  justify-content:flex-start;
+}
+
+#modal-overlay .modal-meta .badge{
+  font-size:11px;
+  padding:3px 9px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+#modal-overlay .modal-meta .tag{
+  font-size:10px;
+  padding:2px 8px;
+  background:#f1eeea;
+  color:#9e9b95;
+  border-radius:20px;
+  font-weight:500;
+}
+
+#modal-overlay .modal-bd{
+  padding:24px 32px;
+  text-align:left;
+}
+
+#modal-overlay .modal-sec{
+  font-family:'Playfair Display', Georgia, serif;
+  font-size:18px;
+  color:#7a130f;
+  margin:0 0 14px;
+  padding-bottom:8px;
+  border-bottom:1.5px solid #ffd6e8;
+  font-weight:700;
+  text-align:left;
+}
+
+#modal-overlay .modal-sec small{
+  font-family:'DM Sans', system-ui, sans-serif;
+  font-size:13px;
+  font-weight:400;
+  color:#9e9b95;
+}
+
+#modal-overlay .ingr-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-bottom:28px;
+}
+
+#modal-overlay .ingr-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:8px 12px;
+  background:#f8f7f5;
+  border-radius:8px;
+  font-size:13px;
+  font-family:'DM Sans', system-ui, sans-serif;
+}
+
+#modal-overlay .ingr-name{
+  color:#4a4845;
+  font-weight:400;
+}
+
+#modal-overlay .ingr-qty{
+  color:#a91b18;
+  font-weight:700;
+  text-align:right;
+  white-space:nowrap;
+}
+
+#modal-overlay .steps-list{
+  margin-bottom:28px;
+}
+
+#modal-overlay .step{
+  display:flex;
+  gap:14px;
+  margin-bottom:14px;
+  align-items:flex-start;
+}
+
+#modal-overlay .step-n{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:#a91b18;
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+#modal-overlay .step-t{
+  font-family:'DM Sans', system-ui, sans-serif;
+  font-size:13px;
+  color:#4a4845;
+  line-height:1.6;
+  padding-top:4px;
+  font-weight:400;
+}
+
+#modal-overlay .nutri-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  padding:16px;
+  background:#fff0f6;
+  border-radius:12px;
+}
+
+#modal-overlay .nutri-item{
+  text-align:center;
+}
+
+#modal-overlay .nutri-val{
+  font-family:'Playfair Display', Georgia, serif;
+  font-size:22px;
+  color:#a91b18;
+  display:block;
+  font-weight:700;
+}
+
+#modal-overlay .nutri-lbl{
+  font-family:'DM Sans', system-ui, sans-serif;
+  font-size:11px;
+  color:#9e9b95;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  font-weight:500;
+}
+
+@media(max-width:580px){
+  #modal-overlay.modal-overlay{
+    padding:20px 12px;
+  }
+
+  #modal-overlay .modal-hd{
+    flex-direction:column;
+    padding:24px 22px;
+  }
+
+  #modal-overlay .modal-emoji{
+    font-size:52px;
+  }
+
+  #modal-overlay .modal-title{
+    font-size:22px;
+  }
+
+  #modal-overlay .modal-desc{
+    font-size:13px;
+  }
+
+  #modal-overlay .modal-bd{
+    padding:22px;
+  }
+
+  #modal-overlay .ingr-grid{
+    grid-template-columns:1fr;
+  }
+
+  #modal-overlay .nutri-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+/* ACCORDÉONS MODAL MOBILE + ALIGNEMENT TAGS */
+#modal-overlay .modal-meta{
+  align-items:center;
+}
+
+#modal-overlay .modal-meta .badge,
+#modal-overlay .modal-meta .tag{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:24px;
+  line-height:1;
+}
+
+#modal-overlay .modal-acc-btn{
+  display:none;
+}
+
+@media(max-width:580px){
+
+  #modal-overlay .modal-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    align-items:center;
+  }
+
+  #modal-overlay .modal-meta .badge,
+  #modal-overlay .modal-meta .tag{
+    min-height:24px;
+    padding:6px 10px;
+    font-size:10px;
+    white-space:nowrap;
+  }
+
+  #modal-overlay .modal-meta .tag{
+    min-width:auto;
+  }
+
+  #modal-overlay .modal-sec{
+    display:none;
+  }
+
+  #modal-overlay .modal-acc-btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    border:none;
+    background:transparent;
+    padding:0 0 10px;
+    margin:0 0 14px;
+    border-bottom:1.5px solid #ffd6e8;
+    font-family:'Playfair Display', Georgia, serif;
+    font-size:22px;
+    color:#7a130f;
+    font-weight:700;
+    cursor:pointer;
+    text-align:left;
+  }
+
+  #modal-overlay .modal-acc-btn::after{
+    content:"▾";
+    font-family:'DM Sans', system-ui, sans-serif;
+    font-size:13px;
+    color:#a91b18;
+    transition:transform .2s ease;
+  }
+
+  #modal-overlay .modal-acc-btn.is-open::after{
+    transform:rotate(180deg);
+  }
+
+  #modal-overlay .modal-acc-content{
+    display:none;
+    margin-bottom:26px;
+  }
+
+  #modal-overlay .modal-acc-content.is-open{
+    display:block;
+  }
+
+  #modal-overlay .ingr-grid{
+    margin-bottom:0;
+  }
+
+  #modal-overlay .steps-list{
+    margin-bottom:0;
+  }
+
+  #modal-overlay .modal-bd{
+    padding-bottom:26px;
+  }
+}
+/* ALIGNEMENT BADGES MODAL MOBILE */
+@media(max-width:580px){
+
+  #modal-overlay .modal-meta{
+    display:grid !important;
+    grid-template-columns:auto auto auto;
+    justify-content:flex-start !important;
+    align-items:center !important;
+    column-gap:7px !important;
+    row-gap:8px !important;
+    width:100% !important;
+  }
+
+  /* Ligne 1 : temps / difficulté / repas */
+  #modal-overlay .modal-meta .badge{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:max-content !important;
+    min-height:23px !important;
+    white-space:nowrap !important;
+    line-height:1 !important;
+  }
+
+  /* Ligne 2 : tags gris */
+  #modal-overlay .modal-meta .tag{
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    width:max-content !important;
+    min-height:23px !important;
+    white-space:nowrap !important;
+    line-height:1 !important;
+  }
+
+  #modal-overlay .modal-meta .tag:first-of-type{
+    grid-column:1;
+  }
+}
+/* STRUCTURE DES BADGES DANS LA MODAL */
+#modal-overlay .modal-meta{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:7px !important;
+}
+
+#modal-overlay .meta-line{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:7px !important;
+}
+
+#modal-overlay .meta-main{
+  width:100% !important;
+}
+
+#modal-overlay .meta-tags{
+  width:100% !important;
+}
+
+#modal-overlay .meta-tags .tag{
+  background:#f1eeea !important;
+  color:#9e9b95 !important;
+}
+
+@media(max-width:580px){
+  #modal-overlay .modal-meta{
+    gap:8px !important;
+  }
+
+  #modal-overlay .meta-main{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    gap:7px !important;
+  }
+
+  #modal-overlay .meta-tags{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:7px !important;
+  }
+
+  #modal-overlay .modal-meta .badge,
+  #modal-overlay .modal-meta .tag{
+    white-space:nowrap !important;
+  }
+}
+/* MODAL INLINE SOUS LA RECETTE CLIQUÉE — DESKTOP + MOBILE */
+#aw #rec-grid > #modal-overlay.modal-overlay.mobile-inline.open{
+  display:block !important;
+  position:static !important;
+  inset:auto !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  padding:0 !important;
+  margin:0 !important;
+  background:transparent !important;
+  overflow:visible !important;
+  z-index:auto !important;
+  grid-column:1 / -1 !important;
+}
+
+#aw #rec-grid > #modal-overlay.mobile-inline.open .modal-box{
+  width:100% !important;
+  max-width:640px !important;
+  margin:4px auto 24px auto !important;
+  border-radius:20px !important;
+  box-shadow:0 14px 45px rgba(26,25,23,.18) !important;
+  overflow:hidden !important;
+  transform:none !important;
+}
+
+#aw #rec-grid > #modal-overlay.mobile-inline.open .modal-hd{
+  background:#fff0f6 !important;
+}
+
+@media(max-width:580px){
+  #aw #rec-grid > #modal-overlay.mobile-inline.open .modal-box{
+    max-width:100% !important;
+    margin:4px 0 18px 0 !important;
+  }
+
+  #aw #rec-grid > #modal-overlay.mobile-inline.open .modal-hd{
+    flex-direction:column !important;
+    padding:24px 22px !important;
+  }
+
+  #aw #rec-grid > #modal-overlay.mobile-inline.open .modal-emoji{
+    font-size:52px !important;
+  }
+
+  #aw #rec-grid > #modal-overlay.mobile-inline.open .modal-bd{
+    padding:22px !important;
+  }
+}
+</style>
+
+<div id="aw">
+
+  <div class="aw-tabs">
+    <button class="aw-tab on" id="tab-btn-map" type="button" onclick="switchTab('map')">
+      🌍 Carte
+    </button>
+
+    <button class="aw-tab" id="tab-btn-recipes" type="button" onclick="switchTab('recipes')">
+      📖 Recettes
+    </button>
+  </div>
+
+  <!-- ONGLET CARTE -->
+  <div id="pane-map" class="aw-pane on">
+    <div class="map-wrap">
+      <div class="map-intro">
+        <h2>Explore les recettes du monde</h2>
+        <p>Clique sur un pays pour découvrir directement les recettes associées.</p>
+      </div>
+
+      <div id="aw-map"></div>
+      <div class="map-loader" id="map-loader">Chargement de la carte…</div>
+    </div>
+  </div>
+
+  <!-- ONGLET RECETTES -->
+  <div id="pane-recipes" class="aw-pane">
+    <div class="rec-wrap">
+
+      <div class="rec-top">
+        <div>
+          <h2 class="rec-title">Banque de Recettes</h2>
+          <p class="rec-subtitle" id="rec-count">Chargement…</p>
+        </div>
+      </div>
+
+      <div class="selected-country" id="selected-country-box">
+        <span id="selected-country-text"></span>
+        <button class="clear-country" type="button" onclick="clearCountrySelection()">
+          Voir toutes les recettes
+        </button>
+      </div>
+
+      <div class="fav-toggle-wrap">
+        <div class="fav-toggle-left">
+          <button class="fav-view-btn on" id="view-all-btn" type="button" onclick="setFavoriteView(false)">
+            Toutes les recettes
+          </button>
+
+          <button class="fav-view-btn" id="view-favs-btn" type="button" onclick="setFavoriteView(true)">
+            Mes favoris ❤️
+          </button>
+        </div>
+
+        <div class="fav-count" id="fav-count">0 favori</div>
+      </div>
+
+      <div class="rec-filters">
+        <input type="search" id="search-input" placeholder="Rechercher une recette…" oninput="filterRecipes()">
+
+        <select id="f-continent" onchange="updateCountryFilter(); filterRecipes()">
+          <option value="">Tous les continents</option>
+          <option value="Afrique">Afrique</option>
+          <option value="Europe">Europe</option>
+          <option value="Amérique">Amérique</option>
+          <option value="Asie">Asie</option>
+          <option value="Moyen-Orient">Moyen-Orient</option>
+        </select>
+
+        <select id="f-pays" onchange="filterRecipes()">
+          <option value="">Tous les pays</option>
+        </select>
+
+        <select id="f-repas" onchange="filterRecipes()">
+          <option value="">Tous les repas</option>
+          <option value="petitdej">Petit-déjeuner</option>
+          <option value="dej">Déjeuner</option>
+          <option value="collation">Collation</option>
+          <option value="diner">Dîner</option>
+        </select>
+
+        <select id="f-diff" onchange="filterRecipes()">
+          <option value="">Toutes difficultés</option>
+          <option value="facile">Facile</option>
+          <option value="moyen">Moyen</option>
+          <option value="difficile">Difficile</option>
+        </select>
+      </div>
+
+      <div id="rec-grid" class="rec-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL RECETTE -->
+<div id="modal-overlay" class="modal-overlay" onclick="closeModalOverlay(event)">
+  <div class="modal-box">
+    <div class="modal-hd">
+      <div class="modal-emoji" id="m-emoji">🍽️</div>
+
+      <div style="flex:1">
+        <div class="modal-country-lbl" id="m-country"></div>
+        <h3 class="modal-title" id="m-title"></h3>
+        <p class="modal-desc" id="m-desc"></p>
+        <div class="modal-meta" id="m-meta"></div>
+      </div>
+
+      <button class="modal-close" type="button" onclick="closeModal()">×</button>
+    </div>
+
+    <div class="modal-bd" id="modal-bd"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+
+let countriesData = {};
+let allRecipes = [];
+let favorites = JSON.parse(localStorage.getItem('aw-favs') || '[]');
+let showOnlyFavorites = false;
+let mapInstance = null;
+let markersLayer = null;
+let geoLayer = null;
+
+const DATA_URL = "https://stagiaire94260.github.io/alimentation-monde/countriesdata.json";
+const GEO_URL = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json";
+
+const REPAS_LABEL = {
+  petitdej:"Petit-déjeuner",
+  dej:"Déjeuner",
+  collation:"Collation",
+  diner:"Dîner"
+};
+
+/* INIT */
+document.addEventListener('DOMContentLoaded', startApp);
+
+async function startApp(){
+  try{
+    await loadLeafletScript();
+    await loadCountriesData();
+
+    initMap();
+
+    collectRecipes();
+    populateCountryFilter();
+    updateFavoriteCount();
+    filterRecipes();
+
+    setTimeout(function(){
+      if(mapInstance) mapInstance.invalidateSize();
+    }, 300);
+}catch(e){
+  console.error(e);
+  const loader = document.getElementById('map-loader');
+  if(loader) loader.textContent = "La carte n'a pas pu se charger. Vérifie Leaflet ou le JSON.";
+}
+}
+
+/* Charge Leaflet JS si Systeme.io ne le charge pas correctement */
+function loadLeafletScript(){
+  return new Promise(function(resolve, reject){
+    if(window.L){
+      resolve();
+      return;
+    }
+
+    const existing = document.querySelector('script[data-leaflet-loader="true"]');
+
+    if(existing){
+      existing.addEventListener('load', resolve);
+      existing.addEventListener('error', reject);
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+    script.setAttribute('data-leaflet-loader', 'true');
+    script.onload = resolve;
+    script.onerror = reject;
+    document.body.appendChild(script);
+  });
+}
+
+/* Charge le JSON GitHub */
+async function loadCountriesData(){
+  const res = await fetch(DATA_URL);
+
+  if(!res.ok){
+    throw new Error("Impossible de charger le JSON GitHub");
+  }
+
+  countriesData = await res.json();
+}
+
+/* MAP */
+function initMap(){
+  const loader = document.getElementById('map-loader');
+
+  mapInstance = L.map('aw-map', {
+    center:[20,0],
+    zoom:2,
+    minZoom:1,
+    maxZoom:5,
+    scrollWheelZoom:false
+  });
+
+  markersLayer = L.layerGroup().addTo(mapInstance);
+
+  fetch(GEO_URL)
+    .then(function(res){ return res.json(); })
+    .then(function(geojson){
+      geoLayer = L.geoJSON(geojson, {
+        style:function(){
+          return {
+            fillColor:"#fbc4e3",
+            color:"#fff",
+            weight:1,
+            fillOpacity:.75
+          };
+        },
+        onEachFeature:function(feature, layer){
+          layer.on('mouseover', function(){
+            this.setStyle({fillOpacity:1});
+          });
+
+          layer.on('mouseout', function(){
+            this.setStyle({fillOpacity:.75});
+          });
+        }
+      }).addTo(mapInstance);
+
+      addMarkers();
+
+      if(loader) loader.style.display = 'none';
+
+      setTimeout(function(){
+        mapInstance.invalidateSize();
+      }, 200);
+    })
+    .catch(function(err){
+      console.warn("GeoJSON indisponible :", err);
+      addMarkers();
+
+      if(loader) loader.style.display = 'none';
+    });
+}
+
+function addMarkers(){
+  if(!mapInstance || !markersLayer) return;
+
+  markersLayer.clearLayers();
+
+  Object.keys(countriesData).forEach(function(continent){
+    Object.keys(countriesData[continent]).forEach(function(pays){
+      const d = countriesData[continent][pays];
+
+      if(!d || !Array.isArray(d.coords)) return;
+
+      const recipeCount = Array.isArray(d.recettes) ? d.recettes.length : 0;
+
+      const marker = L.circleMarker(d.coords, {
+        radius:7,
+        fillColor:"#a91b18",
+        color:"#fff",
+        weight:2,
+        fillOpacity:1
+      }).addTo(markersLayer);
+
+      marker.bindPopup(`
+        <div style="font-family:Arial,sans-serif;font-size:14px;line-height:1.5;max-width:220px;padding:10px;background:#fff0f6;border-radius:10px;">
+          <h3 style="margin:0 0 6px;color:#a91b18;font-size:16px;">${escapeHTML(pays)}</h3>
+          <p style="margin:0 0 8px;color:#4a4845;">
+            ${recipeCount > 0 ? recipeCount + " recette(s) disponible(s)" : "Recettes bientôt disponibles"}
+          </p>
+          <button
+            type="button"
+            onclick="selectCountryFromMap('${escapeAttr(continent)}','${escapeAttr(pays)}')"
+            style="border:none;background:#a91b18;color:#fff;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:bold;cursor:pointer;">
+            Voir les recettes
+          </button>
+        </div>
+      `);
+
+      marker.on('click', function(){
+        selectCountryFromMap(continent, pays);
+      });
+    });
+  });
+}
+
+/* TABS */
+window.switchTab = function(tab){
+  document.getElementById('tab-btn-map').classList.toggle('on', tab === 'map');
+  document.getElementById('tab-btn-recipes').classList.toggle('on', tab === 'recipes');
+
+  document.getElementById('pane-map').classList.toggle('on', tab === 'map');
+  document.getElementById('pane-recipes').classList.toggle('on', tab === 'recipes');
+
+  if(tab === 'map' && mapInstance){
+    setTimeout(function(){
+      mapInstance.invalidateSize();
+    }, 80);
+  }
+};
+
+/* Clic pays depuis carte */
+window.selectCountryFromMap = function(continent, pays){
+  const fCont = document.getElementById('f-continent');
+  const fPays = document.getElementById('f-pays');
+
+  showOnlyFavorites = false;
+  document.getElementById('view-all-btn').classList.add('on');
+  document.getElementById('view-favs-btn').classList.remove('on');
+
+  fCont.value = continent;
+  updateCountryFilter();
+
+  setTimeout(function(){
+    fPays.value = pays;
+    filterRecipes();
+    updateSelectedCountryBox(pays);
+    switchTab('recipes');
+    showToast("Recettes de " + pays);
+  }, 0);
+};
+
+/* RECETTES */
+function collectRecipes(){
+  allRecipes = [];
+
+  for(const cont in countriesData){
+    for(const pays in countriesData[cont]){
+      const recs = countriesData[cont][pays].recettes;
+
+      if(Array.isArray(recs)){
+        recs.forEach(function(r){
+          if(r && r.id && !allRecipes.find(function(a){ return a.recette.id === r.id; })){
+            allRecipes.push({
+              continent:cont,
+              pays:pays,
+              recette:r
+            });
+          }
+        });
+      }
+    }
+  }
+}
+
+window.updateCountryFilter = function(){
+  const cont = document.getElementById('f-continent').value;
+  const ps = document.getElementById('f-pays');
+
+  const previous = ps.value;
+
+  ps.innerHTML = '<option value="">Tous les pays</option>';
+
+  const paysSet = new Set();
+
+  allRecipes.forEach(function(item){
+    if(!cont || item.continent === cont){
+      paysSet.add(item.pays);
+    }
+  });
+
+  Array.from(paysSet).sort().forEach(function(p){
+    const o = document.createElement('option');
+    o.value = p;
+    o.textContent = p;
+    ps.appendChild(o);
+  });
+
+  if(previous && paysSet.has(previous)){
+    ps.value = previous;
+  }
+};
+
+function populateCountryFilter(){
+  window.updateCountryFilter();
+}
+
+/* FAVORIS VIEW */
+window.setFavoriteView = function(onlyFavs){
+  showOnlyFavorites = onlyFavs;
+
+  document.getElementById('view-all-btn').classList.toggle('on', !onlyFavs);
+  document.getElementById('view-favs-btn').classList.toggle('on', onlyFavs);
+
+  filterRecipes();
+};
+
+window.filterRecipes = function(){
+  const q = document.getElementById('search-input').value.toLowerCase().trim();
+  const cont = document.getElementById('f-continent').value;
+  const pays = document.getElementById('f-pays').value;
+  const repas = document.getElementById('f-repas').value;
+  const diff = document.getElementById('f-diff').value;
+
+  const res = allRecipes.filter(function(item){
+    const r = item.recette;
+    const tags = (r.tags || []).join(' ').toLowerCase();
+    const isFav = favorites.includes(r.id);
+
+    return (
+      (!showOnlyFavorites || isFav) &&
+      (!cont || item.continent === cont) &&
+      (!pays || item.pays === pays) &&
+      (!repas || r.repas === repas) &&
+      (!diff || r.difficulte === diff) &&
+      (
+        !q ||
+        (r.nom || '').toLowerCase().includes(q) ||
+        item.pays.toLowerCase().includes(q) ||
+        tags.includes(q)
+      )
+    );
+  });
+
+  updateSelectedCountryBox(pays);
+  renderCards(res);
+};
+
+function renderCards(list){
+  const grid = document.getElementById('rec-grid');
+  const count = document.getElementById('rec-count');
+
+  count.textContent =
+    list.length === 0 ? 'Aucune recette trouvée' :
+    list.length === 1 ? '1 recette' :
+    list.length + ' recettes';
+
+  if(!list.length){
+    grid.innerHTML = `
+      <div class="rec-empty">
+        <div class="rec-empty-icon">${showOnlyFavorites ? '🤍' : '🔍'}</div>
+        <div class="rec-empty-title">
+          ${showOnlyFavorites ? 'Aucun favori pour le moment' : 'Aucune recette trouvée'}
+        </div>
+        <p>
+          ${
+            showOnlyFavorites
+              ? 'Clique sur le cœur d’une recette pour la retrouver ici.'
+              : 'Ce pays n’a pas encore de recettes ou tes filtres sont trop précis.'
+          }
+        </p>
+      </div>
+    `;
+    return;
+  }
+
+  grid.innerHTML = '';
+
+  list.forEach(function(item){
+    const r = item.recette;
+    const isFav = favorites.includes(r.id);
+
+    const card = document.createElement('div');
+    card.className = 'r-card';
+
+    card.innerHTML = `
+      <button class="fav-btn" type="button" data-id="${escapeAttr(r.id)}">${isFav ? '❤️' : '🤍'}</button>
+
+      <div class="r-thumb">${r.emoji || '🍽️'}</div>
+
+      <div class="r-body">
+        <div class="r-country">${escapeHTML(item.pays)}</div>
+        <div class="r-name">${escapeHTML(r.nom || 'Recette')}</div>
+
+        <div class="r-meta">
+          <span class="badge b-time">⏱ ${escapeHTML(String(r.temps || '-'))} min</span>
+          <span class="badge b-${escapeHTML(r.difficulte || 'facile')}">${escapeHTML(r.difficulte || 'facile')}</span>
+          <span class="badge b-repas">${escapeHTML(REPAS_LABEL[r.repas] || r.repas || 'Repas')}</span>
+        </div>
+
+        <div class="r-tags">
+          ${(r.tags || []).map(function(t){ return `<span class="tag">${escapeHTML(t)}</span>`; }).join('')}
+        </div>
+      </div>
+    `;
+
+   card.addEventListener('click', function(e){
+  if(e.target.closest('.fav-btn')) return;
+  openModal(item.continent, item.pays, r, card);
+});
+
+    card.querySelector('.fav-btn').addEventListener('click', function(e){
+      e.stopPropagation();
+      toggleFav(r.id, e.currentTarget);
+    });
+
+    grid.appendChild(card);
+  });
+}
+
+function updateSelectedCountryBox(pays){
+  const box = document.getElementById('selected-country-box');
+  const txt = document.getElementById('selected-country-text');
+
+  if(pays){
+    box.classList.add('show');
+    txt.textContent = "Recettes sélectionnées : " + pays;
+  }else{
+    box.classList.remove('show');
+    txt.textContent = "";
+  }
+}
+
+window.clearCountrySelection = function(){
+  document.getElementById('f-continent').value = '';
+  updateCountryFilter();
+  document.getElementById('f-pays').value = '';
+  filterRecipes();
+};
+
+/* MODAL */
+function openModal(continent, pays, r, triggerCard){
+  document.getElementById('m-emoji').textContent = r.emoji || '🍽️';
+  document.getElementById('m-country').textContent = pays + ' · ' + continent;
+  document.getElementById('m-title').textContent = r.nom || 'Recette';
+  document.getElementById('m-desc').textContent = r.description || '';
+
+ document.getElementById('m-meta').innerHTML = `
+  <div class="meta-line meta-main">
+    <span class="badge b-time">⏱ ${escapeHTML(String(r.temps || '-'))} min</span>
+    <span class="badge b-${escapeHTML(r.difficulte || 'facile')}">${escapeHTML(r.difficulte || 'facile')}</span>
+    <span class="badge b-repas">${escapeHTML(REPAS_LABEL[r.repas] || r.repas || 'Repas')}</span>
+  </div>
+
+  <div class="meta-line meta-tags">
+    ${(r.tags || []).map(function(t){
+      return `<span class="tag">${escapeHTML(t)}</span>`;
+    }).join('')}
+  </div>
+`;
+
+ let bd = `
+  <button class="modal-acc-btn is-open" type="button" onclick="toggleRecipeAcc(this)">
+    Ingrédients
+  </button>
+
+  <div class="modal-acc-content is-open">
+    <h4 class="modal-sec">Ingrédients</h4>
+    <div class="ingr-grid">
+      ${(r.ingredients || []).map(function(i){
+        return `
+          <div class="ingr-item">
+            <span class="ingr-name">${escapeHTML(i.nom || '')}</span>
+            <span class="ingr-qty">${escapeHTML(i.qty || '')}</span>
+          </div>
+        `;
+      }).join('')}
+    </div>
+  </div>
+
+  <button class="modal-acc-btn" type="button" onclick="toggleRecipeAcc(this)">
+    Préparation
+  </button>
+
+  <div class="modal-acc-content">
+    <h4 class="modal-sec">Préparation</h4>
+    <div class="steps-list">
+      ${(r.etapes || []).map(function(e,i){
+        return `
+          <div class="step">
+            <div class="step-n">${i + 1}</div>
+            <div class="step-t">${escapeHTML(e)}</div>
+          </div>
+        `;
+      }).join('')}
+    </div>
+  </div>
+`;
+
+  if(r.valeurs){
+  bd += `
+    <h4 class="modal-sec">
+      Valeurs nutritionnelles
+      <small>(1 portion)</small>
+    </h4>
+
+    <div class="nutri-grid">
+      <div class="nutri-item">
+        <span class="nutri-val">${escapeHTML(String(r.valeurs.calories || '-'))}</span>
+        <span class="nutri-lbl">Calories</span>
+      </div>
+
+      <div class="nutri-item">
+        <span class="nutri-val">${escapeHTML(String(r.valeurs.proteines || '-'))}g</span>
+        <span class="nutri-lbl">Protéines</span>
+      </div>
+
+      <div class="nutri-item">
+        <span class="nutri-val">${escapeHTML(String(r.valeurs.glucides || '-'))}g</span>
+        <span class="nutri-lbl">Glucides</span>
+      </div>
+
+      <div class="nutri-item">
+        <span class="nutri-val">${escapeHTML(String(r.valeurs.lipides || '-'))}g</span>
+        <span class="nutri-lbl">Lipides</span>
+      </div>
+    </div>
+  `;
+}
+
+document.getElementById('modal-bd').innerHTML = bd;
+
+const overlay = document.getElementById('modal-overlay');
+
+if(triggerCard){
+  overlay.classList.remove('open');
+  overlay.classList.add('mobile-inline');
+
+  triggerCard.insertAdjacentElement('afterend', overlay);
+
+  overlay.classList.add('open');
+
+  setTimeout(function(){
+    overlay.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }, 50);
+
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
+}else{
+  overlay.classList.remove('mobile-inline');
+
+  if(overlay.parentElement !== document.body){
+    document.body.appendChild(overlay);
+  }
+
+  overlay.classList.add('open');
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+}
+
+}
+window.closeModal = function(){
+  const overlay = document.getElementById('modal-overlay');
+
+  overlay.classList.remove('open');
+  overlay.classList.remove('mobile-inline');
+
+  if(overlay.parentElement !== document.body){
+    document.body.appendChild(overlay);
+  }
+
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
+};
+
+window.closeModalOverlay = function(e){
+  if(e.target === document.getElementById('modal-overlay')){
+    closeModal();
+  }
+};
+
+/* FAVORIS */
+function toggleFav(id, btn){
+  const idx = favorites.indexOf(id);
+
+  if(idx > -1){
+    favorites.splice(idx, 1);
+    btn.textContent = '🤍';
+    showToast('Retiré des favoris');
+  }else{
+    favorites.push(id);
+    btn.textContent = '❤️';
+    showToast('Ajouté aux favoris');
+  }
+
+  localStorage.setItem('aw-favs', JSON.stringify(favorites));
+  updateFavoriteCount();
+
+  if(showOnlyFavorites){
+    filterRecipes();
+  }
+}
+
+function updateFavoriteCount(){
+  const el = document.getElementById('fav-count');
+  if(!el) return;
+
+  const n = favorites.length;
+  el.textContent = n <= 1 ? n + ' favori' : n + ' favoris';
+}
+window.toggleRecipeAcc = function(btn){
+  const content = btn.nextElementSibling;
+  if(!content) return;
+
+  const isOpen = content.classList.contains('is-open');
+
+  btn.classList.toggle('is-open', !isOpen);
+  content.classList.toggle('is-open', !isOpen);
+};
+
+/* UTILS */
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+
+  setTimeout(function(){
+    t.classList.remove('show');
+  }, 2600);
+}
+
+function escapeHTML(value){
+  return String(value || '')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#039;');
+}
+
+function escapeAttr(value){
+  return escapeHTML(value).replace(/`/g,'&#096;');
+}
+
+})();
+</script>
