@@ -1,0 +1,992 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --red:#A91B18;--red-d:#8a1512;--burgundy:#700243;
+  --cream:#FBF6F6;--cream2:#F7EEEE;--cream3:#EDE4E4;
+  --white:#FFFEFE;
+  --text:#3F0405;--muted:#6F4A4C;--soft:#9D7A7C;
+  --line:rgba(169,27,24,.11);--line-s:rgba(169,27,24,.22);
+  --sh:0 8px 28px rgba(63,4,5,.10);
+  --sh-lg:0 18px 50px rgba(63,4,5,.14);
+  --f:'Inter',system-ui,-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth;}
+body{font-family:var(--f);background:var(--cream);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+
+/* ── HERO ── */
+.hero{
+  padding:3rem 1.25rem 2.5rem;
+  text-align:center;
+  background:linear-gradient(160deg,#f2e8e8 0%,#fbf6f6 50%,#f0eaf5 100%);
+  border-bottom:1px solid var(--line);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse at 10% 20%,rgba(169,27,24,.07) 0%,transparent 50%),
+             radial-gradient(ellipse at 90% 80%,rgba(112,2,67,.05) 0%,transparent 50%);
+}
+.eyebrow{
+  display:inline-block;font-size:10px;font-weight:800;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--red);
+  background:rgba(169,27,24,.07);border:1px solid rgba(169,27,24,.14);
+  border-radius:999px;padding:6px 13px;margin-bottom:.9rem;
+}
+.hero h1{
+  font-size:clamp(1.8rem,5vw,3rem);font-weight:800;
+  line-height:1.08;letter-spacing:-.03em;
+  color:var(--text);margin-bottom:.9rem;
+}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--red);}
+.hero-lead{
+  font-size:14px;color:var(--muted);
+  max-width:540px;margin:0 auto 2rem;line-height:1.75;
+}
+.hero-pillars{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.7rem;max-width:500px;margin:0 auto;}
+.pillar{
+  background:var(--white);border:1px solid var(--line);border-radius:14px;
+  padding:.9rem .7rem;text-align:center;box-shadow:var(--sh);
+}
+.pillar-icon{font-size:1.4rem;margin-bottom:.3rem;}
+.pillar-label{font-size:11px;font-weight:800;color:var(--text);line-height:1.3;letter-spacing:-.01em;}
+
+/* ── LAYOUT ── */
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem;}
+.section{padding:2.5rem 0;}
+.section-border{border-top:1px solid var(--line);}
+
+.sh{text-align:center;margin-bottom:1.75rem;}
+.sh-eye{font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--red);margin-bottom:.4rem;}
+.sh-title{font-size:clamp(1.3rem,3vw,1.85rem);font-weight:800;letter-spacing:-.025em;color:var(--text);line-height:1.2;}
+.sh-title em{font-style:italic;font-weight:400;color:var(--red);}
+.sh-sub{font-size:13px;color:var(--muted);margin-top:.4rem;line-height:1.6;}
+
+/* ── STAT STRIP ── */
+.stat-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-bottom:2rem;}
+.stat-box{
+  background:var(--white);border:1px solid var(--line);border-radius:14px;
+  padding:.9rem 1rem;text-align:center;box-shadow:var(--sh);
+}
+.stat-box .num{font-size:1.6rem;font-weight:800;color:var(--red);letter-spacing:-.02em;line-height:1;}
+.stat-box .lbl{font-size:11px;color:var(--soft);margin-top:3px;line-height:1.4;}
+
+/* ── INFO CARDS ── */
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:1.5rem;}
+.info-card{
+  background:var(--white);border:1px solid var(--line);border-radius:14px;
+  padding:1.1rem 1.2rem;border-left:3px solid var(--red);
+}
+.info-card h3{font-size:13px;font-weight:800;color:var(--text);margin-bottom:5px;}
+.info-card p{font-size:12px;color:var(--muted);line-height:1.65;}
+.info-card.blue{border-left-color:#3a5a8c;}
+.info-card.violet{border-left-color:#5a2d8a;}
+.info-card.gold{border-left-color:#7a5010;}
+
+/* ── STEPS LIST ── */
+.steps{display:grid;gap:10px;margin-bottom:1.5rem;}
+.step-item{
+  display:flex;align-items:flex-start;gap:12px;
+  background:var(--white);border:1px solid var(--line);border-radius:13px;
+  padding:1rem 1.1rem;
+}
+.step-num{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  background:var(--red);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;margin-top:1px;
+}
+.step-text strong{display:block;font-size:13px;font-weight:800;color:var(--text);margin-bottom:3px;}
+.step-text span{font-size:12.5px;color:var(--muted);line-height:1.6;}
+
+/* ── MYTH CARDS ── */
+.myth-grid{display:grid;gap:10px;margin-bottom:1.5rem;}
+.myth-card{
+  background:var(--white);border:1px solid var(--line);border-radius:13px;
+  padding:1rem 1.1rem;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:flex-start;
+}
+.myth-cross{
+  width:26px;height:26px;border-radius:50%;flex-shrink:0;
+  background:rgba(169,27,24,.1);color:var(--red);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:800;margin-top:1px;
+}
+.myth-text .myth-false{font-size:12px;font-weight:800;color:var(--red);margin-bottom:3px;}
+.myth-text .myth-true{font-size:12px;color:var(--muted);line-height:1.6;}
+
+/* ── BANNER ── */
+.banner{
+  background:linear-gradient(135deg,#2e1010 0%,#6b1a1a 100%);
+  border-radius:18px;padding:1.5rem 1.75rem;
+  display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;
+  margin-bottom:2rem;position:relative;overflow:hidden;
+}
+.banner::before{
+  content:'';position:absolute;right:-30px;top:-30px;
+  width:150px;height:150px;border-radius:50%;
+  background:rgba(255,255,255,.04);
+}
+.banner-text h3{font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:.3rem;line-height:1.2;}
+.banner-text p{font-size:12.5px;color:rgba(255,255,255,.7);line-height:1.6;max-width:480px;}
+.banner-badge{
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+  border-radius:12px;padding:.6rem 1rem;text-align:center;flex-shrink:0;
+  white-space:nowrap;
+}
+.banner-badge .bb-num{font-size:1.4rem;font-weight:800;color:#fff;line-height:1;}
+.banner-badge .bb-lbl{font-size:10px;color:rgba(255,255,255,.6);margin-top:2px;}
+
+/* ── QUIZ WRAPPER ── */
+.quiz-wrap{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:20px;overflow:hidden;box-shadow:var(--sh-lg);
+  margin-bottom:1.5rem;
+}
+.quiz-header{
+  padding:1.25rem 1.5rem 1rem;
+  background:var(--cream2);border-bottom:1px solid var(--line);
+}
+.quiz-badge{
+  display:inline-flex;align-items:center;
+  font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);background:rgba(169,27,24,.07);
+  border:1px solid rgba(169,27,24,.12);border-radius:999px;
+  padding:6px 11px;margin-bottom:.6rem;
+}
+.quiz-title{font-size:1.25rem;font-weight:800;letter-spacing:-.02em;color:var(--text);margin-bottom:.3rem;}
+.quiz-intro{font-size:13px;color:var(--muted);line-height:1.65;}
+.quiz-progress-wrap{margin-top:1rem;}
+.quiz-progress{
+  width:100%;height:8px;background:rgba(169,27,24,.1);
+  border-radius:999px;overflow:hidden;
+}
+.quiz-bar{
+  height:100%;border-radius:999px;
+  background:linear-gradient(90deg,var(--red),var(--burgundy));
+  transition:width .28s ease;
+}
+.quiz-progress-meta{
+  display:flex;justify-content:space-between;
+  margin-top:8px;font-size:11.5px;font-weight:700;color:var(--soft);
+}
+.quiz-body{padding:1.25rem 1.5rem;}
+
+/* ── STEP QUESTION ── */
+.q-step{display:block;}
+.q-step[hidden]{display:none;}
+.q-card{
+  background:var(--cream);border:1px solid var(--line);
+  border-radius:16px;padding:1.25rem 1.35rem;
+}
+.q-badge{
+  display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--red);
+  background:rgba(169,27,24,.07);border:1px solid rgba(169,27,24,.12);
+  border-radius:999px;padding:4px 10px;margin-bottom:.7rem;
+}
+.q-title{font-size:1.05rem;font-weight:800;letter-spacing:-.02em;color:var(--text);line-height:1.3;margin-bottom:1rem;}
+.q-opts{display:grid;gap:8px;}
+.q-opt{
+  width:100%;text-align:left;padding:13px 15px;
+  border-radius:13px;border:1px solid var(--line);
+  background:var(--white);cursor:pointer;
+  font-family:var(--f);font-size:13.5px;font-weight:700;
+  color:var(--text);transition:all .18s;
+  box-shadow:0 2px 8px rgba(63,4,5,.04);
+}
+.q-opt:hover{border-color:var(--line-s);transform:translateY(-1px);box-shadow:0 6px 16px rgba(63,4,5,.07);}
+.q-opt.sel{background:var(--red);color:#fff;border-color:var(--red);box-shadow:0 6px 18px rgba(169,27,24,.22);}
+
+/* ── QUIZ NAV ── */
+.q-nav{display:flex;gap:10px;margin-top:1rem;}
+.q-btn{
+  flex:1;padding:13px 16px;border:none;border-radius:999px;
+  font-family:var(--f);font-size:13px;font-weight:800;
+  cursor:pointer;transition:all .18s;
+}
+.q-btn-primary{
+  background:var(--red);color:#fff;
+  box-shadow:0 6px 18px rgba(169,27,24,.22);
+}
+.q-btn-primary:hover{background:var(--red-d);transform:translateY(-1px);}
+.q-btn-secondary{
+  background:var(--white);color:var(--red);
+  border:1px solid rgba(169,27,24,.18);
+}
+.q-btn-secondary:hover{box-shadow:var(--sh);}
+.q-btn:disabled{opacity:.5;cursor:default;transform:none;}
+.q-error{font-size:12.5px;font-weight:700;color:var(--red);margin-top:.5rem;min-height:18px;}
+
+/* ── QUIZ RESULTS ── */
+.q-results{margin-top:1.25rem;display:none;}
+.q-results.show{display:block;}
+.qr-wrap{
+  background:var(--cream);border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:var(--sh);
+}
+.qr-head{
+  padding:1rem 1.25rem .9rem;
+  background:var(--cream2);border-bottom:1px solid var(--line);
+}
+.qr-badge{
+  display:inline-flex;align-items:center;
+  font-size:9.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);background:rgba(169,27,24,.07);
+  border:1px solid rgba(169,27,24,.12);border-radius:999px;
+  padding:4px 10px;margin-bottom:.5rem;
+}
+.qr-title{font-size:1.05rem;font-weight:800;letter-spacing:-.02em;color:var(--text);line-height:1.2;}
+.qr-body{padding:1rem 1.25rem;}
+.acc-item{
+  border:1px solid var(--line);border-radius:13px;
+  background:var(--white);overflow:hidden;margin-bottom:8px;
+}
+.acc-item:last-child{margin-bottom:0;}
+.acc-btn{
+  width:100%;border:none;background:var(--white);
+  padding:12px 14px;text-align:left;cursor:pointer;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  font-family:var(--f);
+}
+.acc-btn-title{font-size:12.5px;font-weight:800;color:var(--text);line-height:1.3;}
+.acc-arrow{font-size:18px;color:var(--red);transition:transform .2s;flex-shrink:0;line-height:1;}
+.acc-item.open .acc-arrow{transform:rotate(45deg);}
+.acc-content{display:none;padding:0 13px 12px;border-top:1px solid var(--line);}
+.acc-item.open .acc-content{display:block;}
+.acc-block{
+  background:var(--cream);border:1px solid var(--line);
+  border-radius:11px;padding:10px 12px;margin-top:8px;
+}
+.acc-label{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:4px;}
+.acc-text{font-size:12.5px;color:var(--muted);line-height:1.65;}
+.acc-note{
+  margin-top:8px;padding:10px 12px;border-radius:11px;
+  background:var(--cream3);border:1px solid var(--line);
+  font-size:12px;color:var(--muted);line-height:1.65;
+}
+.acc-note strong{color:var(--text);font-weight:800;}
+.qr-comps{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.qr-ctag{
+  font-size:11.5px;padding:4px 11px;border-radius:999px;
+  background:rgba(169,27,24,.07);color:var(--red);
+  border:1px solid rgba(169,27,24,.15);cursor:pointer;font-weight:700;
+  transition:all .15s;font-family:var(--f);
+}
+.qr-ctag:hover{background:var(--red);color:#fff;}
+
+/* ── CONNECT BANNER ── */
+.connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:2rem;}
+.connect-card{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:16px;padding:1.1rem 1.2rem;
+  display:flex;flex-direction:column;gap:.5rem;
+  transition:transform .16s,box-shadow .16s;cursor:pointer;
+  text-decoration:none;
+}
+.connect-card:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(63,4,5,.11);}
+.cc-tag{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);}
+.cc-title{font-size:13.5px;font-weight:800;color:var(--text);line-height:1.3;}
+.cc-desc{font-size:12px;color:var(--muted);line-height:1.6;}
+.cc-arrow{font-size:11px;color:var(--soft);margin-top:.2rem;}
+
+/* ── FOOTER ── */
+footer{
+  text-align:center;padding:2.5rem 1.25rem 2rem;
+  border-top:1px solid var(--line);margin-top:1rem;
+  font-size:11.5px;color:var(--soft);line-height:1.9;
+}
+footer em{font-style:italic;color:var(--muted);}
+
+/* ── RESPONSIVE ── */
+@media(min-width:600px){
+  .hero{padding:4.5rem 2rem 3.5rem;}
+  .hero h1{font-size:2.8rem;}
+  .hero-pillars{gap:1rem;max-width:560px;}
+  .stat-strip{grid-template-columns:repeat(3,1fr);}
+  .info-grid{grid-template-columns:1fr 1fr;}
+  .q-opts{grid-template-columns:1fr 1fr 1fr;}
+  .wrap{padding:0 2rem;}
+  .quiz-body{padding:1.5rem 2rem;}
+  .quiz-header{padding:1.5rem 2rem 1.25rem;}
+}
+
+/* Mobile sous 480px */
+@media(max-width:480px){
+  /* Hero */
+  .hero{padding:1.75rem .9rem 1.5rem;}
+  .hero-lead{font-size:13px;margin-bottom:1.5rem;}
+  /* Pillars : 3 col compactes */
+  .hero-pillars{gap:.4rem;}
+  .pillar{padding:.7rem .5rem;}
+  .pillar-icon{font-size:1.2rem;}
+  .pillar-label{font-size:10px;}
+  /* Wrap */
+  .wrap{padding:0 .9rem;}
+  .section{padding:1.75rem 0;}
+  /* Stats : toujours 3 col mais plus petites */
+  .stat-strip{gap:.4rem;margin-bottom:1.25rem;}
+  .stat-box{padding:.65rem .5rem;}
+  .stat-box .num{font-size:1.2rem;}
+  .stat-box .lbl{font-size:9.5px;}
+  /* Info cards : 1 col */
+  .info-grid{grid-template-columns:1fr;}
+  /* Steps : pas de changement structurel, juste padding */
+  .step-item{padding:.85rem .9rem;gap:10px;}
+  .step-text span{font-size:12px;}
+  /* Myth cards */
+  .myth-card{padding:.85rem .9rem;gap:10px;}
+  /* Banner */
+  .banner{flex-direction:column;align-items:flex-start;gap:.9rem;padding:1.1rem 1.1rem;}
+  .banner-badge{width:100%;text-align:left;display:flex;align-items:center;gap:.75rem;padding:.5rem .75rem;}
+  .banner-badge .bb-num{font-size:1.2rem;}
+  /* Quiz */
+  .quiz-header{padding:1rem 1rem .85rem;}
+  .quiz-body{padding:.9rem 1rem;}
+  .quiz-title{font-size:1.1rem;}
+  .q-card{padding:1rem 1.1rem;}
+  .q-title{font-size:.95rem;margin-bottom:.85rem;}
+  .q-opt{padding:11px 13px;font-size:13px;}
+  .q-opts{grid-template-columns:1fr;}
+  /* Nav quiz : empile les boutons */
+  .q-nav{flex-direction:column;gap:7px;}
+  .q-btn{width:100%;padding:13px;}
+  /* Results */
+  .qr-body{padding:.85rem 1rem;}
+  .qr-head{padding:.85rem 1rem .75rem;}
+  /* Connect */
+  .connect-grid{grid-template-columns:1fr;}
+  /* Section head */
+  .sh{margin-bottom:1.25rem;}
+}
+
+/* Très petit — sous 360px */
+@media(max-width:360px){
+  .hero-pillars{grid-template-columns:1fr 1fr 1fr;}
+  .stat-box .num{font-size:1rem;}
+  .stat-box .lbl{font-size:9px;}
+  .banner-badge{flex-direction:column;gap:.25rem;}
+}
+</style>
+
+
+<!-- HERO -->
+<header class="hero">
+  <div class="eyebrow">Les Fondations</div>
+  <h1>Ce que ton corps fait<br>pendant que tu <em>ne t’entraînes pas</em></h1>
+  <p class="hero-lead">L’entraînement déclenche les adaptations. Mais c’est l’hydratation, le sommeil et la récupération qui les construisent vraiment. Ces trois piliers font plus de différence qu’un programme parfait mal récupéré.</p>
+  <div class="hero-pillars">
+    <div class="pillar"><div class="pillar-icon">💧</div><div class="pillar-label">Hydratation</div></div>
+    <div class="pillar"><div class="pillar-icon">🌙</div><div class="pillar-label">Sommeil</div></div>
+    <div class="pillar"><div class="pillar-icon">⚡</div><div class="pillar-label">Récupération</div></div>
+  </div>
+</header>
+
+<!-- ═══ HYDRATATION ═══ -->
+<section class="section" id="pilier-hydratation">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Pilier 1</div>
+      <h2 class="sh-title">L’hydratation — <em>bien plus qu’une question de soif</em></h2>
+      <p class="sh-sub">Tu attends d’avoir soif pour boire ? À ce stade, tu es déjà en déficit. Voici pourquoi ça change tout.</p>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat-box"><div class="num">75%</div><div class="lbl">du corps est composé d’eau</div></div>
+      <div class="stat-box"><div class="num">2%</div><div class="lbl">de déshydratation = −20% de performance physique</div></div>
+      <div class="stat-box"><div class="num">37°C</div><div class="lbl">la température que l’eau régule en continu</div></div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Énergie et concentration</h3>
+        <p>Un déficit d’hydratation, même léger, réduit la concentration, crée de la fatigue mentale et ralentit les réactions. Ton cerveau est composé à 80% d’eau — il est le premier à souffrir.</p>
+      </div>
+      <div class="info-card blue">
+        <h3>Récupération musculaire</h3>
+        <p>L’eau transporte les nutriments vers les muscles et évacue les déchets métaboliques produits pendant l’effort. Sans elle, la récupération est plus lente et les courbatures plus intenses.</p>
+      </div>
+      <div class="info-card violet">
+        <h3>Gestion du poids et de la faim</h3>
+        <p>Le cerveau confond souvent soif et faim. Des études montrent qu’une grande partie des fringales en milieu de journée sont en réalité des signaux de déshydratation.</p>
+      </div>
+      <div class="info-card gold">
+        <h3>Digestion et transit</h3>
+        <p>L’eau est indispensable à la production des sucs digestifs et au bon fonctionnement du transit intestinal. Un manque d’eau est l’une des premières causes de constipation et de ballonnements.</p>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="banner-text">
+        <h3>Combien boire exactement ?</h3>
+        <p>La règle des 2L est un minimum pour une personne sédentaire. Si tu t’entraînes, il faut ajouter environ 500ml à 1L par séance. En été, en phase lutéale du cycle ou en période de stress, les besoins augmentent encore.</p>
+      </div>
+      <div class="banner-badge"><div class="bb-num">1,5-3L</div><div class="bb-lbl">objectif quotidien selon<br>activité et morphologie</div></div>
+    </div>
+
+    <div class="sh" style="margin-top:1.5rem;">
+      <div class="sh-eye">Méthodes pratiques</div>
+      <h2 class="sh-title">5 habitudes qui <em>changent vraiment</em> l’hydratation</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Un grand verre dès le réveil</strong><span>Après 7-8h sans boire, ton corps est en léger déficit. Commencer la journée avec 300-400ml d’eau (avec un filet de citron si tu veux) relance la digestion, le foie et le métabolisme avant même le café.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>La gourde visible sur le bureau</strong><span>Si tu ne vois pas ton eau, tu ne bois pas. Une gourde de 750ml à 1L devant toi est un rappel constant. L’objectif : la finir deux fois dans la journée.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Un verre avant chaque repas</strong><span>Cela t’hydrate, améliore la digestion, et peut réduire les fringales post-repas. C’est une habitude simple à ancrer sur un comportement déjà existant.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-text"><strong>Observer la couleur de ton urine</strong><span>C’est le meilleur indicateur. Jaune paille clair = bien hydratée. Jaune foncé ou ambrée = boire plus. Incolore tout le temps = peut-être trop, dilution des électrolytes.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-text"><strong>Ne pas compter le café comme eau</strong><span>Le café a un effet légèrement diurétique. Il n’est pas déshydratant au sens strict, mais il ne compense pas un manque d’eau. Chaque café mérite un verre d’eau en plus.</span></div>
+      </div>
+    </div>
+
+    <div class="sh" style="margin-top:1.5rem;">
+      <div class="sh-eye">Les idées reçues</div>
+      <h2 class="sh-title">Ce qu’on entend souvent — <em>et ce qui est vrai</em></h2>
+    </div>
+
+    <div class="myth-grid">
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“Je bois quand j’ai soif, ça suffit”</div>
+          <div class="myth-true">La sensation de soif apparaît quand tu es déjà déshydratée à environ 1-2%. À ce stade, les effets sur la concentration et l’énergie ont déjà commencé.</div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“Les tisanes et le thé ça compte”</div>
+          <div class="myth-true">Partiellement vrai pour les tisanes. Le thé noir et vert contenant de la caféine ont un effet légèrement diurétique — ils hydratent, mais moins efficacement que l’eau pure.</div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“Je mange des légumes, je suis hydratée”</div>
+          <div class="myth-true">Les aliments apportent environ 20% de l’hydratation quotidienne — c’est non négligeable. Mais ça ne remplace pas les 1,5 à 2L d’eau qu’il faut boire en plus.</div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“Je retiens l’eau donc je ne dois pas boire plus”</div>
+          <div class="myth-true">La rétention d’eau est souvent causée par… un manque d’eau. Le corps stocke l’eau quand il craint d’en manquer. Boire plus régulièrement aide paradoxalement à réduire la rétention.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ 1 -->
+<section class="section section-border" id="pilier-quiz1">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Auto-diagnostic</div>
+      <h2 class="sh-title">Tes signaux du corps — <em>stress, énergie, stockage</em></h2>
+      <p class="sh-sub">Ces 10 questions t’aident à repérer ce que ton corps essaie peut-être de te dire.</p>
+    </div>
+    <div class="quiz-wrap" id="quiz1">
+      <div class="quiz-header">
+        <div class="quiz-badge">Quiz · Signaux du corps</div>
+        <div class="quiz-title">Et si ton corps essayait simplement de te parler ?</div>
+        <p class="quiz-intro">Fatigue, fringales, stockage, énergie en montagnes russes, stress permanent… réponds à ces questions pour repérer certaines pistes liées au stress, à la récupération et à la stabilité de ton énergie.</p>
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress"><div class="quiz-bar" id="q1bar"></div></div>
+          <div class="quiz-progress-meta"><span id="q1step">Question 1 sur 10</span><span>Une question à la fois</span></div>
+        </div>
+      </div>
+      <div class="quiz-body">
+        <div id="q1steps"></div>
+        <div class="q-nav">
+          <button class="q-btn q-btn-secondary" id="q1prev" disabled>Retour</button>
+          <button class="q-btn q-btn-primary" id="q1next">Suivant</button>
+        </div>
+        <p class="q-error" id="q1error"></p>
+        <div class="q-results" id="q1results"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SOMMEIL ═══ -->
+<section class="section section-border" id="pilier-sommeil">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Pilier 2</div>
+      <h2 class="sh-title">Le sommeil — <em>ton outil de récupération le plus puissant</em></h2>
+      <p class="sh-sub">Aucun complément, aucune stratégie nutritionnelle ne peut compenser un sommeil chroniquement insuffisant. Voici pourquoi c’est la première chose à protéger.</p>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat-box"><div class="num">7-9h</div><div class="lbl">durée recommandée pour la plupart des adultes</div></div>
+      <div class="stat-box"><div class="num">+30%</div><div class="lbl">de cortisol en plus après une nuit insuffisante</div></div>
+      <div class="stat-box"><div class="num">−40%</div><div class="lbl">de performance cognitive après 6h de sommeil pendant 2 semaines</div></div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Croissance musculaire et réparation</h3>
+        <p>C’est pendant le sommeil profond que l’hormone de croissance est sécrétée — pas pendant l’entraînement. Sans sommeil suffisant, les microlésions musculaires ne se réparent pas correctement.</p>
+      </div>
+      <div class="info-card blue">
+        <h3>Régulation de la faim et du poids</h3>
+        <p>Le manque de sommeil augmente la ghréline (hormone de la faim) et diminue la leptine (hormone de satiété). Résultat : tu manges plus, tu résistes moins aux envies sucrées, et ton corps stocke plus facilement.</p>
+      </div>
+      <div class="info-card violet">
+        <h3>Système immunitaire et inflammation</h3>
+        <p>Pendant le sommeil, le corps produit des cytokines anti-inflammatoires et répare les dommages cellulaires. Dormir moins de 6h multiplie par 4 le risque d’attraper un rhume.</p>
+      </div>
+      <div class="info-card gold">
+        <h3>Mémoire et apprentissage</h3>
+        <p>Le sommeil consolide les apprentissages moteurs et cognitifs. C’est pendant la nuit que les automatismes sportifs s’ancrent vraiment — les entraînements se “gravent” pendant que tu dors.</p>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="banner-text">
+        <h3>Le sommeil et la perte de gras</h3>
+        <p>Des études montrent que les personnes qui dorment moins de 6h par nuit perdent moins de masse grasse et plus de masse musculaire lors d’une restriction calorique. En d’autres termes : si tu es en déficit et que tu dors mal, ton corps va chercher l’énergie dans le muscle, pas dans le gras.</p>
+      </div>
+      <div class="banner-badge"><div class="bb-num">×2</div><div class="bb-lbl">plus de perte musculaire<br>avec sommeil insuffisant</div></div>
+    </div>
+
+    <div class="sh" style="margin-top:1.5rem;">
+      <div class="sh-eye">Protocole</div>
+      <h2 class="sh-title">Construire un <em>vrai rituel de sommeil</em></h2>
+    </div>
+
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>La règle des 90 minutes sans écran</strong><span>La lumière bleue des écrans bloque la production de mélatonine. 90 minutes avant de dormir, c’est l’idéal. Si c’est trop ambitieux, commence par 30 minutes et progresse. Le mode nuit ne suffit pas vraiment.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Une heure de coucher fixe 6j/7</strong><span>Le corps adore la répétition. Une heure de coucher régulière synchronise ton horloge biologique et améliore la qualité du sommeil même si la durée reste identique. Le week-end, essaie de ne pas décaler de plus d’une heure.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>La chambre : fraîche, sombre, silencieuse</strong><span>La température idéale pour dormir se situe entre 16 et 19°C. Une chambre trop chaude fragmente le sommeil. Un masque de nuit ou des rideaux occultants peuvent faire une vraie différence sur la qualité du sommeil profond.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-text"><strong>Évite les séances intenses après 22h</strong><span>L’exercice intense augmente la température corporelle et le cortisol pendant 2 à 3h après la séance. Si tu t’entraînes à 22h ou après, l’endormissement peut être retardé et les cycles de sommeil profond raccourcis. S’entraîner le soir n’est pas un problème en soi — l’heure de fin, si.</span></div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-text"><strong>Le magnésium bisglycinate le soir</strong><span>Le magnésium active les récepteurs GABA qui favorisent l’endormissement et le sommeil profond. 300-400mg de bisglycinate 1h avant le coucher est l’une des stratégies les plus documentées pour améliorer la qualité du sommeil.</span></div>
+      </div>
+    </div>
+
+    <div class="sh" style="margin-top:1.5rem;">
+      <div class="sh-eye">Les idées reçues</div>
+      <h2 class="sh-title">Ce qu’on entend souvent — <em>et ce qui est vrai</em></h2>
+    </div>
+
+    <div class="myth-grid">
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“On peut rattraper le sommeil le week-end”</div>
+          <div class="myth-true">La “dette de sommeil” ne se rattrape pas vraiment. Des études montrent que même après récupération, certaines performances cognitives restent altérées plusieurs jours. La régularité prime sur la quantité en bloc.</div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“Je fonctionne bien avec 5-6h”</div>
+          <div class="myth-true">Les personnes qui dorment chroniquement peu finissent par ne plus ressentir leur fatigue — elles se sont adaptées à un état sous-optimal. Les performances objectives restent dégradées même si la sensation de fatigue diminue.</div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“Un verre de vin aide à dormir”</div>
+          <div class="myth-true">L’alcool accélère l’endormissement mais fragmente les cycles de sommeil profond. La qualité globale est moins bonne, et tu te réveilles plus fatigué malgré le nombre d’heures. L’effet est mesurable dès un seul verre.</div>
+        </div>
+      </div>
+      <div class="myth-card">
+        <div class="myth-cross">✕</div>
+        <div class="myth-text">
+          <div class="myth-false">“La mélatonine m’aide à mieux dormir”</div>
+          <div class="myth-true">La mélatonine est une hormone du signal circadien, pas un somnifère. Elle aide à décaler l’horloge (jet lag, travail posté) mais n’améliore pas la qualité du sommeil en elle-même. Le magnésium est bien plus efficace pour la qualité.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ 2 -->
+<section class="section section-border" id="pilier-quiz2">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Auto-diagnostic</div>
+      <h2 class="sh-title">Hydratation & sommeil — <em>où en es-tu vraiment ?</em></h2>
+      <p class="sh-sub">11 questions pour lire tes deux piliers de récupération et obtenir un débrief personnalisé.</p>
+    </div>
+    <div class="quiz-wrap" id="quiz2">
+      <div class="quiz-header">
+        <div class="quiz-badge">Quiz · Récupération</div>
+        <div class="quiz-title">Hydratation & Sommeil</div>
+        <p class="quiz-intro">Deux piliers qu’on sous-estime souvent alors qu’ils influencent énormément l’énergie, la récupération, les fringales et même la perte de gras.</p>
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress"><div class="quiz-bar" id="q2bar"></div></div>
+          <div class="quiz-progress-meta"><span id="q2step">Question 1 sur 11</span><span id="q2section">Hydratation</span></div>
+        </div>
+      </div>
+      <div class="quiz-body">
+        <div id="q2steps"></div>
+        <div class="q-nav">
+          <button class="q-btn q-btn-secondary" id="q2prev" disabled>Retour</button>
+          <button class="q-btn q-btn-primary" id="q2next">Suivant</button>
+        </div>
+        <p class="q-error" id="q2error"></p>
+        <div class="q-results" id="q2results"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIENS -->
+<section class="section section-border">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-eye">Aller plus loin</div>
+      <h2 class="sh-title">Ces fondations <em>soutiennent tout le reste</em></h2>
+      <p class="sh-sub">Hydratation et sommeil renforcent chaque pilier de ton programme. Explore les ressources liées.</p>
+    </div>
+    <div class="connect-grid">
+      <a class="connect-card" href="https://www.thenarcissichealth.fr/school/course/mybetterself/lecture/9442303" target="_blank">
+        <div class="cc-tag">Compléments</div>
+        <div class="cc-title">Magnésium, oméga-3, ashwagandha...</div>
+        <div class="cc-desc">Certains compléments soutiennent directement la qualité du sommeil et la récupération. Découvre les fiches détaillées avec dosages et synergies.</div>
+        <div class="cc-arrow">Voir le guide compléments →</div>
+      </a>
+      <a class="connect-card" href="https://www.thenarcissichealth.fr/school/course/mybetterself/lecture/9442187" target="_blank">
+        <div class="cc-tag">Cycle menstruel</div>
+        <div class="cc-title">Sommeil et hydratation selon les phases</div>
+        <div class="cc-desc">Les besoins en eau et la qualité du sommeil varient selon les phases du cycle. Phase lutéale = plus de rétention d’eau, sommeil plus fragmenté.</div>
+        <div class="cc-arrow">Voir le guide cycle →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <em>Ce guide est fourni à titre éducatif et ne remplace pas un avis médical.</em><br>
+  Si tu souffres de troubles du sommeil chroniques ou d’une déshydratation importante, consulte un professionnel de santé.
+</footer>
+<script>
+const COMP_URL = "https://www.thenarcissichealth.fr/school/course/mybetterself/lecture/9442303";
+
+// ─── Helpers ───────────────────────────────────────────────────────────────
+function buildQuiz(containerID, questions, onFinish) {
+  var container = document.getElementById(containerID + "steps");
+  var prevBtn   = document.getElementById(containerID + "prev");
+  var nextBtn   = document.getElementById(containerID + "next");
+  var errBox    = document.getElementById(containerID + "error");
+  var bar       = document.getElementById(containerID + "bar");
+  var stepTxt   = document.getElementById(containerID + "step");
+  var secTxt    = document.getElementById(containerID + "section");
+
+  var answers = {}, cur = 1, tot = questions.length;
+
+  // Build steps HTML
+  container.innerHTML = questions.map(function(q) {
+    var opts = q.opts.map(function(o) {
+      return `<button type="button" class="q-opt" data-name="${q.name}" data-value="${o.v}">${o.l}</button>`;
+    }).join("");
+    var hidden = q.step > 1 ? " hidden" : "";
+    var badge  = q.section || ("Question " + q.step + "/" + tot);
+    return `<div class="q-step" data-step="${q.step}"${hidden}><div class="q-card"><div class="q-badge">${badge}</div><div class="q-title">${q.q}</div><div class="q-opts">${opts}</div></div></div>`;
+  }).join("");
+
+  function restoreSel() {
+    container.querySelectorAll(".q-opt").forEach(function(b) {
+      b.classList.toggle("sel", answers[b.dataset.name] === b.dataset.value);
+    });
+  }
+
+  container.addEventListener("click", function(e) {
+    var b = e.target.closest(".q-opt");
+    if (!b) return;
+    answers[b.dataset.name] = b.dataset.value;
+    errBox.textContent = "";
+    restoreSel();
+  });
+
+  function update() {
+    container.querySelectorAll(".q-step").forEach(function(s) {
+      s.hidden = parseInt(s.dataset.step) !== cur;
+    });
+    var q = questions[cur - 1];
+    stepTxt.textContent = "Question " + cur + " sur " + tot;
+    if (secTxt) secTxt.textContent = q.section || "";
+    bar.style.width = Math.round(((cur - 1) / tot) * 100) + "%";
+    prevBtn.disabled = cur === 1;
+    prevBtn.style.opacity = cur === 1 ? ".5" : "1";
+    nextBtn.textContent = cur === tot ? "Voir mes r\u00e9sultats" : "Suivant";
+    restoreSel();
+  }
+
+  function answered() {
+    return !!answers[questions[cur - 1].name];
+  }
+
+  nextBtn.addEventListener("click", function() {
+    errBox.textContent = "";
+    if (!answered()) { errBox.textContent = "Choisis une r\u00e9ponse pour continuer."; return; }
+    if (cur < tot) { cur++; update(); return; }
+    onFinish(answers);
+  });
+
+  prevBtn.addEventListener("click", function() {
+    errBox.textContent = "";
+    if (cur > 1) { cur--; update(); }
+  });
+
+  update();
+}
+
+function makeAcc(items, bindClick) {
+  var html = items.map(function(item) {
+    return `<div class="acc-item ${item.open ? "open" : ""}">
+      <button class="acc-btn" type="button">
+        <span class="acc-btn-title">${item.title}</span>
+        <span class="acc-arrow">+</span>
+      </button>
+      <div class="acc-content">${item.body}</div>
+    </div>`;
+  }).join("");
+  if (bindClick) {
+    setTimeout(function() {
+      document.querySelectorAll(".acc-btn").forEach(function(b) {
+        if (!b._bound) { b._bound = true; b.addEventListener("click", function() { this.parentElement.classList.toggle("open"); }); }
+      });
+    }, 50);
+  }
+  return html;
+}
+
+function compLink(comps) {
+  if (!comps || !comps.length) return "";
+  var tags = comps.map(function(c) { return `<span class="qr-ctag">${c}</span>`; }).join("");
+  return `<div class="acc-block">
+    <div class="acc-label">Compl\u00e9ments qui peuvent aider</div>
+    <div class="qr-comps">${tags}</div>
+    <a href="${COMP_URL}" target="_blank" style="display:inline-block;margin-top:10px;font-size:12px;font-weight:800;color:var(--red);text-decoration:none;border:1px solid rgba(169,27,24,.2);border-radius:999px;padding:5px 13px;background:rgba(169,27,24,.06);">Voir le guide compl\u00e9ments \u2192</a>
+  </div>`;
+}
+
+function showResults(containerID, badge, title, blocks, extraItems) {
+  var el = document.getElementById(containerID + "results");
+  var items = blocks.map(function(b, i) {
+    return { title: b.label, body: `<div class="acc-block"><p class="acc-text">${b.text}</p></div>`, open: i === 0 };
+  });
+  if (extraItems) items = items.concat(extraItems);
+  items.push({
+    title: "Important",
+    open: false,
+    body: `<div class="acc-note"><strong>Important :</strong> ce quiz ne remplace ni un avis m\u00e9dical ni un diagnostic. Il est l\u00e0 pour t\u2019aider \u00e0 rep\u00e9rer certains signaux et ouvrir des pistes de r\u00e9flexion. Si tu te reconnais fortement dans plusieurs signes et que \u00e7a dure, consulter un m\u00e9decin est la bonne d\u00e9marche.</div>`
+  });
+  el.innerHTML = `<div class="qr-wrap">
+    <div class="qr-head"><div class="qr-badge">${badge}</div><div class="qr-title">${title}</div></div>
+    <div class="qr-body">${makeAcc(items, true)}</div>
+  </div>`;
+  el.classList.add("show");
+  setTimeout(function() { el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 80);
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// QUIZ 1 — Signaux du corps
+// ═══════════════════════════════════════════════════════════════════════════
+(function() {
+  var Q1 = [
+    {step:1,  q:"Tu te r\u00e9veilles souvent fatigu\u00e9e, m\u00eame apr\u00e8s une nuit qui semblait correcte ?",             name:"q1",  opts:[{l:"Oui, r\u00e9guli\u00e8rement",v:"stress"},{l:"Parfois",v:"mixed"},{l:"Non",v:"non"}]},
+    {step:2,  q:"Tu as souvent l\u2019impression d\u2019\u00eatre tendue int\u00e9rieurement, m\u00eame quand tu ne fais rien de sp\u00e9cial ?", name:"q2",  opts:[{l:"Oui, souvent",v:"stress"},{l:"De temps en temps",v:"mixed"},{l:"Non",v:"non"}]},
+    {step:3,  q:"Le soir, tu ressens souvent de grosses envies de sucre, de gras ou de grignotage ?",                     name:"q3",  opts:[{l:"Oui, c\u2019est r\u00e9current",v:"mixed"},{l:"Parfois",v:"mixed_b"},{l:"Rarement",v:"non"}]},
+    {step:4,  q:"Tu dors mal, tu te r\u00e9veilles la nuit, ou ton sommeil ne te recharge pas vraiment ?",                name:"q4",  opts:[{l:"Oui, clairement",v:"stress"},{l:"De temps en temps",v:"mixed"},{l:"Non, je dors bien",v:"non"}]},
+    {step:5,  q:"Tu gonfles facilement, surtout dans les p\u00e9riodes o\u00f9 tu es tr\u00e8s fatigu\u00e9e ou stress\u00e9e ?", name:"q5",  opts:[{l:"Oui, c\u2019est fr\u00e9quent",v:"stress"},{l:"Un peu",v:"mixed"},{l:"Non",v:"non"}]},
+    {step:6,  q:"Tu as souvent faim peu de temps apr\u00e8s avoir mang\u00e9 ?",                                           name:"q6",  opts:[{l:"Oui, souvent",v:"insulin"},{l:"Parfois",v:"mixed"},{l:"Non",v:"non"}]},
+    {step:7,  q:"Apr\u00e8s certains repas, tu ressens un coup de fatigue, comme si ton \u00e9nergie retombait d\u2019un coup ?", name:"q7",  opts:[{l:"Oui, r\u00e9guli\u00e8rement",v:"insulin"},{l:"Parfois",v:"mixed"},{l:"Non",v:"non"}]},
+    {step:8,  q:"Tu as souvent besoin de sucre, de caf\u00e9 ou de grignoter pour repartir dans la journ\u00e9e ?",        name:"q8",  opts:[{l:"Oui, c\u2019est mon carburant",v:"insulin"},{l:"Parfois",v:"mixed"},{l:"Non",v:"non"}]},
+    {step:9,  q:"Tu as l\u2019impression de stocker facilement, surtout au niveau du ventre, malgr\u00e9 tes efforts ?",  name:"q9",  opts:[{l:"Oui, souvent",v:"mixed"},{l:"Un peu",v:"mixed_b"},{l:"Non",v:"non"}]},
+    {step:10, q:"Tu as parfois le sentiment que ton corps est bloqu\u00e9 alors que tu essaies sinc\u00e8rement de bien faire ?", name:"q10", opts:[{l:"Oui, r\u00e9guli\u00e8rement",v:"mixed"},{l:"Parfois",v:"mixed_b"},{l:"Non",v:"non"}]}
+  ];
+
+  var profiles = {
+    low: {
+      badge: "Bonne nouvelle",
+      title: "Ton corps ne semble pas t\u2019envoyer de gros signaux d\u2019alerte ici",
+      analyse: "Tu ne te reconnais pas fortement dans les signaux associ\u00e9s \u00e0 un stress \u00e9lev\u00e9 ou une instabilit\u00e9 \u00e9nerg\u00e9tique. Ce n\u2019est pas forc\u00e9ment parfait, mais ce n\u2019est peut-\u00eatre pas la premi\u00e8re piste \u00e0 creuser aujourd\u2019hui.",
+      action: "Continue \u00e0 observer ton corps avec nuance : qualit\u00e9 du sommeil, \u00e9nergie stable, r\u00e9cup\u00e9ration apr\u00e8s l\u2019effort. Ces indicateurs sont plus fiables que la balance.",
+      comps: []
+    },
+    stress: {
+      badge: "Piste principale",
+      title: "Ton corps semble surtout te parler de surcharge et de fatigue",
+      analyse: "Tu te reconnais dans la fatigue persistante, la tension int\u00e9rieure, le sommeil fragile ou les fringales du soir. Quand le syst\u00e8me tourne sous pression, le corps r\u00e9cup\u00e8re plus lentement, stocke plus facilement, et donne l\u2019impression de freiner alors qu\u2019il essaie juste de tenir.",
+      action: "Priorit\u00e9 : rituel du soir pour aider ton corps \u00e0 redescendre, r\u00e9gularit\u00e9 et qualit\u00e9 du sommeil, moments de calme dans la journ\u00e9e m\u00eame courts. Si la sensation d\u2019\u00e9puisement ou de blocage dure, en parler \u00e0 un professionnel de sant\u00e9.",
+      comps: ["Magn\u00e9sium Pure Sommeil", "Ashwagandha KSM-66\u00ae", "Om\u00e9ga-3 EPA / DHA"]
+    },
+    insulin: {
+      badge: "Piste principale",
+      title: "Ton corps semble surtout te parler d\u2019\u00e9nergie instable",
+      analyse: "Tu te reconnais dans les coups de barre, les variations d\u2019\u00e9nergie, les envies de sucre ou la sensation de stocker facilement. Ici on n\u2019ouvre pas un diagnostic, on ouvre une r\u00e9flexion. Parfois ce n\u2019est pas une question de volont\u00e9, mais un corps qui envoie des signaux qu\u2019il faut apprendre \u00e0 \u00e9couter.",
+      action: "Travailler une routine plus r\u00e9guli\u00e8re, soutenir la qualit\u00e9 du sommeil (un mauvais sommeil accentue ces signaux), bouger doucement apr\u00e8s les repas. Si ces signaux sont fr\u00e9quents et persistants, consulter un m\u00e9decin.",
+      comps: ["Magn\u00e9sium Pure Sommeil", "Vitamine B complexe", "Om\u00e9ga-3 EPA / DHA"]
+    },
+    mixed: {
+      badge: "Lecture crois\u00e9e",
+      title: "Ton corps semble t\u2019envoyer plusieurs signaux en m\u00eame temps",
+      analyse: "Tu te reconnais \u00e0 la fois dans des signes de fatigue, de stress et de variations d\u2019\u00e9nergie. Ton corps n\u2019est peut-\u00eatre pas contre toi \u2014 il essaie peut-\u00eatre juste de g\u00e9rer trop de choses \u00e0 la fois.",
+      action: "Solidifier le sommeil, mettre en place un rituel du soir, observer les moments o\u00f9 ton corps semble le plus en lutte. Si malgr\u00e9 tes efforts la sensation de blocage reste tr\u00e8s pr\u00e9sente, consulter un professionnel.",
+      comps: ["Magn\u00e9sium Pure Sommeil", "Ashwagandha KSM-66\u00ae", "Vitamines B complexe"]
+    }
+  };
+
+  buildQuiz("q1", Q1, function(answers) {
+    var s = 0, ins = 0, mix = 0;
+    Q1.forEach(function(q) {
+      var v = answers[q.name];
+      if (v === "stress") s++;
+      else if (v === "insulin") ins++;
+      else if (v === "mixed" || v === "mixed_b") mix++;
+    });
+    var total = s + ins + mix;
+    var key = total <= 2 ? "low" : (s + mix >= 5 && s + mix > ins) ? "stress" : (ins + mix >= 5 && ins + mix > s) ? "insulin" : "mixed";
+    var r = profiles[key];
+    showResults("q1", r.badge, r.title, [
+      { label: "Ce que ton corps semble dire", text: r.analyse },
+      { label: "Plan d\u2019action", text: r.action + (r.comps.length ? "" : "") }
+    ], r.comps.length ? [{ title: "Compl\u00e9ments qui peuvent aider", open: false, body: compLink(r.comps) }] : []);
+  });
+})();
+
+// ═══════════════════════════════════════════════════════════════════════════
+// QUIZ 2 — Hydratation & Sommeil
+// ═══════════════════════════════════════════════════════════════════════════
+(function() {
+  var Q2 = [
+    {step:1,  section:"Hydratation", q:"Combien d\u2019eau tu bois par jour ?",                                                                    name:"h1", opts:[{l:"Moins d\u20191 L",v:"A"},{l:"Autour de 1,5 L",v:"B"},{l:"2 L et plus",v:"C"}]},
+    {step:2,  section:"Hydratation", q:"Couleur de ton urine la majorit\u00e9 du temps ?",                                                         name:"h2", opts:[{l:"Jaune fonc\u00e9 ou ambr\u00e9",v:"A"},{l:"Jaune clair",v:"B"},{l:"Tr\u00e8s claire",v:"C"}]},
+    {step:3,  section:"Hydratation", q:"Ressens-tu parfois des signaux de d\u00e9shydratation (maux de t\u00eate, fatigue en milieu de journ\u00e9e) ?", name:"h3", opts:[{l:"Oui, tr\u00e8s souvent",v:"A"},{l:"Parfois",v:"B"},{l:"Rarement",v:"C"}]},
+    {step:4,  section:"Hydratation", q:"Bois-tu souvent autre chose que de l\u2019eau (caf\u00e9, sodas, jus) ?",                                   name:"h4", opts:[{l:"Oui, plus souvent que l\u2019eau",v:"A"},{l:"J\u2019\u00e9quilibre les deux",v:"B"},{l:"L\u2019eau reste ma boisson principale",v:"C"}]},
+    {step:5,  section:"Sommeil",     q:"Combien d\u2019heures tu dors en moyenne par nuit ?",                                                       name:"s1", opts:[{l:"Moins de 6h",v:"A"},{l:"6 \u00e0 7h",v:"B"},{l:"7 \u00e0 9h",v:"C"}]},
+    {step:6,  section:"Sommeil",     q:"Tu te r\u00e9veilles le matin :",                                                                           name:"s2", opts:[{l:"\u00c9puis\u00e9e",v:"A"},{l:"Moyennement repos\u00e9e",v:"B"},{l:"Plut\u00f4t en forme",v:"C"}]},
+    {step:7,  section:"Sommeil",     q:"Pendant la journ\u00e9e, ton \u00e9nergie :",                                                               name:"s3", opts:[{l:"Chute r\u00e9guli\u00e8rement",v:"A"},{l:"Fluctue un peu",v:"B"},{l:"Reste plut\u00f4t stable",v:"C"}]},
+    {step:8,  section:"Sommeil",     q:"Avant de dormir, ton rituel ressemble plut\u00f4t \u00e0 :",                                                name:"s4", opts:[{l:"\u00c9crans, scroll, coucher tardif",v:"A"},{l:"Je coupe tard mais je dors",v:"B"},{l:"Routine calme, heure fixe",v:"C"}]},
+    {step:9,  section:"Sommeil",     q:"As-tu remarqu\u00e9 des signes li\u00e9s \u00e0 un sommeil insuffisant (fringales, humeur, r\u00e9cup\u00e9ration) ?", name:"s5", opts:[{l:"Oui, clairement",v:"A"},{l:"Un peu",v:"B"},{l:"Non, pas vraiment",v:"C"}]},
+    {step:10, section:"Sommeil",     q:"Tes envies de sucre et de grignotage sont-elles plus fortes les jours o\u00f9 tu as mal dormi ?",          name:"s6", opts:[{l:"Oui, clairement plus fortes",v:"A"},{l:"Un peu plus",v:"B"},{l:"Non, pas vraiment",v:"C"}]},
+    {step:11, section:"Hydratation", q:"Tu penses souvent \u00e0 boire de l\u2019eau pendant tes s\u00e9ances de sport ou juste apr\u00e8s ?",    name:"h5", opts:[{l:"Non, j\u2019oublie souvent",v:"A"},{l:"Parfois",v:"B"},{l:"Oui, c\u2019est un r\u00e9flexe",v:"C"}]}
+  ];
+
+  var hydroR = {
+    A: {
+      badge: "Hydratation",
+      title: "Ton hydratation semble clairement insuffisante",
+      analyse: "Quand tu bois trop peu, la r\u00e9cup\u00e9ration apr\u00e8s l\u2019entra\u00eenement ralentit, l\u2019\u00e9nergie chute, les fringales augmentent et les sensations de r\u00e9tention s\u2019aggravent. Pour une femme en programme sportif, l\u2019eau n\u2019est pas optionnelle \u2014 c\u2019est un outil de performance et de composition corporelle.",
+      action: "Objectif minimum : 2L par jour + 500ml suppl\u00e9mentaires les jours d\u2019entra\u00eenement. Une gourde visible sur le bureau, un grand verre au r\u00e9veil, un verre avant chaque repas. Commence petit, ancre l\u2019habitude.",
+      comps: []
+    },
+    B: {
+      badge: "Hydratation",
+      title: "Ton hydratation est correcte mais encore trop irr\u00e9guli\u00e8re",
+      analyse: "Tu bois, mais pas de fa\u00e7on assez r\u00e9guli\u00e8re pour que ton corps puisse optimiser la r\u00e9cup\u00e9ration musculaire, la gestion de l\u2019\u00e9nergie et la composition corporelle.",
+      action: "Cible les jours d\u2019entra\u00eenement en priorit\u00e9 : boire avant, pendant et apr\u00e8s la s\u00e9ance. En dehors, ancre 3 moments fixes dans la journ\u00e9e \u2014 r\u00e9veil, avant-repas, apr\u00e8s-s\u00e9ance.",
+      comps: []
+    },
+    C: {
+      badge: "Hydratation",
+      title: "Ton hydratation semble bien install\u00e9e",
+      analyse: "Tu donnes \u00e0 ton corps une base hydrique coh\u00e9rente. C\u2019est un vrai point fort pour la r\u00e9cup\u00e9ration, l\u2019\u00e9nergie et le confort digestif.",
+      action: "Continue \u00e0 garder l\u2019eau comme base et ajuste simplement selon la chaleur, ton cycle ou ton activit\u00e9 physique.",
+      comps: []
+    }
+  };
+
+  var sommeilR = {
+    A: {
+      badge: "Sommeil",
+      title: "Ton sommeil semble \u00eatre un vrai frein \u00e0 tes r\u00e9sultats actuellement",
+      analyse: "Quand tu dors moins de 7h r\u00e9guli\u00e8rement, ton corps produit moins d\u2019hormone de croissance, plus de cortisol, et d\u00e8r\u00e8gle la ghr\u00e9line et la leptine. Concr\u00e8tement : tu as plus faim, tu r\u00e9sistes moins aux envies sucr\u00e9es, et ton corps pr\u00e9serve la graisse en priorit\u00e9.",
+      action: "Priorit\u00e9 absolue les 2 prochaines semaines : une heure de coucher fixe, coupure des \u00e9crans 30 min avant de dormir, chambre fra\u00eeche. Le magn\u00e9sium bisglycinate 300-400mg 1h avant le coucher peut faire une vraie diff\u00e9rence rapidement.",
+      comps: ["Magn\u00e9sium Pure Sommeil", "Ashwagandha KSM-66\u00ae"]
+    },
+    B: {
+      badge: "Sommeil",
+      title: "Ton sommeil a besoin de plus de r\u00e9gularit\u00e9 pour vraiment te soutenir",
+      analyse: "Tu dors, mais pas de fa\u00e7on assez stable pour que ton corps optimise la r\u00e9cup\u00e9ration musculaire et la gestion hormonale. L\u2019irr\u00e9gularit\u00e9 des horaires r\u00e9duit la proportion de sommeil profond \u2014 l\u00e0 o\u00f9 se produisent la r\u00e9paration musculaire et la s\u00e9cr\u00e9tion d\u2019hormone de croissance.",
+      action: "Stabilise ton heure de coucher \u00e0 \u00b130 minutes 6 soirs sur 7. Cr\u00e9e une coupure progressive le soir : lumi\u00e8res tamis\u00e9es, pas d\u2019\u00e9cran, une activit\u00e9 calme. Le magn\u00e9sium bisglycinate peut renforcer la qualit\u00e9 du sommeil sans cr\u00e9er de d\u00e9pendance.",
+      comps: ["Magn\u00e9sium Pure Sommeil"]
+    },
+    C: {
+      badge: "Sommeil",
+      title: "Ton sommeil semble bien soutenir ton corps",
+      analyse: "Tu donnes \u00e0 ton corps une vraie base de r\u00e9cup\u00e9ration. C\u2019est un \u00e9norme levier pour l\u2019\u00e9nergie, l\u2019humeur, l\u2019entra\u00eenement, la gestion de la faim et la stabilit\u00e9 g\u00e9n\u00e9rale.",
+      action: "Continue \u00e0 pr\u00e9server cette routine, surtout dans les p\u00e9riodes plus charg\u00e9es ou stressantes.",
+      comps: []
+    }
+  };
+
+  buildQuiz("q2", Q2, function(answers) {
+    function majority(names) {
+      var cnt = { A: 0, B: 0, C: 0 };
+      names.forEach(function(n) { if (answers[n]) cnt[answers[n]]++; });
+      return Object.keys(cnt).reduce(function(a, b) { return cnt[a] >= cnt[b] ? a : b; });
+    }
+    var mH = majority(["h1","h2","h3","h4","h5"]);
+    var mS = majority(["s1","s2","s3","s4","s5","s6"]);
+    var rH = hydroR[mH], rS = sommeilR[mS];
+
+    var planMap = {
+      AA: "Tes deux piliers m\u00e9ritent un vrai reset. Commence par remettre de l\u2019eau et du sommeil l\u00e0 o\u00f9 ton corps en manque clairement.",
+      BB: "Tu n\u2019es pas loin d\u2019une base beaucoup plus solide. La cl\u00e9, c\u2019est la r\u00e9gularit\u00e9, pas la perfection.",
+      CC: "Tu as d\u00e9j\u00e0 deux piliers tr\u00e8s solides. Garde \u00e7a comme fondation pour soutenir tes r\u00e9sultats dans le temps."
+    };
+    var plan = planMap[mH + mS] || "Un de tes deux piliers a besoin de plus d\u2019attention. En le renfor\u00e7ant, tu peux d\u00e9j\u00e0 faire une vraie diff\u00e9rence sur ton ressenti global.";
+
+    var compsAll = rH.comps.concat(rS.comps).filter(function(v, i, a) { return a.indexOf(v) === i; });
+
+    var resultsEl = document.getElementById("q2results");
+    var accItems = [
+      {
+        title: rH.badge + " \u00b7 " + rH.title, open: true,
+        body: `<div class="acc-block"><div class="acc-label">Ce que \u00e7a signifie</div><p class="acc-text">${rH.analyse}</p></div><div class="acc-block"><div class="acc-label">Plan d&#39;action</div><p class="acc-text">${rH.action}</p></div>`
+      },
+      {
+        title: rS.badge + " \u00b7 " + rS.title, open: true,
+        body: `<div class="acc-block"><div class="acc-label">Ce que \u00e7a signifie</div><p class="acc-text">${rS.analyse}</p></div><div class="acc-block"><div class="acc-label">Plan d&#39;action</div><p class="acc-text">${rS.action}</p></div>` + (compsAll.length ? compLink(compsAll) : "")
+      },
+      {
+        title: "Lecture globale", open: false,
+        body: `<div class="acc-note">${plan}</div>`
+      },
+      {
+        title: "Important", open: false,
+        body: `<div class="acc-note"><strong>Important :</strong> ce quiz ne remplace ni un avis m\u00e9dical ni un diagnostic. Il est l\u00e0 pour t\u2019aider \u00e0 rep\u00e9rer certains signaux et ouvrir des pistes de r\u00e9flexion. Si tu te reconnais fortement dans plusieurs signes et que \u00e7a dure, consulter un m\u00e9decin est la bonne d\u00e9marche.</div>`
+      }
+    ];
+
+    resultsEl.innerHTML = `<div class="qr-wrap">
+      <div class="qr-head"><div class="qr-badge">D\u00e9brief r\u00e9cup\u00e9ration</div><div class="qr-title">Ton bilan hydratation & sommeil</div></div>
+      <div class="qr-body">${makeAcc(accItems, true)}</div>
+    </div>`;
+    resultsEl.classList.add("show");
+    setTimeout(function() { resultsEl.scrollIntoView({ behavior: "smooth", block: "start" }); }, 80);
+  });
+})();
+</script>
