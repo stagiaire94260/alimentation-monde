@@ -1,0 +1,1850 @@
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+/* ============================================================
+   BASE
+   ============================================================ */
+#nutritionPlanFinal {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 14px;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  color: #3F0405;
+  box-sizing: border-box;
+  overflow-x: hidden; /* FIX: ici uniquement, pas sur html/body */
+}
+#nutritionPlanFinal * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* ============================================================
+   POPUP — base (classe pour le style, ID pour les overrides)
+   ============================================================ */
+#nutritionPopupOverlay,
+#nutritionPopupOverlay * {
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+#nutritionPopupOverlay .timingPlannerItem,
+#nutritionPopupOverlay .timingPlannerHour,
+#nutritionPopupOverlay .timingPlannerCard,
+#nutritionPopupOverlay .timingPlannerCardHeader > div:first-child {
+  min-width: 0;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+#nutritionPlanFinal .hero img {
+  width: 100%;
+  display: block;
+  border-radius: 22px 22px 0 0;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* ============================================================
+   TOP BOX
+   ============================================================ */
+#nutritionPlanFinal .topBox {
+  background: #a91b18;
+  padding: 20px;
+  border-radius: 0 0 22px 22px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  margin-bottom: 22px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+#nutritionPlanFinal .grid3,
+#nutritionPlanFinal .grid5 {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+#nutritionPlanFinal .grid3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+#nutritionPlanFinal .grid5 { grid-template-columns: repeat(5, minmax(0,1fr)); }
+
+#nutritionPlanFinal .grid3 > div,
+#nutritionPlanFinal .grid5 > div {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+#nutritionPlanFinal label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #cee7f3;
+  margin-bottom: 6px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+#nutritionPlanFinal input {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  display: block;
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#nutritionPlanFinal .ctaWrap {
+  text-align: center;
+  margin-top: 18px;
+}
+
+#nutritionPlanFinal .cta {
+  background: #cee7f3;
+  color: #a91b18;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  width: auto;
+  max-width: 100%;
+}
+
+/* ============================================================
+   PLAN INTRO
+   ============================================================ */
+#nutritionPlanFinal .planIntro {
+  display: none;
+  background: #fff7fa;
+  border: 1px solid rgba(169,27,24,.14);
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.05);
+}
+#nutritionPlanFinal .planIntro h3 {
+  margin: 0 0 8px;
+  color: #a91b18;
+  font-size: 24px;
+  text-align: center;
+}
+#nutritionPlanFinal .planIntro p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#nutritionPlanFinal .planMeta {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #6e4d4d;
+  text-align: center;
+}
+
+/* ============================================================
+   TABLE WRAPPER — toujours block, CSS gère le reste
+   ============================================================ */
+#nutritionTableDesktopWrap {
+  display: none; /* caché par défaut, JS le passe en block après génération */
+  width: 100%;
+  overflow: hidden; /* FIX: contient la table sans déborder */
+}
+
+/* ============================================================
+   TABLE
+   ============================================================ */
+#nutritionPlanFinal .workout-table-premium {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-family: 'Poppins', sans-serif;
+  table-layout: fixed;
+}
+
+#nutritionPlanFinal .workout-table-premium thead th {
+  text-transform: uppercase;
+  color: #cee7f3;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 12px 8px;
+  background: #a91b18;
+  border-radius: 12px;
+}
+
+#nutritionPlanFinal .workout-table-premium tbody tr {
+  background: #cee7f3;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#nutritionPlanFinal .workout-table-premium tbody tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+#nutritionPlanFinal .workout-table-premium td {
+  background: #cee7f3;
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #a91b18;
+  font-weight: 500;
+  border-right: 1px solid rgba(255,255,255,0.4);
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+}
+#nutritionPlanFinal .workout-table-premium td:first-child { border-radius: 18px 0 0 18px; }
+#nutritionPlanFinal .workout-table-premium td:last-child {
+  border-right: none;
+  border-radius: 0 18px 18px 0;
+}
+
+#nutritionPlanFinal .workout-table-premium td:nth-child(1) { width: 38%; }
+#nutritionPlanFinal .workout-table-premium td:nth-child(2) { width: 18%; }
+#nutritionPlanFinal .workout-table-premium td:nth-child(3) { width: 26%; }
+#nutritionPlanFinal .workout-table-premium td:nth-child(4) { width: 18%; }
+
+#nutritionPlanFinal .exo-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-align: left;
+}
+
+#nutritionPlanFinal .exo-number {
+  color: #a91b18;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-right: 1.5px solid #a91b18;
+  padding-right: 6px;
+  flex-shrink: 0;
+}
+
+#nutritionPlanFinal .exo-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1;
+  margin: 0;
+  min-width: 0;
+}
+#nutritionPlanFinal .exo-name .main {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  color: #a91b18;
+  margin: 0;
+  line-height: 1.2;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+#nutritionPlanFinal .exo-name .sub {
+  font-size: 12px;
+  color: rgba(63,4,5,0.75);
+  margin: 0;
+  line-height: 1.1;
+}
+
+#nutritionPlanFinal .openBtn {
+  background-color: #a91b18;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 96px;
+}
+#nutritionPlanFinal .openBtn:hover {
+  background-color: #8d1614;
+}
+
+/* ============================================================
+   POPUP OVERLAY
+   ============================================================ */
+#nutritionPopupOverlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 12px;
+  justify-content: center;
+  align-items: flex-start; /* JS override en runtime */
+}
+
+#nutritionPopup {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 24px;
+  width: 92%;
+  max-width: 720px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  max-height: 88vh;
+  overflow-y: auto;
+  position: relative;
+  /* margin géré par JS — pas de valeur fixe ici */
+  margin: 0 auto;
+}
+
+#nutritionPopup .closeBtn {
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #a91b18;
+  background: none;
+  border: none;
+}
+#nutritionPopup .popupTitle {
+  text-align: center;
+  color: #a91b18;
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+}
+#nutritionPopup .popupKcal {
+  text-align: center;
+  color: #5d3232;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#nutritionPopup .popupTagWrap { text-align: center; }
+#nutritionPopup .popupTag {
+  display: inline-block;
+  background: #cee7f3;
+  color: #a91b18;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#nutritionPopup .popupHeadCompact {
+  text-align: center;
+  margin-bottom: 14px;
+}
+#nutritionPopup .popupMiniIntro {
+  margin-top: 10px;
+  background: #fff7fa;
+  border: 1px solid rgba(169,27,24,.10);
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: #5a3838;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+}
+#nutritionPopup .popupCompactAccWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#nutritionPopup .compactAccItem {
+  border: 1px solid rgba(169,27,24,.12);
+  border-radius: 16px;
+  background: #f8fbfd;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,.04);
+}
+#nutritionPopup .compactAccBtn {
+  width: 100%;
+  border: none;
+  background: #cee7f3;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+}
+#nutritionPopup .compactAccTitle {
+  color: #b51d18;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+#nutritionPopup .compactAccChevron {
+  color: #b51d18;
+  font-size: 18px;
+  transition: transform .25s ease;
+  flex-shrink: 0;
+}
+#nutritionPopup .compactAccItem.open .compactAccChevron {
+  transform: rotate(180deg);
+}
+#nutritionPopup .compactAccContent {
+  display: none;
+  padding: 0 12px 12px;
+  background: #fff;
+}
+#nutritionPopup .compactAccItem.open .compactAccContent {
+  display: block;
+}
+#nutritionPopup .compactAccInner {
+  background: #fbfbfb;
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,.05);
+}
+#nutritionPopup .listClean {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 0;
+}
+#nutritionPopup .listLine {
+  position: relative;
+  padding-left: 16px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #3F0405;
+}
+#nutritionPopup .listLine::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b51d18;
+}
+#nutritionPopup .compactAccInner p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #3F0405;
+  margin: 0 0 8px;
+}
+#nutritionPopup .timingCompactNote {
+  margin: 12px 0 0;
+  color: #5a3838;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+#nutritionPopup .coachMergeBox {
+  margin-top: 12px;
+  background: #fff7fa;
+  border: 1px solid rgba(169,27,24,.12);
+  border-radius: 12px;
+  padding: 12px;
+}
+#nutritionPopup .coachMergeTitle {
+  color: #a91b18;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  margin-bottom: 6px;
+}
+
+/* MINI VISUEL */
+#nutritionPopup .weekPlanningVisual {
+  margin-bottom: 14px;
+}
+#nutritionPopup .weekPlanningIntro {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #5a3838;
+  margin: 0 0 12px;
+}
+#nutritionPopup .weekPlanningGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+#nutritionPopup .weekPlanningCard {
+  background: #fff7fa;
+  border: 1px solid rgba(169,27,24,.10);
+  border-radius: 14px;
+  padding: 12px;
+}
+#nutritionPopup .weekPlanningTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+#nutritionPopup .weekPlanningEmoji {
+  font-size: 16px;
+  line-height: 1;
+}
+#nutritionPopup .weekPlanningLabel {
+  color: #a91b18;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#nutritionPopup .weekPlanningText {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #5a3838;
+}
+#nutritionPopup .weekPlanningHint {
+  background: #eef7fb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #3F0405;
+  margin-bottom: 12px;
+}
+#nutritionPopup .cyrilAnnexBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  background: #a91b18;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  box-shadow: 0 10px 24px rgba(169,27,24,.18);
+}
+
+/* TIMING */
+#nutritionPopup .timingPlanner {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+}
+#nutritionPopup .timingPlannerItem {
+  display: grid;
+  grid-template-columns: 72px minmax(0,1fr);
+  gap: 10px;
+  align-items: start;
+  width: 100%;
+  max-width: 100%;
+}
+#nutritionPopup .timingPlannerHour {
+  color: #b51d18;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: right;
+  padding-top: 12px;
+  min-width: 0;
+}
+#nutritionPopup .timingPlannerCard {
+  background: #cee7f3;
+  border-radius: 18px;
+  padding: 12px 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+#nutritionPopup .timingPlannerCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+#nutritionPopup .timingPlannerTitle {
+  color: #c53423;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+#nutritionPopup .timingPlannerFood {
+  color: #4b1f1f;
+  font-size: 13px;
+  line-height: 1.35;
+  margin-top: 4px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+#nutritionPopup .timingPlannerToggle {
+  color: #b51d18;
+  font-size: 18px;
+  transition: transform .25s ease;
+  flex-shrink: 0;
+}
+#nutritionPopup .timingPlannerItem.open .timingPlannerToggle {
+  transform: rotate(180deg);
+}
+#nutritionPopup .timingPlannerDetails {
+  display: none;
+  background: #f8eef2;
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: #4b1f1f;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+  margin-top: 10px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+#nutritionPopup .timingPlannerItem.open .timingPlannerDetails {
+  display: block;
+}
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+@media (max-width: 900px) {
+  #nutritionPlanFinal {
+    padding: 0 12px;
+  }
+  #nutritionPlanFinal .grid3 {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+  #nutritionPlanFinal .grid5 {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+}
+
+/* ============================================================
+   MOBILE ≤ 600px
+   FIX: IDs partout, pas de html/body overflow, pas de cards
+   ============================================================ */
+@media (max-width: 600px) {
+
+  /* --- WRAPPER --- */
+  #nutritionPlanFinal {
+    padding: 0 10px;
+  }
+
+  /* --- HERO --- */
+  #nutritionPlanFinal .hero img {
+    max-height: 210px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  /* --- TOP BOX --- */
+  #nutritionPlanFinal .topBox {
+    padding: 14px 12px;
+    border-radius: 0 0 18px 18px;
+  }
+
+  #nutritionPlanFinal .grid3,
+  #nutritionPlanFinal .grid5 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  #nutritionPlanFinal label {
+    font-size: 13px;
+  }
+
+  #nutritionPlanFinal input,
+  #nutritionPlanFinal input[type="time"],
+  #nutritionPlanFinal input[type="number"] {
+    padding: 12px;
+    font-size: 16px; /* empêche le zoom auto iOS */
+    border-radius: 12px;
+  }
+
+  #nutritionPlanFinal .cta {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+  }
+
+  /* --- PLAN INTRO --- */
+  #nutritionPlanFinal .planIntro {
+    padding: 14px;
+    border-radius: 16px;
+  }
+  #nutritionPlanFinal .planIntro h3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  #nutritionPlanFinal .planIntro p,
+  #nutritionPlanFinal .planMeta {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  /* --- TABLE WRAPPER --- */
+  /* FIX: le wrapper est toujours block (JS le contrôle), pas de !important qui se bat avec JS */
+  #nutritionTableDesktopWrap {
+    overflow: hidden;
+  }
+
+  /* --- TABLE --- */
+  #nutritionPlanFinal .workout-table-premium {
+    margin: 12px auto;
+    border-spacing: 0 8px;
+  }
+
+  #nutritionPlanFinal .workout-table-premium thead th {
+    font-size: 11px;
+    padding: 10px 4px;
+    letter-spacing: .6px;
+    white-space: nowrap;
+  }
+
+  #nutritionPlanFinal .workout-table-premium td {
+    font-size: 12px;
+    padding: 10px 6px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  /* Proportions mobile */
+  #nutritionPlanFinal .workout-table-premium td:nth-child(1),
+  #nutritionPlanFinal .workout-table-premium thead th:nth-child(1) { width: 44%; }
+  #nutritionPlanFinal .workout-table-premium td:nth-child(2),
+  #nutritionPlanFinal .workout-table-premium thead th:nth-child(2) { width: 22%; }
+  #nutritionPlanFinal .workout-table-premium td:nth-child(3),
+  #nutritionPlanFinal .workout-table-premium thead th:nth-child(3) { width: 18%; }
+  #nutritionPlanFinal .workout-table-premium td:nth-child(4),
+  #nutritionPlanFinal .workout-table-premium thead th:nth-child(4) { width: 16%; }
+
+  #nutritionPlanFinal .exo-card {
+    gap: 4px;
+    align-items: center;
+  }
+  #nutritionPlanFinal .exo-number {
+    font-size: 12px;
+    padding-right: 4px;
+  }
+  #nutritionPlanFinal .exo-name .main {
+    font-size: 11px;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+  #nutritionPlanFinal .exo-name .sub {
+    font-size: 10px;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+  }
+  #nutritionPlanFinal .openBtn {
+    max-width: 72px;
+    padding: 8px 8px;
+    font-size: 11px;
+    border-radius: 14px;
+  }
+
+  /* --- POPUP OVERLAY --- */
+  #nutritionPopupOverlay {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  /* --- POPUP ---
+     margin-top géré par JS : positionPopup() pose 15vh sur mobile */
+  #nutritionPopup {
+    width: 100%;
+    max-width: 100%;
+    max-height: 82vh;
+    padding: 16px;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  #nutritionPopup .closeBtn {
+    right: 12px;
+    top: 10px;
+    font-size: 24px;
+  }
+  #nutritionPopup .popupTitle {
+    font-size: 20px;
+    line-height: 1.15;
+    padding-right: 18px;
+  }
+  #nutritionPopup .popupKcal {
+    font-size: 14px;
+  }
+  #nutritionPopup .popupMiniIntro {
+    font-size: 12.5px;
+    padding: 10px;
+  }
+  #nutritionPopup .compactAccBtn {
+    padding: 12px 13px;
+  }
+  #nutritionPopup .compactAccTitle {
+    font-size: 13.5px;
+    line-height: 1.25;
+  }
+  #nutritionPopup .compactAccInner {
+    padding: 10px;
+  }
+  #nutritionPopup .listLine,
+  #nutritionPopup .compactAccInner p {
+    font-size: 12.5px;
+    line-height: 1.45;
+  }
+  #nutritionPopup .weekPlanningGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  #nutritionPopup .weekPlanningCard {
+    padding: 10px;
+  }
+  #nutritionPopup .weekPlanningLabel {
+    font-size: 12.5px;
+  }
+  #nutritionPopup .weekPlanningText {
+    font-size: 12px;
+  }
+
+  /* Timing planner mobile */
+  #nutritionPopup .timingPlanner {
+    gap: 8px;
+  }
+  #nutritionPopup .timingPlannerItem {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  #nutritionPopup .timingPlannerHour {
+    text-align: left;
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  #nutritionPopup .timingPlannerCard {
+    padding: 10px 12px;
+    border-radius: 14px;
+  }
+  #nutritionPopup .timingPlannerCardHeader {
+    align-items: flex-start;
+    gap: 8px;
+  }
+  #nutritionPopup .timingPlannerCardHeader > div:first-child {
+    flex: 1;
+  }
+  #nutritionPopup .timingPlannerTitle {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  #nutritionPopup .timingPlannerFood {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  #nutritionPopup .timingPlannerToggle {
+    font-size: 16px;
+  }
+  #nutritionPopup .timingPlannerDetails {
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 10px;
+  }
+  #nutritionPopup .timingCompactNote {
+    font-size: 12px;
+  }
+}
+</style>
+
+<div id="nutritionPlanFinal">
+  <div class="hero">
+    <img src="https://d1yei2z3i6k35z.cloudfront.net/9069669/69d54e60b112b0.75321003_tonplanhhhhpersonnalisé.png" alt="Plan nutrition">
+  </div>
+
+  <div class="topBox">
+    <div class="grid3">
+      <div>
+        <label>💡 Ton besoin calorique</label>
+        <input type="number" id="needCalories" placeholder="Ex : 2000">
+      </div>
+      <div>
+        <label>🍽️ Tes apports actuels</label>
+        <input type="number" id="currentIntake" placeholder="Ex : 1500">
+      </div>
+      <div>
+        <label>🥚 Ton poids</label>
+        <input type="number" id="bodyWeight" placeholder="Ex : 70" value="70">
+      </div>
+    </div>
+
+    <div class="grid5">
+      <div>
+        <label>⏰ Réveil</label>
+        <input type="time" id="wakeTime" value="07:00">
+      </div>
+      <div>
+        <label>🏋️ Training</label>
+        <input type="time" id="trainingTime" value="09:00">
+      </div>
+      <div>
+        <label>🍽️ Déjeuner</label>
+        <input type="time" id="lunchTime" value="12:30">
+      </div>
+      <div>
+        <label>🌙 Dîner</label>
+        <input type="time" id="dinnerTime" value="20:00">
+      </div>
+      <div>
+        <label>💤 Coucher</label>
+        <input type="time" id="sleepTime" value="23:00">
+      </div>
+    </div>
+
+    <div class="ctaWrap">
+      <button class="cta" id="generateNutritionPlan">Voir mon plan 💅</button>
+    </div>
+  </div>
+
+  <div class="planIntro" id="planIntro">
+    <h3 id="introTitle"></h3>
+    <p id="introText"></p>
+    <div class="planMeta" id="introMeta"></div>
+  </div>
+
+  <!-- FIX: #nutritionCardsMobile supprimé — code mort retiré -->
+  <div id="nutritionTableDesktopWrap">
+    <table class="workout-table-premium" id="nutritionWeeksTable">
+      <thead>
+        <tr>
+          <th>ÉTAPE</th>
+          <th>OBJECTIF</th>
+          <th>FOCUS</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="weeksTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div id="nutritionPopupOverlay" style="display:none;">
+  <div id="nutritionPopup">
+    <button class="closeBtn" id="closeNutritionPopup">&times;</button>
+
+    <div class="popupHeadCompact">
+      <h3 class="popupTitle" id="popupTitle"></h3>
+      <div class="popupKcal" id="popupKcal"></div>
+      <div class="popupTagWrap">
+        <div class="popupTag" id="popupTag"></div>
+      </div>
+      <div class="popupMiniIntro" id="popupMiniIntro"></div>
+    </div>
+
+    <div class="popupCompactAccWrap">
+      <div class="compactAccItem" id="singlePopupAcc">
+        <button class="compactAccBtn" type="button" id="singlePopupAccBtn">
+          <span class="compactAccTitle" id="popupSectionTitle">🎯 Cette semaine</span>
+          <span class="compactAccChevron">▾</span>
+        </button>
+        <div class="compactAccContent">
+          <div class="compactAccInner" id="popupSectionContent"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const CURRENT_WEEK = 1; // ← pour la duplication semaine par semaine, change juste ici
+
+  const state = {
+    need: 2000,
+    intake: 1500,
+    protein: 140,
+    profile: "under_moderate",
+    profileFamily: "under",
+    severity: "moderate",
+    weeklyCalories: []
+  };
+
+  const STORAGE_KEY = "nutritionPlanClientData_v2";
+
+  const CYRIL_LIGNAC_ANNEX = `
+    <div class="week-annex-box" style="margin-top:14px;">
+      <a href="https://www.thenarcissichealth.fr/school/course/mybetterself/lecture/9442280" class="cyrilAnnexBtn">Je prépare mon menu</a>
+    </div>
+  `;
+
+  /* ============================================================
+     LOGIQUE AUTO UNIQUEMENT POUR LES CALORIES
+     ============================================================ */
+ const PLAN_TEMPLATES = {
+  under_light: [
+    "need-100", // S1
+    "need",     // S2
+    "need",     // S3
+    "need",     // S4
+    "need",     // S5
+    "need",     // S6
+    "need-200", // S7
+    "need-200", // S8
+    "need-200", // S9
+    "need",     // S10
+    "need",     // S11
+    "need"      // S12
+  ],
+
+  under_moderate: [
+    "intake+200", // S1
+    "intake+400", // S2
+    "need+100",   // S3
+    "need+100",   // S4
+    "need",       // S5
+    "need",       // S6
+    "need-200",   // S7
+    "need-200",   // S8
+    "need-200",   // S9
+    "need",       // S10
+    "need",       // S11
+    "need"        // S12
+  ],
+
+  under_severe: [
+    "intake+200", // S1
+    "intake+400", // S2
+    "intake+600", // S3
+    "intake+800", // S4
+    "need",       // S5
+    "need",       // S6
+    "need-200",   // S7
+    "need-200",   // S8
+    "need-200",   // S9
+    "need",       // S10
+    "need",       // S11
+    "need"        // S12
+  ],
+
+  around_low: [
+    "need",     // S1
+    "need",     // S2
+    "need",     // S3
+    "need",     // S4
+    "need+200", // S5
+    "need+200", // S6
+    "need+300", // S7
+    "need+400", // S8
+    "need+400", // S9
+    "need+200", // S10
+    "need",     // S11
+    "need"      // S12
+  ],
+
+  around_high: [
+    "need",     // S1
+    "need",     // S2
+    "need",     // S3
+    "need",     // S4
+    "need+200", // S5
+    "need+200", // S6
+    "need+300", // S7
+    "need+400", // S8
+    "need+400", // S9
+    "need+200", // S10
+    "need",     // S11
+    "need"      // S12
+  ],
+
+  over_light: [
+    "need",     // S1
+    "need",     // S2
+    "need",     // S3
+    "need",     // S4
+    "need+200", // S5
+    "need+200", // S6
+    "need+300", // S7
+    "need+300", // S8
+    "need+400", // S9
+    "need+200", // S10
+    "need",     // S11
+    "need-150"  // S12
+  ],
+
+  over_moderate: [
+    "intake-200", // S1
+    "intake-200", // S2
+    "need+100",   // S3
+    "need+100",   // S4
+    "need-50",    // S5
+    "need-50",    // S6
+    "need+50",    // S7
+    "need+50",    // S8
+    "need+150",   // S9
+    "need",       // S10
+    "need-150",   // S11
+    "need-150"    // S12
+  ],
+
+  over_severe: [
+    "intake-200", // S1
+    "intake-400", // S2
+    "intake-600", // S3
+    "need+100",   // S4
+    "need-50",    // S5
+    "need-50",    // S6
+    "need+50",    // S7
+    "need+50",    // S8
+    "need+150",   // S9
+    "need",       // S10
+    "need-150",   // S11
+    "need-150"    // S12
+  ]
+};
+
+  function parseTimeToMinutes(v) {
+    if (!v || !v.includes(":")) return null;
+    const [h, m] = v.split(":").map(Number);
+    if (!Number.isFinite(h) || !Number.isFinite(m) || h < 0 || h > 23 || m < 0 || m > 59) return null;
+    return h * 60 + m;
+  }
+
+  function formatMinutes(mins) {
+    const normalized = ((mins % 1440) + 1440) % 1440;
+    const h = Math.floor(normalized / 60);
+    const m = normalized % 60;
+    return String(h).padStart(2, "0") + ":" + String(m).padStart(2, "0");
+  }
+
+  function stripBullets(html) {
+    return (html || "")
+      .replace(/<ul>/g, '<div class="listClean">')
+      .replace(/<\/ul>/g, '</div>')
+      .replace(/<li>/g, '<div class="listLine">')
+      .replace(/<\/li>/g, '</div>');
+  }
+
+  function roundTo50(v) {
+    return Math.round(v / 50) * 50;
+  }
+
+  function clamp(v, min, max) {
+    return Math.max(min, Math.min(max, v));
+  }
+
+  function saveFormData() {
+    const data = {
+      needCalories: document.getElementById("needCalories")?.value || "",
+      currentIntake: document.getElementById("currentIntake")?.value || "",
+      bodyWeight: document.getElementById("bodyWeight")?.value || "",
+      wakeTime: document.getElementById("wakeTime")?.value || "",
+      trainingTime: document.getElementById("trainingTime")?.value || "",
+      lunchTime: document.getElementById("lunchTime")?.value || "",
+      dinnerTime: document.getElementById("dinnerTime")?.value || "",
+      sleepTime: document.getElementById("sleepTime")?.value || ""
+    };
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch (e) {}
+    sbSaveFormData(); // ← AJOUTE CETTE LIGNE
+    }
+
+  function loadFormData() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      if (data.needCalories) document.getElementById("needCalories").value = data.needCalories;
+      if (data.currentIntake) document.getElementById("currentIntake").value = data.currentIntake;
+      if (data.bodyWeight) document.getElementById("bodyWeight").value = data.bodyWeight;
+      if (data.wakeTime) document.getElementById("wakeTime").value = data.wakeTime;
+      if (data.trainingTime) document.getElementById("trainingTime").value = data.trainingTime;
+      if (data.lunchTime) document.getElementById("lunchTime").value = data.lunchTime;
+      if (data.dinnerTime) document.getElementById("dinnerTime").value = data.dinnerTime;
+      if (data.sleepTime) document.getElementById("sleepTime").value = data.sleepTime;
+    } catch (e) {}
+  }
+
+  function bindAutoSave() {
+    ["needCalories","currentIntake","bodyWeight","wakeTime","trainingTime","lunchTime","dinnerTime","sleepTime"].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.addEventListener("input", saveFormData);
+      el.addEventListener("change", saveFormData);
+    });
+  }
+
+function getNutritionProfile(need, intake) {
+  const delta = intake - need;
+
+  if (delta <= -701) return { profile: "under_severe", family: "under" };
+  if (delta <= -351) return { profile: "under_moderate", family: "under" };
+  if (delta <= -201) return { profile: "under_light", family: "under" };
+
+  if (delta < 0)     return { profile: "around_low", family: "around" };
+  if (delta <= 200)  return { profile: "around_high", family: "around" };
+
+  if (delta <= 350)  return { profile: "over_light", family: "over" };
+  if (delta <= 700)  return { profile: "over_moderate", family: "over" };
+  return { profile: "over_severe", family: "over" };
+}
+
+  function resolveTemplateValue(value, need, intake) {
+    if (typeof value === "number") return roundTo50(value);
+
+    const clean = String(value).replace(/\s+/g, "");
+
+    if (/^need([+-]\d+)?$/i.test(clean)) {
+      const match = clean.match(/^need([+-]\d+)?$/i);
+      const offset = match && match[1] ? parseInt(match[1], 10) : 0;
+      return roundTo50(need + offset);
+    }
+
+    if (/^intake([+-]\d+)?$/i.test(clean)) {
+      const match = clean.match(/^intake([+-]\d+)?$/i);
+      const offset = match && match[1] ? parseInt(match[1], 10) : 0;
+      return roundTo50(intake + offset);
+    }
+
+    const numeric = parseFloat(clean);
+    if (Number.isFinite(numeric)) return roundTo50(numeric);
+
+    return roundTo50(need);
+  }
+
+  function sanitizeWeeklyCalories(arr, need, intake, profile) {
+    const out = arr.map(v => resolveTemplateValue(v, need, intake));
+
+    if (profile === "under_severe") {
+      for (let i = 0; i < out.length; i++) {
+        out[i] = Math.max(out[i], intake + 100);
+      }
+    }
+
+    if (profile === "over_severe") {
+      for (let i = 1; i < out.length; i++) {
+        const maxDrop = 250;
+        if (out[i] < out[i - 1] - maxDrop) out[i] = out[i - 1] - maxDrop;
+      }
+    }
+
+    return out.map(roundTo50);
+  }
+
+  function buildWeeklyCalories(profile, need, intake) {
+    const template = PLAN_TEMPLATES[profile] || PLAN_TEMPLATES.around_low;
+    return sanitizeWeeklyCalories(template, need, intake, profile);
+  }
+
+  function getGoalLabel(currentKcal, previousKcal) {
+    if (previousKcal == null) return "Point de départ";
+    if (currentKcal > previousKcal) return "Augmentation";
+    if (currentKcal < previousKcal) return "Déficit contrôlé";
+    return "Stabilisation";
+  }
+
+  function getWeekFocus(profileFamily, weekNumber) {
+    if (profileFamily === "under") {
+      if (weekNumber <= 3) return "Relance";
+      if (weekNumber <= 6) return "Stabilisation";
+      if (weekNumber <= 9) return "Déficit propre";
+      return "Base stable";
+    }
+    if (profileFamily === "around") {
+      if (weekNumber <= 4) return "Recalibrage";
+      if (weekNumber <= 9) return "Relance";
+      return "Retour base";
+    }
+    if (weekNumber <= 6) return "Sortie surplus";
+    if (weekNumber <= 9) return "Relance";
+    return "Affinage";
+  }
+
+  function getIntro(profileFamily, need, intake, protein) {
+    if (profileFamily === "under") {
+      return {
+        title: "je ne mange pas assez",
+        text: "Aujourd'hui tu manges trop peu par rapport à ce dont ton corps a vraiment besoin. Donc sur cette semaine, on relance ton corps doucement, on redonne de l'énergie et on pose une vraie base.",
+        meta: `Besoin calorique : <b>${need} kcal</b> • Apports actuels : <b>${intake} kcal</b> • Protéines cible : <b>${protein} g / jour</b>`
+      };
+    }
+    if (profileFamily === "over") {
+      return {
+        title: "je mange au-dessus de mon besoin",
+        text: "Aujourd'hui tu manges au-dessus de ton besoin calorique. Donc on retire une partie de l'excédent sans te jeter dans un déficit violent.",
+        meta: `Besoin calorique : <b>${need} kcal</b> • Apports actuels : <b>${intake} kcal</b> • Protéines cible : <b>${protein} g / jour</b>`
+      };
+    }
+    return {
+      title: "je mange autour de mon besoin",
+      text: "Aujourd'hui tu manges globalement autour de ton besoin. Donc on se replace proprement et on stabilise une vraie structure.",
+      meta: `Besoin calorique : <b>${need} kcal</b> • Apports actuels : <b>${intake} kcal</b> • Protéines cible : <b>${protein} g / jour</b>`
+    };
+  }
+
+  /* ============================================================
+     ICI TU ÉCRIS TES TEXTES DE LA SEMAINE 1 À LA MAIN
+     Ensuite tu dupliques la fonction pour S2, S3, S4...
+     ============================================================ */
+  function getCurrentWeekContent(profileFamily, need, intake, weeklyCalories) {
+    const weekNumber = CURRENT_WEEK;
+    const idx = weekNumber - 1;
+    const kcal = weeklyCalories[idx];
+    const previousKcal = idx > 0 ? weeklyCalories[idx - 1] : null;
+
+    if (profileFamily === "under") {
+      return {
+        week: "Semaine 1",
+        kcal,
+        focus: "Relance douce",
+        objective: getGoalLabel(kcal, previousKcal),
+        intro: `Aujourd'hui tu manges environ <b>${intake} kcal</b>. Cette semaine, on monte à <b>${kcal} kcal</b>. Le but est de relancer ton corps doucement, pas de te brusquer.`,
+        topWhat: `<ul><li>je garde ma base actuelle</li><li>j'ajoute environ +${kcal - intake} kcal par jour</li><li>je garde 3 vrais repas minimum</li><li>j'ajoute une collation si besoin</li></ul>`,
+        topAction: `<ul><li>je télécharge <b>Yazio ou autres</b></li><li>je configure mon objectif calorique, décoche "inclure les activité dans l'objectif calorique</li><li>j'entre mon poids</li><li>je règle glucides 40%, protéines et lipides 30%</li><li>je prends l'habitude de tracker mes repas</li></ul>`,
+        food: `<ul><li>3 vrais repas minimum</li><li>protéines à chaque repas</li><li>glucides présents, surtout les jours d'entraînement</li><li>légumes au déjeuner et au dîner</li><li>1 collation si elle t'aide à atteindre l'objectif</li></ul>${CYRIL_LIGNAC_ANNEX}`,
+        training: `<ul><li><b>Séance 1 jambes :</b> ne viens pas à vide</li><li><b>Séance 2 bras :</b> protéines bien réparties</li><li><b>Séance 3 cardio-abdos :</b> assez d'énergie avant</li><li><b>Séance 4 fessier :</b> même logique que jambes</li><li><b>NEAT :</b> marche, escaliers, progressivement</li></ul>`,
+        coach: `<p>Ma queen, si ton poids bouge un peu, don't panic.</p><p>On regarde plus loin que la balance : ton énergie, ton mood et ta forme sur les séances.</p>`
+      };
+    }
+
+    if (profileFamily === "over") {
+      return {
+        week: "Semaine 1",
+        kcal,
+        focus: "Sortir du surplus",
+        objective: getGoalLabel(kcal, previousKcal),
+        intro: `Aujourd'hui tu manges environ <b>${intake} kcal</b>. Cette semaine, on passe à <b>${kcal} kcal</b>. Le but est de retirer une partie de l'excédent sans te jeter dans un gros déficit.`,
+        topWhat: `<ul><li>je retire une partie des calories en trop</li><li>je garde mes protéines hautes</li><li>je garde un cadre simple</li><li>je ne compense pas dans tous les sens</li></ul>`,
+        topAction: `<ul><li>je télécharge <b>Yazio ou autres</b></li><li>je configure mon objectif calorique</li><li>j'entre mon poids</li><li>je règle glucides 40%, protéines et lipides 30%</li><li>je prends l'habitude de tracker mes repas</li></ul>`,
+        food: `<ul><li>3 repas structurés</li><li>protéines à chaque repas</li><li>glucides gardés autour des séances</li></ul>${CYRIL_LIGNAC_ANNEX}`,
+        training: `<ul><li>pas de cardio punition</li><li>jambes / fessier bien nourries</li><li>on garde de l'énergie</li></ul>`,
+        coach: `<p>On commence à sécher intelligemment, pas à se vider.</p>`
+      };
+    }
+
+    // around
+    if (state.profile === "around_low") {
+      return {
+        week: "Semaine 1",
+        kcal,
+        focus: "Atteindre le besoin",
+        objective: getGoalLabel(kcal, previousKcal),
+        intro: `Aujourd'hui tu manges environ <b>${intake} kcal</b>. Cette semaine, on monte à <b>${kcal} kcal</b>. Le but est de te replacer à ton besoin calorique sans te brusquer.`,
+        topWhat: `<ul><li>j'ajoute environ +${kcal - intake} kcal par jour</li><li>je garde 3 vrais repas minimum</li><li>j'ajoute une collation si besoin</li></ul>`,
+        topAction: `<ul><li>je télécharge <b>Yazio ou autres</b></li><li>je configure mon objectif calorique</li><li>j'entre mon poids</li><li>je règle glucides 40%, protéines et lipides 30%</li><li>je prends l'habitude de tracker mes repas</li></ul>`,
+        food: `<ul><li>3 vrais repas minimum</li><li>protéines à chaque repas</li><li>glucides présents pour atteindre l'objectif</li><li>légumes au déjeuner et au dîner</li><li>1 collation si elle t'aide à atteindre les <b>${kcal} kcal</b></li></ul>${CYRIL_LIGNAC_ANNEX}`,
+        training: `<ul><li><b>Séance 1 jambes :</b> on veut plus d'énergie et une meilleure récup</li><li><b>Séance 2 bras :</b> protéines bien réparties</li><li><b>Séance 3 cardio-abdos :</b> pas de séance à vide</li><li><b>Séance 4 fessier :</b> même logique que jambes</li></ul>`,
+        coach: `<p>Le but n'est pas de manger plus pour manger plus.</p><p>Le but est de nourrir ton corps à la hauteur de son besoin réel.</p>`
+      };
+    }
+
+    return {
+      week: "Semaine 1",
+      kcal,
+      focus: "Revenir au besoin",
+      objective: getGoalLabel(kcal, previousKcal),
+      intro: `Aujourd'hui tu manges environ <b>${intake} kcal</b>. Cette semaine, on redescend à <b>${kcal} kcal</b>. Le but est de te replacer à ton besoin sans logique punitive.`,
+      topWhat: `<ul><li>je retire environ ${intake - kcal} kcal par jour</li><li>je garde 3 vrais repas minimum</li><li>je ne compense pas dans tous les sens</li></ul>`,
+      topAction: `<ul><li>je télécharge <b>Yazio ou autres</b></li><li>je configure mon objectif calorique</li><li>j'entre mon poids</li><li>je règle glucides 40%, protéines et lipides 30%</li><li>je prends l'habitude de tracker mes repas</li></ul>`,
+      food: `<ul><li>3 vrais repas minimum</li><li>protéines à chaque repas</li><li>glucides présents de façon cohérente</li><li>légumes au déjeuner et au dîner</li></ul>${CYRIL_LIGNAC_ANNEX}`,
+      training: `<ul><li><b>Séance 1 jambes :</b> on garde de l'énergie sans excès</li><li><b>Séance 2 bras :</b> protéines bien réparties</li><li><b>Séance 3 cardio-abdos :</b> pas de séance à vide</li><li><b>Séance 4 fessier :</b> même logique que jambes</li></ul>`,
+      coach: `<p>Le but est juste de revenir sur quelque chose de propre, stable et cohérent pour ton corps.</p>`
+    };
+  }
+
+  function buildTopWhatContent(week) {
+    return `
+      ${stripBullets(week.topWhat || "")}
+      <div class="coachMergeBox">
+        <div class="coachMergeTitle">Le mot de coach Domi</div>
+        ${week.coach || ""}
+      </div>
+    `;
+  }
+
+  function buildTopActionContent(week) {
+    return stripBullets(week.topAction || "");
+  }
+
+  function buildWeekPlanningVisual(week) {
+    const kcal = week.kcal || 0;
+    const isUnder = state.profileFamily === "under";
+    const isOver = state.profileFamily === "over";
+    const isAround = state.profileFamily === "around";
+
+    let breakfastText = "Protéines + glucides pour bien lancer la journée.";
+    let lunchText = "Assiette simple : protéines + glucides + légumes.";
+    let dinnerText = "Repas structuré, simple, rassasiant.";
+    let snackText = "Collation utile si besoin pour tenir l'objectif.";
+    let hintText = `Cette semaine, ton cap est de rester autour de <b>${kcal} kcal</b> avec des repas simples et répétables.`;
+
+    if (isUnder) {
+      breakfastText = "Ne saute pas ce repas. On veut remettre de l'énergie tôt dans la journée.";
+      lunchText = "Vrai déjeuner complet, sans manger comme un oiseau.";
+      dinnerText = "Dîner structuré pour arrêter les journées trop légères.";
+      snackText = "Collation stratégique pour monter tes apports sans te gaver.";
+      hintText = `Cette semaine, ton but est d'atteindre <b>${kcal} kcal</b> avec une journée plus dense et plus nourrissante.`;
+    }
+    if (isOver) {
+      breakfastText = "Petit-déj simple, cadré, protéiné.";
+      lunchText = "Déjeuner propre, lisible, avec assez de protéines.";
+      dinnerText = "Dîner structuré sans te sentir punie.";
+      snackText = "Collation seulement si elle est utile, pas automatique.";
+      hintText = `Cette semaine, ton but est de tenir <b>${kcal} kcal</b> sans te vider ni compenser.`;
+    }
+    if (isAround) {
+      breakfastText = "Petit-déj simple pour poser une base régulière.";
+      lunchText = "Assiette complète pour tenir ton niveau d'énergie.";
+      dinnerText = "Dîner structuré et cohérent avec le reste de la journée.";
+      snackText = "Collation seulement si elle aide vraiment ta régularité.";
+      hintText = `Cette semaine, ton but est de tenir <b>${kcal} kcal</b> avec une structure stable et répétable.`;
+    }
+
+    return `
+      <div class="weekPlanningVisual">
+        <p class="weekPlanningIntro">Ici, le but n'est pas de te compliquer la vie. Tu poses tes 4 repères, puis tu ouvres l'annexe pour composer tes repas.</p>
+        <div class="weekPlanningGrid">
+          <div class="weekPlanningCard">
+            <div class="weekPlanningTop"><span class="weekPlanningEmoji">🥑</span><span class="weekPlanningLabel">Petit-déj</span></div>
+            <div class="weekPlanningText">${breakfastText}</div>
+          </div>
+          <div class="weekPlanningCard">
+            <div class="weekPlanningTop"><span class="weekPlanningEmoji">🍽️</span><span class="weekPlanningLabel">Déjeuner</span></div>
+            <div class="weekPlanningText">${lunchText}</div>
+          </div>
+          <div class="weekPlanningCard">
+            <div class="weekPlanningTop"><span class="weekPlanningEmoji">🌙</span><span class="weekPlanningLabel">Dîner</span></div>
+            <div class="weekPlanningText">${dinnerText}</div>
+          </div>
+          <div class="weekPlanningCard">
+            <div class="weekPlanningTop"><span class="weekPlanningEmoji">🥛</span><span class="weekPlanningLabel">Collation</span></div>
+            <div class="weekPlanningText">${snackText}</div>
+          </div>
+        </div>
+        <div class="weekPlanningHint">${hintText}</div>
+      </div>
+    `;
+  }
+
+  function buildFoodPlanningContent(week) {
+    return buildWeekPlanningVisual(week) + stripBullets(week.food || "");
+  }
+
+  function getDaySchedule() {
+    const wake = parseTimeToMinutes(document.getElementById("wakeTime").value);
+    const trainingStartRaw = parseTimeToMinutes(document.getElementById("trainingTime").value);
+    const lunchRaw = parseTimeToMinutes(document.getElementById("lunchTime").value);
+    const dinnerRaw = parseTimeToMinutes(document.getElementById("dinnerTime").value);
+    const sleepRaw = parseTimeToMinutes(document.getElementById("sleepTime").value);
+
+    if ([wake, trainingStartRaw, lunchRaw, dinnerRaw, sleepRaw].some(v => v === null)) {
+      return { ok: false, error: "Remplis correctement tous tes horaires." };
+    }
+
+    let trainingStart = trainingStartRaw;
+    let lunch = lunchRaw;
+    let dinner = dinnerRaw;
+    let sleep = sleepRaw;
+
+    if (sleep <= wake) sleep += 1440;
+    if (dinner <= wake) dinner += 1440;
+    if (lunch <= wake) lunch += 1440;
+    if (trainingStart <= wake) trainingStart += 1440;
+
+    if (trainingStart <= wake) return { ok: false, error: "Ton training doit être après ton réveil." };
+    if (lunch <= wake) return { ok: false, error: "Ton déjeuner doit être après ton réveil." };
+    if (dinner <= lunch) return { ok: false, error: "Ton dîner doit être après ton déjeuner." };
+    if (sleep <= dinner) return { ok: false, error: "Ton coucher doit être après ton dîner." };
+
+    return { ok: true, wake, trainingStart, trainingEnd: trainingStart + 60, lunch, dinner, sleep };
+  }
+
+  function buildTimingRows() {
+    const schedule = getDaySchedule();
+    if (!schedule.ok) return { ok: false, message: schedule.error, alert: "", rows: [] };
+
+    const { wake, trainingStart, trainingEnd, lunch, dinner, sleep } = schedule;
+    const rows = [];
+    const alerts = [];
+
+    function addRow(mins, title, food, details) {
+      if (mins == null) return;
+      rows.push({ hour: formatMinutes(mins), title, food: food || "", details: details || "" });
+    }
+
+    const diffWakeToTraining = trainingStart - wake;
+    const lunchTooCloseToTraining = lunch >= (trainingStart - 45) && lunch <= (trainingEnd + 30);
+    const dinnerTooCloseToTraining = dinner >= (trainingStart - 45) && dinner <= (trainingEnd + 30);
+    const isVeryLateTraining = trainingStart >= 21 * 60;
+    const isMorningTraining = trainingStart < 12 * 60;
+    const isAfternoonTraining = trainingStart >= 12 * 60 && trainingStart < 20 * 60;
+    const isEveningTraining = trainingStart >= 20 * 60;
+
+    addRow(wake, "🌞 Réveil", "Grand verre d'eau.", "On réveille doucement ton corps avant d'envoyer la journée.");
+
+    if (isMorningTraining) {
+      if (diffWakeToTraining < 75) {
+        const preTraining = trainingStart - 45;
+        if (preTraining <= wake) return { ok: false, message: "Tes horaires sont trop serrés. Avance ton réveil ou décale ton training.", alert: "", rows: [] };
+        addRow(preTraining, "🍌 Pré-training", "Petit apport digeste obligatoire avant la séance.", "Ici on ne part pas à vide.<br><em>Ex : banane, compote, yaourt, tranche de pain + miel.</em>");
+        addRow(trainingStart, "🏋️ Training", "", "");
+        if ((lunch - trainingEnd) < 120) {
+          addRow(trainingEnd + 15, "🥛 Collation protéinée", "Protéines juste après la séance.", "Comme le déjeuner arrive vite, on met juste une collation protéinée.");
+        } else {
+          addRow(trainingEnd + 20, "🥑 Petit-déjeuner", "Protéines + glucides + bons lipides.", "Le déjeuner est encore loin, tu peux faire un vrai petit-déj après la séance.");
+        }
+        const lunchAfterTraining = Math.max(lunch, trainingEnd + 60);
+        if (lunchAfterTraining !== lunch) alerts.push("Ton déjeuner a été légèrement décalé après la séance.");
+        addRow(lunchAfterTraining, "🍽️ Déjeuner", "Glucides + protéines + légumes.", "Un vrai repas structuré après ta séance.");
+      } else {
+        const breakfastBefore = (trainingStart - (wake + 30)) >= 60 ? wake + 30 : null;
+        let preTraining = null;
+        if ((trainingStart - wake) > 90) {
+          const candidate = trainingStart - 45;
+          if (!breakfastBefore || (candidate - breakfastBefore) >= 60) preTraining = candidate;
+        }
+        if (breakfastBefore) addRow(breakfastBefore, "🥑 Petit-déjeuner", "Protéines + glucides + bons lipides.", "Ton training est assez loin du réveil, tu peux faire un vrai petit-déj avant.");
+        if (preTraining) addRow(preTraining, "🍌 Pré-training", "Petit apport digeste avant la séance.", "Tu l'ajoutes si ta séance est éloignée du petit-déj.");
+        addRow(trainingStart, "🏋️ Training", "", "");
+        if ((lunch - trainingEnd) > 90) addRow(trainingEnd + 20, "🥛 Collation protéinée", "Shaker protéiné ou collation protéinée.", "Le déjeuner est encore loin, on ajoute une collation protéinée pour la récup.");
+        const lunchAfterTraining = lunchTooCloseToTraining ? trainingEnd + 45 : lunch;
+        if (lunchTooCloseToTraining) alerts.push("Ton déjeuner était trop proche de la séance, il a été replacé après.");
+        addRow(lunchAfterTraining, "🍽️ Déjeuner", "Glucides + protéines + légumes.", "Un vrai repas structuré pour tenir ton objectif calorique.");
+      }
+    } else if (isAfternoonTraining) {
+      addRow(wake + 30, "🥑 Petit-déjeuner", "Protéines + glucides + bons lipides.", "Un vrai petit-déj pour lancer la journée.");
+      if (lunchTooCloseToTraining) {
+        const preTraining = trainingStart - 45;
+        if (preTraining <= wake) return { ok: false, message: "Déjeuner trop proche de la séance, impossible de placer un pré-training cohérent.", alert: "", rows: [] };
+        addRow(preTraining, "🍌 Pré-training", "Petit apport digeste avant la séance.", "Le déjeuner était trop proche, on le remplace par un pré-training.");
+        addRow(trainingStart, "🏋️ Training", "", "");
+        addRow(trainingEnd + 45, "🍽️ Déjeuner", "Glucides + protéines + légumes.", "Ton vrai déjeuner passe après la séance.");
+        alerts.push("Le déjeuner a été déplacé après la séance car il tombait trop près du training.");
+      } else {
+        addRow(lunch, "🍽️ Déjeuner", "Glucides + protéines + légumes.", "Un vrai repas structuré avant ta séance.");
+        if ((trainingStart - lunch) >= 180) {
+          const preTraining = trainingStart - 45;
+          if (preTraining > lunch + 75) addRow(preTraining, "🍌 Pré-training", "Petit apport digeste avant la séance.", "L'écart entre le déjeuner et la séance est long.");
+        }
+        addRow(trainingStart, "🏋️ Training", "", "");
+      }
+      const dinnerAfterTraining = dinnerTooCloseToTraining ? trainingEnd + 45 : dinner;
+      if (dinnerTooCloseToTraining) alerts.push("Le dîner a été déplacé après la séance.");
+      addRow(dinnerAfterTraining, "🌙 Dîner", "Repas complet.", "Ton dîner passe après la séance pour finir la journée proprement.");
+    } else if (isEveningTraining) {
+      addRow(wake + 30, "🥑 Petit-déjeuner", "Protéines + glucides + bons lipides.", "Un vrai petit-déj pour lancer la journée.");
+      addRow(lunch, "🍽️ Déjeuner", "Glucides + protéines + légumes.", "Un vrai repas structuré pour tenir ta journée.");
+      if (isVeryLateTraining) {
+        const dinnerBeforeLateTraining = Math.max(lunch + 120, trainingStart - 90);
+        addRow(dinnerBeforeLateTraining, "🌙 Dîner", "Repas complet avant la séance.", "Le dîner passe avant, environ 1h30 à 2h avant le training tardif.");
+        addRow(trainingStart, "🏋️ Training", "", "");
+        const proteinSnackLate = trainingEnd + 15;
+        if (proteinSnackLate < sleep) addRow(proteinSnackLate, "🥛 Collation protéinée", "Protéines après la séance.", "Après un training tardif, on part sur une collation protéinée.");
+      } else {
+        if (dinnerTooCloseToTraining) {
+          const preTraining = trainingStart - 45;
+          if (preTraining > lunch + 90) addRow(preTraining, "🍌 Pré-training", "Petit apport digeste avant la séance.", "Le dîner était trop proche, on le remplace par un pré-training.");
+          addRow(trainingStart, "🏋️ Training", "", "");
+          addRow(trainingEnd + 45, "🌙 Dîner", "Repas complet.", "Ton dîner passe après la séance.");
+          alerts.push("Le dîner a été déplacé après la séance.");
+        } else {
+          if ((trainingStart - dinner) >= 180) {
+            const preTraining = trainingStart - 45;
+            if (preTraining > dinner + 60) addRow(preTraining, "🍌 Pré-training", "Petit apport digeste avant la séance.", "L'écart entre le dîner et la séance est long.");
+          }
+          addRow(dinner, "🌙 Dîner", "Repas complet.", "Ton dîner est placé avant la séance, avec assez de marge.");
+          addRow(trainingStart, "🏋️ Training", "", "");
+        }
+      }
+    }
+
+    if (!rows.some(r => r.title === "🌙 Dîner")) {
+      addRow(dinner, "🌙 Dîner", "Repas complet.", "On termine avec un dîner structuré et rassasiant.");
+    }
+
+    const currentLunch = rows.find(r => r.title === "🍽️ Déjeuner");
+    const currentDinner = rows.find(r => r.title === "🌙 Dîner");
+    if (currentLunch && currentDinner) {
+      const lunchMin = parseTimeToMinutes(currentLunch.hour);
+      const dinnerMin = parseTimeToMinutes(currentDinner.hour);
+      if ((dinnerMin - lunchMin) >= 300) {
+        const snackTime = lunchMin + Math.round((dinnerMin - lunchMin) / 2);
+        const alreadyHasSnack = rows.some(r => {
+          const t = parseTimeToMinutes(r.hour);
+          return t > lunchMin && t < dinnerMin && (r.title.includes("Collation") || r.title.includes("Pré-training"));
+        });
+        if (!alreadyHasSnack) addRow(snackTime, "🥛 Collation protéinée", "Shaker protéiné ou collation riche en protéines.", "L'écart entre le déjeuner et le dîner est long, on ajoute une collation.");
+      }
+    }
+
+    rows.sort((a, b) => parseTimeToMinutes(a.hour) - parseTimeToMinutes(b.hour));
+    return { ok: true, message: "", alert: alerts.join(" "), rows };
+  }
+
+  function fillTimingPlanner() {
+    const container = document.getElementById("popupSectionContent");
+    if (!container) return;
+    const result = buildTimingRows();
+    if (!result.ok) {
+      container.innerHTML = `<div class="timingPlanner"><div class="timingPlannerItem open"><div class="timingPlannerCard" style="grid-column:1/-1;"><div class="timingPlannerTitle">⚠️ Horaires incohérents</div><div class="timingPlannerDetails" style="display:block;margin-top:10px;">${result.message}</div></div></div></div>`;
+      return;
+    }
+    const alertBlock = result.alert ? `<div class="timingPlannerItem open"><div class="timingPlannerCard" style="grid-column:1/-1;margin-bottom:4px;"><div class="timingPlannerTitle">ℹ️ Ajustement du planning</div><div class="timingPlannerDetails" style="display:block;margin-top:10px;">${result.alert}</div></div></div>` : "";
+    container.innerHTML = `
+      <div class="timingPlanner">
+        ${alertBlock}
+        ${result.rows.map(row => `
+          <div class="timingPlannerItem">
+            <div class="timingPlannerHour">${row.hour}</div>
+            <div class="timingPlannerCard">
+              <div class="timingPlannerCardHeader">
+                <div>
+                  <div class="timingPlannerTitle">${row.title}</div>
+                  ${row.food ? `<div class="timingPlannerFood">${row.food}</div>` : ""}
+                </div>
+                ${row.details ? `<div class="timingPlannerToggle">▾</div>` : ""}
+              </div>
+              ${row.details ? `<div class="timingPlannerDetails">${row.details}</div>` : ""}
+            </div>
+          </div>`).join("")}
+        <p class="timingCompactNote">Ton planning s'adapte à tes horaires. Le but n'est pas d'être rigide, mais de mieux répartir tes apports autour de tes séances.</p>
+      </div>`;
+    document.querySelectorAll("#popupSectionContent .timingPlannerItem").forEach(item => {
+      const details = item.querySelector(".timingPlannerDetails");
+      const card = item.querySelector(".timingPlannerCard");
+      if (!details || !card) return;
+      card.onclick = () => item.classList.toggle("open");
+    });
+  }
+
+function getRowsForWeek(week) {
+  return [
+    { key: "week_action",   title: "Mon action",         subtitle: "Cette semaine",   objective: `${week.kcal} kcal`, focus: week.focus, button: "Voir" },
+    { key: "week_planning", title: "Créer mon planning", subtitle: "Semaine",         objective: `${week.kcal} kcal`, focus: "Menu",     button: "Voir" },
+    { key: "week_training", title: "Mes 4 séances",      subtitle: "Intégration",     objective: `${week.kcal} kcal`, focus: "Training", button: "Voir" },
+    { key: "week_timing",   title: "Quand manger",       subtitle: "Dans ma journée", objective: `${week.kcal} kcal`, focus: "Timing",   button: "Voir" }
+  ];
+}
+
+  function bindSingleAccordion() {
+    const item = document.getElementById("singlePopupAcc");
+    const btn  = document.getElementById("singlePopupAccBtn");
+    if (!item || !btn) return;
+    btn.onclick = function(e) { e.stopPropagation(); item.classList.toggle("open"); };
+  }
+
+  function setPopupContent(sectionKey, week) {
+    document.getElementById("popupTitle").textContent   = week.week;
+    document.getElementById("popupKcal").textContent    = `${week.kcal} kcal / jour`;
+    document.getElementById("popupTag").textContent     = week.focus;
+    document.getElementById("popupMiniIntro").innerHTML = week.intro;
+
+    const sectionTitle   = document.getElementById("popupSectionTitle");
+    const sectionContent = document.getElementById("popupSectionContent");
+
+    if (sectionKey === "week_action") {
+      sectionTitle.textContent = "🎯 Cette semaine";
+      sectionContent.innerHTML = buildTopWhatContent(week) + `<div style="height:12px;"></div>` + buildTopActionContent(week);
+      return;
+    }
+    if (sectionKey === "week_planning") {
+      sectionTitle.textContent = "🗓️ Créer mon planning semaine";
+      sectionContent.innerHTML = buildFoodPlanningContent(week);
+      return;
+    }
+    if (sectionKey === "week_training") {
+      sectionTitle.textContent = "🏋️ Comment intégrer mes 4 séances";
+      sectionContent.innerHTML = stripBullets(week.training);
+      return;
+    }
+    if (sectionKey === "week_timing") {
+      sectionTitle.textContent = "⏰ Quand manger dans ma journée";
+      fillTimingPlanner();
+    }
+  }
+
+  function positionPopup(triggerEl) {
+    const overlay = document.getElementById("nutritionPopupOverlay");
+    const popup   = document.getElementById("nutritionPopup");
+    const overlayPad = window.innerWidth <= 600 ? 12 : 20;
+
+    overlay.style.alignItems = "flex-start";
+
+    if (!triggerEl) {
+      popup.style.marginTop    = Math.max(20, (window.innerHeight - popup.offsetHeight) / 2) + "px";
+      popup.style.marginBottom = "20px";
+      return;
+    }
+
+    const rect = triggerEl.getBoundingClientRect();
+    const popupH = popup.offsetHeight;
+    let idealTop = rect.top + rect.height / 2 - popupH / 2;
+
+    idealTop = Math.max(overlayPad, Math.min(idealTop, window.innerHeight - popupH - overlayPad));
+
+    popup.style.marginTop    = Math.max(0, idealTop - overlayPad) + "px";
+    popup.style.marginBottom = "20px";
+  }
+
+  function openPopup(sectionKey, week, triggerEl) {
+    setPopupContent(sectionKey, week);
+    const overlay   = document.getElementById("nutritionPopupOverlay");
+    const popup     = document.getElementById("nutritionPopup");
+    const singleAcc = document.getElementById("singlePopupAcc");
+
+    overlay.style.display = "flex";
+    popup.scrollTop = 0;
+    bindSingleAccordion();
+    if (singleAcc) singleAcc.classList.remove("open");
+
+    requestAnimationFrame(() => positionPopup(triggerEl));
+  }
+
+  function closePopup() {
+    const overlay = document.getElementById("nutritionPopupOverlay");
+    const popup   = document.getElementById("nutritionPopup");
+    overlay.style.display    = "none";
+    popup.scrollTop          = 0;
+    popup.style.marginTop    = "0";
+    popup.style.marginBottom = "0";
+  }
+
+  function renderPlan() {
+    const need   = parseFloat(document.getElementById("needCalories").value);
+    const intake = parseFloat(document.getElementById("currentIntake").value);
+    const weight = parseFloat(document.getElementById("bodyWeight").value);
+
+    if (!isFinite(need) || need <= 0) { alert("Entre un besoin calorique valide."); return; }
+    if (need < 1200 || need > 5000) { alert("Ton besoin calorique semble irréel (entre 1200 et 5000 kcal). Vérifie ta saisie."); return; }
+
+    if (!isFinite(intake) || intake <= 0) { alert("Entre tes apports actuels."); return; }
+    if (intake < 500 || intake > 6000) { alert("Tes apports actuels semblent irréels (entre 500 et 6000 kcal). Vérifie ta saisie."); return; }
+
+    if (!isFinite(weight) || weight <= 0) { alert("Entre un poids valide."); return; }
+    if (weight < 30 || weight > 250) { alert("Ton poids semble irréel (entre 30 et 250 kg). Vérifie ta saisie."); return; }
+
+    saveFormData();
+
+    state.need    = Math.round(need);
+    state.intake  = Math.round(intake);
+    state.protein = Math.round(weight * 2);
+
+    const profileData = getNutritionProfile(state.need, state.intake);
+    state.profile = profileData.profile;
+    state.profileFamily = profileData.family;
+    state.severity = profileData.severity;
+    state.weeklyCalories = buildWeeklyCalories(state.profile, state.need, state.intake);
+
+    const intro = getIntro(state.profileFamily, state.need, state.intake, state.protein);
+    document.getElementById("introTitle").textContent = intro.title;
+    document.getElementById("introText").textContent  = intro.text;
+    document.getElementById("introMeta").innerHTML    = intro.meta;
+    document.getElementById("planIntro").style.display = "block";
+    document.getElementById("nutritionTableDesktopWrap").style.display = "block";
+
+    const week = getCurrentWeekContent(state.profileFamily, state.need, state.intake, state.weeklyCalories);
+    const rows = getRowsForWeek(week);
+    const tbody = document.getElementById("weeksTableBody");
+    tbody.innerHTML = "";
+
+    rows.forEach((row, index) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>
+          <div class="exo-card">
+            <div class="exo-number">(0${index + 1})</div>
+            <div class="exo-name">
+              <span class="main">${row.title}</span>
+              <span class="sub">${row.subtitle}</span>
+            </div>
+          </div>
+        </td>
+        <td>${row.objective}</td>
+        <td>${row.focus}</td>
+        <td><button type="button" class="openBtn" data-key="${row.key}">${row.button}</button></td>
+      `;
+      tr.addEventListener("click", function () { openPopup(row.key, week, tr); });
+      tbody.appendChild(tr);
+    });
+  }
+
+  document.getElementById("generateNutritionPlan").addEventListener("click", renderPlan);
+  document.getElementById("closeNutritionPopup").addEventListener("click", closePopup);
+  document.getElementById("nutritionPopupOverlay").addEventListener("click", (e) => {
+    if (e.target.id === "nutritionPopupOverlay") closePopup();
+  });
+
+  ["wakeTime","trainingTime","lunchTime","dinnerTime","sleepTime"].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener("change", () => {
+      const overlay = document.getElementById("nutritionPopupOverlay");
+      if (overlay.style.display !== "none") {
+        const t = document.getElementById("popupSectionTitle").textContent || "";
+        if (t.includes("Quand manger")) fillTimingPlanner();
+      }
+    });
+    el.addEventListener("input", () => {
+      const overlay = document.getElementById("nutritionPopupOverlay");
+      if (overlay.style.display !== "none") {
+        const t = document.getElementById("popupSectionTitle").textContent || "";
+        if (t.includes("Quand manger")) fillTimingPlanner();
+      }
+    });
+  });
+
+const SB_URL   = "https://rlewfxahrcuzvizbcqsi.supabase.co";
+  const SB_KEY   = "sb_publishable_GoIyCSJfz0aRJpR_untzUw_3CQMOu1Q";
+  const sb       = supabase.createClient(SB_URL, SB_KEY);
+  const TOKEN_CACHE = "mbs_token_cache";
+  const SB_STEP  = "nutrition_plan";
+  const PROGRAMME = "mybetterself";
+
+  const hashToken = window.location.hash.startsWith('#t=')
+    ? window.location.hash.replace('#t=', '') : null;
+  if (hashToken) localStorage.setItem(TOKEN_CACHE, hashToken);
+  let CLIENT_TOKEN = hashToken || localStorage.getItem(TOKEN_CACHE) || null;
+
+  async function sbSaveFormData() {
+    if (!CLIENT_TOKEN) return;
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+    await sb.from("client_progress").upsert({
+      client_token: CLIENT_TOKEN, programme: PROGRAMME,
+      bilan_step: SB_STEP, data_json: JSON.parse(raw),
+      updated_at: new Date().toISOString()
+    }, { onConflict: "client_token,bilan_step" });
+  }
+
+  async function initNutritionSync() {
+    if (!CLIENT_TOKEN) return;
+    const { data } = await sb.from("client_progress").select("data_json")
+      .eq("client_token", CLIENT_TOKEN).eq("bilan_step", SB_STEP).maybeSingle();
+    if (data?.data_json) {
+      const d = data.data_json;
+      if (d.needCalories)  document.getElementById("needCalories").value  = d.needCalories;
+      if (d.currentIntake) document.getElementById("currentIntake").value = d.currentIntake;
+      if (d.bodyWeight)    document.getElementById("bodyWeight").value    = d.bodyWeight;
+      if (d.wakeTime)      document.getElementById("wakeTime").value      = d.wakeTime;
+      if (d.trainingTime)  document.getElementById("trainingTime").value  = d.trainingTime;
+      if (d.lunchTime)     document.getElementById("lunchTime").value     = d.lunchTime;
+      if (d.dinnerTime)    document.getElementById("dinnerTime").value    = d.dinnerTime;
+      if (d.sleepTime)     document.getElementById("sleepTime").value     = d.sleepTime;
+      if (typeof initWeekRecapView === "function") initWeekRecapView();
+    } else {
+      loadFormData();
+      await sbSaveFormData();
+    }
+  }
+
+  initNutritionSync();
+  bindAutoSave();
+})();
+</script>
