@@ -1,0 +1,388 @@
+
+<style>
+/* Forcer la police Arial / Helvetica sur tous les éléments */
+body, div, p, h1, h2, h3, h4, h5, h6, input, button, label, span {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Styles de base existants */
+body {
+    background: #fff0f6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #3F0405 !important;
+}
+
+/* Tracker container */
+#tracker-container {
+    width: 95%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+/* Titres */
+#tracker-container h2 { 
+    color: #9d0a2b; 
+    text-align: center; 
+    font-weight: 600; 
+}
+
+/* Section repas */
+.meal-section { 
+    margin-top: 20px; 
+}
+.meal-section h3 { 
+    color: #9d0a2b; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+    font-weight: 600; 
+}
+
+/* Meal items */
+.meal-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.meal-item {
+    background: #fff;
+    border: 1px solid #ee80cb;
+    padding: 6px 12px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.meal-item span.delete {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #ee80cb;
+    font-weight: 600;
+}
+
+button.add-food {
+    padding: 8px 16px;
+    background: #9d0a2b;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+button.add-food:hover { 
+    background: #7f0822; 
+}
+
+/* Barres macros */
+.bars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.bar-container {
+    flex: 1;
+    min-width: 140px;
+    position: relative;
+}
+.bar-container label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+.bar {
+    width: 100%;
+    height: 16px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.fill {
+    height: 16px;
+    transition: width 0.5s ease;
+}
+#barCarbs { background: #9d0a2b; }
+#barProtein { background: #cee7f3; }
+#barFat { background: #fbc4e3; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    h2 { font-size: 20px; }
+    .meal-item { font-size: 13px; }
+    .bars { flex-direction: column; }
+}
+
+/* Inputs et options alimentaires */
+.food-select-wrapper { position: relative; flex: 2; min-width: 180px; }
+.food-qty { flex: 1; max-width: 80px; padding: 6px; border-radius: 8px; border: 1px solid #ccc; }
+.food-search-input { width: 100%; padding: 6px; border-radius: 8px; border: 1px solid #ccc; }
+.food-options {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  width: 100%;
+  display: none;
+  font-size: 13px;
+}
+.food-options div {
+  padding: 6px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.food-options div:hover { background: #eee; }
+
+/* Résumé */
+#summary {
+  margin-top: 25px;
+  padding: 20px;
+  background: #ffe6f2;
+  border-radius: 16px;
+  font-size: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+.summary-bold { font-weight: 600; color: #ee80cb; }
+.macro-badge {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #ee80cb;
+  border-radius: 14px;
+  padding: 5px 10px;
+  margin: 2px 3px;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+.macro-info {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 220px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ee80cb;
+  border-radius: 14px;
+  font-size: 13px;
+  color: #333;
+  display: none;
+  z-index: 20;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+</style>
+
+
+<div id="tracker-container">
+  <h2>Suivi journalier de tes repas</h2>
+
+  <div style="text-align:center; margin-bottom:20px;">
+    <label><b>Ton besoin calorique journalier (kcal) :</b></label>
+    <input type="number" id="dailyGoal" placeholder="Ex: 2000" style="width:100px; padding:6px; border-radius:8px; border:1px solid #ccc;">
+  </div>
+
+  <!-- Section repas -->
+  <div class="meal-section" data-meal="Petit-déjeuner">
+    <h3>Petit-déjeuner ▼</h3>
+    <div class="meal-content">
+      <div style="display:flex; gap:5px; flex-wrap:wrap;">
+        <div class="food-select-wrapper">
+          <input type="text" class="food-search-input" placeholder="Sélectionne un aliment">
+          <div class="food-options"></div>
+        </div>
+        <input type="number" class="food-qty" placeholder="Quantité">
+        <button class="add-food">Ajouter</button>
+      </div>
+      <div class="meal-list"></div>
+    </div>
+  </div>
+
+  <div class="meal-section" data-meal="Déjeuner">
+    <h3>Déjeuner ▼</h3>
+    <div class="meal-content">
+      <div style="display:flex; gap:5px; flex-wrap:wrap;">
+        <div class="food-select-wrapper">
+          <input type="text" class="food-search-input" placeholder="Sélectionne un aliment">
+          <div class="food-options"></div>
+        </div>
+        <input type="number" class="food-qty" placeholder="Quantité">
+        <button class="add-food">Ajouter</button>
+      </div>
+      <div class="meal-list"></div>
+    </div>
+  </div>
+
+  <div class="meal-section" data-meal="Collation">
+    <h3>Collation ▼</h3>
+    <div class="meal-content">
+      <div style="display:flex; gap:5px; flex-wrap:wrap;">
+        <div class="food-select-wrapper">
+          <input type="text" class="food-search-input" placeholder="Sélectionne un aliment">
+          <div class="food-options"></div>
+        </div>
+        <input type="number" class="food-qty" placeholder="Quantité">
+        <button class="add-food">Ajouter</button>
+      </div>
+      <div class="meal-list"></div>
+    </div>
+  </div>
+
+  <div class="meal-section" data-meal="Dîner">
+    <h3>Dîner ▼</h3>
+    <div class="meal-content">
+      <div style="display:flex; gap:5px; flex-wrap:wrap;">
+        <div class="food-select-wrapper">
+          <input type="text" class="food-search-input" placeholder="Sélectionne un aliment">
+          <div class="food-options"></div>
+        </div>
+        <input type="number" class="food-qty" placeholder="Quantité">
+        <button class="add-food">Ajouter</button>
+      </div>
+      <div class="meal-list"></div>
+    </div>
+  </div>
+
+  <!-- Barres macros -->
+  <div class="bars">
+    <div class="bar-container" data-macro="carbs">
+      <label>Glucides</label>
+      <div class="bar"><div class="fill" id="barCarbs"></div></div>
+    </div>
+    <div class="bar-container" data-macro="protein">
+      <label>Protéines</label>
+      <div class="bar"><div class="fill" id="barProtein"></div></div>
+    </div>
+    <div class="bar-container" data-macro="fat">
+      <label>Lipides</label>
+      <div class="bar"><div class="fill" id="barFat"></div></div>
+    </div>
+  </div>
+
+  <div id="summary"></div>
+</div>
+
+<script>
+// Données aliments
+let foods = [];
+const mealData = { "Petit-déjeuner": [], "Déjeuner": [], "Collation": [], "Dîner": [] };
+async function loadFoods() {
+  try {
+    const res = await fetch("https://stagiaire94260.github.io/alimentation-monde/yaziofood.json");
+    foods = await res.json();
+  } catch (err) { console.error("Erreur JSON :", err); }
+}
+loadFoods();
+
+// Mise à jour des barres et du résumé
+function updateBars(){
+  let carbs=0, protein=0, fat=0, totalCal=0;
+  Object.values(mealData).flat().forEach(item=>{
+    let factor = (item.food.type==='g') ? item.qty/100 : item.qty;
+    carbs += item.food.carbs*factor;
+    protein += item.food.protein*factor;
+    fat += item.food.fat*factor;
+    totalCal += item.food.cal*factor;
+  });
+
+  const dailyGoal = parseFloat(document.getElementById('dailyGoal').value) || 2000;
+
+  // Nouvelle répartition des macros
+  const carbGoal = dailyGoal*0.4/4;     // 40% des calories / 4 kcal par g
+  const proteinGoal = dailyGoal*0.3/4;  // 30% des calories / 4 kcal par g
+  const fatGoal = dailyGoal*0.3/9;      // 30% des calories / 9 kcal par g
+
+  document.getElementById('barCarbs').style.width = Math.min((carbs/carbGoal)*100,100)+'%';
+  document.getElementById('barProtein').style.width = Math.min((protein/proteinGoal)*100,100)+'%';
+  document.getElementById('barFat').style.width = Math.min((fat/fatGoal)*100,100)+'%';
+
+  let summary = `🍽 <span class="summary-bold">Besoin :</span> ${dailyGoal} kcal | <span class="summary-bold">Apport :</span> ${Math.round(totalCal)} kcal.<br>`;
+  if(totalCal>dailyGoal){
+    summary += `⚠️ Ton apport dépasse ton besoin calorique.`;
+  } else {
+    const msgs=[];
+    if(carbs<carbGoal) msgs.push(`<span class="macro-badge" data-type="carbs">${Math.round(carbGoal-carbs)}g glucides</span>`);
+    if(protein<proteinGoal) msgs.push(`<span class="macro-badge" data-type="protein">${Math.round(proteinGoal-protein)}g protéines</span>`);
+    if(fat<fatGoal) msgs.push(`<span class="macro-badge" data-type="fat">${Math.round(fatGoal-fat)}g lipides</span>`);
+    summary += msgs.length ? `🦋 Il te manque : ${msgs.join(' ')} pour atteindre tes apports.` : "✅ Apports atteints !";
+  }
+  document.getElementById('summary').innerHTML = summary;
+
+// Pop-up sur badge (ferme les autres popups et toggle sur le badge cliqué)
+document.querySelectorAll('.macro-badge').forEach(badge=>{
+  badge.onclick = (e)=>{
+    const type = badge.dataset.type;
+    const existing = badge.querySelector('.macro-info');
+
+    // Si la pop-up existe déjà sur ce badge, on la ferme
+    if(existing){
+      existing.remove();
+      return;
+    }
+
+    // Supprime toutes les autres pop-ups
+    document.querySelectorAll('.macro-info').forEach(info => info.remove());
+
+    // Crée la pop-up pour le badge cliqué
+    let infoBox = document.createElement('div');
+    infoBox.className = 'macro-info';
+    if(type==='carbs') infoBox.innerHTML = "🍞 Glucides : énergie principale. Riz, pâtes, fruits…";
+    if(type==='protein') infoBox.innerHTML = "🍗 Protéines : construction et récupération musculaire.";
+    if(type==='fat') infoBox.innerHTML = "🥑 Lipides : hormones et cerveau. Avocat, huile d'olive…";
+
+    badge.appendChild(infoBox);
+    infoBox.style.display='block';
+    infoBox.style.top = badge.offsetHeight + 5 + 'px';
+  };
+});
+}
+
+// Gestion des repas
+document.querySelectorAll('.meal-section').forEach(section=>{
+  const mealName = section.dataset.meal;
+  const searchInput = section.querySelector('.food-search-input');
+  const optionsContainer = section.querySelector('.food-options');
+  const qtyInput = section.querySelector('.food-qty');
+  const addBtn = section.querySelector('.add-food');
+  const mealList = section.querySelector('.meal-list');
+
+  searchInput.addEventListener('input', ()=>{
+    const val = searchInput.value.toLowerCase();
+    optionsContainer.innerHTML = '';
+    if(val.length<2) return optionsContainer.style.display='none';
+    foods.filter(f=>f.name.toLowerCase().includes(val)).slice(0,20).forEach(f=>{
+      const div = document.createElement('div');
+      div.textContent=f.name;
+      div.onclick=()=>{ searchInput.value=f.name; optionsContainer.style.display='none'; };
+      optionsContainer.appendChild(div);
+    });
+    optionsContainer.style.display = optionsContainer.children.length>0?'block':'none';
+  });
+
+  addBtn.onclick = ()=>{
+    const food = foods.find(f=>f.name===searchInput.value);
+    const qty = parseFloat(qtyInput.value);
+    if(!food || !qty) return;
+    const item={food,qty};
+    mealData[mealName].push(item);
+
+    const li=document.createElement('div');
+    li.className='meal-item';
+    li.innerHTML=`${food.name} - ${qty}${food.type==='g'?'g':'u'} <span class="delete">×</span>`;
+    li.querySelector('.delete').onclick=()=>{ mealList.removeChild(li); mealData[mealName]=mealData[mealName].filter(i=>i!==item); updateBars(); };
+    mealList.appendChild(li);
+    searchInput.value=''; qtyInput.value='';
+    updateBars();
+  };
+
+  document.addEventListener('click', e=>{ if(!section.contains(e.target)) optionsContainer.style.display='none'; });
+});
+
+document.getElementById('dailyGoal').addEventListener('input', updateBars);
+</script>
