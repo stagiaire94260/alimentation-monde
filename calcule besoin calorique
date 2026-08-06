@@ -1,0 +1,513 @@
+<div id="caloWidget">
+
+  <!-- WIDGET PRINCIPAL -->
+  <div id="calo-main">
+    <div class="calo-wrap">
+
+      <div class="calo-header">
+        <h2>Ton besoin calorique</h2>
+        <p>Remplis tes informations pour calculer ton besoin calorique journalier. Tes données sont sauvegardées uniquement sur cet appareil.</p>
+      </div>
+
+      <div class="calo-grid">
+        <div class="calo-inputs">
+          <div class="calo-group">
+            <div class="calo-group-title">Tes informations</div>
+
+            <div class="calo-field">
+              <label for="calo-poids">Poids (kg)</label>
+              <input type="number" id="calo-poids" placeholder="Ex : 60">
+            </div>
+
+            <div class="calo-field">
+              <label for="calo-taille">Taille (cm)</label>
+              <input type="number" id="calo-taille" placeholder="Ex : 165">
+            </div>
+
+            <div class="calo-field">
+              <label for="calo-age">Âge</label>
+              <input type="number" id="calo-age" placeholder="Ex : 28">
+            </div>
+
+            <div class="calo-field">
+              <label for="calo-activite">Niveau d'activité</label>
+              <select id="calo-activite">
+                <option value="1.2">Sédentaire (peu ou pas d'exercice)</option>
+                <option value="1.375">Léger (1-3 séances/semaine)</option>
+                <option value="1.55">Modéré (3-5 séances/semaine)</option>
+                <option value="1.725">Intense (6-7 séances/semaine)</option>
+                <option value="1.9">Très intense (2x/jour, sport + travail physique)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="calo-result-card">
+          <div class="calo-group-title">Ton résultat</div>
+
+          <div class="calo-result-container">
+            <div class="progress-circle">
+              <svg width="160" height="160">
+                <circle cx="80" cy="80" r="70" stroke="rgba(169,27,24,.12)" stroke-width="10" fill="none"></circle>
+                <circle id="calo-progress-ring" cx="80" cy="80" r="70"
+                  stroke="#a91b18" stroke-width="10" fill="none"
+                  stroke-linecap="round"
+                  stroke-dasharray="439.823"
+                  stroke-dashoffset="439.823"></circle>
+              </svg>
+
+              <div id="calo-resultat" class="calo-result-value">0</div>
+            </div>
+
+            <p class="calo-result-label">kcal / jour</p>
+            <div id="calo-result-detail" class="calo-result-detail"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calo-actions">
+        <button id="calo-save-btn" type="button" class="calo-btn calo-btn-primary">
+          Enregistrer mes données
+        </button>
+
+        <button id="calo-reset-btn" type="button" class="calo-btn calo-btn-outline-dark" style="min-width:auto;font-size:13px;padding:10px 16px;">
+          Réinitialiser
+        </button>
+      </div>
+
+      <div id="calo-message" class="calo-message"></div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+  #caloWidget {
+    width:100%;
+    padding:16px;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    color:#3F0405;
+  }
+
+  #caloWidget * {
+    box-sizing:border-box;
+  }
+
+  .calo-wrap {
+    width:100%;
+    max-width:800px;
+    margin:0 auto;
+    background:#fffaf8;
+    border:1px solid rgba(169,27,24,.08);
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    padding:20px;
+    overflow:hidden;
+  }
+
+  .calo-header {
+    text-align:center;
+    margin-bottom:22px;
+  }
+
+  .calo-header h2 {
+    margin:0 0 10px;
+    color:#a91b18;
+    font-size:30px;
+    line-height:1.15;
+  }
+
+  .calo-header p {
+    margin:0 auto;
+    max-width:600px;
+    font-size:15px;
+    line-height:1.6;
+    opacity:.75;
+  }
+
+  .calo-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items:start;
+  }
+
+  .calo-inputs {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .calo-group {
+    background:#fff;
+    border:1px solid rgba(169,27,24,.10);
+    border-radius:20px;
+    padding:20px;
+  }
+
+  .calo-group-title {
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    color:#a91b18;
+    margin-bottom:16px;
+  }
+
+  .calo-field {
+    margin-bottom:14px;
+  }
+
+  .calo-field:last-child {
+    margin-bottom:0;
+  }
+
+  .calo-field label {
+    display:block;
+    font-weight:700;
+    margin-bottom:7px;
+    font-size:14px;
+  }
+
+  .calo-field input,
+  .calo-field select {
+    width:100%;
+    border:1px solid #e7d9d6;
+    border-radius:12px;
+    padding:12px 14px;
+    font-size:15px;
+    background:#fff;
+    color:#3F0405;
+    outline:none;
+    transition:border-color .2s;
+  }
+
+  .calo-field input:focus,
+  .calo-field select:focus {
+    border-color:#a91b18;
+  }
+
+  .calo-result-card {
+    background:#fff;
+    border:1px solid rgba(169,27,24,.10);
+    border-radius:20px;
+    padding:20px;
+  }
+
+  .calo-result-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:10px;
+  }
+
+  .progress-circle {
+    position:relative;
+    display:inline-block;
+    width:160px;
+    height:160px;
+  }
+
+  .progress-circle svg {
+    transform:rotate(-90deg);
+  }
+
+  .calo-result-value {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:32px;
+    font-weight:700;
+    color:#a91b18;
+  }
+
+  .calo-result-label {
+    margin-top:12px;
+    color:#a91b18;
+    font-weight:600;
+    font-size:15px;
+  }
+
+  .calo-result-detail {
+    margin-top:12px;
+    font-size:13px;
+    opacity:.7;
+    text-align:center;
+    line-height:1.6;
+  }
+
+  .calo-actions {
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+    margin-top:22px;
+  }
+
+  .calo-btn {
+    appearance:none;
+    border:none;
+    border-radius:14px;
+    padding:14px 18px;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    min-width:220px;
+  }
+
+  .calo-btn-primary {
+    background:#a91b18;
+    color:#fff;
+  }
+
+  .calo-btn-outline-dark {
+    background:#fff;
+    color:#3F0405;
+    border:1px solid rgba(63,4,5,.15);
+  }
+
+  .calo-message {
+    min-height:22px;
+    margin-top:16px;
+    text-align:center;
+    font-size:14px;
+    font-weight:700;
+  }
+
+  @media (max-width:700px) {
+    .calo-grid {
+      grid-template-columns:1fr;
+    }
+
+    .calo-btn {
+      width:100%;
+      min-width:unset;
+    }
+
+    .calo-actions {
+      flex-direction:column;
+      align-items:stretch;
+    }
+  }
+</style>
+
+<script>
+(function () {
+  const LOCAL_KEY = "programme_calorique_v1";
+
+  const els = {
+    poids: document.getElementById('calo-poids'),
+    taille: document.getElementById('calo-taille'),
+    age: document.getElementById('calo-age'),
+    activite: document.getElementById('calo-activite'),
+    resultat: document.getElementById('calo-resultat'),
+    ring: document.getElementById('calo-progress-ring'),
+    detail: document.getElementById('calo-result-detail'),
+    saveBtn: document.getElementById('calo-save-btn'),
+    resetBtn: document.getElementById('calo-reset-btn'),
+    message: document.getElementById('calo-message')
+  };
+
+  function emptyState() {
+    return {
+      poids: "",
+      taille: "",
+      age: "",
+      activite: "1.2",
+      resultat: 0
+    };
+  }
+
+  let state = emptyState();
+
+  function showMessage(text, ok) {
+    els.message.textContent = text;
+    els.message.style.color = ok ? "#1f7a1f" : "#a91b18";
+
+    setTimeout(function () {
+      if (els.message.textContent === text) {
+        els.message.textContent = "";
+      }
+    }, 3500);
+  }
+
+  function animateValue(el, start, end, duration) {
+    let startTimestamp = null;
+
+    function step(timestamp) {
+      if (!startTimestamp) startTimestamp = timestamp;
+
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      el.textContent = Math.floor(progress * (end - start) + start);
+
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    }
+
+    window.requestAnimationFrame(step);
+  }
+
+  function animateRing(percent, duration) {
+    const circumference = 2 * Math.PI * 70;
+    const offsetEnd = circumference - (percent / 100) * circumference;
+    const offsetStart = parseFloat(els.ring.getAttribute('stroke-dashoffset')) || circumference;
+    const startTime = performance.now();
+
+    function step(currentTime) {
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      const offset = offsetStart + (offsetEnd - offsetStart) * progress;
+
+      els.ring.setAttribute('stroke-dashoffset', offset);
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function calculCalories() {
+    const p = parseFloat(els.poids.value) || 0;
+    const t = parseFloat(els.taille.value) || 0;
+    const a = parseFloat(els.age.value) || 0;
+    const act = parseFloat(els.activite.value);
+
+    if (!p || !t || !a) {
+      state.resultat = 0;
+      els.resultat.textContent = "0";
+      els.detail.innerHTML = "";
+      els.ring.setAttribute('stroke-dashoffset', '439.823');
+      return;
+    }
+
+    const mb = 447.6 + (9.2 * p) + (3.1 * t) - (4.3 * a);
+    const besoin = Math.round(mb * act);
+
+    animateValue(
+      els.resultat,
+      parseInt(els.resultat.textContent) || 0,
+      besoin,
+      800
+    );
+
+    const percent = Math.min((besoin / 3000) * 100, 100);
+    animateRing(percent, 1000);
+
+    els.detail.innerHTML = `
+      Métabolisme de base : <strong>${Math.round(mb)} kcal</strong><br>
+      Facteur d'activité : <strong>×${act}</strong>
+    `;
+
+    state.resultat = besoin;
+  }
+
+  function collectInputs() {
+    state.poids = els.poids.value.trim();
+    state.taille = els.taille.value.trim();
+    state.age = els.age.value.trim();
+    state.activite = els.activite.value;
+  }
+
+  function saveLocal() {
+    collectInputs();
+    calculCalories();
+
+    try {
+      localStorage.setItem(LOCAL_KEY, JSON.stringify(state));
+      showMessage("Tes données ont bien été enregistrées sur cet appareil.", true);
+      return true;
+    } catch (e) {
+      showMessage("Impossible d'enregistrer les données sur cet appareil.", false);
+      return false;
+    }
+  }
+
+  function loadLocal() {
+    try {
+      const saved = localStorage.getItem(LOCAL_KEY);
+      return saved ? JSON.parse(saved) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function fillInputs() {
+    els.poids.value = state.poids || "";
+    els.taille.value = state.taille || "";
+    els.age.value = state.age || "";
+    els.activite.value = state.activite || "1.2";
+
+    if (state.resultat) {
+      els.resultat.textContent = state.resultat;
+
+      const percent = Math.min((state.resultat / 3000) * 100, 100);
+      const circumference = 2 * Math.PI * 70;
+
+      els.ring.setAttribute(
+        'stroke-dashoffset',
+        circumference - (percent / 100) * circumference
+      );
+
+      const p = parseFloat(state.poids) || 0;
+      const t = parseFloat(state.taille) || 0;
+      const a = parseFloat(state.age) || 0;
+      const act = parseFloat(state.activite) || 1.2;
+
+      if (p && t && a) {
+        const mb = 447.6 + (9.2 * p) + (3.1 * t) - (4.3 * a);
+
+        els.detail.innerHTML = `
+          Métabolisme de base : <strong>${Math.round(mb)} kcal</strong><br>
+          Facteur d'activité : <strong>×${act}</strong>
+        `;
+      }
+    }
+  }
+
+  function resetLocal() {
+    if (!confirm("Réinitialiser tes données sur cet appareil ?")) return;
+
+    localStorage.removeItem(LOCAL_KEY);
+    state = emptyState();
+
+    fillInputs();
+
+    els.resultat.textContent = "0";
+    els.detail.innerHTML = "";
+    els.ring.setAttribute('stroke-dashoffset', '439.823');
+
+    showMessage("Tes données ont été réinitialisées.", true);
+  }
+
+  function initState() {
+    const localData = loadLocal();
+
+    if (localData) {
+      state = {
+        ...emptyState(),
+        ...localData
+      };
+    } else {
+      state = emptyState();
+    }
+
+    fillInputs();
+  }
+
+  [els.poids, els.taille, els.age, els.activite].forEach(function (el) {
+    el.addEventListener('input', function () {
+      collectInputs();
+      calculCalories();
+    });
+  });
+
+  els.saveBtn.addEventListener('click', saveLocal);
+  els.resetBtn.addEventListener('click', resetLocal);
+
+  initState();
+})();
+</script>
